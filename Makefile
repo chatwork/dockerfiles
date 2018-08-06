@@ -1,7 +1,11 @@
 PHONY: build
-docker-build:
-	@find . -type d -maxdepth 1 | xargs -I{} /bin/bash -c "cd dockerfiles/{} && make build";
+build:
+	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make build";
 
 PHONY: test
-docker-test:
-	@find . -type d -maxdepth 1 | xargs -I{} /bin/bash -c "cd dockerfiles/{} && make test";
+test:
+	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make test";
+
+PHONY: push
+push:
+	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make push";

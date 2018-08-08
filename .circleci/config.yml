@@ -11,9 +11,35 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: make build
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
-      - run: make push
+      - run: make ci:diff
+      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build"
+      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make push"
+      - run:
+          name: notification failed
+          command: |
+            make ci:diff | xargs -I{} /bin/bash -c '
+              version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/{});
+              if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/{}:${version})" != "[]" ]; then
+                changelog=$(make ci:changelog -e DIR="{}/");
+                make ci:notify -e TITLE="Release chatwork/{}:${version} (gogo)" \
+                               -e BODY="$(echo -e "changelog\n${changelog}")";
+              else
+                make ci:notify -e TITLE="CircleCI: Failed push chatwork/{}:${version} (devil)" \
+                               -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
+              fi
+            '
+          when: on_fail
+      - run:
+          name: notification success
+          command: |
+            make ci:diff | xargs -I{} /bin/bash -c '
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/{});
+              changelog=$(make ci:changelog -e DIR="{}/");
+              make ci:notify -e TITLE="Release chatwork/{}:${version} (gogo)" \
+                             -e BODY="$(echo -e "changelog\n${changelog}")";
+            '
+          when: on_success
 workflows:
   version: 2
   integration:

@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  test:
+    machine:
+      docker_layer_caching: true
+    steps:
+      - checkout
+      - run: make build
+      - run: make test
+  push:
+    machine: true
+    steps:
+      - checkout
+      - run: make build
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
+      - run: make push
+workflows:
+  version: 2
+  integration:
+    jobs:
+      - test
+      - push:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master

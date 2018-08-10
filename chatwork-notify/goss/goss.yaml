@@ -1,0 +1,13 @@
+command:
+  /entrypoint.sh:
+    exit-status: 1
+    stderr:
+      - should set CHATWORK_TOKEN for environment variables
+  CHATWORK_TOKEN=xxx /entrypoint.sh:
+    exit-status: 1
+    stderr:
+      - should set ROOM_ID for environment variables
+  CHATWORK_TOKEN=xxx ROOM_ID=yyy /entrypoint.sh:
+    exit-status: 0
+    stdout:
+      - Invalid API Token

@@ -1,0 +1,12 @@
+file:
+  /bin/helm:
+    exists: true
+    mode: "0755"
+  /bin/helmfile:
+    exists: true
+    mode: "0755"
+command:
+  /bin/helmfile -v:
+    exit-status: 0
+    stdout:
+      - v0.23.1

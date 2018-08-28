@@ -1,9 +1,0 @@
-file:
-  /bin/helm:
-    exists: true
-    mode: "0755"
-command:
-  /bin/helm version --client:
-    exit-status: 0
-    stdout:
-      - 2.7.2

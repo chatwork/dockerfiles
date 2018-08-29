@@ -6,6 +6,11 @@ file:
     exists: true
     mode: "0755"
 command:
+  /bin/helm plugin list:
+    exit-status: 0
+    stdout:
+      - /^diff/
+      - /^secrets/
   /bin/helmfile -v:
     exit-status: 0
     stdout:

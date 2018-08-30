@@ -1,0 +1,32 @@
+command:
+  # FIXME: cgi-fcgiでchatworkの動作検証
+  php-fpm -v:
+    exit-status: 0
+    stdout:
+    - PHP 7.1
+  php-fpm -m:
+    exit-status: 0
+    stdout:
+    - /^Zend OPcache$/
+    - /^apcu$/
+    - /^bcmath$/
+    - /^gd$/
+    - /^gmp$/
+    - /^grpc$/
+    - /^igbinary$/
+    - /^json$/
+    - /^mbstring$/
+    - /^mcrypt$/
+    - /^mysqli$/
+    - /^mysqlnd$/
+    - /^pdo_mysql$/
+    - /^protobuf$/
+    - /^redis$/
+    - /^xml$/
+    - /^zip$/
+process:
+  php-fpm:
+    running: true
+port:
+  tcp6:9000:
+    listening: true

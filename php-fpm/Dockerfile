@@ -32,6 +32,8 @@ RUN \
     apcu \
     igbinary \
     redis-4.0.2 \
+    grpc-1.11.1 \
+    protobuf-3.5.1.1 \
   # enable pecl extensions
   && docker-php-ext-enable \
     apcu \

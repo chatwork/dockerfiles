@@ -8,17 +8,19 @@ command:
     exit-status: 0
     stdout:
     - /^Zend OPcache$/
+    - /^apcu$/
     - /^bcmath$/
     - /^gd$/
     - /^gmp$/
+    - /^grpc$/
+    - /^igbinary$/
     - /^json$/
     - /^mbstring$/
     - /^mcrypt$/
     - /^mysqli$/
     - /^mysqlnd$/
     - /^pdo_mysql$/
-    - /^apcu$/
-    - /^igbinary$/
+    - /^protobuf$/
     - /^redis$/
     - /^xml$/
     - /^zip$/

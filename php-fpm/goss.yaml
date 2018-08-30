@@ -4,7 +4,7 @@ command:
     exit-status: 0
     stdout:
     - PHP 7.1
-  php-fpm -i:
+  php-fpm -m:
     exit-status: 0
     stdout:
     - /^Zend OPcache$/

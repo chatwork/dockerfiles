@@ -20,6 +20,7 @@ LABEL maintainer "sakamoto@chatwork.com"
 # start with a valid empty file
 COPY files/failsafe.conf /fluentd/failsafe.conf
 COPY files/entrypoint.sh /fluentd/entrypoint.sh
+RUN chmod 755 /fluentd/entrypoint.sh
 
 RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
      && apt-get update \
@@ -66,6 +67,7 @@ COPY kube-fluentd-operator/config-reloader/templates /templates
 COPY kube-fluentd-operator/config-reloader/validate-from-dir.sh /bin/validate-from-dir.sh
 
 COPY --from=builder /go/src/github.com/vmware/kube-fluentd-operator/config-reloader/config-reloader /bin/config-reloader
+RUN chmod 755 /bin/config-reloader
 
 RUN rm -f kube-fluentd-operator
 

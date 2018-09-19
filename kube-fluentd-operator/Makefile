@@ -1,18 +1,19 @@
 FLUENT_VERSION ?= v1.2.5
 KFO_VERSION ?= v1.7.0
-TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
+#TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
+TAG ?= latest
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
 
 .PHONY: build
 build: clone
-	docker build -t $(IMAGE):$(TAG) \
+	docker build -t $(IMAGE) \
 		--build-arg KFO_VERSION=$(KFO_VERSION) .;
 		make clean
 
 .PHONY: check
 check:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE):${TAG}); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE)); \
 		if [ -z "$$version" ]; then \
 			echo "\033[91mError: version is not defined in Dockerfile.\033[0m"; \
 			exit 1; \

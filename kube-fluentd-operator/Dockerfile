@@ -1,7 +1,7 @@
 # builder image
 FROM golang:1.10 as builder
 
-ARG KFO_VERSION
+ARG KFO_VERSION="v1.7.0"
 WORKDIR /go/src/github.com/vmware/kube-fluentd-operator/config-reloader
 RUN go get -u github.com/golang/dep/cmd/dep
 COPY kube-fluentd-operator/config-reloader/. .

@@ -1,7 +1,6 @@
 FLUENT_VERSION ?= v1.2.5
 KFO_VERSION ?= v1.7.0
-#TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
-TAG ?= latest
+TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
 

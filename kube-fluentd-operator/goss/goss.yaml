@@ -1,0 +1,9 @@
+file:
+  /fluentd/entrypoint.sh:
+    exists: true
+    mode: "0755"
+command:
+  /bin/config-reloader --version:
+    exit-status: 0
+    stdout:
+      - master

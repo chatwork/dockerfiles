@@ -1,0 +1,15 @@
+version: '3'
+services:
+  busybox:
+    build:
+      context: .
+    image: chatwork/aws
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/aws tail -f /dev/null
+    volumes:
+      - ./goss/goss.yaml:/goss/goss.yaml
+      - /var/run/docker.sock:/var/run/docker.sock

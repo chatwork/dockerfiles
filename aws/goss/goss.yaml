@@ -1,0 +1,16 @@
+file:
+  /usr/local/bin/aws:
+    exists: true
+    mode: "0755"
+  /usr/bin/jq:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bin/aws --version:
+    exit-status: 0
+    stdout:
+      - aws-cli/1.16.16
+  /usr/bin/jq --version:
+    exit-status: 0
+    stdout:
+      - jq-master-v3.7.0-4757-gc31a4d0fd5

@@ -11,4 +11,4 @@ if [ -z "$ROOM_ID" ]; then
   exit 1;
 fi
 
-exec curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_TOKEN}" "https://api.chatwork.com/v2/rooms/${ROOM_ID}/messages" -d "body=$@"
+exec curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_TOKEN}" "https://api.chatwork.com/v2/rooms/${ROOM_ID}/messages" --data-urlencode "body=$@"

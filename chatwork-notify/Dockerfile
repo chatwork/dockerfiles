@@ -1,6 +1,6 @@
 FROM appropriate/curl:3.1
 
-LABEL version "0.0.0"
+LABEL version "0.0.2"
 LABEL maintainer "ozaki@chatwork.com"
 
 ENV CHATWORK_TOKEN ""

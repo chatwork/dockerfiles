@@ -1,0 +1,9 @@
+file:
+  /usr/local/bin/yq:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bin/yq --version:
+    exit-status: 0
+    stdout:
+      - yq 2.7.0

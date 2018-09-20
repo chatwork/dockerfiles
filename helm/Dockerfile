@@ -1,9 +1,10 @@
 FROM alpine:3.8
 
-LABEL version "2.7.2"
+ARG HELM_VERSION=2.10.0
+
+LABEL version "${HELM_VERSION}"
 LABEL maintainer "j5ik2o@gmail.com"
 
-ENV HELM_VERSION 2.7.2
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 WORKDIR /

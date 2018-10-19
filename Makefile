@@ -13,7 +13,7 @@ push:
 .PHONY: ci\:diff\:from
 ci\:diff\:from:
 	@branch=$$(git symbolic-ref --short HEAD); \
-		if [[ "$${branch}" == "master" ]]; then \
+		if [ "$${branch}" = "master" ]; then \
 			git --no-pager log --merges -n 2 --pretty=format:"%H" | tail -n 1; \
 		else \
 			echo "HEAD"; \
@@ -22,7 +22,7 @@ ci\:diff\:from:
 .PHONY: ci\:diff\:to
 ci\:diff\:to:
 	@branch=$$(git symbolic-ref --short HEAD); \
-		if [[ "$${branch}" == "master" ]]; then \
+		if [ "$${branch}" = "master" ]; then \
 			echo "HEAD"; \
 		else \
 			echo "master"; \

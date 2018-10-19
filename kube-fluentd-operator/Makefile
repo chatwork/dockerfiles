@@ -4,13 +4,13 @@ TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
 
-..PHONY: build
+.PHONY: build
 build: clone
 	docker build -t $(IMAGE) \
 		--build-arg KFO_VERSION=$(KFO_VERSION) .;
 		make clean
 
-..PHONY: check
+.PHONY: check
 check:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE)); \
 		if [ -z "$$version" ]; then \
@@ -19,12 +19,12 @@ check:
 		fi;
 	@echo "\033[92mno problem.\033[0m";
 
-..PHONY: test
+.PHONY: test
 test:
 	@make check;
 	docker-compose -f docker-compose.test.yml run --rm sut;
 
-..PHONY: push
+.PHONY: push
 push:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE)); \
 		if docker inspect --format='{{index .RepoDigests 0}}' $(IMAGE):$$version >/dev/null 2>&1; then \
@@ -35,28 +35,28 @@ push:
 			docker push $(IMAGE):$$version; \
 		fi
 
-..PHONY: clone
+.PHONY: clone
 clone: clean
 	git clone --depth=1 -b $(KFO_VERSION) https://github.com/vmware/kube-fluentd-operator.git
 
-..PHONY: clean
+.PHONY: clean
 clean:
 	/bin/rm -fr kube-fluentd-operator
 
-..PHONY: shell
+.PHONY: shell
 shell:
 	docker run --entrypoint=/bin/bash \
 	  -ti --rm -v `pwd`:/workspace --net=host \
 	  $(IMAGE):$(TAG)
 
-..PHONY: run-fluentd
+.PHONY: run-fluentd
 run-fluentd:
 	docker run --entrypoint=fluentd \
 	  -ti --rm -v `pwd`:/workspace --net=host \
 	  $(IMAGE):$(TAG) \
 	  -p /fluentd/plugins -v -c /workspace/local-fluent.conf
 
-..PHONY: validate-config
+.PHONY: validate-config
 validate-config:
 	docker run --entrypoint=fluentd \
 	  -ti --rm -v `pwd`:/workspace --net=host \

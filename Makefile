@@ -12,7 +12,13 @@ push:
 
 .PHONY: ci\:diff
 ci\:diff:
-	@git diff --name-only $$(echo $$CIRCLE_COMPARE_URL | sed 's:^.*/compare/::g') | xargs -I{} dirname {} | sed 's/[.\/].*$$//' | sed '/^$$/d' | uniq;
+	@branch=$$(git symbolic-ref --short HEAD); \
+		if [[ "$${branch}" == "master" ]]; then \
+			from=$$(git --no-pager log --merges -n 2 --pretty=format:"%H" | tail -n 1); \
+			git diff --name-only "$${from}" "HEAD" | sed 's:^.*/compare/::g' | xargs -I{} dirname {} | sed 's/[.\/].*$$//' | sed '/^$$/d' | uniq; \
+		else \
+			git diff --name-only "HEAD" "master" | sed 's:^.*/compare/::g' | xargs -I{} dirname {} | sed 's/[.\/].*$$//' | sed '/^$$/d' | uniq; \
+		fi
 
 .PHONY: ci\:changelog
 ci\:changelog:

@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM chatwork/alpine-sdk:3.8
 
 ARG HELM_VERSION=2.10.0
 

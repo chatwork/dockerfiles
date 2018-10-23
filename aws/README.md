@@ -13,5 +13,5 @@ $ docker run -e AWS_ACCESS_KEY_ID=xxx -e AWS_SECRET_ACCESS_KEY=xxx -e AWS_DEFAUL
 ### Use profile
 
 ```
-$ docker run -v $HOME/.aws/credentials:/root/.aws/credentials chatwork/aws:latest s3 ls
+$ docker run -v $HOME/.aws/credentials:/root/.aws/credentials chatwork/aws:latest s3 ls --profile PROFILE_NAME
 ```

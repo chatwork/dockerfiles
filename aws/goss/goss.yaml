@@ -1,12 +1,12 @@
 file:
-  /usr/local/bin/aws:
+  /usr/bin/aws:
     exists: true
     mode: "0755"
   /usr/bin/jq:
     exists: true
     mode: "0755"
 command:
-  /usr/local/bin/aws --version:
+  /usr/bin/aws --version:
     exit-status: 0
     stdout:
       - aws-cli/1.16.39

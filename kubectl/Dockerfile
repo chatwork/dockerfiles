@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM chatwork/alpine-sdk:3.8
 
 ARG KUBECTL_VERSION=1.11.2
 

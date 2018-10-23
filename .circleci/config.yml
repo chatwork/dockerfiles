@@ -13,8 +13,8 @@ jobs:
       - checkout
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build"
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make push"
+      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255"
+      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make push || exit 255"
       - run:
           name: notification failed
           command: |

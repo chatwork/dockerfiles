@@ -1,14 +1,14 @@
 .PHONY: build
 build:
-	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make build";
+	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255";
 
 .PHONY: test
 test:
-	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make test";
+	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make test || exit 255";
 
 .PHONY: push
 push:
-	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make push";
+	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make push || exit 255";
 
 .PHONY: ci\:diff\:from
 ci\:diff\:from:

@@ -1,6 +1,5 @@
 .PHONY: build
 build:
-	docker build -t chatwork/`basename $$PWD` .;
 	for version in `cat versions | head -n 5`; do \
 		if ! docker pull chatwork/helm:$$version >/dev/null 2>&1; then \
 			docker build -t chatwork/`basename $$PWD`:$$version --build-arg HELM_VERSION=$$version .; \

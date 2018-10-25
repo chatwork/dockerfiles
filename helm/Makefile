@@ -1,10 +1,12 @@
 .PHONY: build
 build:
 	docker build -t chatwork/`basename $$PWD` .;
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
-		if [ -n "$$version" ]; then \
-			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
-		fi
+	for version in `cat versions`; do \
+		if ! docker pull chatwork/helm:$$version >/dev/null 2>&1; then \
+			docker build -t chatwork/`basename $$PWD`:$$version --build-arg HELM_VERSION=$$version .; \
+		fi \
+	done
+	docker tag chatwork/`basename $$PWD`:`cat versions | head -n 1` chatwork/`basename $$PWD`:latest
 
 .PHONY: check
 check:
@@ -26,7 +28,5 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker push chatwork/`basename $$PWD`:latest; \
-			docker tag chatwork/`basename $$PWD` chatwork/`basename $$PWD`:$$version; \
-			docker push chatwork/`basename $$PWD`:$$version; \
+			docker push chatwork/`basename $$PWD`
 		fi

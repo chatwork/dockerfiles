@@ -1,11 +1,11 @@
 .PHONY: build
 build:
-	for version in `cat versions | head -n 5`; do \
-		if ! docker pull chatwork/helm:$$version >/dev/null 2>&1; then \
+	@for version in `cat versions | head -n 5`; do \
+		if ! docker pull chatwork/`basename $$PWD`:$$version >/dev/null 2>&1; then \
 			docker build -t chatwork/`basename $$PWD`:$$version --build-arg HELM_VERSION=$$version .; \
 		fi \
 	done
-	docker tag chatwork/`basename $$PWD`:`cat versions | head -n 1` chatwork/`basename $$PWD`:latest
+	@docker tag chatwork/`basename $$PWD`:`cat versions | head -n 1` chatwork/`basename $$PWD`:latest
 
 .PHONY: check
 check:

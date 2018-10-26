@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run: make ci:diff
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build"
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make test"
+      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255"
+      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make test || exit 255"
   push:
     machine: true
     steps:

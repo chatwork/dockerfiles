@@ -1,0 +1,47 @@
+package:
+  sbt:
+    installed: true
+    versions:
+    - 1.1.0
+  libaio1:
+    installed: true
+  git:
+    installed: true
+  openssh-client:
+    installed: true
+
+file:
+  /opt/java/openjdk/jre/lib/security/cacerts:
+    exists: true
+    mode: "0644"
+    size: 114757
+
+command:
+  printenv LANG:
+    exit-status: 0
+    stdout:
+    - "C.UTF-8"
+    timeout: 5000
+  printenv JAVA_VERSION:
+    exit-status: 0
+    stdout:
+    - "jdk8u181-b13"
+    timeout: 5000
+  readlink -f /bin/sh:
+    exit-status: 0
+    stdout:
+    - "/bin/bash"
+    timeout: 5000
+  which scala:
+    exit-status: 0
+    stdout:
+    - "/root/scala-2.12.4/bin/scala"
+    timeout: 5000
+  which sbt:
+    exit-status: 0
+    stdout:
+    - "/usr/bin/sbt"
+    timeout: 5000
+  java -version:
+    exit-status: 0
+    timeout: 5000

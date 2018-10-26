@@ -14,8 +14,8 @@ RUN make build VERSION=$(KFO_VERSION)
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
 FROM fluent/fluentd:v1.2.5-debian
 
-LABEL version v1.2.5-v1.7.0
-LABEL maintainer "sakamoto@chatwork.com"
+LABEL version=v1.2.5-v1.7.0
+LABEL maintainer="sakamoto@chatwork.com"
 
 # start with a valid empty file
 COPY files/failsafe.conf /fluentd/failsafe.conf

@@ -5,8 +5,8 @@ ARG HELM_DIFF_VERSION=master
 ARG HELM_SECRETS_VERSION=master
 ARG HELMFILE_VERSION=0.36.1
 
-LABEL version "${HELMFILE_VERSION}-${HELM_VERSION}"
-LABEL maintainer "ozaki@chatwork.com"
+LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}"
+LABEL maintainer="ozaki@chatwork.com"
 
 WORKDIR /
 

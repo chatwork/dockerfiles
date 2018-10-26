@@ -1,7 +1,7 @@
 FROM php:7.1-fpm-alpine
 
-LABEL version "0.1.0"
-LABEL maintainer "ozaki@chatwork.com"
+LABEL version="0.1.0"
+LABEL maintainer="ozaki@chatwork.com"
 
 RUN \
   # install dependencies

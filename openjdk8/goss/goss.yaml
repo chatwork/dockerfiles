@@ -1,0 +1,13 @@
+file:
+  /opt/java/openjdk/jre/lib/security/cacerts:
+    exists: true
+    size: 114757
+command:
+  printenv JAVA_VERSION:
+    exit-status: 0
+    stdout:
+    - "jdk8u181-b13"
+    timeout: 5000
+  java -version:
+    exit-status: 0
+    timeout: 5000

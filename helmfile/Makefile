@@ -5,17 +5,15 @@ build:
 		for version2 in `cat helm-versions | head -n 3 `; do \
 			helm_version=`echo "$$version2" | cut -d':' -f1 | tr -d "\n"`; \
 			diff_version=`echo "$$version2" | cut -d':' -f2 | tr -d "\n"`; \
-			for version3 in `cat kubectl-versions | head -n 3`; do \
-				kubectl_version=$$(echo $$version3 | tr -d "\n"); \
-				version="$$helmfile_version-$$helm_version-$$kubectl_version"; \
-					echo "@@@ $$version @@@"; \
-				if ! docker pull chatwork/`basename $$PWD`:$$version >/dev/null 2>&1; then \
-					docker build -t chatwork/`basename $$PWD`:"$$version" --build-arg HELMFILE_VERSION="$$helmfile_version" --build-arg HELM_VERSION="$$helm_version" --build-arg HELM_DIFF_VERSION="$$diff_version" --build-arg KUBECTL_VERSION="$$kubectl_version" .; \
-				fi \
-			done \
+			kubectl_version=`echo "$$version2" | cut -d':' -f3 | tr -d "\n"`; \
+			version="$$helmfile_version-$$helm_version-$$kubectl_version"; \
+				echo "@@@ $$version @@@"; \
+			if ! docker pull chatwork/`basename $$PWD`:$$version >/dev/null 2>&1; then \
+				docker build -t chatwork/`basename $$PWD`:"$$version" --build-arg HELMFILE_VERSION="$$helmfile_version" --build-arg HELM_VERSION="$$helm_version" --build-arg HELM_DIFF_VERSION="$$diff_version" --build-arg KUBECTL_VERSION="$$kubectl_version" .; \
+			fi \
 		done \
 	done
-	@docker tag chatwork/`basename $$PWD`:`cat helmfile-versions | head -n 1`-`cat helm-versions | head -n 1 | cut -d':' -f1`-`cat kubectl-versions | head -n 1` chatwork/`basename $$PWD`:latest
+	@docker tag chatwork/`basename $$PWD`:`cat helmfile-versions | head -n 1`-`cat helm-versions | head -n 1 | cut -d':' -f1`-`cat helm-versions | head -n 1 | cut -d':' -f3` chatwork/`basename $$PWD`:latest
 
 .PHONY: check
 check:

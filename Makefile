@@ -13,7 +13,7 @@ push:
 .PHONY: ci\:diff\:from
 ci\:diff\:from:
 		@if [ "$(shell git symbolic-ref --short HEAD)" = "master" ]; then \
-			git --no-pager log --merges -n 2 --pretty=format:"%H" | tail -n 1; \
+			git --no-pager --first-parent master log --merges -n 2 --pretty=format:"%H" | tail -n 1; \
 		else \
 			echo "HEAD"; \
 		fi

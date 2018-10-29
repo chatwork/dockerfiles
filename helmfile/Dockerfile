@@ -10,7 +10,7 @@ ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 WORKDIR /
 
-RUN apk --update --no-cache add ca-certificates git bash curl
+RUN apk --update --no-cache add bash
 
 ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl /usr/local/bin/kubectl
 RUN chmod +x /usr/local/bin/kubectl

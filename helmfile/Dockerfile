@@ -8,6 +8,9 @@ ARG HELMFILE_VERSION=0.36.1
 
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
+LABEL version "${HELMFILE_VERSION}-${HELM_VERSION}-${KUBECTL_VERSION}"
+LABEL maintainer "ozaki@chatwork.com"
+
 WORKDIR /
 
 RUN apk --update --no-cache add bash

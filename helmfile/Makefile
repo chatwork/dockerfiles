@@ -33,11 +33,9 @@ test:
 
 .PHONY: push
 push:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker push chatwork/`basename $$PWD`:latest; \
-			docker tag chatwork/`basename $$PWD` chatwork/`basename $$PWD`:$$version; \
-			docker push chatwork/`basename $$PWD`:$$version; \
+			docker push chatwork/`basename $$PWD`;
 		fi

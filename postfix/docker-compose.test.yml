@@ -1,0 +1,16 @@
+version: '3'
+services:
+  busybox:
+    build:
+      context: .
+    image: chatwork/postfix
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+      GOSS_SLEEP: 5
+    command: /usr/local/bin/dgoss run chatwork/postfix
+    volumes:
+      - ./goss/goss.yaml:/goss/goss.yaml
+      - /var/run/docker.sock:/var/run/docker.sock

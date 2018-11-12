@@ -10,11 +10,6 @@ package:
   openssh-client:
     installed: true
 
-file:
-  /opt/java/openjdk/jre/lib/security/cacerts:
-    exists: true
-    size: 114757
-
 command:
   printenv LANG:
     exit-status: 0
@@ -24,7 +19,7 @@ command:
   printenv JAVA_VERSION:
     exit-status: 0
     stdout:
-    - "jdk8u181-b13"
+    - "jdk8u191-b12"
     timeout: 5000
   readlink -f /bin/sh:
     exit-status: 0

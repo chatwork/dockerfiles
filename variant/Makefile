@@ -1,14 +1,14 @@
 .PHONY: build
 build:
 	docker build -t chatwork/`basename $$PWD` .;
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD` | sed 's/\+dirty//g'); \
 		if [ -n "$$version" ]; then \
 			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
 		fi
 
 .PHONY: check
 check:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD` | sed 's/\+dirty//g'); \
 		if [ -z "$$version" ]; then \
 			echo "\033[91mError: version is not defined in Dockerfile.\033[0m"; \
 			exit 1; \
@@ -21,7 +21,7 @@ test:
 
 .PHONY: push
 push:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD` | sed 's/\+dirty//g'); \
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \

@@ -1,12 +1,12 @@
 FROM alpine/git:1.0.4 as git
 
-ARG VARIANT_VERSION=0.10.0
+ARG VARIANT_VERSION=bc654794debb5d4cda53953ddea02a5f33dbdf5c+dirty
 
 WORKDIR /
 
 RUN git clone https://github.com/mumoshu/variant.git \
     && cd /variant \
-    && git checkout -b tag refs/tags/v$VARIANT_VERSION
+    && git checkout -b tag refs/tags/$VARIANT_VERSION || git checkout $(echo $VARIANT_VERSION | sed 's/+dirty$//') -b variant-master
 
 
 FROM instrumentisto/dep:0.5.0 as dep
@@ -33,12 +33,12 @@ RUN apk add --no-cache bash make git ca-certificates && patch -p1 < diff.patch &
 
 FROM alpine:latest
 
-ARG VARIANT_VERSION=0.10.0
+ARG VARIANT_VERSION=bc654794debb5d4cda53953ddea02a5f33dbdf5c+dirty
 
 LABEL version="${VARIANT_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
 
-COPY --from=builder /go/src/github.com/mumoshu/variant/dist/v${VARIANT_VERSION}/var /usr/local/bin/variant
+COPY --from=builder /go/src/github.com/mumoshu/variant/dist/${VARIANT_VERSION}/var /usr/local/bin/variant
 
 VOLUME ["/variant"]
 WORKDIR /variant

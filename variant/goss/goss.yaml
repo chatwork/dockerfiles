@@ -1,0 +1,9 @@
+file:
+  /usr/local/bin/variant:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bin/variant version:
+    exit-status: 0
+    stdout:
+      - framework_version=0.0.8

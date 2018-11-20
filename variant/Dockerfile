@@ -1,12 +1,22 @@
 FROM alpine/git:1.0.4 as git
 
-ARG VARIANT_VERSION=0.0.8
+ARG VARIANT_VERSION=0.0.9
 
 WORKDIR /
 
 RUN git clone https://github.com/mumoshu/variant.git \
     && cd /variant \
     && git checkout -b tag refs/tags/v$VARIANT_VERSION
+
+
+FROM instrumentisto/dep:0.5.0 as dep
+
+WORKDIR /go/src/github.com/mumoshu/variant
+
+COPY --from=git /variant /go/src/github.com/mumoshu/variant
+
+RUN dep ensure
+
 
 FROM golang:1.11.1-alpine as builder
 
@@ -15,28 +25,20 @@ ENV GOARCH=amd64
 
 WORKDIR /go/src/github.com/mumoshu/variant
 
-COPY --from=git /variant /go/src/github.com/mumoshu/variant
+COPY --from=dep /go/src/github.com/mumoshu/variant /go/src/github.com/mumoshu/variant
 COPY diff.patch /go/src/github.com/mumoshu/variant/diff.patch
 
-RUN apk add --no-cache bash make git ca-certificates \
-    && go get github.com/Sirupsen/logrus \
-    && go get github.com/juju/errors \
-    && go get github.com/mitchellh/mapstructure \
-    && go get github.com/mumoshu/logrus-bunyan-formatter \
-    && go get github.com/spf13/cobra \
-    && go get github.com/spf13/viper \
-    && patch -p1 < diff.patch \
-    && make build
+RUN apk add --no-cache bash make git ca-certificates && patch -p1 < diff.patch && make build
 
 
 FROM alpine:latest
 
-ARG VARIANT_VERSION=0.0.8
+ARG VARIANT_VERSION=0.0.9
 
 LABEL version="${VARIANT_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
 
-COPY --from=builder /go/src/github.com/mumoshu/variant/dist/${VARIANT_VERSION}/var /usr/local/bin/variant
+COPY --from=builder /go/src/github.com/mumoshu/variant/dist/v${VARIANT_VERSION}/var /usr/local/bin/variant
 
 VOLUME ["/variant"]
 WORKDIR /variant

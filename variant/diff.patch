@@ -1,12 +1,12 @@
 diff --git a/Makefile b/Makefile
-index 60245b4..97f8e22 100644
+index d1f9612..1d04ae5 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -35,7 +35,7 @@ dist/$(VERSION):
+@@ -36,7 +36,7 @@ dist/$(VERSION):
  	# $ go tool nm dist/v$(VERSION)/var | grep VERSION
  	#  8b0780 D _/Users/me/path/to/variant/cli/version.VERSION
  	#  6dff9c R _/Users/me/path/to/variant/cli/version.VERSION.str
--	go build -ldflags "-X '_$(shell pwd)/cli/version.VERSION=$(VERSION)'" -o dist/$(VERSION)/var .
+-	go build -ldflags "-X '_$(shell pwd)/pkg/cli/version.VERSION=$(VERSION)'" -o dist/$(VERSION)/var .
 +	go build -ldflags "-X 'github.com/mumoshu/variant/pkg/cli/version.VERSION=$(VERSION)'" -o dist/$(VERSION)/var .
  
  release: dist/$(VERSION)

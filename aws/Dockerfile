@@ -5,8 +5,11 @@ ARG AWS_VERSION=1.16.39
 LABEL version="${AWS_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
 
+COPY entrypoint.sh /entrypoint.sh
+
 RUN apk --no-cache add py3-pip jq \
     && pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir awscli==${AWS_VERSION}
+    && pip3 install --no-cache-dir awscli==${AWS_VERSION} \
+    && chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/usr/bin/aws"]
+ENTRYPOINT ["/entrypoint.sh"]

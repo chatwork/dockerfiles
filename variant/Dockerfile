@@ -1,6 +1,6 @@
 FROM alpine/git:1.0.4 as git
 
-ARG VARIANT_VERSION=0.0.9
+ARG VARIANT_VERSION=0.10.0
 
 WORKDIR /
 
@@ -33,7 +33,7 @@ RUN apk add --no-cache bash make git ca-certificates && patch -p1 < diff.patch &
 
 FROM alpine:latest
 
-ARG VARIANT_VERSION=0.0.9
+ARG VARIANT_VERSION=0.10.0
 
 LABEL version="${VARIANT_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

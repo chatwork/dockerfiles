@@ -12,9 +12,9 @@ RUN make test
 RUN make build VERSION=$(KFO_VERSION)
 
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
-FROM fluent/fluentd:v1.2.6-debian
+FROM fluent/fluentd:v1.3.0-debian
 
-LABEL version=v1.2.6-v1.7.0
+LABEL version=v1.3.0-v1.7.0
 LABEL maintainer="sakamoto@chatwork.com"
 
 # start with a valid empty file

@@ -1,6 +1,6 @@
 FROM chatwork/alpine-sdk:3.8
 
-ARG AWS_VERSION=1.16.39
+ARG AWS_VERSION=1.16.58
 
 LABEL version="${AWS_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

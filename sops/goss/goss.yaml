@@ -1,0 +1,9 @@
+file:
+  /usr/local/bin/sops:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bin/sops -v:
+    exit-status: 0
+    stdout:
+      - "sops 3.2.0 (latest)"

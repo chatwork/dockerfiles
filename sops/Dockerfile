@@ -7,7 +7,10 @@ LABEL maintainer="sakamoto@chatwork.com"
 
 ADD https://github.com/mozilla/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux /usr/local/bin/sops
 
-RUN chmod 755 /usr/local/bin/sops
+RUN chmod 755 /usr/local/bin/sops && \
+    apk update && \
+    apk add --no-cache jq=1.6_rc1-r1 && \
+    rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["/usr/local/bin/sops"]
 CMD ["help"]

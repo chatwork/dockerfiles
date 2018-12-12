@@ -1,6 +1,6 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
-ARG JQ_VERSION=1.5-r5
+ARG JQ_VERSION=1.6_rc1-r1
 
 LABEL version="${JQ_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

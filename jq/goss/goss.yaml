@@ -1,0 +1,9 @@
+file:
+  /usr/bin/jq:
+    exists: true
+    mode: "0755"
+command:
+  /usr/bin/jq --version:
+    exit-status: 0
+    stdout:
+      - jq-master-v3.7.0-4757-gc31a4d0fd5

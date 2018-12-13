@@ -1,0 +1,19 @@
+process:
+  supervisord:
+    running: true
+  rsyslogd:
+    running: true
+  master:
+    running: true
+  pickup:
+    running: true
+  qmgr:
+    running: true
+port:
+    tcp:25:
+      listening: true
+      ip:
+        - 0.0.0.0
+file:
+  /etc/postfix/sasl_passwd.db:
+    exists: true

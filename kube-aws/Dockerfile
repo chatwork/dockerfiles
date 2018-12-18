@@ -29,9 +29,9 @@ RUN apk add --no-cache bash make git ca-certificates && make build
 FROM alpine:latest
 
 ARG KUBEAWS_VERSION=v0.12.Y
-ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
+ARG KUBEAWS_HASH=-a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
 
-LABEL version="${KUBEAWS_VERSION}"
+LABEL version="${KUBEAWS_VERSION}${KUBEAWS_HASH}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 RUN apk add --no-cache ca-certificates

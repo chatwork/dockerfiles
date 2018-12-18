@@ -1,13 +1,13 @@
 FROM alpine/git:1.0.4 as git
 
-ARG KUBEAWS_VERSION=v0.12.0
+ARG KUBEAWS_VERSION=v0.12.Y
+ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
 
 WORKDIR /
 
 RUN git clone https://github.com/kubernetes-incubator/kube-aws.git\
     && cd /kube-aws \
-    && git checkout -b tag refs/tags/$KUBEAWS_VERSION
-
+    && git checkout -b tag refs/tags/$KUBEAWS_VERSION || git checkout $(echo $KUBEAWS_HASH) -b $KUBEAWS_VERSION
 
 FROM instrumentisto/dep:0.5.0 as dep
 
@@ -28,7 +28,8 @@ RUN apk add --no-cache bash make git ca-certificates && make build
 
 FROM alpine:latest
 
-ARG KUBEAWS_VERSION=v0.12.0
+ARG KUBEAWS_VERSION=v0.12.Y
+ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
 
 LABEL version="${KUBEAWS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"

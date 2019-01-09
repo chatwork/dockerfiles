@@ -21,6 +21,7 @@ command:
     exit-status: 0
     stdout:
       - /^diff/
+      - /^import/
       - /^secrets/
   /bin/helmfile -v:
     exit-status: 0

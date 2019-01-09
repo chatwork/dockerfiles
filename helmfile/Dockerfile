@@ -25,6 +25,7 @@ RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
   && /bin/helm init --client-only
 
 RUN mkdir -p "$(helm home)/plugins" && \
+    helm plugin install https://github.com/k-kinzal/helm-import && \
     helm plugin install https://github.com/databus23/helm-diff --version ${HELM_DIFF_VERSION} && \
     helm plugin install https://github.com/futuresimple/helm-secrets --version ${HELM_SECRETS_VERSION}
 

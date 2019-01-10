@@ -4,7 +4,8 @@ ARG KUBECTL_VERSION=1.11.2
 ARG HELM_VERSION=2.11.0
 ARG HELM_DIFF_VERSION=master
 ARG HELM_SECRETS_VERSION=master
-ARG HELMFILE_VERSION=0.40.1
+ARG HELM_IMPORT_VERSION=0.2.0
+ARG HELMFILE_VERSION=0.41.0
 
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
@@ -25,6 +26,7 @@ RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
   && /bin/helm init --client-only
 
 RUN mkdir -p "$(helm home)/plugins" && \
+    helm plugin install https://github.com/k-kinzal/helm-import --version ${HELM_IMPORT_VERSION}  && \
     helm plugin install https://github.com/databus23/helm-diff --version ${HELM_DIFF_VERSION} && \
     helm plugin install https://github.com/futuresimple/helm-secrets --version ${HELM_SECRETS_VERSION}
 

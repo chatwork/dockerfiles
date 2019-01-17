@@ -34,7 +34,6 @@ ARG KUBEAWS_VERSION=v0.12.1
 ARG KUBEAWS_HASH=
 
 LABEL version="${KUBEAWS_VERSION}${KUBEAWS_HASH}"
-LABEL version="${KUBEAWS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 RUN apk add --no-cache ca-certificates

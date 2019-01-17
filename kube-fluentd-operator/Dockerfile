@@ -1,7 +1,7 @@
 # builder image
 FROM golang:1.10 as builder
 
-ARG KFO_VERSION="v1.7.0"
+ARG KFO_VERSION="v1.8.0"
 WORKDIR /go/src/github.com/vmware/kube-fluentd-operator/config-reloader
 RUN go get -u github.com/golang/dep/cmd/dep
 COPY kube-fluentd-operator/config-reloader/. .
@@ -14,7 +14,7 @@ RUN make build VERSION=$(KFO_VERSION)
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
 FROM fluent/fluentd:v1.3.2-debian
 
-LABEL version=v1.3.2-v1.7.0
+LABEL version=v1.3.2-v1.8.0
 LABEL maintainer="sakamoto@chatwork.com"
 
 # start with a valid empty file

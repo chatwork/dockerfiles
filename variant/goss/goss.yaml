@@ -3,7 +3,5 @@ file:
     exists: true
     mode: "0755"
 command:
-  /usr/local/bin/variant version:
+  /usr/local/bin/variant --help:
     exit-status: 0
-    stderr:
-      - framework_version=bc654794debb5d4cda53953ddea02a5f33dbdf5c+dirty

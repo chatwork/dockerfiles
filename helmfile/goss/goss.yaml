@@ -16,13 +16,14 @@ command:
   /bin/helm version:
     exit-status: 1
     stdout:
-    - v2.12.2
+    - v2.12.3
   /bin/helm plugin list:
     exit-status: 0
     stdout:
       - /^diff/
       - /^import/
       - /^secrets/
+      - /^tiller/
   /bin/helmfile -v:
     exit-status: 0
     stdout:

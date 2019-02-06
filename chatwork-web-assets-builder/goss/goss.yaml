@@ -1,0 +1,9 @@
+command:
+  php -v:
+    exit-status: 0
+    stdout:
+      - /^PHP 7.[1-9].+/ # PHP 7.1 and above
+  php -m | grep swoole:
+    exit-status: 0
+  java -version:
+    exit-status: 0

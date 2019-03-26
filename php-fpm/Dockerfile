@@ -38,4 +38,6 @@ RUN \
   && docker-php-ext-enable \
     apcu \
     igbinary \
-    redis
+    redis \
+    grpc \
+    protobuf

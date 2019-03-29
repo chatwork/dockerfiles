@@ -10,5 +10,7 @@ command:
     exit-status: 0
     stdout:
       - aws-cli/1.16.132
+  /usr/bin/aws help:
+    exit-status: 0
   /usr/bin/jq --version:
     exit-status: 0

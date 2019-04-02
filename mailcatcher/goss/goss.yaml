@@ -1,0 +1,17 @@
+process:
+  mailcatcher:
+    running: true
+port:
+  tcp:1025:
+    listening: true
+    ip:
+      - 0.0.0.0
+  tcp:1080:
+    listening: true
+    ip:
+      - 0.0.0.0
+http:
+  http://localhost:1080/messages:
+    status: 200
+    body:
+      - "[]"

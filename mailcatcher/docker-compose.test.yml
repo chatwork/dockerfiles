@@ -8,4 +8,5 @@ services:
     command: /usr/local/bin/dgoss run chatwork/mailcatcher
     volumes:
       - ./goss/goss.yaml:/goss/goss.yaml
+      - ./goss/goss_wait.yaml:/goss/goss_wait.yaml
       - /var/run/docker.sock:/var/run/docker.sock

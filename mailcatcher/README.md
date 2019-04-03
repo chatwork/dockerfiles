@@ -33,11 +33,13 @@ Body
 ^C
 ```
 
-Web interface
+Web UI
 
 ```
 $ open http://localhost:1080/
 ```
+
+<img width="935" alt="mailcatcher" src="https://user-images.githubusercontent.com/88324/55445914-8437a380-55f8-11e9-9cb4-d4278c44efcc.png">
 
 Web API
 

@@ -1,7 +1,7 @@
 FROM alpine/git:1.0.4 as git
 
-ARG KUBEAWS_VERSION=v0.12.2
-#ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
+ARG KUBEAWS_VERSION=v0.12.3
+#if you setting kubeaws-version to commit hash, you set ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
 ARG KUBEAWS_HASH=
 
 WORKDIR /
@@ -29,7 +29,7 @@ RUN apk add --no-cache bash make git ca-certificates && make build
 
 FROM alpine:latest
 
-ARG KUBEAWS_VERSION=v0.12.2
+ARG KUBEAWS_VERSION=v0.12.3
 #ARG KUBEAWS_HASH=-a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
 ARG KUBEAWS_HASH=
 

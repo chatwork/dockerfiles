@@ -1,6 +1,6 @@
 FROM chatwork/alpine-sdk:3.8
 
-ARG KUBECTL_VERSION=1.11.7
+ARG KUBECTL_VERSION=1.14.2
 
 LABEL version="${KUBECTL_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

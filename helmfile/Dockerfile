@@ -1,16 +1,18 @@
 FROM chatwork/alpine-sdk:3.8
 
-ARG KUBECTL_VERSION=1.11.6
-ARG HELM_VERSION=2.12.3
+ARG KUBECTL_VERSION=1.14.2
+ARG HELM_VERSION=2.14.0
 ARG HELM_DIFF_VERSION=master
 ARG HELM_SECRETS_VERSION=master
 ARG HELM_IMPORT_VERSION=0.2.1
 ARG HELM_TILLER_VERSION=v0.6.7
-ARG HELMFILE_VERSION=0.61.1
+ARG HELM_GIT_VERSION=v0.3.1
+ARG HELMFILE_VERSION=0.63.0
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}-${KUBECTL_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 WORKDIR /
 
@@ -27,6 +29,7 @@ RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
 
 RUN mkdir -p "$(helm home)/plugins" && \
     helm plugin install https://github.com/k-kinzal/helm-import --version ${HELM_IMPORT_VERSION}  && \
+    helm plugin install https://github.com/aslafy-z/helm-git.git --version ${HELM_GIT_VERSION}  && \
     helm plugin install https://github.com/databus23/helm-diff --version ${HELM_DIFF_VERSION} && \
     helm plugin install https://github.com/futuresimple/helm-secrets --version ${HELM_SECRETS_VERSION} && \
     helm plugin install https://github.com/rimusz/helm-tiller --version ${HELM_TILLER_VERSION} && \

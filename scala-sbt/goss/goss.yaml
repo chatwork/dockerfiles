@@ -19,7 +19,7 @@ command:
   printenv JAVA_VERSION:
     exit-status: 0
     stdout:
-    - "jdk8u191-b12"
+    - "jdk8u212-b03"
     timeout: 5000
   readlink -f /bin/sh:
     exit-status: 0
@@ -29,7 +29,7 @@ command:
   which scala:
     exit-status: 0
     stdout:
-    - "/root/scala-2.12.4/bin/scala"
+    - "/root/scala-2.11.8/bin/scala"
     timeout: 5000
   which sbt:
     exit-status: 0

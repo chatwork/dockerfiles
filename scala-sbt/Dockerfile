@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk8:x86_64-ubuntu-jdk8u212-b03-slim
 
-ARG SCALA_VERSION=2.11.8
+ARG SCALA_VERSION=2.12.4
 ARG SBT_VERSION=1.1.0
 ARG WORKDIR=/root
 

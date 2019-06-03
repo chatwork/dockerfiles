@@ -47,6 +47,7 @@ RUN apt-get update \
  && gem install fluent-plugin-s3 -v "1.1.10" \
  && gem install fluent-plugin-systemd -v "1.0.2"\
  && gem install fluent-plugin-datadog -v "0.10.5"\
+ && gem install fluent-plugin-cloudwatch-logs -v "0.7.3" \
  && gem install logfmt \
  && apt-get purge -y --auto-remove \
                   -o APT::AutoRemove::RecommendsImportant=false \

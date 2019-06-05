@@ -3,7 +3,7 @@
 FROM ruby:2.5-slim-stretch
 LABEL maintainer "Ryo Sakamoto <sakamoto@chatwork.com>"
 LABEL Description="Fluentd docker image"
-LABEL version="1.5.0"
+LABEL version="v1.5.0"
 
 ENV TINI_VERSION=0.18.0
 
@@ -26,7 +26,7 @@ RUN apt-get update \
  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch" \
  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc" \
  && export GNUPGHOME="$(mktemp -d)" \
- && gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 \
+ && gpg --batch --keyserver ipv4.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 \
  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini \
  && rm -r /usr/local/bin/tini.asc \
  && chmod +x /usr/local/bin/tini \

@@ -28,7 +28,7 @@ ci\:diff\:to:
 
 .PHONY: ci\:diff
 ci\:diff:
-	@git --no-pager diff --name-only "$(shell make ci:diff:from)" "$(shell make ci:diff:to)" | sed 's:^.*/compare/::g' | xargs -I{} dirname {} | sed 's/[.\/].*$$//' | sed '/^$$/d' | uniq;
+	@git --no-pager diff --diff-filter=ACMR --name-only "$(shell make ci:diff:from)" "$(shell make ci:diff:to)" | sed 's:^.*/compare/::g' | xargs -I{} dirname {} | xargs -I{} sh -c "test -d {} && echo {}" | sed 's/[.\/].*$$//' | sed '/^$$/d' | uniq;
 
 .PHONY: ci\:changelog
 ci\:changelog:

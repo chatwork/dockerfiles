@@ -9,7 +9,7 @@ command:
   /usr/local/bundle/bin/fluentd --version:
     exit-status: 0
     stdout:
-    - "fluentd 1.5.0"
+    - "fluentd 1.5.1"
   /usr/local/bundle/bin/fluent-gem list:
     exit-status: 0
     stdout:

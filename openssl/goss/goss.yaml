@@ -2,8 +2,3 @@ file:
   /usr/bin/openssl:
     exists: true
     mode: "0755"
-command:
-  /usr/bin/openssl version:
-    exit-status: 0
-    stdout:
-      - "LibreSSL 2.7.4"

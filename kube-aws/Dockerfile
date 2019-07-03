@@ -1,8 +1,8 @@
 FROM alpine/git:1.0.4 as git
 
-ARG KUBEAWS_VERSION=v0.14.0-rc.2
+ARG KUBEAWS_VERSION=v0.14.X
 #if you setting kubeaws-version to commit hash, you set ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
-ARG KUBEAWS_HASH=
+ARG KUBEAWS_HASH=97bd3fa6b12d6a67cba5e2b7aa779b86df9ff4a2
 
 WORKDIR /
 
@@ -27,11 +27,11 @@ COPY --from=dep /go/src/github.com/kubernetes-incubator/kube-aws /go/src/github.
 WORKDIR /go/src/github.com/kubernetes-incubator/kube-aws
 RUN apk add --no-cache bash gcc libc-dev make git ca-certificates && make build
 
-FROM alpine:latest
+FROM alpine:3.10.0
 
-ARG KUBEAWS_VERSION=v0.14.0-rc.2
+ARG KUBEAWS_VERSION=v0.14.X
 #ARG KUBEAWS_HASH=-a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
-ARG KUBEAWS_HASH=
+ARG KUBEAWS_HASH=-97bd3fa6b12d6a67cba5e2b7aa779b86df9ff4a2
 
 LABEL version="${KUBEAWS_VERSION}${KUBEAWS_HASH}"
 LABEL maintainer="sakamoto@chatwork.com"

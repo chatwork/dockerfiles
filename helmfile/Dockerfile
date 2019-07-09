@@ -2,12 +2,13 @@ FROM chatwork/alpine-sdk:3.10
 
 ARG KUBECTL_VERSION=1.14.4
 ARG HELM_VERSION=2.14.1
-ARG HELM_DIFF_VERSION=master
+ARG HELM_DIFF_VERSION=2.11.0+5
 ARG HELM_SECRETS_VERSION=master
 ARG HELM_IMPORT_VERSION=0.2.1
-ARG HELM_TILLER_VERSION=v0.6.7
-ARG HELM_GIT_VERSION=v0.3.1
-ARG HELMFILE_VERSION=0.79.3
+ARG HELM_TILLER_VERSION=0.6.7
+ARG HELM_GIT_VERSION=0.4.2
+ARG HELM_X_VERSION=0.7.2
+ARG HELMFILE_VERSION=0.79.4
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}-${KUBECTL_VERSION}"
@@ -28,11 +29,12 @@ RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
   && /bin/helm init --client-only
 
 RUN mkdir -p "$(helm home)/plugins" && \
-    helm plugin install https://github.com/k-kinzal/helm-import --version ${HELM_IMPORT_VERSION}  && \
-    helm plugin install https://github.com/aslafy-z/helm-git.git --version ${HELM_GIT_VERSION}  && \
-    helm plugin install https://github.com/databus23/helm-diff --version ${HELM_DIFF_VERSION} && \
+    helm plugin install https://github.com/k-kinzal/helm-import --version v${HELM_IMPORT_VERSION}  && \
+    helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION}  && \
+    helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} && \
     helm plugin install https://github.com/futuresimple/helm-secrets --version ${HELM_SECRETS_VERSION} && \
-    helm plugin install https://github.com/rimusz/helm-tiller --version ${HELM_TILLER_VERSION} && \
+    helm plugin install https://github.com/rimusz/helm-tiller --version v${HELM_TILLER_VERSION} && \
+     helm plugin install https://github.com/mumoshu/helm-x --version v${HELM_X_VERSION} && \
     helm tiller install
 
 ADD https://github.com/roboll/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_linux_amd64 /bin/helmfile

@@ -12,7 +12,7 @@ command:
   /usr/local/bin/kubectl version:
     exit-status: 1
     stdout:
-    - v1.14.3
+    - v1.14.4
   /bin/helm version:
     exit-status: 1
     stdout:
@@ -28,4 +28,4 @@ command:
   /bin/helmfile -v:
     exit-status: 0
     stdout:
-      - v0.79.3
+      - v0.79.4

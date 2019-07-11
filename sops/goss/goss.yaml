@@ -2,12 +2,11 @@ file:
   /usr/local/bin/sops:
     exists: true
     mode: "0755"
+  /usr/bin/jq:
+    exists: true
+    mode: "0755"
 command:
   /usr/local/bin/sops -v:
     exit-status: 0
     stdout:
-      - "sops 3.2.0 (latest)"
-  /usr/bin/jq --version:
-    exit-status: 0
-    stdout:
-      - "jq-master-v3.7.0-4757-gc31a4d0fd5"
+      - "sops 3.3.1 (latest)"

@@ -25,6 +25,7 @@ command:
       - /^helm-git/
       - /^secrets/
       - /^tiller/
+      - /^x/
   /bin/helmfile -v:
     exit-status: 0
     stdout:

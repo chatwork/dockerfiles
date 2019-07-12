@@ -2,7 +2,7 @@ FROM alpine/git:1.0.4 as git
 
 ARG KUBEAWS_VERSION=v0.14.X
 #if you setting kubeaws-version to commit hash, you set ARG KUBEAWS_HASH=a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
-ARG KUBEAWS_HASH=97bd3fa6b12d6a67cba5e2b7aa779b86df9ff4a2
+ARG KUBEAWS_HASH=9732bc9ad88431392941ca126a1cb76e3df8478d
 
 WORKDIR /
 
@@ -31,7 +31,7 @@ FROM alpine:3.10.0
 
 ARG KUBEAWS_VERSION=v0.14.X
 #ARG KUBEAWS_HASH=-a09fae46c4b97578acbfcb9de4eeb87e8f1ae0fb
-ARG KUBEAWS_HASH=-97bd3fa6b12d6a67cba5e2b7aa779b86df9ff4a2
+ARG KUBEAWS_HASH=-9732bc9ad88431392941ca126a1cb76e3df8478d
 
 LABEL version="${KUBEAWS_VERSION}${KUBEAWS_HASH}"
 LABEL maintainer="sakamoto@chatwork.com"

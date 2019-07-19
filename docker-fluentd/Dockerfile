@@ -3,7 +3,7 @@
 FROM ruby:2.5-slim-stretch
 LABEL maintainer "Ryo Sakamoto <sakamoto@chatwork.com>"
 LABEL Description="Fluentd docker image"
-LABEL version="v1.5.1"
+LABEL version="v1.6.2"
 
 ENV TINI_VERSION=0.18.0
 
@@ -21,7 +21,7 @@ RUN apt-get update \
  && echo 'gem: --no-document' >> /etc/gemrc \
  && gem install oj -v "3.3.10" \
  && gem install json -v "2.2.0" \
- && gem install fluentd -v "1.5.1" \
+ && gem install fluentd -v "1.6.2" \
  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')" \
  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch" \
  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc" \
@@ -38,7 +38,7 @@ RUN apt-get update \
  && gem install fluent-plugin-concat -v "2.3.0" \
  && gem install fluent-plugin-detect-exceptions -v "0.0.12" \
  && gem install grpc -v "1.14.2" \
- && gem install fluent-plugin-google-cloud -v "0.7.6" \
+ && gem install fluent-plugin-google-cloud -v "0.7.15" \
  && gem install fluent-plugin-kafka -v "0.9.6" \
  && gem install fluent-plugin-kinesis -v "3.1.0" \
  && gem install fluent-plugin-record-modifier -v "2.0.1" \
@@ -62,11 +62,9 @@ RUN groupadd -r fluent && useradd -r -g fluent fluent \
     && mkdir -p /fluentd/etc /fluentd/plugins \
     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
 
-
 COPY fluent.conf /fluentd/etc/
 COPY entrypoint.sh /bin/
 Run chmod 755 /bin/entrypoint.sh
-
 
 ENV FLUENTD_CONF="fluent.conf"
 

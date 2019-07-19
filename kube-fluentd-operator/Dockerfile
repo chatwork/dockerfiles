@@ -1,7 +1,7 @@
 # builder image
-FROM golang:1.10 as builder
+FROM golang:1.12 as builder
 
-ARG KFO_VERSION="v1.8.0"
+ARG KFO_VERSION="v1.9.0"
 WORKDIR /go/src/github.com/vmware/kube-fluentd-operator/config-reloader
 RUN go get -u github.com/golang/dep/cmd/dep
 COPY kube-fluentd-operator/config-reloader/. .
@@ -12,48 +12,35 @@ RUN make test
 RUN make build VERSION=$(KFO_VERSION)
 
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
-FROM fluent/fluentd:v1.3.2-debian
+FROM chatwork/docker-fluentd:v1.6.2
 
-LABEL version=v1.3.2-v1.8.0
+LABEL version=v1.6.2-v1.9.0
 LABEL maintainer="sakamoto@chatwork.com"
 
+USER root
 # start with a valid empty file
 COPY files/failsafe.conf /fluentd/failsafe.conf
 COPY files/entrypoint.sh /fluentd/entrypoint.sh
 RUN chmod 755 /fluentd/entrypoint.sh
 
 RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
-     && apt-get update \
-     && apt-get upgrade -y \
-     && apt-get install \
-     -y --no-install-recommends \
-     $buildDeps \
+      && apt-get update \
+      && apt-get install \
+       -y --no-install-recommends \
+      $buildDeps \
     && echo 'gem: --no-document' >> /etc/gemrc \
-    && fluent-gem install ffi \
-    && fluent-gem install fluent-plugin-concat \
-    && fluent-gem install fluent-plugin-detect-exceptions \
-    && fluent-gem install fluent-plugin-elasticsearch \
-    && fluent-gem install fluent-plugin-google-cloud \
-    && fluent-gem install fluent-plugin-bigquery \
-    && fluent-gem install fluent-plugin-kafka \
-    && fluent-gem install fluent-plugin-kinesis \
-    && fluent-gem install fluent-plugin-kubernetes \
-    && fluent-gem install fluent-plugin-kubernetes_metadata_filter \
-    && fluent-gem install fluent-plugin-logentries \
-    && fluent-gem install fluent-plugin-mail \
-    && fluent-gem install fluent-plugin-out-http-ext \
-    && fluent-gem install fluent-plugin-parser \
-    && fluent-gem install fluent-plugin-record-modifier \
-    && fluent-gem install fluent-plugin-record-reformer \
-    && fluent-gem install fluent-plugin-remote_syslog \
-    && fluent-gem install fluent-plugin-rewrite-tag-filter \
-    && fluent-gem install fluent-plugin-route \
-    && fluent-gem install fluent-plugin-s3 \
-    && fluent-gem install fluent-plugin-scribe \
-    && fluent-gem install fluent-plugin-secure-forward \
-    && fluent-gem install fluent-plugin-systemd \
-    && fluent-gem install fluent-plugin-datadog \
-    && fluent-gem install logfmt \
+    && fluent-gem install ffi -v "1.11.1" \
+    && fluent-gem install fluent-plugin-elasticsearch -v "3.5.2"\
+    && fluent-gem install fluent-plugin-bigquery -v "2.1.0"\
+    && fluent-gem install fluent-plugin-kubernetes -v "0.3.1"\
+    && fluent-gem install fluent-plugin-kubernetes_metadata_filter -v "2.2.0" \
+    && fluent-gem install fluent-plugin-logentries -v "0.2.10"\
+    && fluent-gem install fluent-plugin-mail -v "0.3.0"\
+    && fluent-gem install fluent-plugin-out-http-ext -v "0.1.10"\
+    && fluent-gem install fluent-plugin-route -v "1.0.0"\
+    && fluent-gem install fluent-plugin-scribe -v "1.0.0"\
+    && fluent-gem install fluent-plugin-secure-forward -v "0.4.5"\
+    && fluent-gem install logfmt -v "0.0.8"\
     && SUDO_FORCE_REMOVE=yes \
     apt-get purge -y --auto-remove \
                   -o APT::AutoRemove::RecommendsImportant=false \
@@ -70,9 +57,18 @@ COPY kube-fluentd-operator/config-reloader/validate-from-dir.sh /bin/validate-fr
 COPY --from=builder /go/src/github.com/vmware/kube-fluentd-operator/config-reloader/config-reloader /bin/config-reloader
 RUN chmod 755 /bin/config-reloader
 
+# for kube-fluentd-operator https://github.com/vmware/kube-fluentd-operator/blob/v1.9.0/log-router/templates/daemonset.yaml#L92
+Run ln -s /usr/local/bundle/bin/fluentd /usr/local/bin/fluentd
+
 RUN rm -f kube-fluentd-operator
 
-USER root
+#RUN groupadd -r fluent && useradd -r -g fluent fluent \
+#    # for log storage (maybe shared with host)
+#RUN mkdir -p /fluentd/log \
+#    # configuration/plugins path (default: copied from .)
+#    && mkdir -p /fluentd/etc /fluentd/plugins \
+#    && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+
 WORKDIR /home/fluent
 
 ENTRYPOINT ["/fluentd/entrypoint.sh"]

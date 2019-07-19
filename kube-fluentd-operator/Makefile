@@ -1,5 +1,5 @@
-FLUENT_VERSION ?= v1.3.2
-KFO_VERSION ?= v1.8.0
+FLUENT_VERSION ?= v1.6.2
+KFO_VERSION ?= v1.9.0
 TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
@@ -9,6 +9,10 @@ build: clone
 	docker build -t $(IMAGE) \
 		--build-arg KFO_VERSION=$(KFO_VERSION) .;
 		make clean
+		@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+		if [ -n "$$version" ]; then \
+			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
+		fi
 
 .PHONY: check
 check:

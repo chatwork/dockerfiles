@@ -9,13 +9,13 @@ command:
   /usr/local/bundle/bin/fluentd --version:
     exit-status: 0
     stdout:
-    - "fluentd 1.5.1"
+    - "fluentd 1.6.2"
   /usr/local/bundle/bin/fluent-gem list:
     exit-status: 0
     stdout:
     - /^fluent-plugin-concat\ \(2\.3\.0\)/
     - /^fluent-plugin-detect-exceptions\ \(0\.0\.12\)/
-    - /^fluent-plugin-google-cloud\ \(0\.7\.6\)/
+    - /^fluent-plugin-google-cloud\ \(0\.7\.15\)/
     - /^fluent-plugin-kafka\ \(0\.9\.6\)/
     - /^fluent-plugin-kinesis\ \(3\.1\.0\)/
     - /^fluent-plugin-record-modifier\ \(2\.0\.1\)/

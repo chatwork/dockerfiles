@@ -1,9 +1,9 @@
 FROM chatwork/alpine-sdk:3.10
 
-ARG HELM_VERSION=2.14.1
+ARG HELM_VERSION=2.14.3
 
 LABEL version="${HELM_VERSION}"
-LABEL maintainer="j5ik2o@gmail.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 

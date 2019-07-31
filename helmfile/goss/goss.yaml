@@ -16,7 +16,7 @@ command:
   /bin/helm version:
     exit-status: 1
     stdout:
-    - v2.14.1
+    - v2.14.3
   /bin/helm plugin list:
     exit-status: 0
     stdout:
@@ -29,4 +29,4 @@ command:
   /bin/helmfile -v:
     exit-status: 0
     stdout:
-      - v0.80.1
+      - v0.80.2

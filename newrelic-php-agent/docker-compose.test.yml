@@ -3,13 +3,13 @@ services:
   busybox:
     build:
       context: .
-    image: chatwork/jq
+    image: chatwork/newrelic-php-agent
   sut:
     image: kiwicom/dgoss
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/newrelic tail -f /dev/null
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/newrelic-php-agent tail -f /dev/null
     volumes:
       - ./goss/goss.yaml:/goss/goss.yaml
       - /var/run/docker.sock:/var/run/docker.sock

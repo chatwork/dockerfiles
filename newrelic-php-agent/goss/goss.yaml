@@ -3,11 +3,6 @@ file:
     exists: true
     mode: "0644"
     filetype: file
-port:
-  tcp:80:
-    listening: true
-  tcp:443:
-    listening: true
 service:
   newrelic-daemon:
     enabled: true

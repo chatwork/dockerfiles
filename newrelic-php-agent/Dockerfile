@@ -7,7 +7,7 @@ ENV NR_PORT /tmp/.newrelic.sock
 ENV LICENSE_KEY 123
 ENV APPLICATION_NAME sample
 
-ARG NR_VERSION=${NR_VERSION}
+ARG NR_VERSION=8.7.0.242
 ARG NR_FILE_NAME=newrelic-php5-${NR_VERSION}-linux-musl
 ARG NR_FILE_URL=https://download.newrelic.com/php_agent/archive/$NR_VERSION/${NR_FILE_NAME}.tar.gz
 

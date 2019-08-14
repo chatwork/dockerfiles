@@ -3,24 +3,26 @@ FROM alpine:3.6
 LABEL version="0.0.0"
 LABEL maintainer="niinuma@chatwork.com"
 
-ENV NR_PORT /tmp/.newrelic.sock
-ENV LICENSE_KEY 123
-ENV APPLICATION_NAME sample
-
 ARG NR_VERSION=8.7.0.242
 ARG NR_FILE_NAME=newrelic-php5-${NR_VERSION}-linux-musl
-ARG NR_FILE_URL=https://download.newrelic.com/php_agent/archive/$NR_VERSION/${NR_FILE_NAME}.tar.gz
+ARG GOM_VERSION=3.5.0
 
-COPY entrypoint.sh /entrypoint.sh
-COPY config/newrelic.ini /usr/local/etc/php/conf.d/newrelic.ini
+COPY build/docker-* /usr/local/bin/
+COPY build/newrelic.cfg.template /etc/newrelic/
 
-RUN set -ex; \
-    apk --no-cache add curl; \
-    curl --connect-timeout 10 -o nr.tar.gz -fSL $NR_FILE_URL; \
-    tar -xf nr.tar.gz; \
-    cp $NR_FILE_NAME/daemon/newrelic-daemon.x64 /usr/local/bin/newrelic-daemon; \
-    mkdir -p /var/log/newrelic; \
-    rm -rf newrelic-php5* nr.tar.gz; \
-    chmod +x /entrypoint.sh;
+RUN set -xe \
+    && apk add --no-cache --virtual .run-deps socat \
+    && apk add --no-cache --virtual .build-deps curl \
+    && curl -SsL -o /usr/local/bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v$GOM_VERSION/gomplate_linux-amd64-slim \
+    && chmod 755 /usr/local/bin/gomplate \
+    && mkdir -p /tmp/newrelic \
+    && rm -rf /etc/dpkg \
+    && curl -Ss https://download.newrelic.com/php_agent/archive/$NR_VERSION/$NR_FILE_NAME.tar.gz | tar xvz -C /tmp/newrelic --strip 1 \
+    && cp /tmp/newrelic/daemon/newrelic-daemon.x64 /usr/bin/newrelic-daemon \
+    && rm -rf /tmp/*
 
-ENTRYPOINT ["/entrypoint.sh"]
+VOLUME [ "/newrelic" ]
+
+ENTRYPOINT ["docker-entrypoint"]
+
+EXPOSE 3019

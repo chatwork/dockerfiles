@@ -5,8 +5,6 @@ set -e
 : ${NEWRELIC_CONTAINER_PORT='3019'}
 : ${NEWRELIC_TARGET_HOST='127.0.0.1'}
 
-gomplate -f /etc/newrelic/newrelic.cfg.template -o /etc/newrelic/newrelic.cfg
-
 socat TCP-LISTEN:${NEWRELIC_CONTAINER_PORT},reuseaddr,fork,su=nobody TCP:${NEWRELIC_TARGET_HOST}:${NEWRELIC_AGENT_PORT} &
 
-exec "$@"
+exec /usr/bin/newrelic-daemon "$@"

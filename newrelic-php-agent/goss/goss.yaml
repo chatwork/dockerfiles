@@ -1,9 +1,15 @@
 file:
-  /usr/local/etc/php/conf.d/newrelic.ini:
+  /usr/bin/newrelic-daemon:
     exists: true
-    mode: "0644"
+    mode: "0755"
+    owner: root
+    group: root
     filetype: file
+  /tmp/.newrelic.sock:
+    exists: true
+    mode: "0777"
+    owner: root
+    group: root
 service:
   newrelic-daemon:
-    enabled: true
     running: true

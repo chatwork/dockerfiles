@@ -1,3 +1,3 @@
 #!/bin/sh
 set -e
-exec /usr/bin/newrelic-daemon "$@"
+exec /usr/bin/newrelic-daemon -f --logfile /dev/stdout "$@"

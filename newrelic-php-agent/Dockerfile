@@ -17,8 +17,6 @@ RUN set -xe \
     && cp /tmp/newrelic/daemon/newrelic-daemon.x64 /usr/bin/newrelic-daemon \
     && rm -rf /tmp/*
 
-VOLUME [ "/newrelic" ]
-
 ENTRYPOINT ["docker-entrypoint"]
 
 EXPOSE 3019

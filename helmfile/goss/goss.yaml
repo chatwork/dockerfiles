@@ -17,6 +17,10 @@ command:
     exit-status: 1
     stdout:
     - v2.14.3
+  /bin/aws-iam-authenticator version:
+    exit-status: 0
+    stdout:
+    - '{"Version":"v0.4.0","Commit":"c141eda34ad1b6b4d71056810951801348f8c367"}'
   /bin/helm plugin list:
     exit-status: 0
     stdout:
@@ -29,4 +33,4 @@ command:
   /bin/helmfile -v:
     exit-status: 0
     stdout:
-      - v0.80.2
+      - v0.81.0

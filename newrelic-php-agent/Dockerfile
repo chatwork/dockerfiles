@@ -11,7 +11,6 @@ COPY build/docker-* /usr/local/bin/
 ADD  https://download.newrelic.com/php_agent/archive/$NR_VERSION/$NR_FILE_NAME.tar.gz /tmp/
 
 RUN set -xe \
-    && apk --update --no-cache add --virtual .build-deps \
     && mkdir -p /tmp/newrelic \
     && tar xzf /tmp/$NR_FILE_NAME.tar.gz -C /tmp/newrelic --strip 1 \
     && cp /tmp/newrelic/daemon/newrelic-daemon.x64 /usr/bin/newrelic-daemon \

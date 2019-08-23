@@ -5,11 +5,3 @@ file:
     owner: root
     group: root
     filetype: file
-  /newrelic/.newrelic.sock:
-    exists: true
-    mode: "0777"
-    owner: root
-    group: root
-service:
-  newrelic-daemon:
-    running: true

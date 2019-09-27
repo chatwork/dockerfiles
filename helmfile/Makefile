@@ -2,7 +2,7 @@
 build:
 	@for version1 in `cat helmfile-versions | sed '1d' | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
 		helmfile_version=$$(echo $$version1 | tr -d "\n"); \
-		for version2 in `cat helm-versions | sed '1d' | grep -v beta | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
+		for version2 in `cat helm-versions | sed '1d' | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
 			helm_version=`echo "$$version2" | tr -d "\n"`; \
 			for version3 in `cat kubectl-versions | sed '1d' | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
 				kubectl_version=`echo "$$version3" | tr -d "\n"`; \
@@ -17,7 +17,7 @@ build:
 		done \
 	done
 	@helmfile_latest_version=`cat helmfile-versions | sed '1d' | head -n 1`; \
-	helm_latest_version=`cat helm-versions | sed '1d' | grep -v beta | head -n 1`; \
+	helm_latest_version=`cat helm-versions | sed '1d' | head -n 1`; \
 	kubectl_latest_version=`cat kubectl-versions | sed '1d' | head -n 1`; \
 		docker tag "chatwork/`basename $$PWD`:$$helmfile_latest_version-$$helm_latest_version-$$kubectl_latest_version" "chatwork/`basename $$PWD`:latest";
 

@@ -31,6 +31,7 @@ dependencies:
         args:
         - -s
         - 'https://storage.googleapis.com/kubernetes-release/release/stable.txt'
+    version: "> 1.0"
   helm:
     releasesFrom:
       githubReleases:
@@ -40,4 +41,4 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: roboll/helmfile
-    version: "> 1.14"
+    version: "> 0.1"

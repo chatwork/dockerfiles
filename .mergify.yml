@@ -1,0 +1,20 @@
+pull_request_rules:
+- name: automatic merge from bot
+  conditions:
+  - base=master
+  - author=github-actions[bot]
+  - "status-success=ci/circleci: test"
+  actions:
+    merge:
+      method: merge
+- name: automatic merge from user
+  conditions:
+  - "#approved-reviews-by>=1"
+  - "status-success=ci/circleci: test"
+  actions:
+    merge:
+      method: merge
+- name: delete head branch after merge
+  conditions: []
+  actions:
+    delete_head_branch: {}

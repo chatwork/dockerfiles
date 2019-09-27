@@ -1,0 +1,17 @@
+name: variant update dependencies
+on:
+  schedule:
+  - cron: '0 */1 * * *'
+
+jobs:
+  up:
+    name: mod up
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - uses: variantdev/mod-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MOD_ACTION_WORKING_DIR: variant/
+      with:
+        args: up --build --pull-request --title "[variant] update dependencies"

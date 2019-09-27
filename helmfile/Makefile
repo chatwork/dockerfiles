@@ -2,13 +2,13 @@
 build:
 	@for version1 in `cat helmfile-versions | sed '1d' | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
 		helmfile_version=$$(echo $$version1 | tr -d "\n"); \
-		for version2 in `cat helm-versions | sed '1d' | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
+		for version2 in `cat helm-versions | sed '1d' | grep -v beta | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
 			helm_version=`echo "$$version2" | tr -d "\n"`; \
 			for version3 in `cat kubectl-versions | sed '1d' | sort -r | rev | uniq -s 2 | rev | head -n 3`; do \
 				kubectl_version=`echo "$$version3" | tr -d "\n"`; \
 				version="$$helmfile_version-$$helm_version-$$kubectl_version"; \
 				echo "@@@ $$version @@@"; \
-				if ! curl -sSL https://registry.hub.docker.com/v2/repositories/chatwork/helmfile/tags/| sed -e 's/[][]//g' -e 's/"//g' -e 's/ //g' | tr '},{' '\n' | grep "name:$$version" 2>&1; then \
+				if ! curl -sSL https://registry.hub.docker.com/v2/repositories/chatwork/`basename $$PWD`/tags/| sed -e 's/[][]//g' -e 's/"//g' -e 's/ //g' | tr '},{' '\n' | grep "name:$$version" 2>&1; then \
 					docker build -t chatwork/`basename $$PWD`:"$$version" --build-arg HELMFILE_VERSION="$$helmfile_version" --build-arg HELM_VERSION="$$helm_version" --build-arg KUBECTL_VERSION="$$kubectl_version" .; \
 				else \
 					docker pull chatwork/`basename $$PWD`:"$$version"; \
@@ -17,7 +17,7 @@ build:
 		done \
 	done
 	@helmfile_latest_version=`cat helmfile-versions | sed '1d' | head -n 1`; \
-	helm_latest_version=`cat helm-versions | sed '1d' | head -n 1`; \
+	helm_latest_version=`cat helm-versions | sed '1d' | grep -v beta | head -n 1`; \
 	kubectl_latest_version=`cat kubectl-versions | sed '1d' | head -n 1`; \
 		docker tag "chatwork/`basename $$PWD`:$$helmfile_latest_version-$$helm_latest_version-$$kubectl_latest_version" "chatwork/`basename $$PWD`:latest";
 

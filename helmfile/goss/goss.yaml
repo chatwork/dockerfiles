@@ -13,6 +13,10 @@ command:
     exit-status: 1
   /bin/helm version:
     exit-status: 1
+  /bin/aws-iam-authenticator version:
+    exit-status: 0
+  /bin/helm version:
+    exit-status: 1
   /bin/helm plugin list:
     exit-status: 0
     stdout:

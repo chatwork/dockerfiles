@@ -11,16 +11,12 @@ file:
 command:
   /usr/local/bin/kubectl version:
     exit-status: 1
-    stdout:
-    - v1.14.6
   /bin/helm version:
     exit-status: 1
-    stdout:
-    - v2.14.3
   /bin/aws-iam-authenticator version:
-    exit-status: 0
-    stdout:
-    - '{"Version":"v0.4.0","Commit":"c141eda34ad1b6b4d71056810951801348f8c367"}'
+    exit-status: 2
+  /bin/helm version:
+    exit-status: 1
   /bin/helm plugin list:
     exit-status: 0
     stdout:
@@ -32,5 +28,3 @@ command:
       - /^x/
   /bin/helmfile -v:
     exit-status: 0
-    stdout:
-      - v0.81.3

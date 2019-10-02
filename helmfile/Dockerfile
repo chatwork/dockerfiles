@@ -1,14 +1,14 @@
 FROM chatwork/alpine-sdk:3.10
 
 ARG KUBECTL_VERSION=1.16.0
-ARG HELM_VERSION=3.0.0-beta.3
+ARG HELM_VERSION=2.14.3
 ARG HELM_DIFF_VERSION=2.11.0+5
 ARG HELM_SECRETS_VERSION=master
 ARG HELM_IMPORT_VERSION=0.2.1
 ARG HELM_TILLER_VERSION=0.6.7
 ARG HELM_GIT_VERSION=0.4.2
 ARG HELM_X_VERSION=0.7.2
-ARG HELMFILE_VERSION=0.85.2
+ARG HELMFILE_VERSION=0.85.3
 ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}-${KUBECTL_VERSION}"
@@ -36,9 +36,6 @@ RUN mkdir -p "$(helm home)/plugins" && \
     helm plugin install https://github.com/rimusz/helm-tiller --version v${HELM_TILLER_VERSION} && \
     helm plugin install https://github.com/mumoshu/helm-x --version v${HELM_X_VERSION} && \
     helm tiller install
-
-RUN curl -o /bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/${EKS_VERSION}/2019-06-11/bin/linux/amd64/aws-iam-authenticator && \
-    chmod +x /bin/aws-iam-authenticator
 
 ADD https://github.com/roboll/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_linux_amd64 /bin/helmfile
 RUN chmod 0755 /bin/helmfile

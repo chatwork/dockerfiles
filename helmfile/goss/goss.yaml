@@ -14,7 +14,7 @@ command:
   /bin/helm version:
     exit-status: 1
   /bin/aws-iam-authenticator version:
-    exit-status: 2
+    exit-status: 0
   /bin/helm version:
     exit-status: 1
   /bin/helm plugin list:

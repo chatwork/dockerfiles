@@ -8,20 +8,29 @@ provisioners:
         helmfile_version: "{{ .helmfile.version }}"
   textReplace:
     kubectl-versions:
-      from: "# {{`{{ .kubectl_version }}`}}"
+      from: |
+        # {{`{{ .kubectl_version }}`}}
+        {{ .kubectl.previousVersion }}
       to: |
         # {{`{{ .kubectl_version }}`}}
         {{ .kubectl.version }}
+        {{ .kubectl.previousVersion }}
     helm-versions:
-      from: "# {{`{{ .helm_version }}`}}"
+      from: |
+        # {{`{{ .helm_version }}`}}
+        {{ .helm.previousVersion }}
       to: |
         # {{`{{ .helm_version }}`}}
         {{ .helm.version }}
+        {{ .helm.previousVersion }}
     helmfile-versions:
-      from: "# {{`{{ .helmfile_version }}`}}"
+      from: |
+        # {{`{{ .helmfile_version }}`}}
+        {{ .helmfile.previousVersion }}
       to: |
         # {{`{{ .helmfile_version }}`}}
         {{ .helmfile.version }}
+        {{ .helmfile.previousVersion }}
 
 dependencies:
   kubectl:

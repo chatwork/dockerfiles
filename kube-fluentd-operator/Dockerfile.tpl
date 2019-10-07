@@ -11,7 +11,7 @@ COPY kube-fluentd-operator/config-reloader/. .
 # Speed up local builds where vendor is populated
 RUN [ -d vendor/github.com ] || make dep; true
 RUN make test
-RUN make build VERSION={{ .kfo_version }}
+RUN make build VERSION=v{{ .kfo_version }}
 
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
 FROM fluent/fluentd:v{{ .fluentd_version }}-debian-1.0

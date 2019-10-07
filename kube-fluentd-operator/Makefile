@@ -4,8 +4,7 @@ IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
 
 .PHONY: build
 build: clone
-	docker build -t $(IMAGE) \
-		--build-arg KFO_VERSION=$(KFO_VERSION) .;
+	docker build -t $(IMAGE) .;
 		make clean
 		@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
 		if [ -n "$$version" ]; then \

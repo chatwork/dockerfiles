@@ -3,21 +3,21 @@ provisioners:
     Dockerfile:
       source: Dockerfile.tpl
       arguments:
-        kfo_version: "{{ .kfo.version }}"
-        fluentd_version: "{{ .fluentd.version }}"
+        kfo_version: "v{{ .kfo.version }}"
+        fluentd_version: "v{{ .fluentd.version }}"
   textReplace:
     Makefile:
-      from: "{{ .kfo.previousVersion }}"
-      to: "{{ .kfo.version }}"
+      from: "v{{ .kfo.previousVersion }}"
+      to: "v{{ .kfo.version }}"
 
 dependencies:
   kfo:
     releasesFrom:
       githubReleases:
         source: vmware/kube-fluentd-operator
-    version: "> 1.9.0"
+    version: "> v1.9.0"
   fluentd:
     releasesFrom:
       githubTags:
         source: fluent/fluentd
-    version: "> 1.6.0"
+    version: "> v1.6.0"

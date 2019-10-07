@@ -1,7 +1,7 @@
 name: kube-fluentd-operator update dependencies
 on:
   schedule:
-  - cron: '0 */1 * * *'
+  - cron: '10 */1 * * *'
 
 jobs:
   up:

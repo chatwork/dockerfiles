@@ -1,8 +1,8 @@
 # builder image
 FROM golang:1.12 as builder
 
-ARG KFO_VERSION="1.10.0"
-ARG FLUENTD_VERSION="1.7.3"
+ARG KFO_VERSION="{{ .kfo_version }}"
+ARG FLUENTD_VERSION="{{ .fluentd_version }}"
 
 WORKDIR /go/src/github.com/vmware/kube-fluentd-operator/config-reloader
 RUN go get -u github.com/golang/dep/cmd/dep
@@ -11,12 +11,12 @@ COPY kube-fluentd-operator/config-reloader/. .
 # Speed up local builds where vendor is populated
 RUN [ -d vendor/github.com ] || make dep; true
 RUN make test
-RUN make build VERSION=1.10.0
+RUN make build VERSION={{ .kfo_version }}
 
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
-FROM fluent/fluentd:v1.7.3-debian-1.0
+FROM fluent/fluentd:v{{ .fluentd_version }}-debian-1.0
 
-LABEL version="v1.7.3-v1.10.0"
+LABEL version="v{{ .fluentd_version }}-v{{ .kfo_version }}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 USER root

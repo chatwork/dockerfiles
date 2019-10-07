@@ -1,13 +1,10 @@
-FLUENT_VERSION ?= v1.6.2
-KFO_VERSION ?= v1.9.0
-TAG ?= $(FLUENT_VERSION)-$(KFO_VERSION)
+KFO_VERSION ?= v1.10.0
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
 
 .PHONY: build
 build: clone
-	docker build -t $(IMAGE) \
-		--build-arg KFO_VERSION=$(KFO_VERSION) .;
+	docker build -t $(IMAGE) .;
 		make clean
 		@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
 		if [ -n "$$version" ]; then \
@@ -46,23 +43,3 @@ clone: clean
 .PHONY: clean
 clean:
 	/bin/rm -fr kube-fluentd-operator
-
-.PHONY: shell
-shell:
-	docker run --entrypoint=/bin/bash \
-	  -ti --rm -v `pwd`:/workspace --net=host \
-	  $(IMAGE):$(TAG)
-
-.PHONY: run-fluentd
-run-fluentd:
-	docker run --entrypoint=fluentd \
-	  -ti --rm -v `pwd`:/workspace --net=host \
-	  $(IMAGE):$(TAG) \
-	  -p /fluentd/plugins -v -c /workspace/local-fluent.conf
-
-.PHONY: validate-config
-validate-config:
-	docker run --entrypoint=fluentd \
-	  -ti --rm -v `pwd`:/workspace --net=host \
-	  $(IMAGE):$(TAG) \
-	  --dry-run -p /fluentd/plugins -v -c /workspace/tmp/fluent.conf

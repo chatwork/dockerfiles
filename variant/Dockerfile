@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG VARIANT_VERSION=0.35.1
+ARG VARIANT_VERSION=0.36.3
 
 LABEL version="${VARIANT_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

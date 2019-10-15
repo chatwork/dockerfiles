@@ -8,8 +8,6 @@ file:
 command:
   /usr/bin/aws --version:
     exit-status: 0
-    stdout:
-      - aws-cli/1.16.256
   /usr/bin/aws help:
     exit-status: 0
   /usr/bin/jq --version:

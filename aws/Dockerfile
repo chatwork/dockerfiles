@@ -7,7 +7,7 @@ LABEL maintainer="ozaki@chatwork.com"
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN apk --no-cache add py3-pip groff jq \
+RUN apk --no-cache add python3 py3-pip groff jq \
     && pip3 install --no-cache-dir --upgrade pip \
     && pip3 install --no-cache-dir awscli==${AWSCLI_VERSION} \
     && chmod +x /entrypoint.sh

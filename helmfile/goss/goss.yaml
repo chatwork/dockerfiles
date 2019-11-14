@@ -1,30 +1,30 @@
 file:
+  /usr/local/bin/helmfile:
+    exists: true
+    mode: "0755"
+  /usr/local/bin/helm:
+    exists: true
+    mode: "0755"
   /usr/local/bin/kubectl:
     exists: true
     mode: "0711"
-  /bin/helm:
-    exists: true
-    mode: "0755"
-  /bin/helmfile:
+  /usr/local//bin/aws-iam-authenticator:
     exists: true
     mode: "0755"
 command:
-  /usr/local/bin/kubectl version:
-    exit-status: 1
-  /bin/helm version:
-    exit-status: 1
-  /bin/aws-iam-authenticator version:
+  /usr/local/bin/helmfile -v:
     exit-status: 0
-  /bin/helm version:
-    exit-status: 1
-  /bin/helm plugin list:
+  /usr/local/bin/helm version:
+    exit-status: 0
+  /usr/local/bin/helm plugin list:
     exit-status: 0
     stdout:
       - /^diff/
-      - /^import/
       - /^helm-git/
       - /^secrets/
       - /^tiller/
       - /^x/
-  /bin/helmfile -v:
+  /usr/local/bin/kubectl version --client:
+    exit-status: 0
+  /usr/local/bin/aws-iam-authenticator version:
     exit-status: 0

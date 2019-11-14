@@ -1,9 +1,9 @@
 file:
-  /bin/helm:
+ /usr/bin/helm:
     exists: true
     mode: "0755"
 command:
-  /bin/helm version --client:
+  /usr/bin/helm version:
     exit-status: 0
     stdout:
-      - 2.16.1
+      - 3.0.0

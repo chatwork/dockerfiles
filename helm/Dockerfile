@@ -1,20 +1,13 @@
-FROM chatwork/alpine-sdk:3.10
+ARG HELM_VERSION=3.0.0
 
-ARG HELM_VERSION=2.16.1
+FROM alpine/helm:${HELM_VERSION}
 
+ARG HELM_VERSION=3.0.0
 LABEL version="${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
-ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
-
 WORKDIR /
 
-RUN apk --update --no-cache add ca-certificates
+RUN apk --update --no-cache add ca-certificates bash
 
-ADD http://storage.googleapis.com/kubernetes-helm/${HELM_FILE_NAME} /tmp
-RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
-  && mv /tmp/linux-amd64/helm /bin/helm \
-  && rm -rf /tmp/* \
-  && /bin/helm init --client-only
-
-ENTRYPOINT ["/bin/helm"]
+ENTRYPOINT ["/usr/bin/helm"]

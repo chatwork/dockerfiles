@@ -75,7 +75,7 @@ workflows:
       - mod
     triggers:
       - schedule:
-          cron: "0 * * * *"
+          cron: "6 * * * *"
           filters:
             branches:
               only:

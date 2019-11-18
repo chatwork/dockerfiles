@@ -19,6 +19,8 @@ jobs:
       - run:
           name: notification failed
           command: |
+            git config --global user.email "server_admin+cw-circleci@chatwork.com"
+            git config --global user.name "CircleCI"
             make ci:diff | xargs -I{} /bin/bash -c '
               version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/{});
               if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/{}:${version})" != "[]" ]; then
@@ -75,7 +77,7 @@ workflows:
       - mod
     triggers:
       - schedule:
-          cron: "6 * * * *"
+          cron: "9 * * * *"
           filters:
             branches:
               only:

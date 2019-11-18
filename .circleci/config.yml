@@ -71,7 +71,7 @@ jobs:
       - run:
           name: Install PR CLI
           command: |
-            curl -sSL https://github.com/k-kinzal/pr/releases/download/v0.2.0/pr_darwin_amd64.tar.gz | tar zx -C /tmp
+            curl -sSL https://github.com/k-kinzal/pr/releases/download/v0.2.1/pr_linux_amd64.tar.gz | tar zx -C /tmp
             sudo mv /tmp/pr /usr/local/bin/prcli
             sudo chmod 755 /usr/local/bin/prcli
       - run:

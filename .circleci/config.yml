@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   test:
     machine:
@@ -41,6 +41,24 @@ jobs:
                              -e BODY="$(echo -e "changelog\n${changelog}")";
             '
           when: on_success
+  mod:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: Install mod
+          command: |
+            curl -sSL https://github.com/variantdev/mod/releases/download/v0.6.1/mod_0.6.1_linux_amd64.tar.gz | tar zx -C /tmp
+            sudo mv /tmp/mod /usr/local/bin/mod
+            sudo chmod 755 /usr/local/bin/mod
+      - run:
+          name: Update dependencies
+          command: |
+            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c '
+              git checkout master
+              git reset --hard master
+              cd {} && mod up --build --pull-request --title "[{}] update dependencies"
+            '
 workflows:
   version: 2
   integration:
@@ -52,3 +70,13 @@ workflows:
           filters:
             branches:
               only: master
+  update_dependecies:
+    jobs:
+      - mod
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master

@@ -54,10 +54,13 @@ jobs:
       - run:
           name: Update dependencies
           command: |
+            git config --global user.email "server_admin+cw-circleci@chatwork.com"
+            git config --global user.name "CircleCI"
             ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c '
+              echo "\n# {}"
               git checkout master
               git reset --hard master
-              cd {} && mod up --build --pull-request --title "[{}] update dependencies"
+              cd {} && mod up --build --branch 'mod-up-{}' --pull-request --title "[{}] update dependencies"
             '
       - run:
           name: Notification failed
@@ -81,7 +84,7 @@ workflows:
       - mod
     triggers:
       - schedule:
-          cron: "0 ＊ * * *"
+          cron: "0 * * * *"
           filters:
             branches:
               only:

@@ -90,7 +90,7 @@ jobs:
       - run:
           name: Notification failed
           command: |
-              make ci:notify -e TITLE="Failed auto merge (devil)" \
+              make ci:notify -e TITLE="CircleCI: Failed auto merge (devil)" \
                              -e BODY="$(cat stderr)"
           when: on_fail
 workflows:

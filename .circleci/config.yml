@@ -75,7 +75,7 @@ jobs:
       - run:
           name: Auto merge (DRY RUN)
           command: |
-            prcli validate $CIRCLE_PR_USERNAME/$CIRCLE_PR_REPONAME --with-statuses --with-checks \
+            prcli --no-exit-code validate $CIRCLE_PR_USERNAME/$CIRCLE_PR_REPONAME --with-statuses --with-checks \
               -l 'state == `"open"`' \
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \

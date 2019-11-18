@@ -57,7 +57,7 @@ jobs:
             ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c '
               git checkout master
               git reset --hard master
-              cd {} && mod up --build --pull-request --title "[{}] update dependencies"
+              cd {} && mod up --build --branch 'mod-up-{}' --pull-request --title "[{}] update dependencies"
             '
 workflows:
   version: 2

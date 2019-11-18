@@ -45,6 +45,7 @@ jobs:
     machine: true
     steps:
       - checkout
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run:
           name: Install mod
           command: |
@@ -66,7 +67,41 @@ jobs:
           name: Notification failed
           command: |
               make ci:notify -e TITLE="CircleCI: Failed update dependencies (devil)" \
-                             -e BODY="Check the error from the following URL.";
+                             -e BODY="Check the error from the following URL."
+  merge:
+    machine: true
+    steps:
+      - checkout
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
+      - run:
+          name: Install PR CLI
+          command: |
+            curl -sSL https://github.com/k-kinzal/pr/releases/download/v0.2.1/pr_linux_amd64.tar.gz | tar zx -C /tmp
+            sudo mv /tmp/pr /usr/local/bin/prcli
+            sudo chmod 755 /usr/local/bin/prcli
+      - run:
+          name: Auto merge (DRY RUN)
+          command: |
+            prcli --no-exit-code validate chatwork/dockerfiles --with-statuses --with-checks \
+              -l 'state == `"open"`' \
+              -l 'base.ref == `"master"`' \
+              -l 'starts_with(head.ref, `"mod-up-"`)' \
+              -l 'user.login == `"cw-circleci"`' \
+              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`' 2>stderr
+      - run:
+          name: Auto merge
+          command: |
+            prcli merge chatwork/dockerfiles --with-statuses --with-checks \
+              -l 'state == `"open"`' \
+              -l 'base.ref == `"master"`' \
+              -l 'starts_with(head.ref, `"mod-up-"`)' \
+              -l 'user.login == `"cw-circleci"`' \
+              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`'
+      - run:
+          name: Notification failed
+          command: |
+              make ci:notify -e TITLE="CircleCI: Failed auto merge (devil)" \
+                             -e BODY="$(cat stderr)"
           when: on_fail
 workflows:
   version: 2
@@ -85,6 +120,16 @@ workflows:
     triggers:
       - schedule:
           cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+  auto_merge:
+    jobs:
+      - merge
+    triggers:
+      - schedule:
+          cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
           filters:
             branches:
               only:

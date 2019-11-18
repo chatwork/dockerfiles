@@ -1,4 +1,4 @@
-KFO_VERSION ?= v1.10.0
+KFO_VERSION ?= v1.11.0
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
 

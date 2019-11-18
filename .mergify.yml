@@ -2,7 +2,7 @@ pull_request_rules:
 - name: automatic merge from bot
   conditions:
   - base=master
-  - author=github-actions[bot]
+  - author=cw-circleci
   - "status-success=ci/circleci: test"
   actions:
     merge:

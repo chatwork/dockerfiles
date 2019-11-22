@@ -68,7 +68,7 @@ jobs:
           command: |
               make ci:notify -e TITLE="CircleCI: Failed update dependencies (devil)" \
                              -e BODY="Check the error from the following URL."
-          when: on_success
+          when: on_fail
   merge:
     machine: true
     steps:

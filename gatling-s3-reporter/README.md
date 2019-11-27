@@ -4,7 +4,7 @@ Generate report page from Gatling logs.
 https://gatling.io/docs/2.2/
 
 Gatling logs must be stored in S3 directory, with filename `*.log`.
-Gatling report page is created on directory which logs are stored. 
+Gatling report page is created on directory where logs are stored.
 
 ## Usage
 

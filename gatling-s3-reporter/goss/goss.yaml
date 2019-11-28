@@ -1,3 +1,19 @@
+file:
+  /generate-report.sh:
+    exists: true
+    mode: "0755"
+  /opt/gatling/bin/gatling.sh:
+    exists: true
+    mode: "0744"
+  /usr/bin/aws:
+    exists: true
+    mode: "0755"
 command:
-  echo 1:
-    exit-status: 0
+  /generate-report.sh:
+    exit-status: 1
+    stdout:
+      - env S3_GATLING_BUCKET_NAME does not exist
+  S3_GATLING_BUCKET_NAME=xxx /generate-report.sh:
+    exit-status: 1
+    stdout:
+      - env S3_GATLING_RESULT_DIR_PATH does not exist

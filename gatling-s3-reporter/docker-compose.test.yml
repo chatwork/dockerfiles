@@ -9,7 +9,7 @@ services:
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run chatwork/gatling-s3-reporter tail -f /dev/null
+    command: /usr/local/bin/dgoss run --entrypoint tail chatwork/gatling-s3-reporter -f /dev/null
     volumes:
       - ./goss/goss.yaml:/goss/goss.yaml
       - /var/run/docker.sock:/var/run/docker.sock

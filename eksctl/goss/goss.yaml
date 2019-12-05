@@ -1,0 +1,9 @@
+file:
+ /usr/bin/eksctl:
+    exists: true
+    mode: "0755"
+command:
+  /usr/bin/eksctl version:
+    exit-status: 0
+    stdout:
+      - 0.11.0

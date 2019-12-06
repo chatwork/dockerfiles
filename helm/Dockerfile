@@ -1,8 +1,8 @@
-ARG HELM_VERSION=3.0.0
+ARG HELM_VERSION=3.0.1
 
 FROM alpine/helm:${HELM_VERSION}
 
-ARG HELM_VERSION=3.0.0
+ARG HELM_VERSION=3.0.1
 LABEL version="${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

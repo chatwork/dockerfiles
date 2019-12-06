@@ -1,9 +1,16 @@
 file:
- /usr/bin/eksctl:
+ /usr/local/bin/eksctl:
+    exists: true
+    mode: "0755"
+ /usr/local/bin/kubectl:
     exists: true
     mode: "0755"
 command:
-  /usr/bin/eksctl version:
+  /usr/local/bin/eksctl version:
     exit-status: 0
     stdout:
       - 0.11.1
+  /usr/local/bin/kubectl version:
+    exit-status: 1
+    stdout:
+      - v1.15.6

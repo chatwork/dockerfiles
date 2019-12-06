@@ -1,10 +1,10 @@
-# helm
+# eksctl
 
-https://helm.sh/
+https://eksctl.io/
 
 
 ## Usage
 
 ```
-$ docker run -v ~/.kube:/root/.kube -v ${PWD}:/charts --net=host chatwork/helm init --kube-context docker-for-desktop
+docker run --rm -v "${HOME}/.aws:/root/.aws" -e AWS_PROFILE=XXX chatwork/eksctl create cluster --name docker-test-cluster
 ```

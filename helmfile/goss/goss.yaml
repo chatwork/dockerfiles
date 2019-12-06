@@ -2,13 +2,13 @@ file:
   /usr/local/bin/helmfile:
     exists: true
     mode: "0755"
+  /usr/bin/aws:
+    exists: true
+    mode: "0755"
   /usr/local/bin/helm:
     exists: true
     mode: "0755"
   /usr/local/bin/kubectl:
-    exists: true
-    mode: "0711"
-  /usr/local//bin/aws-iam-authenticator:
     exists: true
     mode: "0755"
 command:
@@ -25,5 +25,5 @@ command:
       - /^x/
   /usr/local/bin/kubectl version --client:
     exit-status: 0
-  /usr/local/bin/aws-iam-authenticator version:
+  /usr/bin/aws --version:
     exit-status: 0

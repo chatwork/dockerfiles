@@ -1,7 +1,7 @@
 FROM alpine:edge as downloads
 WORKDIR /downloads
 
-ARG EKSCTL_VERSION=0.11.0
+ARG EKSCTL_VERSION=0.11.1
 LABEL version="${EKSCTL_VERSION}"
 
 RUN wget https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION}/eksctl_Linux_amd64.tar.gz \
@@ -9,7 +9,7 @@ RUN wget https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION
 
 FROM chatwork/aws:latest
 
-ARG EKSCTL_VERSION=0.11.0
+ARG EKSCTL_VERSION=0.11.1
 LABEL version="${EKSCTL_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

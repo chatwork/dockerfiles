@@ -17,8 +17,13 @@ check:
 
 .PHONY: test
 test:
-	docker-compose -f docker-compose.test.yml run --rm sut;
-	docker-compose -f docker-compose.test.yml run --rm sut-with-sasl_passwd;
+	docker-compose -f docker-compose.test.yml up --no-start sut
+	docker cp $(shell pwd)/goss `basename $$PWD`:/goss
+	docker-compose -f docker-compose.test.yml up --no-recreate sut
+
+	docker-compose -f docker-compose.test.yml up --no-start sut-with-sasl_passwd
+	docker cp $(shell pwd)/goss `basename $$PWD`-with-sasl_passwd:/goss
+	docker-compose -f docker-compose.test.yml up --no-recreate sut-with-sasl_passwd
 
 .PHONY: push
 push:

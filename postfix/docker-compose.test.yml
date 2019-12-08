@@ -11,8 +11,8 @@ services:
       GOSS_FILES_STRATEGY: cp
       GOSS_SLEEP: 5
     command: /usr/local/bin/dgoss run chatwork/postfix
+    container_name: postfix
     volumes:
-      - ./goss/goss.yaml:/goss/goss.yaml
       - /var/run/docker.sock:/var/run/docker.sock
   sut-with-sasl_passwd:
     image: kiwicom/dgoss
@@ -21,8 +21,6 @@ services:
       GOSS_FILES_STRATEGY: cp
       GOSS_SLEEP: 5
     command: /bin/bash /goss/test_command.sh
+    container_name: postfix-with-sasl_passwd
     volumes:
-      - ./goss/with-sasl_passwd/goss.yaml:/goss/goss.yaml
-      - ./goss/with-sasl_passwd/sasl_passwd:/goss/sasl_passwd
-      - ./goss/with-sasl_passwd/test_command.sh:/goss/test_command.sh
       - /var/run/docker.sock:/var/run/docker.sock

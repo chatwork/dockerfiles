@@ -5,8 +5,7 @@ ARG EKSCTL_VERSION=0.11.1
 ARG KUBECTL_VERSION=1.15.6
 LABEL version="${EKSCTL_VERSION}"
 
-RUN wget https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION}/eksctl_Linux_amd64.tar.gz \
-    && tar zxvf eksctl_Linux_amd64.tar.gz
+RUN wget -O - https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION}/eksctl_Linux_amd64.tar.gz | tar zxvf -
 
 RUN wget https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl
 

@@ -6,7 +6,6 @@ services:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
     command: /usr/local/bin/dgoss run chatwork/mailcatcher
+    container_name: mailcatcher
     volumes:
-      - ./goss/goss.yaml:/goss/goss.yaml
-      - ./goss/goss_wait.yaml:/goss/goss_wait.yaml
       - /var/run/docker.sock:/var/run/docker.sock

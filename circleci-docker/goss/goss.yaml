@@ -1,0 +1,26 @@
+file:
+  /usr/local/bin/docker:
+    exists: true
+    mode: "0755"
+  /usr/bin/docker-compose:
+    exists: true
+    mode: "0755"
+  /usr/bin/make:
+    exists: true
+    mode: "0755"
+  /usr/bin/curl:
+    exists: true
+    mode: "0755"
+  /usr/bin/wget:
+    exists: true
+    mode: "0777"
+  /usr/bin/jq:
+    exists: true
+    mode: "0755"
+command:
+  docker version:
+    exit-status: 1
+    stdout:
+      - 18.09.3
+  docker-compose version:
+    exit-status: 0

@@ -1,0 +1,38 @@
+{
+  "taskDefs": {
+    "runner": {
+      "stackName": "[input CloudFormation stack name]",
+      "taskName": "[input task name defined in CloudFormation stack]"
+    },
+    "reporter": {
+      "stackName": "[input CloudFormation stack name]",
+      "taskName": "[input task name defined in CloudFormation stack]"
+    }
+  },
+  "awsSubnet": "[input AWS ]",
+  "awsSecurityGroup": "sg-0edaa232c3e5156d4",
+  "s3LogPrefix": "biryani-test/",
+  "reportParams": {
+    "hostUrl": "https://yyy.xxxx.zzz/"
+  },
+  "chatworkNotificationParams": {
+    "apiToken" : "[input Chatwork API Token if you want to send notification]",
+    "roomId": "[input Chatwork room id]",
+    "message": "gatling finished"
+  },
+  "tasks": {
+    "runner": {
+      "executionIdEnvName": "[input ENV_NAME if used]",
+      "count": 1,
+      "environment": {
+        "SOME_ENV_NAME": "some value"
+      }
+    },
+    "reporter": {
+      "executionIdEnvName": "S3_GATLING_RESULT_DIR_PATH",
+      "environment": {
+        "SOME_ENV_NAME": "some value"
+      }
+    }
+  }
+}

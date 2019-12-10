@@ -1,21 +1,40 @@
-version: 2
+version: 2.1
 jobs:
   test:
-    machine:
-      docker_layer_caching: true
+    docker:
+      - image: chatwork/circleci-docker:18.09.3
+    environment:
+      - CIRCLECI_WORKSPACE: /root/project
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 18.09.3
       - run: make ci:diff
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255"
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make test || exit 255"
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make test; done
+      - run:
+          name: Notification failed
+          command: |
+            if [ "${CIRCLE_PR_USERNAME}" == "cw-circleci" ]; then
+              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil)" \
+                        -e BODY="${CIRCLE_PULL_REQUEST}";
+            fi
+          when: on_fail
   push:
-    machine: true
+    docker:
+      - image: chatwork/circleci-docker:18.09.3
+    environment:
+        - CIRCLECI_WORKSPACE: /root/project
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 18.09.3
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255"
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make push || exit 255"
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make push; done
       - run:
           name: notification failed
           command: |
@@ -41,6 +60,69 @@ jobs:
                              -e BODY="$(echo -e "changelog\n${changelog}")";
             '
           when: on_success
+  mod:
+    machine: true
+    steps:
+      - checkout
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
+      - run:
+          name: Install mod
+          command: |
+            curl -sSL https://github.com/variantdev/mod/releases/download/v0.6.1/mod_0.6.1_linux_amd64.tar.gz | tar zx -C /tmp
+            sudo mv /tmp/mod /usr/local/bin/mod
+            sudo chmod 755 /usr/local/bin/mod
+      - run:
+          name: Update dependencies
+          command: |
+            git config --global user.email "server_admin+cw-circleci@chatwork.com"
+            git config --global user.name "CircleCI"
+            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c '
+              echo "\n# {}"
+              git checkout master
+              git reset --hard master
+              cd {} && mod up --build --branch 'mod-up-{}' --pull-request --title "[{}] update dependencies"
+            '
+      - run:
+          name: Notification failed
+          command: |
+              make ci:notify -e TITLE="CircleCI: Failed update dependencies (devil)" \
+                             -e BODY="Check the error from the following URL."
+          when: on_fail
+  merge:
+    machine: true
+    steps:
+      - checkout
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
+      - run:
+          name: Install PR CLI
+          command: |
+            curl -sSL https://github.com/k-kinzal/pr/releases/download/v0.2.1/pr_linux_amd64.tar.gz | tar zx -C /tmp
+            sudo mv /tmp/pr /usr/local/bin/prcli
+            sudo chmod 755 /usr/local/bin/prcli
+      - run:
+          name: Auto merge (DRY RUN)
+          command: |
+            prcli --no-exit-code validate chatwork/dockerfiles --with-statuses --with-checks \
+              -l 'state == `"open"`' \
+              -l 'base.ref == `"master"`' \
+              -l 'starts_with(head.ref, `"mod-up-"`)' \
+              -l 'user.login == `"cw-circleci"`' \
+              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`' 2>stderr
+      - run:
+          name: Auto merge
+          command: |
+            prcli merge chatwork/dockerfiles --with-statuses --with-checks \
+              -l 'state == `"open"`' \
+              -l 'base.ref == `"master"`' \
+              -l 'starts_with(head.ref, `"mod-up-"`)' \
+              -l 'user.login == `"cw-circleci"`' \
+              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`'
+      - run:
+          name: Notification failed
+          command: |
+              make ci:notify -e TITLE="CircleCI: Failed auto merge (devil)" \
+                             -e BODY="$(cat stderr)"
+          when: on_fail
 workflows:
   version: 2
   integration:
@@ -52,3 +134,23 @@ workflows:
           filters:
             branches:
               only: master
+  update_dependecies:
+    jobs:
+      - mod
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+  auto_merge:
+    jobs:
+      - merge
+    triggers:
+      - schedule:
+          cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
+          filters:
+            branches:
+              only:
+                - master

@@ -1,0 +1,15 @@
+file:
+  /usr/src/app/runGatlingEcsTask.js:
+    exists: true
+  /usr/src/app/awsGatling.js:
+    exists: true
+  /usr/src/app/package.json:
+    exists: true
+  /usr/src/app/node_modules:
+    exists: true
+    filetype: directory
+command:
+  cd /usr/src/app && node ./runGatlingEcsTask.js setting.json:
+    exit-status: 1
+    stdout:
+      - "./setting.json: file not exists"

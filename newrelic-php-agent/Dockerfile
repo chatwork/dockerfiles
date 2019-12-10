@@ -17,4 +17,6 @@ RUN set -xe \
     && tmp/newrelic/newrelic-install install_daemon \
     && rm -rf /tmp/*
 
+EXPOSE 31339
+
 ENTRYPOINT ["docker-entrypoint"]

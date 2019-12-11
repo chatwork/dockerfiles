@@ -76,12 +76,7 @@ jobs:
           command: |
             git config --global user.email "server_admin+cw-circleci@chatwork.com"
             git config --global user.name "CircleCI"
-            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c '
-              echo "\n# {}"
-              git checkout master
-              git reset --hard master
-              cd {} && mod up --build --branch 'mod-up-{}' --pull-request --title "[{}] update dependencies"
-            '
+            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'echo cd {} && echo mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update from v{{ .{}.previousVersion }} to {{ .{}.version }}" --skip-on-duplicate-pull-request-title'
       - run:
           name: Notification failed
           command: |

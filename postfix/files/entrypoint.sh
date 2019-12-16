@@ -17,6 +17,10 @@ postalias /etc/postfix/aliases
 if [[ -f /etc/postfix/sasl_passwd ]]; then
     postmap /etc/postfix/sasl_passwd
 fi
+# generate /etc/postfix/sender_dependent_relayhost.db
+if [[ -f /etc/postfix/sender_dependent_relayhost ]]; then
+    postmap /etc/postfix/sender_dependent_relayhost
+fi
 
 # boot supervisord
 supervisord -c /etc/supervisord.conf

@@ -12,6 +12,7 @@ command:
   /usr/local/bundle/bin/fluent-gem list:
     exit-status: 0
     stdout:
+    - /^googleauth\ \(0\.9\.0\)/
     - /^fluent-plugin-bigquery\ \(2\.2\.0\)/
     - /^fluent-plugin-cloudwatch-logs\ \(0\.7\.3\)/
     - /^fluent-plugin-concat\ \(2\.3\.0\)/

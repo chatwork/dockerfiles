@@ -10,6 +10,6 @@ services:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
     command: /usr/local/bin/dgoss run --entrypoint tail chatwork/docker-fluentd -f /dev/null
+    container_name: docker-fluentd
     volumes:
-      - ./goss/goss.yaml:/goss/goss.yaml
       - /var/run/docker.sock:/var/run/docker.sock

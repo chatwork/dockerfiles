@@ -1,21 +1,40 @@
 version: 2.1
 jobs:
   test:
-    machine:
-      docker_layer_caching: true
+    docker:
+      - image: chatwork/circleci-docker:18.09.3
+    environment:
+      - CIRCLECI_WORKSPACE: /root/project
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 18.09.3
       - run: make ci:diff
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255"
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make test || exit 255"
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make test; done
+      - run:
+          name: Notification failed
+          command: |
+            if [ "${CIRCLE_PR_USERNAME}" == "cw-circleci" ]; then
+              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil)" \
+                        -e BODY="${CIRCLE_PULL_REQUEST}";
+            fi
+          when: on_fail
   push:
-    machine: true
+    docker:
+      - image: chatwork/circleci-docker:18.09.3
+    environment:
+        - CIRCLECI_WORKSPACE: /root/project
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 18.09.3
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255"
-      - run: make ci:diff | xargs -I{} /bin/bash -c "cd ./{} && make push || exit 255"
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make push; done
       - run:
           name: notification failed
           command: |
@@ -49,7 +68,7 @@ jobs:
       - run:
           name: Install mod
           command: |
-            curl -sSL https://github.com/variantdev/mod/releases/download/v0.6.1/mod_0.6.1_linux_amd64.tar.gz | tar zx -C /tmp
+            curl -sSL https://github.com/variantdev/mod/releases/download/v0.8.1/mod_0.8.1_linux_amd64.tar.gz | tar zx -C /tmp
             sudo mv /tmp/mod /usr/local/bin/mod
             sudo chmod 755 /usr/local/bin/mod
       - run:
@@ -57,12 +76,7 @@ jobs:
           command: |
             git config --global user.email "server_admin+cw-circleci@chatwork.com"
             git config --global user.name "CircleCI"
-            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c '
-              echo "\n# {}"
-              git checkout master
-              git reset --hard master
-              cd {} && mod up --build --branch 'mod-up-{}' --pull-request --title "[{}] update dependencies"
-            '
+            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'cd {} && mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update from v{{ .{}.previousVersion }} to {{ .{}.version }}" --skip-on-duplicate-pull-request-title'
       - run:
           name: Notification failed
           command: |

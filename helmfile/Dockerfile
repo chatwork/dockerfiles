@@ -15,10 +15,11 @@ WORKDIR /
 
 RUN helm plugin install https://github.com/mumoshu/helm-x --version v${HELM_X_VERSION}
 
-ADD https://storage.googleapis.com/kubernetes-release/release/v${EKS_VERSION}/bin/linux/amd64/kubectl /usr/local/bin/kubectl
-RUN chmod +x /usr/local/bin/kubectl
-
 RUN curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/${EKS_VERSION}/${EKS_DATE}/bin/linux/amd64/aws-iam-authenticator && \
     chmod +x /usr/local//bin/aws-iam-authenticator
+
+RUN apk --no-cache add python3 py3-pip groff jq \
+    && pip3 install --no-cache-dir --upgrade pip \
+    && pip3 install --no-cache-dir awscli
 
 ENTRYPOINT ["/usr/local/bin/helmfile"]

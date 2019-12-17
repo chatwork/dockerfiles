@@ -9,7 +9,6 @@ COPY kube-fluentd-operator/config-reloader/. .
 
 # Speed up local builds where vendor is populated
 RUN [ -d vendor/github.com ] || make dep; true
-RUN make test
 RUN make build VERSION=${KFO_VERSION}
 
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
@@ -44,15 +43,16 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
     && fluent-gem install fluent-plugin-datadog -v "0.11.0"\
     && fluent-gem install fluent-plugin-cloudwatch-logs -v "0.7.3" \
     && fluent-gem install fluent-plugin-elasticsearch -v "3.5.2"\
-    && fluent-gem install fluent-plugin-bigquery -v "2.1.0"\
+    && fluent-gem install fluent-plugin-bigquery -v "2.2.0"\
     && fluent-gem install fluent-plugin-kubernetes -v "0.3.1"\
-    && fluent-gem install fluent-plugin-kubernetes_metadata_filter -v "2.2.0" \
+    && fluent-gem install fluent-plugin-kubernetes_metadata_filter -v "2.4.1" \
     && fluent-gem install fluent-plugin-logentries -v "0.2.10"\
     && fluent-gem install fluent-plugin-mail -v "0.3.0"\
     && fluent-gem install fluent-plugin-out-http-ext -v "0.1.10"\
     && fluent-gem install fluent-plugin-route -v "1.0.0"\
     && fluent-gem install fluent-plugin-scribe -v "1.0.0"\
     && fluent-gem install fluent-plugin-secure-forward -v "0.4.5"\
+    && fluent-gem install fluent-plugin-google-cloud -v "0.7.26" \
     && fluent-gem install logfmt -v "0.0.8"\
     && SUDO_FORCE_REMOVE=yes \
     apt-get purge -y --auto-remove \

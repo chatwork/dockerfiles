@@ -12,23 +12,36 @@ push:
 
 .PHONY: ci\:diff\:from
 ci\:diff\:from:
-		@if [ "$(shell git symbolic-ref --short HEAD)" = "master" ]; then \
-			git --no-pager log --first-parent master --merges -n 2 --pretty=format:"%H" | tail -n 1; \
-		else \
-			echo "HEAD"; \
-		fi
+	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" = "master" ]; then \
+	    echo "HEAD"; \
+	else \
+		echo "remotes/origin/master"; \
+	fi
 
 .PHONY: ci\:diff\:to
 ci\:diff\:to:
-		@if [ "$(shell git symbolic-ref --short HEAD)" = "master" ]; then \
+	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" = "master" ]; then \
+	    git --no-pager log --first-parent remotes/origin/master --merges -n 2 --pretty=format:"%H" | tail -n 1; \
+	else \
 			echo "HEAD"; \
-		else \
-			echo "remotes/origin/master"; \
-		fi
+	fi
 
 .PHONY: ci\:diff
 ci\:diff:
-	@git --no-pager diff --diff-filter=ACMR --name-only "$(shell make ci:diff:from)" "$(shell make ci:diff:to)" | sed 's:^.*/compare/::g' | xargs -I{} dirname {} | xargs -I{} sh -c "test -d {} && echo {}" | sed 's/[.\/].*$$//' | sed '/^$$/d' | uniq;
+	@git --no-pager diff --diff-filter=ACMRTUXB --name-only "$(shell make ci:diff:from)" "$(shell make ci:diff:to)" \
+	  | sed 's:^.*/compare/::g' \
+	  | grep -v goss/ \
+	  | grep -v hooks/ \
+	  | grep -v docker-compose.text.yaml \
+	  | grep -v Makefile \
+	  | grep -v README.md \
+	  | grep -v variant.lock \
+	  | grep -V variant.mod \
+	  | xargs -I{} dirname {} \
+	  | xargs -I{} sh -c "test -d {} && echo {}" \
+	  | sed 's/[.\/].*$$//' \
+	  | sed '/^$$/d' \
+	  | uniq;
 
 .PHONY: ci\:changelog
 ci\:changelog:

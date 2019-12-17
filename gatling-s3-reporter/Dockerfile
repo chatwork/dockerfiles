@@ -1,7 +1,7 @@
 FROM openjdk:8u212-jdk-alpine
 
 ARG AWS_VERSION=1.16.58
-ARG GATLING_VERSION=2.2.3
+ARG GATLING_VERSION=3.3.1
 
 LABEL version="0.0.1-gatling$GATLING_VERSION"
 LABEL maintainer="katsuno@chatwork.com"

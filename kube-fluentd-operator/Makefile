@@ -1,6 +1,7 @@
 KFO_VERSION ?= v1.11.0
 REPOSITORY ?= chatwork
 IMAGE ?= $(REPOSITORY)/$(shell basename $$PWD)
+TAG ?= latest
 
 .PHONY: build
 build: clone
@@ -45,3 +46,8 @@ clone: clean
 .PHONY: clean
 clean:
 	/bin/rm -fr kube-fluentd-operator
+
+shell:
+	docker run --entrypoint=/bin/bash \
+	  -ti --rm -v `pwd`:/workspace --net=host \
+	  $(IMAGE):$(TAG)

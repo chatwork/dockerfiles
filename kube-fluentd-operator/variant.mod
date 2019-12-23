@@ -20,4 +20,4 @@ dependencies:
     releasesFrom:
       githubTags:
         source: fluent/fluentd
-    version: "> v1.8.0"
+    version: "> v1.7.3"

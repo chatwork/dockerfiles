@@ -32,3 +32,4 @@ ENV GATLING_HOME /opt/gatling
 COPY generate-report.sh /generate-report.sh
 
 ENTRYPOINT ["/generate-report.sh"]
+

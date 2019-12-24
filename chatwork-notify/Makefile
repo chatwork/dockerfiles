@@ -21,7 +21,6 @@ check:
 
 .PHONY: test
 test:
-	@make check;
 	docker-compose -f docker-compose.test.yml up --no-start sut
 	docker cp $(shell pwd)/goss `basename $$PWD`:/goss
 	docker-compose -f docker-compose.test.yml up --no-recreate sut

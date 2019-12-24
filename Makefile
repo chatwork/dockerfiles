@@ -36,7 +36,7 @@ ci\:diff:
 	  | grep -v Makefile \
 	  | grep -v README.md \
 	  | grep -v variant.lock \
-	  | grep -V variant.mod \
+	  | grep -v variant.mod \
 	  | xargs -I{} dirname {} \
 	  | xargs -I{} sh -c "test -d {} && echo {}" \
 	  | sed 's/[.\/].*$$//' \

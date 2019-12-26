@@ -2,14 +2,6 @@
 
 set -e
 
-# generate mail spool directory
-mkdir -p /var/spool/postfix
-chown root /var/spool/postfix
-
-# generate pid directory
-mkdir -p /var/spool/postfix/pid
-chown root /var/spool/postfix/pid
-
 # generate /etc/postfix/aliases
 postalias /etc/postfix/aliases
 
@@ -22,5 +14,5 @@ if [[ -f /etc/postfix/sender_dependent_relayhost ]]; then
     postmap /etc/postfix/sender_dependent_relayhost
 fi
 
-# boot supervisord
-supervisord -c /etc/supervisord.conf
+postconf maillog_file=/dev/stdout
+postfix start-fg "$@"

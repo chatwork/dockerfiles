@@ -5,6 +5,7 @@ LABEL maintainer="ozaki@chatwork.com"
 
 RUN apk --no-cache add postfix
 
+COPY main.cf /etc/postfix/main.cf
 COPY entrypoint.sh /entrypont.sh
 
 ENTRYPOINT ["sh", "/entrypont.sh"]

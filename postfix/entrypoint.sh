@@ -14,5 +14,4 @@ if [[ -f /etc/postfix/sender_dependent_relayhost ]]; then
     postmap /etc/postfix/sender_dependent_relayhost
 fi
 
-postconf maillog_file=/dev/stdout
 postfix start-fg "$@"

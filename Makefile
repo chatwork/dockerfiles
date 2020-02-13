@@ -13,17 +13,17 @@ push:
 .PHONY: ci\:diff\:from
 ci\:diff\:from:
 	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" = "master" ]; then \
-	    echo "HEAD"; \
+	    git --no-pager log --first-parent master --merges -n 2 --pretty=format:"%H" | tail -n 1; \
 	else \
-		echo "remotes/origin/master"; \
+		echo "HEAD"; \
 	fi
 
 .PHONY: ci\:diff\:to
 ci\:diff\:to:
 	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" = "master" ]; then \
-	    git --no-pager log --first-parent remotes/origin/master --merges -n 2 --pretty=format:"%H" | tail -n 1; \
+	    echo "HEAD"; \
 	else \
-			echo "HEAD"; \
+		echo "remotes/origin/master"; \
 	fi
 
 .PHONY: ci\:diff

@@ -10,5 +10,9 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION
 
 RUN chmod +x /usr/local/bin/kubectl
 
+RUN apk --no-cache add python3 py3-pip groff jq \
+    && pip3 install --no-cache-dir --upgrade pip \
+    && pip3 install --no-cache-dir awscli
+
 ENTRYPOINT ["/usr/local/bin/kubectl"]
 CMD ["help"]

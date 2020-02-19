@@ -6,11 +6,7 @@ LABEL version="v${ENVSUBST_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 ADD https://github.com/a8m/envsubst/releases/download/v${ENVSUBST_VERSION}/envsubst-Linux-x86_64 /usr/local/bin/envsubst
-
-RUN chmod 755 /usr/local/bin/envsubst && \
-    apk update && \
-    apk add --no-cache jq && \
-    rm -rf /var/cache/apk/*
+RUN chmod 755 /usr/local/bin/envsubst
 
 ENTRYPOINT ["/usr/local/bin/envsubst"]
 CMD ["-help"]

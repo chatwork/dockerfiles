@@ -9,4 +9,4 @@ dependencies:
     releasesFrom:
       githubTags:
         source: aws/aws-cli
-    version: "> 1.16.256"
+    version: "> 2.0.0"

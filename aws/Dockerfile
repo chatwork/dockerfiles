@@ -1,15 +1,20 @@
-FROM chatwork/alpine-sdk:3.10
+FROM amazonlinux:2
 
-ARG AWSCLI_VERSION=1.16.259
+ARG AWSCLI_VERSION=2.0.1
 
 LABEL version="${AWSCLI_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN apk --no-cache add python3 py3-pip groff jq \
-    && pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir awscli==${AWSCLI_VERSION} \
+RUN yum install jq unzip -y \
+    && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
+    && unzip awscliv2.zip \
+    && ./aws/install \
+    && rm -f awscliv2.zip \
+    && yum clean all \
+    && rm -rf /var/cache/yum/* \
     && chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]

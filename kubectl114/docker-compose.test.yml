@@ -1,0 +1,15 @@
+version: '3'
+services:
+  busybox:
+    build:
+      context: .
+    image: chatwork/kubectl
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/kubectl tail -f /dev/null
+    container_name: kubectl114
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

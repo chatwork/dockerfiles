@@ -68,7 +68,7 @@ jobs:
       - run:
           name: Install mod
           command: |
-            curl -sSL https://github.com/variantdev/mod/releases/download/v0.8.1/mod_0.8.1_linux_amd64.tar.gz | tar zx -C /tmp
+            curl -sSL https://github.com/variantdev/mod/releases/download/v0.13.4/mod_0.13.4_linux_386.tar.gz | tar zx -C /tmp
             sudo mv /tmp/mod /usr/local/bin/mod
             sudo chmod 755 /usr/local/bin/mod
       - run:

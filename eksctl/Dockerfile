@@ -20,7 +20,9 @@ COPY --from=downloads  /downloads/kubectl /usr/local/bin
 
 RUN chmod +x /usr/local/bin/eksctl
 RUN chmod +x /usr/local/bin/kubectl
-RUN apk --no-cache add openssh-client
+RUN yum install -y openssh-clients \
+    && yum clean all \
+    && rm -rf /var/cache/yum/* \
 
 ENTRYPOINT ["/usr/local/bin/eksctl"]
 CMD ["help"]

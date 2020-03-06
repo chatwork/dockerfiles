@@ -4,7 +4,7 @@ provisioners:
       source: Dockerfile.tpl
       arguments:
         kfo_version: "v{{ .kfo.version }}"
-        fluentd_version: "v{{ .fluentd.version }}"
+        fluentd_tag: "v{{ .fluentd.version }}"
   textReplace:
     Makefile:
       from: "v{{ .kfo.previousVersion }}"
@@ -18,6 +18,6 @@ dependencies:
     version: "> v1.9.0"
   fluentd:
     releasesFrom:
-      githubTags:
+      dockerImageTags:
         source: fluent/fluentd
-    version: "> v1.7.3"
+    version: "> v1.9.0-debian-1.0"

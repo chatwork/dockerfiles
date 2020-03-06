@@ -20,7 +20,7 @@ COPY --from=downloads  /downloads/kubectl /usr/local/bin
 
 RUN chmod +x /usr/local/bin/eksctl
 RUN chmod +x /usr/local/bin/kubectl
-RUN yum install -y openssh-clients \
+RUN yum install -y openssh-clients openssl git \
     && yum clean all \
     && rm -rf /var/cache/yum/* \
 

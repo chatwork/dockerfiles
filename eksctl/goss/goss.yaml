@@ -14,3 +14,9 @@ command:
     exit-status: 1
     stdout:
       - v1.15.6
+  /usr/bin/git --version:
+    exit-status: 0
+  /usr/bin/openssl version:
+    exit-status: 0
+  /usr/bin/ssh -V:
+    exit-status: 0

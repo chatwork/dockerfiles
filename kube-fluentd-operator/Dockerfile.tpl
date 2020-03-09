@@ -12,9 +12,9 @@ RUN [ -d vendor/github.com ] || make dep; true
 RUN make build VERSION=${KFO_VERSION}
 
 # base file https://github.com/vmware/kube-fluentd-operator/blob/master/base-image/Dockerfile
-FROM fluent/fluentd:{{ .fluentd_tag }}
+FROM fluent/fluentd:v1.9-debian-1
 
-LABEL version="{{ .fluentd_tag }}-{{ .kfo_version }}"
+LABEL version="{{ .fluentd_version }}-{{ .kfo_version }}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 USER root

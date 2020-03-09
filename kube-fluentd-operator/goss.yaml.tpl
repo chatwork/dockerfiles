@@ -12,7 +12,8 @@ command:
   /usr/local/bin/fluentd --version:
     exit-status: 0
     stdout:
-    - "1.9.3"
+    #- "{{ .fluentd_version }}"
+    - 1.9.2
   /usr/local/bundle/bin/fluent-gem list:
     exit-status: 0
     stdout:

@@ -13,3 +13,4 @@ RUN apk add --no-cache build-base curl automake autoconf libtool git zlib-dev &&
     ./configure --prefix=/usr --enable-static=no && \
     make -j2 && \
     make install
+ENTRYPOINT [ "/usr/bin/protoc" ]

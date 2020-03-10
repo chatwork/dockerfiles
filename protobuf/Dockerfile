@@ -1,9 +1,9 @@
 FROM chatwork/alpine-sdk:3.11
 
-LABEL version="2.5.0"
-LABEL maintainer="akatsu@chatwork.com"
-
 ENV PROTOBUF_VERSION="2.5.0"
+
+LABEL version="${PROTOBUF_VERSION}"
+LABEL maintainer="akatsu@chatwork.com"
 
 RUN apk add --no-cache build-base curl automake autoconf libtool git zlib-dev && \
     mkdir -p /protobuf && \
@@ -13,4 +13,5 @@ RUN apk add --no-cache build-base curl automake autoconf libtool git zlib-dev &&
     ./configure --prefix=/usr --enable-static=no && \
     make -j2 && \
     make install
+
 ENTRYPOINT [ "/usr/bin/protoc" ]

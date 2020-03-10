@@ -1,3 +1,9 @@
+file:
+  /usr/bin/protoc:
+    exists: true
+    mode: "0755"
 command:
-  echo 1:
+  /usr/bin/protoc --version:
     exit-status: 0
+    stdout:
+      - libprotoc 2.5.0

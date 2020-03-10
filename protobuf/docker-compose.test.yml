@@ -9,7 +9,7 @@ services:
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run chatwork/protobuf tail -f /dev/null
-    container_name: example
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/protobuf tail -f /dev/null
+    container_name: protobuf
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

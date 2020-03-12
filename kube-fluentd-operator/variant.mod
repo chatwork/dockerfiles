@@ -18,6 +18,7 @@ dependencies:
     version: "> v1.9.0"
   fluentd:
     releasesFrom:
+      validVersionPattern: "[0-9]\\.[0-9]+\\.[0-9]-debian-[0-9.]+"
       dockerImageTags:
         source: fluent/fluentd
     version: "> v1.9.0-debian-1.0"

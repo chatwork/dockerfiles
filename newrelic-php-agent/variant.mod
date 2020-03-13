@@ -6,6 +6,8 @@ provisioners:
 
 dependencies:
   newrelicphpagent:
+    version: "> 9.7.0-257"
+    validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+"
     releasesFrom:
       exec:
         command: sh

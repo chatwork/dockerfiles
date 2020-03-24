@@ -28,7 +28,7 @@ ci\:diff:
 	  | sed 's:^.*/compare/::g' \
 	  | grep -v goss/ \
 	  | grep -v hooks/ \
-	  | grep -v docker-compose.text.yaml \
+	  | grep -v docker-compose.test.yml \
 	  | grep -v Makefile \
 	  | grep -v README.md \
 	  | grep -v variant.lock \

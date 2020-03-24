@@ -17,14 +17,13 @@ check:
 
 .PHONY: test
 test:
-	docker rmi -f chatwork/`basename $$PWD`
-	docker-compose -f docker-compose.test.yml up --no-start sut
+	docker-compose -f docker-compose.test.yml up --build --no-start sut
 	docker cp $(shell pwd)/goss `basename $$PWD`:/goss
 	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut sut
 
-	docker-compose -f docker-compose.test.yml up --no-start sut-with-sasl_passwd
-	docker cp $(shell pwd)/goss `basename $$PWD`-with-sasl_passwd:/goss
-	docker-compose -f docker-compose.test.yml up --no-recreate--exit-code-from sut-with-sasl_passwd sut-with-sasl_passwd
+	docker-compose -f docker-compose.test.yml up --build --no-start sut-with-sasl_passwd
+	docker cp $(shell pwd)/goss/with-sasl_passwd `basename $$PWD`-with-sasl_passwd:/goss
+	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut-with-sasl_passwd sut-with-sasl_passwd
 
 .PHONY: push
 push:

@@ -1,0 +1,12 @@
+file:
+  /usr/lib/x86_64-linux-gnu/out_s3.so:
+    exists: true
+    mode: "0644"
+  /usr/lib/x86_64-linux-gnu/cloudwatch.so:
+    exists: true
+    mode: "0644"
+command:
+  /fluent-bit/bin/fluent-bit --version:
+    exit-status: 0
+    stdout:
+      - /v1.3.11/

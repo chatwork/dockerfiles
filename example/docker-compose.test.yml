@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  example:
     build:
       context: .
     image: chatwork/example
@@ -13,3 +13,5 @@ services:
     container_name: example
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - example

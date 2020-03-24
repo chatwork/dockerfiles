@@ -1,5 +1,9 @@
 version: '3'
 services:
+  mailcatcher:
+    build:
+      context: .
+    image: chatwork/mailcatcher
   sut:
     image: kiwicom/dgoss
     environment:
@@ -9,3 +13,5 @@ services:
     container_name: mailcatcher
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - mailcatcher

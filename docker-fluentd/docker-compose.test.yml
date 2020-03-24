@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  docker-fluentd:
     build:
       context: .
     image: chatwork/docker-fluentd
@@ -13,3 +13,5 @@ services:
     container_name: docker-fluentd
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - docker-fluentd

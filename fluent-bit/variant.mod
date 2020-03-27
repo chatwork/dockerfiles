@@ -6,6 +6,10 @@ provisioners:
         fluentbit_version: "{{ .fluentbit.version }}"
         fluentbit_s3_version: "{{ .s3.version }}"
         fluentbit_cloudwatch_version: "{{ .cloudwatch.version }}"
+  textReplace:
+    goss/goss.yaml:
+      from: "/v{{ .fluentbit.previousVersion }}/"
+      to: "/v{{ .fluentbit.version }}/"
 
 dependencies:
   fluentbit:

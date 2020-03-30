@@ -17,11 +17,11 @@ dependencies:
       dockerImageTags:
         source: fluent/fluent-bit
     version: "> 0.1"
-  s3:
-    releasesFrom:
-      githubReleases:
-        source: cosmo0920/fluent-bit-go-s3
-    version: "> 0.1"
+#  s3:
+#    releasesFrom:
+#      githubReleases:
+#        source: cosmo0920/fluent-bit-go-s3
+#    version: "> 0.1"
   cloudwatch:
     releasesFrom:
       githubReleases:

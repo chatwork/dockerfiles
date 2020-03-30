@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  alpine-sdk:
     build:
       context: .
     image: chatwork/alpine-sdk
@@ -13,3 +13,5 @@ services:
     container_name: alpine-sdk
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - alpine-sdk

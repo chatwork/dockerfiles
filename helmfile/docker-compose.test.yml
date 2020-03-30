@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  helmfile:
     build:
       context: .
     image: chatwork/helmfile
@@ -13,3 +13,5 @@ services:
     container_name: helmfile
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - helmfile

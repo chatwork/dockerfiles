@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  postfix:
     build:
       context: .
     image: chatwork/postfix
@@ -14,6 +14,8 @@ services:
     container_name: postfix
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - postfix
   sut-with-sasl_passwd:
     image: kiwicom/dgoss
     environment:
@@ -24,3 +26,5 @@ services:
     container_name: postfix-with-sasl_passwd
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - postfix

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  circleci-docker:
     build:
       context: .
     image: chatwork/circleci-docker
@@ -13,3 +13,5 @@ services:
     container_name: circleci-docker
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - circleci-docker

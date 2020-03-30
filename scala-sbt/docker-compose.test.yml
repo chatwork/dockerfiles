@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  scala-sbt:
     build:
       context: .
     image: chatwork/scala-sbt
@@ -13,3 +13,5 @@ services:
     container_name: scala-sbt
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - scala-sbt

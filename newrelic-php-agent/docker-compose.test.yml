@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  newrelic-php-agent:
     build:
       context: .
     image: chatwork/newrelic-php-agent
@@ -13,3 +13,5 @@ services:
     container_name: newrelic-php-agent
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - newrelic-php-agent

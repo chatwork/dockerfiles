@@ -17,21 +17,19 @@ check:
 
 .PHONY: test
 test:
-	docker-compose -f docker-compose.test.yml up --no-start sut
+	docker-compose -f docker-compose.test.yml up --build --no-start sut
 	docker cp $(shell pwd)/goss `basename $$PWD`:/goss
-	docker-compose -f docker-compose.test.yml up --no-recreate sut
+	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut sut
 
-	docker-compose -f docker-compose.test.yml up --no-start sut-with-sasl_passwd
-	docker cp $(shell pwd)/goss `basename $$PWD`-with-sasl_passwd:/goss
-	docker-compose -f docker-compose.test.yml up --no-recreate sut-with-sasl_passwd
+	docker-compose -f docker-compose.test.yml up --build --no-start sut-with-sasl_passwd
+	docker cp $(shell pwd)/goss/with-sasl_passwd `basename $$PWD`-with-sasl_passwd:/goss
+	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut-with-sasl_passwd sut-with-sasl_passwd
 
 .PHONY: push
 push:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker push chatwork/`basename $$PWD`:latest; \
-			docker tag chatwork/`basename $$PWD` chatwork/`basename $$PWD`:$$version; \
-			docker push chatwork/`basename $$PWD`:$$version; \
+			docker push chatwork/`basename $$PWD`; \
 		fi

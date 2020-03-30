@@ -1,10 +1,10 @@
-ARG FLUENTBIT_VERSION="1.3.11"
+ARG FLUENTBIT_VERSION="1.4.1"
 ARG FLUENTBIT_SUFFIX
 
 
 FROM golang:1.14.0-buster AS fluent-bit-go-s3
 
-ARG FLUENTBIT_GO_S3_VERSION="0.6.2"
+ARG FLUENTBIT_GO_S3_VERSION="0.7.0"
 
 ENV CGO_ENABLED=1
 ENV GOOS=linux
@@ -12,7 +12,7 @@ ENV GOARCH=amd64
 ENV GOPATH=/go
 
 RUN mkdir -p /go/src/github.com/cosmo0920 \
-    && git clone --branch v${FLUENTBIT_GO_S3_VERSION} --single-branch https://github.com/cosmo0920/fluent-bit-go-s3.git /go/src/github.com/cosmo0920/fluent-bit-go-s3 \
+    && git clone --branch v${FLUENTBIT_GO_S3_VERSION} --single-branch https://github.com/k-kinzal/fluent-bit-go-s3.git /go/src/github.com/cosmo0920/fluent-bit-go-s3 \
     && cd /go/src/github.com/cosmo0920/fluent-bit-go-s3 \
     && make build
 
@@ -35,8 +35,8 @@ RUN go get -u golang.org/x/lint/golint \
 
 FROM fluent/fluent-bit:${FLUENTBIT_VERSION}${FLUENTBIT_SUFFIX}
 
-ARG FLUENTBIT_VERSION="1.3.11"
-ARG FLUENTBIT_GO_S3_VERSION="0.6.2"
+ARG FLUENTBIT_VERSION="1.4.1"
+ARG FLUENTBIT_GO_S3_VERSION="0.7.0"
 ARG FLUENTBIT_CLOUDWATCH_LOGS_VERSION="1.2.0"
 
 LABEL version="${FLUENTBIT_VERSION}-${FLUENTBIT_GO_S3_VERSION}-${FLUENTBIT_CLOUDWATCH_LOGS_VERSION}"

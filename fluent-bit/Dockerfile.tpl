@@ -12,7 +12,7 @@ ENV GOARCH=amd64
 ENV GOPATH=/go
 
 RUN mkdir -p /go/src/github.com/cosmo0920 \
-    && git clone --branch v${FLUENTBIT_GO_S3_VERSION} --single-branch https://github.com/cosmo0920/fluent-bit-go-s3.git /go/src/github.com/cosmo0920/fluent-bit-go-s3 \
+    && git clone --branch v${FLUENTBIT_GO_S3_VERSION} --single-branch https://github.com/k-kinzal/fluent-bit-go-s3.git /go/src/github.com/cosmo0920/fluent-bit-go-s3 \
     && cd /go/src/github.com/cosmo0920/fluent-bit-go-s3 \
     && make build
 

@@ -3,7 +3,7 @@ file:
     exists: true
     mode: "0711"
 command:
-  /usr/local/bin/kubectl version:
-    exit-status: 1
+  /usr/local/bin/kubectl version --client true:
+    exit-status: 0
     stdout:
       - v1.18.1

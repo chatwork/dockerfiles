@@ -8,5 +8,11 @@ file:
 command:
   /usr/local/bin/aws --version:
     exit-status: 0
-  /usr/bin/jq --version:
+  /usr/bin/jq -h:
+    exit-status: 0
+  /usr/bin/unzip -h:
+    exit-status: 0
+  /usr/bin/tar --help:
+    exit-status: 0
+  /usr/bin/gzip -h:
     exit-status: 0

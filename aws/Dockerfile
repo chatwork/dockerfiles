@@ -1,6 +1,6 @@
 FROM amazonlinux:2
 
-ARG AWSCLI_VERSION=2.0.7
+ARG AWSCLI_VERSION=2.0.9
 
 LABEL version="${AWSCLI_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
@@ -8,7 +8,7 @@ LABEL maintainer="sakamoto@chatwork.com"
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN yum install jq unzip -y \
+RUN yum install jq unzip tar gzip -y \
     && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
     && ./aws/install \

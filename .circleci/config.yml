@@ -61,16 +61,26 @@ jobs:
             '
           when: on_success
   mod:
-    machine: true
+    docker:
+      - image: variantdev/mod:0.18.0
+    environment:
+      - CIRCLECI_WORKSPACE: /root/project
     steps:
       - checkout
-      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run:
-          name: Install mod
+          name: Docker login
           command: |
-            curl -sSL https://github.com/variantdev/mod/releases/download/v0.15.1/mod_0.15.1_linux_amd64.tar.gz | tar zx -C /tmp
-            sudo mv /tmp/mod /usr/local/bin/mod
-            sudo chmod 755 /usr/local/bin/mod
+            mkdir -p ${HOME}/.docker
+            cat \<<EOS > ${HOME}/.docker/config.json
+            {
+                "auths": {
+                    "https://index.docker.io/v1/": {
+                        "auth": "$(echo -n "${DOCKER_REGISTRY_USERNAME}:${DOCKER_REGISTRY_PASSWORD}" | base64)",
+                        "email": "server_admin+cw-circleci@chatwork.com"
+                    }
+                }
+            }
+            EOS
       - run:
           name: Update dependencies
           command: |
@@ -80,43 +90,36 @@ jobs:
       - run:
           name: Notification failed
           command: |
-              make ci:notify -e TITLE="CircleCI: Failed update dependencies (devil)" \
-                             -e BODY="Check the error from the following URL."
+            TITLE="CircleCI: Failed update dependencies (devil)"
+            BODY="Check the error from the following URL."
+            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_TOKEN}" \
+              "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
+                --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
           when: on_fail
   merge:
-    machine: true
+    docker:
+      - image: kinzal/pr:0.2.1
+    environment:
+      - CIRCLECI_WORKSPACE: /root/project
     steps:
       - checkout
-      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
-      - run:
-          name: Install PR CLI
-          command: |
-            curl -sSL https://github.com/k-kinzal/pr/releases/download/v0.2.1/pr_linux_amd64.tar.gz | tar zx -C /tmp
-            sudo mv /tmp/pr /usr/local/bin/prcli
-            sudo chmod 755 /usr/local/bin/prcli
-      - run:
-          name: Auto merge (DRY RUN)
-          command: |
-            prcli --no-exit-code validate chatwork/dockerfiles --with-statuses --with-checks \
-              -l 'state == `"open"`' \
-              -l 'base.ref == `"master"`' \
-              -l 'starts_with(head.ref, `"mod-up-"`)' \
-              -l 'user.login == `"cw-circleci"`' \
-              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`' 2>stderr
       - run:
           name: Auto merge
           command: |
-            prcli merge chatwork/dockerfiles --with-statuses --with-checks \
+            /usr/local/bin/pr merge chatwork/dockerfiles --with-statuses --with-checks \
               -l 'state == `"open"`' \
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \
               -l 'user.login == `"cw-circleci"`' \
-              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`'
+              -l 'length(statuses[?context == `"ci/circleci: test"` && state == `"success"`]) == `1`' 2> stderr
       - run:
           name: Notification failed
           command: |
-              make ci:notify -e TITLE="CircleCI: Failed auto merge (devil)" \
-                             -e BODY="$(cat stderr)"
+            TITLE="CircleCI: Failed auto merge (devil)"
+            BODY="$(cat stderr)"
+            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_TOKEN}" \
+              "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
+                --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
           when: on_fail
 workflows:
   version: 2
@@ -144,7 +147,7 @@ workflows:
       - merge
     triggers:
       - schedule:
-          cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
+          cron: "0,10,20,30,40,50 * * * *"
           filters:
             branches:
               only:

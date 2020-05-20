@@ -1,5 +1,5 @@
-ARG FLUENTD_VERSION="1.10.4"
-ARG FLUENTD_IMAGE_VERSION="1.10.4-debian-1.0"
+ARG FLUENTD_VERSION="{{ .fluentd_version }}"
+ARG FLUENTD_IMAGE_VERSION="{{ .fluentd_image_version }}"
 
 FROM fluent/fluentd:v${FLUENTD_IMAGE_VERSION}
 

@@ -1,15 +1,18 @@
 provisioners:
-  textReplace:
+  files:
     Dockerfile:
-      from: "ARG FLUENTD_VERSION=\"{{ .fluentd.previousVersion }}\""
-      to: "ARG FLUENTD_VERSION=\"{{ .fluentd.version }}\""
+      source: Dockerfile.tpl
+      arguments:
+        fluentd_version: '{{ splitList "-" .fluentd.version | first }}'
+        fluentd_image_version: '{{ .fluentd.version }}'
+  textReplace:
     goss/goss.yaml:
-      from: "fluentd {{ splitList "-" .fluentd.version | first }}"
-      to: "fluentd {{ splitList "-" .fluentd.previousVersion | first }}"
+      from: 'fluentd {{ splitList "-" .fluentd.previousVersion | first }}'
+      to: 'fluentd {{ splitList "-" .fluentd.version | first }}'
 dependencies:
   fluentd:
     releasesFrom:
-      validVersionPattern: "[0-9]\\.[0-9]\\.[0-9]-debian-[0-9.]+"
+      validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+-debian-[0-9.]+"
       dockerImageTags:
         source: fluent/fluentd
-    version: "> 1.10.0-debian-1.0"
+    version: "> 1.0.0-debian-1.0"

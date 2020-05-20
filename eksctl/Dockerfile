@@ -1,8 +1,8 @@
 FROM alpine:edge as downloads
 WORKDIR /downloads
 
-ARG EKSCTL_VERSION=0.18.0
-ARG KUBECTL_VERSION=1.15.6
+ARG EKSCTL_VERSION=0.19.0
+ARG KUBECTL_VERSION=1.17.5
 LABEL version="${EKSCTL_VERSION}"
 
 RUN wget -O - https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION}/eksctl_Linux_amd64.tar.gz | tar zxvf -
@@ -11,7 +11,7 @@ RUN wget https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VE
 
 FROM chatwork/aws:latest
 
-ARG EKSCTL_VERSION=0.18.0
+ARG EKSCTL_VERSION=0.19.0
 LABEL version="${EKSCTL_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

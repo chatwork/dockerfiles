@@ -1,7 +1,8 @@
-ARG FLUENTD_VERSION="{{ .fluentd_version }}"
 ARG FLUENTD_IMAGE_VERSION="{{ .fluentd_image_version }}"
 
 FROM fluent/fluentd:v${FLUENTD_IMAGE_VERSION}
+
+ARG FLUENTD_VERSION="{{ .fluentd_version }}"
 
 LABEL version="${FLUENTD_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

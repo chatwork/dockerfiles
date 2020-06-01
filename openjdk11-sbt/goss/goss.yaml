@@ -1,8 +1,4 @@
 package:
-  sbt:
-    installed: true
-    versions:
-    - 1.3.10
   unzip:
     installed: true
   zip:
@@ -18,11 +14,6 @@ command:
     exit-status: 0
     stdout:
     - "jdk-11.0.7+10"
-    timeout: 5000
-  readlink -f /bin/sh:
-    exit-status: 0
-    stdout:
-    - "/bin/bash"
     timeout: 5000
   which sbt:
     exit-status: 0

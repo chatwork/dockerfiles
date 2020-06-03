@@ -12,4 +12,4 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: kubernetes/kubernetes
-    version: "~ 1.14"
+    version: "~ 1.17"

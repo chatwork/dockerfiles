@@ -1,0 +1,17 @@
+version: '3'
+services:
+  sbt-ci-openjdk8:
+    build:
+      context: .
+    image: chatwork/sbt-ci-openjdk8
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run chatwork/sbt-ci-openjdk8 tail -f /dev/null
+    container_name: sbt-ci-openjdk8
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - sbt-ci-openjdk8

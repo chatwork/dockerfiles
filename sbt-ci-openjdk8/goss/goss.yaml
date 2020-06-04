@@ -1,0 +1,37 @@
+package:
+  sbt:
+    installed: true
+    versions:
+      - 1.3.10
+  libaio1:
+    installed: true
+  git:
+    installed: true
+  openssh-client:
+    installed: true
+
+command:
+  printenv LANG:
+    exit-status: 0
+    stdout:
+      - "C.UTF-8"
+    timeout: 5000
+  printenv JAVA_VERSION:
+    exit-status: 0
+    stdout:
+      - "jdk8u252-b09"
+    timeout: 5000
+  which sbt:
+    exit-status: 0
+    stdout:
+      - "/usr/bin/sbt"
+    timeout: 5000
+  java -version:
+    exit-status: 0
+    timeout: 5000
+  aws --version:
+    exit-status: 0
+    timeout: 5000
+  docker --version:
+    exit-status: 0
+    timeout: 5000

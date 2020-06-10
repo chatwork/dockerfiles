@@ -1,6 +1,6 @@
 FROM amazonlinux:2
 
-ARG AWSCLI_VERSION=2.0.20
+ARG AWSCLI_VERSION=2.0.21
 
 LABEL version="${AWSCLI_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

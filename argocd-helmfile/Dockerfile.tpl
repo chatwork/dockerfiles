@@ -12,7 +12,7 @@ ARG KUBECTL_VERSION=1.17.5
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)
 RUN apt-get update && \
-    apt-get install -y curl gpg && \
+    apt-get install -y curl gpg apt-utils && \
     apt-get clean && \
     curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_linux_amd64 && \
     curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/3.2.0/sops-3.2.0.linux && \

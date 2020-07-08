@@ -1,12 +1,12 @@
-FROM argoproj/argocd:v1.6.1
+FROM argoproj/argocd:{{ .argocd_version }}
 
-LABEL version="v1.6.1"
+LABEL version="{{ .argocd_version }}"
 LABEL maintainer="shinya@chatwork.com"
 
 # Switch to root for the ability to perform install
 USER root
 
-ARG HELMFILE_VERSION=v0.120.0
+ARG HELMFILE_VERSION={{ .helmfile_version }}
 ARG KUBECTL_VERSION=1.17.5
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests

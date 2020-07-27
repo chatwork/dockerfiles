@@ -5,13 +5,11 @@ provisioners:
       arguments:
         argocd_version: "{{ .argocd.version }}"
         helmfile_version: "{{ .helmfile.version }}"
-        kubectl_version: "{{ .kubectl.version }}"
     goss/goss.yaml:
       source: goss/goss.yaml.tpl
       arguments:
         argocd_version: "{{ .argocd.version }}"
         helmfile_version: "{{ .helmfile.version }}"
-        kubectl_version: "{{ .kubectl.version }}"
 
 dependencies:
   argocd:
@@ -25,10 +23,3 @@ dependencies:
         source: https://quay.io/api/v1/repository/roboll/helmfile/tag/
         versions: "$.tags[*].name"
     version: "> 0.1"
-  kubectl:
-    releasesFrom:
-      githubReleases:
-        source: kubernetes/kubernetes
-    version: "~ 1.17"
-
-

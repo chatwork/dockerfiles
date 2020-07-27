@@ -6,7 +6,7 @@ LABEL maintainer="shinya@chatwork.com"
 # Switch to root for the ability to perform install
 USER root
 
-ARG HELMFILE_VERSION=0.120.0
+ARG HELMFILE_VERSION=v0.120.0
 ARG KUBECTL_VERSION=1.17.9
 ARG SOPS_VERSION=3.2.0
 ARG HELM_DIFF_VERSION=3.1.1

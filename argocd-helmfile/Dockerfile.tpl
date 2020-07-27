@@ -1,15 +1,15 @@
-FROM argoproj/argocd:{{ .argocd_version }}
+FROM argoproj/argocd:v{{ .argocd_version }}
 
-LABEL version="{{ .argocd_version }}"
+LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}-{{ .kubectl_version }}"
 LABEL maintainer="shinya@chatwork.com"
 
 # Switch to root for the ability to perform install
 USER root
 
 ARG HELMFILE_VERSION={{ .helmfile_version }}
-ARG KUBECTL_VERSION=1.17.5
+ARG KUBECTL_VERSION={{ .kubectl_version }}
 ARG SOPS_VERSION=3.2.0
-ARG HELM-DIFF_VERSION=3.1.1
+ARG HELM_DIFF_VERSION=3.1.1
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)
 RUN apt-get update && \
@@ -26,7 +26,7 @@ RUN apt-get update && \
 # Switch back to non-root user
 USER argocd
 
-RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM-DIFF_VERSION} && \
+RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} && \
     helm plugin install https://github.com/futuresimple/helm-secrets && \
     helm plugin install https://github.com/hypnoglow/helm-s3.git && \
     helm plugin install https://github.com/mumoshu/helm-x  && \

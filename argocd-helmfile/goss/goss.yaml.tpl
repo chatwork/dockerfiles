@@ -6,7 +6,7 @@ command:
   /usr/local/bin/kubectl version:
     exit-status: 1
     stdout:
-    - v1.17.5
+    - {{ .kubectl_version }}
   /usr/local/bin/helm version --short:
     exit-status: 0
     stdout:

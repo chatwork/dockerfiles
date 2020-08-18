@@ -7,6 +7,7 @@ RUN git clone https://github.com/chatwork/kube-schedule-scaler -b $KUBE_SCHEDULE
 
 FROM ubuntu:20.04
 
+ARG KUBE_SCHEDULE_SCALER_VERSION=v0.0.1
 LABEL version="${KUBE_SCHEDULE_SCALER_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

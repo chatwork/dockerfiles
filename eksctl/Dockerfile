@@ -2,7 +2,7 @@ FROM alpine:edge as downloads
 WORKDIR /downloads
 
 ARG EKSCTL_VERSION=0.28.1
-ARG KUBECTL_VERSION=1.17.5
+ARG KUBECTL_VERSION=1.18.9
 LABEL version="${EKSCTL_VERSION}"
 
 RUN wget -O - https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION}/eksctl_Linux_amd64.tar.gz | tar zxvf -

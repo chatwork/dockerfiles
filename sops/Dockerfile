@@ -1,4 +1,4 @@
-FROM chatwork/alpine-sdk:3.10
+FROM chatwork/alpine-sdk:3.12
 
 ARG SOPS_VERSION=3.6.1
 

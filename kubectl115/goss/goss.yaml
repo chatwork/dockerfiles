@@ -1,9 +1,0 @@
-file:
-  /usr/local/bin/kubectl:
-    exists: true
-    mode: "0711"
-command:
-  /usr/local/bin/kubectl version:
-    exit-status: 1
-    stdout:
-      - v1.15.12

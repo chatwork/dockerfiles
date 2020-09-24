@@ -1,6 +1,6 @@
 version: '3'
 services:
-  kubectl116:
+  kubectl117:
     build:
       context: .
     image: chatwork/kubectl
@@ -14,4 +14,4 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      - kubectl116
+      - kubectl117

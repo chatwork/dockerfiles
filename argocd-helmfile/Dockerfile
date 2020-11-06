@@ -7,7 +7,7 @@ LABEL maintainer="shinya@chatwork.com"
 USER root
 
 ARG HELMFILE_VERSION=v0.133.0
-ARG KUBECTL_VERSION=1.17.5
+ARG KUBECTL_VERSION=1.18.10
 ARG SOPS_VERSION=3.2.0
 ARG HELM_DIFF_VERSION=3.1.1
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests

@@ -19,7 +19,6 @@ dependencies:
     version: "> 1.5.0"
   helmfile:
     releasesFrom:
-      jsonPath:
-        source: https://quay.io/api/v1/repository/roboll/helmfile/tag/
-        versions: "$.tags[*].name"
+      githubReleases:
+        source: roboll/helmfile
     version: "> 0.1"

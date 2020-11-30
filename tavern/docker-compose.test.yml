@@ -1,0 +1,17 @@
+version: '3'
+services:
+  tavern:
+    build:
+      context: .
+    image: chatwork/tavern
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/tavern tail -f /dev/null
+    container_name: tavern
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - tavern

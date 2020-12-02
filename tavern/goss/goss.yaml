@@ -1,0 +1,8 @@
+command:
+  tavern-ci --help:
+    exit-status: 0
+
+  pip list:
+    exit-status: 0
+    stdout:
+      - "pytest-tldr"

@@ -7,10 +7,6 @@ command:
     exit-status: 1
     stdout:
     - 1.18.10
-  /usr/local/bin/helm version --short:
-    exit-status: 0
-    stdout:
-    - v3.2.0
   /usr/local/bin/helm plugin list:
     exit-status: 0
     stdout:

@@ -1,9 +1,0 @@
-file:
-  /usr/local/bin/kube-aws:
-    exists: true
-    mode: "0755"
-command:
-  /usr/local/bin/kube-aws version:
-    exit-status: 0
-    stdout:
-      - v0.14.X/9732bc9a+dirty

@@ -1,14 +1,18 @@
 file:
-  /usr/bin/aws:
+  /usr/local/bin/aws:
     exists: true
-    mode: "0755"
+    mode: "0777"
   /usr/bin/jq:
     exists: true
     mode: "0755"
 command:
-  /usr/bin/aws --version:
+  /usr/local/bin/aws --version:
     exit-status: 0
-  /usr/bin/aws help:
+  /usr/bin/jq -h:
     exit-status: 0
-  /usr/bin/jq --version:
+  /usr/bin/unzip -h:
+    exit-status: 0
+  /usr/bin/tar --help:
+    exit-status: 0
+  /usr/bin/gzip -h:
     exit-status: 0

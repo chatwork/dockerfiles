@@ -1,0 +1,170 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Parameters": {
+    "ProjectName": {
+      "Type": "String",
+      "Default": ""
+    },
+    "GatlingRunnerDockerImage": {
+      "Type": "String",
+      "Default": ""
+    },
+    "GatlingS3ReporterDockerImage": {
+      "Type": "String",
+      "Default": "chatwork/gatling-s3-reporter:0.0.1-gatling2.2.3"
+    },
+    "S3GatlingLogBucketName": {
+      "Type": "String",
+      "Default": ""
+    }
+  },
+  "Resources": {
+    "ECSTaskExecutionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": [
+                  "ecs-tasks.amazonaws.com"
+                ]
+              },
+              "Action": [
+                "sts:AssumeRole"
+              ]
+            }
+          ]
+        },
+        "Path": "/",
+        "ManagedPolicyArns":[
+          "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+        ],
+        "Policies": [
+          {
+            "PolicyName": "ecs-service",
+            "PolicyDocument": {
+              "Statement":
+                [
+                  {
+                    "Effect": "Allow",
+                    "Action": [
+                      "s3:PutObject",
+                      "s3:ListBucket"
+                    ],
+                    "Resource": [
+                      {
+                        "Fn::Join": [
+                          "",
+                          [
+                            "arn:aws:s3:::",
+                            {
+                              "Ref": "S3GatlingLogBucketName"
+                            },
+                            ""
+                          ]
+                        ]
+                      },
+                      {
+                        "Fn::Join": [
+                          "",
+                          [
+                            "arn:aws:s3:::",
+                            {
+                              "Ref": "S3GatlingLogBucketName"
+                            },
+                            "/*"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                ]
+            }
+          }
+        ]
+      }
+    },
+    "ECSLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": { "Fn::Sub" :  "/ecs/logs/${ProjectName}-group" },
+        "RetentionInDays": 180
+      }
+    },
+    "GatlingSimulationTaskDefinition": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "RequiresCompatibilities": ["FARGATE"],
+        "Cpu": "512",
+        "Memory": "1024",
+        "NetworkMode": "awsvpc",
+        "ExecutionRoleArn": { "Ref": "ECSTaskExecutionRole" },
+        "TaskRoleArn": { "Ref": "ECSTaskExecutionRole" },
+        "ContainerDefinitions": [
+          {
+            "Name": "gatling-runner",
+            "Essential": "true",
+            "Image": { "Ref" : "GatlingRunnerDockerImage" },
+            "LogConfiguration": {
+              "LogDriver" : "awslogs",
+              "Options" : {
+                "awslogs-region": { "Ref": "AWS::Region" },
+                "awslogs-group": { "Ref": "ECSLogGroup" },
+                "awslogs-stream-prefix": { "Ref" : "ProjectName" }
+              }
+            },
+            "PortMappings": [
+            ]
+          }
+        ]
+      }
+    },
+    "GatlingS3ReporterTaskDefinition": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "RequiresCompatibilities": ["FARGATE"],
+        "Cpu": "1024",
+        "Memory": "2048",
+        "NetworkMode": "awsvpc",
+        "ExecutionRoleArn": { "Ref": "ECSTaskExecutionRole" },
+        "TaskRoleArn": { "Ref": "ECSTaskExecutionRole" },
+        "ContainerDefinitions": [
+          {
+            "Name": "gatling-s3-reporter",
+            "Essential": "true",
+            "Image": { "Ref" : "GatlingS3ReporterDockerImage" },
+            "Environment": [
+              { "Name": "S3_GATLING_BUCKET_NAME", "Value": { "Ref": "S3GatlingLogBucketName"} },
+              { "Name": "S3_GATLING_RESULT_DIR_PATH", "Value": "" },
+            ],
+            "LogConfiguration": {
+              "LogDriver" : "awslogs",
+              "Options" : {
+                "awslogs-region": { "Ref": "AWS::Region" },
+                "awslogs-group": { "Ref": "ECSLogGroup" },
+                "awslogs-stream-prefix": { "Ref" : "ProjectName" }
+              }
+            },
+            "PortMappings": [
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Outputs": {
+    "GatlingSimulationTaskDefinition": {
+      "Value": {
+        "Ref": "GatlingSimulationTaskDefinition"
+      }
+    },
+    "GatlingS3ReporterTaskDefinition": {
+      "Value": {
+        "Ref": "GatlingS3ReporterTaskDefinition"
+      }
+    }
+  }
+}

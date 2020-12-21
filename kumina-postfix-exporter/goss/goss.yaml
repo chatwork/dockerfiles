@@ -1,0 +1,7 @@
+file:
+  /bin/postfix_exporter:
+    exists: true
+    mode: "0755"
+command:
+  /bin/postfix_exporter --help:
+    exit-status: 0

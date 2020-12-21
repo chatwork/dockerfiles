@@ -1,7 +1,7 @@
 .PHONY: build
 build:
 	docker build -t chatwork/`basename $$PWD` .;
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD` | sed 's/\+dirty//g'); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
 		if [ -n "$$version" ]; then \
 			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
 		fi
@@ -17,8 +17,9 @@ check:
 
 .PHONY: test
 test:
-	@make check;
-	docker-compose -f docker-compose.test.yml run --rm sut;
+	docker-compose -f docker-compose.test.yml up --build --no-start sut
+	docker cp $(shell pwd)/goss `basename $$PWD`:/goss
+	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut sut
 
 .PHONY: push
 push:

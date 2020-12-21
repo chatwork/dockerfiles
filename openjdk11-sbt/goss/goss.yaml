@@ -1,0 +1,25 @@
+package:
+  unzip:
+    installed: true
+  zip:
+    installed: true
+
+command:
+  printenv LANG:
+    exit-status: 0
+    stdout:
+    - "en_US.UTF-8"
+    timeout: 5000
+  printenv JAVA_VERSION:
+    exit-status: 0
+    stdout:
+    - "jdk-11.0.7+10"
+    timeout: 5000
+  which sbt:
+    exit-status: 0
+    stdout:
+    - "/root/.sdkman/candidates/sbt/current/bin/sbt"
+    timeout: 5000
+  java -version:
+    exit-status: 0
+    timeout: 5000

@@ -1,37 +1,34 @@
-ARG ARGO_VERSION=v0.12.3
+FROM argoproj/argocd:v1.8.1
 
-FROM argoproj/argocd:${ARGO_VERSION}
+LABEL version="1.8.1-0.135.0"
+LABEL maintainer="shinya@chatwork.com"
 
-ARG HELM_DIFF_VERSION=master
-ARG HELM_SECRETS_VERSION=master
-ARG HELM_IMPORT_VERSION=0.2.1
-ARG HELM_TILLER_VERSION=v0.6.7
-ARG HELMFILE_VERSION=0.45.3
-
-LABEL version="0.12.3"
-LABEL maintainer="ozaki@chatwork.com"
-
+# Switch to root for the ability to perform install
 USER root
 
+ARG HELMFILE_VERSION=v0.135.0
+ARG KUBECTL_VERSION=1.18.10
+ARG SOPS_VERSION=3.2.0
+ARG HELM_DIFF_VERSION=3.1.1
+# Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
+# (e.g. curl, awscli, gpg, sops)
 RUN apt-get update && \
-    apt-get install -y sudo && \
-    apt-get install -y apt-utils && \
-    apt-get install -y wget && \
-    apt-get install -y curl
+    apt-get install -y curl gpg apt-utils && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_linux_amd64 && \
+    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux && \
+    curl -o /usr/local/bin/kubectl -L https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
+    chmod +x /usr/local/bin/kubectl && \
+    chmod +x /usr/local/bin/helmfile && \
+    chmod +x /usr/local/bin/sops
 
-ADD https://github.com/roboll/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_linux_amd64 /bin/helmfile
-RUN chmod 0755 /bin/helmfile
-
-ENV HELM_HOME /home/argocd/.helm
-RUN mkdir -p "$(helm home)/plugins" && \
-    helm init --client-only && \
-    helm plugin install https://github.com/k-kinzal/helm-import --version ${HELM_IMPORT_VERSION}  && \
-    helm plugin install https://github.com/databus23/helm-diff --version ${HELM_DIFF_VERSION} && \
-    helm plugin install https://github.com/futuresimple/helm-secrets --version ${HELM_SECRETS_VERSION} && \
-    helm plugin install https://github.com/rimusz/helm-tiller --version ${HELM_TILLER_VERSION} && \
-    helm tiller install && \
-    chown -R argocd:argocd /home/argocd/.helm
-
+# Switch back to non-root user
 USER argocd
 
-WORKDIR /home/argocd
+RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} && \
+    helm plugin install https://github.com/futuresimple/helm-secrets && \
+    helm plugin install https://github.com/hypnoglow/helm-s3.git && \
+    helm plugin install https://github.com/mumoshu/helm-x  && \
+    helm plugin install https://github.com/aslafy-z/helm-git.git
+

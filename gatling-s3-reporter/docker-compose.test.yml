@@ -1,0 +1,17 @@
+version: '3'
+services:
+  gatling-s3-reporter:
+    build:
+      context: .
+    image: chatwork/gatling-s3-reporter
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint tail chatwork/gatling-s3-reporter -f /dev/null
+    container_name: gatling-s3-reporter
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - gatling-s3-reporter

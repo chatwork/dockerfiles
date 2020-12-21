@@ -1,6 +1,6 @@
 version: '3'
 services:
-  busybox:
+  postfix:
     build:
       context: .
     image: chatwork/postfix
@@ -11,9 +11,11 @@ services:
       GOSS_FILES_STRATEGY: cp
       GOSS_SLEEP: 5
     command: /usr/local/bin/dgoss run chatwork/postfix
+    container_name: postfix
     volumes:
-      - ./goss/goss.yaml:/goss/goss.yaml
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - postfix
   sut-with-sasl_passwd:
     image: kiwicom/dgoss
     environment:
@@ -21,8 +23,8 @@ services:
       GOSS_FILES_STRATEGY: cp
       GOSS_SLEEP: 5
     command: /bin/bash /goss/test_command.sh
+    container_name: postfix-with-sasl_passwd
     volumes:
-      - ./goss/with-sasl_passwd/goss.yaml:/goss/goss.yaml
-      - ./goss/with-sasl_passwd/sasl_passwd:/goss/sasl_passwd
-      - ./goss/with-sasl_passwd/test_command.sh:/goss/test_command.sh
       - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - postfix

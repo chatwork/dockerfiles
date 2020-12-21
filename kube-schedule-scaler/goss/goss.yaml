@@ -1,0 +1,16 @@
+file:
+  /root/startup.sh:
+    exists: true
+    mode: "0500"
+  /root/run_missed_jobs.py:
+    exists: true
+    mode: "0500"
+  /root/schedule_scaling:
+    exists: true
+command:
+   /usr/local/bin/pip freeze:
+     exit-status: 0
+     stdout:
+       - /pykube-ng==20.7.2/
+       - /python-crontab==2.5.1/
+       - /croniter==0.3.34/

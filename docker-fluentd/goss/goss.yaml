@@ -9,18 +9,18 @@ command:
   /usr/local/bundle/bin/fluentd --version:
     exit-status: 0
     stdout:
-    - "fluentd 1.6.2"
+    - "fluentd 1.11.5"
   /usr/local/bundle/bin/fluent-gem list:
     exit-status: 0
     stdout:
     - /^fluent-plugin-concat\ \(2\.3\.0\)/
     - /^fluent-plugin-detect-exceptions\ \(0\.0\.12\)/
-    - /^fluent-plugin-google-cloud\ \(0\.7\.15\)/
+    - /^fluent-plugin-google-cloud\ \(0\.10\.4\)/
     - /^fluent-plugin-kafka\ \(0\.9\.6\)/
     - /^fluent-plugin-kinesis\ \(3\.1\.0\)/
-    - /^fluent-plugin-record-modifier\ \(2\.0\.1\)/
+    - /^fluent-plugin-record-modifier\ \(2\.1\.0\)/
     - /^fluent-plugin-record-reformer\ \(0\.9\.1\)/
     - /^fluent-plugin-rewrite-tag-filter\ \(2\.2\.0\)/
-    - /^fluent-plugin-s3\ \(1\.1\.10\)/
-    - /^fluent-plugin-datadog\ \(0\.10\.5\)/
+    - /^fluent-plugin-s3\ \(1\.5\.0\)/
+    - /^fluent-plugin-datadog\ \(0\.12\.1\)/
     - /^fluent-plugin-cloudwatch-logs\ \(0\.7\.3\)/

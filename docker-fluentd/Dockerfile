@@ -46,7 +46,7 @@ RUN apt-get update \
  && gem install fluent-plugin-rewrite-tag-filter -v "2.2.0" \
  && gem install fluent-plugin-s3 -v "1.5.0" \
  && gem install fluent-plugin-systemd -v "1.0.2"\
- && gem install fluent-plugin-datadog -v "0.12.0"\
+ && gem install fluent-plugin-datadog -v "0.12.1"\
  && gem install fluent-plugin-cloudwatch-logs -v "0.7.3" \
  && gem install logfmt \
  && apt-get purge -y --auto-remove \

@@ -13,7 +13,7 @@ RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && apt-get install -y --no-install-recommends $buildDeps \
     && echo 'gem: --no-document' >> /etc/gemrc \
     # official plugins
-    && fluent-gem install fluent-plugin-s3 -v "1.3.1" \
+    && fluent-gem install fluent-plugin-s3 -v "1.5.0" \
     && fluent-gem install fluent-plugin-kafka -v "0.13.0" \
     && fluent-gem install fluent-plugin-elasticsearch -v "4.0.8" \
     && fluent-gem install fluent-plugin-mongo -v "1.4.0" \
@@ -28,7 +28,7 @@ RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && fluent-gem install fluent-plugin-aws-elasticsearch-service -v "1.0.0" \
     # gcp plugin
     && fluent-gem install fluent-plugin-bigquery -v "2.2.0" \
-    && fluent-gem install fluent-plugin-google-cloud -v "0.8.4" \
+    && fluent-gem install fluent-plugin-google-cloud -v "0.10.4" \
     # other plugin
     && fluent-gem install fluent-plugin-detect-exceptions -v "0.0.13" \
     && SUDO_FORCE_REMOVE=yes \

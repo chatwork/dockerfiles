@@ -4,6 +4,7 @@ provisioners:
       source: Dockerfile.tpl
       arguments:
         argocd_version: "{{ .argocd.version }}"
+        helm_version: "{{ .helm.version }}"
         helmfile_version: "{{ .helmfile.version }}"
     goss/goss.yaml:
       source: goss/goss.yaml.tpl
@@ -22,3 +23,8 @@ dependencies:
       githubReleases:
         source: roboll/helmfile
     version: "> 0.1"
+  helm:
+    releasesFrom:
+      githubReleases:
+        source: helm/helm
+    version: "> 1.0"

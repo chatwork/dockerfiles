@@ -10,6 +10,7 @@ provisioners:
       source: goss/goss.yaml.tpl
       arguments:
         argocd_version: "{{ .argocd.version }}"
+        helm_version: "{{ .helm.version }}"
         helmfile_version: "{{ .helmfile.version }}"
 
 dependencies:

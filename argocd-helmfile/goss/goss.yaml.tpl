@@ -15,6 +15,10 @@ command:
       - /^secrets/
       - /^s3/
       - /^x/
+  /usr/local/bin/helm version:
+    exit-status: 0
+    stdout:
+      - {{ .helm_version }}
   /usr/local/bin/helmfile -v:
     exit-status: 0
     stdout:

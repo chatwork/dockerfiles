@@ -1,0 +1,17 @@
+version: '3'
+services:
+  gomplate:
+    build:
+      context: .
+    image: chatwork/gomplate
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/gomplate tail -f /dev/null
+    container_name: gomplate
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - gomplate

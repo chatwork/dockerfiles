@@ -14,4 +14,4 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 ENTRYPOINT ["/usr/local/bundle/bin/gratan"]
-CMD ["--help"]
+CMD ["--version"]

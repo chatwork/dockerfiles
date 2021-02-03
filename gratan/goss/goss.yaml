@@ -4,6 +4,7 @@ file:
     mode: "0755"
 command:
   /usr/local/bundle/bin/gratan --version:
+    # https://github.com/codenize-tools/gratan/blob/8b13107/bin/gratan#L75
     exit-status: 0
     stdout:
-      - gratan 0.3.2
+      - "gratan 0.3.2"

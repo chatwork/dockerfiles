@@ -9,7 +9,7 @@ services:
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run chatwork/gratan
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/gratan tail -f /dev/null
     container_name: gratan
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    deep_merge (1.2.1)
+    gratan (0.3.2)
+      deep_merge
+      hashie
+      mysql2
+      term-ansicolor
+    hashie (3.6.0)
+    mysql2 (0.5.2)
+    term-ansicolor (1.7.1)
+      tins (~> 1.0)
+    tins (1.21.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gratan
+
+BUNDLED WITH
+   1.16.1

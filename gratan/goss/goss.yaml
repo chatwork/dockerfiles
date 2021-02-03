@@ -1,0 +1,9 @@
+file:
+  /usr/local/bundle/bin/gratan:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bundle/bin/gratan --version:
+    exit-status: 0
+    stdout:
+      - gratan 0.3.2

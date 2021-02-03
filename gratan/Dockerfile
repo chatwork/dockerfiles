@@ -1,5 +1,8 @@
 FROM ruby:2.6
 
+ARG GRATAN_VERSION=0.3.2
+LABEL version="${GRATAN_VERSION}"
+
 LABEL maintainer="adachi@chatwork.com"
 
 # throw errors if Gemfile has been modified since Gemfile.lock

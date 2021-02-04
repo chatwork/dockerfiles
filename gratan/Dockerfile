@@ -11,7 +11,9 @@ RUN bundle config --global frozen 1
 WORKDIR /usr/src/app
 
 COPY Gemfile Gemfile.lock ./
-RUN bundle install
+RUN bundle install \
+    && gem sources --clear-all \
+    && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
 
 ENTRYPOINT ["/usr/local/bundle/bin/gratan"]
 CMD ["--version"]

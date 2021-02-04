@@ -1,4 +1,4 @@
-# jq
+# gratan
 
 https://github.com/codenize-tools/gratan
 

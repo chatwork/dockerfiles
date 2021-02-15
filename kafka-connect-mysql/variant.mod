@@ -11,7 +11,7 @@ dependencies:
     releasesFrom:
       dockerImageTags:
         source: confluentinc/cp-kafka-connect-base
-    version: "> 0.1.0"
+    version: "< 6.0.0"
   mysqlConnector:
     releasesFrom:
       exec:

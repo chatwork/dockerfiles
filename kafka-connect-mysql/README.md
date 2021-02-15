@@ -7,5 +7,5 @@ Lightweight Kafka Connect with support for MySQL Connector.
 ## Usage
 
 ```
-$ docker run -v ${PWD}/my-connector.properties:/etc/my-connector.properties chatwork/kafka-connect-mysql /etc//kafka/my-connector.properties
+$ docker run -v ${PWD}/my-connector.properties:/etc/kafka/my-connector.properties chatwork/kafka-connect-mysql /etc/kafka/my-connector.properties
 ```

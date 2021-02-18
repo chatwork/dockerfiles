@@ -19,4 +19,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 EXPOSE 8083
 
-ENTRYPOINT ["/usr/bin/connect-distributed"]

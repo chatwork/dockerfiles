@@ -1,13 +1,13 @@
-FROM alpine/git:v2.26.2 as git
+FROM alpine/git:v2.30.1 as git
 
-ARG KUBE_SCHEDULE_SCALER_VERSION=v0.0.1
+ARG KUBE_SCHEDULE_SCALER_VERSION=v0.0.2
 
 WORKDIR /
 RUN git clone https://github.com/chatwork/kube-schedule-scaler -b $KUBE_SCHEDULE_SCALER_VERSION /kube-schedule-scaler
 
 FROM ubuntu:20.04
 
-ARG KUBE_SCHEDULE_SCALER_VERSION=v0.0.1
+ARG KUBE_SCHEDULE_SCALER_VERSION=v0.0.2
 LABEL version="${KUBE_SCHEDULE_SCALER_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

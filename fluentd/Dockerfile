@@ -1,8 +1,8 @@
-ARG FLUENTD_IMAGE_VERSION="1.12.0-debian-1.0"
+ARG FLUENTD_IMAGE_VERSION="1.12.1-debian-1.0"
 
 FROM fluent/fluentd:v${FLUENTD_IMAGE_VERSION}
 
-ARG FLUENTD_VERSION="1.12.0"
+ARG FLUENTD_VERSION="1.12.1"
 
 LABEL version="${FLUENTD_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

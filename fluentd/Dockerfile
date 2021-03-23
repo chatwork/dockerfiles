@@ -1,8 +1,8 @@
-ARG FLUENTD_IMAGE_VERSION="1.12.0-debian-1.0"
+ARG FLUENTD_IMAGE_VERSION="1.12.1-debian-1.0"
 
 FROM fluent/fluentd:v${FLUENTD_IMAGE_VERSION}
 
-ARG FLUENTD_VERSION="1.12.0"
+ARG FLUENTD_VERSION="1.12.1"
 
 LABEL version="${FLUENTD_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
@@ -27,8 +27,8 @@ RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && fluent-gem install fluent-plugin-cloudwatch-logs -v "0.9.4" \
     && fluent-gem install fluent-plugin-aws-elasticsearch-service -v "1.0.0" \
     # gcp plugin
-    && fluent-gem install fluent-plugin-bigquery -v "2.2.0" \
     && fluent-gem install fluent-plugin-google-cloud -v "0.10.4" \
+    && fluent-gem install fluent-plugin-bigquery -v "2.2.0" \
     # other plugin
     && fluent-gem install fluent-plugin-detect-exceptions -v "0.0.13" \
     && SUDO_FORCE_REMOVE=yes \

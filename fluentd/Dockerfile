@@ -27,8 +27,8 @@ RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && fluent-gem install fluent-plugin-cloudwatch-logs -v "0.9.4" \
     && fluent-gem install fluent-plugin-aws-elasticsearch-service -v "1.0.0" \
     # gcp plugin
-    && fluent-gem install fluent-plugin-google-cloud -v "0.10.4" \
     && fluent-gem install fluent-plugin-bigquery -v "2.2.0" \
+    && fluent-gem install fluent-plugin-google-cloud -v "0.10.4" \
     # other plugin
     && fluent-gem install fluent-plugin-detect-exceptions -v "0.0.13" \
     && SUDO_FORCE_REMOVE=yes \

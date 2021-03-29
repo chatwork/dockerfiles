@@ -92,7 +92,7 @@ jobs:
           command: |
             TITLE="CircleCI: Failed update dependencies (devil)"
             BODY="Check the error from the following URL."
-            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_TOKEN}" \
+            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_API_TOKEN}" \
               "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
                 --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
           when: on_fail
@@ -117,7 +117,7 @@ jobs:
           command: |
             TITLE="CircleCI: Failed auto merge (devil)"
             BODY="$(cat stderr)"
-            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_TOKEN}" \
+            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_API_TOKEN}" \
               "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
                 --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
           when: on_fail
@@ -125,8 +125,10 @@ workflows:
   version: 2
   integration:
     jobs:
-      - test
+      - test:
+          context: "chatwork_api_token@circleci"
       - push:
+          context: "chatwork_api_token@circleci"
           requires:
             - test
           filters:
@@ -134,7 +136,8 @@ workflows:
               only: master
   update_dependecies:
     jobs:
-      - mod
+      - mod:
+          context: "chatwork_api_token@circleci"
     triggers:
       - schedule:
           cron: "0 * * * *"
@@ -144,7 +147,8 @@ workflows:
                 - master
   auto_merge:
     jobs:
-      - merge
+      - merge:
+          context: "chatwork_api_token@circleci"
     triggers:
       - schedule:
           cron: "0,10,20,30,40,50 * * * *"

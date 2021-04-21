@@ -1,9 +1,9 @@
-ARG KAFKA_CONNECT_VERSION=5.5.3
+ARG KAFKA_CONNECT_VERSION=5.5.4
 
 # https://github.com/confluentinc/cp-docker-images/blob/5.3.1-post/debian/kafka-connect-base/Dockerfile
 FROM confluentinc/cp-kafka-connect-base:${KAFKA_CONNECT_VERSION}
 
-ARG KAFKA_CONNECT_VERSION=5.5.3
+ARG KAFKA_CONNECT_VERSION=5.5.4
 ARG MYSQL_CONNECTOR_VERSION=8.0.24
 
 LABEL version="${KAFKA_CONNECT_VERSION}-${MYSQL_CONNECTOR_VERSION}"

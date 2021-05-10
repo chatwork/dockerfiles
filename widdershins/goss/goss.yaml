@@ -9,8 +9,6 @@ package:
 command:
   node -v:
     exit-status: 0
-    stdout:
-      - "v15.14.0"
     timeout: 5000
   widdershins --version:
     exit-status: 0

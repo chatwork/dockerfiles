@@ -1,0 +1,26 @@
+package:
+  git:
+    installed: true
+  zip:
+    installed: true
+  openssh:
+    installed: true
+  curl:
+    installed: true
+
+command:
+  node -v:
+    exit-status: 0
+    stdout:
+      - "v15.14.0"
+    timeout: 5000
+  widdershins --version:
+    exit-status: 0
+    stdout:
+      - "4.0.1"
+    timeout: 5000
+  pwd:
+    exit-status: 0
+    stdout:
+      - "/widdershins"
+    timeout: 5000

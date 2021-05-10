@@ -1,18 +1,15 @@
-ARG NODE_VERSION=15.14-alpine
+ARG NODE_VERSION=lts-buster
 
-FROM node:${NODE_VERSION}
+FROM circleci/node:${NODE_VERSION}
 
 ARG WIDDERSHINS_VERSION=4.0.1
 
 LABEL version="${WIDDERSHINS_VERSION}"
 LABEL maintainer="shinohara@chatwork.com"
 
-RUN npm install -g widdershins \
-    && apk update \
-    && apk add git \
-    && apk add openssh \
-    && apk add curl \
-    && mkdir /widdershins
+RUN sudo npm install -g widdershins \
+    && sudo apt-get update \
+    && sudo mkdir /widdershins
 
 WORKDIR /widdershins
 

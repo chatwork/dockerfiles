@@ -8,7 +8,6 @@ LABEL version="${WIDDERSHINS_VERSION}"
 LABEL maintainer="shinohara@chatwork.com"
 
 RUN sudo npm install -g widdershins \
-    && sudo apt-get update \
     && sudo mkdir /widdershins
 
 WORKDIR /widdershins

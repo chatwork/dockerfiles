@@ -8,7 +8,8 @@ LABEL version="${WIDDERSHINS_VERSION}"
 LABEL maintainer="shinohara@chatwork.com"
 
 RUN sudo npm install -g widdershins \
-    && sudo mkdir /widdershins
+    && sudo mkdir /widdershins \
+    && sudo chown circleci:circleci /widdershins
 
 WORKDIR /widdershins
 

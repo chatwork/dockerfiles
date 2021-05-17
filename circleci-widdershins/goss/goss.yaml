@@ -20,3 +20,8 @@ command:
     stdout:
       - "/widdershins"
     timeout: 5000
+  ls -la /widdershins:
+    exit-status: 0
+    stdout:
+      - "circleci circleci"
+    timeout: 5000

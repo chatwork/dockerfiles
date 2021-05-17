@@ -12,4 +12,4 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: kubernetes-sigs/kind
-    version: "> 1.0"
+    version: "> 0.10.0"

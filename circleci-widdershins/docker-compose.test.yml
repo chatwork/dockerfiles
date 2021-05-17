@@ -4,7 +4,6 @@ services:
     build:
       context: .
     image: chatwork/circleci-widdershins
-    command: --version
   sut:
     image: kiwicom/dgoss
     environment:

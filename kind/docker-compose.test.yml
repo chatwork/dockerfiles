@@ -1,0 +1,17 @@
+version: '3'
+services:
+  kind:
+    build:
+      context: .
+    image: chatwork/kind
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint tail chatwork/kind -f /dev/null
+    container_name: kind
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - kind

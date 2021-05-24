@@ -2,7 +2,7 @@
 
 https://docs.confluent.io/platform/current/connect/index.html
 
-Lightweight Kafka Connect with support for MySQL Connector.
+Lightweight Kafka Connect v5.x with support for MySQL Connector.
 
 ## Usage
 

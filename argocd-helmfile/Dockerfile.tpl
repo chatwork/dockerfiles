@@ -11,7 +11,7 @@ ARG HELM_VERSION=v{{ .helm_version }}
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG KUBECTL_VERSION=1.18.10
-ARG SOPS_VERSION=3.2.0
+ARG SOPS_VERSION=3.7.1
 ARG HELM_DIFF_VERSION=3.1.3
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests

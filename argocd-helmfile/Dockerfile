@@ -43,7 +43,7 @@ RUN apt-get update && \
 USER argocd
 
 RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} && \
-    helm plugin install https://github.com/futuresimple/helm-secrets && \
+    helm plugin install https://github.com/jkroepke/helm-secrets && \
     helm plugin install https://github.com/hypnoglow/helm-s3.git && \
     helm plugin install https://github.com/mumoshu/helm-x  && \
     helm plugin install https://github.com/aslafy-z/helm-git.git

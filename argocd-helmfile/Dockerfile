@@ -10,8 +10,8 @@ ARG HELMFILE_VERSION=v0.139.7
 ARG HELM_VERSION=v3.6.0
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"
-ARG KUBECTL_VERSION=1.18.10
-ARG SOPS_VERSION=v3.7.1
+ARG KUBECTL_VERSION=1.20.7
+ARG SOPS_VERSION=3.7.1
 ARG HELM_DIFF_VERSION=3.1.3
 ARG HELM_SECRETS_VERSION=3.7.0
 
@@ -34,7 +34,7 @@ RUN apt-get update && \
     # helmfile
     curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_linux_amd64 && \
     # sops
-    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux && \
+    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux && \
     chmod +x /usr/local/bin/kubectl && \
     chmod +x /usr/local/bin/helm && \
     chmod +x /usr/local/bin/helmfile && \

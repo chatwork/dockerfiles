@@ -1,12 +1,12 @@
 FROM argoproj/argocd:v2.0.3
 
-LABEL version="2.0.3-0.139.7"
+LABEL version="2.0.3-0.139.8"
 LABEL maintainer="shinya@chatwork.com"
 
 # Switch to root for the ability to perform install
 USER root
 
-ARG HELMFILE_VERSION=v0.139.7
+ARG HELMFILE_VERSION=v0.139.8
 ARG HELM_VERSION=v3.6.0
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"

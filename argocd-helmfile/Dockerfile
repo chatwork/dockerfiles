@@ -34,7 +34,7 @@ RUN apt-get update && \
     # helmfile
     curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_linux_amd64 && \
     # sops
-    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux && \
+    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux && \
     chmod +x /usr/local/bin/kubectl && \
     chmod +x /usr/local/bin/helm && \
     chmod +x /usr/local/bin/helmfile && \

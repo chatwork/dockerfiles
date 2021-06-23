@@ -23,7 +23,7 @@ Docker Cmd must contain below procedures.
 * Ecs task (reporter) must be created by cloudformation
   * must use FARGATE
   * must contain container which name is "gatling-s3-reporter"
-    * use Docker Image chatwork/gatling-s3-reporter:0.0.1-gatling2.2.3
+    * use Docker Image chatwork/gatling-s3-reporter:0.1.1
   * Outputs contains task-definition name
 
 As a Example, please copy and modify samples/cloudformation/gatling-ecs.template to create stack.
@@ -61,18 +61,18 @@ As a Example, please copy and modify samples/example.json
 ### basic example
 
 ```
-$ docker run -it --rm -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.0.1
+$ docker run -it --rm -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
 ```
 
 ### Using specific aws profile
 
 ```
-$ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.0.1
+$ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
 ```
 
 ### Using Chatwork API Token to send message when task completed
 
 ```
 $ export CHATWORK_API_TOKEN=xxxxxxxxxxxxxxxxxxx
-$ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -e CHATWORK_API_TOKEN -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.0.1
+$ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -e CHATWORK_API_TOKEN -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
 ```

@@ -1,11 +1,10 @@
 const util = require('util');
 
-const AWS = require('aws-sdk');
+const { ECSClient, RunTaskCommand, DescribeTasksCommand} = require('@aws-sdk/client-ecs');
+const { CloudFormationClient, DescribeStacksCommand} = require('@aws-sdk/client-cloudformation');
 
-AWS.config.update({region: 'ap-northeast-1'});
-
-const ecs = new AWS.ECS();
-const cloudformation = new AWS.CloudFormation();
+const ecs = new ECSClient({region: 'ap-northeast-1'});
+const cloudformation = new CloudFormationClient({region: 'ap-northeast-1'});
 
 function getTaskDefinition(stackName, taskName) {
     return describeStack(stackName).then((data) => {
@@ -14,19 +13,14 @@ function getTaskDefinition(stackName, taskName) {
 }
 
 function describeStack(stackName) {
-    return new Promise((resolve, reject) => {
-        cloudformation.describeStacks({StackName: stackName}, (err, data) => {
-            if (err) {
-                reject(err);
-                return;
-            }
-            if (!data.Stacks || data.Stacks.length !== 1) {
-                reject("no stacks");
-                return;
-            }
-            resolve(data);
-        })
-    });
+    const command = new DescribeStacksCommand({StackName: stackName});
+    return cloudformation.send(command).then((data) => {
+        if (!data.Stacks || data.Stacks.length !== 1) {
+            return Promise.reject("no stacks");
+        } else {
+            return Promise.resolve(data)
+        }
+    })
 }
 
 /**
@@ -43,23 +37,21 @@ function runEcsTask(clusterName, taskParams, waitingFinish = false) {
     console.log("ecs task parameters: ");
     console.log(util.inspect(taskParams, {depth: 6}));
 
-    return new Promise((resolve, reject) => {
-        ecs.runTask(taskParams, (err, result) => {
-            if (err) {
-                reject(err);
-                return;
-            }
+    const command = new RunTaskCommand(taskParams)
+
+    return ecs.send(command)
+        .then((result) => {
             console.log("result: ");
             console.log(result);
-            resolve(result.tasks)
+            return result.tasks
+        })
+        .then((tasks) => {
+            if (waitingFinish) {
+                return waitingTasksFinished(clusterName, tasks)
+            } else {
+                return Promise.resolve({})
+            }
         });
-    }).then((tasks) => {
-        if (waitingFinish) {
-            return waitingTasksFinished(clusterName, tasks)
-        } else {
-            return Promise.resolve({})
-        }
-    });
 }
 
 function waitingTasksFinished(clusterName, tasks) {
@@ -100,23 +92,22 @@ function checkTasks(describeTasksParams, previousStatusSet = {}) {
 }
 
 function describeEcsTasks(describeTasksParams) {
-    return new Promise((resolve, reject) => {
-        ecs.describeTasks(describeTasksParams, function(err, data) {
-            if (err) {
-                console.log(err, err.stack); // an error occurred
-                reject("")
-            } else {
-                let statusSet = data.tasks.reduce((result, current) => {
-                    let status = current.lastStatus;
-                    result[status] = result[status] || 0;
-                    result[status]++;
-                    return result
-                }, {});
+    const command = new DescribeTasksCommand(describeTasksParams);
 
-                resolve(statusSet);
-            }
-        });
-    })
+    return ecs.send(command)
+        .then((data) => {
+            let statusSet = data.tasks.reduce((result, current) => {
+                let status = current.lastStatus;
+                result[status] = result[status] || 0;
+                result[status]++;
+                return result
+            }, {});
+
+            return statusSet;
+        }, (err) => {
+            console.log(err, err.stack); // an error occurred
+            return ""
+        })
 }
 
 exports.getTaskDefinition = getTaskDefinition;

@@ -1,9 +1,9 @@
 FROM openjdk:8u212-jdk-alpine
 
-ARG AWS_VERSION=1.16.58
+ARG AWS_VERSION=2.2.13
 ARG GATLING_VERSION=3.4.1
 
-LABEL version="0.0.1-gatling$GATLING_VERSION"
+LABEL version="0.1.1-gatling$GATLING_VERSION"
 LABEL maintainer="katsuno@chatwork.com"
 
 RUN apk --no-cache add py3-pip jq \

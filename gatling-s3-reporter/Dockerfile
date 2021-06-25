@@ -6,10 +6,6 @@ ARG GATLING_VERSION=3.4.1
 LABEL version="0.1.1-gatling$GATLING_VERSION"
 LABEL maintainer="katsuno@chatwork.com"
 
-RUN apk --no-cache add py3-pip jq \
-    && pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir awscli==${AWS_VERSION}
-
 WORKDIR /opt
 
 # install gatling
@@ -23,6 +19,12 @@ RUN mkdir -p gatling && \
   unzip /tmp/downloads/gatling-$GATLING_VERSION.zip && \
   mv /tmp/archive/gatling-charts-highcharts-bundle-$GATLING_VERSION/* /opt/gatling/ && \
   rm -rf /tmp/*
+ 
+RUN wget -q -O awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWS_VERSION}.zip  \
+  && unzip -q awscliv2.zip \
+  && ./aws/install \
+  && rm awscliv2.zip
+
 
 # change context to gatling directory
 WORKDIR  /opt/work

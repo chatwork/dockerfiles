@@ -1,6 +1,6 @@
-FROM node:6.16.0-slim
+FROM node:16.3.0-slim
 
-LABEL version=0.0.1
+LABEL version=0.1.1
 
 WORKDIR /usr/src/app
 

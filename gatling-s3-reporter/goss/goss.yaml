@@ -2,9 +2,9 @@ file:
   /opt/gatling/bin/gatling.sh:
     exists: true
     mode: "0744"
-  /usr/bin/aws:
+  /usr/local/bin/aws:
     exists: true
-    mode: "0755"
+    mode: "0777"
 command:
   /generate-report.sh:
     exit-status: 1

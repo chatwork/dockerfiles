@@ -4,6 +4,7 @@ services:
     build:
       context: .
     image: chatwork/dgoss
+    entrypoint: /bin/bash
   sut:
     image: kiwicom/dgoss
     environment:

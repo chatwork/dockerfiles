@@ -21,4 +21,4 @@ RUN ARCH="$(apk --print-arch)" \
     && wget https://github.com/aelsabbahy/goss/releases/download/${GOSS_VERSION}/dgoss -O /usr/local/bin/dgoss \
     && chmod +rx /usr/local/bin/goss /usr/local/bin/dgoss
 
-ENTRYPOINT ['dgoss']
+ENTRYPOINT ["dgoss"]

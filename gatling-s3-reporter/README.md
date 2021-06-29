@@ -19,3 +19,10 @@ $ docker run -it --rm -v ~/.aws/credentials:/root/.aws/credentials:ro -e S3_GATL
 ```
 $ docker run -it --rm -v ~/.aws/credentials:/root/.aws/credentials:ro -e S3_GATLING_BUCKET_NAME=[s3_bucket_name] -e S3_GATLING_RESULT_DIR_PATH=[s3_directory] -e AWS_PROFILE=[profile_name] chatwork/gatling-s3-reporter:latest
 ```
+
+### Using AWS sso profile in local environment
+
+```
+$ aws sso login --profile [profile_name]
+$ docker run -it --rm -e AWS_PROFILE=cwtest-sso -v ~/.aws:/root/.aws -e S3_GATLING_BUCKET_NAME=[s3_bucket_name] -e S3_GATLING_RESULT_DIR_PATH=[s3_directory] chatwork/gatling-s3-reporter:latest
+```

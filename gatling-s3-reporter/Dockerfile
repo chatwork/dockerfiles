@@ -2,16 +2,24 @@ FROM openjdk:8u212-jdk-alpine
 
 ARG AWS_VERSION=2.2.13
 ARG GATLING_VERSION=3.4.1
+ARG GLIBC_VER=2.33-r0
 
 LABEL version="0.1.1-gatling$GATLING_VERSION"
 LABEL maintainer="katsuno@chatwork.com"
 
 WORKDIR /opt
 
+# install glibc
+RUN apk --no-cache add binutils curl \
+    && curl -sL https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -o /etc/apk/keys/sgerrand.rsa.pub \
+    && curl -sLO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VER}/glibc-${GLIBC_VER}.apk \
+    && curl -sLO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VER}/glibc-bin-${GLIBC_VER}.apk \
+    && apk add --no-cache glibc-${GLIBC_VER}.apk glibc-bin-${GLIBC_VER}.apk
+
 # install gatling
 RUN mkdir -p gatling && \
   mkdir -p work && \
-  apk add --update wget bash libc6-compat && \
+  apk add --update wget bash && \
   mkdir -p /tmp/downloads && \
   wget -q -O /tmp/downloads/gatling-$GATLING_VERSION.zip \
   https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/$GATLING_VERSION/gatling-charts-highcharts-bundle-$GATLING_VERSION-bundle.zip && \
@@ -25,6 +33,9 @@ RUN wget -q -O awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64
   && unzip -q awscliv2.zip \
   && ./aws/install \
   && rm awscliv2.zip
+
+# aws cli dynamic link check
+RUN aws --version
 
 # change context to gatling directory
 WORKDIR  /opt/work

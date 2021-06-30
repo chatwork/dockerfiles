@@ -1,3 +1,5 @@
+ARCH=`uname -m`
+
 .PHONY: build
 build:
 	docker build -t chatwork/`basename $$PWD` .;
@@ -29,3 +31,11 @@ push:
 		else \
 			docker push chatwork/`basename $$PWD`; \
 		fi
+
+.PHONY: supported
+supported:
+	@if [ "`echo \"arm64\n aarch64\" | grep $(shell echo $(ARCH))`" ] ; then \
+		exit 0; \
+	else \
+	  	echo "$(ARCH) is not supported." && exit 1; \
+	fi

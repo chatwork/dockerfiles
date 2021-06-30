@@ -21,6 +21,29 @@ jobs:
                         -e BODY="${CIRCLE_PULL_REQUEST}";
             fi
           when: on_fail
+
+  test_arm:
+    docker:
+      - image: chatwork/circleci-docker:18.09.3
+    environment:
+      - CIRCLECI_WORKSPACE: /root/project
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 18.09.3
+      - run: make ci:diff
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make supported && make build; done
+      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make supported && make test; done
+      - run:
+          name: Notification failed
+          command: |
+            if [ "${CIRCLE_PR_USERNAME}" == "cw-circleci" ]; then
+              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil)" \
+                        -e BODY="${CIRCLE_PULL_REQUEST}";
+            fi
+          when: on_fail
+
   push:
     docker:
       - image: chatwork/circleci-docker:18.09.3
@@ -134,6 +157,21 @@ workflows:
           filters:
             branches:
               only: master
+
+  integration_arm:
+    jobs:
+      - test_arm:
+          resource_class: arm.medium
+          context: "chatwork_api_token@circleci"
+      - push:
+          resource_class: arm.medium
+          context: "chatwork_api_token@circleci"
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+
   update_dependecies:
     jobs:
       - mod:

@@ -1,4 +1,5 @@
 version: 2.1
+
 jobs:
   test:
     docker:
@@ -23,15 +24,16 @@ jobs:
           when: on_fail
 
   test_arm:
-    docker:
-      - image: chatwork/circleci-docker:18.09.3
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
     environment:
-      - CIRCLECI_WORKSPACE: /root/project
+      - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true
-          version: 18.09.3
+      - run: docker -v
+      - run: pwd
+      - run: ls -la
       - run: make ci:diff
       - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make supported && make build; done
       - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make supported && make test; done
@@ -161,13 +163,11 @@ workflows:
   integration_arm:
     jobs:
       - test_arm:
-          resource_class: arm.medium
           context: "chatwork_api_token@circleci"
       - push:
-          resource_class: arm.medium
           context: "chatwork_api_token@circleci"
           requires:
-            - test
+            - test_arm
           filters:
             branches:
               only: master

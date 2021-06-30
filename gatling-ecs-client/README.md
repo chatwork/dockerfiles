@@ -60,19 +60,35 @@ As a Example, please copy and modify samples/example.json
 
 ### basic example
 
-```
+```sh
+# with iam
 $ docker run -it --rm -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
+
+# with sso
+$ aws sso login
+$ docker run -it --rm -v ~/.aws:/root/.aws:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
 ```
 
 ### Using specific aws profile
 
-```
+```sh
+# with iam
 $ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
+
+# with sso
+$ aws sso login --profile "xxxxxxx"
+$ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -v ~/.aws:/root/.aws:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
 ```
 
 ### Using Chatwork API Token to send message when task completed
 
-```
+```sh
 $ export CHATWORK_API_TOKEN=xxxxxxxxxxxxxxxxxxx
+
+# with iam
 $ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -e CHATWORK_API_TOKEN -v ~/.aws/credentials:/root/.aws/credentials:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
+
+# with sso
+$ aws sso login --profile "xxxxxxx"
+$ docker run -it --rm -e AWS_PROFILE="xxxxxxx" -e CHATWORK_API_TOKEN -v ~/.aws:/root/.aws:ro -v "$PWD"/gatlingEcs.json:/usr/src/app/setting.json chatwork/gatling-ecs-client:0.1.1
 ```

@@ -31,9 +31,6 @@ jobs:
       - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
       - checkout
-      - run: docker -v
-      - run: pwd
-      - run: ls -la
       - run: make ci:diff
       - run:
           command: |

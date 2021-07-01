@@ -23,10 +23,10 @@ jobs:
             fi
           when: on_fail
 
-  test_arm:
+  test_with_arch:
     machine:
       image: ubuntu-2004:202101-01
-    resource_class: arm.medium
+    resource_class: medium
     environment:
       - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
@@ -35,8 +35,37 @@ jobs:
       - run: pwd
       - run: ls -la
       - run: make ci:diff
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make supported && make build; done
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make supported && make test; done
+      - run:
+          command: |
+            ARCH=`uname -m`;
+            echo "${ARCH}"
+            make ci:diff | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR};
+              set +e
+              ## 全てのディレクトリで make supported がサポートされていないので停止しないようにする
+              RESULT=`make supported 2>/dev/null`;
+              set -e
+              if ${RESULT} | grep "${ARCH} is supported." ; then
+                make build;
+              else
+                echo "${DIR} is ${ARCH} not supported. make build was skipped.";
+              fi
+            done
+      - run:
+          command: |
+            ARCH=`uname -m`;
+            make ci:diff | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR};
+              set +e
+              ## 全てのディレクトリで make supported がサポートされていないので停止しないようにする
+              RESULT=`make supported 2>/dev/null`;
+              set -e
+              if ${RESULT} | grep "${ARCH} is supported." ; then
+                make test;
+              else
+                echo "${DIR} is ${ARCH} is not supported. make test was skipped.";
+              fi
+            done
       - run:
           name: Notification failed
           command: |
@@ -162,12 +191,12 @@ workflows:
 
   integration_arm:
     jobs:
-      - test_arm:
+      - test_with_arch:
           context: "chatwork_api_token@circleci"
       - push:
           context: "chatwork_api_token@circleci"
           requires:
-            - test_arm
+            - test_with_arch
           filters:
             branches:
               only: master

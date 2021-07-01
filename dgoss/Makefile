@@ -34,7 +34,8 @@ push:
 
 .PHONY: supported
 supported:
-	@if [ "`echo \"arm64\n aarch64\" | grep $(shell echo $(ARCH))`" ] ; then \
+	@if [ "`echo \"x86_64\n arm64\n aarch64\" | grep $(shell echo $(ARCH))`" ] ; then \
+		echo "$(ARCH) is supported."; \
 		exit 0; \
 	else \
 	  	echo "$(ARCH) is not supported." && exit 1; \

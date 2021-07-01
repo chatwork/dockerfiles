@@ -26,7 +26,7 @@ jobs:
   test_with_arch:
     machine:
       image: ubuntu-2004:202101-01
-    resource_class: medium
+    resource_class: arm.medium
     environment:
       - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
@@ -47,23 +47,9 @@ jobs:
               set -e
               if ${RESULT} | grep "${ARCH} is supported." ; then
                 make build;
-              else
-                echo "${DIR} is ${ARCH} not supported. make build was skipped.";
-              fi
-            done
-      - run:
-          command: |
-            ARCH=`uname -m`;
-            make ci:diff | while read DIR; do
-              cd ${CIRCLECI_WORKSPACE}/${DIR};
-              set +e
-              ## 全てのディレクトリで make supported がサポートされていないので停止しないようにする
-              RESULT=`make supported 2>/dev/null`;
-              set -e
-              if ${RESULT} | grep "${ARCH} is supported." ; then
                 make test;
               else
-                echo "${DIR} is ${ARCH} is not supported. make test was skipped.";
+                echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
               fi
             done
       - run:

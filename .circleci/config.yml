@@ -39,7 +39,7 @@ jobs:
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR};
               set +e
-              ## 全てのディレクトリで make supported がサポートされていないので停止しないようにする
+              ## Don't stop because make supported is not supported in all directories.
               RESULT=`make supported 2>/dev/null`;
               set -e
               if ${RESULT} | grep "${ARCH} is supported." ; then

@@ -35,20 +35,23 @@ jobs:
       - run:
           command: |
             ARCH=`uname -m`;
-            echo "${ARCH}"
+
+            case ${ARCH} in
+              ("arm64"|"aarch64") EXTENSION=".arm64v8"; ;;
+              ("x86_64") EXTENSION=""; ;;
+              (*) EXTENSION=$(ARCH); ;;
+            esac
+
             make ci:diff | while read DIR; do
-              cd ${CIRCLECI_WORKSPACE}/${DIR};
-              set +e
-              ## Don't stop because make supported is not supported in all directories.
-              RESULT=`make supported 2>/dev/null`;
-              set -e
-              if ${RESULT} | grep "${ARCH} is supported." ; then
+              cd ${CIRCLECI_WORKSPACE}/${DIR}
+              if find . -type f -name "Dockerfile*${EXTENSION}" | grep Dockerfile ; then
                 make build;
                 make test;
               else
                 echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
               fi
             done
+
       - run:
           name: Notification failed
           command: |

@@ -14,28 +14,6 @@ executors:
 
 jobs:
   test:
-    docker:
-      - image: chatwork/circleci-docker:18.09.3
-    environment:
-      - CIRCLECI_WORKSPACE: /root/project
-    steps:
-      - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true
-          version: 18.09.3
-      - run: make ci:diff
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make test; done
-      - run:
-          name: Notification failed
-          command: |
-            if [ "${CIRCLE_PR_USERNAME}" == "cw-circleci" ]; then
-              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil)" \
-                        -e BODY="${CIRCLE_PULL_REQUEST}";
-            fi
-          when: on_fail
-
-  test_with_arch:
     parameters:
       arch:
         type: executor
@@ -49,15 +27,12 @@ jobs:
       - run:
           command: |
             ARCH=`uname -m`;
-            echo ${ARCH}
 
             case ${ARCH} in
               ("arm64"|"aarch64") EXTENSION=".arm64v8"; ;;
               ("x86_64") EXTENSION=""; ;;
               (*) EXTENSION=$(ARCH); ;;
             esac
-
-            ls -la ${CIRCLECI_WORKSPACE}
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
@@ -180,21 +155,21 @@ jobs:
           when: on_fail
 workflows:
   version: 2
+  #integration:
+  #  jobs:
+  #    - test:
+  #        context: "chatwork_api_token@circleci"
+  #    - push:
+  #        context: "chatwork_api_token@circleci"
+  #        requires:
+  #          - test
+  #        filters:
+  #          branches:
+  #            only: master
+
   integration:
     jobs:
       - test:
-          context: "chatwork_api_token@circleci"
-      - push:
-          context: "chatwork_api_token@circleci"
-          requires:
-            - test
-          filters:
-            branches:
-              only: master
-
-  integration_with_arch:
-    jobs:
-      - test_with_arch:
           context: "chatwork_api_token@circleci"
           matrix:
             parameters:
@@ -202,7 +177,7 @@ workflows:
       - push:
           context: "chatwork_api_token@circleci"
           requires:
-            - test_with_arch
+            - test
           filters:
             branches:
               only: master

@@ -4,18 +4,18 @@ executors:
   arm64:
     machine:
       image: ubuntu-2004:202101-01
+      docker_layer_caching: true
     resource_class: arm.medium
-  amd64:
-    docker:
-      - image: chatwork/circleci-docker:18.09.3
+  x86_64:
+    machine:
+      image: ubuntu-2004:202101-01
+      docker_layer_caching: true
+    resource_class: medium
 
 jobs:
   test:
-    parameters:
-      arch:
-        type: executor
-        default: amd64
-    executor: << parameters.arch >>
+    docker:
+      - image: chatwork/circleci-docker:18.09.3
     environment:
       - CIRCLECI_WORKSPACE: /root/project
     steps:
@@ -23,7 +23,6 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: true
           version: 18.09.3
-      - run: uname -m
       - run: make ci:diff
       - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
       - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make test; done
@@ -45,6 +44,7 @@ jobs:
       - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
       - checkout
+      - run: docker version
       - run: make ci:diff
       - run:
           command: |
@@ -56,6 +56,8 @@ jobs:
               ("x86_64") EXTENSION=""; ;;
               (*) EXTENSION=$(ARCH); ;;
             esac
+
+            ls -la ${CIRCLECI_WORKSPACE}
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
@@ -196,7 +198,7 @@ workflows:
           context: "chatwork_api_token@circleci"
           matrix:
             parameters:
-              arch: [arm64]
+              arch: [x86_64, arm64]
       - push:
           context: "chatwork_api_token@circleci"
           requires:

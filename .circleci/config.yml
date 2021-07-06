@@ -155,25 +155,14 @@ jobs:
           when: on_fail
 workflows:
   version: 2
-  #integration:
-  #  jobs:
-  #    - test:
-  #        context: "chatwork_api_token@circleci"
-  #    - push:
-  #        context: "chatwork_api_token@circleci"
-  #        requires:
-  #          - test
-  #        filters:
-  #          branches:
-  #            only: master
-
   integration:
     jobs:
       - test:
           context: "chatwork_api_token@circleci"
+          # see https://circleci.com/docs/2.0/configuration-reference/#matrix-requires-version-21
           matrix:
             parameters:
-              arch: [x86_64, arm64]
+              arch: [arm64]
       - push:
           context: "chatwork_api_token@circleci"
           requires:

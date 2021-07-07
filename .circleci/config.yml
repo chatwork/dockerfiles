@@ -177,9 +177,9 @@ workflows:
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
-          #filters:
-            #branches:
-              #only: master
+          filters:
+            branches:
+              only: master
 
   update_dependecies:
     jobs:

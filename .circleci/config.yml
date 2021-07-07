@@ -61,6 +61,7 @@ jobs:
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
       - run:
+          name: build Dockerfile
           command: |
             ARCH=`make arch`
             EXTENSION=`make extension`
@@ -92,11 +93,18 @@ jobs:
       - run:
           name: notification success
           command: |
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
             make ci:diff | xargs -I{} /bin/bash -c '
-              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/{});
-              changelog=$(make ci:changelog -e DIR="{}/");
-              make ci:notify -e TITLE="Release chatwork/{}:${version} arch: $(make arch) (gogo)" \
-                             -e BODY="$(echo -e "changelog\n${changelog}")";
+              if find ${CIRCLECI_WORKSPACE}/{} -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+                version=$(docker inspect -f {{.Config.Labels.version}} chatwork/{});
+                changelog=$(make ci:changelog -e DIR="{}/");
+                make ci:notify -e TITLE="Release chatwork/{}:${version} arch: $(make arch) (gogo)" \
+                                             -e BODY="$(echo -e "changelog\n${changelog}")";
+              else
+                echo "{} is ${ARCH} not supported. docker push was skipped.";
+              fi
             '
           when: on_success
   mod:
@@ -177,9 +185,9 @@ workflows:
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
-          filters:
-            branches:
-              only: master
+          #filters:
+            #branches:
+              #only: master
 
   update_dependecies:
     jobs:

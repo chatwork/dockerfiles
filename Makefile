@@ -61,8 +61,8 @@ arch:
 
 .PHONY: extension
 extension:
-	@case $(shell uname -m) in \
+	@case $(shell make arch) in \
 		("arm64"|"aarch64") echo ".arm64v8"; ;; \
 		("x86_64") echo "" ;; \
-		(*) echo $(shell uname -m) ;; \
+		(*) echo $(shell make arch) ;; \
 	esac

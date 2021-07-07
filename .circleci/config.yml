@@ -98,9 +98,7 @@ jobs:
                 echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
               fi
             done
-
-          #when: on_fail
-          when: on_success
+          when: on_fail
       - run:
           name: notification success
           command: |
@@ -119,9 +117,7 @@ jobs:
                echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
              fi
             done
-
-          #when: on_success
-          when: on_fail
+          when: on_success
   mod:
     docker:
       - image: variantdev/mod:0.19.0
@@ -200,9 +196,9 @@ workflows:
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
-          #filters:
-            #branches:
-              #only: master
+          filters:
+            branches:
+              only: master
 
   update_dependecies:
     jobs:

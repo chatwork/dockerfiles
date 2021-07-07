@@ -46,7 +46,7 @@ jobs:
               make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil) arch: $(make arch)" \
                         -e BODY="${CIRCLE_PULL_REQUEST}";
             fi
-          when: on_success
+          when: on_fail
 
   push:
     parameters:
@@ -81,10 +81,10 @@ jobs:
               version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/{});
               if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/{}:${version})" != "[]" ]; then
                 changelog=$(make ci:changelog -e DIR="{}/");
-                make ci:notify -e TITLE="Release chatwork/{}:${version} (gogo)" \
+                make ci:notify -e TITLE="Release chatwork/{}:${version} arch: $(make arch) (gogo)" \
                                -e BODY="$(echo -e "changelog\n${changelog}")";
               else
-                make ci:notify -e TITLE="CircleCI: Failed push chatwork/{}:${version} (devil)" \
+                make ci:notify -e TITLE="CircleCI: Failed push chatwork/{}:${version} arch: $(make arch) (devil)" \
                                -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
               fi
             '

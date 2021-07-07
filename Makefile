@@ -53,6 +53,7 @@ ci\:changelog:
 ci\:notify:
 	docker run -e CHATWORK_TOKEN=$${CHATWORK_API_TOKEN} \
 						 -e ROOM_ID=$${CHATWORK_NOTIFICATION_ROOM_ID} \
+						 --platform linux/amd64 \
 						 chatwork/chatwork-notify "[info][title]$${TITLE}[/title]$${BODY}[hr]$${CIRCLE_BUILD_URL}[/info]"
 
 .PHONY: arch

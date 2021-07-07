@@ -26,10 +26,7 @@ jobs:
       - run: make ci:diff
       - run:
           command: |
-            ARCH=`uname -m`;
-
             EXTENSION=`make extension`
-            echo ${EXTENSION}
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
@@ -37,7 +34,7 @@ jobs:
                 make build;
                 make test;
               else
-                echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
+                echo "${DIR} is `make arch` not supported. make build & make test was skipped.";
               fi
             done
 
@@ -64,8 +61,6 @@ jobs:
       - run: make ci:diff
       - run:
           command: |
-            ARCH=`uname -m`;
-
             EXTENSION=`make extension`
 
             make ci:diff | while read DIR; do
@@ -73,7 +68,7 @@ jobs:
               if find . -type f -name "Dockerfile*${EXTENSION}" | grep Dockerfile ; then
                 make build;
               else
-                echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
+                echo "${DIR} is `make arch` not supported. make build & make test was skipped.";
               fi
             done
 

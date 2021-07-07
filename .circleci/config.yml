@@ -76,6 +76,21 @@ jobs:
             done
 
       - run:
+          name: push Docker Image
+          command: |
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
+            make ci:diff | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR}
+              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+                make push;
+              else
+                echo "${DIR} is ${ARCH} not supported. make push was skipped.";
+              fi
+            done
+
+      - run:
           name: notification failed
           command: |
             ARCH=`make arch`

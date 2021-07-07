@@ -161,11 +161,14 @@ workflows:
           # see https://circleci.com/docs/2.0/configuration-reference/#matrix-requires-version-21
           matrix:
             parameters:
-              arch: [x86_64, arm64]
+              arch: [ x86_64, arm64 ]
       - push:
           context: "chatwork_api_token@circleci"
           requires:
             - test
+          matrix:
+            parameters:
+              arch: [ x86_64, arm64 ]
           #filters:
             #branches:
               #only: master

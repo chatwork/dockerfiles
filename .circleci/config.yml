@@ -28,11 +28,8 @@ jobs:
           command: |
             ARCH=`uname -m`;
 
-            case ${ARCH} in
-              ("arm64"|"aarch64") EXTENSION=".arm64v8"; ;;
-              ("x86_64") EXTENSION=""; ;;
-              (*) EXTENSION=$(ARCH); ;;
-            esac
+            EXTENSION=`make extension`
+            echo ${EXTENSION}
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
@@ -69,11 +66,7 @@ jobs:
           command: |
             ARCH=`uname -m`;
 
-            case ${ARCH} in
-              ("arm64"|"aarch64") EXTENSION=".arm64v8"; ;;
-              ("x86_64") EXTENSION=""; ;;
-              (*) EXTENSION=$(ARCH); ;;
-            esac
+            EXTENSION=`make extension`
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}

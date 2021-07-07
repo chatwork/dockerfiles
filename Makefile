@@ -1,5 +1,3 @@
-ARCH:=$(shell uname -m)
-
 .PHONY: build
 build:
 	@ls -d */ | xargs -I{} /bin/bash -c "cd ./{} && make build || exit 255";

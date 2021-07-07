@@ -43,10 +43,10 @@ jobs:
           name: Notification failed
           command: |
             if [ "${CIRCLE_PR_USERNAME}" == "cw-circleci" ]; then
-              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil)" \
+              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil) arch: $(make arch)" \
                         -e BODY="${CIRCLE_PULL_REQUEST}";
             fi
-          when: on_fail
+          when: on_success
 
   push:
     parameters:

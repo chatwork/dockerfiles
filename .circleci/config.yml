@@ -54,15 +54,15 @@ jobs:
           when: on_fail
 
   push:
-    docker:
-      - image: chatwork/circleci-docker:18.09.3
+    parameters:
+      arch:
+        type: executor
+    executor: << parameters.arch >>
     environment:
-        - CIRCLECI_WORKSPACE: /root/project
+        - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true
-          version: 18.09.3
+      - run: docker version
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
       - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done

@@ -99,7 +99,8 @@ jobs:
               fi
             done
 
-          when: on_fail
+          #when: on_fail
+          when: on_success
       - run:
           name: notification success
           command: |
@@ -119,7 +120,8 @@ jobs:
              fi
             done
 
-          when: on_success
+          #when: on_success
+          when: on_fail
   mod:
     docker:
       - image: variantdev/mod:0.19.0

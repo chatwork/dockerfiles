@@ -12,4 +12,4 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: aelsabbahy/goss
-    version: "> 0.3.16"
+    version: "> 0.3.15"

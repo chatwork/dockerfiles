@@ -10,7 +10,7 @@ services:
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/dgoss tail -f /dev/null
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/dgoss:dev tail -f /dev/null
     container_name: dgoss
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

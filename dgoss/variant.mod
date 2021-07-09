@@ -3,7 +3,7 @@ provisioners:
     Dockerfile:
       from: "ARG GOSS_VERSION={{ .goss.previousVersion }}"
       to: "ARG GOSS_VERSION={{ .goss.version }}"
-    Dockerfile.arm64v8:
+    Dockerfile.arm64:
       from: "ARG GOSS_VERSION={{ .goss.previousVersion }}"
       to: "ARG GOSS_VERSION={{ .goss.version }}"
 

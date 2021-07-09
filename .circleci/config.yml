@@ -133,6 +133,29 @@ jobs:
              fi
             done
           when: on_success
+
+  manifest:
+    parameters:
+      arch:
+        type: executor
+        default: x86_64
+    executor: << parameters.arch >>
+    environment:
+      - CIRCLECI_WORKSPACE: /home/circleci/project
+    steps:
+      - checkout
+      - run: docker version
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
+      - run: make ci:diff
+      - run:
+          name: push manifest
+          command: |
+            make ci:diff | grep -e dgoss | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR};
+              make build;
+              make manifest;
+            done
+
   mod:
     docker:
       - image: variantdev/mod:0.19.0
@@ -214,6 +237,14 @@ workflows:
           filters:
             branches:
               only: master
+
+      - manifest:
+          context: "chatwork_api_token@circleci"
+          requires:
+            - test
+          #filters:
+            #branches:
+              #only: master
 
   update_dependecies:
     jobs:

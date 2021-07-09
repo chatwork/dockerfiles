@@ -13,7 +13,7 @@ esac)
 .PHONY: build
 build:
 	$(shell find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
-  		docker build -f $$FILE -t chatwork/`basename $$PWD` .; \
+  		docker build -f Dockerfile -t chatwork/`basename $$PWD` .; \
   		version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
   		if [ -n "$$version" ]; then \
           docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-${TAG}; \
@@ -41,26 +41,5 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker push chatwork/`basename $$PWD`:$$version-${TAG}; \
+			docker buildx build -t chatwork/dgoss:0.3.16 -t chatwork/dgoss --platform linux/amd64,linux/arm64 --push .
 		fi
-
-.PHONY: manifest
-manifest:
-	make push
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
-		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version-${TAG} >/dev/null 2>&1; then \
-			echo "no changes"; \
-		else \
-			docker manifest create chatwork/`basename $$PWD`:$$version \
-            	chatwork/`basename $$PWD`:$$version-arm64 \
-            	chatwork/`basename $$PWD`:$$version-amd64; \
-            docker manifest push chatwork/`basename $$PWD`:$$version; \
-
-			docker manifest create chatwork/`basename $$PWD` \
-            	chatwork/`basename $$PWD`:$$version-arm64 \
-            	chatwork/`basename $$PWD`:$$version-amd64; \
-            docker push chatwork/`basename $$PWD`; \
-		fi
-
-
-

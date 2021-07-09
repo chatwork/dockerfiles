@@ -41,5 +41,5 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/dgoss:0.3.16 -t chatwork/dgoss --platform linux/amd64,linux/arm64 --push .
+			docker buildx build -t chatwork/dgoss:$$version -t chatwork/dgoss --platform linux/amd64,linux/arm64 --push .; \
 		fi

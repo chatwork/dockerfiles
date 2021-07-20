@@ -60,7 +60,7 @@ arch:
 .PHONY: extension
 extension:
 	@case $(shell make arch) in \
-		("arm64"|"aarch64") echo ".arm64v8"; ;; \
+		("arm64"|"aarch64") echo ".arm64"; ;; \
 		("x86_64") echo "" ;; \
 		(*) echo $(shell make arch) ;; \
 	esac

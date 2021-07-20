@@ -4,12 +4,16 @@ executors:
   arm64:
     machine:
       image: ubuntu-2004:202104-01
-      docker_layer_caching: true
+      # The same volume is set for amd64 and arm64.
+      # see https://circleci.com/docs/2.0/docker-layer-caching/
+      docker_layer_caching: false
     resource_class: arm.medium
   x86_64:
     machine:
       image: ubuntu-2004:202104-01
-      docker_layer_caching: true
+      # The same volume is set for amd64 and arm64.
+      # see https://circleci.com/docs/2.0/docker-layer-caching/
+      docker_layer_caching: false
     resource_class: medium
 
 jobs:

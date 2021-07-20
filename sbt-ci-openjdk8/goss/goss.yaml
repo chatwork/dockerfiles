@@ -2,7 +2,7 @@ package:
   sbt:
     installed: true
     versions:
-      - 1.3.10
+      - 1.5.5
   libaio1:
     installed: true
   git:
@@ -19,7 +19,7 @@ command:
   printenv JAVA_VERSION:
     exit-status: 0
     stdout:
-      - "jdk8u252-b09"
+      - "jdk8u292-b10"
     timeout: 5000
   which sbt:
     exit-status: 0

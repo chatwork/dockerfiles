@@ -1,65 +1,144 @@
 version: 2.1
+
+executors:
+  arm64:
+    machine:
+      image: ubuntu-2004:202104-01
+      # The same volume is set for amd64 and arm64.
+      # see https://circleci.com/docs/2.0/docker-layer-caching/
+      docker_layer_caching: false
+    resource_class: arm.medium
+  x86_64:
+    machine:
+      image: ubuntu-2004:202104-01
+      # The same volume is set for amd64 and arm64.
+      # see https://circleci.com/docs/2.0/docker-layer-caching/
+      docker_layer_caching: false
+    resource_class: medium
+
 jobs:
   test:
-    docker:
-      - image: chatwork/circleci-docker:18.09.3
+    parameters:
+      arch:
+        type: executor
+    executor: << parameters.arch >>
     environment:
-      - CIRCLECI_WORKSPACE: /root/project
+      - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true
-          version: 18.09.3
+      - run: docker version
       - run: make ci:diff
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make test; done
+      - run:
+          command: |
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
+            make ci:diff | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR}
+              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+                make build;
+                make test;
+              else
+                echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
+              fi
+            done
+
       - run:
           name: Notification failed
           command: |
             if [ "${CIRCLE_PR_USERNAME}" == "cw-circleci" ]; then
-              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil)" \
+              make ci:notify -e TITLE="CircleCI: Failed to CI of PR created by automatic update of dependency (devil) arch: $(make arch)" \
                         -e BODY="${CIRCLE_PULL_REQUEST}";
             fi
           when: on_fail
+
   push:
-    docker:
-      - image: chatwork/circleci-docker:18.09.3
+    parameters:
+      arch:
+        type: executor
+        default: x86_64
+    executor: << parameters.arch >>
     environment:
-        - CIRCLECI_WORKSPACE: /root/project
+        - CIRCLECI_WORKSPACE: /home/circleci/project
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true
-          version: 18.09.3
+      - run: docker version
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make build; done
-      - run: make ci:diff | while read DIR; do cd ${CIRCLECI_WORKSPACE}/${DIR} && make push; done
+      - run:
+          name: build Dockerfile
+          command: |
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
+            make ci:diff | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR}
+              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+                make build;
+              else
+                echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
+              fi
+            done
+
+      - run:
+          name: push Docker Image
+          command: |
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
+            make ci:diff | while read DIR; do
+              cd ${CIRCLECI_WORKSPACE}/${DIR}
+              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+                make push;
+              else
+                echo "${DIR} is ${ARCH} not supported. make push was skipped.";
+              fi
+            done
+
       - run:
           name: notification failed
           command: |
-            make ci:diff | xargs -I{} /bin/bash -c '
-              version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/{});
-              if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/{}:${version})" != "[]" ]; then
-                changelog=$(make ci:changelog -e DIR="{}/");
-                make ci:notify -e TITLE="Release chatwork/{}:${version} (gogo)" \
-                               -e BODY="$(echo -e "changelog\n${changelog}")";
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
+            make ci:diff | while read DIR; do
+              if find ./${DIR} -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+
+                version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/${DIR});
+                if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/${DIR}:${version})" != "[]" ]; then
+                  changelog=$(make ci:changelog -e DIR="${DIR}/");
+                  make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
+                                      -e BODY="$(echo -e "changelog\n${changelog}")";
+                else
+                  make ci:notify -e TITLE="CircleCI: Failed push chatwork/${DIR}:${version} arch: $(make arch) (devil)" \
+                                      -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
+                fi
+
               else
-                make ci:notify -e TITLE="CircleCI: Failed push chatwork/{}:${version} (devil)" \
-                               -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
+                echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
               fi
-            '
+            done
           when: on_fail
       - run:
           name: notification success
           command: |
-            make ci:diff | xargs -I{} /bin/bash -c '
-              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/{});
-              changelog=$(make ci:changelog -e DIR="{}/");
-              make ci:notify -e TITLE="Release chatwork/{}:${version} (gogo)" \
-                             -e BODY="$(echo -e "changelog\n${changelog}")";
-            '
+            ARCH=`make arch`
+            EXTENSION=`make extension`
+
+            make ci:diff | while read DIR; do
+              if find ./${DIR} -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+                version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
+                echo "version: ${version}"
+                changelog=$(make ci:changelog -e DIR="${DIR}/");
+                echo "changelog: ${changelog}"
+                make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
+                                              -e BODY="$(echo -e "changelog\n${changelog}")";
+             else
+               echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
+             fi
+            done
           when: on_success
+
   mod:
     docker:
       - image: variantdev/mod:0.19.0
@@ -127,6 +206,10 @@ workflows:
     jobs:
       - test:
           context: "chatwork_api_token@circleci"
+          # see https://circleci.com/docs/2.0/configuration-reference/#matrix-requires-version-21
+          matrix:
+            parameters:
+              arch: [ x86_64, arm64 ]
       - push:
           context: "chatwork_api_token@circleci"
           requires:
@@ -134,6 +217,7 @@ workflows:
           filters:
             branches:
               only: master
+
   update_dependecies:
     jobs:
       - mod:

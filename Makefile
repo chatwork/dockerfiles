@@ -52,3 +52,15 @@ ci\:notify:
 	docker run -e CHATWORK_TOKEN=$${CHATWORK_API_TOKEN} \
 						 -e ROOM_ID=$${CHATWORK_NOTIFICATION_ROOM_ID} \
 						 chatwork/chatwork-notify "[info][title]$${TITLE}[/title]$${BODY}[hr]$${CIRCLE_BUILD_URL}[/info]"
+
+.PHONY: arch
+arch:
+	@uname -m
+
+.PHONY: extension
+extension:
+	@case $(shell make arch) in \
+		("arm64"|"aarch64") echo ".arm64"; ;; \
+		("x86_64") echo "" ;; \
+		(*) echo $(shell make arch) ;; \
+	esac

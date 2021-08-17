@@ -29,5 +29,6 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' $(IMAGE):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker push $(IMAGE); \
+			docker push $(IMAGE):latest; \
+			docker push $(IMAGE):$$version; \
 		fi

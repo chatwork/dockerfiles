@@ -1,5 +1,8 @@
 command:
   goss -v:
     exit-status: 0
-  dgoss:
+    stdout:
+      - /^goss version v0/
+  dgoss run --help:
     exit-status: 0
+

@@ -3,6 +3,7 @@ command:
     exit-status: 0
     stdout:
       - /^goss version v0/
-  dgoss run --help:
+  find /usr/local/bin/ -type f -name dgoss:
     exit-status: 0
-
+    stdout:
+      - /usr/local/bin/dgoss

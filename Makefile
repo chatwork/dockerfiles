@@ -26,7 +26,7 @@ ci\:diff\:to:
 ci\:diff:
 	@git --no-pager diff --diff-filter=ACMRTUXB --name-only "$(shell make ci:diff:from)" "$(shell make ci:diff:to)" \
 	  | sed 's:^.*/compare/::g' \
-	  | grep -v goss/ \
+	  | grep -v /goss/ \
 	  | grep -v hooks/ \
 	  | grep -v docker-compose.test.yml \
 	  | grep -v Makefile \

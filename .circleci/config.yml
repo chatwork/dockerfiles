@@ -30,6 +30,9 @@ jobs:
       - run: make ci:diff
       - run:
           command: |
+            docker buildx ls
+      - run:
+          command: |
             ARCH=`make arch`
             EXTENSION=`make extension`
 

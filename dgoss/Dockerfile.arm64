@@ -1,4 +1,4 @@
-FROM docker:20.10.8
+FROM docker:20.10.7
 
 ARG GOSS_VERSION=0.3.16
 

@@ -13,9 +13,6 @@ esac)
 .PHONY: build
 build:
 	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
-  		docker buildx use buildx \
-		docker buildx build -t chatwork/dgoss:test -t chatwork/dgoss --platform linux/amd64,linux/arm64 .; \
-		docker buildx use default \
 		docker build -f Dockerfile -t chatwork/`basename $$PWD` .; \
       	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
       	if [ -n "$$version" ]; then \
@@ -44,5 +41,7 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
+		  	docker buildx use malti-arch; \
 			docker buildx build -t chatwork/dgoss:$$version -t chatwork/dgoss --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx use default; \
 		fi

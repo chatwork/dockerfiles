@@ -24,18 +24,18 @@ jobs:
     executor: << parameters.arch >>
     environment:
       - CIRCLECI_WORKSPACE: /home/circleci/project
+      - DOCKER_BUILDKIT: 1
+      - BUILDX_PLATFORMS: linux/amd64,linux/arm64
     steps:
       - checkout
       - run: docker version
       - run: make ci:diff
       - run:
+          name: Install buildx
           command: |
-            docker buildx ls
-      - run:
-          command: |
-            docker run --privileged --rm tonistiigi/binfmt --install arm64,amd64
-      - run:
-          command: |
+            docker buildx install
+            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
+            docker buildx create --name buildx
             docker buildx ls
       - run:
           command: |
@@ -74,6 +74,10 @@ jobs:
       - run: docker version
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
+      - run:
+          name: Add buildx platform
+          command: |
+            docker run --privileged --rm tonistiigi/binfmt --install arm64
       - run:
           name: build Dockerfile
           command: |

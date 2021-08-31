@@ -33,6 +33,12 @@ jobs:
             docker buildx ls
       - run:
           command: |
+            docker run --privileged --rm tonistiigi/binfmt --install arm64,amd64
+      - run:
+          command: |
+            docker buildx ls
+      - run:
+          command: |
             ARCH=`make arch`
             EXTENSION=`make extension`
 

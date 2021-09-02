@@ -75,10 +75,6 @@ jobs:
             docker buildx create --name malti-arch
             docker buildx ls
       - run:
-          name: Add buildx platform
-          command: |
-            docker run --privileged --rm tonistiigi/binfmt --install arm64
-      - run:
           name: build Dockerfile
           command: |
             ARCH=`make arch`

@@ -6,7 +6,7 @@ services:
     image: chatwork/dgoss
     entrypoint: /bin/bash
   sut:
-    image: chatwork/dgoss:dev
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp

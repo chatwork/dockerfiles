@@ -1,0 +1,21 @@
+version: '3'
+services:
+  atlantis-aws:
+    build:
+      context: .
+    image: chatwork/atlantis-aws
+    command:
+      - server
+      - --github-user="X"
+      - --github-token="X"
+  sut:
+    image: kiwicom/dgoss
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/atlantis-aws tail -f /dev/null
+    container_name: atlantis-aws
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - atlantis-aws

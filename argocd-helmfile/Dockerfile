@@ -7,7 +7,7 @@ LABEL maintainer="shinya@chatwork.com"
 USER root
 
 ARG HELMFILE_VERSION=v0.141.0
-ARG HELM_VERSION=v3.7.0
+ARG HELM_VERSION=v3.7.1
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG KUBECTL_VERSION=1.20.7

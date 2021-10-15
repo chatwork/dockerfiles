@@ -1,7 +1,7 @@
 FROM alpine:edge as downloads
 WORKDIR /downloads
 
-ARG EKSCTL_VERSION=0.69.0
+ARG EKSCTL_VERSION=0.70.0
 ARG KUBECTL_VERSION=1.21.3
 LABEL version="${EKSCTL_VERSION}"
 
@@ -11,7 +11,7 @@ RUN wget https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VE
 
 FROM chatwork/aws:latest
 
-ARG EKSCTL_VERSION=0.69.0
+ARG EKSCTL_VERSION=0.70.0
 LABEL version="${EKSCTL_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

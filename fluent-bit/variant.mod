@@ -4,7 +4,6 @@ provisioners:
       source: Dockerfile.tpl
       arguments:
         fluentbit_version: "{{ .fluentbit.version }}"
-        fluentbit_s3_version: "{{ .s3.version }}"
         fluentbit_cloudwatch_version: "{{ .cloudwatch.version }}"
   textReplace:
     goss/goss.yaml:
@@ -16,11 +15,6 @@ dependencies:
     releasesFrom:
       dockerImageTags:
         source: fluent/fluent-bit
-    version: "> 0.1"
-  s3:
-    releasesFrom:
-      githubReleases:
-        source: cosmo0920/fluent-bit-go-s3
     version: "> 0.1"
   cloudwatch:
     releasesFrom:

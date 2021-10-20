@@ -1,6 +1,6 @@
-FROM argoproj/argocd:v2.1.3
+FROM argoproj/argocd:v2.1.4
 
-LABEL version="2.1.3-0.141.0"
+LABEL version="2.1.4-0.141.0"
 LABEL maintainer="shinya@chatwork.com"
 
 # Switch to root for the ability to perform install

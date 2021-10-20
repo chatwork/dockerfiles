@@ -1,25 +1,37 @@
 package:
-  unzip:
+  sbt:
     installed: true
-  zip:
+    versions:
+      - 1.5.5
+  libaio1:
+    installed: true
+  git:
+    installed: true
+  openssh-client:
     installed: true
 
 command:
   printenv LANG:
     exit-status: 0
     stdout:
-    - "en_US.UTF-8"
+      - "C.UTF-8"
     timeout: 5000
   printenv JAVA_VERSION:
     exit-status: 0
     stdout:
-    - "jdk-11.0.12+7"
+      - "jdk-11.0.12+7"
     timeout: 5000
   which sbt:
     exit-status: 0
     stdout:
-    - "/root/.sdkman/candidates/sbt/current/bin/sbt"
+      - "/usr/bin/sbt"
     timeout: 5000
   java -version:
+    exit-status: 0
+    timeout: 5000
+  aws --version:
+    exit-status: 0
+    timeout: 5000
+  docker --version:
     exit-status: 0
     timeout: 5000

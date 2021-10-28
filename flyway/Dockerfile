@@ -1,8 +1,5 @@
 FROM ubuntu:18.04 as builder
 
-LABEL version="1.0.0"
-LABEL maintainer="shinohara@chatwork.com"
-
 WORKDIR /opt
 
 ## https://downloads.mysql.com/archives/get/p/23/file/mysql-5.6.51.tar.gz
@@ -36,6 +33,9 @@ RUN cmake \
 
 #--------------------------------------------------
 FROM adoptopenjdk:8-jdk-hotspot-bionic
+
+LABEL version="1.0.0"
+LABEL maintainer="shinohara@chatwork.com"
 
 COPY --from=builder /usr/local/mysql/bin/mysql /usr/local/bin
 

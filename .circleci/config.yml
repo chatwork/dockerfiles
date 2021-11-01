@@ -71,15 +71,6 @@ jobs:
             ARCH=`make arch`
             EXTENSION=`make extension`
 
-            make ci:diff | while read DIR; do
-              cd ${CIRCLECI_WORKSPACE}/${DIR}
-              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-                make build;
-              else
-                echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
-              fi
-            done
-
       - run:
           name: push Docker Image
           command: |
@@ -89,7 +80,9 @@ jobs:
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
               if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-                make push;
+                if [[ "flyway" == $DIR ]] || [[ "flyway-mysql57" == $DIR ]]; then
+                  echo ${DIR};
+                fi
               else
                 echo "${DIR} is ${ARCH} not supported. make push was skipped.";
               fi
@@ -217,7 +210,8 @@ workflows:
             - test
           filters:
             branches:
-              only: master
+              ##only: master
+              only: feature/CBS-4872_flyway_build_test
 
   update_dependecies:
     jobs:

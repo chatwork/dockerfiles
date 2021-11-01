@@ -5,7 +5,9 @@ LABEL maintainer="shinohara@chatwork.com"
 
 RUN apt-get update \
     && apt-get install -y \
-        mysql-client-5.7
+        mysql-client-5.7 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 ARG FLYWAY_VERSION=3.1
 ENV FLYWAY_DOWNLOAD_URL=https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz

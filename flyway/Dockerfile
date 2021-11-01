@@ -18,7 +18,9 @@ RUN groupadd mysql \
         libncurses5-dev \
         libssl-dev \
         ninja-build \
-        make
+        make \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN curl -OL ${MYSQL_DOWNLOAD_URL} \
     && tar xvf mysql-${MYSQL_VERSION}.tar.gz \

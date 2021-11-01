@@ -1,24 +1,26 @@
 FROM ubuntu:18.04 as builder
 
+LABEL version="1.0.0"
+LABEL maintainer="shinohara@chatwork.com"
+
 WORKDIR /opt
 
 ## https://downloads.mysql.com/archives/get/p/23/file/mysql-5.6.51.tar.gz
-ARG MYSQL_VERSION=5.6.51
+ARG MYSQL_VERSION=5.7.35
 ENV MYSQL_DOWNLOAD_URL=https://downloads.mysql.com/archives/get/p/23/file/mysql-${MYSQL_VERSION}.tar.gz
 
 RUN groupadd mysql \
     && useradd -g mysql -s /usr/sbin/nologin mysql \
     && apt-get update \
     && apt-get install -y \
-        bison \
         cmake \
         curl \
         git \
         g++ \
         libncurses5-dev \
         libssl-dev \
-        ninja-build \
-        make
+        make \
+        pkg-config
 
 RUN curl -OL ${MYSQL_DOWNLOAD_URL} \
     && tar xvf mysql-${MYSQL_VERSION}.tar.gz \
@@ -26,12 +28,14 @@ RUN curl -OL ${MYSQL_DOWNLOAD_URL} \
 
 WORKDIR /opt/mysql-${MYSQL_VERSION}
 
-RUN cmake -GNinja \
+RUN cmake \
+      -DDOWNLOAD_BOOST=1 \
+      -DWITH_BOOST=/tmp/boost \
       -DDEFAULT_CHARSET=utf8 \
       -DDEFAULT_COLLATION=utf8_general_ci \
       -DWITH_INNOBASE_STORAGE_ENGINE=1 \
-    && ninja \
-    && ninja install
+    && make \
+    && make install
 
 #--------------------------------------------------
 FROM adoptopenjdk:8-jdk-hotspot-bionic

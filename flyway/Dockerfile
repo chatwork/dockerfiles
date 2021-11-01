@@ -10,12 +10,14 @@ RUN groupadd mysql \
     && useradd -g mysql -s /usr/sbin/nologin mysql \
     && apt-get update \
     && apt-get install -y \
+        bison \
         cmake \
         curl \
         git \
         g++ \
         libncurses5-dev \
         libssl-dev \
+        ninja-build \
         make
 
 RUN curl -OL ${MYSQL_DOWNLOAD_URL} \
@@ -24,12 +26,12 @@ RUN curl -OL ${MYSQL_DOWNLOAD_URL} \
 
 WORKDIR /opt/mysql-${MYSQL_VERSION}
 
-RUN cmake \
+RUN cmake -GNinja \
       -DDEFAULT_CHARSET=utf8 \
       -DDEFAULT_COLLATION=utf8_general_ci \
       -DWITH_INNOBASE_STORAGE_ENGINE=1 \
-    && make \
-    && make install
+    && ninja \
+    && ninja install
 
 #--------------------------------------------------
 FROM adoptopenjdk:8-jdk-hotspot-bionic

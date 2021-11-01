@@ -1,6 +1,6 @@
 version: '3'
 services:
-  flyway:
+  flyway-mysql57:
     build:
       context: .
     image: chatwork/flyway-mysql57

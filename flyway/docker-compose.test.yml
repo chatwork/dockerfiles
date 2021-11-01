@@ -12,7 +12,7 @@ services:
       GOSS_FILES_STRATEGY: cp
       GOSS_WAIT_OPTS: -r 10s --sleep 1s
     entrypoint: ""
-    command: /usr/local/bin/dgoss run chatwork/chatwork-web-flyway tail -f /dev/null
+    command: /usr/local/bin/dgoss run chatwork/flyway tail -f /dev/null
     container_name: flyway
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

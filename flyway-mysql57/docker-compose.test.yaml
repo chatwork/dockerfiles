@@ -3,7 +3,7 @@ services:
   flyway:
     build:
       context: .
-    image: chatwork/flyway
+    image: chatwork/flyway-mysql57
     entrypoint: /bin/bash
   sut:
     image: chatwork/dgoss

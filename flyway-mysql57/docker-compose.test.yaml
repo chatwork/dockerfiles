@@ -16,6 +16,5 @@ services:
     container_name: flyway
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./goss/goss.yaml:/goss/goss.yaml
     depends_on:
       - flyway

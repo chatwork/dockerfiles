@@ -1,6 +1,6 @@
 FROM adoptopenjdk:8-jdk-hotspot-bionic
 
-LABEL version="1.0.0"
+LABEL version="5.7.21"
 LABEL maintainer="shinohara@chatwork.com"
 
 RUN apt-get update \

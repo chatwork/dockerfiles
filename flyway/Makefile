@@ -36,5 +36,7 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx use malti-arch; \
+			docker buildx build -t chatwork/`basename $$PWD`:$$version-dev -t chatwork/`basename $$PWD`:dev -t chatwork/`basename $$PWD`:5.6-dev --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx use default; \
 		fi

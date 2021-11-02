@@ -36,5 +36,7 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/flyway:5.7-$$version -t chatwork/flyway:5.7-latest --platform linux/amd64,linux/arm64 --push .; \
+		  	docker buildx use malti-arch; \
+			docker buildx build -t chatwork/flyway:$$version-dev -t chatwork/flyway:5.7-dev --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx use default; \
 		fi

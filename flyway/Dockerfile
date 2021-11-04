@@ -41,7 +41,7 @@ FROM adoptopenjdk:8-jdk-hotspot-bionic
 LABEL version="5.6.51"
 LABEL maintainer="shinohara@chatwork.com"
 
-COPY --from=builder /usr/local/mysql/bin /usr/local/bin
+COPY --from=builder /usr/local/mysql/bin /usr/bin
 
 ARG FLYWAY_VERSION=3.1
 ENV FLYWAY_DOWNLOAD_URL=https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz

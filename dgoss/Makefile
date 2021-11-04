@@ -43,3 +43,11 @@ push:
 		else \
 			docker buildx build -t chatwork/dgoss:$$version -t chatwork/dgoss --platform linux/amd64,linux/arm64 --push .; \
 		fi
+
+.PHONY: manifest\:push
+manifest\:push:
+	@echo "Manifest push skipped. Because this image use buildx."
+
+.PHONY: manifest\:succeed-message
+manifest\:succeed-message:
+	@echo "Manifest push skipped. Because this image use buildx."

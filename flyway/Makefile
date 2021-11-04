@@ -36,7 +36,31 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx use malti-arch; \
-			docker buildx build -t chatwork/`basename $$PWD`:$$version-dev -t chatwork/`basename $$PWD`:dev -t chatwork/`basename $$PWD`:5.6-dev --platform linux/amd64,linux/arm64 --push .; \
-			docker buildx use default; \
+		  	docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-$(ARCH)-dev; \
+		  	docker push chatwork/`basename $$PWD`:$$version-$(ARCH)-dev; \
 		fi
+
+.PHONY: manifest\:push
+manifest\:push:
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+	if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
+	  	echo "no changes"; \
+	else \
+		docker pull chatwork/flyway:$$version-aarch64-dev; \
+		docker pull chatwork/flyway:$$version-x86_64-dev; \
+		arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-aarch64-dev); \
+        amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-x86_64-dev); \
+		docker buildx imagetools create -t chatwork/`basename $$PWD`:$$version-dev $$arm64_digest $$amd64_digest; \
+		docker buildx imagetools create -t chatwork/`basename $$PWD`:5.6-dev $$arm64_digest $$amd64_digest; \
+		docker buildx imagetools create -t chatwork/`basename $$PWD`:dev $$arm64_digest $$amd64_digest; \
+		hub-tool tag rm chatwork/`basename $$PWD`:$$version-aarch64-dev -f; \
+        hub-tool tag rm chatwork/`basename $$PWD`:$$version-x86_64-dev -f; \
+    fi
+
+.PHONY: manifest\:succeed-message
+manifest\:succeed-message:
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+	echo "Released new tags."; \
+	echo "- chatwork/`basename $$PWD`:$$version-dev"; \
+	echo "- chatwork/`basename $$PWD`:5.6-dev"; \
+	echo "- chatwork/`basename $$PWD`:dev";

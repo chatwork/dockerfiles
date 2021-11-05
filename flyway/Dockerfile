@@ -55,4 +55,4 @@ RUN curl -o flyway-command.tar.gz ${FLYWAY_DOWNLOAD_URL} \
     && rm flyway-command.tar.gz \
     && chmod a+x /opt/flyway/flyway
 
-ENTRYPOINT ['flyway']
+ENTRYPOINT ['/opt/flyway/flyway']

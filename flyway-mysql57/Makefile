@@ -52,6 +52,7 @@ manifest\:push:
         amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/flyway:$$version-x86_64-dev); \
         docker buildx imagetools create -t chatwork/flyway:$$version-dev $$arm64_digest $$amd64_digest; \
         docker buildx imagetools create -t chatwork/flyway:5.7-dev $$arm64_digest $$amd64_digest; \
+        docker buildx imagetools create -t chatwork/flyway:dev $$arm64_digest $$amd64_digest; \
 		hub-tool tag rm chatwork/flyway:$$version-aarch64-dev -f; \
 		hub-tool tag rm chatwork/flyway:$$version-x86_64-dev -f; \
 	fi
@@ -61,4 +62,5 @@ manifest\:succeed-message:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	echo "Released new tags."; \
 	echo "- chatwork/flyway:$$version-dev"; \
-	echo "- chatwork/flyway:5.7-dev";
+	echo "- chatwork/flyway:5.7-dev"; \
+	echo "- chatwork/flyway:dev";

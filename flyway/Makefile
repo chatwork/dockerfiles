@@ -52,7 +52,6 @@ manifest\:push:
         amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-x86_64-dev); \
 		docker buildx imagetools create -t chatwork/`basename $$PWD`:$$version-dev $$arm64_digest $$amd64_digest; \
 		docker buildx imagetools create -t chatwork/`basename $$PWD`:5.6-dev $$arm64_digest $$amd64_digest; \
-		docker buildx imagetools create -t chatwork/`basename $$PWD`:dev $$arm64_digest $$amd64_digest; \
 		hub-tool tag rm chatwork/`basename $$PWD`:$$version-aarch64-dev -f; \
         hub-tool tag rm chatwork/`basename $$PWD`:$$version-x86_64-dev -f; \
     fi
@@ -62,5 +61,4 @@ manifest\:succeed-message:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	echo "Released new tags."; \
 	echo "- chatwork/`basename $$PWD`:$$version-dev"; \
-	echo "- chatwork/`basename $$PWD`:5.6-dev"; \
-	echo "- chatwork/`basename $$PWD`:dev";
+	echo "- chatwork/`basename $$PWD`:5.6-dev";

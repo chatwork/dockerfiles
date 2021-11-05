@@ -36,8 +36,8 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-		  	docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-$(ARCH)-dev; \
-		  	docker push chatwork/`basename $$PWD`:$$version-$(ARCH)-dev; \
+		  	docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-$(ARCH); \
+		  	docker push chatwork/`basename $$PWD`:$$version-$(ARCH); \
 		fi
 
 .PHONY: manifest\:push
@@ -46,19 +46,19 @@ manifest\:push:
 	if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 	  	echo "no changes"; \
 	else \
-		docker pull chatwork/flyway:$$version-aarch64-dev; \
-		docker pull chatwork/flyway:$$version-x86_64-dev; \
-		arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-aarch64-dev); \
-        amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-x86_64-dev); \
-		docker buildx imagetools create -t chatwork/`basename $$PWD`:$$version-dev $$arm64_digest $$amd64_digest; \
-		docker buildx imagetools create -t chatwork/`basename $$PWD`:5.6-dev $$arm64_digest $$amd64_digest; \
-		hub-tool tag rm chatwork/`basename $$PWD`:$$version-aarch64-dev -f; \
-        hub-tool tag rm chatwork/`basename $$PWD`:$$version-x86_64-dev -f; \
+		docker pull chatwork/flyway:$$version-aarch64; \
+		docker pull chatwork/flyway:$$version-x86_64; \
+		arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-aarch64); \
+        amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-x86_64); \
+		docker buildx imagetools create -t chatwork/`basename $$PWD`:$$version $$arm64_digest $$amd64_digest; \
+		docker buildx imagetools create -t chatwork/`basename $$PWD`:5.6 $$arm64_digest $$amd64_digest; \
+		hub-tool tag rm chatwork/`basename $$PWD`:$$version-aarch64 -f; \
+        hub-tool tag rm chatwork/`basename $$PWD`:$$version-x86_64 -f; \
     fi
 
 .PHONY: manifest\:succeed-message
 manifest\:succeed-message:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	echo "Released new tags."; \
-	echo "- chatwork/`basename $$PWD`:$$version-dev"; \
-	echo "- chatwork/`basename $$PWD`:5.6-dev";
+	echo "- chatwork/`basename $$PWD`:$$version"; \
+	echo "- chatwork/`basename $$PWD`:5.6";

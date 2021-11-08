@@ -19,7 +19,7 @@ build:
         flyway_version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
         mysql_version=$$(docker inspect -f {{.Config.Labels.mysql_version}} chatwork/`basename $$PWD`:latest); \
       	if [ -n "$$version" ] && [ -n "$$flyway_version" ] && [ -n "$$mysql_version" ]; then \
-            docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version$(SCOPE_SUFFIX); \
+            docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
         fi \
     done
 

@@ -24,7 +24,7 @@ build:
       	flyway_version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
       	mysql_version=$$(docker inspect -f {{.Config.Labels.mysql_version}} chatwork/`basename $$PWD`:latest); \
       	if [ -n "$$version" ] && [ -n "$$flyway_version" ] && [ -n "$$mysql_version" ]; then \
-            docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version$(SCOPE_SUFFIX); \
+            docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
         fi \
     done
 
@@ -59,7 +59,7 @@ push:
 	if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version-$(ARCH) >/dev/null 2>&1; then \
 		echo "no changes"; \
 	else \
-	  	docker tag chatwork/`basename $$PWD`:latest chatwork/flyway:$$version-$(ARCH); \
+	  	docker tag chatwork/`basename $$PWD`:latest chatwork/flyway:$$version-$(ARCH)$(SCOPE_SUFFIX); \
 		docker push chatwork/flyway:$$version-$(ARCH)$(SCOPE_SUFFIX); \
 	fi
 

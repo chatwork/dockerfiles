@@ -69,7 +69,7 @@ manifest\:push:
 		arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-aarch64$(SCOPE_SUFFIX)); \
         amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-x86_64$(SCOPE_SUFFIX)); \
 		docker buildx imagetools create -t chatwork/`basename $$PWD`:$$version$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
-		docker buildx imagetools create -t chatwork/`basename $$PWD`:3.1-5.6$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
+		docker buildx imagetools create -t chatwork/`basename $$PWD`:3.1-mysql5.6$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
 		hub-tool tag rm chatwork/`basename $$PWD`:$$version-aarch64$(SCOPE_SUFFIX) -f; \
         hub-tool tag rm chatwork/`basename $$PWD`:$$version-x86_64$(SCOPE_SUFFIX) -f; \
     fi
@@ -79,4 +79,4 @@ manifest\:succeed-message:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	echo "Released new tags."; \
 	echo "- chatwork/`basename $$PWD`:$$version$(SCOPE_SUFFIX)"; \
-	echo "- chatwork/`basename $$PWD`:3.1-5.6$(SCOPE_SUFFIX)";
+	echo "- chatwork/`basename $$PWD`:3.1-mysql5.6$(SCOPE_SUFFIX)";

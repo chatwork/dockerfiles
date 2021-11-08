@@ -3,7 +3,7 @@ FROM adoptopenjdk:8-jdk-hotspot-bionic
 ARG MYSQL_VERSION=5.7.36
 ARG FLYWAY_VERSION=3.1
 
-LABEL version="${FLYWAY_VERSION}-${MYSQL_VERSION}"
+LABEL version="${FLYWAY_VERSION}-mysql${MYSQL_VERSION}"
 LABEL flyway_version="${FLYWAY_VERSION}"
 LABEL mysql_version="${MYSQL_VERSION}"
 LABEL maintainer="shinohara@chatwork.com"

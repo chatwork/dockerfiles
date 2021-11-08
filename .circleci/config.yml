@@ -291,7 +291,7 @@ workflows:
             - test
           filters:
             branches:
-              only: master
+              only: add_flyway
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
@@ -302,7 +302,7 @@ workflows:
             - push
           filters:
             branches:
-              only: master
+              only: add_flyway
 
   update_dependecies:
     jobs:

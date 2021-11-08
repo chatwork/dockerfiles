@@ -1,28 +1,55 @@
 ARCH:=$(shell uname -m)
+ENV:="dev"
+LATEST_TAG:=$(shell if [ $(ENV) = "prod" ]; then \
+ 	echo "latest"; \
+ 	else \
+ 		echo "$(ENV)"; \
+ 	fi)
+SCOPE_SUFFIX:=$(shell if [ $(ENV) = "prod" ]; then \
+ 	echo ""; \
+ 	else \
+ 		echo "-$(ENV)"; \
+ 	fi)
 EXTENSION:=$(shell case "$(ARCH)" in \
 	("arm64"|"aarch64") echo ".arm64" ;; \
 	("x86_64") echo "" ;; \
 	(*) echo $(ARCH) ;; \
 esac)
 
+.PHONY: scope
+scope:
+	@echo $(SCOPE_SUFFIX)
+
 .PHONY: build
 build:
 	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
 		docker build -f Dockerfile -t chatwork/`basename $$PWD` .; \
-      	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
-      	if [ -n "$$version" ]; then \
+      	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+      	flyway_version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+      	mysql_version=$$(docker inspect -f {{.Config.Labels.mysql_version}} chatwork/`basename $$PWD`:latest); \
+      	if [ -n "$$version" ] && [ -n "$$flyway_version" ] && [ -n "$$mysql_version" ]; then \
             docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
         fi \
     done
 
 .PHONY: check
 check:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
-		if [ -z "$$version" ]; then \
-			echo "\033[91mError: version is not defined in Dockerfile.\033[0m"; \
-			exit 1; \
-		fi;
-	@echo "\033[92mno problem.\033[0m";
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+	flyway_version=$$(docker inspect -f {{.Config.Labels.flyway_version}} chatwork/`basename $$PWD`:latest); \
+	mysql_version=$$(docker inspect -f {{.Config.Labels.mysql_version}} chatwork/`basename $$PWD`:latest); \
+	if [[ -z $$version ]]; then \
+    	echo "\033[91mError: version is not defined in Dockerfile.\033[0m"; \
+    	exit 1; \
+    fi; \
+    if [[ -z $$flyway_version ]]; then \
+    	echo "\033[91mError: flyway_version is not defined in Dockerfile.\033[0m"; \
+    	exit 1; \
+    fi; \
+   	if [[ -z $$mysql_version ]]; then \
+    	echo "\033[91mError: mysql_version is not defined in Dockerfile.\033[0m"; \
+   		exit 1; \
+    fi; \
+	echo "\033[92mno problem.\033[0m";
 
 .PHONY: test
 test:
@@ -43,6 +70,7 @@ push:
 .PHONY: manifest\:push
 manifest\:push:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+	flyway_version=$$(docker inspect -f {{.Config.Labels.flyway_version}} chatwork/`basename $$PWD`:latest); \
 	if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 		echo "no changes"; \
 	else \
@@ -50,17 +78,17 @@ manifest\:push:
         docker pull chatwork/flyway:$$version-x86_64; \
         arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/flyway:$$version-aarch64); \
         amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/flyway:$$version-x86_64); \
-        docker buildx imagetools create -t chatwork/flyway:$$version $$arm64_digest $$amd64_digest; \
-        docker buildx imagetools create -t chatwork/flyway:5.7 $$arm64_digest $$amd64_digest; \
-        docker buildx imagetools create -t chatwork/flyway:latest $$arm64_digest $$amd64_digest; \
-		hub-tool tag rm chatwork/flyway:$$version-aarch64 -f; \
-		hub-tool tag rm chatwork/flyway:$$version-x86_64 -f; \
+        docker buildx imagetools create -t chatwork/flyway:$$version$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
+        docker buildx imagetools create -t chatwork/flyway:3.1-5.7$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
+        docker buildx imagetools create -t chatwork/flyway:$(LATEST_TAG) $$arm64_digest $$amd64_digest; \
+		hub-tool tag rm chatwork/flyway:$$version-aarch64$(SCOPE_SUFFIX) -f; \
+		hub-tool tag rm chatwork/flyway:$$version-x86_64$(SCOPE_SUFFIX) -f; \
 	fi
 
 .PHONY: manifest\:succeed-message
 manifest\:succeed-message:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	echo "Released new tags."; \
-	echo "- chatwork/flyway:$$version"; \
-	echo "- chatwork/flyway:5.7"; \
-	echo "- chatwork/flyway:latest";
+	echo "- chatwork/flyway:$$version$(SCOPE_SUFFIX)"; \
+	echo "- chatwork/flyway:3.1-5.7$(SCOPE_SUFFIX)"; \
+	echo "- chatwork/flyway:$(LATEST_TAG)";

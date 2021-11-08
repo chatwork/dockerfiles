@@ -16,10 +16,6 @@ EXTENSION:=$(shell case "$(ARCH)" in \
 	(*) echo $(ARCH) ;; \
 esac)
 
-.PHONY: scope
-scope:
-	@echo $(SCOPE_SUFFIX)
-
 .PHONY: build
 build:
 	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
@@ -64,7 +60,7 @@ push:
 		echo "no changes"; \
 	else \
 	  	docker tag chatwork/`basename $$PWD`:latest chatwork/flyway:$$version-$(ARCH); \
-		docker push chatwork/flyway:$$version-$(ARCH); \
+		docker push chatwork/flyway:$$version-$(ARCH)$(SCOPE_SUFFIX); \
 	fi
 
 .PHONY: manifest\:push

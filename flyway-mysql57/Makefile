@@ -66,7 +66,6 @@ push:
 .PHONY: manifest\:push
 manifest\:push:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
-	flyway_version=$$(docker inspect -f {{.Config.Labels.flyway_version}} chatwork/`basename $$PWD`:latest); \
 	if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 		echo "no changes"; \
 	else \

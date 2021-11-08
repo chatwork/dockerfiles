@@ -98,7 +98,7 @@ jobs:
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
               if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-                if [[ "flyway" == $DIR ]] || [[ "flyway-mysql57" == $DIR ]]; then
+                if [[ "flyway-mysql56" == $DIR ]] || [[ "flyway-mysql57" == $DIR ]]; then
                   make push;
                 fi
               else

@@ -54,8 +54,8 @@ push:
 	if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 		echo "no changes"; \
 	else \
-		docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-$(ARCH)$(SCOPE_SUFFIX); \
-		docker push chatwork/`basename $$PWD`:$$version-$(ARCH)$(SCOPE_SUFFIX); \
+		docker tag chatwork/`basename $$PWD`:latest chatwork/flyway:$$version-$(ARCH)$(SCOPE_SUFFIX); \
+		docker push chatwork/flyway:$$version-$(ARCH)$(SCOPE_SUFFIX); \
 	fi
 
 .PHONY: manifest\:push
@@ -68,15 +68,15 @@ manifest\:push:
 		docker pull chatwork/flyway:$$version-x86_64$(SCOPE_SUFFIX); \
 		arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-aarch64$(SCOPE_SUFFIX)); \
         amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' chatwork/`basename $$PWD`:$$version-x86_64$(SCOPE_SUFFIX)); \
-		docker buildx imagetools create -t chatwork/`basename $$PWD`:$$version$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
-		docker buildx imagetools create -t chatwork/`basename $$PWD`:3.1-mysql5.6$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
-		hub-tool tag rm chatwork/`basename $$PWD`:$$version-aarch64$(SCOPE_SUFFIX) -f; \
-        hub-tool tag rm chatwork/`basename $$PWD`:$$version-x86_64$(SCOPE_SUFFIX) -f; \
+		docker buildx imagetools create -t chatwork/flyway:$$version$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
+		docker buildx imagetools create -t chatwork/flyway:3.1-mysql5.6$(SCOPE_SUFFIX) $$arm64_digest $$amd64_digest; \
+		hub-tool tag rm chatwork/flyway:$$version-aarch64$(SCOPE_SUFFIX) -f; \
+        hub-tool tag rm chatwork/flyway:$$version-x86_64$(SCOPE_SUFFIX) -f; \
     fi
 
 .PHONY: manifest\:succeed-message
 manifest\:succeed-message:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	echo "Released new tags."; \
-	echo "- chatwork/`basename $$PWD`:$$version$(SCOPE_SUFFIX)"; \
-	echo "- chatwork/`basename $$PWD`:3.1-mysql5.6$(SCOPE_SUFFIX)";
+	echo "- chatwork/flyway:$$version$(SCOPE_SUFFIX)"; \
+	echo "- chatwork/flyway:3.1-mysql5.6$(SCOPE_SUFFIX)";

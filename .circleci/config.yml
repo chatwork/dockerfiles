@@ -98,9 +98,7 @@ jobs:
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
               if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-                if [[ "flyway-mysql56" == $DIR ]] || [[ "flyway-mysql57" == $DIR ]]; then
-                  make push;
-                fi
+                make push;
               else
                 echo "${DIR} is ${ARCH} not supported. make push was skipped.";
               fi
@@ -291,7 +289,7 @@ workflows:
             - test
           filters:
             branches:
-              only: add_flyway
+              only: master
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
@@ -302,7 +300,7 @@ workflows:
             - push
           filters:
             branches:
-              only: add_flyway
+              only: master
 
   update_dependecies:
     jobs:

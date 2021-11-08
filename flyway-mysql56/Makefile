@@ -1,5 +1,5 @@
 ARCH:=$(shell uname -m)
-ENV:="dev"
+ENV:="prod"
 SCOPE_SUFFIX:=$(shell if [ $(ENV) = "prod" ]; then \
  	echo ""; \
  	else \

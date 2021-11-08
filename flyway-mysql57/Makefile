@@ -1,5 +1,5 @@
 ARCH:=$(shell uname -m)
-ENV:="dev"
+ENV:="prod"
 LATEST_TAG:=$(shell if [ $(ENV) = "prod" ]; then \
  	echo "latest"; \
  	else \

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  flyway-mysql57:
+    build:
+      context: .
+    image: chatwork/flyway-mysql57
+    entrypoint: /bin/bash
+  sut:
+    image: chatwork/dgoss:latest
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
+    command: /usr/local/bin/dgoss run --entrypoint "" chatwork/flyway-mysql57 tail -f /dev/null
+    container_name: flyway-mysql57
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - flyway-mysql57

@@ -1,0 +1,11 @@
+command:
+  flyway:
+    exit-status: 0
+    stdout:
+      - "Flyway (Command-line Tool) v.3.1"
+
+  mysql -V:
+    exit-status: 0
+
+  java -version:
+    exit-status: 0

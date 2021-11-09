@@ -14,7 +14,7 @@ executors:
       # The same volume is set for amd64 and arm64.
       # see https://circleci.com/docs/2.0/docker-layer-caching/
       docker_layer_caching: false
-    resource_class: medium
+    resource_class: large
 
 jobs:
   test:
@@ -60,11 +60,20 @@ jobs:
     executor: << parameters.arch >>
     environment:
         - CIRCLECI_WORKSPACE: /home/circleci/project
+        - DOCKER_BUILDKIT: 1
+        - BUILDX_PLATFORMS: linux/amd64,linux/arm64
     steps:
       - checkout
       - run: docker version
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
+      - run:
+          name: Install buildx
+          command: |
+            docker buildx install
+            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
+            docker buildx create --name malti-arch
+            docker buildx ls
       - run:
           name: build Dockerfile
           command: |
@@ -136,6 +145,69 @@ jobs:
              else
                echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
              fi
+            done
+          when: on_success
+
+  manifest:
+    parameters:
+      arch:
+        type: executor
+        default: x86_64
+    executor: << parameters.arch >>
+    environment:
+      - CIRCLECI_WORKSPACE: /home/circleci/project
+      - DOCKER_BUILDKIT: 1
+    steps:
+      - checkout
+      - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
+      - run: make ci:diff
+      - run:
+          name: install hub-tool
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y expect
+
+            curl -OL https://github.com/docker/hub-tool/releases/download/v0.4.3/hub-tool-linux-amd64.tar.gz
+            tar xvf hub-tool-linux-amd64.tar.gz
+            sudo mv ./hub-tool/hub-tool /usr/local/bin
+
+            expect -c "
+            set timeout 5
+            spawn env hub-tool login ${DOCKER_REGISTRY_USERNAME}
+            expect \"Password:\"
+            send \"${DOCKER_REGISTRY_PASSWORD}\n\"
+            expect \"$\"
+            exit 0
+            "
+
+            hub-tool version
+
+      - run:
+          name: update manifest
+          command: |
+            make ci:diff
+            make ci:diff | while read DIR; do
+              if [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
+                cd ${CIRCLECI_WORKSPACE}/${DIR};
+                make build;
+                make manifest:push;
+              fi
+            done
+      - run:
+          name: notification failed
+          command: |
+            make ci:notify -e TITLE="CircleCI: Failed manifest (devil)" \
+                                                  -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
+          when: on_fail
+      - run:
+          name: notification success
+          command: |
+            make ci:diff | while read DIR; do
+              if [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
+                version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
+                make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
+                                                                -e BODY="$(make manifest:succeed-message -f ${CIRCLECI_WORKSPACE}/${DIR}/Makefile)";
+              fi
             done
           when: on_success
 
@@ -215,6 +287,17 @@ workflows:
           context: "chatwork_api_token@circleci"
           requires:
             - test
+          filters:
+            branches:
+              only: master
+          matrix:
+            parameters:
+              arch: [ x86_64, arm64 ]
+      - manifest:
+          context: "chatwork_api_token@circleci"
+          requires:
+            - test
+            - push
           filters:
             branches:
               only: master

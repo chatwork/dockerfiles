@@ -1,0 +1,20 @@
+version: '3'
+services:
+  aws-cli-php:
+    build:
+      context: .
+    image: chatwork/aws-cli-php
+    entrypoint: /bin/bash
+  sut:
+    image: chatwork/dgoss:latest
+    environment:
+      GOSS_FILES_PATH: /goss
+      GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
+    command: /usr/local/bin/dgoss run --entrypoint "" chatwork/aws-cli-php tail -f /dev/null
+    container_name: aws-cli-php
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./goss/goss.yaml:/goss/goss.yaml
+    depends_on:
+      - aws-cli-php

@@ -98,7 +98,9 @@ jobs:
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
               if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-                make push;
+                if [[ "${DIR}" = "aws-cli-php" ]]; then
+                  make push;
+                fi
               else
                 echo "${DIR} is ${ARCH} not supported. make push was skipped.";
               fi
@@ -172,7 +174,7 @@ jobs:
             sudo mv ./hub-tool/hub-tool /usr/local/bin
 
             expect -c "
-            set timeout 5
+            set timeout 10
             spawn env hub-tool login ${DOCKER_REGISTRY_USERNAME}
             expect \"Password:\"
             send \"${DOCKER_REGISTRY_PASSWORD}\n\"
@@ -188,9 +190,11 @@ jobs:
             make ci:diff
             make ci:diff | while read DIR; do
               if [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
-                cd ${CIRCLECI_WORKSPACE}/${DIR};
-                make build;
-                make manifest:push;
+                if [[ "${DIR}" = "aws-cli-php" ]]; then
+                  cd ${CIRCLECI_WORKSPACE}/${DIR};
+                  make build;
+                  make manifest:push;
+                fi
               fi
             done
       - run:
@@ -289,7 +293,7 @@ workflows:
             - test
           filters:
             branches:
-              only: master
+              only: add_aws_cli_php
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
@@ -300,7 +304,7 @@ workflows:
             - push
           filters:
             branches:
-              only: master
+              only: add_aws_cli_php
 
   update_dependecies:
     jobs:

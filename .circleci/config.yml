@@ -98,9 +98,7 @@ jobs:
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
               if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-                if [[ "${DIR}" = "aws-cli-php" ]]; then
-                  make push;
-                fi
+                make push;
               else
                 echo "${DIR} is ${ARCH} not supported. make push was skipped.";
               fi
@@ -187,14 +185,11 @@ jobs:
       - run:
           name: update manifest
           command: |
-            make ci:diff
             make ci:diff | while read DIR; do
               if [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
-                if [[ "${DIR}" = "aws-cli-php" ]]; then
-                  cd ${CIRCLECI_WORKSPACE}/${DIR};
-                  make build;
-                  make manifest:push;
-                fi
+                cd ${CIRCLECI_WORKSPACE}/${DIR};
+                make build;
+                make manifest:push;
               fi
             done
       - run:
@@ -293,7 +288,7 @@ workflows:
             - test
           filters:
             branches:
-              only: add_aws_cli_php
+              only: master
           matrix:
             parameters:
               arch: [ x86_64, arm64 ]
@@ -304,7 +299,7 @@ workflows:
             - push
           filters:
             branches:
-              only: add_aws_cli_php
+              only: master
 
   update_dependecies:
     jobs:

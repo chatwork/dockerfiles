@@ -11,5 +11,5 @@ port:
       ip:
         - 0.0.0.0
 file:
-  /etc/postfix/sasl_passwd.db:
+  /etc/postfix/sasl_passwd.lmdb:
     exists: true

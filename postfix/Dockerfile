@@ -1,11 +1,19 @@
-FROM alpine:3.11
+FROM chatwork/alpine-sdk:3.15
 
-LABEL version="3.4.8"
+LABEL version="3.6.3"
 LABEL maintainer="ozaki@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
-RUN apk --no-cache add postfix ca-certificates cyrus-sasl-login cyrus-sasl-plain libsasl
+RUN apk --no-cache add \
+  postfix \
+  ca-certificates \
+  cyrus-sasl-login \
+  libsasl \
+  cyrus-sasl \
+  cyrus-sasl-crammd5 \
+  postfix-pcre
 
 COPY main.cf /etc/postfix/main.cf
-COPY entrypoint.sh /entrypont.sh
+COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["sh", "/entrypont.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]

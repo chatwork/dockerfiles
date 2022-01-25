@@ -5,7 +5,7 @@ services:
       context: .
     image: chatwork/alpine-sdk
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp

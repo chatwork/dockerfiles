@@ -1,10 +1,25 @@
+ARCH:=$(shell uname -m)
+TAG:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo "arm64" ;; \
+	("x86_64") echo "x86_64" ;; \
+	(*) echo $(ARCH) ;; \
+esac)
+EXTENSION:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo ".arm64" ;; \
+	("x86_64") echo "" ;; \
+	(*) echo $(ARCH) ;; \
+esac)
+
 .PHONY: build
 build:
-	docker build -t chatwork/`basename $$PWD` .;
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
-		if [ -n "$$version" ]; then \
-			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
-		fi
+	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
+		docker build -f Dockerfile -t chatwork/`basename $$PWD` .; \
+      	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+      	if [ -n "$$version" ]; then \
+            docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-${TAG}; \
+        fi \
+    done
+
 
 .PHONY: check
 check:

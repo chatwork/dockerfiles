@@ -61,7 +61,7 @@ jobs:
     environment:
         - CIRCLECI_WORKSPACE: /home/circleci/project
         - BUILDX_PLATFORMS: linux/amd64,linux/arm64
-        - DOCKER_CLI_EXPERIMENTAL: enable
+        - DOCKER_CLI_EXPERIMENTAL: enabled
     steps:
       - checkout
       - run: docker version

@@ -68,13 +68,6 @@ jobs:
       - run: docker login -u="${DOCKER_REGISTRY_USERNAME}" -p="${DOCKER_REGISTRY_PASSWORD}"
       - run: make ci:diff
       - run:
-          name: Install buildx
-          command: |
-            docker buildx install
-            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
-            docker buildx create --name malti-arch --use
-            docker buildx ls
-      - run:
           name: build Dockerfile
           command: |
             ARCH=`make arch`
@@ -88,7 +81,13 @@ jobs:
                 echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
               fi
             done
-
+      - run:
+          name: Install buildx
+          command: |
+            docker buildx install
+            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
+            docker buildx create --name malti-arch --use
+            docker buildx ls
       - run:
           name: push Docker Image
           command: |

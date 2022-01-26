@@ -5,7 +5,7 @@ LABEL version="${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 LABEL maintainer="ozaki@chatwork.com"
 
-ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
+ENV HELM_FILE_NAME helm-v${HELM_VERSION}-linux-arm64.tar.gz
 
 WORKDIR /
 

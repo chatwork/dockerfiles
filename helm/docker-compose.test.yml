@@ -5,10 +5,11 @@ services:
       context: .
     image: chatwork/helm
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
     command: /usr/local/bin/dgoss run --entrypoint tail chatwork/helm -f /dev/null
     container_name: helm
     volumes:

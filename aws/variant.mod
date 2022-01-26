@@ -7,6 +7,6 @@ provisioners:
 dependencies:
   awscli:
     releasesFrom:
-      githubTags:
-        source: aws/aws-cli
+      dockerImageTags:
+        source: amazon/aws-cli
     version: "> 2.0.0"

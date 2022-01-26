@@ -13,7 +13,7 @@ esac)
 .PHONY: build
 build:
 	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
-		docker build -f Dockerfile -t chatwork/`basename $$PWD` .; \
+		docker build -f Dockerfile${EXTENSION} -t chatwork/`basename $$PWD` .; \
       	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
       	if [ -n "$$version" ]; then \
             docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-${TAG}; \
@@ -41,7 +41,7 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/dgoss:$$version -t chatwork/dgoss --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 --push .; \
 		fi
 
 .PHONY: manifest\:push

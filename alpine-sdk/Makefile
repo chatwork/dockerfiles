@@ -13,7 +13,7 @@ esac)
 .PHONY: build
 build:
 	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
-		docker buildx build -f Dockerfile${EXTENSION} -t chatwork/`basename $$PWD` . --load; \
+		docker build -f Dockerfile${EXTENSION} -t chatwork/`basename $$PWD` .; \
       	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
       	if [ -n "$$version" ]; then \
             docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-${TAG}; \

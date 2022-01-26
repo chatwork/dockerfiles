@@ -42,7 +42,7 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			DOCKER_CLI_EXPERIMENTAL=enabled docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 --push .; \
 		fi
 
 .PHONY: manifest\:push

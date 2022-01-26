@@ -73,8 +73,7 @@ jobs:
           command: |
             docker buildx install
             docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
-            docker buildx create --name malti-arch
-            docker buildx create --use
+            docker buildx create --name malti-arch --use
             docker buildx ls
       - run:
           name: build Dockerfile

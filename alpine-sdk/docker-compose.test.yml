@@ -9,6 +9,7 @@ services:
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
     command: /usr/local/bin/dgoss run --entrypoint '' chatwork/alpine-sdk tail -f /dev/null
     container_name: alpine-sdk
     volumes:

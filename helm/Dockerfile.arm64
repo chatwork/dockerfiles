@@ -14,7 +14,7 @@ RUN apk --update --no-cache add ca-certificates bash
 ADD https://get.helm.sh/${HELM_FILE_NAME} /tmp
 
 RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
-  && mv /tmp/linux-amd64/helm /usr/bin/helm \
+  && mv /tmp/linux-arm64/helm /usr/bin/helm \
   && rm -rf /tmp/*
 
 ENTRYPOINT ["/usr/bin/helm"]

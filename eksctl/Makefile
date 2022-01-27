@@ -31,7 +31,7 @@ check:
 	@echo "\033[92mno problem.\033[0m";
 
 .PHONY: test
-test:
+test:build
 	docker-compose -f docker-compose.test.yml up --no-start sut
 	docker cp $(shell pwd)/goss `basename $$PWD`:/goss
 	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut sut

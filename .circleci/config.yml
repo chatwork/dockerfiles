@@ -24,10 +24,19 @@ jobs:
     executor: << parameters.arch >>
     environment:
       - CIRCLECI_WORKSPACE: /home/circleci/project
+      - BUILDX_PLATFORMS: linux/amd64,linux/arm64
+      - DOCKER_CLI_EXPERIMENTAL: enabled
     steps:
       - checkout
       - run: docker version
       - run: make ci:diff
+      - run:
+          name: Install buildx
+          command: |
+            docker buildx install
+            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
+            docker buildx create --name malti-arch --use
+            docker buildx ls
       - run:
           command: |
             ARCH=`make arch`
@@ -59,9 +68,9 @@ jobs:
         default: x86_64
     executor: << parameters.arch >>
     environment:
-        - CIRCLECI_WORKSPACE: /home/circleci/project
-        - BUILDX_PLATFORMS: linux/amd64,linux/arm64
-        - DOCKER_CLI_EXPERIMENTAL: enabled
+      - CIRCLECI_WORKSPACE: /home/circleci/project
+      - BUILDX_PLATFORMS: linux/amd64,linux/arm64
+      - DOCKER_CLI_EXPERIMENTAL: enabled
     steps:
       - checkout
       - run: docker version

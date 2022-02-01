@@ -1,13 +1,28 @@
 provisioners:
-  textReplace:
-    Dockerfile:
-      from: "ARG HELMFILE_VERSION={{ .helmfile.previousVersion }}"
-      to: "ARG HELMFILE_VERSION={{ .helmfile.version }}"
+  Dockerfile:
+    source: Dockerfile.tpl
+    arguments:
+      helm_version: "{{ .helm.version }}"
+      helmfile_version: "{{ .helmfile.version }}"
+  Dockerfile.arm64:
+    source: Dockerfile.arm64.tpl
+    arguments:
+      helm_version: "{{ .helm.version }}"
+      helmfile_version: "{{ .helmfile.version }}"
+  goss/goss.yaml:
+    source: goss/goss.yaml.tpl
+    arguments:
+      helm_version: "{{ .helm.version }}"
+      helmfile_version: "{{ .helmfile.version }}"
 
 dependencies:
   helmfile:
     releasesFrom:
-      jsonPath:
-        source: https://quay.io/api/v1/repository/roboll/helmfile/tag/
-        versions: "$.tags[*].name"
+      githubReleases:
+        source: roboll/helmfile
     version: "> 0.1"
+  helm:
+    releasesFrom:
+      githubReleases:
+        source: helm/helm
+    version: "> 1.0"

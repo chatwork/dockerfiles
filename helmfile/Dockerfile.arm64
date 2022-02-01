@@ -41,6 +41,6 @@ RUN mv /tmp/helmfile_linux_arm64 /usr/local/bin/helmfile \
 
 RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} \
     && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} \
-    && helm plugin install https://github.com/aslafy-z/helm-git.git
+    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v0.11.1
 
 ENTRYPOINT ["/usr/local/bin/helmfile"]

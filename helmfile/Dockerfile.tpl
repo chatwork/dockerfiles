@@ -39,8 +39,10 @@ ADD https://github.com/roboll/helmfile/releases/download/v${HELMFILE_VERSION}/he
 RUN mv /tmp/helmfile_linux_amd64 /usr/local/bin/helmfile \
     && chmod 755 /usr/local/bin/helmfile
 
+# helm-s3 install only amd64(not support arm64)
 RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} \
     && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} \
-    && helm plugin install https://github.com/aslafy-z/helm-git.git
+    && helm plugin install https://github.com/hypnoglow/helm-s3.git --version v0.10.0 \
+    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v0.11.1
 
 ENTRYPOINT ["/usr/local/bin/helmfile"]

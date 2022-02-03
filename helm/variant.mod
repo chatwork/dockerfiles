@@ -3,6 +3,9 @@ provisioners:
     Dockerfile:
       from: "ARG HELM_VERSION={{ .helm.previousVersion }}"
       to: "ARG HELM_VERSION={{ .helm.version }}"
+    Dockerfile.arm64:
+      from: "ARG HELM_VERSION={{ .helm.previousVersion }}"
+      to: "ARG HELM_VERSION={{ .helm.version }}"
     goss/goss.yaml:
       from: "- {{ .helm.previousVersion }}"
       to: "- {{ .helm.version }}"

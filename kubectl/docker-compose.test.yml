@@ -5,10 +5,11 @@ services:
       context: .
     image: chatwork/kubectl
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
     command: /usr/local/bin/dgoss run --entrypoint '' chatwork/kubectl tail -f /dev/null
     container_name: kubectl
     volumes:

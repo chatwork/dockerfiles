@@ -1,4 +1,4 @@
-FROM alpine:edge as downloads
+FROM alpine:3.15 as downloads
 WORKDIR /downloads
 
 ARG EKSCTL_VERSION=0.82.0

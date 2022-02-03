@@ -1,4 +1,4 @@
-FROM chatwork/alpine-sdk:3.12
+FROM chatwork/alpine-sdk:3.15
 
 ARG HELM_VERSION=3.8.0
 LABEL version="${HELM_VERSION}"

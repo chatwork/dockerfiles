@@ -1,4 +1,4 @@
-FROM chatwork/alpine-sdk:3.12
+FROM amazon/aws-cli:latest
 
 ARG KUBECTL_VERSION=1.20.15
 
@@ -10,9 +10,9 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION
 
 RUN chmod +x /usr/local/bin/kubectl
 
-RUN apk --no-cache add python3 py3-pip groff jq \
-    && pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir awscli
+RUN yum install jq bash tar gzip unzip curl wget -y \
+    && yum clean all \
+    && rm -rf /var/cache/yum/*
 
 ENTRYPOINT ["/usr/local/bin/kubectl"]
 CMD ["help"]

@@ -8,22 +8,25 @@ file:
   /usr/local/bin/kubectl:
     exists: true
     mode: "0755"
-  /usr/bin/aws:
+  /usr/local/bin/aws:
     exists: true
-    mode: "0755"
+    mode: "0777"
 command:
-  /usr/local/bin/helmfile -v:
-    exit-status: 0
   /usr/local/bin/helm version:
     exit-status: 0
+    stdout:
+      - 3.8.0
+  /usr/local/bin/helmfile -v:
+    exit-status: 0
+    stdout:
+      - 0.143.0
   /usr/local/bin/helm plugin list:
     exit-status: 0
     stdout:
       - /^diff/
       - /^helm-git/
       - /^secrets/
-      - /^x/
   /usr/local/bin/kubectl version --client:
     exit-status: 0
-  /usr/bin/aws --version:
+  /usr/local/bin/aws --version:
     exit-status: 0

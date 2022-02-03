@@ -1,4 +1,4 @@
-FROM chatwork/alpine-sdk:3.13
+FROM chatwork/alpine-sdk:3.15
 
 ARG GOMPLATE_VERSION=3.10.0
 

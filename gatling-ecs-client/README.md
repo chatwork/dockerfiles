@@ -1,4 +1,4 @@
-# Gatling S3 reporter
+# Gatling ECS client
 
 One-stop Tool for running Gatling simulations and generating report on AWS ECS and S3.
 

@@ -1,6 +1,6 @@
 FROM chatwork/alpine-sdk:3.12
 
-ARG SOPS_VERSION=3.7.1
+ARG SOPS_VERSION=3.7.2
 
 LABEL version="${SOPS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"

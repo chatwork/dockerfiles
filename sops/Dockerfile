@@ -5,7 +5,7 @@ ARG SOPS_VERSION=3.7.2
 LABEL version="${SOPS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
-ADD https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux /usr/local/bin/sops
+ADD https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64 /usr/local/bin/sops
 
 RUN chmod 755 /usr/local/bin/sops && \
     apk update && \

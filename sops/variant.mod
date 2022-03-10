@@ -3,6 +3,9 @@ provisioners:
     Dockerfile:
       from: "ARG SOPS_VERSION={{ .sops.previousVersion }}"
       to: "ARG SOPS_VERSION={{ .sops.version }}"
+    Dockerfile.arm64:
+      from: "ARG SOPS_VERSION={{ .sops.previousVersion }}"
+      to: "ARG SOPS_VERSION={{ .sops.version }}"
 
 dependencies:
   sops:

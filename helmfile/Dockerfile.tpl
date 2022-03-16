@@ -1,8 +1,8 @@
 FROM amazon/aws-cli:latest
 
-ARG KUBECTL_VERSION=1.21.9
-ARG HELMFILE_VERSION=v{{ .helmfile_version }}
-ARG HELM_VERSION=v{{ .helm_version }}
+ARG KUBECTL_VERSION=1.21.10
+ARG HELMFILE_VERSION={{ .helmfile_version }}
+ARG HELM_VERSION={{ .helm_version }}
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-linux-amd64.tar.gz
 ARG KUSTOMIZE_VERSION=4.0.5
 ARG KUSTOMIZE_FILE_NAME=kustomize_v${KUSTOMIZE_VERSION}_linux_amd64.tar.gz

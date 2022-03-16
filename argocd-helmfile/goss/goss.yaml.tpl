@@ -6,14 +6,13 @@ command:
   /usr/local/bin/kubectl version:
     exit-status: 1
     stdout:
-    - 1.20.7
+    - 1.21.10
   /usr/local/bin/helm plugin list:
     exit-status: 0
     stdout:
       - /^diff/
       - /^helm-git/
       - /^secrets/
-      - /^s3/
       - /^x/
   /usr/local/bin/helm version:
     exit-status: 0

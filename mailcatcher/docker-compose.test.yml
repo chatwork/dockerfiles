@@ -5,10 +5,11 @@ services:
       context: .
     image: chatwork/mailcatcher
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
     command: /usr/local/bin/dgoss run chatwork/mailcatcher
     container_name: mailcatcher
     volumes:

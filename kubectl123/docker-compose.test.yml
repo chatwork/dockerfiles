@@ -1,6 +1,6 @@
 version: '3'
 services:
-  kubectl120:
+  kubectl123:
     build:
       context: .
     image: chatwork/kubectl
@@ -11,8 +11,8 @@ services:
       GOSS_FILES_STRATEGY: cp
     entrypoint: ""
     command: /usr/local/bin/dgoss run --entrypoint '' chatwork/kubectl tail -f /dev/null
-    container_name: kubectl120
+    container_name: kubectl123
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      - kubectl120
+      - kubectl123

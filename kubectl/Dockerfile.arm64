@@ -1,6 +1,6 @@
 FROM amazon/aws-cli:latest
 
-ARG KUBECTL_VERSION=1.24.0
+ARG KUBECTL_VERSION=1.24.1
 
 LABEL version="${KUBECTL_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

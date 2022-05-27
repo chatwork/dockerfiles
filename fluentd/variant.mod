@@ -5,6 +5,10 @@ provisioners:
       arguments:
         fluentd_version: '{{ splitList "-" .fluentd.version | first }}'
         fluentd_image_version: '{{ .fluentd.version }}'
+      source: Dockerfile.arm64.tpl
+      arguments:
+        fluentd_version: '{{ splitList "-" .fluentd.version | first }}'
+        fluentd_image_version: '{{ .fluentd.version }}'
   textReplace:
     goss/goss.yaml:
       from: 'fluentd {{ splitList "-" .fluentd.previousVersion | first }}'

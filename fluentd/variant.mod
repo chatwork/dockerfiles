@@ -5,6 +5,7 @@ provisioners:
       arguments:
         fluentd_version: '{{ splitList "-" .fluentd.version | first }}'
         fluentd_image_version: '{{ .fluentd.version }}'
+    Dockerfile.arm64:
       source: Dockerfile.arm64.tpl
       arguments:
         fluentd_version: '{{ splitList "-" .fluentd.version | first }}'

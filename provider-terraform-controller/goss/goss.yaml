@@ -1,0 +1,12 @@
+file:
+  /usr/local/bin/crossplane-terraform-provider:
+    exists: true
+    mode: "0755"
+  /usr/local/bin/terraform:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bin/terraform version:
+    exit-status: 0
+    stdout:
+      - Terraform v1.2.1

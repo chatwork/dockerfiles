@@ -1,6 +1,6 @@
-FROM argoproj/argocd:v2.3.4
+FROM argoproj/argocd:v2.4.0
 
-LABEL version="2.3.4-0.144.0"
+LABEL version="2.4.0-0.144.0"
 LABEL maintainer="shinya@chatwork.com"
 
 # Switch to root for the ability to perform install
@@ -10,7 +10,7 @@ ARG HELMFILE_VERSION=v0.144.0
 ARG HELM_VERSION=v3.9.0
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"
-ARG KUBECTL_VERSION=1.21.11
+ARG KUBECTL_VERSION=1.22.10
 ARG SOPS_VERSION=3.7.2
 ARG HELM_DIFF_VERSION=3.4.2
 ARG HELM_SECRETS_VERSION=3.12.0
@@ -45,5 +45,4 @@ USER argocd
 
 RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} && \
     helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} && \
-    helm plugin install https://github.com/mumoshu/helm-x  && \
     helm plugin install https://github.com/aslafy-z/helm-git.git

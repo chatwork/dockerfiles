@@ -23,9 +23,9 @@ ARG HELM_SECRETS_VERSION=3.12.0
 RUN apt-get update && \
     apt-get install -y curl gpg apt-utils && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
-RUN curl -o /usr/local/bin/kubectl -L https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
+    rm -rf /var/lib/apt/lists/* && \
+    # kubectl
+    curl -o /usr/local/bin/kubectl -L https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
     # helm
     curl -OL ${HELM_LOCATION}/${HELM_FILENAME} && \
     echo Extracting ${HELM_FILENAME}... && \

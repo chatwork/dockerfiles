@@ -1,6 +1,6 @@
 FROM chatwork/alpine-sdk:3.15
 
-ARG GOMPLATE_VERSION=3.11.0
+ARG GOMPLATE_VERSION=3.11.1
 
 LABEL version="v${GOMPLATE_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"

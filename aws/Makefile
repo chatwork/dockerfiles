@@ -12,7 +12,7 @@ esac)
 
 .PHONY: build
 build:
-	@docker buildx build -t chatwork/`basename $$PWD` -t chatwork/`basename $$PWD` --platform linux/${PLATFORM} -f Dockerfile --load .; \
+	@docker buildx build -t chatwork/`basename $$PWD` --platform linux/${PLATFORM} -f Dockerfile --load .; \
 	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
 	if [ -n "$$version" ]; then \
 		docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
@@ -39,5 +39,5 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
+			docker buildx build -t chatwork/`basename $$PWD`:$$version --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
 		fi

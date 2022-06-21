@@ -4,22 +4,19 @@ TAG:=$(shell case "$(ARCH)" in \
 	("x86_64") echo "x86_64" ;; \
 	(*) echo $(ARCH) ;; \
 esac)
-EXTENSION:=$(shell case "$(ARCH)" in \
-	("arm64"|"aarch64") echo ".arm64" ;; \
-	("x86_64") echo "" ;; \
+PLATFORM:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo "arm64" ;; \
+	("x86_64") echo "amd64" ;; \
 	(*) echo $(ARCH) ;; \
 esac)
 
 .PHONY: build
 build:
-	@find . -type f -name "Dockerfile${EXTENSION}" | while read -r FILE; do \
-		docker build -f Dockerfile${EXTENSION} -t chatwork/`basename $$PWD` .; \
-      	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
-      	if [ -n "$$version" ]; then \
-            docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version-${TAG}; \
-        fi \
-    done
-
+	@docker buildx build -t chatwork/`basename $$PWD` -t chatwork/`basename $$PWD` --platform linux/${PLATFORM} -f Dockerfile --load .; \
+	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	if [ -n "$$version" ]; then \
+		docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
+	fi
 
 .PHONY: check
 check:
@@ -42,7 +39,7 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 --push .; \
+			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
 		fi
 
 .PHONY: manifest\:push

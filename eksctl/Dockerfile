@@ -1,13 +1,15 @@
 FROM alpine:3.15 as downloads
 WORKDIR /downloads
 
+ARG TARGETPLATFORM
+
 ARG EKSCTL_VERSION=0.102.0
-ARG KUBECTL_VERSION=1.21.3
+ARG KUBECTL_VERSION=1.22.9
 LABEL version="${EKSCTL_VERSION}"
 
-RUN wget -O - https://github.com/weaveworks/eksctl/releases/download/v${EKSCTL_VERSION}/eksctl_Linux_amd64.tar.gz | tar zxvf -
+RUN wget -O - https://github.com/weaveworks/eksctl/releases/download/v${EKSCTL_VERSION}/eksctl_Linux_${TARGETPLATFORM#*/}.tar.gz | tar zxvf -
 
-RUN wget https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl
+RUN wget https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/${TARGETPLATFORM#*/}/kubectl
 
 FROM chatwork/aws:latest
 

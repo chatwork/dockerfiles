@@ -35,7 +35,7 @@ jobs:
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
-              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
                 make build;
                 make test;
               else
@@ -60,7 +60,6 @@ jobs:
     executor: << parameters.arch >>
     environment:
         - CIRCLECI_WORKSPACE: /home/circleci/project
-        - BUILDX_PLATFORMS: linux/amd64,linux/arm64
         - DOCKER_CLI_EXPERIMENTAL: enabled
     steps:
       - checkout
@@ -75,7 +74,7 @@ jobs:
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
-              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
                 make build;
               else
                 echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
@@ -96,7 +95,7 @@ jobs:
 
             make ci:diff | while read DIR; do
               cd ${CIRCLECI_WORKSPACE}/${DIR}
-              if find . -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
                 make push;
               else
                 echo "${DIR} is ${ARCH} not supported. make push was skipped.";
@@ -110,7 +109,7 @@ jobs:
             EXTENSION=`make extension`
 
             make ci:diff | while read DIR; do
-              if find ./${DIR} -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
 
                 version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/${DIR});
                 if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/${DIR}:${version})" != "[]" ]; then
@@ -134,7 +133,7 @@ jobs:
             EXTENSION=`make extension`
 
             make ci:diff | while read DIR; do
-              if find ./${DIR} -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
                 version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
                 echo "version: ${version}"
                 changelog=$(make ci:changelog -e DIR="${DIR}/");
@@ -186,7 +185,7 @@ jobs:
           command: |
             make ci:diff
             make ci:diff | while read DIR; do
-              if [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
+              if [[ -f "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
                 cd ${CIRCLECI_WORKSPACE}/${DIR};
                 make build;
                 make manifest:push;
@@ -202,7 +201,7 @@ jobs:
           name: notification success
           command: |
             make ci:diff | while read DIR; do
-              if [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
+              if [[ -f "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
                 version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
                 make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
                                                                 -e BODY="$(make manifest:succeed-message -f ${CIRCLECI_WORKSPACE}/${DIR}/Makefile)";

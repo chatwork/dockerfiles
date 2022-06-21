@@ -41,11 +41,3 @@ push:
 		else \
 			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD` --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
 		fi
-
-.PHONY: manifest\:push
-manifest\:push:
-	@echo "Manifest push skipped, because this image use buildx."
-
-.PHONY: manifest\:succeed-message
-manifest\:succeed-message:
-	@echo "Manifest push skipped, because this image use buildx."

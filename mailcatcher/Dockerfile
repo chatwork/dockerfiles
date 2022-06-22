@@ -1,6 +1,6 @@
-FROM ruby:2.6-alpine3.9
+FROM ruby:2.7.6-alpine3.16
 
-LABEL version="0.1.0"
+LABEL version="0.8.2"
 
 RUN set -xe \
     && apk add --no-cache \
@@ -9,7 +9,7 @@ RUN set -xe \
     && apk add --no-cache --virtual .build-deps \
         build-base \
         sqlite-dev \
-    && gem install mailcatcher -v 0.7.1 --no-document \
+    && gem install mailcatcher -v 0.8.2 --no-document \
     && apk del .build-deps
 
 # smtp
@@ -21,5 +21,3 @@ EXPOSE 1080
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-
-

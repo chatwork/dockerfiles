@@ -12,8 +12,8 @@ esac)
 
 .PHONY: build
 build:
-	@docker buildx build -t chatwork/`basename $$PWD` --platform linux/${PLATFORM} -f Dockerfile --load .; \
-	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@docker buildx build -t chatwork/`basename $$PWD`:latest --platform linux/${PLATFORM} -f Dockerfile --load .; \
+	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
 	if [ -n "$$version" ]; then \
 		docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
 	fi

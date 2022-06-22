@@ -5,11 +5,6 @@ provisioners:
       arguments:
         helm_version: "{{ .helm.version }}"
         helmfile_version: "{{ .helmfile.version }}"
-    Dockerfile.arm64:
-      source: Dockerfile.arm64.tpl
-      arguments:
-        helm_version: "{{ .helm.version }}"
-        helmfile_version: "{{ .helmfile.version }}"
     goss/goss.yaml:
       source: goss/goss.yaml.tpl
       arguments:

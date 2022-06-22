@@ -1,4 +1,4 @@
-FROM chatwork/alpine-sdk:3.12
+FROM chatwork/alpine-sdk:3.16
 
 ARG ENVSUBST_VERSION=1.2.0
 

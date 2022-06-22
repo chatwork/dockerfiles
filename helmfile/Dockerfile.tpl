@@ -19,7 +19,9 @@ LABEL maintainer="ozaki@chatwork.com"
 
 WORKDIR /
 
-RUN yum install jq bash tar gzip unzip git curl wget -y \
+RUN yum update \
+    && yum upgrade -y \
+    && yum install jq bash tar gzip unzip git curl wget -y \
     && yum clean all \
     && rm -rf /var/cache/yum/*
 

@@ -19,7 +19,9 @@ LABEL maintainer="ozaki@chatwork.com"
 
 WORKDIR /
 
-RUN yum install jq bash tar gzip unzip git curl wget -y \
+RUN yum update \
+    && yum upgrade -y \
+    && yum install jq bash tar gzip unzip git curl wget -y \
     && yum clean all \
     && rm -rf /var/cache/yum/*
 
@@ -45,6 +47,6 @@ RUN mv /tmp/helmfile_${TARGETOS}_${TARGETARCH} /usr/local/bin/helmfile \
 
 RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} \
     && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} \
-    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v0.11.1
+    && helm plugin install https://github.com/aslafy-z/helm-git.git
 
 ENTRYPOINT ["/usr/local/bin/helmfile"]

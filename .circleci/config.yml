@@ -186,10 +186,12 @@ jobs:
           command: |
             make ci:diff
             make ci:diff | while read DIR; do
-              if [[ -f "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
+              if [ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
                 cd ${CIRCLECI_WORKSPACE}/${DIR};
                 make build;
                 make manifest:push;
+              else
+                echo "skip manifest job"
               fi
             done
       - run:
@@ -202,7 +204,7 @@ jobs:
           name: notification success
           command: |
             make ci:diff | while read DIR; do
-              if [[ -f "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]] && [[ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ]] ; then
+              if [ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$CIRCLECI_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$CIRCLECI_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
                 version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
                 make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
                                                                 -e BODY="$(make manifest:succeed-message -f ${CIRCLECI_WORKSPACE}/${DIR}/Makefile)";

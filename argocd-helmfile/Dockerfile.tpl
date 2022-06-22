@@ -6,14 +6,17 @@ LABEL maintainer="shinya@chatwork.com"
 # Switch to root for the ability to perform install
 USER root
 
+ARG TARGETOS
+ARG TARGETARCH
+
 ARG HELMFILE_VERSION=v{{ .helmfile_version }}
 ARG HELM_VERSION=v{{ .helm_version }}
 ARG HELM_LOCATION="https://get.helm.sh"
-ARG HELM_FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"
+ARG HELM_FILENAME="helm-${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
 ARG KUBECTL_VERSION=1.22.10
 ARG SOPS_VERSION=3.7.2
-ARG HELM_DIFF_VERSION=3.4.2
-ARG HELM_SECRETS_VERSION=3.12.0
+ARG HELM_DIFF_VERSION=3.5.0
+ARG HELM_SECRETS_VERSION=3.14.0
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)
@@ -21,20 +24,21 @@ ARG HELM_SECRETS_VERSION=3.12.0
 # helm
 # helmfile, sops, kubectl
 RUN apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y curl gpg apt-utils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     # kubectl
-    curl -o /usr/local/bin/kubectl -L https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
+    curl -o /usr/local/bin/kubectl -L https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl && \
     # helm
     curl -OL ${HELM_LOCATION}/${HELM_FILENAME} && \
     echo Extracting ${HELM_FILENAME}... && \
-    tar zxvf ${HELM_FILENAME} && mv ./linux-amd64/helm /usr/local/bin/ && \
-    rm ${HELM_FILENAME} && rm -r ./linux-amd64 && \
+    tar zxvf ${HELM_FILENAME} && mv ./${TARGETOS}-${TARGETARCH}/helm /usr/local/bin/ && \
+    rm ${HELM_FILENAME} && rm -r ./${TARGETOS}-${TARGETARCH} && \
     # helmfile
-    curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_linux_amd64 && \
+    curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} && \
     # sops
-    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64 && \
+    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.${TARGETOS}.${TARGETARCH} && \
     chmod +x /usr/local/bin/kubectl && \
     chmod +x /usr/local/bin/helm && \
     chmod +x /usr/local/bin/helmfile && \

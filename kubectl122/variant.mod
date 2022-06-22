@@ -3,9 +3,6 @@ provisioners:
     Dockerfile:
       from: "ARG KUBECTL_VERSION={{ .kubectl.previousVersion }}"
       to: "ARG KUBECTL_VERSION={{ .kubectl.version }}"
-    Dockerfile.arm64:
-      from: "ARG KUBECTL_VERSION={{ .kubectl.previousVersion }}"
-      to: "ARG KUBECTL_VERSION={{ .kubectl.version }}"
     goss/goss.yaml:
       from: "- v{{ .kubectl.previousVersion }}"
       to: "- v{{ .kubectl.version }}"

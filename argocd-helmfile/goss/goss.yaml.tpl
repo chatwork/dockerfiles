@@ -1,4 +1,6 @@
 command:
+  /usr/local/bin/sops -v:
+    exit-status: 0
   /usr/local/bin/argocd version:
     exit-status: 1
     stdout:

@@ -2,6 +2,7 @@ ARG AWSCLI_VERSION=2.7.10
 
 FROM amazon/aws-cli:${AWSCLI_VERSION}
 
+ARG AWSCLI_VERSION=2.7.10
 LABEL version="${AWSCLI_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"

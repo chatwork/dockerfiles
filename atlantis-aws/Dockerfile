@@ -1,4 +1,4 @@
-FROM runatlantis/atlantis:v0.14.0
+FROM ghcr.io/runatlantis/atlantis:v0.18.5
 
 # atlantis version
 LABEL version="0.14.0"

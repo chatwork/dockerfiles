@@ -5,7 +5,7 @@ ARG TARGETARCH
 
 ARG KUBECTL_VERSION=1.22.9
 ARG HELMFILE_VERSION=0.144.0
-ARG HELM_VERSION=3.9.1
+ARG HELM_VERSION=3.9.2
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz
 ARG KUSTOMIZE_VERSION=4.2.0
 ARG KUSTOMIZE_FILE_NAME=kustomize_v${KUSTOMIZE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
@@ -18,7 +18,7 @@ LABEL maintainer="ozaki@chatwork.com"
 
 WORKDIR /
 
-RUN yum update \
+RUN yum update -y \
     && yum upgrade -y \
     && yum install jq bash tar gzip unzip git curl wget -y \
     && yum clean all \

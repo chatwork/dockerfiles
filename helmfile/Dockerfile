@@ -18,7 +18,7 @@ LABEL maintainer="ozaki@chatwork.com"
 
 WORKDIR /
 
-RUN yum update \
+RUN yum update -y \
     && yum upgrade -y \
     && yum install jq bash tar gzip unzip git curl wget -y \
     && yum clean all \

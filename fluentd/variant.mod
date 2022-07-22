@@ -15,4 +15,4 @@ dependencies:
       validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+-debian-[0-9.]+"
       dockerImageTags:
         source: fluent/fluentd
-    version: "> 1.0.0-debian-1.0"
+    version: "~ 1.14.0-debian-1.0"

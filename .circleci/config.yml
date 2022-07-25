@@ -214,7 +214,7 @@ jobs:
 
   mod:
     docker:
-      - image: variantdev/mod:v0.25.0
+      - image: variantdev/mod:v0.25.1
     environment:
       - CIRCLECI_WORKSPACE: /root/project
     steps:

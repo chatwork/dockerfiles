@@ -7,6 +7,7 @@ ARG KUBECTL_VERSION=1.22.9
 ARG HELMFILE_VERSION=0.145.2
 ARG HELM_VERSION=3.9.2
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz
+ARG HELMFILE_FILE_NAME=helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
 ARG KUSTOMIZE_VERSION=4.2.0
 ARG KUSTOMIZE_FILE_NAME=kustomize_v${KUSTOMIZE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
 ARG HELM_DIFF_VERSION=3.5.0
@@ -40,9 +41,12 @@ RUN tar -zxf /tmp/${KUSTOMIZE_FILE_NAME} -C /tmp \
     && chmod 755 /usr/local/bin/kustomize \
     && rm -fr /tmp/*
 
-ADD https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} /tmp
-RUN mv /tmp/helmfile_${TARGETOS}_${TARGETARCH} /usr/local/bin/helmfile \
-    && chmod 755 /usr/local/bin/helmfile
+ADD https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/${HELMFILE_FILE_NAME} /tmp
+
+RUN tar -zxvf /tmp/${HELMFILE_FILE_NAME} -C /tmp \
+  && mv /tmp/helmfile /usr/local/bin/helmfile \
+  && chmod 755 /usr/local/bin/helmfile \
+  && rm -rf /tmp/*
 
 RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} \
     && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} \

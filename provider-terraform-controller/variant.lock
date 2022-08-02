@@ -4,7 +4,136 @@ dependencies:
     versions:
     - 0.2.0
   terraform:
-    version: 1.2.5
-    previousVersion: 1.2.4
+    version: 1.2.6
+    previousVersion: 1.2.5
     versions:
     - 1.2.5
+    - 1.2.6
+    githubRelease:
+      assets: []
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/72976490/assets
+      author:
+        avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
+        events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
+        followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
+        following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
+        gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+        gravatar_id: ""
+        html_url: https://github.com/hc-github-team-tf-core
+        id: 82990137
+        login: hc-github-team-tf-core
+        node_id: MDQ6VXNlcjgyOTkwMTM3
+        organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
+        received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
+        repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+        site_admin: false
+        starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+        type: User
+        url: https://api.github.com/users/hc-github-team-tf-core
+      body: |+
+        ## 1.2.6 (July 27, 2022)
+
+        ENHANCEMENTS:
+
+        * Add a warning and guidance when `terraform init` fails to fully populate the `.terraform.lock.hcl` file. ([#31399](https://github.com/hashicorp/terraform/issues/31399))
+        * Add a direct link to the relevant documentation when `terraform init` fails on missing checksums. ([#31408](https://github.com/hashicorp/terraform/issues/31408))
+
+        BUG FIXES:
+
+        * Fix panic on `terraform show` when state file is invalid or unavailable. ([#31444](https://github.com/hashicorp/terraform/issues/31444))
+        * Fix `terraform providers lock` command failing on missing checksums. ([#31389](https://github.com/hashicorp/terraform/issues/31389))
+        * Some combinations of move block operations would be executed in the wrong order ([#31499](https://github.com/hashicorp/terraform/issues/31499))
+        * Don't attribute an error to the provider when a computed attribute is listed in `ignore_changes` ([#31509](https://github.com/hashicorp/terraform/issues/31509))
+
+      created_at: "2022-07-27T15:09:54Z"
+      draft: false
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.2.6
+      id: 72976490
+      name: v1.2.6
+      node_id: RE_kwDOAQ6CpM4EWYhq
+      prerelease: false
+      published_at: "2022-07-27T15:34:30Z"
+      reactions:
+        "+1": 1
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 1
+        rocket: 0
+        total_count: 2
+        url: https://api.github.com/repos/hashicorp/terraform/releases/72976490/reactions
+      tag_name: v1.2.6
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.2.6
+      target_commitish: main
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/72976490/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/72976490
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.2.6
+meta:
+  dependencies:
+    terraform:
+      1.2.6:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/72976490/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
+            events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
+            following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-tf-core
+            id: 82990137
+            login: hc-github-team-tf-core
+            node_id: MDQ6VXNlcjgyOTkwMTM3
+            organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
+            repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-tf-core
+          body: |+
+            ## 1.2.6 (July 27, 2022)
+
+            ENHANCEMENTS:
+
+            * Add a warning and guidance when `terraform init` fails to fully populate the `.terraform.lock.hcl` file. ([#31399](https://github.com/hashicorp/terraform/issues/31399))
+            * Add a direct link to the relevant documentation when `terraform init` fails on missing checksums. ([#31408](https://github.com/hashicorp/terraform/issues/31408))
+
+            BUG FIXES:
+
+            * Fix panic on `terraform show` when state file is invalid or unavailable. ([#31444](https://github.com/hashicorp/terraform/issues/31444))
+            * Fix `terraform providers lock` command failing on missing checksums. ([#31389](https://github.com/hashicorp/terraform/issues/31389))
+            * Some combinations of move block operations would be executed in the wrong order ([#31499](https://github.com/hashicorp/terraform/issues/31499))
+            * Don't attribute an error to the provider when a computed attribute is listed in `ignore_changes` ([#31509](https://github.com/hashicorp/terraform/issues/31509))
+
+          created_at: "2022-07-27T15:09:54Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.2.6
+          id: 72976490
+          name: v1.2.6
+          node_id: RE_kwDOAQ6CpM4EWYhq
+          prerelease: false
+          published_at: "2022-07-27T15:34:30Z"
+          reactions:
+            "+1": 1
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 1
+            rocket: 0
+            total_count: 2
+            url: https://api.github.com/repos/hashicorp/terraform/releases/72976490/reactions
+          tag_name: v1.2.6
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.2.6
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/72976490/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/72976490
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.2.6

@@ -22,7 +22,7 @@ dependencies:
   helmfile:
     releasesFrom:
       githubReleases:
-        source: roboll/helmfile
+        source: helmfile/helmfile
     version: "> 0.1"
   helm:
     releasesFrom:

@@ -36,7 +36,7 @@ RUN apt-get update && \
     tar zxvf ${HELM_FILENAME} && mv ./${TARGETOS}-${TARGETARCH}/helm /usr/local/bin/ && \
     rm ${HELM_FILENAME} && rm -r ./${TARGETOS}-${TARGETARCH} && \
     # helmfile
-    curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} && \
+    curl -o /usr/local/bin/helmfile -L https://github.com/helmfile/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} && \
     # sops
     curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.${TARGETOS}.${TARGETARCH} && \
     chmod +x /usr/local/bin/kubectl && \

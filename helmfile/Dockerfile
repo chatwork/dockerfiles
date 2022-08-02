@@ -40,7 +40,7 @@ RUN tar -zxf /tmp/${KUSTOMIZE_FILE_NAME} -C /tmp \
     && chmod 755 /usr/local/bin/kustomize \
     && rm -fr /tmp/*
 
-ADD https://github.com/roboll/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} /tmp
+ADD https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} /tmp
 RUN mv /tmp/helmfile_${TARGETOS}_${TARGETARCH} /usr/local/bin/helmfile \
     && chmod 755 /usr/local/bin/helmfile
 

@@ -1,47 +1,48 @@
 dependencies:
   cloudwatch:
-    version: 1.6.4
-    previousVersion: 1.9.0
+    version: 1.9.0
+    previousVersion: 1.6.4
     versions:
     - 1.8.0
     - 1.9.0
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/53428737/assets
+      assets_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/72903777/assets
       author:
-        avatar_url: https://avatars.githubusercontent.com/u/34408404?v=4
-        events_url: https://api.github.com/users/matthewfala/events{/privacy}
-        followers_url: https://api.github.com/users/matthewfala/followers
-        following_url: https://api.github.com/users/matthewfala/following{/other_user}
-        gists_url: https://api.github.com/users/matthewfala/gists{/gist_id}
+        avatar_url: https://avatars.githubusercontent.com/u/71519901?v=4
+        events_url: https://api.github.com/users/zhonghui12/events{/privacy}
+        followers_url: https://api.github.com/users/zhonghui12/followers
+        following_url: https://api.github.com/users/zhonghui12/following{/other_user}
+        gists_url: https://api.github.com/users/zhonghui12/gists{/gist_id}
         gravatar_id: ""
-        html_url: https://github.com/matthewfala
-        id: 34408404
-        login: matthewfala
-        node_id: MDQ6VXNlcjM0NDA4NDA0
-        organizations_url: https://api.github.com/users/matthewfala/orgs
-        received_events_url: https://api.github.com/users/matthewfala/received_events
-        repos_url: https://api.github.com/users/matthewfala/repos
+        html_url: https://github.com/zhonghui12
+        id: 71519901
+        login: zhonghui12
+        node_id: MDQ6VXNlcjcxNTE5OTAx
+        organizations_url: https://api.github.com/users/zhonghui12/orgs
+        received_events_url: https://api.github.com/users/zhonghui12/received_events
+        repos_url: https://api.github.com/users/zhonghui12/repos
         site_admin: false
-        starred_url: https://api.github.com/users/matthewfala/starred{/owner}{/repo}
-        subscriptions_url: https://api.github.com/users/matthewfala/subscriptions
+        starred_url: https://api.github.com/users/zhonghui12/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/zhonghui12/subscriptions
         type: User
-        url: https://api.github.com/users/matthewfala
-      body: "# 1.6.4\r\n* Bug - Remove corrupted unicode fragments on truncation (#208)"
-      created_at: "2021-11-15T23:09:45Z"
+        url: https://api.github.com/users/zhonghui12
+      body: "## 1.9.0\r\n* Feature - Add support for building this plugin on Windows.
+        *Note that this is only support in this plugin repo for Windows compilation.*"
+      created_at: "2022-07-22T22:10:37Z"
       draft: false
-      html_url: https://github.com/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/tag/v1.6.4
-      id: 53428737
-      name: Amazon CloudWatch Logs for Fluent Bit 1.6.4
-      node_id: RE_kwDOCvzZps4DL0IB
+      html_url: https://github.com/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/tag/v1.9.0
+      id: 72903777
+      name: Amazon CloudWatch Logs for Fluent Bit 1.9.0
+      node_id: RE_kwDOCvzZps4EWGxh
       prerelease: false
-      published_at: "2021-11-15T23:11:59Z"
-      tag_name: v1.6.4
-      tarball_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/tarball/v1.6.4
+      published_at: "2022-07-26T21:49:29Z"
+      tag_name: v1.9.0
+      tarball_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/tarball/v1.9.0
       target_commitish: mainline
-      upload_url: https://uploads.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/53428737/assets{?name,label}
-      url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/53428737
-      zipball_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/zipball/v1.6.4
+      upload_url: https://uploads.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/72903777/assets{?name,label}
+      url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/72903777
+      zipball_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/zipball/v1.9.0
   fluentbit:
     version: 1.9.6
     previousVersion: 1.9.5

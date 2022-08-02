@@ -9,40 +9,47 @@ USER root
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG HELMFILE_VERSION=v0.145.2
-ARG HELM_VERSION=v3.9.2
+ARG HELMFILE_VERSION=0.145.2
+ARG HELM_VERSION=3.9.2
 ARG HELM_LOCATION="https://get.helm.sh"
-ARG HELM_FILENAME="helm-${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
+ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
+ARG HELMFILE_FILE_NAME="helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz"
 ARG KUBECTL_VERSION=1.22.10
-ARG SOPS_VERSION=3.7.2
+ARG SOPS_VERSION=3.7.3
 ARG HELM_DIFF_VERSION=3.5.0
 ARG HELM_SECRETS_VERSION=3.14.0
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)
 
+RUN apt-get update -y \
+    && apt-get upgrade -y \
+    && apt-get install -y curl gpg apt-utils \
+    && apt-get clean  \
+    && rm -rf /var/lib/apt/lists/*
+
+# kubectl
+ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
+RUN mv /tmp/kubectl /usr/local/bin/kubectl \
+  && chmod 755 /usr/local/bin/kubectl
+
 # helm
-# helmfile, sops, kubectl
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y curl gpg apt-utils && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
-    # kubectl
-    curl -o /usr/local/bin/kubectl -L https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl && \
-    # helm
-    curl -OL ${HELM_LOCATION}/${HELM_FILENAME} && \
-    echo Extracting ${HELM_FILENAME}... && \
-    tar zxvf ${HELM_FILENAME} && mv ./${TARGETOS}-${TARGETARCH}/helm /usr/local/bin/ && \
-    rm ${HELM_FILENAME} && rm -r ./${TARGETOS}-${TARGETARCH} && \
-    # helmfile
-    curl -o /usr/local/bin/helmfile -L https://github.com/helmfile/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_${TARGETOS}_${TARGETARCH} && \
-    # sops
-    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.${TARGETOS}.${TARGETARCH} && \
-    chmod +x /usr/local/bin/kubectl && \
-    chmod +x /usr/local/bin/helm && \
-    chmod +x /usr/local/bin/helmfile && \
-    chmod +x /usr/local/bin/sops
+ADD https://get.helm.sh/${HELM_FILE_NAME} /tmp
+RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
+  && mv /tmp/${TARGETOS}-${TARGETARCH}/helm /usr/local/bin/helm \
+  && chmod 755 /usr/local/bin/helm \
+  && rm -rf /tmp/*
+
+# helmfile
+ADD https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/${HELMFILE_FILE_NAME} /tmp
+RUN tar -zxvf /tmp/${HELMFILE_FILE_NAME} -C /tmp \
+  && mv /tmp/helmfile /usr/local/bin/helmfile \
+  && chmod 755 /usr/local/bin/helmfile \
+  && rm -rf /tmp/*
+
+# sops
+ADD https://github.com/mozilla/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.${TARGETOS}.${TARGETARCH} /usr/local/bin/sops
+RUN chmod 755 /usr/local/bin/sops
 
 # Switch back to non-root user
 USER argocd

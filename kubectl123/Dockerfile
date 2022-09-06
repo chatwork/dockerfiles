@@ -12,7 +12,7 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION
 
 RUN chmod +x /usr/local/bin/kubectl
 
-RUN yum update \
+RUN yum update -y \
     && yum upgrade -y \
     && yum install jq bash tar gzip unzip curl wget -y \
     && yum clean all \

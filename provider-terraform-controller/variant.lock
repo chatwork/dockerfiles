@@ -6,16 +6,17 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.2.8
-    previousVersion: 1.2.7
+    version: 1.2.9
+    previousVersion: 1.2.8
     versions:
     - 1.2.5
     - 1.2.6
     - 1.2.7
     - 1.2.8
+    - 1.2.9
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/75233243/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/76530537/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
         events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
@@ -36,27 +37,26 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-tf-core
       body: |+
-        ## 1.2.8 (August 24, 2022)
+        ## 1.2.9 (September 07, 2022)
 
-        BUG FIXES:
+        ENHANCEMENTS:
 
-        * config: The `flatten` function will no longer panic if given a null value that has been explicitly converted to or implicitly inferred as having a list, set, or tuple type. Previously Terraform would panic in such a situation because it tried to "flatten" the contents of the null value into the result, which is impossible. ([#31675](https://github.com/hashicorp/terraform/issues/31675))
-        * config: The `tolist`, `toset`, and `tomap` functions, and various automatic conversions that include similar logic, will no longer panic when asked to infer an element type that is convertable from both a tuple type and a list type whose element type is not yet known. ([#31675](https://github.com/hashicorp/terraform/issues/31675))
+        * terraform init: add link to documentation when a checksum is missing from the lock file. ([#31726](https://github.com/hashicorp/terraform/issues/31726))
 
-      created_at: "2022-08-24T14:14:33Z"
+      created_at: "2022-09-07T20:49:01Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.2.8
-      id: 75233243
-      name: v1.2.8
-      node_id: RE_kwDOAQ6CpM4Ee_fb
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.2.9
+      id: 76530537
+      name: v1.2.9
+      node_id: RE_kwDOAQ6CpM4Ej8Np
       prerelease: false
-      published_at: "2022-08-24T14:34:16Z"
-      tag_name: v1.2.8
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.2.8
+      published_at: "2022-09-07T21:03:38Z"
+      tag_name: v1.2.9
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.2.9
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/75233243/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/75233243
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.2.8
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/76530537/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/76530537
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.2.9
 meta:
   dependencies:
     terraform:
@@ -218,3 +218,47 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/75233243/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/75233243
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.2.8
+      1.2.9:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/76530537/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
+            events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
+            following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-tf-core
+            id: 82990137
+            login: hc-github-team-tf-core
+            node_id: MDQ6VXNlcjgyOTkwMTM3
+            organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
+            repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-tf-core
+          body: |+
+            ## 1.2.9 (September 07, 2022)
+
+            ENHANCEMENTS:
+
+            * terraform init: add link to documentation when a checksum is missing from the lock file. ([#31726](https://github.com/hashicorp/terraform/issues/31726))
+
+          created_at: "2022-09-07T20:49:01Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.2.9
+          id: 76530537
+          name: v1.2.9
+          node_id: RE_kwDOAQ6CpM4Ej8Np
+          prerelease: false
+          published_at: "2022-09-07T21:03:38Z"
+          tag_name: v1.2.9
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.2.9
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/76530537/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/76530537
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.2.9

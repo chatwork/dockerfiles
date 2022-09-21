@@ -9,7 +9,7 @@ LABEL maintainer="sakamoto@chatwork.com"
 ARG CONFTEST_DEP_FILE="conftest_${CONFTEST_VERSION}_linux_${TARGETARCH}.deb"
 
 RUN apt-get update -y && \
-    apt-get install -y wget
+    apt-get install -y wget git
 
 RUN wget -q https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_DEP_FILE} && \
     dpkg -i ./${CONFTEST_DEP_FILE} && \

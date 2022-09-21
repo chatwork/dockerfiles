@@ -1,24 +1,25 @@
 dependencies:
   kubectl:
-    version: 1.22.14
-    previousVersion: 1.22.13
+    version: 1.22.15
+    previousVersion: 1.22.14
     versions:
     - 1.22.12
     - 1.22.13
     - 1.22.14
+    - 1.22.15
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/kubernetes/kubernetes/releases/download/v1.22.14/kubernetes.tar.gz
+      - browser_download_url: https://github.com/kubernetes/kubernetes/releases/download/v1.22.15/kubernetes.tar.gz
         content_type: application/x-gzip
-        created_at: "2022-09-15T14:46:14Z"
+        created_at: "2022-09-21T19:04:09Z"
         download_count: 4
-        id: 77974421
+        id: 78596975
         label: Kubernetes Source Code
         name: kubernetes.tar.gz
-        node_id: RA_kwDOAToIks4EpcuV
-        size: 557023
+        node_id: RA_kwDOAToIks4Er0tv
+        size: 557156
         state: uploaded
-        updated_at: "2022-09-15T14:46:15Z"
+        updated_at: "2022-09-21T19:04:10Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
           events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
@@ -38,8 +39,8 @@ dependencies:
           subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
           type: User
           url: https://api.github.com/users/k8s-release-robot
-        url: https://api.github.com/repos/kubernetes/kubernetes/releases/assets/77974421
-      assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/77303985/assets
+        url: https://api.github.com/repos/kubernetes/kubernetes/releases/assets/78596975
+      assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/77807233/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
         events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
@@ -67,20 +68,31 @@ dependencies:
 
 
 
-      created_at: "2022-09-14T22:35:04Z"
+      created_at: "2022-09-21T12:11:27Z"
       draft: false
-      html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.22.14
-      id: 77303985
-      name: Kubernetes v1.22.14
-      node_id: RE_kwDOAToIks4Em5Cx
+      html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.22.15
+      id: 77807233
+      name: Kubernetes v1.22.15
+      node_id: RE_kwDOAToIks4Eoz6B
       prerelease: false
-      published_at: "2022-09-15T14:46:10Z"
-      tag_name: v1.22.14
-      tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.22.14
+      published_at: "2022-09-21T19:04:05Z"
+      reactions:
+        "+1": 1
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 1
+        url: https://api.github.com/repos/kubernetes/kubernetes/releases/77807233/reactions
+      tag_name: v1.22.15
+      tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.22.15
       target_commitish: master
-      upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/77303985/assets{?name,label}
-      url: https://api.github.com/repos/kubernetes/kubernetes/releases/77303985
-      zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.22.14
+      upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/77807233/assets{?name,label}
+      url: https://api.github.com/repos/kubernetes/kubernetes/releases/77807233
+      zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.22.15
 meta:
   dependencies:
     kubectl:
@@ -247,3 +259,90 @@ meta:
           upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/77303985/assets{?name,label}
           url: https://api.github.com/repos/kubernetes/kubernetes/releases/77303985
           zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.22.14
+      1.22.15:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/kubernetes/kubernetes/releases/download/v1.22.15/kubernetes.tar.gz
+            content_type: application/x-gzip
+            created_at: "2022-09-21T19:04:09Z"
+            download_count: 4
+            id: 78596975
+            label: Kubernetes Source Code
+            name: kubernetes.tar.gz
+            node_id: RA_kwDOAToIks4Er0tv
+            size: 557156
+            state: uploaded
+            updated_at: "2022-09-21T19:04:10Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
+              events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
+              followers_url: https://api.github.com/users/k8s-release-robot/followers
+              following_url: https://api.github.com/users/k8s-release-robot/following{/other_user}
+              gists_url: https://api.github.com/users/k8s-release-robot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/k8s-release-robot
+              id: 33505452
+              login: k8s-release-robot
+              node_id: MDQ6VXNlcjMzNTA1NDUy
+              organizations_url: https://api.github.com/users/k8s-release-robot/orgs
+              received_events_url: https://api.github.com/users/k8s-release-robot/received_events
+              repos_url: https://api.github.com/users/k8s-release-robot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/k8s-release-robot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
+              type: User
+              url: https://api.github.com/users/k8s-release-robot
+            url: https://api.github.com/repos/kubernetes/kubernetes/releases/assets/78596975
+          assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/77807233/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
+            events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
+            followers_url: https://api.github.com/users/k8s-release-robot/followers
+            following_url: https://api.github.com/users/k8s-release-robot/following{/other_user}
+            gists_url: https://api.github.com/users/k8s-release-robot/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/k8s-release-robot
+            id: 33505452
+            login: k8s-release-robot
+            node_id: MDQ6VXNlcjMzNTA1NDUy
+            organizations_url: https://api.github.com/users/k8s-release-robot/orgs
+            received_events_url: https://api.github.com/users/k8s-release-robot/received_events
+            repos_url: https://api.github.com/users/k8s-release-robot/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/k8s-release-robot/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
+            type: User
+            url: https://api.github.com/users/k8s-release-robot
+          body: |2+
+
+            See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.22.md).
+
+            See [the CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.22.md) for more details.
+
+
+
+          created_at: "2022-09-21T12:11:27Z"
+          draft: false
+          html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.22.15
+          id: 77807233
+          name: Kubernetes v1.22.15
+          node_id: RE_kwDOAToIks4Eoz6B
+          prerelease: false
+          published_at: "2022-09-21T19:04:05Z"
+          reactions:
+            "+1": 1
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 1
+            url: https://api.github.com/repos/kubernetes/kubernetes/releases/77807233/reactions
+          tag_name: v1.22.15
+          tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.22.15
+          target_commitish: master
+          upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/77807233/assets{?name,label}
+          url: https://api.github.com/repos/kubernetes/kubernetes/releases/77807233
+          zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.22.15

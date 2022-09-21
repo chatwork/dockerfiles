@@ -17,5 +17,5 @@ RUN wget -q https://github.com/open-policy-agent/conftest/releases/download/v${C
     apt-get clean  && \
     rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["conftest"]
+ENTRYPOINT ["/usr/bin/conftest"]
 CMD ["help"]

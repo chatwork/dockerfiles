@@ -1,0 +1,9 @@
+file:
+ /usr/bin/conftest:
+    exists: true
+    mode: "0755"
+command:
+  /usr/bin/conftest --version:
+    exit-status: 0
+    stdout:
+      - 0.34.0

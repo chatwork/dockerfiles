@@ -1,6 +1,6 @@
 FROM docker:20.10.6-dind
 
-ARG KIND_VERSION=0.15.0
+ARG KIND_VERSION=0.16.0
 
 LABEL version="${KIND_VERSION}"
 LABEL maintainer="shimomura@chatwork.com"

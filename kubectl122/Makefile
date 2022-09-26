@@ -36,7 +36,7 @@ test: build
 
 .PHONY: push
 push:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE) $$PWD`:latest); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE) $$PWD:latest); \
 		if docker inspect --format='{{index .RepoDigests 0}}' $(IMAGE):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \

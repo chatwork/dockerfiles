@@ -12,7 +12,6 @@ RUN AVAILABLE_TERRAFORM_VERSIONS="0.14.11 0.15.5 1.0.11 1.1.9 1.2.9 ${DEFAULT_TE
     case "${TARGETARCH}" in \
         "amd64") TERRAFORM_ARCH=amd64 ;; \
         "arm64") TERRAFORM_ARCH=arm64 ;; \
-        "arm/v7") TERRAFORM_ARCH=arm ;; \
         *) echo "ERROR: 'TARGETARCH' value expected: ${TARGETARCH}"; exit 1 ;; \
     esac && \
     for VERSION in ${AVAILABLE_TERRAFORM_VERSIONS}; do \

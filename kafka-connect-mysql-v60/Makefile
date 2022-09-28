@@ -1,16 +1,26 @@
-IMAGE ?= chatwork/kafka-connect-mysql
+ARCH:=$(shell uname -m)
+TAG:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo "arm64" ;; \
+	("x86_64") echo "x86_64" ;; \
+	(*) echo $(ARCH) ;; \
+esac)
+PLATFORM:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo "arm64" ;; \
+	("x86_64") echo "amd64" ;; \
+	(*) echo $(ARCH) ;; \
+esac)
 
 .PHONY: build
 build:
-	docker build -t $(IMAGE) .;
-	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE)); \
+	@docker buildx build -t chatwork/`basename $$PWD`:latest --platform linux/${PLATFORM} -f Dockerfile --load .;
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
 		if [ -n "$$version" ]; then \
-			docker tag $(IMAGE):latest $(IMAGE):$$version; \
+			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
 		fi
 
 .PHONY: check
 check:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE)); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
 		if [ -z "$$version" ]; then \
 			echo "\033[91mError: version is not defined in Dockerfile.\033[0m"; \
 			exit 1; \
@@ -25,10 +35,10 @@ test:
 
 .PHONY: push
 push:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} $(IMAGE):latest); \
-		if docker inspect --format='{{index .RepoDigests 0}}' $(IMAGE):$$version >/dev/null 2>&1; then \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker push $(IMAGE):latest; \
-			docker push $(IMAGE):$$version; \
+			docker push chatwork/`basename $$PWD`:latest; \
+			docker push chatwork/`basename $$PWD`:$$version; \
 		fi

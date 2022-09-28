@@ -8,7 +8,7 @@ LABEL maintainer="sakamoto@chatwork.com"
 
 # In the official Atlantis image we only have the latest of each Terraform version.
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-RUN AVAILABLE_TERRAFORM_VERSIONS="0.14.11 0.15.5 1.0.11 1.1.9 1.2.9 ${DEFAULT_TERRAFORM_VERSION}" && \
+RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1.1.9 1.2.9 ${DEFAULT_TERRAFORM_VERSION}" && \
     case "${TARGETARCH}" in \
         "amd64") TERRAFORM_ARCH=amd64 ;; \
         "arm64") TERRAFORM_ARCH=arm64 ;; \
@@ -36,7 +36,7 @@ RUN curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v$
 RUN curl -LOs https://github.com/runatlantis/atlantis/releases/download/v${ATLANTIS_VERSION}/atlantis_linux_${TARGETARCH}.zip && \
     unzip ./atlantis_linux_${TARGETARCH}.zip && \
     mv ./atlantis /usr/local/bin/atlantis && \
-    curl -LOs https://raw.githubusercontent.com/runatlantis/atlantis/v0.19.8/docker-entrypoint.sh && \
+    curl -LOs https://raw.githubusercontent.com/runatlantis/atlantis/v${ATLANTIS_VERSION}/docker-entrypoint.sh && \
     mv ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh && \
     chmod +x /usr/local/bin/docker-entrypoint.sh && \
     rm -f ./atlantis_linux_${TARGETARCH}.zip

@@ -1,10 +1,10 @@
-FROM alpine:3.15 as downloads
+FROM alpine:3.16 as downloads
 WORKDIR /downloads
 
 ARG TARGETPLATFORM
 
 ARG EKSCTL_VERSION=0.112.0
-ARG KUBECTL_VERSION=1.22.9
+ARG KUBECTL_VERSION=1.23.12
 LABEL version="${EKSCTL_VERSION}"
 
 RUN wget -O - https://github.com/weaveworks/eksctl/releases/download/v${EKSCTL_VERSION}/eksctl_Linux_${TARGETPLATFORM#*/}.tar.gz | tar zxvf -

@@ -118,17 +118,8 @@ jobs:
 
             make ci:diff | while read DIR; do
               if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-
-                version=$(docker inspect -f "{{.Config.Labels.version}}" chatwork/${DIR});
-                if [ "$(docker inspect --format="{{json .RepoDigests}}" chatwork/${DIR}:${version})" != "[]" ]; then
-                  changelog=$(make ci:changelog -e DIR="${DIR}/");
-                  make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
-                                      -e BODY="$(echo -e "changelog\n${changelog}")";
-                else
-                  make ci:notify -e TITLE="CircleCI: Failed push chatwork/${DIR}:${version} arch: $(make arch) (devil)" \
-                                      -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
-                fi
-
+                make ci:notify -e TITLE="CircleCI: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
+                               -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${CIRCLE_BRANCH})";
               else
                 echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
               fi

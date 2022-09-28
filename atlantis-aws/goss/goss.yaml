@@ -8,10 +8,17 @@ file:
   /usr/local/bin/atlantis:
     exists: true
     mode: "0755"
+  /usr/bin/conftest:
+    exists: true
+    mode: "0755"
 command:
   /usr/local/bin/aws --version:
     exit-status: 0
+  /usr/bin/conftest --version:
+    exit-status: 0
   /usr/local/bin/terraform --version:
     exit-status: 0
-  /usr/local/bin/atlantis help:
+  /usr/local/bin/atlantis version:
     exit-status: 0
+    stdout:
+      - 0.19.8

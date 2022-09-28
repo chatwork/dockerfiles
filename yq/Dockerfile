@@ -1,6 +1,6 @@
-FROM python:3.7.0-alpine3.8
+FROM python:3.7.14-alpine3.16
 
-ARG YQ_VERSION=2.7.0
+ARG YQ_VERSION=3.1.0
 
 LABEL version="${YQ_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

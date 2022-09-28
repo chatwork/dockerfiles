@@ -1,4 +1,4 @@
-FROM docker:20.10.6-dind
+FROM docker:20.10.18-dind
 
 ARG KIND_VERSION=0.16.0
 

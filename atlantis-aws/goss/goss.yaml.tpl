@@ -15,16 +15,16 @@ command:
   /usr/local/bin/aws --version:
     exit-status: 0
     stdout:
-      - 2.8.2
+      - {{ .awscli_version }}
   /usr/bin/conftest --version:
     exit-status: 0
     stdout:
-      - 0.34.0
+      - {{ .conftest_version }}
   /usr/local/bin/terraform --version:
     exit-status: 0
     stdout:
-      - 1.3.2
+      - {{ .terraform_version }}
   /usr/local/bin/atlantis version:
     exit-status: 0
     stdout:
-      - 0.20.1
+      - {{ .atlantis_version }}

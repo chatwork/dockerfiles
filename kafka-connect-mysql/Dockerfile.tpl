@@ -4,7 +4,7 @@ ARG KAFKA_CONNECT_VERSION={{ .kafka_connect_version }}
 FROM confluentinc/cp-kafka-connect-base:${KAFKA_CONNECT_VERSION}
 
 ARG KAFKA_CONNECT_VERSION={{ .kafka_connect_version }}
-ARG MYSQL_CONNECTOR_VERSION={{ .mysql_connector_version }}
+ARG MYSQL_CONNECTOR_VERSION=8.0.30
 
 LABEL version="${KAFKA_CONNECT_VERSION}-${MYSQL_CONNECTOR_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"

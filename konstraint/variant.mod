@@ -4,8 +4,8 @@ provisioners:
       from: "ARG KONSTRAINT_VERSION={{ .konstraint.previousVersion }}"
       to: "ARG KONSTRAINT_VERSION={{ .konstraint.version }}"
     goss/goss.yaml:
-      from: "- {{ .konstraint.previousVersion }}"
-      to: "- {{ .konstraint.version }}"
+      from: "- v{{ .konstraint.previousVersion }}"
+      to: "- v{{ .konstraint.version }}"
 
 dependencies:
   konstraint:

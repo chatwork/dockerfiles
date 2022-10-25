@@ -1,7 +1,7 @@
 dependencies:
   argocd:
-    version: 2.4.15
-    previousVersion: 2.4.14
+    version: 2.5.0
+    previousVersion: 2.4.15
     versions:
     - 2.4.7
     - 2.4.8
@@ -12,19 +12,20 @@ dependencies:
     - 2.4.13
     - 2.4.14
     - 2.4.15
+    - 2.5.0
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-2.4.15-checksums.sig
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-2.5.0-checksums.sig
         content_type: application/pgp-signature
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 5
-        id: 81338048
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 1
+        id: 82221889
         label: ""
-        name: argocd-2.4.15-checksums.sig
-        node_id: RA_kwDOBzS60s4E2R7A
+        name: argocd-2.5.0-checksums.sig
+        node_id: RA_kwDOBzS60s4E5ptB
         size: 97
         state: uploaded
-        updated_at: "2022-10-17T21:17:46Z"
+        updated_at: "2022-10-25T15:32:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -44,18 +45,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338048
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-2.4.15-checksums.txt
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221889
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-2.5.0-checksums.txt
         content_type: text/plain
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 13
-        id: 81338051
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 1
+        id: 82221887
         label: ""
-        name: argocd-2.4.15-checksums.txt
-        node_id: RA_kwDOBzS60s4E2R7D
-        size: 605
+        name: argocd-2.5.0-checksums.txt
+        node_id: RA_kwDOBzS60s4E5ps_
+        size: 698
         state: uploaded
-        updated_at: "2022-10-17T21:17:46Z"
+        updated_at: "2022-10-25T15:32:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -75,18 +76,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338051
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-cosign.pub
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221887
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-cosign.pub
         content_type: application/x-mspublisher
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 4
-        id: 81338047
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 1
+        id: 82221886
         label: ""
         name: argocd-cosign.pub
-        node_id: RA_kwDOBzS60s4E2R6_
+        node_id: RA_kwDOBzS60s4E5ps-
         size: 178
         state: uploaded
-        updated_at: "2022-10-17T21:17:46Z"
+        updated_at: "2022-10-25T15:32:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -106,18 +107,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338047
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-darwin-amd64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221886
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-darwin-amd64
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 45
-        id: 81338045
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 1
+        id: 82221883
         label: ""
         name: argocd-darwin-amd64
-        node_id: RA_kwDOBzS60s4E2R69
-        size: 130525120
+        node_id: RA_kwDOBzS60s4E5ps7
+        size: 132651600
         state: uploaded
-        updated_at: "2022-10-17T21:17:55Z"
+        updated_at: "2022-10-25T15:32:40Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -137,18 +138,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338045
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-darwin-arm64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221883
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-darwin-arm64
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 23
-        id: 81338052
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 5
+        id: 82221890
         label: ""
         name: argocd-darwin-arm64
-        node_id: RA_kwDOBzS60s4E2R7E
-        size: 130428290
+        node_id: RA_kwDOBzS60s4E5ptC
+        size: 132544178
         state: uploaded
-        updated_at: "2022-10-17T21:17:54Z"
+        updated_at: "2022-10-25T15:32:40Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -168,18 +169,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338052
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-linux-amd64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221890
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-amd64
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:45Z"
-        download_count: 3471
-        id: 81338042
+        created_at: "2022-10-25T15:32:32Z"
+        download_count: 87
+        id: 82221902
         label: ""
         name: argocd-linux-amd64
-        node_id: RA_kwDOBzS60s4E2R66
-        size: 131436736
+        node_id: RA_kwDOBzS60s4E5ptO
+        size: 133574725
         state: uploaded
-        updated_at: "2022-10-17T21:17:53Z"
+        updated_at: "2022-10-25T15:32:41Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -199,18 +200,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338042
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-linux-arm64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221902
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-arm64
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 31
-        id: 81338050
+        created_at: "2022-10-25T15:32:30Z"
+        download_count: 1
+        id: 82221882
         label: ""
         name: argocd-linux-arm64
-        node_id: RA_kwDOBzS60s4E2R7C
-        size: 128383222
+        node_id: RA_kwDOBzS60s4E5ps6
+        size: 130354571
         state: uploaded
-        updated_at: "2022-10-17T21:17:58Z"
+        updated_at: "2022-10-25T15:32:40Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -230,18 +231,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338050
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-linux-ppc64le
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221882
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-ppc64le
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 13
-        id: 81338049
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 1
+        id: 82221884
         label: ""
         name: argocd-linux-ppc64le
-        node_id: RA_kwDOBzS60s4E2R7B
-        size: 129177049
+        node_id: RA_kwDOBzS60s4E5ps8
+        size: 131146908
         state: uploaded
-        updated_at: "2022-10-17T21:17:54Z"
+        updated_at: "2022-10-25T15:32:39Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -261,18 +262,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338049
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-linux-s390x
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221884
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-s390x
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:45Z"
-        download_count: 2
-        id: 81338041
+        created_at: "2022-10-25T15:32:32Z"
+        download_count: 1
+        id: 82221898
         label: ""
         name: argocd-linux-s390x
-        node_id: RA_kwDOBzS60s4E2R65
-        size: 134992183
+        node_id: RA_kwDOBzS60s4E5ptK
+        size: 137399600
         state: uploaded
-        updated_at: "2022-10-17T21:17:53Z"
+        updated_at: "2022-10-25T15:32:39Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -292,18 +293,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338041
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/argocd-windows-amd64.exe
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221898
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-windows-amd64.exe
         content_type: application/octet-stream
-        created_at: "2022-10-17T21:17:45Z"
-        download_count: 73
-        id: 81338040
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 3
+        id: 82221891
         label: ""
         name: argocd-windows-amd64.exe
-        node_id: RA_kwDOBzS60s4E2R64
-        size: 131864576
+        node_id: RA_kwDOBzS60s4E5ptD
+        size: 133997056
         state: uploaded
-        updated_at: "2022-10-17T21:17:53Z"
+        updated_at: "2022-10-25T15:32:39Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -323,18 +324,18 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338040
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.4.15/sbom.tar.gz
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221891
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/sbom.tar.gz
         content_type: application/gzip
-        created_at: "2022-10-17T21:17:46Z"
-        download_count: 4
-        id: 81338044
+        created_at: "2022-10-25T15:32:31Z"
+        download_count: 1
+        id: 82221892
         label: ""
         name: sbom.tar.gz
-        node_id: RA_kwDOBzS60s4E2R68
-        size: 332496
+        node_id: RA_kwDOBzS60s4E5ptE
+        size: 335140
         state: uploaded
-        updated_at: "2022-10-17T21:17:46Z"
+        updated_at: "2022-10-25T15:32:32Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -354,8 +355,39 @@ dependencies:
           subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/81338044
-      assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/80135183/assets
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221892
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/sbom.tar.gz.sig
+        content_type: application/pgp-signature
+        created_at: "2022-10-25T15:32:32Z"
+        download_count: 1
+        id: 82221900
+        label: ""
+        name: sbom.tar.gz.sig
+        node_id: RA_kwDOBzS60s4E5ptM
+        size: 97
+        state: uploaded
+        updated_at: "2022-10-25T15:32:32Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221900
+      assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/80941393/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
         events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -376,67 +408,269 @@ dependencies:
         type: Bot
         url: https://api.github.com/users/github-actions%5Bbot%5D
       body: "## Quick Start\r\n\r\n### Non-HA:\r\n\r\n```shell\r\nkubectl create namespace
-        argocd\r\nkubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.4.15/manifests/install.yaml\r\n```\r\n\r\n###
+        argocd\r\nkubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.0/manifests/install.yaml\r\n```\r\n\r\n###
         HA:\r\n\r\n```shell\r\nkubectl create namespace argocd\r\nkubectl apply -n
-        argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.4.15/manifests/ha/install.yaml\r\n```\r\n\r\n##
+        argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.0/manifests/ha/install.yaml\r\n```\r\n\r\n\r\n##
         Release signatures\r\n\r\nAll Argo CD container images and CLI binaries are
         signed by cosign. See the [documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets.md/)
         on how to verify the signatures.\r\n```shell\r\n-----BEGIN PUBLIC KEY-----\r\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEesHEB7vX5Y2RxXypjMy1nI1z7iRG\r\nJI9/gt/sYqzpsa65aaNP4npM43DDxoIy/MQBo9s/mxGxmA+8UXeDpVC9vw==\r\n-----END
         PUBLIC KEY-----\r\n```\r\n\r\n## Upgrading\r\n\r\nIf upgrading from a different
         minor version, be sure to read the [upgrading](https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/)
-        documentation.\r\n\r\n## Changes\r\n\r\nThis release includes 24 contributions
-        from 15 contributors (10 of them new) with 9 bug fixes.\r\n\r\nA special thanks
-        goes to the 10 new contributors:\r\n- Aiman Fatima\r\n- Chris Davis\r\n- Eddie
-        Knight\r\n- Lars Kellogg-Stedman\r\n- Matt Morrison\r\n- Mayursinh Sarvaiya\r\n-
-        Nir Shtein\r\n- Richard Jennings\r\n- rumstead\r\n- Sakshi Jain\r\n\r\n###
-        Bug fixes\r\n\r\n- fix: Display pointer on labels for resource names in sync
-        panel (#10959)\r\n- fix: Use os.PathSeparator instead of hard-coded string
-        to resolve local file paths (#10945) (#10946)\r\n- fix(ui): sync option label
-        doesn't check corresponding box (#10863) (#10876)\r\n- fix: clicking `HEAD`
-        in bitbucket leads to a 404 page (#10862)\r\n- fix: added css to change cursor
-        to pointer on hover (#10864) (#10867)\r\n- fix: consider destination cluster
-        name when validating destinations (#10594)\r\n- fix: Add missing statuses
-        to MinIO Tenant health check (#10815)\r\n- fix: add applicationset to crds
-        generated by gen-crd-spec (#10833)\r\n- fix(ui): Don't jump back to tiles
-        view on app deletion (#8764) (#10826)\r\n\r\n### Documentation\r\n\r\n- docs:
-        appset PR generator docs fixes (#10567)\r\n- docs: add link to 2.4-2.5 upgrade
-        guide (#10808)\r\n- docs: more docs for directory apps (#10879)\r\n- docs:
-        clarify how default RBAC policy works (#10896)\r\n- docs: fix examples for
-        ArgoCD ApplicationSet Git Generator (#10857)\r\n- docs: remove unused plugin
-        config fields (#10304)\r\n- docs: fix advice about preferred version in high
-        availability (#10619)\r\n- docs: Correct grammar issues in docs on manifest
-        path annotations (#10776)\r\n- docs: Update link to resource customizations
-        (#10827) (#10828)\r\n\r\n### Other\r\n\r\n- chore: add script to generate
-        release notes (#10806)\r\n- chore: sign checksums file for release binaries
-        (#10963)\r\n- chore: implement signed images (#10925)\r\n- chore: upgrade
-        dex to v2.35.3 to avoid CVE-2022-27665 (#10939)\r\n- Revert \"fix: add applicationset
-        to crds generated by gen-crd-spec (#10833)\"\r\n- chore: Added recommended
-        permissions to github actions workflows (#10812)\r\n\r\n"
-      created_at: "2022-10-17T20:15:50Z"
+        documentation.\r\n\r\n## Changes\r\n\r\nThis release includes 301 contributions
+        from 136 contributors (89 of them new) with 59 features and 62 bug fixes.\r\n\r\n###
+        Features\r\n\r\n- feat(ui): notification subscriptions edit field #10310 (#10839)\r\n-
+        feat: system level extensions (#10758)\r\n- feat: equality-based and set-based
+        filtering by label keys and values for list, sync, delete and wait App commands
+        (#10548)\r\n- feat: add health checks for storage.cnrm.cloud.google.com/StorageBucketAccessControl
+        (#10727)\r\n- feat: add the ability to filter apps based on clusters (#10465)\r\n-
+        feat: argocd app delete apps by label (#10091) (#10118)\r\n- feat: add health
+        checks for iam.cnrm.cloud.google.com/IAMPolicy (#10725)\r\n- feat: add Prometheus
+        health check (#10508)\r\n- feat: add health check for cloudscheduler.cnrm.cloud.google.com/CloudSchedulerJob
+        (#10606)\r\n- feat: add health check for cloudscheduler.cnrm.cloud.google.com/CloudFunctionsFunction
+        (#10607)\r\n- feat: health check for compute.cnrm.cloud.google.com/ComputeDisk
+        (#10608)\r\n- feat: health check for OnePasswordItem (#10690)\r\n- feat: health
+        check storage.cnrm.cloud.google.com/StorageDefaultObjectAccessControl (#10726)\r\n-
+        feat(ui): Collapsable sidebar with filters (#10626)\r\n- feat: dark mode (#4722)
+        (#9703)\r\n- feat: create cli commands for ApplicationSet  (#9584)\r\n- feat:
+        add permitOnlyProjectScopedClusters flag (#10237)\r\n- feat: add scrollbar
+        to live manifest (#10379)\r\n- feat: add notifications API (#10279)\r\n- feat(applicationset):
+        reuse repo-creds for an existing GitHub App (#10092)\r\n- feat: Support Custom
+        Application Actions in CLI #7577 (#10015)\r\n- feat: make https repo credentials
+        editable in the UI (#9108) (#9782)\r\n- feat!(cli): add confirm for cluster
+        remove (#10319)\r\n- feat: server-side manifest generation for local diff
+        (#8145) (#10019)\r\n- feat: support gzip compression for data stored in redis
+        (#10190)\r\n- feat: Make additional namespaces configurable via environment
+        (#10270)\r\n- feat: Applications in any namespace (#9755)\r\n- feat: add support
+        for default container annotation (#8015) (#9769)\r\n- feat: add projects filter
+        to app sync command (#8320) (#10133)\r\n- feat: add Gitlab PR generator webhooks
+        support (#10235)\r\n- feat: refactor redis-ha NetworkPolicy to include egress
+        rules (#10226)\r\n- feat: restrict egress onredis (#10227)\r\n- feat: Added
+        health check for spot.io SpotDeployment (#10152)\r\n- feat: Added Google Project
+        health check (#10230)\r\n- feat: Added Google PubSub Topic and Subscription
+        health checks (#10229)\r\n- feat: ApplicationSet Go template (#10026)\r\n-
+        feat: Introduces Server-Side Apply as sync option (#9711)\r\n- feat: app wait
+        with --degraded (#10139)\r\n- feat: Expose the Argo CD ID through an ENV in
+        the Dockerfile (#10113) (#10115)\r\n- feat: Support environment variables
+        in Helm value file paths (#10213)\r\n- feat: Add labelSelector style to filter
+        all generators (#9312)\r\n- feat: add deny destinations for projects (#9464)
+        (#9652)\r\n- feat: argocd app manifests --local (#5525) (#10061)\r\n- feat:
+        add ingress network policies for applicationset and notifications controller
+        (#10053)\r\n- feat: add HTTPS to dex server (#9424) (#9883)\r\n- feat: allow
+        argocd cluster rotate-auth to accept cluster name (#9838)\r\n- feat(applicationset):
+        add short sha to PR generator (#9668) (#9669)\r\n- feat: implement consistent
+        startup messages for all components (#9800)\r\n- feat: allow interpolation
+        of cluster generator values (#9254)\r\n- feat: add initiatedBy info to App
+        status field when performing a rollback (#9713)\r\n- feat: Add Azure DevOps
+        SCM Provider Generator; add branchNormalized to SCM Generator template fields.
+        (#9283)\r\n- feat: Added the ability to filter MRs by 'state' to Gitlab PR
+        Generator (#9540)\r\n- feat: support health check on FlinkDeployment (#9300)
+        (#9300)\r\n- feat: Slugified the branch name in PR generators (#9462)\r\n-
+        feat: combine form repo settings page #9167 (#9374)\r\n- feat:  Matrix generator
+        where a generator can reference items of another one (#9080)\r\n- feat: Expansion
+        support and line relayout (#8661)\r\n- feat: Network view should group pods
+        into higher level workload (#5468) (#8996)\r\n- feat: Move app resources commands
+        to dedicated command file (#9306)\r\n\r\n### Bug fixes\r\n\r\n- fix: Update
+        custom health check for kiali.io/Kiali (#10995)\r\n- fix: Resource list in
+        sync page msg style#10887 (#10970)\r\n- fix: upgrade Helm to avoid disk use
+        issue (#8773) (#10937)\r\n- fix: Resource list loading slowly due to Sync
+        Wave sorting (#10932)\r\n- fix: add applicationsets to RBAC policy (#10810)
+        (#10891)\r\n- fix: duplicate source namespace validation (#10853)\r\n- fix:
+        applicationset controller should respect logging flags (#10513)\r\n- fix:
+        show revision in badge when param is true (#10545)\r\n- fix: Unbreak app refresh
+        from panel list (#10825)\r\n- fix: Add filter icon to help users find filters
+        (#10809)\r\n- fix: reduce noise in logs (#10369) (#10765)\r\n- fix: New sidebar
+        icons are missing margin (#10794)\r\n- fix: incorrect filters placement on
+        resource list (#10781)\r\n- fix: add theme to version panel in ui (#10762)\r\n-
+        fix: always prune on git fetch (#10664)\r\n- fix: duplicate z-index (#10760)\r\n-
+        fix: ui add tooltips on repository url links and names (#9868) (#10108)\r\n-
+        fix: add tooltip for long title in list view ui (#9792)\r\n- fix: button consistency
+        in logs panel #9945 (#10016)\r\n- fix: Provide better error message when application
+        source is missing some settings (#10694)\r\n- fix: Application details page
+        crashes with JS error (#10640)\r\n- fix: snyk report bugs (#10544)\r\n- fix:
+        add more info to  creationtime format (#10286) (#10493)\r\n- fix: invalid
+        error handling (#10384) (#10385)\r\n- fix: Remove quotes from delete dialog
+        #10008 (#10471)\r\n- fix(ui): Remove application namespace field in app creation
+        (#10481)\r\n- fix(ui): Fix multi-app refresh and sync in the UI (#10421)\r\n-
+        fix: add space before prompt in CLI (#10362)\r\n- fix: Add logic to handle
+        for fileHandle.Close() (#9963) (#10361)\r\n- fix: Replace dangerous use of
+        xargs (#10331)\r\n- fix: Trim white space from string slice retrieved from
+        environment (#10275)\r\n- fix(applicationset): support webhook with matrix
+        interpolation (#9931) (#10236)\r\n- fix: consistent example indentation in
+        CLI (#10075)\r\n- fix: set default value for users.session.duration (#9962)
+        (#10185)\r\n- fix: Add logic to handle for file.Close() (#9963) (#10159)\r\n-
+        fix: add logic to handle for f.Close() for util/gpg (#9963) (#10130)\r\n-
+        fix: Add logic to handle for f.Close() for util/db (#9963) (#10127)\r\n- fix:
+        Handle github ping webhook event (#7555) (#10082)\r\n- fix: add logic to handle
+        for f.Close() for util/io/files/tar.go (#9963)\r\n- fix: off positioned filter
+        icon (#10013)\r\n- fix: Add logic to handle for f.Close() in util/localconfig/
+        (#9963)\r\n- fix: copy claims before modifying for logs (#10044)\r\n- fix:
+        api server should use ARGOCD_SERVER_LOG_LEVEL instead of ARGOCD_REPO_SERVER_LOGLEVEL
+        (#9970) (#9975)\r\n- fix: don't log group claims unless log level is debug
+        (#9549) (#9947)\r\n- fix: bad error message (#9967)\r\n- fix: validateProject()
+        function in app_project_types.go file has nil dereference bug (#9917)\r\n-
+        fix: 'unexpected reserved bits' breaking web terminal (#9605) (#9895)\r\n-
+        fix: make test-tools-image work on apple silicon (#9808)\r\n- fix(applicationset):
+        provide nameNormalized template param for local cluster (#9728)\r\n- fix:
+        upgrade superagent from 7.1.3 to 7.1.6 (#9748)\r\n- fix: pss restricted securityContext
+        (#9765)\r\n- fix: overrides should not appear in the manifest cache key (#9601)\r\n-
+        fix: ui add tooltips on cluster urls (#9567)\r\n- fix: better error message
+        for invalid repo URL (#9513)\r\n- fix: Use the matchMode specified in the
+        rbac configmap (#9419)\r\n- fix: New line layout not applied to load balancer;
+        podGroup fix (#9452) (#9523)\r\n- fix: added extra protection to syncing app
+        with replace (#9187)\r\n- fix: upgrade superagent to resolve potential CVE
+        (#9494)\r\n- fix: restore broken source-maps to simplify UI debugging (#9491)\r\n-
+        fix: Pass context to resource tree (#5468) (#9401)\r\n- fix spelling (#9372)\r\n-
+        fix: http headers contain colons in the field value (#9375)\r\n\r\n### Documentation\r\n\r\n-
+        docs: fix 'bellow' typos (#11038)\r\n- docs: mention that OCI helm does not
+        support version ranges (#11026)\r\n- docs: release signature verification
+        (#10967)\r\n- docs: more versioned docs fixes (#10342)\r\n- docs: fix examples
+        for ArgoCD ApplicationSet Git Generator (#10857)\r\n- docs: Add example about
+        how to patch with SSA syncs (#10829)\r\n- docs: Add OccMundial to list of
+        users (#10712)\r\n- docs: Fix TLS configure link on getting started (#10734)\r\n-
+        docs: Default value for server.rootpath is incorrect (#10665)\r\n- docs: Add
+        enigmo to list of users (#10603)\r\n- docs: decision about logs RBAC enforcement
+        in release notes (#10563)\r\n- docs: Include Pandosearch in USERS.md (#10596)\r\n-
+        docs: Add Productboard to users (#10528)\r\n- docs: Fix typo and rephrase
+        sentence (#10504)\r\n- docs: document sync interval setting (#10520)\r\n-
+        docs: Remove invalid link to hands-on labs (#10466)\r\n- docs: Add CERN as
+        a ArgoCD user (#10470)\r\n- docs: add OpsVerse as an official user (USERS.md)
+        (#10436)\r\n- docs: add nethopper to users.md (#10402)\r\n- docs: Add fully-local
+        developer workflow and traps (#10333)\r\n- docs: s/ArgoCD/Argo CD (#10352)\r\n-
+        docs: fix indentation of example AppProject in 'Sync Windows' documentation
+        (#10388)\r\n- docs: use table instead of list for Snyk scans (#10141)\r\n-
+        docs: Note Helm has been upgraded (#10349)\r\n- docs: add wemaintain as official
+        user (#10348)\r\n- docs: remove version notes - rely on docs versioning (#10338)\r\n-
+        docs: fix first sentence in custom style docs (#10322)\r\n- docs: grammar
+        fix (#10328)\r\n- docs: fixes the YAML codefence for `Slack` notification
+        service (#8776) (#10311)\r\n- docs: document revision history limit field
+        (#10302)\r\n- docs: add freshop to USERS.md (#10276)\r\n- docs: revert appset
+        path.path and path.segments docs (#10254)\r\n- docs: add gloat to USERS.md
+        (#10252)\r\n- docs: update changelog for 2.1.x through 2.4.x (#10241) (#10242)\r\n-
+        docs: recommend offline bcrypt (#10050) (#10056)\r\n- docs: use `install`
+        instead of curling directly to /usr/local/bin (#9944)\r\n- docs: add Lian
+        Chu Securities to Users (#10080)\r\n- docs: add Techcombank to users (#10085)\r\n-
+        docs: add kurly to Argo CD Users (#10069)\r\n- docs: fix typo - user->use
+        (#10078)\r\n- docs: improve docs/user-guide/kustomize.md (#10025)\r\n- docs:
+        add GLOBIS to users (#9987)\r\n- docs: fix Ingress documentation for AWS ALBs
+        (#9926)\r\n- docs: Add application.resourceTrackingMethod to example CM (#9892)\r\n-
+        docs: fix outdated example in helm.md (#8506)\r\n- docs correction on how
+        to override azure devops URL. (#9699)\r\n- docs: clarify microsoft.md OIDC
+        setup (#8329)\r\n- docs: Add server-side apply proposal (#8812)\r\n- docs:
+        fix PR generators list (#9387)\r\n- docs: add Meican to users (#9377)\r\n-
+        docs: add Coralogix to users (#9361)\r\n- docs: Reword SSO Client Secrets
+        doc (#8666)\r\n- docs: fix local apiserver host name (#9313)\r\n\r\n### Other\r\n\r\n-
+        chore: fix CI (#11022)\r\n- chore: fix e2e (#11005)\r\n- chore: upgrade actions/checkout
+        to v3, i.e. Node.js 16 (#10947)\r\n- chore: release signature of sbom (#10969)\r\n-
+        Bump version to 2.5.0-rc3\r\n- Bump version to 2.5.0-rc3\r\n- Bump version
+        to 2.5.0-rc2\r\n- Bump version to 2.5.0-rc2\r\n- chore: update Server-Side
+        Apply docs for patching of existing rresources (#10822)\r\n- Bump version
+        to 2.5.0-rc1\r\n- Bump version to 2.5.0-rc1\r\n- chore: remove unused import
+        (#10773)\r\n- chore: Add support for apple sillicon build machines (#10777)\r\n-
+        chore: update to gitops engine 98ccd3d43fd9 (#10787)\r\n- chore: Add Gridfuse
+        to USERS.md (#10750)\r\n- chore: fix incorrect cluster delete description
+        (#10631)\r\n- chore: Add security logging for Dex errors (#10455)\r\n- chore:
+        Upgrade shipped version of Redis to 7.0.5 to fix CVE-2022-35951 (#10702)\r\n-
+        chore: Added Hetki to USERS.md (#10586)\r\n- chore: add Adfinis to USERS.md
+        (#10741)\r\n- test: read appset (#10743)\r\n- chore: typo for SyncStatusCodeOutOfSync
+        comment (#10748)\r\n- chore: upgrade dex to v2.32.1-distroless (#10746)\r\n-
+        Add Splunk as ArgoCD user (#10718)\r\n- tests: cmd unit test version (#10689)\r\n-
+        chore: upgrade k8s.io/kube-openapi to avoid CVE-2022-1996 (#10691)\r\n- chore:
+        update install-codegen-tools.sh and upgrade docs (#10692)\r\n- chore: update
+        Helm and Kustomize versions (#10273) (#10599)\r\n- test: Add logic to handle
+        for fileHandle.Close() (#10632)\r\n- Add Kandji to users list (#10650)\r\n-
+        Adding Elastic as an ArgoCD User (#10649)\r\n- added ./ for broken url link
+        (#10623)\r\n- chore: update gitops-engine (3951079) (#10616)\r\n- chore: remove
+        incompatible miniredis dependency (#10566)\r\n- chore: Remove bad symlink
+        used for tests (#10527)\r\n- chore: add security log issue template (#10368)\r\n-
+        Adding Magic Leap as argocd user (#10509)\r\n- chore: update gitops-engine
+        to c036d3f6b0e2 (#10423)\r\n- chore: drop hardcoded processors from HA manifests
+        (#10458)\r\n- chore: remove duplicate word in comments (#10479)\r\n- chore:
+        Add security logging in util/app (#10416)\r\n- chore: Add security logging
+        in util/git|helm (#10410)\r\n- Add a newline character to fix the render (#10431)\r\n-
+        chore: sort users.md (#10387)\r\n- chore: infer managed resources health from
+        redis instead of storing it in CRD (#10191)\r\n- chore: deprecate argocd-cm
+        plugins (#8117) (#10341)\r\n- chore: add security logging and cwe fields (#10256)\r\n-
+        chore: Ignore VERSION file for Snyk scan (#10363)\r\n- chore: downgrade go
+        version to v1.18 (#10351)\r\n- chore: Don't run snyk report in clones (#10323)\r\n-
+        ci: Update K3s version matrix in e2e tests (#10313)\r\n- chore: upgrade helm
+        to most recent version (v3.9.3) (#10296)\r\n- chore: upgrade redis-ha chart
+        to 4.17.8, HAProxy v2.6.2 (#10032) (#10297)\r\n- chore: improve logs in util/argo/argo.go
+        (#10271)\r\n- chore: Bump version in master to 2.5.0 (#10266)\r\n- chore(deps):
+        bump terser from 5.12.1 to 5.14.2 in /ui (#10064)\r\n- chore: improve argocd
+        app delete (#10160)\r\n- proposal: Applications outside argocd namespace (#6409)\r\n-
+        chore: cleanup remnants of snyk scan removal (#10225)\r\n- chore: no non-container
+        scans in workflow (scan limit hit) (#10222)\r\n- chore: Upgrade Golang to
+        1.19 (#10176) (#10186)\r\n- chore: fix some typos (#10217)\r\n- chore: upgrade
+        dex to distroless avoid CVE-2022-2097/CVE-2022-30065 (#10203)\r\n- chore:
+        fix codegen (#10202)\r\n- chore: update redis-ha manifests (#10032)\r\n- build:
+        Enable optional skipping of building test-tools-image (#10199)\r\n- chore:
+        install snyk before generating report (#10158)\r\n- chore: upgrade codeql
+        action to v2 (#10165)\r\n- chore: no colons in filenames (#10183)\r\n- chore:
+        fix sarif upload categories (#10171)\r\n- chore: fix typo in image workflow
+        (again) (#10164)\r\n- chore: fix typo in image workflow (#10161)\r\n- chore:
+        fix codeql category error (#10137)\r\n- chore: exclude docs from Sonar check
+        completely (#10142)\r\n- chore: exclude docs from Sonar check (#10136)\r\n-
+        chore: ignore CVE-2022-0624 - not exploitable in Argo CD (#10128)\r\n- test:
+        Add logic to handle for f.Close() for cmd/argocd/commands/admin (#9963) (#10074)\r\n-
+        chore: add Snyk scans to docs (#9856)\r\n- chore: argocd app create output
+        states whether app exists (#9984)\r\n- add securityContext to redis-ha containers
+        (#9930)\r\n- chore: spelling: retrieve (#10051)\r\n- add logic to handle for
+        f.Close() (#10004)\r\n- chore: use manifest version for redis+dex in E2E tests
+        (#9955) (#9959)\r\n- chore: upgrade k8s client to v0.24.2 (#9932)\r\n- test:
+        check for error messages from CI env (#9953)\r\n- block out of bounds symlinks
+        (#9738) (#9843)\r\n- chore: Replace deprecated ioutil in CLI code (#9846)\r\n-
+        Added health checks for Config Connector resources. (#9878)\r\n- chore: Replace
+        deprecated ioutil in util packages (#9848)\r\n- chore: Replace deprecated
+        ioutil in hacks (#9851)\r\n- refactor: improve context handling in cmd/ (#9860)\r\n-
+        chore: Fix import of context package across codebase (#9852)\r\n- chore: remove
+        semicolon from end of statement (#9837)\r\n- chore: adjust docs (#9829)\r\n-
+        Add scmp.com to argo-cd users (#9823)\r\n- chore: add k8s v1.24.1 to test
+        matrix (#9714)\r\n- chore: upgrade kustomize to 4.5.5 (#9650)\r\n- log: debug
+        manifest cache (#9602)\r\n- chore: revert adding k8s 1.24.1 to test matrix
+        (#9657)\r\n- chore: add k8s v1.24.1 release to test matrix (#9636)\r\n- chore:
+        fix typo in godoc string (#9644)\r\n- chore: use Ubuntu 22.04 in CI (#9587)\r\n-
+        Grupo MasMovil Spain added to users list (#9585)\r\n- chore: remove controller
+        liveness probe (#9557)\r\n- ci: remove cache from image build (#9564)\r\n-
+        Add elementor (#9544)\r\n- chore: ignore irrelevant formidable vulnerability
+        (#9470)\r\n- add pismo on users (#9532)\r\n- Fix radio button click experience
+        problem (#9520)\r\n- bump helm version to 3.9.0 (#9486)\r\n- chore: Simplified
+        GetRepoHTTPClient function (#9396)\r\n- chore: add argocd binary to argocd-test-tool
+        docker image (#9459) (#9467)\r\n- bug(gitpod): change Kubebuilder curl (#9097)
+        (#9197)\r\n- chore: add GOPKGINYAMLV2-2840885 to snyk ignore list (#9495)\r\n-
+        Add GitLab PR generator for applicationset (#9264)\r\n- chore: upgrade golangci-lint
+        to v1.46.2 (#9448)\r\n- some optimizations for cert.go (#9404)\r\n- chore:
+        add labels to notifications controller serviceaccount (#9373)\r\n- add reev.com
+        (#9409)\r\n- chore: use filepath.Join to get sock path (#9395)\r\n- chore:
+        ignore irrelevant go-restful vulnerability (#9347)\r\n- use filepath  to combire
+        dirs (#9358)\r\n- Remove Kubernetes External Secret from docs (#9251)\r\n-
+        improved pr generator doc (#9350)\r\n- chore: resource state tests (#9307)\r\n-
+        chore: Set GITHUB_TOKEN in the test container (#9317)\r\n- chore: Pull in
+        recent kubectl to test container (#9316)\r\n\r\n"
+      created_at: "2022-10-25T14:23:02Z"
       draft: false
-      html_url: https://github.com/argoproj/argo-cd/releases/tag/v2.4.15
-      id: 80135183
-      name: v2.4.15
-      node_id: RE_kwDOBzS60s4ExsQP
+      html_url: https://github.com/argoproj/argo-cd/releases/tag/v2.5.0
+      id: 80941393
+      name: v2.5.0
+      node_id: RE_kwDOBzS60s4E0xFR
       prerelease: false
-      published_at: "2022-10-17T21:17:43Z"
+      published_at: "2022-10-25T15:32:28Z"
       reactions:
         "+1": 0
         "-1": 0
         confused: 0
         eyes: 0
-        heart: 6
-        hooray: 2
+        heart: 0
+        hooray: 8
         laugh: 0
         rocket: 1
         total_count: 9
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/80135183/reactions
-      tag_name: v2.4.15
-      tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v2.4.15
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/80941393/reactions
+      tag_name: v2.5.0
+      tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v2.5.0
       target_commitish: master
-      upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/80135183/assets{?name,label}
-      url: https://api.github.com/repos/argoproj/argo-cd/releases/80135183
-      zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.4.15
+      upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/80941393/assets{?name,label}
+      url: https://api.github.com/repos/argoproj/argo-cd/releases/80941393
+      zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.5.0
   helm:
     version: 3.10.1
     previousVersion: 3.10.0
@@ -5134,6 +5368,677 @@ meta:
           upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/80135183/assets{?name,label}
           url: https://api.github.com/repos/argoproj/argo-cd/releases/80135183
           zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.4.15
+      2.5.0:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-2.5.0-checksums.sig
+            content_type: application/pgp-signature
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 1
+            id: 82221889
+            label: ""
+            name: argocd-2.5.0-checksums.sig
+            node_id: RA_kwDOBzS60s4E5ptB
+            size: 97
+            state: uploaded
+            updated_at: "2022-10-25T15:32:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221889
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-2.5.0-checksums.txt
+            content_type: text/plain
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 1
+            id: 82221887
+            label: ""
+            name: argocd-2.5.0-checksums.txt
+            node_id: RA_kwDOBzS60s4E5ps_
+            size: 698
+            state: uploaded
+            updated_at: "2022-10-25T15:32:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221887
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-cosign.pub
+            content_type: application/x-mspublisher
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 1
+            id: 82221886
+            label: ""
+            name: argocd-cosign.pub
+            node_id: RA_kwDOBzS60s4E5ps-
+            size: 178
+            state: uploaded
+            updated_at: "2022-10-25T15:32:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221886
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-darwin-amd64
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 1
+            id: 82221883
+            label: ""
+            name: argocd-darwin-amd64
+            node_id: RA_kwDOBzS60s4E5ps7
+            size: 132651600
+            state: uploaded
+            updated_at: "2022-10-25T15:32:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221883
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-darwin-arm64
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 5
+            id: 82221890
+            label: ""
+            name: argocd-darwin-arm64
+            node_id: RA_kwDOBzS60s4E5ptC
+            size: 132544178
+            state: uploaded
+            updated_at: "2022-10-25T15:32:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221890
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-amd64
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:32Z"
+            download_count: 87
+            id: 82221902
+            label: ""
+            name: argocd-linux-amd64
+            node_id: RA_kwDOBzS60s4E5ptO
+            size: 133574725
+            state: uploaded
+            updated_at: "2022-10-25T15:32:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221902
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-arm64
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:30Z"
+            download_count: 1
+            id: 82221882
+            label: ""
+            name: argocd-linux-arm64
+            node_id: RA_kwDOBzS60s4E5ps6
+            size: 130354571
+            state: uploaded
+            updated_at: "2022-10-25T15:32:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221882
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-ppc64le
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 1
+            id: 82221884
+            label: ""
+            name: argocd-linux-ppc64le
+            node_id: RA_kwDOBzS60s4E5ps8
+            size: 131146908
+            state: uploaded
+            updated_at: "2022-10-25T15:32:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221884
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-linux-s390x
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:32Z"
+            download_count: 1
+            id: 82221898
+            label: ""
+            name: argocd-linux-s390x
+            node_id: RA_kwDOBzS60s4E5ptK
+            size: 137399600
+            state: uploaded
+            updated_at: "2022-10-25T15:32:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221898
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/argocd-windows-amd64.exe
+            content_type: application/octet-stream
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 3
+            id: 82221891
+            label: ""
+            name: argocd-windows-amd64.exe
+            node_id: RA_kwDOBzS60s4E5ptD
+            size: 133997056
+            state: uploaded
+            updated_at: "2022-10-25T15:32:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221891
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/sbom.tar.gz
+            content_type: application/gzip
+            created_at: "2022-10-25T15:32:31Z"
+            download_count: 1
+            id: 82221892
+            label: ""
+            name: sbom.tar.gz
+            node_id: RA_kwDOBzS60s4E5ptE
+            size: 335140
+            state: uploaded
+            updated_at: "2022-10-25T15:32:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221892
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.5.0/sbom.tar.gz.sig
+            content_type: application/pgp-signature
+            created_at: "2022-10-25T15:32:32Z"
+            download_count: 1
+            id: 82221900
+            label: ""
+            name: sbom.tar.gz.sig
+            node_id: RA_kwDOBzS60s4E5ptM
+            size: 97
+            state: uploaded
+            updated_at: "2022-10-25T15:32:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/82221900
+          assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/80941393/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+            events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+            followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+            following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+            gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/apps/github-actions
+            id: 41898282
+            login: github-actions[bot]
+            node_id: MDM6Qm90NDE4OTgyODI=
+            organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+            received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+            repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+            type: Bot
+            url: https://api.github.com/users/github-actions%5Bbot%5D
+          body: "## Quick Start\r\n\r\n### Non-HA:\r\n\r\n```shell\r\nkubectl create
+            namespace argocd\r\nkubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.0/manifests/install.yaml\r\n```\r\n\r\n###
+            HA:\r\n\r\n```shell\r\nkubectl create namespace argocd\r\nkubectl apply
+            -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.0/manifests/ha/install.yaml\r\n```\r\n\r\n\r\n##
+            Release signatures\r\n\r\nAll Argo CD container images and CLI binaries
+            are signed by cosign. See the [documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets.md/)
+            on how to verify the signatures.\r\n```shell\r\n-----BEGIN PUBLIC KEY-----\r\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEesHEB7vX5Y2RxXypjMy1nI1z7iRG\r\nJI9/gt/sYqzpsa65aaNP4npM43DDxoIy/MQBo9s/mxGxmA+8UXeDpVC9vw==\r\n-----END
+            PUBLIC KEY-----\r\n```\r\n\r\n## Upgrading\r\n\r\nIf upgrading from a
+            different minor version, be sure to read the [upgrading](https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/)
+            documentation.\r\n\r\n## Changes\r\n\r\nThis release includes 301 contributions
+            from 136 contributors (89 of them new) with 59 features and 62 bug fixes.\r\n\r\n###
+            Features\r\n\r\n- feat(ui): notification subscriptions edit field #10310
+            (#10839)\r\n- feat: system level extensions (#10758)\r\n- feat: equality-based
+            and set-based filtering by label keys and values for list, sync, delete
+            and wait App commands (#10548)\r\n- feat: add health checks for storage.cnrm.cloud.google.com/StorageBucketAccessControl
+            (#10727)\r\n- feat: add the ability to filter apps based on clusters (#10465)\r\n-
+            feat: argocd app delete apps by label (#10091) (#10118)\r\n- feat: add
+            health checks for iam.cnrm.cloud.google.com/IAMPolicy (#10725)\r\n- feat:
+            add Prometheus health check (#10508)\r\n- feat: add health check for cloudscheduler.cnrm.cloud.google.com/CloudSchedulerJob
+            (#10606)\r\n- feat: add health check for cloudscheduler.cnrm.cloud.google.com/CloudFunctionsFunction
+            (#10607)\r\n- feat: health check for compute.cnrm.cloud.google.com/ComputeDisk
+            (#10608)\r\n- feat: health check for OnePasswordItem (#10690)\r\n- feat:
+            health check storage.cnrm.cloud.google.com/StorageDefaultObjectAccessControl
+            (#10726)\r\n- feat(ui): Collapsable sidebar with filters (#10626)\r\n-
+            feat: dark mode (#4722) (#9703)\r\n- feat: create cli commands for ApplicationSet
+            \ (#9584)\r\n- feat: add permitOnlyProjectScopedClusters flag (#10237)\r\n-
+            feat: add scrollbar to live manifest (#10379)\r\n- feat: add notifications
+            API (#10279)\r\n- feat(applicationset): reuse repo-creds for an existing
+            GitHub App (#10092)\r\n- feat: Support Custom Application Actions in CLI
+            #7577 (#10015)\r\n- feat: make https repo credentials editable in the
+            UI (#9108) (#9782)\r\n- feat!(cli): add confirm for cluster remove (#10319)\r\n-
+            feat: server-side manifest generation for local diff (#8145) (#10019)\r\n-
+            feat: support gzip compression for data stored in redis (#10190)\r\n-
+            feat: Make additional namespaces configurable via environment (#10270)\r\n-
+            feat: Applications in any namespace (#9755)\r\n- feat: add support for
+            default container annotation (#8015) (#9769)\r\n- feat: add projects filter
+            to app sync command (#8320) (#10133)\r\n- feat: add Gitlab PR generator
+            webhooks support (#10235)\r\n- feat: refactor redis-ha NetworkPolicy to
+            include egress rules (#10226)\r\n- feat: restrict egress onredis (#10227)\r\n-
+            feat: Added health check for spot.io SpotDeployment (#10152)\r\n- feat:
+            Added Google Project health check (#10230)\r\n- feat: Added Google PubSub
+            Topic and Subscription health checks (#10229)\r\n- feat: ApplicationSet
+            Go template (#10026)\r\n- feat: Introduces Server-Side Apply as sync option
+            (#9711)\r\n- feat: app wait with --degraded (#10139)\r\n- feat: Expose
+            the Argo CD ID through an ENV in the Dockerfile (#10113) (#10115)\r\n-
+            feat: Support environment variables in Helm value file paths (#10213)\r\n-
+            feat: Add labelSelector style to filter all generators (#9312)\r\n- feat:
+            add deny destinations for projects (#9464) (#9652)\r\n- feat: argocd app
+            manifests --local (#5525) (#10061)\r\n- feat: add ingress network policies
+            for applicationset and notifications controller (#10053)\r\n- feat: add
+            HTTPS to dex server (#9424) (#9883)\r\n- feat: allow argocd cluster rotate-auth
+            to accept cluster name (#9838)\r\n- feat(applicationset): add short sha
+            to PR generator (#9668) (#9669)\r\n- feat: implement consistent startup
+            messages for all components (#9800)\r\n- feat: allow interpolation of
+            cluster generator values (#9254)\r\n- feat: add initiatedBy info to App
+            status field when performing a rollback (#9713)\r\n- feat: Add Azure DevOps
+            SCM Provider Generator; add branchNormalized to SCM Generator template
+            fields. (#9283)\r\n- feat: Added the ability to filter MRs by 'state'
+            to Gitlab PR Generator (#9540)\r\n- feat: support health check on FlinkDeployment
+            (#9300) (#9300)\r\n- feat: Slugified the branch name in PR generators
+            (#9462)\r\n- feat: combine form repo settings page #9167 (#9374)\r\n-
+            feat:  Matrix generator where a generator can reference items of another
+            one (#9080)\r\n- feat: Expansion support and line relayout (#8661)\r\n-
+            feat: Network view should group pods into higher level workload (#5468)
+            (#8996)\r\n- feat: Move app resources commands to dedicated command file
+            (#9306)\r\n\r\n### Bug fixes\r\n\r\n- fix: Update custom health check
+            for kiali.io/Kiali (#10995)\r\n- fix: Resource list in sync page msg style#10887
+            (#10970)\r\n- fix: upgrade Helm to avoid disk use issue (#8773) (#10937)\r\n-
+            fix: Resource list loading slowly due to Sync Wave sorting (#10932)\r\n-
+            fix: add applicationsets to RBAC policy (#10810) (#10891)\r\n- fix: duplicate
+            source namespace validation (#10853)\r\n- fix: applicationset controller
+            should respect logging flags (#10513)\r\n- fix: show revision in badge
+            when param is true (#10545)\r\n- fix: Unbreak app refresh from panel list
+            (#10825)\r\n- fix: Add filter icon to help users find filters (#10809)\r\n-
+            fix: reduce noise in logs (#10369) (#10765)\r\n- fix: New sidebar icons
+            are missing margin (#10794)\r\n- fix: incorrect filters placement on resource
+            list (#10781)\r\n- fix: add theme to version panel in ui (#10762)\r\n-
+            fix: always prune on git fetch (#10664)\r\n- fix: duplicate z-index (#10760)\r\n-
+            fix: ui add tooltips on repository url links and names (#9868) (#10108)\r\n-
+            fix: add tooltip for long title in list view ui (#9792)\r\n- fix: button
+            consistency in logs panel #9945 (#10016)\r\n- fix: Provide better error
+            message when application source is missing some settings (#10694)\r\n-
+            fix: Application details page crashes with JS error (#10640)\r\n- fix:
+            snyk report bugs (#10544)\r\n- fix: add more info to  creationtime format
+            (#10286) (#10493)\r\n- fix: invalid error handling (#10384) (#10385)\r\n-
+            fix: Remove quotes from delete dialog #10008 (#10471)\r\n- fix(ui): Remove
+            application namespace field in app creation (#10481)\r\n- fix(ui): Fix
+            multi-app refresh and sync in the UI (#10421)\r\n- fix: add space before
+            prompt in CLI (#10362)\r\n- fix: Add logic to handle for fileHandle.Close()
+            (#9963) (#10361)\r\n- fix: Replace dangerous use of xargs (#10331)\r\n-
+            fix: Trim white space from string slice retrieved from environment (#10275)\r\n-
+            fix(applicationset): support webhook with matrix interpolation (#9931)
+            (#10236)\r\n- fix: consistent example indentation in CLI (#10075)\r\n-
+            fix: set default value for users.session.duration (#9962) (#10185)\r\n-
+            fix: Add logic to handle for file.Close() (#9963) (#10159)\r\n- fix: add
+            logic to handle for f.Close() for util/gpg (#9963) (#10130)\r\n- fix:
+            Add logic to handle for f.Close() for util/db (#9963) (#10127)\r\n- fix:
+            Handle github ping webhook event (#7555) (#10082)\r\n- fix: add logic
+            to handle for f.Close() for util/io/files/tar.go (#9963)\r\n- fix: off
+            positioned filter icon (#10013)\r\n- fix: Add logic to handle for f.Close()
+            in util/localconfig/ (#9963)\r\n- fix: copy claims before modifying for
+            logs (#10044)\r\n- fix: api server should use ARGOCD_SERVER_LOG_LEVEL
+            instead of ARGOCD_REPO_SERVER_LOGLEVEL (#9970) (#9975)\r\n- fix: don't
+            log group claims unless log level is debug (#9549) (#9947)\r\n- fix: bad
+            error message (#9967)\r\n- fix: validateProject() function in app_project_types.go
+            file has nil dereference bug (#9917)\r\n- fix: 'unexpected reserved bits'
+            breaking web terminal (#9605) (#9895)\r\n- fix: make test-tools-image
+            work on apple silicon (#9808)\r\n- fix(applicationset): provide nameNormalized
+            template param for local cluster (#9728)\r\n- fix: upgrade superagent
+            from 7.1.3 to 7.1.6 (#9748)\r\n- fix: pss restricted securityContext (#9765)\r\n-
+            fix: overrides should not appear in the manifest cache key (#9601)\r\n-
+            fix: ui add tooltips on cluster urls (#9567)\r\n- fix: better error message
+            for invalid repo URL (#9513)\r\n- fix: Use the matchMode specified in
+            the rbac configmap (#9419)\r\n- fix: New line layout not applied to load
+            balancer; podGroup fix (#9452) (#9523)\r\n- fix: added extra protection
+            to syncing app with replace (#9187)\r\n- fix: upgrade superagent to resolve
+            potential CVE (#9494)\r\n- fix: restore broken source-maps to simplify
+            UI debugging (#9491)\r\n- fix: Pass context to resource tree (#5468) (#9401)\r\n-
+            fix spelling (#9372)\r\n- fix: http headers contain colons in the field
+            value (#9375)\r\n\r\n### Documentation\r\n\r\n- docs: fix 'bellow' typos
+            (#11038)\r\n- docs: mention that OCI helm does not support version ranges
+            (#11026)\r\n- docs: release signature verification (#10967)\r\n- docs:
+            more versioned docs fixes (#10342)\r\n- docs: fix examples for ArgoCD
+            ApplicationSet Git Generator (#10857)\r\n- docs: Add example about how
+            to patch with SSA syncs (#10829)\r\n- docs: Add OccMundial to list of
+            users (#10712)\r\n- docs: Fix TLS configure link on getting started (#10734)\r\n-
+            docs: Default value for server.rootpath is incorrect (#10665)\r\n- docs:
+            Add enigmo to list of users (#10603)\r\n- docs: decision about logs RBAC
+            enforcement in release notes (#10563)\r\n- docs: Include Pandosearch in
+            USERS.md (#10596)\r\n- docs: Add Productboard to users (#10528)\r\n- docs:
+            Fix typo and rephrase sentence (#10504)\r\n- docs: document sync interval
+            setting (#10520)\r\n- docs: Remove invalid link to hands-on labs (#10466)\r\n-
+            docs: Add CERN as a ArgoCD user (#10470)\r\n- docs: add OpsVerse as an
+            official user (USERS.md) (#10436)\r\n- docs: add nethopper to users.md
+            (#10402)\r\n- docs: Add fully-local developer workflow and traps (#10333)\r\n-
+            docs: s/ArgoCD/Argo CD (#10352)\r\n- docs: fix indentation of example
+            AppProject in 'Sync Windows' documentation (#10388)\r\n- docs: use table
+            instead of list for Snyk scans (#10141)\r\n- docs: Note Helm has been
+            upgraded (#10349)\r\n- docs: add wemaintain as official user (#10348)\r\n-
+            docs: remove version notes - rely on docs versioning (#10338)\r\n- docs:
+            fix first sentence in custom style docs (#10322)\r\n- docs: grammar fix
+            (#10328)\r\n- docs: fixes the YAML codefence for `Slack` notification
+            service (#8776) (#10311)\r\n- docs: document revision history limit field
+            (#10302)\r\n- docs: add freshop to USERS.md (#10276)\r\n- docs: revert
+            appset path.path and path.segments docs (#10254)\r\n- docs: add gloat
+            to USERS.md (#10252)\r\n- docs: update changelog for 2.1.x through 2.4.x
+            (#10241) (#10242)\r\n- docs: recommend offline bcrypt (#10050) (#10056)\r\n-
+            docs: use `install` instead of curling directly to /usr/local/bin (#9944)\r\n-
+            docs: add Lian Chu Securities to Users (#10080)\r\n- docs: add Techcombank
+            to users (#10085)\r\n- docs: add kurly to Argo CD Users (#10069)\r\n-
+            docs: fix typo - user->use (#10078)\r\n- docs: improve docs/user-guide/kustomize.md
+            (#10025)\r\n- docs: add GLOBIS to users (#9987)\r\n- docs: fix Ingress
+            documentation for AWS ALBs (#9926)\r\n- docs: Add application.resourceTrackingMethod
+            to example CM (#9892)\r\n- docs: fix outdated example in helm.md (#8506)\r\n-
+            docs correction on how to override azure devops URL. (#9699)\r\n- docs:
+            clarify microsoft.md OIDC setup (#8329)\r\n- docs: Add server-side apply
+            proposal (#8812)\r\n- docs: fix PR generators list (#9387)\r\n- docs:
+            add Meican to users (#9377)\r\n- docs: add Coralogix to users (#9361)\r\n-
+            docs: Reword SSO Client Secrets doc (#8666)\r\n- docs: fix local apiserver
+            host name (#9313)\r\n\r\n### Other\r\n\r\n- chore: fix CI (#11022)\r\n-
+            chore: fix e2e (#11005)\r\n- chore: upgrade actions/checkout to v3, i.e.
+            Node.js 16 (#10947)\r\n- chore: release signature of sbom (#10969)\r\n-
+            Bump version to 2.5.0-rc3\r\n- Bump version to 2.5.0-rc3\r\n- Bump version
+            to 2.5.0-rc2\r\n- Bump version to 2.5.0-rc2\r\n- chore: update Server-Side
+            Apply docs for patching of existing rresources (#10822)\r\n- Bump version
+            to 2.5.0-rc1\r\n- Bump version to 2.5.0-rc1\r\n- chore: remove unused
+            import (#10773)\r\n- chore: Add support for apple sillicon build machines
+            (#10777)\r\n- chore: update to gitops engine 98ccd3d43fd9 (#10787)\r\n-
+            chore: Add Gridfuse to USERS.md (#10750)\r\n- chore: fix incorrect cluster
+            delete description (#10631)\r\n- chore: Add security logging for Dex errors
+            (#10455)\r\n- chore: Upgrade shipped version of Redis to 7.0.5 to fix
+            CVE-2022-35951 (#10702)\r\n- chore: Added Hetki to USERS.md (#10586)\r\n-
+            chore: add Adfinis to USERS.md (#10741)\r\n- test: read appset (#10743)\r\n-
+            chore: typo for SyncStatusCodeOutOfSync comment (#10748)\r\n- chore: upgrade
+            dex to v2.32.1-distroless (#10746)\r\n- Add Splunk as ArgoCD user (#10718)\r\n-
+            tests: cmd unit test version (#10689)\r\n- chore: upgrade k8s.io/kube-openapi
+            to avoid CVE-2022-1996 (#10691)\r\n- chore: update install-codegen-tools.sh
+            and upgrade docs (#10692)\r\n- chore: update Helm and Kustomize versions
+            (#10273) (#10599)\r\n- test: Add logic to handle for fileHandle.Close()
+            (#10632)\r\n- Add Kandji to users list (#10650)\r\n- Adding Elastic as
+            an ArgoCD User (#10649)\r\n- added ./ for broken url link (#10623)\r\n-
+            chore: update gitops-engine (3951079) (#10616)\r\n- chore: remove incompatible
+            miniredis dependency (#10566)\r\n- chore: Remove bad symlink used for
+            tests (#10527)\r\n- chore: add security log issue template (#10368)\r\n-
+            Adding Magic Leap as argocd user (#10509)\r\n- chore: update gitops-engine
+            to c036d3f6b0e2 (#10423)\r\n- chore: drop hardcoded processors from HA
+            manifests (#10458)\r\n- chore: remove duplicate word in comments (#10479)\r\n-
+            chore: Add security logging in util/app (#10416)\r\n- chore: Add security
+            logging in util/git|helm (#10410)\r\n- Add a newline character to fix
+            the render (#10431)\r\n- chore: sort users.md (#10387)\r\n- chore: infer
+            managed resources health from redis instead of storing it in CRD (#10191)\r\n-
+            chore: deprecate argocd-cm plugins (#8117) (#10341)\r\n- chore: add security
+            logging and cwe fields (#10256)\r\n- chore: Ignore VERSION file for Snyk
+            scan (#10363)\r\n- chore: downgrade go version to v1.18 (#10351)\r\n-
+            chore: Don't run snyk report in clones (#10323)\r\n- ci: Update K3s version
+            matrix in e2e tests (#10313)\r\n- chore: upgrade helm to most recent version
+            (v3.9.3) (#10296)\r\n- chore: upgrade redis-ha chart to 4.17.8, HAProxy
+            v2.6.2 (#10032) (#10297)\r\n- chore: improve logs in util/argo/argo.go
+            (#10271)\r\n- chore: Bump version in master to 2.5.0 (#10266)\r\n- chore(deps):
+            bump terser from 5.12.1 to 5.14.2 in /ui (#10064)\r\n- chore: improve
+            argocd app delete (#10160)\r\n- proposal: Applications outside argocd
+            namespace (#6409)\r\n- chore: cleanup remnants of snyk scan removal (#10225)\r\n-
+            chore: no non-container scans in workflow (scan limit hit) (#10222)\r\n-
+            chore: Upgrade Golang to 1.19 (#10176) (#10186)\r\n- chore: fix some typos
+            (#10217)\r\n- chore: upgrade dex to distroless avoid CVE-2022-2097/CVE-2022-30065
+            (#10203)\r\n- chore: fix codegen (#10202)\r\n- chore: update redis-ha
+            manifests (#10032)\r\n- build: Enable optional skipping of building test-tools-image
+            (#10199)\r\n- chore: install snyk before generating report (#10158)\r\n-
+            chore: upgrade codeql action to v2 (#10165)\r\n- chore: no colons in filenames
+            (#10183)\r\n- chore: fix sarif upload categories (#10171)\r\n- chore:
+            fix typo in image workflow (again) (#10164)\r\n- chore: fix typo in image
+            workflow (#10161)\r\n- chore: fix codeql category error (#10137)\r\n-
+            chore: exclude docs from Sonar check completely (#10142)\r\n- chore: exclude
+            docs from Sonar check (#10136)\r\n- chore: ignore CVE-2022-0624 - not
+            exploitable in Argo CD (#10128)\r\n- test: Add logic to handle for f.Close()
+            for cmd/argocd/commands/admin (#9963) (#10074)\r\n- chore: add Snyk scans
+            to docs (#9856)\r\n- chore: argocd app create output states whether app
+            exists (#9984)\r\n- add securityContext to redis-ha containers (#9930)\r\n-
+            chore: spelling: retrieve (#10051)\r\n- add logic to handle for f.Close()
+            (#10004)\r\n- chore: use manifest version for redis+dex in E2E tests (#9955)
+            (#9959)\r\n- chore: upgrade k8s client to v0.24.2 (#9932)\r\n- test: check
+            for error messages from CI env (#9953)\r\n- block out of bounds symlinks
+            (#9738) (#9843)\r\n- chore: Replace deprecated ioutil in CLI code (#9846)\r\n-
+            Added health checks for Config Connector resources. (#9878)\r\n- chore:
+            Replace deprecated ioutil in util packages (#9848)\r\n- chore: Replace
+            deprecated ioutil in hacks (#9851)\r\n- refactor: improve context handling
+            in cmd/ (#9860)\r\n- chore: Fix import of context package across codebase
+            (#9852)\r\n- chore: remove semicolon from end of statement (#9837)\r\n-
+            chore: adjust docs (#9829)\r\n- Add scmp.com to argo-cd users (#9823)\r\n-
+            chore: add k8s v1.24.1 to test matrix (#9714)\r\n- chore: upgrade kustomize
+            to 4.5.5 (#9650)\r\n- log: debug manifest cache (#9602)\r\n- chore: revert
+            adding k8s 1.24.1 to test matrix (#9657)\r\n- chore: add k8s v1.24.1 release
+            to test matrix (#9636)\r\n- chore: fix typo in godoc string (#9644)\r\n-
+            chore: use Ubuntu 22.04 in CI (#9587)\r\n- Grupo MasMovil Spain added
+            to users list (#9585)\r\n- chore: remove controller liveness probe (#9557)\r\n-
+            ci: remove cache from image build (#9564)\r\n- Add elementor (#9544)\r\n-
+            chore: ignore irrelevant formidable vulnerability (#9470)\r\n- add pismo
+            on users (#9532)\r\n- Fix radio button click experience problem (#9520)\r\n-
+            bump helm version to 3.9.0 (#9486)\r\n- chore: Simplified GetRepoHTTPClient
+            function (#9396)\r\n- chore: add argocd binary to argocd-test-tool docker
+            image (#9459) (#9467)\r\n- bug(gitpod): change Kubebuilder curl (#9097)
+            (#9197)\r\n- chore: add GOPKGINYAMLV2-2840885 to snyk ignore list (#9495)\r\n-
+            Add GitLab PR generator for applicationset (#9264)\r\n- chore: upgrade
+            golangci-lint to v1.46.2 (#9448)\r\n- some optimizations for cert.go (#9404)\r\n-
+            chore: add labels to notifications controller serviceaccount (#9373)\r\n-
+            add reev.com (#9409)\r\n- chore: use filepath.Join to get sock path (#9395)\r\n-
+            chore: ignore irrelevant go-restful vulnerability (#9347)\r\n- use filepath
+            \ to combire dirs (#9358)\r\n- Remove Kubernetes External Secret from
+            docs (#9251)\r\n- improved pr generator doc (#9350)\r\n- chore: resource
+            state tests (#9307)\r\n- chore: Set GITHUB_TOKEN in the test container
+            (#9317)\r\n- chore: Pull in recent kubectl to test container (#9316)\r\n\r\n"
+          created_at: "2022-10-25T14:23:02Z"
+          draft: false
+          html_url: https://github.com/argoproj/argo-cd/releases/tag/v2.5.0
+          id: 80941393
+          name: v2.5.0
+          node_id: RE_kwDOBzS60s4E0xFR
+          prerelease: false
+          published_at: "2022-10-25T15:32:28Z"
+          reactions:
+            "+1": 0
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 8
+            laugh: 0
+            rocket: 1
+            total_count: 9
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/80941393/reactions
+          tag_name: v2.5.0
+          tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v2.5.0
+          target_commitish: master
+          upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/80941393/assets{?name,label}
+          url: https://api.github.com/repos/argoproj/argo-cd/releases/80941393
+          zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.5.0
     helm:
       3.9.3:
         githubRelease:

@@ -5,7 +5,7 @@ provisioners:
       arguments:
         awscli_version: "{{ .awscli.version }}"
         atlantis_version: "{{ .atlantis.version }}"
-        dump_init_version: "{{ .dump_init.version }}"
+        dumb_init_version: "{{ .dumb_init.version }}"
         gosu_version: "{{ .gosu.version }}"
         git_lfs_version: "{{ .git_lfs.version }}"
         terraform_version: "{{ .terraform.version }}"
@@ -15,7 +15,7 @@ provisioners:
       arguments:
         awscli_version: "{{ .awscli.version }}"
         atlantis_version: "{{ .atlantis.version }}"
-        dump_init_version: "{{ .dump_init.version }}"
+        dumb_init_version: "{{ .dumb_init.version }}"
         gosu_version: "{{ .gosu.version }}"
         git_lfs_version: "{{ .git_lfs.version }}"
         terraform_version: "{{ .terraform.version }}"

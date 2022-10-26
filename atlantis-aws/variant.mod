@@ -5,7 +5,6 @@ provisioners:
       arguments:
         awscli_version: "{{ .awscli.version }}"
         atlantis_version: "{{ .atlantis.version }}"
-        dumb_init_version: "{{ .dumb_init.version }}"
         gosu_version: "{{ .gosu.version }}"
         git_lfs_version: "{{ .git_lfs.version }}"
         terraform_version: "{{ .terraform.version }}"
@@ -15,7 +14,6 @@ provisioners:
       arguments:
         awscli_version: "{{ .awscli.version }}"
         atlantis_version: "{{ .atlantis.version }}"
-        dumb_init_version: "{{ .dumb_init.version }}"
         gosu_version: "{{ .gosu.version }}"
         git_lfs_version: "{{ .git_lfs.version }}"
         terraform_version: "{{ .terraform.version }}"
@@ -31,11 +29,6 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: runatlantis/atlantis
-    version: "> 0.0.0"
-  dumb_init:
-    releasesFrom:
-      githubReleases:
-        source: Yelp/dumb-init
     version: "> 0.0.0"
   gosu:
     releasesFrom:

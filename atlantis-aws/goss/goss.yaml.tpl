@@ -11,6 +11,12 @@ file:
   /usr/bin/conftest:
     exists: true
     mode: "0755"
+  /bin/gosu:
+    exists: true
+    mode: "0755"
+  /usr/bin/git-lfs:
+    exists: true
+    mode: "0755"
 command:
   /usr/local/bin/aws --version:
     exit-status: 0
@@ -28,3 +34,11 @@ command:
     exit-status: 0
     stdout:
       - {{ .atlantis_version }}
+  /bin/gosu --version:
+    exit-status: 0
+    stdout:
+      - {{ .gosu_version }}
+  /usr/bin/git-lfs --version:
+    exit-status: 0
+    stdout:
+      - {{ .git_lfs_version }}

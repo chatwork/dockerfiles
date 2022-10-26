@@ -2,9 +2,9 @@ FROM chatwork/aws:{{ .awscli_version }}
 
 ARG TARGETARCH
 ARG ATLANTIS_VERSION={{ .atlantis_version }}
-ARG DUMB_INIT_VERSION={{ .dumb_init_version }}
 ARG GOSU_VERSION={{ .gosu_version }}
 ARG GIT_LFS_VERSION={{ .git_lfs_version }}
+ARG DUMB_INIT_VERSION=1.2.5
 ENV DEFAULT_TERRAFORM_VERSION={{ .terraform_version }}
 LABEL version="${ATLANTIS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"

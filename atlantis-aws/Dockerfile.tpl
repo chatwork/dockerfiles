@@ -2,6 +2,9 @@ FROM chatwork/aws:{{ .awscli_version }}
 
 ARG TARGETARCH
 ARG ATLANTIS_VERSION={{ .atlantis_version }}
+ARG GOSU_VERSION={{ .gosu_version }}
+ARG GIT_LFS_VERSION={{ .git_lfs_version }}
+ARG DUMB_INIT_VERSION=1.2.5
 ENV DEFAULT_TERRAFORM_VERSION={{ .terraform_version }}
 LABEL version="${ATLANTIS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
@@ -40,6 +43,40 @@ RUN curl -LOs https://github.com/runatlantis/atlantis/releases/download/v${ATLAN
     mv ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh && \
     chmod +x /usr/local/bin/docker-entrypoint.sh && \
     rm -f ./atlantis_linux_${TARGETARCH}.zip
+
+RUN case "${TARGETARCH}" in \
+        "amd64") DUMB_INIT_ARCH=x86_64 ;; \
+        "arm64") DUMB_INIT_ARCH=aarch64 ;; \
+        *) echo "ERROR: 'TARGETARCH' value expected: ${TARGETARCH}"; exit 1 ;; \
+    esac && \
+    curl -L -s --output dumb-init https://github.com/Yelp/dumb-init/releases/download/v${DUMB_INIT_VERSION}/dumb-init_${DUMB_INIT_VERSION}_${DUMB_INIT_ARCH} && \
+    mv ./dumb-init /usr/bin/dumb-init && \
+    chmod +x /usr/bin/dumb-init && \
+    curl -L -s --output gosu "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-${TARGETARCH}" && \
+    curl -L -s --output gosu.asc "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-${TARGETARCH}.asc" && \
+    for server in $(shuf -e ipv4.pool.sks-keyservers.net \
+                            hkp://p80.pool.sks-keyservers.net:80 \
+                            keyserver.ubuntu.com \
+                            hkp://keyserver.ubuntu.com:80 \
+                            pgp.mit.edu) ; do \
+        gpg --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ; \
+    done && \
+    gpg --batch --verify gosu.asc gosu && \
+    chmod +x gosu && \
+    mv gosu /bin && \
+    gosu --version && \
+    yum install -y shadow-utils && \
+    groupadd atlantis && \
+    adduser -g atlantis atlantis && \
+    usermod -aG root atlantis && \
+    chown atlantis:root /home/atlantis/ && \
+    chmod g=u /home/atlantis/ && \
+    chmod g=u /etc/passwd && \
+    curl -L -s --output git-lfs.tar.gz "https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/git-lfs-linux-${TARGETARCH}-v${GIT_LFS_VERSION}.tar.gz" && \
+    tar -xf git-lfs.tar.gz && \
+    chmod +x git-lfs && \
+    mv git-lfs /usr/bin/git-lfs && \
+    git-lfs --version
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["server"]

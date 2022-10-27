@@ -5,6 +5,8 @@ provisioners:
       arguments:
         awscli_version: "{{ .awscli.version }}"
         atlantis_version: "{{ .atlantis.version }}"
+        gosu_version: "{{ .gosu.version }}"
+        git_lfs_version: "{{ .git_lfs.version }}"
         terraform_version: "{{ .terraform.version }}"
         conftest_version: "{{ .conftest.version }}"
     goss/goss.yaml:
@@ -12,6 +14,8 @@ provisioners:
       arguments:
         awscli_version: "{{ .awscli.version }}"
         atlantis_version: "{{ .atlantis.version }}"
+        gosu_version: "{{ .gosu.version }}"
+        git_lfs_version: "{{ .git_lfs.version }}"
         terraform_version: "{{ .terraform.version }}"
         conftest_version: "{{ .conftest.version }}"
 
@@ -25,6 +29,16 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: runatlantis/atlantis
+    version: "> 0.0.0"
+  gosu:
+    releasesFrom:
+      githubReleases:
+        source: tianon/gosu
+    version: "> 0.0.0"
+  git_lfs:
+    releasesFrom:
+      githubReleases:
+        source: git-lfs/git-lfs
     version: "> 0.0.0"
   terraform:
     releasesFrom:

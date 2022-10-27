@@ -44,14 +44,15 @@ dependencies:
       url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/releases/72903777
       zipball_url: https://api.github.com/repos/aws/amazon-cloudwatch-logs-for-fluent-bit/zipball/v1.9.0
   fluentbit:
-    version: "2.0"
-    previousVersion: 1.9.9
+    version: 2.0.1
+    previousVersion: "2.0"
     versions:
     - 1.9.6
     - 1.9.7
     - 1.9.8
     - 1.9.9
     - "2.0"
+    - 2.0.1
 meta:
   dependencies:
     cloudwatch:

@@ -76,7 +76,7 @@ RUN case "${TARGETARCH}" in \
     tar -xf git-lfs.tar.gz && \
     chmod +x ./git-lfs-${GIT_LFS_VERSION}/git-lfs && \
     mv ./git-lfs-${GIT_LFS_VERSION}/git-lfs /usr/bin/git-lfs && \
-    rm ./git-lfs-${GIT_LFS_VERSION} && \
+    rm -rf ./git-lfs-${GIT_LFS_VERSION} && \
     rm git-lfs.tar.gz
 
 ENTRYPOINT ["docker-entrypoint.sh"]

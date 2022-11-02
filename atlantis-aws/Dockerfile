@@ -3,7 +3,7 @@ FROM chatwork/aws:2.8.6
 ARG TARGETARCH
 ARG ATLANTIS_VERSION=0.20.1
 ARG GOSU_VERSION=1.14
-ARG GIT_LFS_VERSION=3.1.2
+ARG GIT_LFS_VERSION=3.2.0
 ARG DUMB_INIT_VERSION=1.2.5
 ENV DEFAULT_TERRAFORM_VERSION=1.3.3
 LABEL version="${ATLANTIS_VERSION}"
@@ -74,9 +74,10 @@ RUN case "${TARGETARCH}" in \
     chmod g=u /etc/passwd && \
     curl -L -s --output git-lfs.tar.gz "https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/git-lfs-linux-${TARGETARCH}-v${GIT_LFS_VERSION}.tar.gz" && \
     tar -xf git-lfs.tar.gz && \
-    chmod +x git-lfs && \
-    mv git-lfs /usr/bin/git-lfs && \
-    git-lfs --version
+    chmod +x ./git-lfs-${GIT_LFS_VERSION}/git-lfs && \
+    mv ./git-lfs-${GIT_LFS_VERSION}/git-lfs /usr/bin/git-lfs && \
+    rm -rf ./git-lfs-${GIT_LFS_VERSION} && \
+    rm git-lfs.tar.gz
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["server"]

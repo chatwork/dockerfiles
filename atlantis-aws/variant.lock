@@ -2133,14 +2133,15 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/47993894
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.14
   terraform:
-    version: 1.3.3
-    previousVersion: 1.3.2
+    version: 1.3.4
+    previousVersion: 1.3.3
     versions:
     - 1.3.2
     - 1.3.3
+    - 1.3.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/80363428/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/81842803/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
         events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
@@ -2161,27 +2162,36 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-tf-core
       body: |+
-        ## 1.3.3 (October 19, 2022)
+        ## 1.3.4 (November 02, 2022)
 
         BUG FIXES:
 
-        * Fix error when removing a resource from configuration which has according to the provider has already been deleted. ([#31850](https://github.com/hashicorp/terraform/issues/31850))
-        * Fix error when setting empty collections into variables with collections of nested objects with default values. ([#32033](https://github.com/hashicorp/terraform/issues/32033))
+        * Fix invalid refresh-only plan caused by data sources being deferred to apply ([#32111](https://github.com/hashicorp/terraform/issues/32111))
+        * Optimize the handling of condition checks during apply to prevent performance regressions with large numbers of instances ([#32123](https://github.com/hashicorp/terraform/issues/32123))
+        * Output preconditions should not be evaluated during destroy ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+        * Fix crash from `console` when outputs contain preconditions ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+        * Destroy with no state would still attempt to evaluate some values ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+        * Prevent unnecessary evaluation and planning of resources during the pre-destroy refresh ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+        * AzureRM Backend: support for generic OIDC authentication via the `oidc_token` and `oidc_token_file_path` properties ([#31966](https://github.com/hashicorp/terraform/issues/31966))
+        * Input and Module Variables: Convert variable types before attempting to apply default values. ([#32027](https://github.com/hashicorp/terraform/issues/32027))
+        * When installing remote module packages delivered in tar format, Terraform now limits the tar header block size to 1MiB to avoid unbounded memory usage for maliciously-crafted module packages. ([#32135](https://github.com/hashicorp/terraform/issues/32135))
+        * Terraform will now reject excessively-complex regular expression patterns passed to the `regex`, `regexall`, and `replace` functions, to avoid unbounded memory usage for maliciously-crafted patterns. This change should not affect any reasonable patterns intended for practical use. ([#32135](https://github.com/hashicorp/terraform/issues/32135))
+        * Terraform on Windows now rejects invalid environment variables whose values contain the NUL character when propagating environment variables to a child process such as a provider plugin. Previously Terraform would incorrectly treat that character as a separator between two separate environment variables. ([#32135](https://github.com/hashicorp/terraform/issues/32135))
 
-      created_at: "2022-10-19T17:40:26Z"
+      created_at: "2022-11-02T16:16:26Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.3.3
-      id: 80363428
-      name: v1.3.3
-      node_id: RE_kwDOAQ6CpM4Eyj-k
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.3.4
+      id: 81842803
+      name: v1.3.4
+      node_id: RE_kwDOAQ6CpM4E4NJz
       prerelease: false
-      published_at: "2022-10-19T17:54:32Z"
-      tag_name: v1.3.3
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.3.3
+      published_at: "2022-11-02T16:31:35Z"
+      tag_name: v1.3.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.3.4
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/80363428/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/80363428
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.3.3
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/81842803/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/81842803
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.3.4
 meta:
   dependencies:
     atlantis:
@@ -5261,3 +5271,57 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/80363428/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/80363428
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.3.3
+      1.3.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/81842803/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
+            events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
+            following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-tf-core
+            id: 82990137
+            login: hc-github-team-tf-core
+            node_id: MDQ6VXNlcjgyOTkwMTM3
+            organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
+            repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-tf-core
+          body: |+
+            ## 1.3.4 (November 02, 2022)
+
+            BUG FIXES:
+
+            * Fix invalid refresh-only plan caused by data sources being deferred to apply ([#32111](https://github.com/hashicorp/terraform/issues/32111))
+            * Optimize the handling of condition checks during apply to prevent performance regressions with large numbers of instances ([#32123](https://github.com/hashicorp/terraform/issues/32123))
+            * Output preconditions should not be evaluated during destroy ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+            * Fix crash from `console` when outputs contain preconditions ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+            * Destroy with no state would still attempt to evaluate some values ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+            * Prevent unnecessary evaluation and planning of resources during the pre-destroy refresh ([#32051](https://github.com/hashicorp/terraform/issues/32051))
+            * AzureRM Backend: support for generic OIDC authentication via the `oidc_token` and `oidc_token_file_path` properties ([#31966](https://github.com/hashicorp/terraform/issues/31966))
+            * Input and Module Variables: Convert variable types before attempting to apply default values. ([#32027](https://github.com/hashicorp/terraform/issues/32027))
+            * When installing remote module packages delivered in tar format, Terraform now limits the tar header block size to 1MiB to avoid unbounded memory usage for maliciously-crafted module packages. ([#32135](https://github.com/hashicorp/terraform/issues/32135))
+            * Terraform will now reject excessively-complex regular expression patterns passed to the `regex`, `regexall`, and `replace` functions, to avoid unbounded memory usage for maliciously-crafted patterns. This change should not affect any reasonable patterns intended for practical use. ([#32135](https://github.com/hashicorp/terraform/issues/32135))
+            * Terraform on Windows now rejects invalid environment variables whose values contain the NUL character when propagating environment variables to a child process such as a provider plugin. Previously Terraform would incorrectly treat that character as a separator between two separate environment variables. ([#32135](https://github.com/hashicorp/terraform/issues/32135))
+
+          created_at: "2022-11-02T16:16:26Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.3.4
+          id: 81842803
+          name: v1.3.4
+          node_id: RE_kwDOAQ6CpM4E4NJz
+          prerelease: false
+          published_at: "2022-11-02T16:31:35Z"
+          tag_name: v1.3.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.3.4
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/81842803/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/81842803
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.3.4

@@ -74,9 +74,10 @@ RUN case "${TARGETARCH}" in \
     chmod g=u /etc/passwd && \
     curl -L -s --output git-lfs.tar.gz "https://github.com/git-lfs/git-lfs/releases/download/v${GIT_LFS_VERSION}/git-lfs-linux-${TARGETARCH}-v${GIT_LFS_VERSION}.tar.gz" && \
     tar -xf git-lfs.tar.gz && \
-    chmod +x git-lfs && \
-    mv git-lfs /usr/bin/git-lfs && \
-    git-lfs --version
+    chmod +x ./git-lfs-${GIT_LFS_VERSION}/git-lfs && \
+    mv ./git-lfs-${GIT_LFS_VERSION}/git-lfs /usr/bin/git-lfs && \
+    rm ./git-lfs-${GIT_LFS_VERSION} && \
+    rm git-lfs.tar.gz
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["server"]

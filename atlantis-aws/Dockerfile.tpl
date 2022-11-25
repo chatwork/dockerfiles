@@ -65,7 +65,7 @@ RUN case "${TARGETARCH}" in \
     chmod +x gosu && \
     mv gosu /bin && \
     gosu --version && \
-    yum install -y shadow-utils && \
+    yum install -y shadow-utils git && \
     groupadd atlantis && \
     adduser -g atlantis atlantis && \
     usermod -aG root atlantis && \

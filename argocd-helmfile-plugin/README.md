@@ -43,6 +43,8 @@ data:
 
 and you need to add manifest sidecar in repo-server manifest.
 
+If you are using [argocd chart](https://github.com/argoproj/argo-helm), you do not need to set up initContainer.
+
 ```
     spec:
       containers:

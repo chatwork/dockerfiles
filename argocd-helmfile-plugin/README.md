@@ -9,7 +9,7 @@ This image is to enable the use of helmfile in the sidecar for argocd plugin.
 
 This image supports only helm3.
 
-## Usage
+# Usage
 
 You need configmap for cmp-plugin.
 

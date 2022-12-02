@@ -19,4 +19,4 @@ data:
 
 Plugin configuration in `argocd-cm` is deprecated in 2.6.
 
-You can use this image as a sidecar, or we have created a more lightweight sidecar[argocd-helmfile-plugin](https://github.com/chatwork/dockerfiles/tree/master/argocd-helmfile-plugin).
+You can use this image as a sidecar, or we have prepared a more lightweight [sidecar image](https://github.com/chatwork/dockerfiles/tree/master/argocd-helmfile-plugin).

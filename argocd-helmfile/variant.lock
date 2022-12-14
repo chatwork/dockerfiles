@@ -502,8 +502,8 @@ dependencies:
       url: https://api.github.com/repos/argoproj/argo-cd/releases/85198984
       zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.5.4
   helm:
-    version: 3.10.2
-    previousVersion: 3.10.1
+    version: 3.10.3
+    previousVersion: 3.10.2
     versions:
     - 3.9.2
     - 3.9.3
@@ -511,921 +511,944 @@ dependencies:
     - 3.10.0
     - 3.10.1
     - 3.10.2
+    - 3.10.3
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-darwin-amd64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:16Z"
-        download_count: 1
-        id: 84166626
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-amd64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:48Z"
+        download_count: 2
+        id: 88206626
         label: null
-        name: helm-v3.10.2-darwin-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEfi
+        name: helm-v3.10.3-darwin-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0i
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:17Z"
+        updated_at: "2022-12-14T17:34:49Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166626
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-darwin-amd64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:17Z"
-        download_count: 1
-        id: 84166628
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206626
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-amd64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:48Z"
+        download_count: 2
+        id: 88206624
         label: null
-        name: helm-v3.10.2-darwin-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEfk
+        name: helm-v3.10.3-darwin-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0g
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:17Z"
+        updated_at: "2022-12-14T17:34:48Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166628
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-darwin-amd64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:17Z"
-        download_count: 1
-        id: 84166629
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206624
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-amd64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:47Z"
+        download_count: 2
+        id: 88206622
         label: null
-        name: helm-v3.10.2-darwin-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEfl
+        name: helm-v3.10.3-darwin-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0e
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:18Z"
+        updated_at: "2022-12-14T17:34:48Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166629
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-darwin-arm64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:18Z"
-        download_count: 1
-        id: 84166630
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206622
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-arm64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:46Z"
+        download_count: 2
+        id: 88206620
         label: null
-        name: helm-v3.10.2-darwin-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEfm
+        name: helm-v3.10.3-darwin-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0c
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:18Z"
+        updated_at: "2022-12-14T17:34:47Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166630
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-darwin-arm64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:18Z"
-        download_count: 1
-        id: 84166632
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206620
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-arm64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:46Z"
+        download_count: 2
+        id: 88206619
         label: null
-        name: helm-v3.10.2-darwin-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEfo
+        name: helm-v3.10.3-darwin-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0b
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:18Z"
+        updated_at: "2022-12-14T17:34:46Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166632
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-darwin-arm64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:18Z"
-        download_count: 1
-        id: 84166633
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206619
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-arm64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:45Z"
+        download_count: 2
+        id: 88206618
         label: null
-        name: helm-v3.10.2-darwin-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEfp
+        name: helm-v3.10.3-darwin-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0a
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:19Z"
+        updated_at: "2022-12-14T17:34:46Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166633
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-386.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:19Z"
-        download_count: 1
-        id: 84166635
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206618
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-386.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:45Z"
+        download_count: 2
+        id: 88206617
         label: null
-        name: helm-v3.10.2-linux-386.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEfr
+        name: helm-v3.10.3-linux-386.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0Z
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:19Z"
+        updated_at: "2022-12-14T17:34:45Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166635
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-386.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:19Z"
-        download_count: 1
-        id: 84166636
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206617
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-386.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:44Z"
+        download_count: 2
+        id: 88206616
         label: null
-        name: helm-v3.10.2-linux-386.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEfs
+        name: helm-v3.10.3-linux-386.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0Y
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:20Z"
+        updated_at: "2022-12-14T17:34:45Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166636
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-386.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:20Z"
-        download_count: 1
-        id: 84166637
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206616
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-386.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:44Z"
+        download_count: 2
+        id: 88206615
         label: null
-        name: helm-v3.10.2-linux-386.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEft
+        name: helm-v3.10.3-linux-386.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0X
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:20Z"
+        updated_at: "2022-12-14T17:34:44Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166637
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-amd64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:20Z"
-        download_count: 11
-        id: 84166639
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206615
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-amd64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:43Z"
+        download_count: 13
+        id: 88206614
         label: null
-        name: helm-v3.10.2-linux-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEfv
+        name: helm-v3.10.3-linux-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0W
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:21Z"
+        updated_at: "2022-12-14T17:34:44Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166639
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-amd64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:21Z"
-        download_count: 8
-        id: 84166640
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206614
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-amd64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:43Z"
+        download_count: 9
+        id: 88206612
         label: null
-        name: helm-v3.10.2-linux-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEfw
+        name: helm-v3.10.3-linux-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0U
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:21Z"
+        updated_at: "2022-12-14T17:34:43Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166640
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-amd64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:21Z"
-        download_count: 1
-        id: 84166641
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206612
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-amd64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:42Z"
+        download_count: 2
+        id: 88206611
         label: null
-        name: helm-v3.10.2-linux-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEfx
+        name: helm-v3.10.3-linux-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0T
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:22Z"
+        updated_at: "2022-12-14T17:34:43Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166641
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-arm.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:22Z"
-        download_count: 1
-        id: 84166644
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206611
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:42Z"
+        download_count: 2
+        id: 88206610
         label: null
-        name: helm-v3.10.2-linux-arm.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEf0
+        name: helm-v3.10.3-linux-arm.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0S
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:22Z"
+        updated_at: "2022-12-14T17:34:42Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166644
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-arm.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:22Z"
-        download_count: 1
-        id: 84166645
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206610
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:41Z"
+        download_count: 2
+        id: 88206609
         label: null
-        name: helm-v3.10.2-linux-arm.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEf1
+        name: helm-v3.10.3-linux-arm.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0R
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:22Z"
+        updated_at: "2022-12-14T17:34:42Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166645
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-arm.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:22Z"
-        download_count: 1
-        id: 84166646
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206609
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:40Z"
+        download_count: 2
+        id: 88206606
         label: null
-        name: helm-v3.10.2-linux-arm.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEf2
+        name: helm-v3.10.3-linux-arm.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0O
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:23Z"
+        updated_at: "2022-12-14T17:34:41Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166646
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-arm64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:23Z"
-        download_count: 7
-        id: 84166648
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206606
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:40Z"
+        download_count: 4
+        id: 88206604
         label: null
-        name: helm-v3.10.2-linux-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEf4
+        name: helm-v3.10.3-linux-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0M
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:23Z"
+        updated_at: "2022-12-14T17:34:40Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166648
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-arm64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:23Z"
-        download_count: 7
-        id: 84166649
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206604
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:39Z"
+        download_count: 4
+        id: 88206603
         label: null
-        name: helm-v3.10.2-linux-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEf5
+        name: helm-v3.10.3-linux-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0L
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:24Z"
+        updated_at: "2022-12-14T17:34:40Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166649
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-arm64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:24Z"
-        download_count: 1
-        id: 84166651
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206603
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:39Z"
+        download_count: 2
+        id: 88206601
         label: null
-        name: helm-v3.10.2-linux-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEf7
+        name: helm-v3.10.3-linux-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0J
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:24Z"
+        updated_at: "2022-12-14T17:34:39Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166651
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-ppc64le.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:24Z"
-        download_count: 1
-        id: 84166654
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206601
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-ppc64le.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:38Z"
+        download_count: 2
+        id: 88206600
         label: null
-        name: helm-v3.10.2-linux-ppc64le.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEf-
+        name: helm-v3.10.3-linux-ppc64le.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0I
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:25Z"
+        updated_at: "2022-12-14T17:34:39Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166654
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-ppc64le.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:25Z"
-        download_count: 1
-        id: 84166656
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206600
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-ppc64le.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:38Z"
+        download_count: 2
+        id: 88206599
         label: null
-        name: helm-v3.10.2-linux-ppc64le.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEgA
+        name: helm-v3.10.3-linux-ppc64le.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0H
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:25Z"
+        updated_at: "2022-12-14T17:34:38Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166656
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-ppc64le.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:25Z"
-        download_count: 1
-        id: 84166658
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206599
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-ppc64le.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:37Z"
+        download_count: 2
+        id: 88206598
         label: null
-        name: helm-v3.10.2-linux-ppc64le.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEgC
+        name: helm-v3.10.3-linux-ppc64le.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0G
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:26Z"
+        updated_at: "2022-12-14T17:34:38Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166658
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-s390x.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:26Z"
-        download_count: 1
-        id: 84166659
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206598
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-s390x.tar.gz.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:37Z"
+        download_count: 2
+        id: 88206597
         label: null
-        name: helm-v3.10.2-linux-s390x.tar.gz.asc
-        node_id: RA_kwDOApspmc4FBEgD
+        name: helm-v3.10.3-linux-s390x.tar.gz.asc
+        node_id: RA_kwDOApspmc4FQe0F
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:26Z"
+        updated_at: "2022-12-14T17:34:37Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166659
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-s390x.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:26Z"
-        download_count: 1
-        id: 84166662
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206597
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-s390x.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:36Z"
+        download_count: 2
+        id: 88206596
         label: null
-        name: helm-v3.10.2-linux-s390x.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4FBEgG
+        name: helm-v3.10.3-linux-s390x.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0E
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:26Z"
+        updated_at: "2022-12-14T17:34:37Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166662
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-linux-s390x.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:26Z"
-        download_count: 1
-        id: 84166663
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206596
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-s390x.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:35Z"
+        download_count: 2
+        id: 88206595
         label: null
-        name: helm-v3.10.2-linux-s390x.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEgH
+        name: helm-v3.10.3-linux-s390x.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQe0D
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:27Z"
+        updated_at: "2022-12-14T17:34:36Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166663
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-windows-amd64.zip.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:27Z"
-        download_count: 1
-        id: 84166666
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206595
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-windows-amd64.zip.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:35Z"
+        download_count: 3
+        id: 88206593
         label: null
-        name: helm-v3.10.2-windows-amd64.zip.asc
-        node_id: RA_kwDOApspmc4FBEgK
+        name: helm-v3.10.3-windows-amd64.zip.asc
+        node_id: RA_kwDOApspmc4FQe0B
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:27Z"
+        updated_at: "2022-12-14T17:34:35Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166666
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-windows-amd64.zip.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:27Z"
-        download_count: 1
-        id: 84166668
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206593
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-windows-amd64.zip.sha256.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:34Z"
+        download_count: 2
+        id: 88206592
         label: null
-        name: helm-v3.10.2-windows-amd64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4FBEgM
+        name: helm-v3.10.3-windows-amd64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4FQe0A
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:28Z"
+        updated_at: "2022-12-14T17:34:35Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166668
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.2/helm-v3.10.2-windows-amd64.zip.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2022-11-10T17:12:28Z"
-        download_count: 1
-        id: 84166670
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206592
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-windows-amd64.zip.sha256sum.asc
+        content_type: text/plain
+        created_at: "2022-12-14T17:34:33Z"
+        download_count: 2
+        id: 88206590
         label: null
-        name: helm-v3.10.2-windows-amd64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4FBEgO
+        name: helm-v3.10.3-windows-amd64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4FQez-
         size: 833
         state: uploaded
-        updated_at: "2022-11-10T17:12:28Z"
+        updated_at: "2022-12-14T17:34:34Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+          events_url: https://api.github.com/users/hickeyma/events{/privacy}
+          followers_url: https://api.github.com/users/hickeyma/followers
+          following_url: https://api.github.com/users/hickeyma/following{/other_user}
+          gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
+          html_url: https://github.com/hickeyma
+          id: 14892004
+          login: hickeyma
+          node_id: MDQ6VXNlcjE0ODkyMDA0
+          organizations_url: https://api.github.com/users/hickeyma/orgs
+          received_events_url: https://api.github.com/users/hickeyma/received_events
+          repos_url: https://api.github.com/users/hickeyma/repos
           site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
           type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/84166670
-      assets_url: https://api.github.com/repos/helm/helm/releases/82711070/assets
+          url: https://api.github.com/users/hickeyma
+        url: https://api.github.com/repos/helm/helm/releases/assets/88206590
+      assets_url: https://api.github.com/repos/helm/helm/releases/86060398/assets
       author:
-        avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-        events_url: https://api.github.com/users/mattfarina/events{/privacy}
-        followers_url: https://api.github.com/users/mattfarina/followers
-        following_url: https://api.github.com/users/mattfarina/following{/other_user}
-        gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+        avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+        events_url: https://api.github.com/users/hickeyma/events{/privacy}
+        followers_url: https://api.github.com/users/hickeyma/followers
+        following_url: https://api.github.com/users/hickeyma/following{/other_user}
+        gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
         gravatar_id: ""
-        html_url: https://github.com/mattfarina
-        id: 62991
-        login: mattfarina
-        node_id: MDQ6VXNlcjYyOTkx
-        organizations_url: https://api.github.com/users/mattfarina/orgs
-        received_events_url: https://api.github.com/users/mattfarina/received_events
-        repos_url: https://api.github.com/users/mattfarina/repos
+        html_url: https://github.com/hickeyma
+        id: 14892004
+        login: hickeyma
+        node_id: MDQ6VXNlcjE0ODkyMDA0
+        organizations_url: https://api.github.com/users/hickeyma/orgs
+        received_events_url: https://api.github.com/users/hickeyma/received_events
+        repos_url: https://api.github.com/users/hickeyma/repos
         site_admin: false
-        starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-        subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+        starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
         type: User
-        url: https://api.github.com/users/mattfarina
-      body: "Helm v3.10.2 is a patch release. Users are encouraged to upgrade for
-        the best experience. Users are encouraged to upgrade for the best experience.\r\n\r\nThe
+        url: https://api.github.com/users/hickeyma
+      body: "## v3.10.3\r\n\r\nHelm v3.10.3 is a security (patch) release. Users are
+        strongly recommended to update to this release.\r\n\r\nWhile fuzz testing
+        Helm, provided by the CNCF:\r\n\r\n- a possible stack overflow was discovered
+        with the _strvals_ package. Stack overflow cannot be recovered from in Go.
+        This can potentially be used to produce a denial of service (DOS) for SDK
+        users. More details are available in [the advisory](https://github.com/helm/helm/security/advisories/GHSA-6rx9-889q-vv2r).\r\n-
+        a possible segmentation violation was discovered with the _repo_ package.
+        Some segmentation violations cannot be recovered from in Go. This can potentially
+        be used to produce a denial of service (DOS) for SDK users. More details are
+        available in [the advisory](https://github.com/helm/helm/security/advisories/GHSA-53c4-hhmh-vw5q).\r\n-
+        a possible segmentation violation was discovered with the _chartutil_ package.
+        This can potentially be used to produce a denial of service (DOS)  for SDK
+        users. More details are available in [the advisory](https://github.com/helm/helm/security/advisories/GHSA-67fx-wx78-jx33)\r\n\r\nThe
         community keeps growing, and we'd love to see you there!\r\n\r\n- Join the
         discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n  -  for
         questions and just to hang out\r\n  -  for discussing PRs, code, and bugs\r\n-
         Hang out at the Public Developer Call: Thursday, 9:30 Pacific via [Zoom](https://zoom.us/j/696660622)\r\n-
         Test, debug, and contribute charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
-        Installation and Upgrading\r\n\r\nDownload Helm v3.10.2. The common platform
-        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.10.2-darwin-amd64.tar.gz)
-        ([checksum](https://get.helm.sh/helm-v3.10.2-darwin-amd64.tar.gz.sha256sum)
-        / e889960e4c1d7e2dfdb91b102becfaf22700cb86dc3e3553d9bebd7bab5a3803)\r\n- [MacOS
-        arm64](https://get.helm.sh/helm-v3.10.2-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-darwin-arm64.tar.gz.sha256sum)
-        / 460441eea1764ca438e29fa0e38aa0d2607402f753cb656a4ab0da9223eda494)\r\n- [Linux
-        amd64](https://get.helm.sh/helm-v3.10.2-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-linux-amd64.tar.gz.sha256sum)
-        / 2315941a13291c277dac9f65e75ead56386440d3907e0540bf157ae70f188347)\r\n- [Linux
-        arm](https://get.helm.sh/helm-v3.10.2-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-linux-arm.tar.gz.sha256sum)
-        / 25af344f46348958baa1c758cdf3b204ede3ddc483be1171ed3738d47efd0aae)\r\n- [Linux
-        arm64](https://get.helm.sh/helm-v3.10.2-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-linux-arm64.tar.gz.sha256sum)
-        / 57fa17b6bb040a3788116557a72579f2180ea9620b4ee8a9b7244e5901df02e4)\r\n- [Linux
-        i386](https://get.helm.sh/helm-v3.10.2-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-linux-386.tar.gz.sha256sum)
-        / ac9cbef2ec1237e2723ee8d3a92d1c4525a2da7cecc11336ba67de9bb6b473f0)\r\n- [Linux
-        ppc64le](https://get.helm.sh/helm-v3.10.2-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-linux-ppc64le.tar.gz.sha256sum)
-        / 53a578b84155d31c3e62dd93a88586b75e876dae82c7912c895ee5a574fa6209)\r\n- [Linux
-        s390x](https://get.helm.sh/helm-v3.10.2-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.2-linux-s390x.tar.gz.sha256sum)
-        / 33cb4a3382bea6bcd7eb7f385dd08941bdc84d0020345951eb467fbc8f5ccb60)\r\n- [Windows
-        amd64](https://get.helm.sh/helm-v3.10.2-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.10.2-windows-amd64.zip.sha256sum)
-        / f1a3190adecc26270bbef4f3ab2d1a56509f9d8df95413cdd6e3151f6f367862)\r\n\r\nThis
-        release was signed with `672C 657B E06B 4B30 969C 4A57 4614 49C2 5E36 B98E
-        ` and can be found at @mattfarina [keybase account](https://keybase.io/mattfarina).
+        Installation and Upgrading\r\n\r\nDownload Helm v3.10.3. The common platform
+        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.10.3-darwin-amd64.tar.gz)
+        ([checksum](https://get.helm.sh/helm-v3.10.3-darwin-amd64.tar.gz.sha256sum)
+        / 77a94ebd37eab4d14aceaf30a372348917830358430fcd7e09761eed69f08be5)\r\n- [MacOS
+        arm64](https://get.helm.sh/helm-v3.10.3-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-darwin-arm64.tar.gz.sha256sum)
+        / 4f3490654349d6fee8d4055862efdaaf9422eca1ffd2a15393394fd948ae3377)\r\n- [Linux
+        amd64](https://get.helm.sh/helm-v3.10.3-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-amd64.tar.gz.sha256sum)
+        / 950439759ece902157cf915b209b8d694e6f675eaab5099fb7894f30eeaee9a2)\r\n- [Linux
+        arm](https://get.helm.sh/helm-v3.10.3-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-arm.tar.gz.sha256sum)
+        / dca718eb68c72c51fc7157c4c2ebc8ce7ac79b95fc9355c5427ded99e913ec4c)\r\n- [Linux
+        arm64](https://get.helm.sh/helm-v3.10.3-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-arm64.tar.gz.sha256sum)
+        / 260cda5ff2ed5d01dd0fd6e7e09bc80126e00d8bdc55f3269d05129e32f6f99d)\r\n- [Linux
+        i386](https://get.helm.sh/helm-v3.10.3-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-386.tar.gz.sha256sum)
+        / 592e98a492cb782aa7cd67e9afad76e51cd68f5160367600fe542c2d96aa0ad4)\r\n- [Linux
+        ppc64le](https://get.helm.sh/helm-v3.10.3-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-ppc64le.tar.gz.sha256sum)
+        / 93cdf398abc68e388d1b46d49d8e1197544930ecd3e81cc58d0a87a4579d60ed)\r\n- [Linux
+        s390x](https://get.helm.sh/helm-v3.10.3-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-s390x.tar.gz.sha256sum)
+        / 6cfa0b9078221f980ef400dc40c95eb71be81d14fdf247ca55efedb068e1d4fa)\r\n- [Windows
+        amd64](https://get.helm.sh/helm-v3.10.3-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.10.3-windows-amd64.zip.sha256sum)
+        / 5d97aa26830c1cd6c520815255882f148040587fd7cdddb61ef66e4c081566e0)\r\n\r\nThis
+        release was signed with `F126 1BDE 9290 12C8 FF2E 501D 6EA5 D759 8529 A53E
+        ` and can be found at @hickeyma [keybase account](https://keybase.io/hickeyma).
         Please use the attached signatures for verifying this release using `gpg`.\r\n\r\nThe
         [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you going
         from there. For **upgrade instructions** or detailed installation notes, check
         the [install guide](https://helm.sh/docs/intro/install/). You can also use
         a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
-        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.10.3 will contain
-        only bug fixes and be released on December 14, 2022\r\n- 3.11.0 is the next
-        feature releaseand be released on January 18, 2023\r\n\r\n## Changelog\r\n\r\n-
-        fix a few function names on comments 50f003e5ee8704ec937a756c646870227d7c8b58
-        (cui fliter)\r\n- redirect registry client output to stderr c3a62f7880be8bdc904f2d54c4b0c16a86ec204c
-        (Cyril Jouve)\r\n- Readiness & liveness probes correct port 727bdf1813df73073d5a8eba4581201ef6518f93
-        (Peter Leong)"
-      created_at: "2022-11-10T14:53:00Z"
+        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.11.0 is the next
+        feature release and will be on January 18, 2023.\r\n\r\n## Changelog\r\n\r\n-
+        Fix backwards compatibility 835b7334cfe2e5e27870ab3ed4135f136eecc704 (Martin
+        Hickey)\r\n- Update string handling 3caf8b586b47e838e492f9ec05396bf8c5851b92
+        (Martin Hickey)\r\n- Update repo handling 7c0e203529d4b9d51c5fe57c9e0bd9df1bd95ab4
+        (Martin Hickey)\r\n- Update schema validation handling f4b93226c6066e009a5162d0b08debbf3d82a67f
+        (Martin Hickey)"
+      created_at: "2022-12-14T15:17:33Z"
       draft: false
-      html_url: https://github.com/helm/helm/releases/tag/v3.10.2
-      id: 82711070
+      html_url: https://github.com/helm/helm/releases/tag/v3.10.3
+      id: 86060398
       mentions_count: 1
-      name: Helm v3.10.2
-      node_id: RE_kwDOApspmc4E7hIe
+      name: Helm v3.10.3
+      node_id: RE_kwDOApspmc4FIS1u
       prerelease: false
-      published_at: "2022-11-10T17:13:10Z"
-      tag_name: v3.10.2
-      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.10.2
-      target_commitish: release-3.10
-      upload_url: https://uploads.github.com/repos/helm/helm/releases/82711070/assets{?name,label}
-      url: https://api.github.com/repos/helm/helm/releases/82711070
-      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.10.2
+      published_at: "2022-12-14T17:54:36Z"
+      reactions:
+        "+1": 0
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 1
+        total_count: 1
+        url: https://api.github.com/repos/helm/helm/releases/86060398/reactions
+      tag_name: v3.10.3
+      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.10.3
+      target_commitish: main
+      upload_url: https://uploads.github.com/repos/helm/helm/releases/86060398/assets{?name,label}
+      url: https://api.github.com/repos/helm/helm/releases/86060398
+      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.10.3
   helmfile:
     version: 0.148.1
     previousVersion: 0.148.0
@@ -12604,6 +12627,946 @@ meta:
           upload_url: https://uploads.github.com/repos/helm/helm/releases/82711070/assets{?name,label}
           url: https://api.github.com/repos/helm/helm/releases/82711070
           zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.10.2
+      3.10.3:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-amd64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:48Z"
+            download_count: 2
+            id: 88206626
+            label: null
+            name: helm-v3.10.3-darwin-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0i
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:49Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206626
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-amd64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:48Z"
+            download_count: 2
+            id: 88206624
+            label: null
+            name: helm-v3.10.3-darwin-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0g
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:48Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206624
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-amd64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:47Z"
+            download_count: 2
+            id: 88206622
+            label: null
+            name: helm-v3.10.3-darwin-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0e
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:48Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206622
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-arm64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:46Z"
+            download_count: 2
+            id: 88206620
+            label: null
+            name: helm-v3.10.3-darwin-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0c
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206620
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-arm64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:46Z"
+            download_count: 2
+            id: 88206619
+            label: null
+            name: helm-v3.10.3-darwin-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0b
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206619
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-darwin-arm64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:45Z"
+            download_count: 2
+            id: 88206618
+            label: null
+            name: helm-v3.10.3-darwin-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0a
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206618
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-386.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:45Z"
+            download_count: 2
+            id: 88206617
+            label: null
+            name: helm-v3.10.3-linux-386.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0Z
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206617
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-386.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:44Z"
+            download_count: 2
+            id: 88206616
+            label: null
+            name: helm-v3.10.3-linux-386.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0Y
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206616
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-386.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:44Z"
+            download_count: 2
+            id: 88206615
+            label: null
+            name: helm-v3.10.3-linux-386.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0X
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:44Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206615
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-amd64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:43Z"
+            download_count: 13
+            id: 88206614
+            label: null
+            name: helm-v3.10.3-linux-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0W
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:44Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206614
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-amd64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:43Z"
+            download_count: 9
+            id: 88206612
+            label: null
+            name: helm-v3.10.3-linux-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0U
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206612
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-amd64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:42Z"
+            download_count: 2
+            id: 88206611
+            label: null
+            name: helm-v3.10.3-linux-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0T
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206611
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:42Z"
+            download_count: 2
+            id: 88206610
+            label: null
+            name: helm-v3.10.3-linux-arm.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0S
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206610
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:41Z"
+            download_count: 2
+            id: 88206609
+            label: null
+            name: helm-v3.10.3-linux-arm.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0R
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206609
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:40Z"
+            download_count: 2
+            id: 88206606
+            label: null
+            name: helm-v3.10.3-linux-arm.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0O
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206606
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:40Z"
+            download_count: 4
+            id: 88206604
+            label: null
+            name: helm-v3.10.3-linux-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0M
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206604
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:39Z"
+            download_count: 4
+            id: 88206603
+            label: null
+            name: helm-v3.10.3-linux-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0L
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206603
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-arm64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:39Z"
+            download_count: 2
+            id: 88206601
+            label: null
+            name: helm-v3.10.3-linux-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0J
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206601
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-ppc64le.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:38Z"
+            download_count: 2
+            id: 88206600
+            label: null
+            name: helm-v3.10.3-linux-ppc64le.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0I
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206600
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-ppc64le.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:38Z"
+            download_count: 2
+            id: 88206599
+            label: null
+            name: helm-v3.10.3-linux-ppc64le.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0H
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206599
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-ppc64le.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:37Z"
+            download_count: 2
+            id: 88206598
+            label: null
+            name: helm-v3.10.3-linux-ppc64le.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0G
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206598
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-s390x.tar.gz.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:37Z"
+            download_count: 2
+            id: 88206597
+            label: null
+            name: helm-v3.10.3-linux-s390x.tar.gz.asc
+            node_id: RA_kwDOApspmc4FQe0F
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:37Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206597
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-s390x.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:36Z"
+            download_count: 2
+            id: 88206596
+            label: null
+            name: helm-v3.10.3-linux-s390x.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0E
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:37Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206596
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-linux-s390x.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:35Z"
+            download_count: 2
+            id: 88206595
+            label: null
+            name: helm-v3.10.3-linux-s390x.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQe0D
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:36Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206595
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-windows-amd64.zip.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:35Z"
+            download_count: 3
+            id: 88206593
+            label: null
+            name: helm-v3.10.3-windows-amd64.zip.asc
+            node_id: RA_kwDOApspmc4FQe0B
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:35Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206593
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-windows-amd64.zip.sha256.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:34Z"
+            download_count: 2
+            id: 88206592
+            label: null
+            name: helm-v3.10.3-windows-amd64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4FQe0A
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:35Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206592
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.10.3/helm-v3.10.3-windows-amd64.zip.sha256sum.asc
+            content_type: text/plain
+            created_at: "2022-12-14T17:34:33Z"
+            download_count: 2
+            id: 88206590
+            label: null
+            name: helm-v3.10.3-windows-amd64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4FQez-
+            size: 833
+            state: uploaded
+            updated_at: "2022-12-14T17:34:34Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+              events_url: https://api.github.com/users/hickeyma/events{/privacy}
+              followers_url: https://api.github.com/users/hickeyma/followers
+              following_url: https://api.github.com/users/hickeyma/following{/other_user}
+              gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/hickeyma
+              id: 14892004
+              login: hickeyma
+              node_id: MDQ6VXNlcjE0ODkyMDA0
+              organizations_url: https://api.github.com/users/hickeyma/orgs
+              received_events_url: https://api.github.com/users/hickeyma/received_events
+              repos_url: https://api.github.com/users/hickeyma/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+              type: User
+              url: https://api.github.com/users/hickeyma
+            url: https://api.github.com/repos/helm/helm/releases/assets/88206590
+          assets_url: https://api.github.com/repos/helm/helm/releases/86060398/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/14892004?v=4
+            events_url: https://api.github.com/users/hickeyma/events{/privacy}
+            followers_url: https://api.github.com/users/hickeyma/followers
+            following_url: https://api.github.com/users/hickeyma/following{/other_user}
+            gists_url: https://api.github.com/users/hickeyma/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hickeyma
+            id: 14892004
+            login: hickeyma
+            node_id: MDQ6VXNlcjE0ODkyMDA0
+            organizations_url: https://api.github.com/users/hickeyma/orgs
+            received_events_url: https://api.github.com/users/hickeyma/received_events
+            repos_url: https://api.github.com/users/hickeyma/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hickeyma/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hickeyma/subscriptions
+            type: User
+            url: https://api.github.com/users/hickeyma
+          body: "## v3.10.3\r\n\r\nHelm v3.10.3 is a security (patch) release. Users
+            are strongly recommended to update to this release.\r\n\r\nWhile fuzz
+            testing Helm, provided by the CNCF:\r\n\r\n- a possible stack overflow
+            was discovered with the _strvals_ package. Stack overflow cannot be recovered
+            from in Go. This can potentially be used to produce a denial of service
+            (DOS) for SDK users. More details are available in [the advisory](https://github.com/helm/helm/security/advisories/GHSA-6rx9-889q-vv2r).\r\n-
+            a possible segmentation violation was discovered with the _repo_ package.
+            Some segmentation violations cannot be recovered from in Go. This can
+            potentially be used to produce a denial of service (DOS) for SDK users.
+            More details are available in [the advisory](https://github.com/helm/helm/security/advisories/GHSA-53c4-hhmh-vw5q).\r\n-
+            a possible segmentation violation was discovered with the _chartutil_
+            package. This can potentially be used to produce a denial of service (DOS)
+            \ for SDK users. More details are available in [the advisory](https://github.com/helm/helm/security/advisories/GHSA-67fx-wx78-jx33)\r\n\r\nThe
+            community keeps growing, and we'd love to see you there!\r\n\r\n- Join
+            the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+            \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
+            and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
+            via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute
+            charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
+            Installation and Upgrading\r\n\r\nDownload Helm v3.10.3. The common platform
+            binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.10.3-darwin-amd64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.10.3-darwin-amd64.tar.gz.sha256sum)
+            / 77a94ebd37eab4d14aceaf30a372348917830358430fcd7e09761eed69f08be5)\r\n-
+            [MacOS arm64](https://get.helm.sh/helm-v3.10.3-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-darwin-arm64.tar.gz.sha256sum)
+            / 4f3490654349d6fee8d4055862efdaaf9422eca1ffd2a15393394fd948ae3377)\r\n-
+            [Linux amd64](https://get.helm.sh/helm-v3.10.3-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-amd64.tar.gz.sha256sum)
+            / 950439759ece902157cf915b209b8d694e6f675eaab5099fb7894f30eeaee9a2)\r\n-
+            [Linux arm](https://get.helm.sh/helm-v3.10.3-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-arm.tar.gz.sha256sum)
+            / dca718eb68c72c51fc7157c4c2ebc8ce7ac79b95fc9355c5427ded99e913ec4c)\r\n-
+            [Linux arm64](https://get.helm.sh/helm-v3.10.3-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-arm64.tar.gz.sha256sum)
+            / 260cda5ff2ed5d01dd0fd6e7e09bc80126e00d8bdc55f3269d05129e32f6f99d)\r\n-
+            [Linux i386](https://get.helm.sh/helm-v3.10.3-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-386.tar.gz.sha256sum)
+            / 592e98a492cb782aa7cd67e9afad76e51cd68f5160367600fe542c2d96aa0ad4)\r\n-
+            [Linux ppc64le](https://get.helm.sh/helm-v3.10.3-linux-ppc64le.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.10.3-linux-ppc64le.tar.gz.sha256sum)
+            / 93cdf398abc68e388d1b46d49d8e1197544930ecd3e81cc58d0a87a4579d60ed)\r\n-
+            [Linux s390x](https://get.helm.sh/helm-v3.10.3-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.10.3-linux-s390x.tar.gz.sha256sum)
+            / 6cfa0b9078221f980ef400dc40c95eb71be81d14fdf247ca55efedb068e1d4fa)\r\n-
+            [Windows amd64](https://get.helm.sh/helm-v3.10.3-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.10.3-windows-amd64.zip.sha256sum)
+            / 5d97aa26830c1cd6c520815255882f148040587fd7cdddb61ef66e4c081566e0)\r\n\r\nThis
+            release was signed with `F126 1BDE 9290 12C8 FF2E 501D 6EA5 D759 8529
+            A53E ` and can be found at @hickeyma [keybase account](https://keybase.io/hickeyma).
+            Please use the attached signatures for verifying this release using `gpg`.\r\n\r\nThe
+            [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you
+            going from there. For **upgrade instructions** or detailed installation
+            notes, check the [install guide](https://helm.sh/docs/intro/install/).
+            You can also use a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
+            on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.11.0 is the
+            next feature release and will be on January 18, 2023.\r\n\r\n## Changelog\r\n\r\n-
+            Fix backwards compatibility 835b7334cfe2e5e27870ab3ed4135f136eecc704 (Martin
+            Hickey)\r\n- Update string handling 3caf8b586b47e838e492f9ec05396bf8c5851b92
+            (Martin Hickey)\r\n- Update repo handling 7c0e203529d4b9d51c5fe57c9e0bd9df1bd95ab4
+            (Martin Hickey)\r\n- Update schema validation handling f4b93226c6066e009a5162d0b08debbf3d82a67f
+            (Martin Hickey)"
+          created_at: "2022-12-14T15:17:33Z"
+          draft: false
+          html_url: https://github.com/helm/helm/releases/tag/v3.10.3
+          id: 86060398
+          mentions_count: 1
+          name: Helm v3.10.3
+          node_id: RE_kwDOApspmc4FIS1u
+          prerelease: false
+          published_at: "2022-12-14T17:54:36Z"
+          reactions:
+            "+1": 0
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 1
+            total_count: 1
+            url: https://api.github.com/repos/helm/helm/releases/86060398/reactions
+          tag_name: v3.10.3
+          tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.10.3
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/helm/helm/releases/86060398/assets{?name,label}
+          url: https://api.github.com/repos/helm/helm/releases/86060398
+          zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.10.3
     helmfile:
       0.145.3:
         githubRelease:

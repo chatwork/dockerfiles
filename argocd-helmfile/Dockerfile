@@ -1,6 +1,6 @@
 FROM argoproj/argocd:v2.5.4
 
-LABEL version="2.5.4-0.148.1"
+LABEL version="2.5.4-0.149.0"
 LABEL maintainer="shinya@chatwork.com"
 
 # Switch to root for the ability to perform install
@@ -9,7 +9,7 @@ USER root
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG HELMFILE_VERSION=0.148.1
+ARG HELMFILE_VERSION=0.149.0
 ARG HELM_VERSION=3.10.3
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"

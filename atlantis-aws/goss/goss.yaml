@@ -25,15 +25,15 @@ command:
   /usr/bin/conftest --version:
     exit-status: 0
     stdout:
-      - 0.37.0
+      - 0.38.0
   /usr/local/bin/terraform --version:
     exit-status: 0
     stdout:
-      - 1.3.6
+      - 1.3.7
   /usr/local/bin/atlantis version:
     exit-status: 0
     stdout:
-      - 0.21.0
+      - 0.22.2
   /bin/gosu --version:
     exit-status: 0
     stdout:

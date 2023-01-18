@@ -1,7 +1,7 @@
 dependencies:
   kubectl:
-    version: 1.23.15
-    previousVersion: 1.23.14
+    version: 1.23.16
+    previousVersion: 1.23.15
     versions:
     - 1.23.9
     - 1.23.10
@@ -10,19 +10,20 @@ dependencies:
     - 1.23.13
     - 1.23.14
     - 1.23.15
+    - 1.23.16
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/kubernetes/kubernetes/releases/download/v1.23.15/kubernetes.tar.gz
+      - browser_download_url: https://github.com/kubernetes/kubernetes/releases/download/v1.23.16/kubernetes.tar.gz
         content_type: application/x-gzip
-        created_at: "2022-12-08T19:10:22Z"
-        download_count: 4
-        id: 87502187
+        created_at: "2023-01-18T21:50:18Z"
+        download_count: 3
+        id: 92198865
         label: Kubernetes Source Code
         name: kubernetes.tar.gz
-        node_id: RA_kwDOAToIks4FNy1r
-        size: 569803
+        node_id: RA_kwDOAToIks4FftfR
+        size: 563133
         state: uploaded
-        updated_at: "2022-12-08T19:10:22Z"
+        updated_at: "2023-01-18T21:50:19Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
           events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
@@ -42,8 +43,8 @@ dependencies:
           subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
           type: User
           url: https://api.github.com/users/k8s-release-robot
-        url: https://api.github.com/repos/kubernetes/kubernetes/releases/assets/87502187
-      assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/85475750/assets
+        url: https://api.github.com/repos/kubernetes/kubernetes/releases/assets/92198865
+      assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/89465459/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
         events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
@@ -71,31 +72,20 @@ dependencies:
 
 
 
-      created_at: "2022-12-08T10:41:43Z"
+      created_at: "2023-01-18T15:53:08Z"
       draft: false
-      html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.23.15
-      id: 85475750
-      name: Kubernetes v1.23.15
-      node_id: RE_kwDOAToIks4FGEGm
+      html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.23.16
+      id: 89465459
+      name: Kubernetes v1.23.16
+      node_id: RE_kwDOAToIks4FVSJz
       prerelease: false
-      published_at: "2022-12-08T19:10:18Z"
-      reactions:
-        "+1": 3
-        "-1": 0
-        confused: 0
-        eyes: 0
-        heart: 0
-        hooray: 0
-        laugh: 0
-        rocket: 0
-        total_count: 3
-        url: https://api.github.com/repos/kubernetes/kubernetes/releases/85475750/reactions
-      tag_name: v1.23.15
-      tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.23.15
+      published_at: "2023-01-18T21:50:14Z"
+      tag_name: v1.23.16
+      tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.23.16
       target_commitish: master
-      upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/85475750/assets{?name,label}
-      url: https://api.github.com/repos/kubernetes/kubernetes/releases/85475750
-      zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.23.15
+      upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/89465459/assets{?name,label}
+      url: https://api.github.com/repos/kubernetes/kubernetes/releases/89465459
+      zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.23.16
 meta:
   dependencies:
     kubectl:
@@ -566,3 +556,79 @@ meta:
           upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/85475750/assets{?name,label}
           url: https://api.github.com/repos/kubernetes/kubernetes/releases/85475750
           zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.23.15
+      1.23.16:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/kubernetes/kubernetes/releases/download/v1.23.16/kubernetes.tar.gz
+            content_type: application/x-gzip
+            created_at: "2023-01-18T21:50:18Z"
+            download_count: 3
+            id: 92198865
+            label: Kubernetes Source Code
+            name: kubernetes.tar.gz
+            node_id: RA_kwDOAToIks4FftfR
+            size: 563133
+            state: uploaded
+            updated_at: "2023-01-18T21:50:19Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
+              events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
+              followers_url: https://api.github.com/users/k8s-release-robot/followers
+              following_url: https://api.github.com/users/k8s-release-robot/following{/other_user}
+              gists_url: https://api.github.com/users/k8s-release-robot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/k8s-release-robot
+              id: 33505452
+              login: k8s-release-robot
+              node_id: MDQ6VXNlcjMzNTA1NDUy
+              organizations_url: https://api.github.com/users/k8s-release-robot/orgs
+              received_events_url: https://api.github.com/users/k8s-release-robot/received_events
+              repos_url: https://api.github.com/users/k8s-release-robot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/k8s-release-robot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
+              type: User
+              url: https://api.github.com/users/k8s-release-robot
+            url: https://api.github.com/repos/kubernetes/kubernetes/releases/assets/92198865
+          assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/89465459/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
+            events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
+            followers_url: https://api.github.com/users/k8s-release-robot/followers
+            following_url: https://api.github.com/users/k8s-release-robot/following{/other_user}
+            gists_url: https://api.github.com/users/k8s-release-robot/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/k8s-release-robot
+            id: 33505452
+            login: k8s-release-robot
+            node_id: MDQ6VXNlcjMzNTA1NDUy
+            organizations_url: https://api.github.com/users/k8s-release-robot/orgs
+            received_events_url: https://api.github.com/users/k8s-release-robot/received_events
+            repos_url: https://api.github.com/users/k8s-release-robot/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/k8s-release-robot/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
+            type: User
+            url: https://api.github.com/users/k8s-release-robot
+          body: |2+
+
+            See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md).
+
+            See [the CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md) for more details.
+
+
+
+          created_at: "2023-01-18T15:53:08Z"
+          draft: false
+          html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.23.16
+          id: 89465459
+          name: Kubernetes v1.23.16
+          node_id: RE_kwDOAToIks4FVSJz
+          prerelease: false
+          published_at: "2023-01-18T21:50:14Z"
+          tag_name: v1.23.16
+          tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.23.16
+          target_commitish: master
+          upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/89465459/assets{?name,label}
+          url: https://api.github.com/repos/kubernetes/kubernetes/releases/89465459
+          zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.23.16

@@ -1,11 +1,11 @@
 FROM chatwork/aws:2.9.12
 
 ARG TARGETARCH
-ARG ATLANTIS_VERSION=0.21.0
+ARG ATLANTIS_VERSION=0.22.2
 ARG GOSU_VERSION=1.16
 ARG GIT_LFS_VERSION=3.3.0
 ARG DUMB_INIT_VERSION=1.2.5
-ENV DEFAULT_TERRAFORM_VERSION=1.3.6
+ENV DEFAULT_TERRAFORM_VERSION=1.3.7
 LABEL version="${ATLANTIS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
@@ -29,7 +29,7 @@ RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1
     done && \
     ln -s "/usr/local/bin/tf/versions/${DEFAULT_TERRAFORM_VERSION}/terraform" /usr/local/bin/terraform
 
-ARG CONFTEST_VERSION=0.37.0
+ARG CONFTEST_VERSION=0.38.0
 ARG CONFTEST_RPM_FILE="conftest_${CONFTEST_VERSION}_linux_${TARGETARCH}.rpm"
 
 RUN curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_RPM_FILE} && \

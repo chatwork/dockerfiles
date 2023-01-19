@@ -1,4 +1,11 @@
-FROM mysql:5.7.40-debian
+ARG MYSQL_VERSION=5.7.41
+
+FROM mysql:${MYSQL_VERSION}-debian
+
+ARG MYSQL_VERSION=5.7.41
+LABEL version="${MYSQL_VERSION}"
+LABEL maintainer="keisuke.furuya@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 RUN apt-get update -y \
     && apt-get upgrade -y \

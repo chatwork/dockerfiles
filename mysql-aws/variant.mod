@@ -1,8 +1,8 @@
 provisioners:
   textReplace:
     Dockerfile:
-      from: "FROM mysql:{{ .mysql.previousVersion }}-debian"
-      to: "FROM mysql:{{ .mysql.version }}-debian"
+      from: "ARG MYSQL_VERSION={{ .mysql.previousVersion }}"
+      to: "ARG MYSQL_VERSION={{ .mysql.version }}"
 
 dependencies:
   mysql:

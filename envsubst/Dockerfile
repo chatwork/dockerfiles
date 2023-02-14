@@ -1,6 +1,6 @@
 FROM chatwork/alpine-sdk:3.16
 
-ARG ENVSUBST_VERSION=1.2.0
+ARG ENVSUBST_VERSION=1.4.2
 
 LABEL version="${ENVSUBST_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"

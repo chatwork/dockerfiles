@@ -1,7 +1,7 @@
 dependencies:
   atlantis:
-    version: 0.22.3
-    previousVersion: 0.22.2
+    version: 0.23.0
+    previousVersion: 0.22.3
     versions:
     - 0.19.8
     - 0.19.9
@@ -9,377 +9,201 @@ dependencies:
     - 0.21.0
     - 0.22.2
     - 0.22.3
+    - 0.23.0
     githubRelease:
-      assets:
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_darwin_amd64.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:17Z"
-        download_count: 1
-        id: 92209459
-        label: ""
-        name: atlantis_darwin_amd64.zip
-        node_id: RA_kwDOBy76Zc4FfwEz
-        size: 9518431
-        state: uploaded
-        updated_at: "2023-01-18T23:55:18Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209459
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_darwin_arm64.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:17Z"
-        download_count: 1
-        id: 92209461
-        label: ""
-        name: atlantis_darwin_arm64.zip
-        node_id: RA_kwDOBy76Zc4FfwE1
-        size: 9284388
-        state: uploaded
-        updated_at: "2023-01-18T23:55:19Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209461
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_linux_386.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:18Z"
-        download_count: 0
-        id: 92209463
-        label: ""
-        name: atlantis_linux_386.zip
-        node_id: RA_kwDOBy76Zc4FfwE3
-        size: 8728691
-        state: uploaded
-        updated_at: "2023-01-18T23:55:19Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209463
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_linux_amd64.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:16Z"
-        download_count: 7
-        id: 92209455
-        label: ""
-        name: atlantis_linux_amd64.zip
-        node_id: RA_kwDOBy76Zc4FfwEv
-        size: 9121701
-        state: uploaded
-        updated_at: "2023-01-18T23:55:16Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209455
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_linux_arm.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:14Z"
-        download_count: 0
-        id: 92209451
-        label: ""
-        name: atlantis_linux_arm.zip
-        node_id: RA_kwDOBy76Zc4FfwEr
-        size: 8662983
-        state: uploaded
-        updated_at: "2023-01-18T23:55:17Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209451
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_linux_arm64.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:10Z"
-        download_count: 2
-        id: 92209444
-        label: ""
-        name: atlantis_linux_arm64.zip
-        node_id: RA_kwDOBy76Zc4FfwEk
-        size: 8400106
-        state: uploaded
-        updated_at: "2023-01-18T23:55:12Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209444
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_windows_386.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:11Z"
-        download_count: 0
-        id: 92209447
-        label: ""
-        name: atlantis_windows_386.zip
-        node_id: RA_kwDOBy76Zc4FfwEn
-        size: 9077160
-        state: uploaded
-        updated_at: "2023-01-18T23:55:14Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209447
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/atlantis_windows_amd64.zip
-        content_type: application/zip
-        created_at: "2023-01-18T23:55:12Z"
-        download_count: 1
-        id: 92209449
-        label: ""
-        name: atlantis_windows_amd64.zip
-        node_id: RA_kwDOBy76Zc4FfwEp
-        size: 9239330
-        state: uploaded
-        updated_at: "2023-01-18T23:55:15Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209449
-      - browser_download_url: https://github.com/runatlantis/atlantis/releases/download/v0.22.3/checksums.txt
-        content_type: text/plain; charset=utf-8
-        created_at: "2023-01-18T23:55:11Z"
-        download_count: 4
-        id: 92209445
-        label: ""
-        name: checksums.txt
-        node_id: RA_kwDOBy76Zc4FfwEl
-        size: 728
-        state: uploaded
-        updated_at: "2023-01-18T23:55:11Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-        url: https://api.github.com/repos/runatlantis/atlantis/releases/assets/92209445
-      assets_url: https://api.github.com/repos/runatlantis/atlantis/releases/89475029/assets
+      assets: []
+      assets_url: https://api.github.com/repos/runatlantis/atlantis/releases/94126632/assets
       author:
-        avatar_url: https://avatars.githubusercontent.com/u/7775707?v=4
-        events_url: https://api.github.com/users/nitrocode/events{/privacy}
-        followers_url: https://api.github.com/users/nitrocode/followers
-        following_url: https://api.github.com/users/nitrocode/following{/other_user}
-        gists_url: https://api.github.com/users/nitrocode/gists{/gist_id}
+        avatar_url: https://avatars.githubusercontent.com/u/2208324?v=4
+        events_url: https://api.github.com/users/jamengual/events{/privacy}
+        followers_url: https://api.github.com/users/jamengual/followers
+        following_url: https://api.github.com/users/jamengual/following{/other_user}
+        gists_url: https://api.github.com/users/jamengual/gists{/gist_id}
         gravatar_id: ""
-        html_url: https://github.com/nitrocode
-        id: 7775707
-        login: nitrocode
-        node_id: MDQ6VXNlcjc3NzU3MDc=
-        organizations_url: https://api.github.com/users/nitrocode/orgs
-        received_events_url: https://api.github.com/users/nitrocode/received_events
-        repos_url: https://api.github.com/users/nitrocode/repos
+        html_url: https://github.com/jamengual
+        id: 2208324
+        login: jamengual
+        node_id: MDQ6VXNlcjIyMDgzMjQ=
+        organizations_url: https://api.github.com/users/jamengual/orgs
+        received_events_url: https://api.github.com/users/jamengual/received_events
+        repos_url: https://api.github.com/users/jamengual/repos
         site_admin: false
-        starred_url: https://api.github.com/users/nitrocode/starred{/owner}{/repo}
-        subscriptions_url: https://api.github.com/users/nitrocode/subscriptions
+        starred_url: https://api.github.com/users/jamengual/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/jamengual/subscriptions
         type: User
-        url: https://api.github.com/users/nitrocode
-      body: "## What's Changed\r\n* chore(deps): update actions/checkout action to
-        v3.3.0 by @renovate in https://github.com/runatlantis/atlantis/pull/2943\r\n*
-        fix(deps): update module github.com/alicebob/miniredis/v2 to v2.30.0 by @renovate
-        in https://github.com/runatlantis/atlantis/pull/2945\r\n* chore(deps): update
-        node.js to v18.13.0 by @renovate in https://github.com/runatlantis/atlantis/pull/2944\r\n*
-        docs: add release svg to readme by @nitrocode in https://github.com/runatlantis/atlantis/pull/2946\r\n*
-        chore: use actions/checkout@v3 by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2948\r\n*
-        fix: set ctx.PullRequestStatus in import_command_runner for import_requirements
-        by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2936\r\n* chore(deps):
-        update dependency raviqqe/muffet to v2.6.3 by @renovate in https://github.com/runatlantis/atlantis/pull/2950\r\n*
-        feat(build): use `~=` and `>=` package constraints by @nitrocode in https://github.com/runatlantis/atlantis/pull/2896\r\n*
-        chore(docker): bump base to 2023-01-09 by @nitrocode in https://github.com/runatlantis/atlantis/pull/2956\r\n*
-        feat(tests): Add ApprovePoliciesCommandRunner owner tests by @DazWorrall in
-        https://github.com/runatlantis/atlantis/pull/2955\r\n* docs: Fix small wording
-        issue by @tomasmota in https://github.com/runatlantis/atlantis/pull/2957\r\n*
-        feat: Support team owners for conftest policies by @DazWorrall in https://github.com/runatlantis/atlantis/pull/2953\r\n*
-        fix: allow to unlock closed PRs by @johanneswuerbach in https://github.com/runatlantis/atlantis/pull/2916\r\n*
-        fix(deps): update module github.com/google/go-github/v49 to v49.1.0 by @renovate
-        in https://github.com/runatlantis/atlantis/pull/2959\r\n* chore(deps): update
-        alpine docker tag to v3.17.1 by @renovate in https://github.com/runatlantis/atlantis/pull/2961\r\n*
-        chore(deps): update dependency open-policy-agent/conftest to v0.38.0 by @renovate
-        in https://github.com/runatlantis/atlantis/pull/2964\r\n* chore(deps): update
-        golang docker tag to v1.19.5 by @renovate in https://github.com/runatlantis/atlantis/pull/2962\r\n*
-        chore(docker): use 11.6-slim by @nitrocode in https://github.com/runatlantis/atlantis/pull/2965\r\n*
-        chore(deps): use testing-env:latest by @nitrocode in https://github.com/runatlantis/atlantis/pull/2966\r\n*
-        chore(deps): update dependency open-policy-agent/conftest to v0.38.0 by @renovate
-        in https://github.com/runatlantis/atlantis/pull/2963\r\n* fix: trim space
-        markdown renderer by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2947\r\n*
-        chore(docker): Bump atlantis-base:2023-01-11 by @nitrocode in https://github.com/runatlantis/atlantis/pull/2968\r\n*
-        fix: atlantis import on workspaces by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2937\r\n*
-        chore(test): fix `atlantis import` test by @nitrocode in https://github.com/runatlantis/atlantis/pull/2970\r\n*
-        fix: Fix instrumented approve policies calling apply by @Fabianoshz in https://github.com/runatlantis/atlantis/pull/2977\r\n*
-        feat: PR check status to show summary e.g. Plan: 1 to add, 0 to change, 1
-        to destroy by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2983\r\n*
-        chore(deps): update node.js to v18.13.0 by @renovate in https://github.com/runatlantis/atlantis/pull/2984\r\n*
-        feat: additional renovatebot configurations by @nitrocode in https://github.com/runatlantis/atlantis/pull/2981\r\n*
-        chore(deps): lock file maintenance in yarn.lock by @renovate in https://github.com/runatlantis/atlantis/pull/2987\r\n*
-        fix(deps): update module github.com/xanzy/go-gitlab to v0.78.0 in go.mod by
-        @renovate in https://github.com/runatlantis/atlantis/pull/2960\r\n* chore(test):
-        add no test dir tests, rename testdata dir by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2986\r\n*
-        feat(build): add vulnerability codeql scanning by @nitrocode in https://github.com/runatlantis/atlantis/pull/2879\r\n*
-        feat: more container labels: licenses by @nitrocode in https://github.com/runatlantis/atlantis/pull/2900\r\n*
-        docs: Add how `allow_regex_prefixes` relates to `enable-regex-cmp` flag by
-        @jamengual in https://github.com/runatlantis/atlantis/pull/2995\r\n* chore(docker):
-        set ATLANTIS_BASE_TAG_DATE=latest by @nitrocode in https://github.com/runatlantis/atlantis/pull/2997\r\n*
-        chore(docker): rm setup-golang from atlantis image workflow by @nitrocode
-        in https://github.com/runatlantis/atlantis/pull/2989\r\n* deps(website): upgrade
-        vuepress 1.x to 2.x by @nitrocode in https://github.com/runatlantis/atlantis/pull/2980\r\n*
-        chore(website): Add \"in production since 2017\" by @nitrocode in https://github.com/runatlantis/atlantis/pull/3004\r\n*
-        chore(docker): bump-git-2.39 by @nitrocode in https://github.com/runatlantis/atlantis/pull/2998\r\n*
-        chore: release v0.22.3 by @nitrocode in https://github.com/runatlantis/atlantis/pull/3005\r\n\r\n##
-        New Contributors\r\n* @tomasmota made their first contribution in https://github.com/runatlantis/atlantis/pull/2957\r\n*
-        @johanneswuerbach made their first contribution in https://github.com/runatlantis/atlantis/pull/2916\r\n\r\n**Full
-        Changelog**: https://github.com/runatlantis/atlantis/compare/v0.22.2...v0.22.3"
-      created_at: "2023-01-18T23:20:48Z"
-      discussion_url: https://github.com/runatlantis/atlantis/discussions/3006
+        url: https://api.github.com/users/jamengual
+      body: "## What's Changed\r\n* fix: PR status summary should remove Note: Objects
+        have changed outside of Terraform by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3010\r\n*
+        feat: state rm by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2880\r\n*
+        fix: runatlantis.io search by @nitrocode in https://github.com/runatlantis/atlantis/pull/3012\r\n*
+        fix: markdown renderer incorrect ordering of arguments by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3016\r\n*
+        feat: add `plan_requirements` capability by @lyoung-confluent in https://github.com/runatlantis/atlantis/pull/2979\r\n*
+        build(docker): fix intermittent ghcr push failures by @nitrocode in https://github.com/runatlantis/atlantis/pull/3018\r\n*
+        fix(deps): update golang.org/x/exp digest to a68e582 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3022\r\n* fix(deps): update
+        module github.com/moby/moby to v20.10.23+incompatible in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3023\r\n* fix(deps): update
+        module github.com/uber-go/tally to v3.5.2+incompatible in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3024\r\n* fix(deps): update
+        module github.com/spf13/viper to v1.15.0 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3025\r\n*
+        chore(actions): deprecate set-output by @nitrocode in https://github.com/runatlantis/atlantis/pull/3019\r\n*
+        feat(codeql): ignore draft prs by @nitrocode in https://github.com/runatlantis/atlantis/pull/3021\r\n*
+        chore(test): remove redundant test job from circleci by @nitrocode in https://github.com/runatlantis/atlantis/pull/3026\r\n*
+        fix(actions): remove unused `test` reference to enable e2e by @nitrocode in
+        https://github.com/runatlantis/atlantis/pull/3028\r\n* feat(actions): add
+        labeler by @nitrocode in https://github.com/runatlantis/atlantis/pull/3020\r\n*
+        docs(readme): Add go pkg badge by @nitrocode in https://github.com/runatlantis/atlantis/pull/3029\r\n*
+        fix(actions): set labeler to use correct `on` event by @nitrocode in https://github.com/runatlantis/atlantis/pull/3033\r\n*
+        docs: fix table formating for multienv by @hanskhe in https://github.com/runatlantis/atlantis/pull/3032\r\n*
+        docs: adding working slack invite link by @jamengual in https://github.com/runatlantis/atlantis/pull/3035\r\n*
+        docs: update slack invite to a perm link by @chenrui333 in https://github.com/runatlantis/atlantis/pull/3036\r\n*
+        feat(actions): website link check by @nitrocode in https://github.com/runatlantis/atlantis/pull/3037\r\n*
+        feat: `--silence-no-projects` to comments with `-d` and `-p` by @Dawnflash
+        in https://github.com/runatlantis/atlantis/pull/2969\r\n* chore(template):
+        expand issue template by @nitrocode in https://github.com/runatlantis/atlantis/pull/2873\r\n*
+        fix(deps): update golang.org/x/exp digest to 7f5a42a in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3039\r\n* docs: `/api/plan`
+        and `/api/apply` endpoints by @lilincmu in https://github.com/runatlantis/atlantis/pull/3013\r\n*
+        fix(deps): update golang.org/x/exp digest to d38c7dc in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3044\r\n* fix(deps): update
+        module github.com/xanzy/go-gitlab to v0.79.0 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3046\r\n*
+        feat(build): sign releases by @nitrocode in https://github.com/runatlantis/atlantis/pull/3040\r\n*
+        Update using-slack-hooks.md by @ryanfarisco in https://github.com/runatlantis/atlantis/pull/3048\r\n*
+        feat(release): version based on github release tag by @nitrocode in https://github.com/runatlantis/atlantis/pull/3049\r\n*
+        fix(docker): Set version based on release tag, revert gorelease signing by
+        @nitrocode in https://github.com/runatlantis/atlantis/pull/3051\r\n* fix(deps):
+        update golang.org/x/exp digest to a67bb56 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3056\r\n*
+        fix(docker): docker-entrypoint when called with atlantis by @dpiddock in https://github.com/runatlantis/atlantis/pull/3060\r\n*
+        docs: apply home dark mode by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3062\r\n*
+        fix(docs): add bitbucket to `delete_source_branch_on_merge` by @markleary
+        in https://github.com/runatlantis/atlantis/pull/3063\r\n* fix(deps): update
+        golang.org/x/exp digest to a960b37 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3064\r\n*
+        fix(deps): update module github.com/microcosm-cc/bluemonday to v1.0.22 in
+        go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3066\r\n*
+        fix(deps): update module github.com/google/go-github/v49 to v50 by @krrrr38
+        in https://github.com/runatlantis/atlantis/pull/3074\r\n* docs: add env var
+        variants for autoplan config options by @wyardley in https://github.com/runatlantis/atlantis/pull/3073\r\n*
+        fix(deps): update module github.com/go-redis/redis/v9 to v9.0.1 by @krrrr38
+        in https://github.com/runatlantis/atlantis/pull/3075\r\n* feat: suppress log
+        package logging by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3076\r\n*
+        fix(deps): update module go.etcd.io/bbolt to v1.3.7 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3077\r\n* fix(deps): update
+        golang.org/x/exp digest to aae9b4e in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3080\r\n*
+        fix(deps): update module github.com/hashicorp/hcl/v2 to v2.16.0 in go.mod
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3078\r\n* fix(deps):
+        update module github.com/xanzy/go-gitlab to v0.79.1 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3083\r\n* fix(deps): update
+        module github.com/go-playground/validator/v10 to v10.11.2 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3082\r\n* chore: remove x/exp
+        package by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3085\r\n*
+        fix import/state rm success wrapped template by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3084\r\n*
+        chore(deps): update docker/build-push-action action to v4 in .github/workflows/testing-env-image.yml
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3079\r\n* deps:
+        bump to go1.20 by @chenrui333 in https://github.com/runatlantis/atlantis/pull/3093\r\n*
+        fix(deps): update github.com/hashicorp/terraform-config-inspect digest to
+        8cad743 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3101\r\n*
+        fix(docs): Add missing dir to DRY repo level atlantis.yaml projects key  by
+        @tieum in https://github.com/runatlantis/atlantis/pull/3099\r\n* chore(deps):
+        update node.js to v18.14.0 in .node-version by @renovate in https://github.com/runatlantis/atlantis/pull/3102\r\n*
+        fix(deps): update module github.com/briandowns/spinner to v1.21.0 in go.mod
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3103\r\n* fix(deps):
+        update module github.com/redis/go-redis/v9 to v9.0.2 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3105\r\n* bugfix(gitlab):
+        correct detailed merge status check by @nitrocode in https://github.com/runatlantis/atlantis/pull/3067\r\n*
+        chore(dependency): Swap `moby` with `patternmatcher` by @nitrocode in https://github.com/runatlantis/atlantis/pull/3106\r\n*
+        feat(docker): download transitive dependencies by @nitrocode in https://github.com/runatlantis/atlantis/pull/3107\r\n*
+        chore(dependency): Swap `go-spew` with `kr/pretty` by @nitrocode in https://github.com/runatlantis/atlantis/pull/3108\r\n*
+        fix(deps): update module github.com/uber-go/tally to v3.5.3+incompatible in
+        go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3110\r\n*
+        fix(deps): update module golang.org/x/term to v0.5.0 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3111\r\n* chore(deps): update
+        dependency hashicorp/terraform to v1.3.8 in .circleci/config.yml by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3113\r\n* fix(deps): update
+        module golang.org/x/text to v0.7.0 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3116\r\n*
+        chore(deps): update dependency open-policy-agent/conftest to v0.39.0 in testing/dockerfile
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3115\r\n* chore(deps):
+        update dependency open-policy-agent/conftest to v0.39.0 in dockerfile.dev
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3114\r\n* chore(deps):
+        update alpine docker tag to v3.17.2 in docker-base/dockerfile.alpine by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3125\r\n* chore(deps): update
+        dependency hashicorp/terraform to v1.3.9 in .circleci/config.yml by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3137\r\n* feat(renovatebot):
+        automerge enabled by @nitrocode in https://github.com/runatlantis/atlantis/pull/3123\r\n*
+        fix(deps): update module github.com/hashicorp/go-getter/v2 to v2.2.0 [security]
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3141\r\n* fix(deps):
+        update github.com/shurcool/githubv4 digest to 420ad09 in go.mod by @renovate
+        in https://github.com/runatlantis/atlantis/pull/3136\r\n* fix(deps): update
+        module github.com/hashicorp/hcl/v2 to v2.16.1 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3133\r\n*
+        fix(deps): update module github.com/xanzy/go-gitlab to v0.80.2 in go.mod by
+        @renovate in https://github.com/runatlantis/atlantis/pull/3135\r\n* chore(deps):
+        update node.js to v18.14.1 in .node-version by @renovate in https://github.com/runatlantis/atlantis/pull/3143\r\n*
+        chore(deps): update golang docker tag to v1.20.1 in testing/dockerfile by
+        @renovate in https://github.com/runatlantis/atlantis/pull/3142\r\n* chore(make):
+        Correct typo in Makefile comment by @dobby-dobster in https://github.com/runatlantis/atlantis/pull/3130\r\n*
+        build(deps): bump golang.org/x/net from 0.1.0 to 0.7.0 in /e2e by @dependabot
+        in https://github.com/runatlantis/atlantis/pull/3145\r\n* build(deps): bump
+        golang.org/x/net from 0.5.0 to 0.7.0 by @dependabot in https://github.com/runatlantis/atlantis/pull/3146\r\n*
+        fix(workflow-hook): pre/post hook not sending output due to invalid key by
+        @Fabianoshz in https://github.com/runatlantis/atlantis/pull/3091\r\n* fix(azure-devops):
+        add check for test webhook URL by @SSKLCP in https://github.com/runatlantis/atlantis/pull/2809\r\n*
+        feat(executable-name): Add check for misspelled comment command by @edbighead
+        in https://github.com/runatlantis/atlantis/pull/3059\r\n* feat: shallow repo
+        clone in merge checkout strategy by @nitrocode in https://github.com/runatlantis/atlantis/pull/2758\r\n*
+        chore(deps): update node.js to v18.14.2 in .node-version by @renovate in https://github.com/runatlantis/atlantis/pull/3151\r\n*
+        fix(deps): update module github.com/golang-jwt/jwt/v4 to v4.5.0 in go.mod
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3152\r\n* fix:
+        Use `hashicorp/go-version` to resolve `~> 1.0` to `1.x` instead of `1.0.x`
+        by @zhuoyang in https://github.com/runatlantis/atlantis/pull/3153\r\n* chore(deps):
+        update dependency open-policy-agent/conftest to v0.39.1 in testing/dockerfile
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3155\r\n* fix(deps):
+        update github.com/hashicorp/terraform-config-inspect digest to 2d94e3d in
+        go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3156\r\n*
+        chore(deps): update dependency open-policy-agent/conftest to v0.39.1 in dockerfile.dev
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3154\r\n* feat:
+        Include commit and date in version by @nitrocode in https://github.com/runatlantis/atlantis/pull/3159\r\n*
+        fix(deps): update module github.com/google/go-github/v50 to v50.1.0 in go.mod
+        by @renovate in https://github.com/runatlantis/atlantis/pull/3162\r\n* feat(build):
+        add new sha ghrc docker tags using docker/metadata-action by @nitrocode in
+        https://github.com/runatlantis/atlantis/pull/3121\r\n* fix: use shorter commit
+        sha in version output by @nitrocode in https://github.com/runatlantis/atlantis/pull/3163\r\n*
+        fix: push image to repo name without org by @nitrocode in https://github.com/runatlantis/atlantis/pull/3164\r\n*
+        fix: push to full ghcr repo name by @nitrocode in https://github.com/runatlantis/atlantis/pull/3167\r\n*
+        feat: add hide-unchanged-plan-comments option by @tufitko in https://github.com/runatlantis/atlantis/pull/3158\r\n*
+        fix(deps): update module github.com/stretchr/testify to v1.8.2 in go.mod by
+        @renovate in https://github.com/runatlantis/atlantis/pull/3168\r\n* chore(docs):
+        add note of autoplan modules limitation by @nitrocode in https://github.com/runatlantis/atlantis/pull/3166\r\n*
+        chore(docs): remove deprecated flags from docs by @nitrocode in https://github.com/runatlantis/atlantis/pull/3165\r\n*
+        fix: add missing description to multiarch images by @nitrocode in https://github.com/runatlantis/atlantis/pull/3170\r\n*
+        docs(metrics): available metrics, metrics enablement by @Pardeep009 in https://github.com/runatlantis/atlantis/pull/3171\r\n*
+        chore(alpine): bump docker curl dependency by @nitrocode in https://github.com/runatlantis/atlantis/pull/3174\r\n*
+        release: 0.23.0 by @jamengual in https://github.com/runatlantis/atlantis/pull/3175\r\n\r\n##
+        New Contributors\r\n* @lyoung-confluent made their first contribution in https://github.com/runatlantis/atlantis/pull/2979\r\n*
+        @hanskhe made their first contribution in https://github.com/runatlantis/atlantis/pull/3032\r\n*
+        @Dawnflash made their first contribution in https://github.com/runatlantis/atlantis/pull/2969\r\n*
+        @ryanfarisco made their first contribution in https://github.com/runatlantis/atlantis/pull/3048\r\n*
+        @dpiddock made their first contribution in https://github.com/runatlantis/atlantis/pull/3060\r\n*
+        @markleary made their first contribution in https://github.com/runatlantis/atlantis/pull/3063\r\n*
+        @wyardley made their first contribution in https://github.com/runatlantis/atlantis/pull/3073\r\n*
+        @tieum made their first contribution in https://github.com/runatlantis/atlantis/pull/3099\r\n*
+        @dobby-dobster made their first contribution in https://github.com/runatlantis/atlantis/pull/3130\r\n*
+        @zhuoyang made their first contribution in https://github.com/runatlantis/atlantis/pull/3153\r\n*
+        @Pardeep009 made their first contribution in https://github.com/runatlantis/atlantis/pull/3171\r\n\r\n**Full
+        Changelog**: https://github.com/runatlantis/atlantis/compare/v0.22.3...v0.23.0"
+      created_at: "2023-03-01T18:57:40Z"
       draft: false
-      html_url: https://github.com/runatlantis/atlantis/releases/tag/v0.22.3
-      id: 89475029
-      mentions_count: 8
-      name: v0.22.3
-      node_id: RE_kwDOBy76Zc4FVUfV
+      html_url: https://github.com/runatlantis/atlantis/releases/tag/v0.23.0
+      id: 94126632
+      mentions_count: 22
+      name: v0.23.0
+      node_id: RE_kwDOBy76Zc4FnEIo
       prerelease: false
-      published_at: "2023-01-18T23:48:27Z"
-      tag_name: v0.22.3
-      tarball_url: https://api.github.com/repos/runatlantis/atlantis/tarball/v0.22.3
+      published_at: "2023-03-01T18:58:26Z"
+      tag_name: v0.23.0
+      tarball_url: https://api.github.com/repos/runatlantis/atlantis/tarball/v0.23.0
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/runatlantis/atlantis/releases/89475029/assets{?name,label}
-      url: https://api.github.com/repos/runatlantis/atlantis/releases/89475029
-      zipball_url: https://api.github.com/repos/runatlantis/atlantis/zipball/v0.22.3
+      upload_url: https://uploads.github.com/repos/runatlantis/atlantis/releases/94126632/assets{?name,label}
+      url: https://api.github.com/repos/runatlantis/atlantis/releases/94126632
+      zipball_url: https://api.github.com/repos/runatlantis/atlantis/zipball/v0.23.0
   awscli:
     version: 2.10.3
     previousVersion: 2.10.2
@@ -4158,6 +3982,212 @@ meta:
           upload_url: https://uploads.github.com/repos/runatlantis/atlantis/releases/89475029/assets{?name,label}
           url: https://api.github.com/repos/runatlantis/atlantis/releases/89475029
           zipball_url: https://api.github.com/repos/runatlantis/atlantis/zipball/v0.22.3
+      0.23.0:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/runatlantis/atlantis/releases/94126632/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/2208324?v=4
+            events_url: https://api.github.com/users/jamengual/events{/privacy}
+            followers_url: https://api.github.com/users/jamengual/followers
+            following_url: https://api.github.com/users/jamengual/following{/other_user}
+            gists_url: https://api.github.com/users/jamengual/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/jamengual
+            id: 2208324
+            login: jamengual
+            node_id: MDQ6VXNlcjIyMDgzMjQ=
+            organizations_url: https://api.github.com/users/jamengual/orgs
+            received_events_url: https://api.github.com/users/jamengual/received_events
+            repos_url: https://api.github.com/users/jamengual/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/jamengual/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/jamengual/subscriptions
+            type: User
+            url: https://api.github.com/users/jamengual
+          body: "## What's Changed\r\n* fix: PR status summary should remove Note:
+            Objects have changed outside of Terraform by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3010\r\n*
+            feat: state rm by @krrrr38 in https://github.com/runatlantis/atlantis/pull/2880\r\n*
+            fix: runatlantis.io search by @nitrocode in https://github.com/runatlantis/atlantis/pull/3012\r\n*
+            fix: markdown renderer incorrect ordering of arguments by @krrrr38 in
+            https://github.com/runatlantis/atlantis/pull/3016\r\n* feat: add `plan_requirements`
+            capability by @lyoung-confluent in https://github.com/runatlantis/atlantis/pull/2979\r\n*
+            build(docker): fix intermittent ghcr push failures by @nitrocode in https://github.com/runatlantis/atlantis/pull/3018\r\n*
+            fix(deps): update golang.org/x/exp digest to a68e582 in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3022\r\n* fix(deps): update
+            module github.com/moby/moby to v20.10.23+incompatible in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3023\r\n* fix(deps): update
+            module github.com/uber-go/tally to v3.5.2+incompatible in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3024\r\n* fix(deps): update
+            module github.com/spf13/viper to v1.15.0 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3025\r\n*
+            chore(actions): deprecate set-output by @nitrocode in https://github.com/runatlantis/atlantis/pull/3019\r\n*
+            feat(codeql): ignore draft prs by @nitrocode in https://github.com/runatlantis/atlantis/pull/3021\r\n*
+            chore(test): remove redundant test job from circleci by @nitrocode in
+            https://github.com/runatlantis/atlantis/pull/3026\r\n* fix(actions): remove
+            unused `test` reference to enable e2e by @nitrocode in https://github.com/runatlantis/atlantis/pull/3028\r\n*
+            feat(actions): add labeler by @nitrocode in https://github.com/runatlantis/atlantis/pull/3020\r\n*
+            docs(readme): Add go pkg badge by @nitrocode in https://github.com/runatlantis/atlantis/pull/3029\r\n*
+            fix(actions): set labeler to use correct `on` event by @nitrocode in https://github.com/runatlantis/atlantis/pull/3033\r\n*
+            docs: fix table formating for multienv by @hanskhe in https://github.com/runatlantis/atlantis/pull/3032\r\n*
+            docs: adding working slack invite link by @jamengual in https://github.com/runatlantis/atlantis/pull/3035\r\n*
+            docs: update slack invite to a perm link by @chenrui333 in https://github.com/runatlantis/atlantis/pull/3036\r\n*
+            feat(actions): website link check by @nitrocode in https://github.com/runatlantis/atlantis/pull/3037\r\n*
+            feat: `--silence-no-projects` to comments with `-d` and `-p` by @Dawnflash
+            in https://github.com/runatlantis/atlantis/pull/2969\r\n* chore(template):
+            expand issue template by @nitrocode in https://github.com/runatlantis/atlantis/pull/2873\r\n*
+            fix(deps): update golang.org/x/exp digest to 7f5a42a in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3039\r\n* docs: `/api/plan`
+            and `/api/apply` endpoints by @lilincmu in https://github.com/runatlantis/atlantis/pull/3013\r\n*
+            fix(deps): update golang.org/x/exp digest to d38c7dc in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3044\r\n* fix(deps): update
+            module github.com/xanzy/go-gitlab to v0.79.0 in go.mod by @renovate in
+            https://github.com/runatlantis/atlantis/pull/3046\r\n* feat(build): sign
+            releases by @nitrocode in https://github.com/runatlantis/atlantis/pull/3040\r\n*
+            Update using-slack-hooks.md by @ryanfarisco in https://github.com/runatlantis/atlantis/pull/3048\r\n*
+            feat(release): version based on github release tag by @nitrocode in https://github.com/runatlantis/atlantis/pull/3049\r\n*
+            fix(docker): Set version based on release tag, revert gorelease signing
+            by @nitrocode in https://github.com/runatlantis/atlantis/pull/3051\r\n*
+            fix(deps): update golang.org/x/exp digest to a67bb56 in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3056\r\n* fix(docker):
+            docker-entrypoint when called with atlantis by @dpiddock in https://github.com/runatlantis/atlantis/pull/3060\r\n*
+            docs: apply home dark mode by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3062\r\n*
+            fix(docs): add bitbucket to `delete_source_branch_on_merge` by @markleary
+            in https://github.com/runatlantis/atlantis/pull/3063\r\n* fix(deps): update
+            golang.org/x/exp digest to a960b37 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3064\r\n*
+            fix(deps): update module github.com/microcosm-cc/bluemonday to v1.0.22
+            in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3066\r\n*
+            fix(deps): update module github.com/google/go-github/v49 to v50 by @krrrr38
+            in https://github.com/runatlantis/atlantis/pull/3074\r\n* docs: add env
+            var variants for autoplan config options by @wyardley in https://github.com/runatlantis/atlantis/pull/3073\r\n*
+            fix(deps): update module github.com/go-redis/redis/v9 to v9.0.1 by @krrrr38
+            in https://github.com/runatlantis/atlantis/pull/3075\r\n* feat: suppress
+            log package logging by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3076\r\n*
+            fix(deps): update module go.etcd.io/bbolt to v1.3.7 in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3077\r\n* fix(deps): update
+            golang.org/x/exp digest to aae9b4e in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3080\r\n*
+            fix(deps): update module github.com/hashicorp/hcl/v2 to v2.16.0 in go.mod
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3078\r\n*
+            fix(deps): update module github.com/xanzy/go-gitlab to v0.79.1 in go.mod
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3083\r\n*
+            fix(deps): update module github.com/go-playground/validator/v10 to v10.11.2
+            in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3082\r\n*
+            chore: remove x/exp package by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3085\r\n*
+            fix import/state rm success wrapped template by @krrrr38 in https://github.com/runatlantis/atlantis/pull/3084\r\n*
+            chore(deps): update docker/build-push-action action to v4 in .github/workflows/testing-env-image.yml
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3079\r\n*
+            deps: bump to go1.20 by @chenrui333 in https://github.com/runatlantis/atlantis/pull/3093\r\n*
+            fix(deps): update github.com/hashicorp/terraform-config-inspect digest
+            to 8cad743 in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3101\r\n*
+            fix(docs): Add missing dir to DRY repo level atlantis.yaml projects key
+            \ by @tieum in https://github.com/runatlantis/atlantis/pull/3099\r\n*
+            chore(deps): update node.js to v18.14.0 in .node-version by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3102\r\n* fix(deps): update
+            module github.com/briandowns/spinner to v1.21.0 in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3103\r\n* fix(deps): update
+            module github.com/redis/go-redis/v9 to v9.0.2 in go.mod by @renovate in
+            https://github.com/runatlantis/atlantis/pull/3105\r\n* bugfix(gitlab):
+            correct detailed merge status check by @nitrocode in https://github.com/runatlantis/atlantis/pull/3067\r\n*
+            chore(dependency): Swap `moby` with `patternmatcher` by @nitrocode in
+            https://github.com/runatlantis/atlantis/pull/3106\r\n* feat(docker): download
+            transitive dependencies by @nitrocode in https://github.com/runatlantis/atlantis/pull/3107\r\n*
+            chore(dependency): Swap `go-spew` with `kr/pretty` by @nitrocode in https://github.com/runatlantis/atlantis/pull/3108\r\n*
+            fix(deps): update module github.com/uber-go/tally to v3.5.3+incompatible
+            in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3110\r\n*
+            fix(deps): update module golang.org/x/term to v0.5.0 in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3111\r\n* chore(deps):
+            update dependency hashicorp/terraform to v1.3.8 in .circleci/config.yml
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3113\r\n*
+            fix(deps): update module golang.org/x/text to v0.7.0 in go.mod by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3116\r\n* chore(deps):
+            update dependency open-policy-agent/conftest to v0.39.0 in testing/dockerfile
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3115\r\n*
+            chore(deps): update dependency open-policy-agent/conftest to v0.39.0 in
+            dockerfile.dev by @renovate in https://github.com/runatlantis/atlantis/pull/3114\r\n*
+            chore(deps): update alpine docker tag to v3.17.2 in docker-base/dockerfile.alpine
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3125\r\n*
+            chore(deps): update dependency hashicorp/terraform to v1.3.9 in .circleci/config.yml
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3137\r\n*
+            feat(renovatebot): automerge enabled by @nitrocode in https://github.com/runatlantis/atlantis/pull/3123\r\n*
+            fix(deps): update module github.com/hashicorp/go-getter/v2 to v2.2.0 [security]
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3141\r\n*
+            fix(deps): update github.com/shurcool/githubv4 digest to 420ad09 in go.mod
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3136\r\n*
+            fix(deps): update module github.com/hashicorp/hcl/v2 to v2.16.1 in go.mod
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3133\r\n*
+            fix(deps): update module github.com/xanzy/go-gitlab to v0.80.2 in go.mod
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3135\r\n*
+            chore(deps): update node.js to v18.14.1 in .node-version by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3143\r\n* chore(deps):
+            update golang docker tag to v1.20.1 in testing/dockerfile by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3142\r\n* chore(make):
+            Correct typo in Makefile comment by @dobby-dobster in https://github.com/runatlantis/atlantis/pull/3130\r\n*
+            build(deps): bump golang.org/x/net from 0.1.0 to 0.7.0 in /e2e by @dependabot
+            in https://github.com/runatlantis/atlantis/pull/3145\r\n* build(deps):
+            bump golang.org/x/net from 0.5.0 to 0.7.0 by @dependabot in https://github.com/runatlantis/atlantis/pull/3146\r\n*
+            fix(workflow-hook): pre/post hook not sending output due to invalid key
+            by @Fabianoshz in https://github.com/runatlantis/atlantis/pull/3091\r\n*
+            fix(azure-devops): add check for test webhook URL by @SSKLCP in https://github.com/runatlantis/atlantis/pull/2809\r\n*
+            feat(executable-name): Add check for misspelled comment command by @edbighead
+            in https://github.com/runatlantis/atlantis/pull/3059\r\n* feat: shallow
+            repo clone in merge checkout strategy by @nitrocode in https://github.com/runatlantis/atlantis/pull/2758\r\n*
+            chore(deps): update node.js to v18.14.2 in .node-version by @renovate
+            in https://github.com/runatlantis/atlantis/pull/3151\r\n* fix(deps): update
+            module github.com/golang-jwt/jwt/v4 to v4.5.0 in go.mod by @renovate in
+            https://github.com/runatlantis/atlantis/pull/3152\r\n* fix: Use `hashicorp/go-version`
+            to resolve `~> 1.0` to `1.x` instead of `1.0.x` by @zhuoyang in https://github.com/runatlantis/atlantis/pull/3153\r\n*
+            chore(deps): update dependency open-policy-agent/conftest to v0.39.1 in
+            testing/dockerfile by @renovate in https://github.com/runatlantis/atlantis/pull/3155\r\n*
+            fix(deps): update github.com/hashicorp/terraform-config-inspect digest
+            to 2d94e3d in go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3156\r\n*
+            chore(deps): update dependency open-policy-agent/conftest to v0.39.1 in
+            dockerfile.dev by @renovate in https://github.com/runatlantis/atlantis/pull/3154\r\n*
+            feat: Include commit and date in version by @nitrocode in https://github.com/runatlantis/atlantis/pull/3159\r\n*
+            fix(deps): update module github.com/google/go-github/v50 to v50.1.0 in
+            go.mod by @renovate in https://github.com/runatlantis/atlantis/pull/3162\r\n*
+            feat(build): add new sha ghrc docker tags using docker/metadata-action
+            by @nitrocode in https://github.com/runatlantis/atlantis/pull/3121\r\n*
+            fix: use shorter commit sha in version output by @nitrocode in https://github.com/runatlantis/atlantis/pull/3163\r\n*
+            fix: push image to repo name without org by @nitrocode in https://github.com/runatlantis/atlantis/pull/3164\r\n*
+            fix: push to full ghcr repo name by @nitrocode in https://github.com/runatlantis/atlantis/pull/3167\r\n*
+            feat: add hide-unchanged-plan-comments option by @tufitko in https://github.com/runatlantis/atlantis/pull/3158\r\n*
+            fix(deps): update module github.com/stretchr/testify to v1.8.2 in go.mod
+            by @renovate in https://github.com/runatlantis/atlantis/pull/3168\r\n*
+            chore(docs): add note of autoplan modules limitation by @nitrocode in
+            https://github.com/runatlantis/atlantis/pull/3166\r\n* chore(docs): remove
+            deprecated flags from docs by @nitrocode in https://github.com/runatlantis/atlantis/pull/3165\r\n*
+            fix: add missing description to multiarch images by @nitrocode in https://github.com/runatlantis/atlantis/pull/3170\r\n*
+            docs(metrics): available metrics, metrics enablement by @Pardeep009 in
+            https://github.com/runatlantis/atlantis/pull/3171\r\n* chore(alpine):
+            bump docker curl dependency by @nitrocode in https://github.com/runatlantis/atlantis/pull/3174\r\n*
+            release: 0.23.0 by @jamengual in https://github.com/runatlantis/atlantis/pull/3175\r\n\r\n##
+            New Contributors\r\n* @lyoung-confluent made their first contribution
+            in https://github.com/runatlantis/atlantis/pull/2979\r\n* @hanskhe made
+            their first contribution in https://github.com/runatlantis/atlantis/pull/3032\r\n*
+            @Dawnflash made their first contribution in https://github.com/runatlantis/atlantis/pull/2969\r\n*
+            @ryanfarisco made their first contribution in https://github.com/runatlantis/atlantis/pull/3048\r\n*
+            @dpiddock made their first contribution in https://github.com/runatlantis/atlantis/pull/3060\r\n*
+            @markleary made their first contribution in https://github.com/runatlantis/atlantis/pull/3063\r\n*
+            @wyardley made their first contribution in https://github.com/runatlantis/atlantis/pull/3073\r\n*
+            @tieum made their first contribution in https://github.com/runatlantis/atlantis/pull/3099\r\n*
+            @dobby-dobster made their first contribution in https://github.com/runatlantis/atlantis/pull/3130\r\n*
+            @zhuoyang made their first contribution in https://github.com/runatlantis/atlantis/pull/3153\r\n*
+            @Pardeep009 made their first contribution in https://github.com/runatlantis/atlantis/pull/3171\r\n\r\n**Full
+            Changelog**: https://github.com/runatlantis/atlantis/compare/v0.22.3...v0.23.0"
+          created_at: "2023-03-01T18:57:40Z"
+          draft: false
+          html_url: https://github.com/runatlantis/atlantis/releases/tag/v0.23.0
+          id: 94126632
+          mentions_count: 22
+          name: v0.23.0
+          node_id: RE_kwDOBy76Zc4FnEIo
+          prerelease: false
+          published_at: "2023-03-01T18:58:26Z"
+          tag_name: v0.23.0
+          tarball_url: https://api.github.com/repos/runatlantis/atlantis/tarball/v0.23.0
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/runatlantis/atlantis/releases/94126632/assets{?name,label}
+          url: https://api.github.com/repos/runatlantis/atlantis/releases/94126632
+          zipball_url: https://api.github.com/repos/runatlantis/atlantis/zipball/v0.23.0
     conftest:
       0.34.0:
         githubRelease:

@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.3.9
-    previousVersion: 1.3.8
+    version: 1.4.0
+    previousVersion: 1.3.9
     versions:
     - 1.2.5
     - 1.2.6
@@ -24,9 +24,10 @@ dependencies:
     - 1.3.7
     - 1.3.8
     - 1.3.9
+    - 1.4.0
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/92587114/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/94967187/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
         events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
@@ -47,37 +48,87 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-tf-core
       body: |+
-        ## 1.3.9 (February 15, 2023)
+        ## 1.4.0 (March 08, 2023)
+
+        UPGRADE NOTES:
+
+        * config: The `textencodebase64` function when called with encoding "GB18030" will now encode the euro symbol € as the two-byte sequence `0xA2,0xE3`, as required by the GB18030 standard, before applying base64 encoding.
+        * config: The `textencodebase64` function when called with encoding "GBK" or "CP936" will now encode the euro symbol € as the single byte `0x80` before applying base64 encoding. This matches the behavior of the Windows API when encoding to this Windows-specific character encoding.
+        * `terraform init`: When interpreting the hostname portion of a provider source address or the address of a module in a module registry, Terraform will now use _non-transitional_ IDNA2008 mapping rules instead of the transitional mapping rules previously used.
+
+            This matches a change to [the WHATWG URL spec's rules for interpreting non-ASCII domain names](https://url.spec.whatwg.org/#concept-domain-to-ascii) which is being gradually adopted by web browsers. Terraform aims to follow the interpretation of hostnames used by web browsers for consistency. For some hostnames containing non-ASCII characters this may cause Terraform to now request a different "punycode" hostname when resolving.
+        * `terraform init` will now ignore entries in the optional global provider cache directory unless they match a checksum already tracked in the current configuration's dependency lock file. This therefore avoids the long-standing problem that when installing a new provider for the first time from the cache we can't determine the full set of checksums to include in the lock file. Once the lock file has been updated to include a checksum covering the item in the global cache, Terraform will then use the cache entry for subsequent installation of the same provider package. There is an interim CLI configuration opt-out for those who rely on the previous incorrect behavior. ([#32129](https://github.com/hashicorp/terraform/issues/32129))
+        * The Terraform plan renderer has been completely rewritten to aid with future Terraform Cloud integration. Users should not see any material change in the plan output between 1.3 and 1.4. If you notice any significant differences, or if Terraform fails to plan successfully due to rendering problems, please open a bug report issue.
 
         BUG FIXES:
 
-        * Fix crash when planning to remove already-deposed resource instances. ([#32663](https://github.com/hashicorp/terraform/issues/32663))
+        * The module installer will now record in its manifest a correct module source URL after normalization when the URL given as input contains both a query string portion and a subdirectory portion. Terraform itself doesn't currently make use of this information and so this is just a cosmetic fix to make the recorded metadata more correct. ([#31636](https://github.com/hashicorp/terraform/issues/31636))
+        * config: The `yamldecode` function now correctly handles entirely-nil YAML documents. Previously it would incorrectly return an unknown value instead of a null value. It will now return a null value as documented. ([#32151](https://github.com/hashicorp/terraform/issues/32151))
+        * Ensure correct ordering between data sources and the deletion of managed resource dependencies. ([#32209](https://github.com/hashicorp/terraform/issues/32209))
+        * Fix Terraform creating objects that should not exist in variables that specify default attributes in optional objects. ([#32178](https://github.com/hashicorp/terraform/issues/32178))
+        * Fix several Terraform crashes that are caused by HCL creating objects that should not exist in variables that specify default attributes in optional objects within collections. ([#32178](https://github.com/hashicorp/terraform/issues/32178))
+        * Fix inconsistent behaviour in empty vs null collections. ([#32178](https://github.com/hashicorp/terraform/issues/32178))
+        * `terraform workspace` now returns a non-zero exit when given an invalid argument ([#31318](https://github.com/hashicorp/terraform/issues/31318))
+        * Terraform would always plan changes when using a nested set attribute ([#32536](https://github.com/hashicorp/terraform/issues/32536))
+        * Terraform can now better detect when complex optional+computed object attributes are removed from configuration ([#32551](https://github.com/hashicorp/terraform/issues/32551))
+        * A new methodology for planning set elements can now better detect optional+computed changes within sets ([#32563](https://github.com/hashicorp/terraform/issues/32563))
+        * Fix state locking and releasing messages when in `-json` mode, messages will now be written in JSON format ([#32451](https://github.com/hashicorp/terraform/issues/32451))
 
-      created_at: "2023-02-15T17:19:17Z"
+
+        ENHANCEMENTS:
+
+        * `terraform plan` can now store a plan file even when encountering errors, which can later be inspected to help identify the source of the failures ([#32395](https://github.com/hashicorp/terraform/issues/32395))
+        * `terraform_data` is a new builtin managed resource type, which can replace the use of `null_resource`, and can store data of any type ([#31757](https://github.com/hashicorp/terraform/issues/31757))
+        * `terraform init` will now ignore entries in the optional global provider cache directory unless they match a checksum already tracked in the current configuration's dependency lock file. This therefore avoids the long-standing problem that when installing a new provider for the first time from the cache we can't determine the full set of checksums to include in the lock file. Once the lock file has been updated to include a checksum covering the item in the global cache, Terraform will then use the cache entry for subsequent installation of the same provider package. There is an interim CLI configuration opt-out for those who rely on the previous incorrect behavior. ([#32129](https://github.com/hashicorp/terraform/issues/32129))
+        * Interactive input for sensitive variables is now masked in the UI ([#29520](https://github.com/hashicorp/terraform/issues/29520))
+        * A new `-or-create` flag was added to `terraform workspace select`, to aid in creating workspaces in automated situations ([#31633](https://github.com/hashicorp/terraform/issues/31633))
+        * A new command was added for exporting Terraform function signatures in machine-readable format: `terraform metadata functions -json` ([#32487](https://github.com/hashicorp/terraform/issues/32487))
+        * The "Failed to install provider" error message now includes the reason a provider could not be installed. ([#31898](https://github.com/hashicorp/terraform/issues/31898))
+        * backend/gcs: Add `kms_encryption_key` argument, to allow encryption of state files using Cloud KMS keys. ([#24967](https://github.com/hashicorp/terraform/issues/24967))
+        * backend/gcs: Add `storage_custom_endpoint` argument, to allow communication with the backend via a Private Service Connect endpoint. ([#28856](https://github.com/hashicorp/terraform/issues/28856))
+        * backend/gcs: Update documentation for usage of `gcs` with `terraform_remote_state` ([#32065](https://github.com/hashicorp/terraform/issues/32065))
+        * backend/gcs: Update storage package to v1.28.0 ([#29656](https://github.com/hashicorp/terraform/issues/29656))
+        * When removing a workspace from the `cloud` backend `terraform workspace delete` will use Terraform Cloud's [Safe Delete](https://developer.hashicorp.com/terraform/cloud-docs/api-docs/workspaces#safe-delete-a-workspace) API if the `-force` flag is not provided. ([#31949](https://github.com/hashicorp/terraform/pull/31949))
+        * backend/oss: More robustly handle endpoint retrieval error ([#32295](https://github.com/hashicorp/terraform/issues/32295))
+        * local-exec provisioner: Added `quiet` argument. If `quiet` is set to `true`, Terraform will not print the entire command to stdout during plan. ([#32116](https://github.com/hashicorp/terraform/issues/32116))
+        * backend/http: Add support for mTLS authentication. ([#31699](https://github.com/hashicorp/terraform/issues/31699))
+        * cloud: Add support for using the [generic hostname](https://developer.hashicorp.com/terraform/cloud-docs/registry/using#generic-hostname-terraform-enterprise) localterraform.com in module and provider sources as a substitute for the currently configured cloud backend hostname. This enhancement was also applied to the remote backend.
+        * `terraform show` will now print an explanation when called on a Terraform workspace with empty state detailing why no resources are shown. ([#32629](https://github.com/hashicorp/terraform/issues/32629))
+        * backend/gcs: Added support for `GOOGLE_BACKEND_IMPERSONATE_SERVICE_ACCOUNT` env var to allow impersonating a different service account when `GOOGLE_IMPERSONATE_SERVICE_ACCOUNT` is configured for the GCP provider. ([#32557](https://github.com/hashicorp/terraform/issues/32557))
+        * backend/cos: Add support for the `assume_role` authentication method with the `tencentcloud` provider. This can be configured via the Terraform config or environment variables.
+        * backend/cos: Add support for the `security_token` authentication method with the `tencentcloud` provider. This can be configured via the Terraform config or environment variables.
+
+        EXPERIMENTS:
+
+        * Since its introduction the `yamlencode` function's documentation carried a warning that it was experimental. This predated our more formalized idea of language experiments and so wasn't guarded by an explicit opt-in, but the intention was to allow for small adjustments to its behavior if we learned it was producing invalid YAML in some cases, due to the relative complexity of the YAML specification.
+
+            From Terraform v1.4 onwards, `yamlencode` is no longer documented as experimental and is now subject to the Terraform v1.x Compatibility Promises. There are no changes to its previous behavior in v1.3 and so no special action is required when upgrading.
+
+      created_at: "2023-03-08T18:03:30Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.3.9
-      id: 92587114
-      name: v1.3.9
-      node_id: RE_kwDOAQ6CpM4FhMRq
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.0
+      id: 94967187
+      name: v1.4.0
+      node_id: RE_kwDOAQ6CpM4FqRWT
       prerelease: false
-      published_at: "2023-02-15T17:31:10Z"
+      published_at: "2023-03-08T18:13:32Z"
       reactions:
-        "+1": 2
+        "+1": 3
         "-1": 0
         confused: 0
         eyes: 0
         heart: 0
-        hooray: 0
+        hooray: 2
         laugh: 0
         rocket: 0
-        total_count: 2
-        url: https://api.github.com/repos/hashicorp/terraform/releases/92587114/reactions
-      tag_name: v1.3.9
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.3.9
+        total_count: 5
+        url: https://api.github.com/repos/hashicorp/terraform/releases/94967187/reactions
+      tag_name: v1.4.0
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.0
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/92587114/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/92587114
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.3.9
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/94967187/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/94967187
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.0
 meta:
   dependencies:
     terraform:
@@ -851,3 +902,108 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/92587114/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/92587114
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.3.9
+      1.4.0:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/94967187/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
+            events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
+            following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-tf-core
+            id: 82990137
+            login: hc-github-team-tf-core
+            node_id: MDQ6VXNlcjgyOTkwMTM3
+            organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
+            repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-tf-core
+          body: |+
+            ## 1.4.0 (March 08, 2023)
+
+            UPGRADE NOTES:
+
+            * config: The `textencodebase64` function when called with encoding "GB18030" will now encode the euro symbol € as the two-byte sequence `0xA2,0xE3`, as required by the GB18030 standard, before applying base64 encoding.
+            * config: The `textencodebase64` function when called with encoding "GBK" or "CP936" will now encode the euro symbol € as the single byte `0x80` before applying base64 encoding. This matches the behavior of the Windows API when encoding to this Windows-specific character encoding.
+            * `terraform init`: When interpreting the hostname portion of a provider source address or the address of a module in a module registry, Terraform will now use _non-transitional_ IDNA2008 mapping rules instead of the transitional mapping rules previously used.
+
+                This matches a change to [the WHATWG URL spec's rules for interpreting non-ASCII domain names](https://url.spec.whatwg.org/#concept-domain-to-ascii) which is being gradually adopted by web browsers. Terraform aims to follow the interpretation of hostnames used by web browsers for consistency. For some hostnames containing non-ASCII characters this may cause Terraform to now request a different "punycode" hostname when resolving.
+            * `terraform init` will now ignore entries in the optional global provider cache directory unless they match a checksum already tracked in the current configuration's dependency lock file. This therefore avoids the long-standing problem that when installing a new provider for the first time from the cache we can't determine the full set of checksums to include in the lock file. Once the lock file has been updated to include a checksum covering the item in the global cache, Terraform will then use the cache entry for subsequent installation of the same provider package. There is an interim CLI configuration opt-out for those who rely on the previous incorrect behavior. ([#32129](https://github.com/hashicorp/terraform/issues/32129))
+            * The Terraform plan renderer has been completely rewritten to aid with future Terraform Cloud integration. Users should not see any material change in the plan output between 1.3 and 1.4. If you notice any significant differences, or if Terraform fails to plan successfully due to rendering problems, please open a bug report issue.
+
+            BUG FIXES:
+
+            * The module installer will now record in its manifest a correct module source URL after normalization when the URL given as input contains both a query string portion and a subdirectory portion. Terraform itself doesn't currently make use of this information and so this is just a cosmetic fix to make the recorded metadata more correct. ([#31636](https://github.com/hashicorp/terraform/issues/31636))
+            * config: The `yamldecode` function now correctly handles entirely-nil YAML documents. Previously it would incorrectly return an unknown value instead of a null value. It will now return a null value as documented. ([#32151](https://github.com/hashicorp/terraform/issues/32151))
+            * Ensure correct ordering between data sources and the deletion of managed resource dependencies. ([#32209](https://github.com/hashicorp/terraform/issues/32209))
+            * Fix Terraform creating objects that should not exist in variables that specify default attributes in optional objects. ([#32178](https://github.com/hashicorp/terraform/issues/32178))
+            * Fix several Terraform crashes that are caused by HCL creating objects that should not exist in variables that specify default attributes in optional objects within collections. ([#32178](https://github.com/hashicorp/terraform/issues/32178))
+            * Fix inconsistent behaviour in empty vs null collections. ([#32178](https://github.com/hashicorp/terraform/issues/32178))
+            * `terraform workspace` now returns a non-zero exit when given an invalid argument ([#31318](https://github.com/hashicorp/terraform/issues/31318))
+            * Terraform would always plan changes when using a nested set attribute ([#32536](https://github.com/hashicorp/terraform/issues/32536))
+            * Terraform can now better detect when complex optional+computed object attributes are removed from configuration ([#32551](https://github.com/hashicorp/terraform/issues/32551))
+            * A new methodology for planning set elements can now better detect optional+computed changes within sets ([#32563](https://github.com/hashicorp/terraform/issues/32563))
+            * Fix state locking and releasing messages when in `-json` mode, messages will now be written in JSON format ([#32451](https://github.com/hashicorp/terraform/issues/32451))
+
+
+            ENHANCEMENTS:
+
+            * `terraform plan` can now store a plan file even when encountering errors, which can later be inspected to help identify the source of the failures ([#32395](https://github.com/hashicorp/terraform/issues/32395))
+            * `terraform_data` is a new builtin managed resource type, which can replace the use of `null_resource`, and can store data of any type ([#31757](https://github.com/hashicorp/terraform/issues/31757))
+            * `terraform init` will now ignore entries in the optional global provider cache directory unless they match a checksum already tracked in the current configuration's dependency lock file. This therefore avoids the long-standing problem that when installing a new provider for the first time from the cache we can't determine the full set of checksums to include in the lock file. Once the lock file has been updated to include a checksum covering the item in the global cache, Terraform will then use the cache entry for subsequent installation of the same provider package. There is an interim CLI configuration opt-out for those who rely on the previous incorrect behavior. ([#32129](https://github.com/hashicorp/terraform/issues/32129))
+            * Interactive input for sensitive variables is now masked in the UI ([#29520](https://github.com/hashicorp/terraform/issues/29520))
+            * A new `-or-create` flag was added to `terraform workspace select`, to aid in creating workspaces in automated situations ([#31633](https://github.com/hashicorp/terraform/issues/31633))
+            * A new command was added for exporting Terraform function signatures in machine-readable format: `terraform metadata functions -json` ([#32487](https://github.com/hashicorp/terraform/issues/32487))
+            * The "Failed to install provider" error message now includes the reason a provider could not be installed. ([#31898](https://github.com/hashicorp/terraform/issues/31898))
+            * backend/gcs: Add `kms_encryption_key` argument, to allow encryption of state files using Cloud KMS keys. ([#24967](https://github.com/hashicorp/terraform/issues/24967))
+            * backend/gcs: Add `storage_custom_endpoint` argument, to allow communication with the backend via a Private Service Connect endpoint. ([#28856](https://github.com/hashicorp/terraform/issues/28856))
+            * backend/gcs: Update documentation for usage of `gcs` with `terraform_remote_state` ([#32065](https://github.com/hashicorp/terraform/issues/32065))
+            * backend/gcs: Update storage package to v1.28.0 ([#29656](https://github.com/hashicorp/terraform/issues/29656))
+            * When removing a workspace from the `cloud` backend `terraform workspace delete` will use Terraform Cloud's [Safe Delete](https://developer.hashicorp.com/terraform/cloud-docs/api-docs/workspaces#safe-delete-a-workspace) API if the `-force` flag is not provided. ([#31949](https://github.com/hashicorp/terraform/pull/31949))
+            * backend/oss: More robustly handle endpoint retrieval error ([#32295](https://github.com/hashicorp/terraform/issues/32295))
+            * local-exec provisioner: Added `quiet` argument. If `quiet` is set to `true`, Terraform will not print the entire command to stdout during plan. ([#32116](https://github.com/hashicorp/terraform/issues/32116))
+            * backend/http: Add support for mTLS authentication. ([#31699](https://github.com/hashicorp/terraform/issues/31699))
+            * cloud: Add support for using the [generic hostname](https://developer.hashicorp.com/terraform/cloud-docs/registry/using#generic-hostname-terraform-enterprise) localterraform.com in module and provider sources as a substitute for the currently configured cloud backend hostname. This enhancement was also applied to the remote backend.
+            * `terraform show` will now print an explanation when called on a Terraform workspace with empty state detailing why no resources are shown. ([#32629](https://github.com/hashicorp/terraform/issues/32629))
+            * backend/gcs: Added support for `GOOGLE_BACKEND_IMPERSONATE_SERVICE_ACCOUNT` env var to allow impersonating a different service account when `GOOGLE_IMPERSONATE_SERVICE_ACCOUNT` is configured for the GCP provider. ([#32557](https://github.com/hashicorp/terraform/issues/32557))
+            * backend/cos: Add support for the `assume_role` authentication method with the `tencentcloud` provider. This can be configured via the Terraform config or environment variables.
+            * backend/cos: Add support for the `security_token` authentication method with the `tencentcloud` provider. This can be configured via the Terraform config or environment variables.
+
+            EXPERIMENTS:
+
+            * Since its introduction the `yamlencode` function's documentation carried a warning that it was experimental. This predated our more formalized idea of language experiments and so wasn't guarded by an explicit opt-in, but the intention was to allow for small adjustments to its behavior if we learned it was producing invalid YAML in some cases, due to the relative complexity of the YAML specification.
+
+                From Terraform v1.4 onwards, `yamlencode` is no longer documented as experimental and is now subject to the Terraform v1.x Compatibility Promises. There are no changes to its previous behavior in v1.3 and so no special action is required when upgrading.
+
+          created_at: "2023-03-08T18:03:30Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.0
+          id: 94967187
+          name: v1.4.0
+          node_id: RE_kwDOAQ6CpM4FqRWT
+          prerelease: false
+          published_at: "2023-03-08T18:13:32Z"
+          reactions:
+            "+1": 3
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 2
+            laugh: 0
+            rocket: 0
+            total_count: 5
+            url: https://api.github.com/repos/hashicorp/terraform/releases/94967187/reactions
+          tag_name: v1.4.0
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.0
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/94967187/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/94967187
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.0

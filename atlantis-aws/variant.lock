@@ -2230,8 +2230,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/86597484
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.16
   terraform:
-    version: 1.4.2
-    previousVersion: 1.3.9
+    version: 1.4.3
+    previousVersion: 1.4.2
     versions:
     - 1.3.2
     - 1.3.3
@@ -2242,61 +2242,50 @@ dependencies:
     - 1.3.8
     - 1.3.9
     - 1.4.2
+    - 1.4.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/95846047/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/97509546/assets
       author:
-        avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
-        events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
-        followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
-        following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
-        gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+        avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+        events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+        followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+        following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+        gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
         gravatar_id: ""
-        html_url: https://github.com/hc-github-team-tf-core
-        id: 82990137
-        login: hc-github-team-tf-core
-        node_id: MDQ6VXNlcjgyOTkwMTM3
-        organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
-        received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
-        repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+        html_url: https://github.com/hc-github-team-es-release-engineering
+        id: 82989873
+        login: hc-github-team-es-release-engineering
+        node_id: MDQ6VXNlcjgyOTg5ODcz
+        organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+        received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+        repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
         site_admin: false
-        starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
-        subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+        starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
-        url: https://api.github.com/users/hc-github-team-tf-core
-      body: |+
-        ## 1.4.2 (March 16, 2023)
-
-        BUG FIXES:
-
-        * Fix bug in which certain uses of `setproduct` caused Terraform to crash ([#32860](https://github.com/hashicorp/terraform/issues/32860))
-        * Fix bug in which some provider plans were not being calculated correctly, leading to an "invalid plan" error ([#32860](https://github.com/hashicorp/terraform/issues/32860))
-
-      created_at: "2023-03-16T13:31:31Z"
+        url: https://api.github.com/users/hc-github-team-es-release-engineering
+      body: "## 1.4.3 (March 30, 2023)\r\n\r\nBUG FIXES:\r\n* Prevent sensitive values
+        in non-root module outputs from marking the entire output as sensitive [GH-32891]\r\n*
+        Fix the handling of planned data source objects when storing a failed plan
+        [GH-32876]\r\n* Don't fail during plan generation when targeting prevents
+        resources with schema changes from performing a state upgrade [GH-32900]\r\n*
+        Skip planned changes in sensitive marks when the changed attribute is discarded
+        by the provider [GH-32892]\r\n\r\n"
+      created_at: "2023-03-29T20:05:32Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.2
-      id: 95846047
-      name: v1.4.2
-      node_id: RE_kwDOAQ6CpM4Ftn6f
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.3
+      id: 97509546
+      name: v1.4.3
+      node_id: RE_kwDOAQ6CpM4Fz-Cq
       prerelease: false
-      published_at: "2023-03-16T13:42:45Z"
-      reactions:
-        "+1": 5
-        "-1": 0
-        confused: 0
-        eyes: 1
-        heart: 3
-        hooray: 4
-        laugh: 3
-        rocket: 2
-        total_count: 18
-        url: https://api.github.com/repos/hashicorp/terraform/releases/95846047/reactions
-      tag_name: v1.4.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.2
-      target_commitish: main
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/95846047/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/95846047
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.2
+      published_at: "2023-03-30T16:12:33Z"
+      tag_name: v1.4.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.3
+      target_commitish: a23cc45cbc916b7e567566b7496b9b2249293574
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/97509546/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/97509546
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.3
 meta:
   dependencies:
     atlantis:
@@ -12824,3 +12813,47 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/95846047/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/95846047
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.2
+      1.4.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/97509546/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: "## 1.4.3 (March 30, 2023)\r\n\r\nBUG FIXES:\r\n* Prevent sensitive
+            values in non-root module outputs from marking the entire output as sensitive
+            [GH-32891]\r\n* Fix the handling of planned data source objects when storing
+            a failed plan [GH-32876]\r\n* Don't fail during plan generation when targeting
+            prevents resources with schema changes from performing a state upgrade
+            [GH-32900]\r\n* Skip planned changes in sensitive marks when the changed
+            attribute is discarded by the provider [GH-32892]\r\n\r\n"
+          created_at: "2023-03-29T20:05:32Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.3
+          id: 97509546
+          name: v1.4.3
+          node_id: RE_kwDOAQ6CpM4Fz-Cq
+          prerelease: false
+          published_at: "2023-03-30T16:12:33Z"
+          tag_name: v1.4.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.3
+          target_commitish: a23cc45cbc916b7e567566b7496b9b2249293574
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/97509546/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/97509546
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.3

@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.4.2
-    previousVersion: 1.4.1
+    version: 1.4.4
+    previousVersion: 1.4.2
     versions:
     - 1.2.5
     - 1.2.6
@@ -27,50 +27,58 @@ dependencies:
     - 1.4.0
     - 1.4.1
     - 1.4.2
+    - 1.4.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/95846047/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/97537690/assets
       author:
-        avatar_url: https://avatars.githubusercontent.com/u/82990137?v=4
-        events_url: https://api.github.com/users/hc-github-team-tf-core/events{/privacy}
-        followers_url: https://api.github.com/users/hc-github-team-tf-core/followers
-        following_url: https://api.github.com/users/hc-github-team-tf-core/following{/other_user}
-        gists_url: https://api.github.com/users/hc-github-team-tf-core/gists{/gist_id}
+        avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+        events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+        followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+        following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+        gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
         gravatar_id: ""
-        html_url: https://github.com/hc-github-team-tf-core
-        id: 82990137
-        login: hc-github-team-tf-core
-        node_id: MDQ6VXNlcjgyOTkwMTM3
-        organizations_url: https://api.github.com/users/hc-github-team-tf-core/orgs
-        received_events_url: https://api.github.com/users/hc-github-team-tf-core/received_events
-        repos_url: https://api.github.com/users/hc-github-team-tf-core/repos
+        html_url: https://github.com/hc-github-team-es-release-engineering
+        id: 82989873
+        login: hc-github-team-es-release-engineering
+        node_id: MDQ6VXNlcjgyOTg5ODcz
+        organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+        received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+        repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
         site_admin: false
-        starred_url: https://api.github.com/users/hc-github-team-tf-core/starred{/owner}{/repo}
-        subscriptions_url: https://api.github.com/users/hc-github-team-tf-core/subscriptions
+        starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
-        url: https://api.github.com/users/hc-github-team-tf-core
-      body: |+
-        ## 1.4.2 (March 16, 2023)
-
-        BUG FIXES:
-
-        * Fix bug in which certain uses of `setproduct` caused Terraform to crash ([#32860](https://github.com/hashicorp/terraform/issues/32860))
-        * Fix bug in which some provider plans were not being calculated correctly, leading to an "invalid plan" error ([#32860](https://github.com/hashicorp/terraform/issues/32860))
-
-      created_at: "2023-03-16T13:31:31Z"
+        url: https://api.github.com/users/hc-github-team-es-release-engineering
+      body: "## 1.4.4 (March 30, 2023)\n\nDue to an incident while migrating build
+        systems for the 1.4.3 release where \n`CGO_ENABLED=0` was not set, we are
+        rebuilding that version as 1.4.4 with the \nflag set. No other changes have
+        been made between 1.4.3 and 1.4.4.\n\n"
+      created_at: "2023-03-30T19:04:49Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.2
-      id: 95846047
-      name: v1.4.2
-      node_id: RE_kwDOAQ6CpM4Ftn6f
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.4
+      id: 97537690
+      name: v1.4.4
+      node_id: RE_kwDOAQ6CpM4F0E6a
       prerelease: false
-      published_at: "2023-03-16T13:42:45Z"
-      tag_name: v1.4.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.2
-      target_commitish: main
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/95846047/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/95846047
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.2
+      published_at: "2023-03-30T19:52:41Z"
+      reactions:
+        "+1": 3
+        "-1": 0
+        confused: 0
+        eyes: 6
+        heart: 4
+        hooray: 3
+        laugh: 2
+        rocket: 3
+        total_count: 21
+        url: https://api.github.com/repos/hashicorp/terraform/releases/97537690/reactions
+      tag_name: v1.4.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.4
+      target_commitish: dbd7ba96fd6cd393b8e895dc4a928d808541bb19
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/97537690/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/97537690
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.4
 meta:
   dependencies:
     terraform:
@@ -1045,3 +1053,55 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/95846047/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/95846047
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.2
+      1.4.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/97537690/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: "## 1.4.4 (March 30, 2023)\n\nDue to an incident while migrating build
+            systems for the 1.4.3 release where \n`CGO_ENABLED=0` was not set, we
+            are rebuilding that version as 1.4.4 with the \nflag set. No other changes
+            have been made between 1.4.3 and 1.4.4.\n\n"
+          created_at: "2023-03-30T19:04:49Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.4
+          id: 97537690
+          name: v1.4.4
+          node_id: RE_kwDOAQ6CpM4F0E6a
+          prerelease: false
+          published_at: "2023-03-30T19:52:41Z"
+          reactions:
+            "+1": 3
+            "-1": 0
+            confused: 0
+            eyes: 6
+            heart: 4
+            hooray: 3
+            laugh: 2
+            rocket: 3
+            total_count: 21
+            url: https://api.github.com/repos/hashicorp/terraform/releases/97537690/reactions
+          tag_name: v1.4.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.4
+          target_commitish: dbd7ba96fd6cd393b8e895dc4a928d808541bb19
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/97537690/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/97537690
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.4

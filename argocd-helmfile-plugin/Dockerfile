@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG KUBECTL_VERSION=1.24.8
+ARG KUBECTL_VERSION=1.26.2
 ARG HELMFILE_VERSION=0.152.0
 ARG HELM_VERSION=3.11.3
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz
@@ -29,7 +29,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update -qq \
     && apt install --no-install-recommends -y \
       ca-certificates \
-      git bash curl jq wget openssh-client \
+      git bash curl jq wget openssh-client unzip \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd -g $ARGOCD_GROUP_ID argocd \
     && useradd -r -u $ARGOCD_USER_ID -g argocd argocd \
@@ -40,16 +40,19 @@ RUN apt update -qq \
     && chmod g=u /home/argocd \
     && chmod g=u $HELM_WORKING_DIR
 
+# kubectl
 ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
 RUN mv /tmp/kubectl /usr/local/bin/kubectl \
   && chmod 755 /usr/local/bin/kubectl
 
+# helm
 ADD https://get.helm.sh/${HELM_FILE_NAME} /tmp
 RUN tar -zxvf /tmp/${HELM_FILE_NAME} -C /tmp \
   && mv /tmp/${TARGETOS}-${TARGETARCH}/helm /usr/local/bin/helm \
   && chmod 755 /usr/local/bin/helm \
   && rm -rf /tmp/*
 
+# kustomize
 ADD https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v${KUSTOMIZE_VERSION}/${KUSTOMIZE_FILE_NAME} /tmp
 RUN tar -zxf /tmp/${KUSTOMIZE_FILE_NAME} -C /tmp \
     && mv /tmp/kustomize /usr/local/bin/kustomize \
@@ -58,11 +61,28 @@ RUN tar -zxf /tmp/${KUSTOMIZE_FILE_NAME} -C /tmp \
 
 ADD https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/${HELMFILE_FILE_NAME} /tmp
 
+# helmfile
 RUN tar -zxvf /tmp/${HELMFILE_FILE_NAME} -C /tmp \
   && mv /tmp/helmfile /usr/local/bin/helmfile \
   && chmod 755 /usr/local/bin/helmfile \
   && rm -rf /tmp/*
 
+# aws
+RUN AWS_CLI_ARCH="" \
+&& case ${TARGETARCH} in \
+  "amd64") AWS_CLI_ARCH=x86_64 ;; \
+  "arm64") AWS_CLI_ARCH=aarch64 ;; \
+  *) echo "no match PLATFORM"; exit 1 ;; \
+esac \
+&& echo ${AWS_CLI_ARCH} \
+&& cd /tmp \
+&& curl "https://awscli.amazonaws.com/awscli-exe-linux-${AWS_CLI_ARCH}.zip" -o "awscliv2.zip" \
+&& unzip awscliv2.zip \
+&& ./aws/install \
+&& cd ${HOME} \
+&& rm -rf /tmp/*
+
+# helm plugin
 ENV HELM_CACHE_HOME=$HELM_WORKING_DIR/.cache
 ENV HELM_CONFIG_HOME=$HELM_WORKING_DIR/.config
 ENV HELM_DATA_HOME=$HELM_WORKING_DIR/.local

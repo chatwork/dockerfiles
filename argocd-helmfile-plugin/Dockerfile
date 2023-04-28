@@ -17,7 +17,6 @@ ARG HELM_WORKING_DIR=/helm-working-dir
 
 LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
-LABEL maintainer="ozaki@chatwork.com"
 
 WORKDIR /
 

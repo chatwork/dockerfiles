@@ -1,7 +1,8 @@
-FROM argoproj/argocd:v2.6.7
+FROM quay.io/argoproj/argocd:v2.7.1
 
-LABEL version="2.6.7-0.153.1"
+LABEL version="2.7.1-0.153.1"
 LABEL maintainer="shinya@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
 USER root

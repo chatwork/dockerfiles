@@ -1,7 +1,8 @@
-FROM argoproj/argocd:v{{ .argocd_version }}
+FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 
 LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
 LABEL maintainer="shinya@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
 USER root

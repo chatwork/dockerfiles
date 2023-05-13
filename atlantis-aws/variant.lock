@@ -2205,8 +2205,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/86597484
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.16
   terraform:
-    version: 1.4.6
-    previousVersion: 1.4.5
+    version: 1.4.5
+    previousVersion: 1.4.6
     versions:
     - 1.3.2
     - 1.3.3
@@ -2223,7 +2223,7 @@ dependencies:
     - 1.4.6
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/100995731/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/99185691/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2244,42 +2244,36 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.4.6 (Unreleased)
+        ## 1.4.5 (April 12, 2023)
 
-        BUG FIXES
+        * Revert change from [[#32892](https://github.com/hashicorp/terraform/issues/32892)] due to an upstream crash.
+        * Fix planned destroy value which would cause `terraform_data` to fail when being replaced with `create_before_destroy` ([#32988](https://github.com/hashicorp/terraform/issues/32988))
 
-        * Fix bug when rendering plans that include null strings. ([#33029](https://github.com/hashicorp/terraform/issues/33029))
-        * Fix bug when rendering plans that include unknown values in maps. ([#33029](https://github.com/hashicorp/terraform/issues/33029))
-        * Fix bug where the plan would render twice when using older versions of TFE as a backend. ([#33018](https://github.com/hashicorp/terraform/issues/33018))
-        * Fix bug where sensitive and unknown metadata was not being propagated to dynamic types while rendering plans. ([#33057](https://github.com/hashicorp/terraform/issues/33057))
-        * Fix bug where sensitive metadata from the schema was not being included in the `terraform show -json` output. ([#33059](https://github.com/hashicorp/terraform/issues/33059))
-        * Fix bug where computed attributes were not being rendered with the `# forces replacement` suffix. ([#33065](https://github.com/hashicorp/terraform/issues/33065))
-
-      created_at: "2023-04-26T17:54:11Z"
+      created_at: "2023-04-12T17:16:11Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.6
-      id: 100995731
-      name: v1.4.6
-      node_id: RE_kwDOAQ6CpM4GBRKT
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.5
+      id: 99185691
+      name: v1.4.5
+      node_id: RE_kwDOAQ6CpM4F6XQb
       prerelease: false
-      published_at: "2023-04-26T18:26:24Z"
+      published_at: "2023-04-12T18:20:24Z"
       reactions:
-        "+1": 0
+        "+1": 9
         "-1": 0
         confused: 0
         eyes: 1
-        heart: 0
-        hooray: 0
-        laugh: 0
-        rocket: 0
-        total_count: 1
-        url: https://api.github.com/repos/hashicorp/terraform/releases/100995731/reactions
-      tag_name: v1.4.6
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.6
-      target_commitish: 6c2c6cfa1b55bd6ff4cf4e26ef86d8d7ab0465ec
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/100995731/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/100995731
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.6
+        heart: 2
+        hooray: 2
+        laugh: 2
+        rocket: 1
+        total_count: 17
+        url: https://api.github.com/repos/hashicorp/terraform/releases/99185691/reactions
+      tag_name: v1.4.5
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.5
+      target_commitish: d89c6425b9f4b6c178e47b55d22b2e88095900bb
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/99185691/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/99185691
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.5
 meta:
   dependencies:
     atlantis:

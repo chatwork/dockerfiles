@@ -3,7 +3,7 @@ WORKDIR /downloads
 
 ARG TARGETPLATFORM
 
-ARG EKSCTL_VERSION=0.141.0
+ARG EKSCTL_VERSION=0.142.0
 ARG KUBECTL_VERSION=1.23.12
 LABEL version="${EKSCTL_VERSION}"
 
@@ -13,7 +13,7 @@ RUN wget https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VE
 
 FROM chatwork/aws:latest
 
-ARG EKSCTL_VERSION=0.141.0
+ARG EKSCTL_VERSION=0.142.0
 LABEL version="${EKSCTL_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 ARG TARGETARCH
 
-ARG CONFTEST_VERSION=0.43.0
+ARG CONFTEST_VERSION=0.43.1
 LABEL version="${CONFTEST_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 

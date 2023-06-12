@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.4.6
-    previousVersion: 1.4.5
+    version: 1.5.0
+    previousVersion: 1.4.6
     versions:
     - 1.2.5
     - 1.2.6
@@ -30,9 +30,10 @@ dependencies:
     - 1.4.4
     - 1.4.5
     - 1.4.6
+    - 1.5.0
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/100995731/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/108197954/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -52,42 +53,106 @@ dependencies:
         subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
-      body: "## 1.4.6 (April 26, 2023)\r\n\r\nBUG FIXES\r\n\r\n* Fix bug when rendering
-        plans that include null strings. ([#33029](https://github.com/hashicorp/terraform/issues/33029))\r\n*
-        Fix bug when rendering plans that include unknown values in maps. ([#33029](https://github.com/hashicorp/terraform/issues/33029))\r\n*
-        Fix bug where the plan would render twice when using older versions of TFE
-        as a backend. ([#33018](https://github.com/hashicorp/terraform/issues/33018))\r\n*
-        Fix bug where sensitive and unknown metadata was not being propagated to dynamic
-        types while rendering plans. ([#33057](https://github.com/hashicorp/terraform/issues/33057))\r\n*
-        Fix bug where sensitive metadata from the schema was not being included in
-        the `terraform show -json` output. ([#33059](https://github.com/hashicorp/terraform/issues/33059))\r\n*
-        Fix bug where computed attributes were not being rendered with the `# forces
-        replacement` suffix. ([#33065](https://github.com/hashicorp/terraform/issues/33065))\r\n\r\n"
-      created_at: "2023-04-26T17:54:11Z"
+      body: "## 1.5.0 (June 12, 2023)\n\nNEW FEATURES:\n\n* `check` blocks for validating
+        infrastructure: Module and configuration authors can now write independent
+        check blocks within their configuration to validate assertions about their
+        infrastructure.\n\n    The new independent `check` blocks must specify at
+        least one `assert` block, but possibly many, each one with a `condition` expression
+        and an `error_message` expression matching the existing [Custom Condition
+        Checks](https://developer.hashicorp.com/terraform/language/v1.4.x/expressions/custom-conditions).
+        \n    Additionally, check blocks can optionally load a scoped [data source](https://developer.hashicorp.com/terraform/language/v1.4.x/data-sources).
+        Scoped data sources match the existing data sources with the exception that
+        they can only be referenced from within their check block.\n\n    Unlike the
+        existing `precondition` and `postcondition` blocks, Terraform will not halt
+        execution should the scoped data block fail or error or if any of the assertions
+        fail. \n    This allows practitioners to continually validate the state of
+        their infrastructure outside the usual lifecycle management cycle. \n    \n*
+        `import` blocks for importing infrastructure: Root module authors can now
+        use the `import` block to declare their intent that Terraform adopt an existing
+        resource. \n  \n    Import is now a configuration-driven, plannable action,
+        and is processed as part of a normal plan. Running `terraform plan` will show
+        a summary of the resources that Terraform has planned to import, along with
+        any other plan changes. \n    \n    The existing `terraform import` CLI command
+        has not been modified.\n    \n    This is an early version of the `import`
+        block feature, for which we are actively seeking user feedback to shape future
+        development. The `import` block currently does not support interpolation in
+        the `id` field, which must be a string.\n\n* Generating configuration for
+        imported resources: in conjunction with the `import` block, this feature enables
+        easy templating of configuration when importing existing resources into Terraform.
+        A new flag `-generate-config-out=PATH` is added to `terraform plan`. When
+        this flag is set, Terraform will generate HCL configuration for any resource
+        included in an `import` block that does not already have associated configuration,
+        and write it to a new file at `PATH`. Before applying, review the generated
+        configuration and edit it as necessary.\n\n* Adds a new `plantimestamp` function
+        that returns the timestamp at plan time. This is similar to the `timestamp`
+        function which returns the timestamp at apply time ([#32980](https://github.com/hashicorp/terraform/pull/32980)).\n*
+        Adds a new `strcontains` function that checks whether a given string contains
+        a given substring. ([#33069](https://github.com/hashicorp/terraform/issues/33069))\n\n\nUPGRADE
+        NOTES:\n\n* This is the last version of Terraform for which macOS 10.13 High
+        Sierra or 10.14 Mojave are officially supported. Future Terraform versions
+        may not function correctly on these older versions of macOS.\n* This is the
+        last version of Terraform for which Windows 7, 8, Server 2008, and Server
+        2012 are supported by Terraform's main implementation language, Go. We already
+        ended explicit support for versions earlier than Windows 10 in Terraform v0.15.0,
+        but future Terraform versions may malfunction in more significant ways on
+        these older Windows versions.\n* On Linux (and some other non-macOS Unix platforms
+        we don't officially support), Terraform will now notice the `trust-ad` option
+        in `/etc/resolv.conf` and, if set, will set the \"authentic data\" option
+        in outgoing DNS requests in order to better match the behavior of the GNU
+        libc resolver.\n\n    Terraform does not pay any attention to the corresponding
+        option in responses, but some DNSSEC-aware recursive resolvers return different
+        responses when the request option isn't set. This should therefore avoid some
+        potential situations where a DNS request from Terraform might get a different
+        response than a similar request from other software on your system.\n\nENHANCEMENTS:\n\n*
+        Terraform CLI's local operations mode will now attempt to persist state snapshots
+        to the state storage backend periodically during the apply step, thereby reducing
+        the window for lost data if the Terraform process is aborted unexpectedly.
+        ([#32680](https://github.com/hashicorp/terraform/issues/32680))\n* If Terraform
+        CLI receives SIGINT (or its equivalent on non-Unix platforms) during the apply
+        step then it will immediately try to persist the latest state snapshot to
+        the state storage backend, with the assumption that a graceful shutdown request
+        often typically followed by a hard abort some time later if the graceful shutdown
+        doesn't complete fast enough. ([#32680](https://github.com/hashicorp/terraform/issues/32680))\n*
+        `pg` backend: Now supports the `PG_CONN_STR`, `PG_SCHEMA_NAME`, `PG_SKIP_SCHEMA_CREATION`,
+        `PG_SKIP_TABLE_CREATION` and `PG_SKIP_INDEX_CREATION` environment variables.
+        ([#33045](https://github.com/hashicorp/terraform/issues/33045))\n\nBUG FIXES:\n\n*
+        `terraform init`: Fixed crash with invalid blank module name. ([#32781](https://github.com/hashicorp/terraform/issues/32781))\n*
+        `moved` blocks: Fixed a typo in the error message that Terraform raises when
+        you use `-target` to exclude an object that has been moved. ([#33149](https://github.com/hashicorp/terraform/issues/33149))\n\n##
+        Previous Releases\n\nFor information on prior major and minor releases, see
+        their changelogs:\n\n* [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)\n*
+        [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)\n* [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)\n*
+        [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)\n* [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)\n*
+        [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)\n*
+        [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)\n*
+        [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)\n*
+        [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)\n*
+        [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)\n"
+      created_at: "2023-06-12T09:32:18Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.4.6
-      id: 100995731
-      name: v1.4.6
-      node_id: RE_kwDOAQ6CpM4GBRKT
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.5.0
+      id: 108197954
+      name: v1.5.0
+      node_id: RE_kwDOAQ6CpM4GcvhC
       prerelease: false
-      published_at: "2023-04-26T18:26:24Z"
+      published_at: "2023-06-12T10:13:09Z"
       reactions:
-        "+1": 0
+        "+1": 6
         "-1": 0
         confused: 0
-        eyes: 10
-        heart: 0
-        hooray: 0
+        eyes: 0
+        heart: 6
+        hooray: 12
         laugh: 0
         rocket: 0
-        total_count: 10
-        url: https://api.github.com/repos/hashicorp/terraform/releases/100995731/reactions
-      tag_name: v1.4.6
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.4.6
-      target_commitish: 6c2c6cfa1b55bd6ff4cf4e26ef86d8d7ab0465ec
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/100995731/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/100995731
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.6
+        total_count: 24
+        url: https://api.github.com/repos/hashicorp/terraform/releases/108197954/reactions
+      tag_name: v1.5.0
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.5.0
+      target_commitish: f25d764edfc89d0d7e42fb99be433558ae45d7a3
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/108197954/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/108197954
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.5.0
 meta:
   dependencies:
     terraform:
@@ -1228,3 +1293,131 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/100995731/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/100995731
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.4.6
+      1.5.0:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/108197954/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: "## 1.5.0 (June 12, 2023)\n\nNEW FEATURES:\n\n* `check` blocks for
+            validating infrastructure: Module and configuration authors can now write
+            independent check blocks within their configuration to validate assertions
+            about their infrastructure.\n\n    The new independent `check` blocks
+            must specify at least one `assert` block, but possibly many, each one
+            with a `condition` expression and an `error_message` expression matching
+            the existing [Custom Condition Checks](https://developer.hashicorp.com/terraform/language/v1.4.x/expressions/custom-conditions).
+            \n    Additionally, check blocks can optionally load a scoped [data source](https://developer.hashicorp.com/terraform/language/v1.4.x/data-sources).
+            Scoped data sources match the existing data sources with the exception
+            that they can only be referenced from within their check block.\n\n    Unlike
+            the existing `precondition` and `postcondition` blocks, Terraform will
+            not halt execution should the scoped data block fail or error or if any
+            of the assertions fail. \n    This allows practitioners to continually
+            validate the state of their infrastructure outside the usual lifecycle
+            management cycle. \n    \n* `import` blocks for importing infrastructure:
+            Root module authors can now use the `import` block to declare their intent
+            that Terraform adopt an existing resource. \n  \n    Import is now a configuration-driven,
+            plannable action, and is processed as part of a normal plan. Running `terraform
+            plan` will show a summary of the resources that Terraform has planned
+            to import, along with any other plan changes. \n    \n    The existing
+            `terraform import` CLI command has not been modified.\n    \n    This
+            is an early version of the `import` block feature, for which we are actively
+            seeking user feedback to shape future development. The `import` block
+            currently does not support interpolation in the `id` field, which must
+            be a string.\n\n* Generating configuration for imported resources: in
+            conjunction with the `import` block, this feature enables easy templating
+            of configuration when importing existing resources into Terraform. A new
+            flag `-generate-config-out=PATH` is added to `terraform plan`. When this
+            flag is set, Terraform will generate HCL configuration for any resource
+            included in an `import` block that does not already have associated configuration,
+            and write it to a new file at `PATH`. Before applying, review the generated
+            configuration and edit it as necessary.\n\n* Adds a new `plantimestamp`
+            function that returns the timestamp at plan time. This is similar to the
+            `timestamp` function which returns the timestamp at apply time ([#32980](https://github.com/hashicorp/terraform/pull/32980)).\n*
+            Adds a new `strcontains` function that checks whether a given string contains
+            a given substring. ([#33069](https://github.com/hashicorp/terraform/issues/33069))\n\n\nUPGRADE
+            NOTES:\n\n* This is the last version of Terraform for which macOS 10.13
+            High Sierra or 10.14 Mojave are officially supported. Future Terraform
+            versions may not function correctly on these older versions of macOS.\n*
+            This is the last version of Terraform for which Windows 7, 8, Server 2008,
+            and Server 2012 are supported by Terraform's main implementation language,
+            Go. We already ended explicit support for versions earlier than Windows
+            10 in Terraform v0.15.0, but future Terraform versions may malfunction
+            in more significant ways on these older Windows versions.\n* On Linux
+            (and some other non-macOS Unix platforms we don't officially support),
+            Terraform will now notice the `trust-ad` option in `/etc/resolv.conf`
+            and, if set, will set the \"authentic data\" option in outgoing DNS requests
+            in order to better match the behavior of the GNU libc resolver.\n\n    Terraform
+            does not pay any attention to the corresponding option in responses, but
+            some DNSSEC-aware recursive resolvers return different responses when
+            the request option isn't set. This should therefore avoid some potential
+            situations where a DNS request from Terraform might get a different response
+            than a similar request from other software on your system.\n\nENHANCEMENTS:\n\n*
+            Terraform CLI's local operations mode will now attempt to persist state
+            snapshots to the state storage backend periodically during the apply step,
+            thereby reducing the window for lost data if the Terraform process is
+            aborted unexpectedly. ([#32680](https://github.com/hashicorp/terraform/issues/32680))\n*
+            If Terraform CLI receives SIGINT (or its equivalent on non-Unix platforms)
+            during the apply step then it will immediately try to persist the latest
+            state snapshot to the state storage backend, with the assumption that
+            a graceful shutdown request often typically followed by a hard abort some
+            time later if the graceful shutdown doesn't complete fast enough. ([#32680](https://github.com/hashicorp/terraform/issues/32680))\n*
+            `pg` backend: Now supports the `PG_CONN_STR`, `PG_SCHEMA_NAME`, `PG_SKIP_SCHEMA_CREATION`,
+            `PG_SKIP_TABLE_CREATION` and `PG_SKIP_INDEX_CREATION` environment variables.
+            ([#33045](https://github.com/hashicorp/terraform/issues/33045))\n\nBUG
+            FIXES:\n\n* `terraform init`: Fixed crash with invalid blank module name.
+            ([#32781](https://github.com/hashicorp/terraform/issues/32781))\n* `moved`
+            blocks: Fixed a typo in the error message that Terraform raises when you
+            use `-target` to exclude an object that has been moved. ([#33149](https://github.com/hashicorp/terraform/issues/33149))\n\n##
+            Previous Releases\n\nFor information on prior major and minor releases,
+            see their changelogs:\n\n* [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)\n*
+            [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)\n*
+            [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)\n*
+            [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)\n*
+            [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)\n*
+            [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)\n*
+            [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)\n*
+            [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)\n*
+            [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)\n*
+            [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)\n"
+          created_at: "2023-06-12T09:32:18Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.5.0
+          id: 108197954
+          name: v1.5.0
+          node_id: RE_kwDOAQ6CpM4GcvhC
+          prerelease: false
+          published_at: "2023-06-12T10:13:09Z"
+          reactions:
+            "+1": 6
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 6
+            hooray: 12
+            laugh: 0
+            rocket: 0
+            total_count: 24
+            url: https://api.github.com/repos/hashicorp/terraform/releases/108197954/reactions
+          tag_name: v1.5.0
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.5.0
+          target_commitish: f25d764edfc89d0d7e42fb99be433558ae45d7a3
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/108197954/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/108197954
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.5.0

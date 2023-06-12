@@ -1,4 +1,4 @@
-FROM ghcr.io/actions/actions-runner-controller/actions-runner:v2.299.1-ubuntu-22.04-aa6dab5
+FROM summerwind/actions-runner:ubuntu-22.04
 
 ARG TARGETOS
 ARG TARGETARCH

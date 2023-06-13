@@ -13,6 +13,8 @@ ARG KUSTOMIZE_FILE_NAME=kustomize_v${KUSTOMIZE_VERSION}_${TARGETOS}_${TARGETARCH
 ARG HELM_DIFF_VERSION=3.6.0
 ARG HELM_SECRETS_VERSION=4.1.1
 ARG HELM_GIT_VERSION=0.13.0
+ARG YQ_VERSION=4.34.1
+ARG YQ_FILE_NAME=yq_${TARGETOS}_${TARGETARCH}
 
 LABEL version="ubuntu-22.04-v${HELMFILE_VERSION}-v${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
@@ -23,8 +25,12 @@ USER root
 
 # https://github.com/actions/actions-runner-controller/blob/master/runner/actions-runner.ubuntu-22.04.dockerfile#L15
 RUN apt update -y \
-    && apt install gh -y \
+    && apt install gh wget -y \
     && rm -rf /var/lib/apt/lists/*
+
+ADD https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/${YQ_FILE_NAME} /tmp
+RUN mv /tmp/${YQ_FILE_NAME} /usr/local/bin/yq \
+  && chmod 755 /usr/local/bin/yq
 
 ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
 RUN mv /tmp/kubectl /usr/local/bin/kubectl \

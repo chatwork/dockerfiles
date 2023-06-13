@@ -8,6 +8,9 @@ file:
   /usr/local/bin/kubectl:
     exists: true
     mode: "0755"
+  /usr/local/bin/yq:
+    exists: true
+    mode: "0755"
 command:
   /usr/local/bin/helm version:
     exit-status: 0
@@ -23,5 +26,7 @@ command:
       - /^diff/
       - /^helm-git/
       - /^secrets/
+  /usr/local/bin/yq --version:
+    exit-status: 0
   /usr/local/bin/kubectl version --client:
     exit-status: 0

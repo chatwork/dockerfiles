@@ -2,13 +2,9 @@ command:
   /bin/entrypoint.sh fluentd --version:
     exit-status: 0
     stdout:
-      - "/fluentd 1.14.6/"
+      - "/fluentd 1.16.1/"
   /bin/entrypoint.sh fluentd --dry-run:
     exit-status: 0
     stdout:
-      - "/gem 'fluent-plugin-elasticsearch' version '4.0.8'/"
-      - "/gem 'fluent-plugin-kafka' version '0.13.0'/"
-      - "/gem 'fluent-plugin-mongo' version '1.4.0'/"
-      - "/gem 'fluent-plugin-rewrite-tag-filter' version '2.3.0'/"
-      - "/gem 'fluent-plugin-s3' version '1.5.0'/"
-      - "/gem 'fluent-plugin-webhdfs' version '1.2.4'/"
+      - "/gem 'fluent-plugin-rewrite-tag-filter' version '2.4.0'/"
+      - "/gem 'fluent-plugin-s3' version '1.7.2'/"

@@ -18,6 +18,7 @@ RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && fluent-gem install fluent-plugin-rewrite-tag-filter -v "2.4.0" \
     # kubernetes plugins
     && fluent-gem install fluent-plugin-kubernetes_metadata_filter -v "3.2.0" \
+    && fluent-gem install fluent-plugin-prometheus -v "2.1.0" \
     # aws plugin
     && fluent-gem install fluent-plugin-ec2-metadata -v "0.1.3" \
     # gcp plugin

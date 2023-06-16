@@ -1,0 +1,21 @@
+file:
+  /usr/bin/curl:
+    exists: true
+    mode: "0755"
+  /usr/bin/git:
+    exists: true
+    mode: "0755"
+  /usr/sbin/cron:
+    exists: true
+    mode: "0755"
+  /usr/bin/tini:
+    exists: true
+    mode: "0755"
+
+command:
+  /usr/bin/git --version:
+    exit-status: 0
+  /usr/bin/curl --version:
+    exit-status: 0
+  /bin/bash --version:
+    exit-status: 0

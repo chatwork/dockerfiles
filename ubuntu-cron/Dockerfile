@@ -1,6 +1,9 @@
 FROM ubuntu:22.04
 
 ARG TARGETARCH
+ARG TARGETOS
+
+ARG KUBECTL_VERSION=1.27.3
 
 LABEL version="22.04"
 LABEL maintainer="sakamoto@chatwork.com"
@@ -27,11 +30,16 @@ RUN case "${TARGETARCH}" in \
         "arm64") AWSCLI_ARCH=aarch64 ;; \
         *) echo "ERROR: 'TARGETARCH' value expected: ${TARGETARCH}"; exit 1 ;; \
     esac \
-    && curl "https://awscli.amazonaws.com/awscli-exe-linux-${AWSCLI_ARCH}.zip" -o "awscliv2.zip" \
+    && curl "https://awscli.amazonaws.com/awscli-exe-${TARGETOS}-${AWSCLI_ARCH}.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
     && sudo ./aws/install \
     && rm awscliv2.zip \
     && rm -r ./aws
+
+# kubectl
+ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
+RUN mv /tmp/kubectl /usr/local/bin/kubectl \
+  && chmod 755 /usr/local/bin/kubectl
 
 RUN rm -Rf /etc/cron.daily
 RUN rm -Rf /etc/cron.weekly

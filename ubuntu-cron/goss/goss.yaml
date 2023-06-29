@@ -8,6 +8,9 @@ file:
   /usr/sbin/cron:
     exists: true
     mode: "0755"
+  /usr/local/bin/kubectl:
+    exists: true
+    mode: "0755"
   /usr/bin/tini:
     exists: true
     mode: "0755"
@@ -19,3 +22,7 @@ command:
     exit-status: 0
   /bin/bash --version:
     exit-status: 0
+  /usr/local/bin/kubectl version:
+    exit-status: 1
+    stdout:
+      - v1.27.3

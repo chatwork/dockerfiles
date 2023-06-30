@@ -10,7 +10,7 @@ LABEL maintainer="sakamoto@chatwork.com"
 
 RUN apt update -y \
     && apt upgrade -y \
-    && apt install -q -y --no-install-recommends \
+    && DEBIAN_FRONTEND=noninteractive apt install -q -y --no-install-recommends \
        curl \
        wget \
        ca-certificates \
@@ -22,6 +22,7 @@ RUN apt update -y \
        cron \
        tini \
        bash \
+       tzdata \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
 

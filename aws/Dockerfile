@@ -1,8 +1,8 @@
-ARG AWSCLI_VERSION=2.12.7
+ARG AWSCLI_VERSION=2.13.0
 
 FROM amazon/aws-cli:${AWSCLI_VERSION}
 
-ARG AWSCLI_VERSION=2.12.7
+ARG AWSCLI_VERSION=2.13.0
 LABEL version="${AWSCLI_VERSION}"
 LABEL maintainer="ozaki@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"

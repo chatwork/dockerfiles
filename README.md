@@ -1,6 +1,6 @@
-# Docker Images from ChatWork
+# Docker Images from Chatwork
 
-This repository is a Dockerfile of [Docker Hub](https://hub.docker.com/r/chatwork/) published by ChatWork.
+This repository is a Dockerfile of [Docker Hub](https://hub.docker.com/r/chatwork/) published by Chatwork.
 
 # Submitting Issues and Pull Requests
 

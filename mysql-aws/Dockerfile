@@ -1,8 +1,8 @@
-ARG MYSQL_VERSION=5.7.42
+ARG MYSQL_VERSION=5.7.43
 
 FROM mysql:${MYSQL_VERSION}-debian
 
-ARG MYSQL_VERSION=5.7.42
+ARG MYSQL_VERSION=5.7.43
 LABEL version="${MYSQL_VERSION}"
 LABEL maintainer="keisuke.furuya@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"

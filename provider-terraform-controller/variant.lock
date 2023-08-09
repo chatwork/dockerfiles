@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.5.4
-    previousVersion: 1.5.3
+    version: 1.5.5
+    previousVersion: 1.5.4
     versions:
     - 1.2.5
     - 1.2.6
@@ -35,9 +35,10 @@ dependencies:
     - 1.5.2
     - 1.5.3
     - 1.5.4
+    - 1.5.5
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/113717468/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/115765281/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -58,38 +59,24 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.5.4 (July 26, 2023)
+        ## 1.5.5 (August 9, 2023)
 
-        BUG FIXES:
+        * `terraform init`: Fix crash when using invalid configuration in backend blocks. ([#33628](https://github.com/hashicorp/terraform/issues/33628))
 
-        * `check` blocks: Fixes crash when nested data sources are within configuration targeted by the terraform import command. ([#33578](https://github.com/hashicorp/terraform/issues/33578))
-        * `check` blocks: Check blocks now operate in line with other checkable objects by also executing during import operations. ([#33578](https://github.com/hashicorp/terraform/issues/33578))
-
-      created_at: "2023-07-26T18:16:41Z"
+      created_at: "2023-08-09T12:44:54Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.5.4
-      id: 113717468
-      name: v1.5.4
-      node_id: RE_kwDOAQ6CpM4GxzDc
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.5.5
+      id: 115765281
+      name: v1.5.5
+      node_id: RE_kwDOAQ6CpM4G5nAh
       prerelease: false
-      published_at: "2023-07-26T18:52:30Z"
-      reactions:
-        "+1": 15
-        "-1": 0
-        confused: 0
-        eyes: 0
-        heart: 4
-        hooray: 1
-        laugh: 0
-        rocket: 1
-        total_count: 21
-        url: https://api.github.com/repos/hashicorp/terraform/releases/113717468/reactions
-      tag_name: v1.5.4
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.5.4
-      target_commitish: 74adf9bc608ae5a9506a369c57eecb9973ed166d
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/113717468/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/113717468
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.5.4
+      published_at: "2023-08-09T13:37:04Z"
+      tag_name: v1.5.5
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.5.5
+      target_commitish: c10eb21b390627a6259eef9cd883e6ddeccc5716
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/115765281/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/115765281
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.5.5
 meta:
   dependencies:
     terraform:
@@ -1570,3 +1557,45 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/113717468/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/113717468
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.5.4
+      1.5.5:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/115765281/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.5.5 (August 9, 2023)
+
+            * `terraform init`: Fix crash when using invalid configuration in backend blocks. ([#33628](https://github.com/hashicorp/terraform/issues/33628))
+
+          created_at: "2023-08-09T12:44:54Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.5.5
+          id: 115765281
+          name: v1.5.5
+          node_id: RE_kwDOAQ6CpM4G5nAh
+          prerelease: false
+          published_at: "2023-08-09T13:37:04Z"
+          tag_name: v1.5.5
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.5.5
+          target_commitish: c10eb21b390627a6259eef9cd883e6ddeccc5716
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/115765281/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/115765281
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.5.5

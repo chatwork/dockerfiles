@@ -34,6 +34,10 @@ command:
     exit-status: 0
     stdout:
       - 0.25.0
+  /bin/gosu --version:
+    exit-status: 0
+    stdout:
+      - 1.16
   /usr/bin/git-lfs --version:
     exit-status: 0
     stdout:

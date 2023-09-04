@@ -34,10 +34,6 @@ command:
     exit-status: 0
     stdout:
       - {{ .atlantis_version }}
-  /bin/gosu --version:
-    exit-status: 0
-    stdout:
-      - {{ .gosu_version }}
   /usr/bin/git-lfs --version:
     exit-status: 0
     stdout:

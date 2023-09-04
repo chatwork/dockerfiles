@@ -21,7 +21,7 @@ command:
   /usr/local/bin/aws --version:
     exit-status: 0
     stdout:
-      - 2.13.11
+      - 2.13.14
   /usr/bin/conftest --version:
     exit-status: 0
     stdout:
@@ -34,10 +34,6 @@ command:
     exit-status: 0
     stdout:
       - 0.25.0
-  /bin/gosu --version:
-    exit-status: 0
-    stdout:
-      - 1.16
   /usr/bin/git-lfs --version:
     exit-status: 0
     stdout:

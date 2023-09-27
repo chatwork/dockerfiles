@@ -1,9 +1,10 @@
 ARG RUNNER_VERSION={{ .runner_version }}
-FROM summerwind/actions-runner:v${RUNNER_VERSION}-ubuntu-22.04
+FROM summerwind/actions-runner:v${RUNNER_VERSION}
 
 ARG TARGETOS
 ARG TARGETARCH
 
+ARG RUNNER_VERSION={{ .runner_version }}
 ARG KUBECTL_VERSION=1.28.2
 ARG HELMFILE_VERSION={{ .helmfile_version }}
 ARG HELM_VERSION={{ .helm_version }}
@@ -17,7 +18,7 @@ ARG HELM_GIT_VERSION=0.13.0
 ARG YQ_VERSION=4.34.1
 ARG YQ_FILE_NAME=yq_${TARGETOS}_${TARGETARCH}
 
-LABEL version="v${RUNNER_VERSION}-ubuntu-22.04-v${HELMFILE_VERSION}-v${HELM_VERSION}"
+LABEL version="v${RUNNER_VERSION}-v${HELMFILE_VERSION}-v${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 WORKDIR /

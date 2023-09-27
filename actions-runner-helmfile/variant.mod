@@ -25,6 +25,7 @@ dependencies:
     version: "> 1.0"
   runner:
     releasesFrom:
-      githubReleases:
-        source: actions/runner
-    version: "> 0.1"
+      validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+-ubuntu-22.04+"
+      dockerImageTags:
+        source: summerwind/actions-runner
+    version: "~ v2.309.0-ubuntu-22.04-ead26ab"

@@ -28,4 +28,4 @@ dependencies:
       validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+-ubuntu-22.04+"
       dockerImageTags:
         source: summerwind/actions-runner
-    version: "~ v2.309.0-ubuntu-22.04-ead26ab"
+    version: "~ 2.309.0-ubuntu-22.04-ead26ab"

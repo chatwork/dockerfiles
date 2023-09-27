@@ -3,6 +3,7 @@ provisioners:
     Dockerfile:
       source: Dockerfile.tpl
       arguments:
+        runner_version: "{{ .runner.version }}"
         helm_version: "{{ .helm.version }}"
         helmfile_version: "{{ .helmfile.version }}"
     goss/goss.yaml:
@@ -22,3 +23,8 @@ dependencies:
       githubReleases:
         source: helm/helm
     version: "> 1.0"
+  runner:
+    releasesFrom:
+      githubReleases:
+        source: actions/runner
+    version: "> 0.1"

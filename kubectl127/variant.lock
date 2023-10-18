@@ -1,7 +1,7 @@
 dependencies:
   kubectl:
-    version: 1.27.6
-    previousVersion: 1.27.5
+    version: 1.27.7
+    previousVersion: 1.27.6
     versions:
     - 1.23.9
     - 1.23.10
@@ -16,9 +16,10 @@ dependencies:
     - 1.27.4
     - 1.27.5
     - 1.27.6
+    - 1.27.7
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/121011208/assets
+      assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/125636180/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
         events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
@@ -46,20 +47,31 @@ dependencies:
 
 
 
-      created_at: "2023-09-13T09:14:07Z"
+      created_at: "2023-10-18T11:33:21Z"
       draft: false
-      html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.27.6
-      id: 121011208
-      name: Kubernetes v1.27.6
-      node_id: RE_kwDOAToIks4HNnwI
+      html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.27.7
+      id: 125636180
+      name: Kubernetes v1.27.7
+      node_id: RE_kwDOAToIks4HfQ5U
       prerelease: false
-      published_at: "2023-09-13T18:20:37Z"
-      tag_name: v1.27.6
-      tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.27.6
+      published_at: "2023-10-18T15:16:00Z"
+      reactions:
+        "+1": 2
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 2
+        url: https://api.github.com/repos/kubernetes/kubernetes/releases/125636180/reactions
+      tag_name: v1.27.7
+      tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.27.7
       target_commitish: master
-      upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/121011208/assets{?name,label}
-      url: https://api.github.com/repos/kubernetes/kubernetes/releases/121011208
-      zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.27.6
+      upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/125636180/assets{?name,label}
+      url: https://api.github.com/repos/kubernetes/kubernetes/releases/125636180
+      zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.27.7
 meta:
   dependencies:
     kubectl:
@@ -895,3 +907,59 @@ meta:
           upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/121011208/assets{?name,label}
           url: https://api.github.com/repos/kubernetes/kubernetes/releases/121011208
           zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.27.6
+      1.27.7:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/kubernetes/kubernetes/releases/125636180/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/33505452?v=4
+            events_url: https://api.github.com/users/k8s-release-robot/events{/privacy}
+            followers_url: https://api.github.com/users/k8s-release-robot/followers
+            following_url: https://api.github.com/users/k8s-release-robot/following{/other_user}
+            gists_url: https://api.github.com/users/k8s-release-robot/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/k8s-release-robot
+            id: 33505452
+            login: k8s-release-robot
+            node_id: MDQ6VXNlcjMzNTA1NDUy
+            organizations_url: https://api.github.com/users/k8s-release-robot/orgs
+            received_events_url: https://api.github.com/users/k8s-release-robot/received_events
+            repos_url: https://api.github.com/users/k8s-release-robot/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/k8s-release-robot/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/k8s-release-robot/subscriptions
+            type: User
+            url: https://api.github.com/users/k8s-release-robot
+          body: |2+
+
+            See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md).
+
+            See [the CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md) for more details.
+
+
+
+          created_at: "2023-10-18T11:33:21Z"
+          draft: false
+          html_url: https://github.com/kubernetes/kubernetes/releases/tag/v1.27.7
+          id: 125636180
+          name: Kubernetes v1.27.7
+          node_id: RE_kwDOAToIks4HfQ5U
+          prerelease: false
+          published_at: "2023-10-18T15:16:00Z"
+          reactions:
+            "+1": 2
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 2
+            url: https://api.github.com/repos/kubernetes/kubernetes/releases/125636180/reactions
+          tag_name: v1.27.7
+          tarball_url: https://api.github.com/repos/kubernetes/kubernetes/tarball/v1.27.7
+          target_commitish: master
+          upload_url: https://uploads.github.com/repos/kubernetes/kubernetes/releases/125636180/assets{?name,label}
+          url: https://api.github.com/repos/kubernetes/kubernetes/releases/125636180
+          zipball_url: https://api.github.com/repos/kubernetes/kubernetes/zipball/v1.27.7

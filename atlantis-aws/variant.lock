@@ -2420,8 +2420,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/86597484
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.16
   terraform:
-    version: 1.6.1
-    previousVersion: 1.6.0
+    version: 1.6.2
+    previousVersion: 1.6.1
     versions:
     - 1.3.2
     - 1.3.3
@@ -2446,9 +2446,10 @@ dependencies:
     - 1.5.7
     - 1.6.0
     - 1.6.1
+    - 1.6.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/124471815/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/125669774/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2469,30 +2470,28 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.6.1 (October 10, 2023)
+        ## 1.6.2 (October 18, 2023)
 
-        ENHANCEMENTS:
-        * backend/s3: The `skip_requesting_account_id` argument supports AWS API implementations that do not have the IAM, STS, or metadata API. ([#34002](https://github.com/hashicorp/terraform/pull/34002))
+        BUG FIXES
+        * `terraform test`: Fix performance issues when using provisioners within configs being tested. ([#34026](https://github.com/hashicorp/terraform/pull/34026))
+        * `terraform test`: Only process and parse relevant variables for each run block. ([#34072](https://github.com/hashicorp/terraform/pull/34072))
+        * Fix occasional crash when destroying configurations with variables containing validations. ([#34101](https://github.com/hashicorp/terraform/pull/34101))
+        * Fix interoperability issues between v1.6 series and earlier series by removing variable validations from the state file ([#34058](https://github.com/hashicorp/terraform/pull/34058)).
+        * cloud: Fixes panic when saving state in Terraform Cloud when certain types of API errors are returned ([#34074](https://github.com/hashicorp/terraform/pull/34074)).
+        * config: Fix crash in conditional statements with certain combinations of unknown values. Improve handling of refined values into the conditional expression results ([#34096](https://github.com/hashicorp/terraform/issues/34096))
+        * config: Update HCL to fix bug when decoding objects with optional attributes ([#34108](https://github.com/hashicorp/terraform/issues/34108))
+        * backend/s3: Some configurations would require `-reconfigure` during each `init` when config was not decoded correctly ([#34108](https://github.com/hashicorp/terraform/issues/34108))
 
-        BUG FIXES:
-        * config: Using sensitive values as one or both of the results of a conditional expression will no longer crash. [GH-33996]
-        * config: Conditional expression returning refined-non-null result will no longer crash. [GH-33996]
-        * cli: Reverted back to previous behavior of ignoring signing key expiration for provider installation, since it's the provider registry's responsibility to verify key validity at publication time. [GH-34004]
-        * cli: `GIT_SSH_COMMAND` is now preserved again when fetching modules from git source addresses. [GH-34045]
-        * cloud: The `TF_WORKSPACE` environment variable works with the `cloud` block again; it can specify a workspace when none is configured, or select an active workspace when the config specifies `tags`. [GH-34012]
-        * backend/s3: S3, DynamoDB, IAM, and STS endpoint parameters will no longer fail validation if the parsed scheme or hostname is empty. ([#34017](https://github.com/hashicorp/terraform/pull/34017))
-        * backend/s3: Providing a key alias to the `kms_key_id` argument will no longer fail validation. ([#33993](https://github.com/hashicorp/terraform/pull/33993))
-
-      created_at: "2023-10-10T15:53:38Z"
+      created_at: "2023-10-18T17:35:33Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.1
-      id: 124471815
-      name: v1.6.1
-      node_id: RE_kwDOAQ6CpM4Ha0oH
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.2
+      id: 125669774
+      name: v1.6.2
+      node_id: RE_kwDOAQ6CpM4HfZGO
       prerelease: false
-      published_at: "2023-10-10T17:27:44Z"
+      published_at: "2023-10-18T18:34:17Z"
       reactions:
-        "+1": 0
+        "+1": 1
         "-1": 0
         confused: 0
         eyes: 0
@@ -2500,14 +2499,14 @@ dependencies:
         hooray: 0
         laugh: 0
         rocket: 0
-        total_count: 1
-        url: https://api.github.com/repos/hashicorp/terraform/releases/124471815/reactions
-      tag_name: v1.6.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.1
-      target_commitish: 506c5ebbade366c7c865645344f1ae4276c0c786
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/124471815/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/124471815
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.1
+        total_count: 2
+        url: https://api.github.com/repos/hashicorp/terraform/releases/125669774/reactions
+      tag_name: v1.6.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.2
+      target_commitish: 60aa3903b55f9a9ef8a98456396bef149a408eb4
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/125669774/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/125669774
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.2
 meta:
   dependencies:
     atlantis:
@@ -21772,3 +21771,64 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/124471815/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/124471815
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.1
+      1.6.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/125669774/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.6.2 (October 18, 2023)
+
+            BUG FIXES
+            * `terraform test`: Fix performance issues when using provisioners within configs being tested. ([#34026](https://github.com/hashicorp/terraform/pull/34026))
+            * `terraform test`: Only process and parse relevant variables for each run block. ([#34072](https://github.com/hashicorp/terraform/pull/34072))
+            * Fix occasional crash when destroying configurations with variables containing validations. ([#34101](https://github.com/hashicorp/terraform/pull/34101))
+            * Fix interoperability issues between v1.6 series and earlier series by removing variable validations from the state file ([#34058](https://github.com/hashicorp/terraform/pull/34058)).
+            * cloud: Fixes panic when saving state in Terraform Cloud when certain types of API errors are returned ([#34074](https://github.com/hashicorp/terraform/pull/34074)).
+            * config: Fix crash in conditional statements with certain combinations of unknown values. Improve handling of refined values into the conditional expression results ([#34096](https://github.com/hashicorp/terraform/issues/34096))
+            * config: Update HCL to fix bug when decoding objects with optional attributes ([#34108](https://github.com/hashicorp/terraform/issues/34108))
+            * backend/s3: Some configurations would require `-reconfigure` during each `init` when config was not decoded correctly ([#34108](https://github.com/hashicorp/terraform/issues/34108))
+
+          created_at: "2023-10-18T17:35:33Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.2
+          id: 125669774
+          name: v1.6.2
+          node_id: RE_kwDOAQ6CpM4HfZGO
+          prerelease: false
+          published_at: "2023-10-18T18:34:17Z"
+          reactions:
+            "+1": 1
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 1
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 2
+            url: https://api.github.com/repos/hashicorp/terraform/releases/125669774/reactions
+          tag_name: v1.6.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.2
+          target_commitish: 60aa3903b55f9a9ef8a98456396bef149a408eb4
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/125669774/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/125669774
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.2

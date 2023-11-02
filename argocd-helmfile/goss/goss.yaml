@@ -4,7 +4,7 @@ command:
   /usr/local/bin/argocd version:
     exit-status: 1
     stdout:
-    - 2.8.5
+    - 2.8.6
   /usr/local/bin/kubectl version:
     exit-status: 1
     stdout:
@@ -22,4 +22,4 @@ command:
   /usr/local/bin/helmfile -v:
     exit-status: 0
     stdout:
-      - 0.158.0
+      - 0.158.1

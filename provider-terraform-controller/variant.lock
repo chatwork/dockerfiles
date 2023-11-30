@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.6.5
-    previousVersion: 1.6.4
+    version: 1.6.4
+    previousVersion: 1.6.5
     versions:
     - 1.2.5
     - 1.2.6
@@ -46,7 +46,7 @@ dependencies:
     - 1.6.5
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/131884659/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/129575925/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -67,38 +67,40 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.6.5 (November 29, 2023)
+        ## 1.6.4 (November 15, 2023)
+
+        ENHANCEMENTS:
+        * backend/s3: Add the parameter `endpoints.sso` to allow overriding the AWS SSO API endpoint. ([#34195](https://github.com/hashicorp/terraform/pull/34195))
 
         BUG FIXES:
-        * backend/s3: Fixes parsing errors in shared config and credentials files. ([#34313](https://github.com/hashicorp/terraform/pull/34313))
-        * backend/s3: Fixes error with AWS SSO when using FIPS endpoints. ([#34313](https://github.com/hashicorp/terraform/pull/34313))
+        * `terraform test`: Fix bug preventing passing sensitive output values from previous run blocks as inputs to future run blocks. ([#34190](https://github.com/hashicorp/terraform/pull/34190))
+        * backend/s3: Add `https_proxy` and `no_proxy` parameters to allow fully specifying proxy configuration ([#34243](https://github.com/hashicorp/terraform/pull/34243))
 
-
-      created_at: "2023-11-29T09:44:47Z"
+      created_at: "2023-11-15T15:24:01Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.5
-      id: 131884659
-      name: v1.6.5
-      node_id: RE_kwDOAQ6CpM4H3GZz
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.4
+      id: 129575925
+      name: v1.6.4
+      node_id: RE_kwDOAQ6CpM4HuSv1
       prerelease: false
-      published_at: "2023-11-29T10:22:48Z"
+      published_at: "2023-11-15T16:01:27Z"
       reactions:
-        "+1": 1
+        "+1": 13
         "-1": 0
         confused: 0
         eyes: 0
-        heart: 0
-        hooray: 0
+        heart: 2
+        hooray: 2
         laugh: 0
-        rocket: 0
-        total_count: 1
-        url: https://api.github.com/repos/hashicorp/terraform/releases/131884659/reactions
-      tag_name: v1.6.5
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.5
-      target_commitish: d957862d0d3fa3ece4e7a3c5b39881d602d0bb84
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/131884659/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/131884659
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.5
+        rocket: 5
+        total_count: 22
+        url: https://api.github.com/repos/hashicorp/terraform/releases/129575925/reactions
+      tag_name: v1.6.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.4
+      target_commitish: d3c4877cb5aa8f7a610c7794d5295ef29b946c18
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/129575925/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/129575925
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.4
 meta:
   dependencies:
     terraform:

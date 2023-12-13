@@ -2458,8 +2458,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.6.5
-    previousVersion: 1.6.4
+    version: 1.6.6
+    previousVersion: 1.6.5
     versions:
     - 1.3.2
     - 1.3.3
@@ -2488,9 +2488,10 @@ dependencies:
     - 1.6.3
     - 1.6.4
     - 1.6.5
+    - 1.6.6
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/131884659/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/133795526/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2511,38 +2512,27 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.6.5 (November 29, 2023)
+        ## 1.6.6 (December 13, 2023)
 
         BUG FIXES:
-        * backend/s3: Fixes parsing errors in shared config and credentials files. ([#34313](https://github.com/hashicorp/terraform/pull/34313))
-        * backend/s3: Fixes error with AWS SSO when using FIPS endpoints. ([#34313](https://github.com/hashicorp/terraform/pull/34313))
+        * `terraform test`: Stop attempting to destroy run blocks that have no actual infrastructure to destroy. This fixes an issue where attempts to destroy "verification" run blocks that load only data sources would fail if the underlying infrastructure referenced by the run blocks had already been destroyed. ([#34331](https://github.com/hashicorp/terraform/pull/34331))
+        * cloud: prevent running saved cloud plans in VCS-connected workspaces. Saved plans might be applied later, and VCS workspaces shouldn't apply configurations that don't come from their designated VCS branch.
+        * core: Unmanaged plugins (mainly used by provider acceptance testing) would not have a provider address set, preventing the caching of their schemas ([#34380](https://github.com/hashicorp/terraform/issues/34380))
 
-
-      created_at: "2023-11-29T09:44:47Z"
+      created_at: "2023-12-13T17:58:11Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.5
-      id: 131884659
-      name: v1.6.5
-      node_id: RE_kwDOAQ6CpM4H3GZz
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.6
+      id: 133795526
+      name: v1.6.6
+      node_id: RE_kwDOAQ6CpM4H-Y7G
       prerelease: false
-      published_at: "2023-11-29T10:22:48Z"
-      reactions:
-        "+1": 1
-        "-1": 0
-        confused: 0
-        eyes: 0
-        heart: 0
-        hooray: 0
-        laugh: 0
-        rocket: 0
-        total_count: 1
-        url: https://api.github.com/repos/hashicorp/terraform/releases/131884659/reactions
-      tag_name: v1.6.5
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.5
-      target_commitish: d957862d0d3fa3ece4e7a3c5b39881d602d0bb84
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/131884659/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/131884659
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.5
+      published_at: "2023-12-13T18:40:01Z"
+      tag_name: v1.6.6
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.6
+      target_commitish: eba3240dae80b8bdd14d747cc43d056ea22573f4
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/133795526/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/133795526
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.6
 meta:
   dependencies:
     atlantis:
@@ -23671,3 +23661,48 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/131884659/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/131884659
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.5
+      1.6.6:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/133795526/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.6.6 (December 13, 2023)
+
+            BUG FIXES:
+            * `terraform test`: Stop attempting to destroy run blocks that have no actual infrastructure to destroy. This fixes an issue where attempts to destroy "verification" run blocks that load only data sources would fail if the underlying infrastructure referenced by the run blocks had already been destroyed. ([#34331](https://github.com/hashicorp/terraform/pull/34331))
+            * cloud: prevent running saved cloud plans in VCS-connected workspaces. Saved plans might be applied later, and VCS workspaces shouldn't apply configurations that don't come from their designated VCS branch.
+            * core: Unmanaged plugins (mainly used by provider acceptance testing) would not have a provider address set, preventing the caching of their schemas ([#34380](https://github.com/hashicorp/terraform/issues/34380))
+
+          created_at: "2023-12-13T17:58:11Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.6.6
+          id: 133795526
+          name: v1.6.6
+          node_id: RE_kwDOAQ6CpM4H-Y7G
+          prerelease: false
+          published_at: "2023-12-13T18:40:01Z"
+          tag_name: v1.6.6
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.6.6
+          target_commitish: eba3240dae80b8bdd14d747cc43d056ea22573f4
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/133795526/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/133795526
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.6.6

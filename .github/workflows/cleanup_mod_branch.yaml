@@ -27,4 +27,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for branch in $(git branch -a | grep "remotes/origin/mod-up-*" | cut -d '/' -f3); do; echo $branch; git push --delete origin $branch;done
+          git branch -a | grep "remotes/origin/mod-up-*"
+          #for branch in $(git branch -a | grep "remotes/origin/mod-up-*" | cut -d '/' -f3); do; echo $branch; git push --delete origin $branch;done

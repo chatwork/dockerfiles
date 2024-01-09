@@ -1,4 +1,4 @@
-name: Update Dependencies
+name: Clean up mod branches
 
 on:
   schedule:
@@ -20,7 +20,7 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - name: Cleanup mod branches
+      - name: Clean up mod branches
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

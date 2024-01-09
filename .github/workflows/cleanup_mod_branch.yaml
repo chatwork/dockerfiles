@@ -1,0 +1,29 @@
+name: Update Dependencies
+
+on:
+  schedule:
+    - cron: '15 21 * * *' # 1日1回12時15分(JST)に起動
+  workflow_dispatch:
+
+jobs:
+  # modコンテナで動かしたいが、awsコマンドが入っておらず、動かせないので、modコマンドを入れるようにする
+  mod:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Dump GitHub context
+        id: github_context_step
+        run: echo '${{ toJSON(github) }}'
+
+      - uses: actions/checkout@v4
+
+      - name: Cleanup mod branches
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for branch in $(git branch -a | grep -e "remotes/origin/mod-up-*" | cut -d '/' -f3); do; echo $branch; git push --delete origin $branch;done

@@ -1,10 +1,10 @@
-FROM alpine:3.16
+FROM alpine:3.19
 
 ARG NR_VERSION=10.15.0.4
 ARG NR_FILE_NAME=newrelic-php5-${NR_VERSION}-linux-musl
 
 LABEL version="${NR_VERSION}"
-LABEL maintainer="niinuma@chatwork.com"
+LABEL maintainer="sakamoto@chatwork.com"
 
 COPY build/docker-* /usr/local/bin/
 

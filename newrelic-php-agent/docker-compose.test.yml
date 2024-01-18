@@ -5,11 +5,12 @@ services:
       context: .
     image: chatwork/newrelic-php-agent
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/newrelic-php-agent tail -f /dev/null
+    entrypoint: ""
+    command: /usr/local/bin/dgoss run --entrypoint tail chatwork/newrelic-php-agent -f /dev/null
     container_name: newrelic-php-agent
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

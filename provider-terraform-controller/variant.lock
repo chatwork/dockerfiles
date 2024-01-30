@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.7.0
-    previousVersion: 1.7.1
+    version: 1.7.1
+    previousVersion: 1.7.0
     versions:
     - 1.2.5
     - 1.2.6
@@ -49,7 +49,7 @@ dependencies:
     - 1.7.1
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/137448741/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/138323143/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -69,124 +69,39 @@ dependencies:
         subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
-      body: "## 1.7.0 (January 17, 2024)\n\nUPGRADE NOTES:\n\n* Input validations
-        are being restored to the state file in this version of Terraform. Due to
-        a state interoperability issue ([#33770](https://github.com/hashicorp/terraform/issues/33770))
-        in earlier versions, users that require interaction between different minor
-        series should ensure they have upgraded to the following patches:\n    * Users
-        of Terraform prior to 1.3.0 are unaffected;\n    * Terraform 1.3 series users
-        should upgrade to 1.3.10;\n    * Terraform 1.4 series users should upgrade
-        to 1.4.7;\n    * Terraform 1.5 series users should upgrade to 1.5.7;\n    *
-        Users of Terraform 1.6.0 and later are unaffected.\n \n  This is important
-        for users with `terraform_remote_state` data sources reading remote state
-        across different versions of Terraform.\n* `nonsensitive` function no longer
-        raises an error when applied to a value that is already non-sensitive. ([#33856](https://github.com/hashicorp/terraform/issues/33856))\n*
-        `terraform graph` now produces a simplified graph describing only relationships
-        between resources by default, for consistency with the granularity of information
-        returned by other commands that emphasize resources as the main interesting
-        object type and de-emphasize the other \"glue\" objects that connect them.\n\n
-        \   The type of graph that earlier versions of Terraform produced by default
-        is still available with explicit use of the `-type=plan` option, producing
-        an approximation of the real dependency graph Terraform Core would use to
-        construct a plan.\n* `terraform test`: Simplify the ordering of destroy operations
-        during test cleanup to simple reverse run block order. ([#34293](https://github.com/hashicorp/terraform/issues/34293))\n\n*
-        backend/s3: The `use_legacy_workflow` argument now defaults to `false`. The
-        backend will now search for credentials in the same order as the default provider
-        chain in the AWS SDKs and AWS CLI. To revert to the legacy credential provider
-        chain ordering, set this value to `true`. This argument, and the ability to
-        use the legacy workflow, is deprecated. To encourage consistency with the
-        AWS SDKs, this argument will be removed in a future minor version.\n\nNEW
-        FEATURES:\n\n* `terraform test`: Providers, modules, resources, and data sources
-        can now be mocked during executions of `terraform test`. The following new
-        blocks have been introduced within `.tftest.hcl` files:\n\n    * `mock_provider`:
-        Can replace provider instances with mocked providers, allowing tests to execute
-        in `command = apply` mode without requiring a configured cloud provider account
-        and credentials. Terraform will create fake resources for mocked providers
-        and maintain them in state for the lifecycle of the given test file.\n    *
-        `override_resource`: Specific resources can be overridden so Terraform will
-        create a fake resource with custom values instead of creating infrastructure
-        for the overridden resource.\n    * `override_data`: Specific data sources
-        can be overridden so data can be imported into tests without requiring real
-        infrastructure to be created externally first.\n    * `override_module`: Specific
-        modules can be overridden in their entirety to give greater control over the
-        returned outputs without requiring in-depth knowledge of the module itself.\n
-        \n* `removed` block for refactoring modules: Module authors can now record
-        in source code when a resource or module call has been removed from configuration,
-        and can inform Terraform whether the corresponding object should be deleted
-        or simply removed from state.\n  \n  This effectively provides a configuration-driven
-        workflow to replace `terraform state rm`. Removing an object from state is
-        a new type of action which is planned and applied like any other. The `terraform
-        state rm` command will remain available for scenarios in which directly modifying
-        the state file is appropriate.\n\nBUG FIXES:\n\n* Ignore potential remote
-        terraform version mismatch when running force-unlock ([#28853](https://github.com/hashicorp/terraform/issues/28853))\n*
-        Exit Dockerfile build script early on `cd` failure. ([#34128](https://github.com/hashicorp/terraform/issues/34128))\n*
-        `terraform test`: Stop attempting to destroy run blocks that have no actual
-        infrastructure to destroy. This fixes an issue where attempts to destroy \"verification\"
-        run blocks that load only data sources would fail if the underlying infrastructure
-        referenced by the run blocks had already been destroyed. ([#34331](https://github.com/hashicorp/terraform/pull/34331))\n*
-        `terraform test`: Improve error message for invalid run block names. ([#34469](https://github.com/hashicorp/terraform/pull/34469))\n*
-        `terraform test`: Fix bug where outputs in \"empty\" modules were not available
-        to the assertions from Terraform test files. ([#34482](https://github.com/hashicorp/terraform/pull/34482))\n*
-        security: Upstream patch to mitigate the security advisory CVE-2023-48795,
-        which potentially affects `local-exec` and `file` provisioners connecting
-        to remote hosts using SSH. ([#34426](https://github.com/hashicorp/terraform/issues/34426))\n\nENHANCEMENTS:\n\n*
-        `terraform test`: Providers defined within test files can now reference variables
-        from their configuration that are defined within the test file. ([#34069](https://github.com/hashicorp/terraform/issues/34069))\n*
-        `terraform test`: Providers defined within test files can now reference outputs
-        from run blocks. ([#34118](https://github.com/hashicorp/terraform/issues/34118))\n*
-        `terraform test`: Terraform functions are now available within variables and
-        provider blocks within test files. ([#34204](https://github.com/hashicorp/terraform/issues/34204))\n*
-        `terraform test`: Terraform will now load variables from any `terraform.tfvars`
-        within the testing directory, and apply the variable values to tests within
-        the same directory. ([#34341](https://github.com/hashicorp/terraform/pull/34341))\n*
-        `terraform graph`: Now produces a simplified resources-only graph by default.
-        ([#34288](https://github.com/hashicorp/terraform/pull/34288))\n* `terraform
-        console`: Now supports a `-plan` option which allows evaluating expressions
-        against the planned new state, rather than against the prior state. This provides
-        a more complete set of values for use in console expressions, at the expense
-        of a slower startup time due first calculating the plan. ([#34342](https://github.com/hashicorp/terraform/issues/34342))\n*
-        `import`: `for_each` can now be used to expand the `import` block to handle
-        multiple resource instances ([#33932](https://github.com/hashicorp/terraform/issues/33932))\n*
-        If the proposed change for a resource instance is rejected either due to a
-        `postcondition` block or a `prevent_destroy` setting, Terraform will now include
-        that proposed change in the plan output alongside the relevant error, whereas
-        before the error would _replace_ the proposed change in the output. ([#34312](https://github.com/hashicorp/terraform/issues/34312))\n*
-        `.terraformignore`: improve performance when ignoring large directories ([#34400](https://github.com/hashicorp/terraform/pull/34400))\n\n##
-        Previous Releases\n\nFor information on prior major and minor releases, see
-        their changelogs:\n\n* [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)\n*
-        [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)\n* [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)\n*
-        [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)\n* [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)\n*
-        [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)\n* [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)\n*
-        [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)\n*
-        [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)\n*
-        [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)\n*
-        [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)\n*
-        [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)\n"
-      created_at: "2024-01-17T18:42:12Z"
+      body: |+
+        ## 1.7.1 (January 24, 2024)
+
+        BUG FIXES:
+
+        * `terraform test`: Fix crash when referencing variables or functions within the file level `variables` block. ([#34531](https://github.com/hashicorp/terraform/issues/34531))
+        * `terraform test`: Fix crash when `override_module` block was missing the `outputs` attribute. ([#34563](https://github.com/hashicorp/terraform/issues/34563))
+
+      created_at: "2024-01-24T11:49:52Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.0
-      id: 137448741
-      name: v1.7.0
-      node_id: RE_kwDOAQ6CpM4IMU0l
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.1
+      id: 138323143
+      name: v1.7.1
+      node_id: RE_kwDOAQ6CpM4IPqTH
       prerelease: false
-      published_at: "2024-01-17T19:59:32Z"
+      published_at: "2024-01-24T12:36:42Z"
       reactions:
-        "+1": 9
+        "+1": 10
         "-1": 0
         confused: 0
-        eyes: 3
-        heart: 3
-        hooray: 13
+        eyes: 1
+        heart: 1
+        hooray: 1
         laugh: 2
-        rocket: 16
-        total_count: 46
-        url: https://api.github.com/repos/hashicorp/terraform/releases/137448741/reactions
-      tag_name: v1.7.0
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.0
-      target_commitish: 7608abc7ad25ee7af72609a25ed001bf51569861
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/137448741/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/137448741
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.0
+        rocket: 1
+        total_count: 16
+        url: https://api.github.com/repos/hashicorp/terraform/releases/138323143/reactions
+      tag_name: v1.7.1
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.1
+      target_commitish: e7e6cd1d6773c2d598c843560b7e318236d9a91c
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/138323143/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/138323143
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.1
 meta:
   dependencies:
     terraform:

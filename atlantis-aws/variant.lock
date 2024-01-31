@@ -2277,8 +2277,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.7.1
-    previousVersion: 1.7.0
+    version: 1.7.2
+    previousVersion: 1.7.1
     versions:
     - 1.3.2
     - 1.3.3
@@ -2310,9 +2310,10 @@ dependencies:
     - 1.6.6
     - 1.7.0
     - 1.7.1
+    - 1.7.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/138323143/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/139335454/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2333,21 +2334,26 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.7.1 (January 24, 2024)
+        ## 1.7.2 (January 31, 2024)
 
         BUG FIXES:
 
-        * `terraform test`: Fix crash when referencing variables or functions within the file level `variables` block. ([#34531](https://github.com/hashicorp/terraform/issues/34531))
-        * `terraform test`: Fix crash when `override_module` block was missing the `outputs` attribute. ([#34563](https://github.com/hashicorp/terraform/issues/34563))
+        * backend/s3: No longer returns error when IAM user or role does not have access to the default workspace prefix `env:`. ([#34511](https://github.com/hashicorp/terraform/pull/34511))
+        * cloud: When triggering a run, the .terraform/modules directory was being excluded from the configuration upload causing Terraform Cloud to try (and sometimes fail) to re-download the modules. ([#34543](https://github.com/hashicorp/terraform/issues/34543))
 
-      created_at: "2024-01-24T11:49:52Z"
+        ENHANCEMENTS:
+
+        * `terraform fmt`: Terraform mock data files (`.tfmock.hcl`) will now be included when executing the format command. ([#34580](https://github.com/hashicorp/terraform/issues/34580))
+        * Add additional diagnostics when a generated provider block that fails schema validation requires explicit configuration. ([#34595](https://github.com/hashicorp/terraform/issues/34595))
+
+      created_at: "2024-01-31T14:19:49Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.1
-      id: 138323143
-      name: v1.7.1
-      node_id: RE_kwDOAQ6CpM4IPqTH
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.2
+      id: 139335454
+      name: v1.7.2
+      node_id: RE_kwDOAQ6CpM4IThce
       prerelease: false
-      published_at: "2024-01-24T12:36:42Z"
+      published_at: "2024-01-31T14:49:39Z"
       reactions:
         "+1": 1
         "-1": 0
@@ -2358,13 +2364,13 @@ dependencies:
         laugh: 0
         rocket: 0
         total_count: 1
-        url: https://api.github.com/repos/hashicorp/terraform/releases/138323143/reactions
-      tag_name: v1.7.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.1
-      target_commitish: e7e6cd1d6773c2d598c843560b7e318236d9a91c
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/138323143/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/138323143
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.1
+        url: https://api.github.com/repos/hashicorp/terraform/releases/139335454/reactions
+      tag_name: v1.7.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.2
+      target_commitish: e989d235c772e3dca0439b34e9bbbbaa1fb7dac7
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/139335454/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/139335454
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.2
 meta:
   dependencies:
     atlantis:
@@ -25172,3 +25178,64 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/138323143/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/138323143
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.1
+      1.7.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/139335454/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.7.2 (January 31, 2024)
+
+            BUG FIXES:
+
+            * backend/s3: No longer returns error when IAM user or role does not have access to the default workspace prefix `env:`. ([#34511](https://github.com/hashicorp/terraform/pull/34511))
+            * cloud: When triggering a run, the .terraform/modules directory was being excluded from the configuration upload causing Terraform Cloud to try (and sometimes fail) to re-download the modules. ([#34543](https://github.com/hashicorp/terraform/issues/34543))
+
+            ENHANCEMENTS:
+
+            * `terraform fmt`: Terraform mock data files (`.tfmock.hcl`) will now be included when executing the format command. ([#34580](https://github.com/hashicorp/terraform/issues/34580))
+            * Add additional diagnostics when a generated provider block that fails schema validation requires explicit configuration. ([#34595](https://github.com/hashicorp/terraform/issues/34595))
+
+          created_at: "2024-01-31T14:19:49Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.2
+          id: 139335454
+          name: v1.7.2
+          node_id: RE_kwDOAQ6CpM4IThce
+          prerelease: false
+          published_at: "2024-01-31T14:49:39Z"
+          reactions:
+            "+1": 1
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 1
+            url: https://api.github.com/repos/hashicorp/terraform/releases/139335454/reactions
+          tag_name: v1.7.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.2
+          target_commitish: e989d235c772e3dca0439b34e9bbbbaa1fb7dac7
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/139335454/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/139335454
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.2

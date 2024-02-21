@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 ARG TARGETARCH
 ARG TARGETOS
 
-ARG KUBECTL_VERSION=1.27.3
+ARG KUBECTL_VERSION=1.28.7
 
 LABEL version="22.04"
 LABEL maintainer="sakamoto@chatwork.com"

@@ -8,7 +8,7 @@ command:
   /usr/local/bin/kubectl version:
     exit-status: 1
     stdout:
-    - 1.27.3
+    - 1.28.7
   /usr/local/bin/helm plugin list:
     exit-status: 0
     stdout:

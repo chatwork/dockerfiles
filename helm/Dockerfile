@@ -1,6 +1,6 @@
 FROM chatwork/alpine-sdk:3.16
 
-ARG HELM_VERSION=3.14.1
+ARG HELM_VERSION=3.14.2
 LABEL version="${HELM_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 LABEL maintainer="ozaki@chatwork.com"

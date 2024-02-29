@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.7.4
-    previousVersion: 1.7.3
+    version: 1.7.3
+    previousVersion: 1.7.4
     versions:
     - 1.2.5
     - 1.2.6
@@ -52,7 +52,7 @@ dependencies:
     - 1.7.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/143054336/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/140440885/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -72,39 +72,36 @@ dependencies:
         subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
-      body: |+
-        ## 1.7.4 (February 21, 2024)
-
-        BUG FIXES:
-
-        * `terraform test`: Fix automatic loading of variable files within the test directory on `windows` platforms. ([#34666](https://github.com/hashicorp/terraform/pull/34666))
-        * plan renderer: Very large numbers (> 2^63) will no longer be truncated in the human-readable plan. ([#34702](https://github.com/hashicorp/terraform/pull/34702))
-
-      created_at: "2024-02-21T19:09:18Z"
+      body: "## 1.7.3 (February 7, 2024)\n\nBUG FIXES: \n\n* `terraform test`: Fix
+        crash when dynamic-typed attributes are not assigned values in mocks. ([#34610](https://github.com/hashicorp/terraform/pull/34511))\n*
+        provisioners/file: Fix panic when source is null. ([#34621](https://github.com/hashicorp/terraform/pull/34621))\n*
+        `import`: Throw helpful error message if an import block is configured with
+        an empty ID ([34625](https://github.com/hashicorp/terraform/pull/34625))\n\n"
+      created_at: "2024-02-08T01:00:10Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.4
-      id: 143054336
-      name: v1.7.4
-      node_id: RE_kwDOAQ6CpM4IhtYA
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.7.3
+      id: 140440885
+      name: v1.7.3
+      node_id: RE_kwDOAQ6CpM4IXvU1
       prerelease: false
-      published_at: "2024-02-21T20:19:23Z"
+      published_at: "2024-02-08T01:43:04Z"
       reactions:
-        "+1": 2
+        "+1": 9
         "-1": 0
         confused: 0
-        eyes: 0
-        heart: 0
-        hooray: 0
-        laugh: 0
-        rocket: 0
-        total_count: 2
-        url: https://api.github.com/repos/hashicorp/terraform/releases/143054336/reactions
-      tag_name: v1.7.4
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.4
-      target_commitish: acf1069e83e9dc11dc59d4222cf194bf68b23572
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/143054336/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/143054336
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.4
+        eyes: 1
+        heart: 4
+        hooray: 7
+        laugh: 2
+        rocket: 2
+        total_count: 25
+        url: https://api.github.com/repos/hashicorp/terraform/releases/140440885/reactions
+      tag_name: v1.7.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.7.3
+      target_commitish: ebd7d52caaeb01accbe97aa72ed1297bf1a3f951
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/140440885/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/140440885
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.7.3
 meta:
   dependencies:
     terraform:

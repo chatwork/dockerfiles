@@ -5,11 +5,12 @@ services:
       context: .
     image: chatwork/fluentd
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run chatwork/fluentd
+    entrypoint: ""
+    command: /usr/local/bin/dgoss run --entrypoint tail chatwork/fluentd -f /dev/null
     container_name: fluentd
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

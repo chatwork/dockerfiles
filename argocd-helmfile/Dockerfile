@@ -1,6 +1,6 @@
-FROM quay.io/argoproj/argocd:v2.10.3
+FROM quay.io/argoproj/argocd:v2.10.4
 
-LABEL version="2.10.3-0.162.0"
+LABEL version="2.10.4-0.162.0"
 LABEL maintainer="shinya@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"
 

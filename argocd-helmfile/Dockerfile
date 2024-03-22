@@ -1,6 +1,6 @@
 FROM quay.io/argoproj/argocd:v2.10.4
 
-LABEL version="2.10.4-0.162.0"
+LABEL version="2.10.4-0.163.0"
 LABEL maintainer="shinya@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"
 
@@ -10,7 +10,7 @@ USER root
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG HELMFILE_VERSION=0.162.0
+ARG HELMFILE_VERSION=0.163.0
 ARG HELM_VERSION=3.14.3
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"

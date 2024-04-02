@@ -1,7 +1,6 @@
 FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 
 LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
-LABEL maintainer="shinya@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
@@ -15,11 +14,11 @@ ARG HELM_VERSION={{ .helm_version }}
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
 ARG HELMFILE_FILE_NAME="helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz"
-ARG KUBECTL_VERSION=1.28.7
-ARG SOPS_VERSION=3.7.3
-ARG HELM_DIFF_VERSION=3.8.1
-ARG HELM_SECRETS_VERSION=4.4.2
-ARG HELM_GIT_VERSION=0.14.0
+ARG KUBECTL_VERSION=1.29.3
+ARG SOPS_VERSION=3.8.1
+ARG HELM_DIFF_VERSION=3.9.5
+ARG HELM_SECRETS_VERSION=4.6.0
+ARG HELM_GIT_VERSION=0.15.1
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)

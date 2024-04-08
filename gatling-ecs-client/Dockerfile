@@ -1,6 +1,6 @@
 FROM node:16.3.0-slim
 
-LABEL version=0.1.1
+LABEL version=0.1.2
 
 WORKDIR /usr/src/app
 

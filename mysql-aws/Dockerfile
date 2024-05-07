@@ -16,3 +16,9 @@ RUN apt-get update -y \
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
     && ./aws/install
+
+RUN curl "https://releases.hashicorp.com/vault/1.16.1/vault_1.16.1_linux_amd64.zip" -o "vault.zip" \
+    && unzip vault.zip \
+    && mv vault /usr/local/bin/ \
+    && chmod +x /usr/local/bin/vault \
+    && rm vault.zip

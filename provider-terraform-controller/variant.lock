@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.8.2
-    previousVersion: 1.8.1
+    version: 1.8.3
+    previousVersion: 1.8.2
     versions:
     - 1.2.5
     - 1.2.6
@@ -54,9 +54,10 @@ dependencies:
     - 1.8.0
     - 1.8.1
     - 1.8.2
+    - 1.8.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/152577843/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/154732808/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -77,44 +78,37 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.8.2 (April 24, 2024)
+        ## 1.8.3 (May 8, 2024)
 
         BUG FIXES:
+        * `terraform test`: Providers configured within an overridden module could panic. ([#35110](https://github.com/hashicorp/terraform/issues/35110))
+        * `core`: Fix crash when a provider incorrectly plans a nested object when the configuration is `null` ([#35090](https://github.com/hashicorp/terraform/issues/35090))
 
-        * `terraform apply`: Prevent panic when a provider erroneously provides unknown values. ([#35048](https://github.com/hashicorp/terraform/pull/35048))
-        * `terraform plan`: Replace panic with error message when self-referencing resources and data sources from the `count` and `for_each` meta attributes. ([#35047](https://github.com/hashicorp/terraform/pull/35047))
-        * `terraform test`: Restore `TF_ENV_*` variables being made available to testing modules. ([#35014](https://github.com/hashicorp/terraform/pull/35014))
-        * `terraform test`: Prevent crash when referencing local variables within overridden modules. ([#35030](https://github.com/hashicorp/terraform/pull/35030))
-
-        ENHANCEMENTS:
-
-        * Improved performance by removing unneeded additional computation for a disabled experimental feature. ([#35066](https://github.com/hashicorp/terraform/pull/35066))
-
-        OTHER CHANGES:
-
-        * Update all references to Terraform Cloud to refer to HCP Terraform, the service's new name. This only affects display text; the `cloud` block and environment variables like `TF_CLOUD_ORGANIZATION` remain unchanged. ([#35050](https://github.com/hashicorp/terraform/pull/35050))
-
-        NOTE:
-
-        Starting with this release, we are including a copy of our license file in all packaged versions of our releases, such as the release .zip files. If you are consuming these files directly and would prefer to extract the one terraform file instead of extracting everything, you need to add an extra argument specifying the file to extract, like this:
-        ```
-        unzip terraform_1.8.2_linux_amd64.zip terraform
-        ```
-
-      created_at: "2024-04-24T09:42:50Z"
+      created_at: "2024-05-08T08:17:19Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.2
-      id: 152577843
-      name: v1.8.2
-      node_id: RE_kwDOAQ6CpM4JGCcz
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.3
+      id: 154732808
+      name: v1.8.3
+      node_id: RE_kwDOAQ6CpM4JOQkI
       prerelease: false
-      published_at: "2024-04-24T10:26:24Z"
-      tag_name: v1.8.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.2
-      target_commitish: 232035b9306b7d1f5b1ac97c8e1b6b534a38b9a8
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/152577843/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/152577843
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.2
+      published_at: "2024-05-08T09:09:52Z"
+      reactions:
+        "+1": 1
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 1
+        total_count: 2
+        url: https://api.github.com/repos/hashicorp/terraform/releases/154732808/reactions
+      tag_name: v1.8.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.3
+      target_commitish: 6b949e785850c69caa4c8723305a57980c43109c
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/154732808/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/154732808
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.3
 meta:
   dependencies:
     terraform:
@@ -2787,3 +2781,58 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/152577843/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/152577843
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.2
+      1.8.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/154732808/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.8.3 (May 8, 2024)
+
+            BUG FIXES:
+            * `terraform test`: Providers configured within an overridden module could panic. ([#35110](https://github.com/hashicorp/terraform/issues/35110))
+            * `core`: Fix crash when a provider incorrectly plans a nested object when the configuration is `null` ([#35090](https://github.com/hashicorp/terraform/issues/35090))
+
+          created_at: "2024-05-08T08:17:19Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.3
+          id: 154732808
+          name: v1.8.3
+          node_id: RE_kwDOAQ6CpM4JOQkI
+          prerelease: false
+          published_at: "2024-05-08T09:09:52Z"
+          reactions:
+            "+1": 1
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 1
+            total_count: 2
+            url: https://api.github.com/repos/hashicorp/terraform/releases/154732808/reactions
+          tag_name: v1.8.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.3
+          target_commitish: 6b949e785850c69caa4c8723305a57980c43109c
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/154732808/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/154732808
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.3

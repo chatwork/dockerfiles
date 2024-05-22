@@ -2490,8 +2490,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.8.3
-    previousVersion: 1.8.2
+    version: 1.8.4
+    previousVersion: 1.8.3
     versions:
     - 1.3.2
     - 1.3.3
@@ -2531,9 +2531,10 @@ dependencies:
     - 1.8.1
     - 1.8.2
     - 1.8.3
+    - 1.8.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/154732808/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/156925155/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2554,37 +2555,27 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.8.3 (May 8, 2024)
+        ## 1.8.4 (May 22, 2024)
 
         BUG FIXES:
-        * `terraform test`: Providers configured within an overridden module could panic. ([#35110](https://github.com/hashicorp/terraform/issues/35110))
-        * `core`: Fix crash when a provider incorrectly plans a nested object when the configuration is `null` ([#35090](https://github.com/hashicorp/terraform/issues/35090))
+        * `core`: Fix exponential slowdown in some cases when modules are using `depends_on`. ([#35157](https://github.com/hashicorp/terraform/issues/35157))
+        * `import` blocks: Fix bug where resources with nested, computed, and optional `id` attributes would fail to generate configuration. ([#35220](https://github.com/hashicorp/terraform/issues/35220))
+        * Updated to new `golang.org/x/net` release, which addressed CVE-2023-45288 ([#35165](https://github.com/hashicorp/terraform/issues/35165))
 
-      created_at: "2024-05-08T08:17:19Z"
+      created_at: "2024-05-22T15:51:21Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.3
-      id: 154732808
-      name: v1.8.3
-      node_id: RE_kwDOAQ6CpM4JOQkI
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.4
+      id: 156925155
+      name: v1.8.4
+      node_id: RE_kwDOAQ6CpM4JWnzj
       prerelease: false
-      published_at: "2024-05-08T09:09:52Z"
-      reactions:
-        "+1": 1
-        "-1": 0
-        confused: 0
-        eyes: 0
-        heart: 0
-        hooray: 0
-        laugh: 0
-        rocket: 1
-        total_count: 2
-        url: https://api.github.com/repos/hashicorp/terraform/releases/154732808/reactions
-      tag_name: v1.8.3
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.3
-      target_commitish: 6b949e785850c69caa4c8723305a57980c43109c
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/154732808/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/154732808
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.3
+      published_at: "2024-05-22T16:40:25Z"
+      tag_name: v1.8.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.4
+      target_commitish: 401065107869f3ccbfe23fee39ff285102344d8e
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/156925155/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/156925155
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.4
 meta:
   dependencies:
     atlantis:
@@ -30125,3 +30116,48 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/154732808/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/154732808
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.3
+      1.8.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/156925155/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.8.4 (May 22, 2024)
+
+            BUG FIXES:
+            * `core`: Fix exponential slowdown in some cases when modules are using `depends_on`. ([#35157](https://github.com/hashicorp/terraform/issues/35157))
+            * `import` blocks: Fix bug where resources with nested, computed, and optional `id` attributes would fail to generate configuration. ([#35220](https://github.com/hashicorp/terraform/issues/35220))
+            * Updated to new `golang.org/x/net` release, which addressed CVE-2023-45288 ([#35165](https://github.com/hashicorp/terraform/issues/35165))
+
+          created_at: "2024-05-22T15:51:21Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.4
+          id: 156925155
+          name: v1.8.4
+          node_id: RE_kwDOAQ6CpM4JWnzj
+          prerelease: false
+          published_at: "2024-05-22T16:40:25Z"
+          tag_name: v1.8.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.4
+          target_commitish: 401065107869f3ccbfe23fee39ff285102344d8e
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/156925155/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/156925155
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.4

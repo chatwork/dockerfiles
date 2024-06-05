@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.8.4
-    previousVersion: 1.8.3
+    version: 1.8.5
+    previousVersion: 1.8.4
     versions:
     - 1.2.5
     - 1.2.6
@@ -56,9 +56,10 @@ dependencies:
     - 1.8.2
     - 1.8.3
     - 1.8.4
+    - 1.8.5
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/156925155/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/158953179/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -79,27 +80,26 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.8.4 (May 22, 2024)
+        ## 1.8.5 (June 5, 2024)
 
         BUG FIXES:
-        * `core`: Fix exponential slowdown in some cases when modules are using `depends_on`. ([#35157](https://github.com/hashicorp/terraform/issues/35157))
-        * `import` blocks: Fix bug where resources with nested, computed, and optional `id` attributes would fail to generate configuration. ([#35220](https://github.com/hashicorp/terraform/issues/35220))
-        * Updated to new `golang.org/x/net` release, which addressed CVE-2023-45288 ([#35165](https://github.com/hashicorp/terraform/issues/35165))
 
-      created_at: "2024-05-22T15:51:21Z"
+        * `terraform test`: Remove duplicate warning diagnostic when providing values for unknown variables in run blocks. ([#35172](https://github.com/hashicorp/terraform/issues/35172))
+
+      created_at: "2024-06-05T08:41:33Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.4
-      id: 156925155
-      name: v1.8.4
-      node_id: RE_kwDOAQ6CpM4JWnzj
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.5
+      id: 158953179
+      name: v1.8.5
+      node_id: RE_kwDOAQ6CpM4JeW7b
       prerelease: false
-      published_at: "2024-05-22T16:40:25Z"
-      tag_name: v1.8.4
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.4
-      target_commitish: 401065107869f3ccbfe23fee39ff285102344d8e
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/156925155/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/156925155
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.4
+      published_at: "2024-06-05T09:32:59Z"
+      tag_name: v1.8.5
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.5
+      target_commitish: 8f2d640b719872f9661d46deb628d1f14d0fc135
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/158953179/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/158953179
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.5
 meta:
   dependencies:
     terraform:
@@ -2872,3 +2872,47 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/156925155/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/156925155
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.4
+      1.8.5:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/158953179/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.8.5 (June 5, 2024)
+
+            BUG FIXES:
+
+            * `terraform test`: Remove duplicate warning diagnostic when providing values for unknown variables in run blocks. ([#35172](https://github.com/hashicorp/terraform/issues/35172))
+
+          created_at: "2024-06-05T08:41:33Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.8.5
+          id: 158953179
+          name: v1.8.5
+          node_id: RE_kwDOAQ6CpM4JeW7b
+          prerelease: false
+          published_at: "2024-06-05T09:32:59Z"
+          tag_name: v1.8.5
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.8.5
+          target_commitish: 8f2d640b719872f9661d46deb628d1f14d0fc135
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/158953179/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/158953179
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.8.5

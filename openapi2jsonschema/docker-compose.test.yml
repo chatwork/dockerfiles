@@ -5,11 +5,12 @@ services:
       context: .
     image: chatwork/openapi2jsonschema
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
-    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/openapi2jsonschema tail -f /dev/null
+    entrypoint: ""
+    command: /usr/local/bin/dgoss run --entrypoint tail chatwork/openapi2jsonschema -f /dev/null
     container_name: openapi2jsonschema
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

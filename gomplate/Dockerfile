@@ -3,7 +3,7 @@ FROM chatwork/alpine-sdk:3.16
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG GOMPLATE_VERSION=4.0.0
+ARG GOMPLATE_VERSION=4.0.1
 
 LABEL version="v${GOMPLATE_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"

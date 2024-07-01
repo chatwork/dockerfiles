@@ -29,11 +29,11 @@ command:
   /usr/local/bin/terraform --version:
     exit-status: 0
     stdout:
-      - 1.8.5
+      - 1.9.0
   /usr/local/bin/atlantis version:
     exit-status: 0
     stdout:
-      - 0.28.1
+      - 0.28.3
   /usr/bin/git-lfs --version:
     exit-status: 0
     stdout:

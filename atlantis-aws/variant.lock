@@ -2472,8 +2472,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.9.0
-    previousVersion: 1.8.5
+    version: 1.9.1
+    previousVersion: 1.9.0
     versions:
     - 1.3.2
     - 1.3.3
@@ -2516,9 +2516,10 @@ dependencies:
     - 1.8.4
     - 1.8.5
     - 1.9.0
+    - 1.9.1
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/162590552/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/163810250/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2538,93 +2539,30 @@ dependencies:
         subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
-      body: |
-        ## 1.9.0 (June 26, 2024)
-
-        If you are upgrading from an earlier minor release, please refer to [the Terraform v1.9 Upgrade Guide](https://developer.hashicorp.com/terraform/language/v1.9.x/upgrade-guides).
-
-        NEW FEATURES:
-
-        * **Input variable validation rules can refer to other objects**: Previously input variable validation rules could refer only to the variable being validated. Now they are general expressions, similar to those elsewhere in a module, which can refer to other input variables and to other objects such as data resources.
-        * **`templatestring` function**: a new built-in function which is similar to `templatefile` but designed to render templates obtained dynamically, such as from a data resource result.
-
-        ENHANCEMENTS:
-
-        * `terraform plan`: Improved presentation of OPA and Sentinel policy evaluations in HCP Terraform remote runs, for logical separation.
-        * `terraform init` now accepts a `-json` option. If specified, enables the machine readable JSON output. ([#34886](https://github.com/hashicorp/terraform/pull/34886))
-        * `terraform test`: Test runs can now pass sensitive values to input variables while preserving their dynamic sensitivity. Previously sensitivity would be preserved only for variables statically declared as being sensitive, using `sensitive = true`. ([#35021](https://github.com/hashicorp/terraform/pull/35021))
-        * config: Input variable validation rules can now refer to other objects in the same module. ([#34955](https://github.com/hashicorp/terraform/pull/34955))
-        * config: `templatestring` function allows rendering a template provided as a string. ([#34968](https://github.com/hashicorp/terraform/pull/34968), [#35224](https://github.com/hashicorp/terraform/pull/35224), [#35285](https://github.com/hashicorp/terraform/pull/35285))
-        * core: Performance improvement during graph building for configurations with an extremely large number of `resource` blocks. ([#35088](https://github.com/hashicorp/terraform/pull/35088))
-        * built-in `terraform` provider: Allows `moved` block refactoring from the `hashicorp/null` provider `null_resource` resource type to the `terraform_data` resource type. ([#35163](https://github.com/hashicorp/terraform/pull/35163))
-        * `terraform output` with `cloud` block: Terraform no longer suggests that data loss could occur when outputs are not available. ([#35143](https://github.com/hashicorp/terraform/issues/35143))
-        * `terraform console`: Now has basic support for multi-line input in interactive mode. ([#34822](https://github.com/hashicorp/terraform/pull/34822))
-            If an entered line contains opening parentheses/etc that are not closed, Terraform will await another line of input to complete the expression. This initial implementation is primarily intended to support pasting in multi-line expressions from elsewhere, rather than for manual multi-line editing, so the interactive editing support is currently limited.
-        * cli: Reduced copying of state to improve performance with large numbers of resources. ([#35164](https://github.com/hashicorp/terraform/issues/35164))
-        * `removed` blocks can now declare destroy-time provisioners which will be executed when the associated resource instances are destroyed. ([#35230](https://github.com/hashicorp/terraform/issues/35230))
-
-        BUG FIXES:
-
-        * `remote-exec` provisioner: Each remote connection will now be closed immediately after use. ([#34137](https://github.com/hashicorp/terraform/issues/34137))
-        * backend/s3: Fixed the digest value displayed for DynamoDB/S3 state checksum mismatches. ([#34387](https://github.com/hashicorp/terraform/issues/34387))
-        * `terraform test`: Fix bug in which non-Hashicorp providers required by testing modules and initialised within the test files were assigned incorrect registry addresses. ([#35161](https://github.com/hashicorp/terraform/issues/35161))
-        * config: The `templatefile` function no longer returns a "panic" error if the template file path is marked as sensitive. Instead, the template rendering result is also marked as sensitive. ([#35180](https://github.com/hashicorp/terraform/issues/35180))
-        * config: `import` blocks which referenced resources in non-existent modules were silently ignored when they should have raised an error ([#35330](https://github.com/hashicorp/terraform/issues/35330))
-        * `terraform init`: When selecting a version for a provider that has both positive and negative version constraints for the same prerelease -- e.g. `1.2.0-beta.1, !1.2.0-beta.1` -- the negative constraint will now overrule the positive, for consistency with how negative constraints are handled otherwise. Previously Terraform would incorrectly treat the positive as overriding the negative if the specified version was a prerelease. ([#35181](https://github.com/hashicorp/terraform/issues/35181))
-        * `import`: `import` blocks could block a destroy operation if the target resource was already deleted ([#35272](https://github.com/hashicorp/terraform/issues/35272))
-        * `cli`: plan output was missing blocks which were entirely unknown ([#35271](https://github.com/hashicorp/terraform/issues/35271))
-        * `cli`: fix crash when running `providers mirror` with an incomplete lock file ([#35322](https://github.com/hashicorp/terraform/issues/35322))
-        * core: Changing `create_before_destroy` when replacing an instance, then applying with `-refresh=false` would order the apply operations incorrectly ([#35261](https://github.com/hashicorp/terraform/issues/35261))
-        * core: Resource addresses that start with the optional `resource.` prefix will now be correctly parsed when used as an address target. ([#35333](https://github.com/hashicorp/terraform/issues/35333))
-
-        UPGRADE NOTES:
-
-        * `terraform test`: It is no longer valid to specify version constraints within provider blocks within .tftest.hcl files. Instead, version constraints must be supplied within the main configuration where the provider is in use.
-        * `import`: Invalid `import` blocks pointing to nonexistent modules were mistakenly ignored in prior versions. These will need to be fixed or removed in v1.9.
-
-        ## Previous Releases
-
-        For information on prior major and minor releases, see their changelogs:
-
-        * [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
-        * [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
-        * [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
-        * [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
-        * [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
-        * [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
-        * [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
-        * [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
-        * [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
-        * [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
-        * [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
-        * [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
-        * [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
-        * [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
-      created_at: "2024-06-26T15:49:10Z"
+      body: "## 1.9.1 (July 3, 2024)\r\n\r\nUPGRADE NOTES:\r\n\r\n* Library used by
+        Terraform (hashicorp/go-getter) for installing/updating modules was upgraded
+        from v1.7.5 to v1.7.6. This addresses [CVE-2024-6257](https://nvd.nist.gov/vuln/detail/CVE-2024-6257).
+        This change may have a negative effect on performance of `terraform init`
+        or `terraform get` in case of larger git repositories. Please do file an issue
+        if you find the performance difference noticable. ([#35376](https://github.com/hashicorp/terraform/pull/35376))\r\n\r\nBUG
+        FIXES:\r\n\r\n* `terraform test`: Removed additional erroneous error message
+        when referencing attributes that don't exist. ([#35408](https://github.com/hashicorp/terraform/pull/35408))\r\n*
+        `import` blocks: Fix crash that occurs when incorrectly referencing the `to`
+        resource from the `id` attribute. ([#35420](https://github.com/hashicorp/terraform/pull/35420))\r\n\r\n"
+      created_at: "2024-07-03T12:27:39Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.0
-      id: 162590552
-      name: v1.9.0
-      node_id: RE_kwDOAQ6CpM4JsO9Y
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.1
+      id: 163810250
+      name: v1.9.1
+      node_id: RE_kwDOAQ6CpM4Jw4vK
       prerelease: false
-      published_at: "2024-06-26T16:55:38Z"
-      reactions:
-        "+1": 11
-        "-1": 0
-        confused: 0
-        eyes: 0
-        heart: 2
-        hooray: 6
-        laugh: 0
-        rocket: 9
-        total_count: 28
-        url: https://api.github.com/repos/hashicorp/terraform/releases/162590552/reactions
-      tag_name: v1.9.0
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.0
-      target_commitish: 7637a9216e68f2812887eaf0722f9d3f9804c45e
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/162590552/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/162590552
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.0
+      published_at: "2024-07-03T13:18:59Z"
+      tag_name: v1.9.1
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.1
+      target_commitish: 6b1c106cfa05c954f27ca71a2a869a396a076cdd
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/163810250/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/163810250
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.1
 meta:
   dependencies:
     atlantis:
@@ -32151,3 +32089,50 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/162590552/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/162590552
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.0
+      1.9.1:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/163810250/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: "## 1.9.1 (July 3, 2024)\r\n\r\nUPGRADE NOTES:\r\n\r\n* Library used
+            by Terraform (hashicorp/go-getter) for installing/updating modules was
+            upgraded from v1.7.5 to v1.7.6. This addresses [CVE-2024-6257](https://nvd.nist.gov/vuln/detail/CVE-2024-6257).
+            This change may have a negative effect on performance of `terraform init`
+            or `terraform get` in case of larger git repositories. Please do file
+            an issue if you find the performance difference noticable. ([#35376](https://github.com/hashicorp/terraform/pull/35376))\r\n\r\nBUG
+            FIXES:\r\n\r\n* `terraform test`: Removed additional erroneous error message
+            when referencing attributes that don't exist. ([#35408](https://github.com/hashicorp/terraform/pull/35408))\r\n*
+            `import` blocks: Fix crash that occurs when incorrectly referencing the
+            `to` resource from the `id` attribute. ([#35420](https://github.com/hashicorp/terraform/pull/35420))\r\n\r\n"
+          created_at: "2024-07-03T12:27:39Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.1
+          id: 163810250
+          name: v1.9.1
+          node_id: RE_kwDOAQ6CpM4Jw4vK
+          prerelease: false
+          published_at: "2024-07-03T13:18:59Z"
+          tag_name: v1.9.1
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.1
+          target_commitish: 6b1c106cfa05c954f27ca71a2a869a396a076cdd
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/163810250/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/163810250
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.1

@@ -2479,8 +2479,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.9.1
-    previousVersion: 1.9.0
+    version: 1.9.2
+    previousVersion: 1.9.1
     versions:
     - 1.3.2
     - 1.3.3
@@ -2524,9 +2524,10 @@ dependencies:
     - 1.8.5
     - 1.9.0
     - 1.9.1
+    - 1.9.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/163810250/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/164778127/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2546,30 +2547,27 @@ dependencies:
         subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
-      body: "## 1.9.1 (July 3, 2024)\r\n\r\nUPGRADE NOTES:\r\n\r\n* Library used by
-        Terraform (hashicorp/go-getter) for installing/updating modules was upgraded
-        from v1.7.5 to v1.7.6. This addresses [CVE-2024-6257](https://nvd.nist.gov/vuln/detail/CVE-2024-6257).
-        This change may have a negative effect on performance of `terraform init`
-        or `terraform get` in case of larger git repositories. Please do file an issue
-        if you find the performance difference noticable. ([#35376](https://github.com/hashicorp/terraform/pull/35376))\r\n\r\nBUG
-        FIXES:\r\n\r\n* `terraform test`: Removed additional erroneous error message
-        when referencing attributes that don't exist. ([#35408](https://github.com/hashicorp/terraform/pull/35408))\r\n*
-        `import` blocks: Fix crash that occurs when incorrectly referencing the `to`
-        resource from the `id` attribute. ([#35420](https://github.com/hashicorp/terraform/pull/35420))\r\n\r\n"
-      created_at: "2024-07-03T12:27:39Z"
+      body: |+
+        ## 1.9.2 (July 10, 2024)
+
+        BUG FIXES:
+
+        * core: Fix panic when self-referencing direct instances from `count` and `for_each` meta attributes. ([#35432](https://github.com/hashicorp/terraform/pull/35432))
+
+      created_at: "2024-07-10T10:38:21Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.1
-      id: 163810250
-      name: v1.9.1
-      node_id: RE_kwDOAQ6CpM4Jw4vK
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.2
+      id: 164778127
+      name: v1.9.2
+      node_id: RE_kwDOAQ6CpM4J0lCP
       prerelease: false
-      published_at: "2024-07-03T13:18:59Z"
-      tag_name: v1.9.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.1
-      target_commitish: 6b1c106cfa05c954f27ca71a2a869a396a076cdd
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/163810250/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/163810250
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.1
+      published_at: "2024-07-10T11:18:15Z"
+      tag_name: v1.9.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.2
+      target_commitish: 2eb9d6ce998d969eb9da7dce1d6e24fc170a933e
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/164778127/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/164778127
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.2
 meta:
   dependencies:
     atlantis:
@@ -32722,3 +32720,47 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/163810250/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/163810250
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.1
+      1.9.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/164778127/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.9.2 (July 10, 2024)
+
+            BUG FIXES:
+
+            * core: Fix panic when self-referencing direct instances from `count` and `for_each` meta attributes. ([#35432](https://github.com/hashicorp/terraform/pull/35432))
+
+          created_at: "2024-07-10T10:38:21Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.2
+          id: 164778127
+          name: v1.9.2
+          node_id: RE_kwDOAQ6CpM4J0lCP
+          prerelease: false
+          published_at: "2024-07-10T11:18:15Z"
+          tag_name: v1.9.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.2
+          target_commitish: 2eb9d6ce998d969eb9da7dce1d6e24fc170a933e
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/164778127/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/164778127
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.2

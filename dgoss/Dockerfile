@@ -1,6 +1,6 @@
 FROM docker:20.10.17
 
-ARG GOSS_VERSION=0.4.7
+ARG GOSS_VERSION=0.4.8
 
 LABEL version="${GOSS_VERSION}"
 LABEL maintainer="shinohara@chatwork.com"

@@ -2478,8 +2478,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.9.2
-    previousVersion: 1.9.1
+    version: 1.9.3
+    previousVersion: 1.9.2
     versions:
     - 1.3.2
     - 1.3.3
@@ -2524,9 +2524,10 @@ dependencies:
     - 1.9.0
     - 1.9.1
     - 1.9.2
+    - 1.9.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/164778127/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/166986089/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2547,26 +2548,33 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.9.2 (July 10, 2024)
+        ## 1.9.3 (July 24, 2024)
+
+        ENHANCEMENTS:
+
+        * Terraform now returns a more specific error message in the awkward situation where an input variable validation rule is known to have failed (`condition` returned `false`) but the error message is derived from an unknown value. ([#35400](https://github.com/hashicorp/terraform/pull/35400))
 
         BUG FIXES:
 
-        * core: Fix panic when self-referencing direct instances from `count` and `for_each` meta attributes. ([#35432](https://github.com/hashicorp/terraform/pull/35432))
+        * core: Terraform no longer performs an unnecessary refresh when removing an instance targeted by a `removed` block. ([#35458](https://github.com/hashicorp/terraform/pull/35458))
+        * config generation: Fix validation error when using nested computed or deprecated attributes. ([#35484](https://github.com/hashicorp/terraform/pull/35484))
+        * Updated to newer github.com/hashicorp/go-retryablehttp version, addressing CVE-2024-6104, and bringing in updates for several indirect dependencies. ([#35473](https://github.com/hashicorp/terraform/pull/35473))
+        * Moved to building with Go 1.22.5, which addresses CVE-2024-24791 and several other non-security bugs. ([#35494](https://github.com/hashicorp/terraform/pull/35494))
 
-      created_at: "2024-07-10T10:38:21Z"
+      created_at: "2024-07-24T17:58:30Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.2
-      id: 164778127
-      name: v1.9.2
-      node_id: RE_kwDOAQ6CpM4J0lCP
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.3
+      id: 166986089
+      name: v1.9.3
+      node_id: RE_kwDOAQ6CpM4J9AFp
       prerelease: false
-      published_at: "2024-07-10T11:18:15Z"
-      tag_name: v1.9.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.2
-      target_commitish: 2eb9d6ce998d969eb9da7dce1d6e24fc170a933e
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/164778127/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/164778127
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.2
+      published_at: "2024-07-24T19:08:29Z"
+      tag_name: v1.9.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.3
+      target_commitish: 56bfbd4f607d58f3b2be99e284a8399291e4ef71
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/166986089/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/166986089
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.3
 meta:
   dependencies:
     atlantis:
@@ -33406,3 +33414,54 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/164778127/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/164778127
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.2
+      1.9.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/166986089/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.9.3 (July 24, 2024)
+
+            ENHANCEMENTS:
+
+            * Terraform now returns a more specific error message in the awkward situation where an input variable validation rule is known to have failed (`condition` returned `false`) but the error message is derived from an unknown value. ([#35400](https://github.com/hashicorp/terraform/pull/35400))
+
+            BUG FIXES:
+
+            * core: Terraform no longer performs an unnecessary refresh when removing an instance targeted by a `removed` block. ([#35458](https://github.com/hashicorp/terraform/pull/35458))
+            * config generation: Fix validation error when using nested computed or deprecated attributes. ([#35484](https://github.com/hashicorp/terraform/pull/35484))
+            * Updated to newer github.com/hashicorp/go-retryablehttp version, addressing CVE-2024-6104, and bringing in updates for several indirect dependencies. ([#35473](https://github.com/hashicorp/terraform/pull/35473))
+            * Moved to building with Go 1.22.5, which addresses CVE-2024-24791 and several other non-security bugs. ([#35494](https://github.com/hashicorp/terraform/pull/35494))
+
+          created_at: "2024-07-24T17:58:30Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.3
+          id: 166986089
+          name: v1.9.3
+          node_id: RE_kwDOAQ6CpM4J9AFp
+          prerelease: false
+          published_at: "2024-07-24T19:08:29Z"
+          tag_name: v1.9.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.3
+          target_commitish: 56bfbd4f607d58f3b2be99e284a8399291e4ef71
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/166986089/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/166986089
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.3

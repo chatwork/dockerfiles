@@ -2486,8 +2486,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.9.3
-    previousVersion: 1.9.2
+    version: 1.9.4
+    previousVersion: 1.9.3
     versions:
     - 1.3.2
     - 1.3.3
@@ -2533,9 +2533,10 @@ dependencies:
     - 1.9.1
     - 1.9.2
     - 1.9.3
+    - 1.9.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/166986089/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/169045383/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2556,33 +2557,27 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.9.3 (July 24, 2024)
-
-        ENHANCEMENTS:
-
-        * Terraform now returns a more specific error message in the awkward situation where an input variable validation rule is known to have failed (`condition` returned `false`) but the error message is derived from an unknown value. ([#35400](https://github.com/hashicorp/terraform/pull/35400))
+        ## 1.9.4 (August 7, 2024)
 
         BUG FIXES:
 
-        * core: Terraform no longer performs an unnecessary refresh when removing an instance targeted by a `removed` block. ([#35458](https://github.com/hashicorp/terraform/pull/35458))
-        * config generation: Fix validation error when using nested computed or deprecated attributes. ([#35484](https://github.com/hashicorp/terraform/pull/35484))
-        * Updated to newer github.com/hashicorp/go-retryablehttp version, addressing CVE-2024-6104, and bringing in updates for several indirect dependencies. ([#35473](https://github.com/hashicorp/terraform/pull/35473))
-        * Moved to building with Go 1.22.5, which addresses CVE-2024-24791 and several other non-security bugs. ([#35494](https://github.com/hashicorp/terraform/pull/35494))
+        * core: Unneeded variable validations were being executed during a destroy plan, which could cause plans starting with incomplete state to fail. ([#35511](https://github.com/hashicorp/terraform/issues/35511))
+        * init: Don't crash when discovering invalid syntax in duplicate required_providers blocks. ([#35533](https://github.com/hashicorp/terraform/issues/35533))
 
-      created_at: "2024-07-24T17:58:30Z"
+      created_at: "2024-08-07T06:43:31Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.3
-      id: 166986089
-      name: v1.9.3
-      node_id: RE_kwDOAQ6CpM4J9AFp
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.4
+      id: 169045383
+      name: v1.9.4
+      node_id: RE_kwDOAQ6CpM4KE22H
       prerelease: false
-      published_at: "2024-07-24T19:08:29Z"
-      tag_name: v1.9.3
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.3
-      target_commitish: 56bfbd4f607d58f3b2be99e284a8399291e4ef71
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/166986089/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/166986089
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.3
+      published_at: "2024-08-07T07:27:54Z"
+      tag_name: v1.9.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.4
+      target_commitish: 938d716628005661507dfd47300946d95d609e8d
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/169045383/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/169045383
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.4
 meta:
   dependencies:
     atlantis:
@@ -34051,3 +34046,48 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/166986089/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/166986089
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.3
+      1.9.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/169045383/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.9.4 (August 7, 2024)
+
+            BUG FIXES:
+
+            * core: Unneeded variable validations were being executed during a destroy plan, which could cause plans starting with incomplete state to fail. ([#35511](https://github.com/hashicorp/terraform/issues/35511))
+            * init: Don't crash when discovering invalid syntax in duplicate required_providers blocks. ([#35533](https://github.com/hashicorp/terraform/issues/35533))
+
+          created_at: "2024-08-07T06:43:31Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.4
+          id: 169045383
+          name: v1.9.4
+          node_id: RE_kwDOAQ6CpM4KE22H
+          prerelease: false
+          published_at: "2024-08-07T07:27:54Z"
+          tag_name: v1.9.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.4
+          target_commitish: 938d716628005661507dfd47300946d95d609e8d
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/169045383/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/169045383
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.4

@@ -2,7 +2,7 @@ command:
   /bin/entrypoint.sh fluentd --version:
     exit-status: 0
     stdout:
-      - "/fluentd 1.17.0/"
+      - "/fluentd 1.17.1/"
   /bin/entrypoint.sh fluentd --dry-run:
     exit-status: 0
     stdout:

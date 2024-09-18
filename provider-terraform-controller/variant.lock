@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.9.5
-    previousVersion: 1.9.4
+    version: 1.9.6
+    previousVersion: 1.9.5
     versions:
     - 1.2.5
     - 1.2.6
@@ -63,9 +63,10 @@ dependencies:
     - 1.9.3
     - 1.9.4
     - 1.9.5
+    - 1.9.6
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/171128479/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/175608459/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -86,41 +87,28 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.9.5 (August 20, 2024)
-
-        ENHANCEMENTS:
-
-        * cloud: The cloud block can now interact with workspaces that have HCP resource IDs. ([#35495](https://github.com/hashicorp/terraform/issues/35495))
+        ## 1.9.6 (September 18, 2024)
 
         BUG FIXES:
 
-        * core: `removed` blocks with provisioners were not executed when the resource was in a nested module. ([#35611](https://github.com/hashicorp/terraform/issues/35611))
+        * plan renderer: Render complete changes within unknown nested blocks. ([#35644](https://github.com/hashicorp/terraform/issues/35644))
+        * plan renderer: Fix crash when attempting to render unknown nested blocks that contain attributes forcing resource replacement. ([#35644](https://github.com/hashicorp/terraform/issues/35644))
+        * plan renderer: Fix crash when rendering a plan that contains null attributes being update to unknown values. ([#35709](https://github.com/hashicorp/terraform/issues/35709))
 
-      created_at: "2024-08-20T17:24:03Z"
+      created_at: "2024-09-18T07:46:15Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.5
-      id: 171128479
-      name: v1.9.5
-      node_id: RE_kwDOAQ6CpM4KMzaf
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.6
+      id: 175608459
+      name: v1.9.6
+      node_id: RE_kwDOAQ6CpM4Kd5KL
       prerelease: false
-      published_at: "2024-08-20T18:07:19Z"
-      reactions:
-        "+1": 0
-        "-1": 0
-        confused: 0
-        eyes: 0
-        heart: 1
-        hooray: 0
-        laugh: 0
-        rocket: 0
-        total_count: 1
-        url: https://api.github.com/repos/hashicorp/terraform/releases/171128479/reactions
-      tag_name: v1.9.5
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.5
-      target_commitish: 2770cb376c53a9ef6ea63482d7eaf83c0bfe887e
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/171128479/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/171128479
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.5
+      published_at: "2024-09-18T08:34:32Z"
+      tag_name: v1.9.6
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.6
+      target_commitish: f164d45c3f5775f930c8ccb7d8c5295d8a5fcd52
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/175608459/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/175608459
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.6
 meta:
   dependencies:
     terraform:
@@ -3282,3 +3270,49 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/171128479/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/171128479
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.5
+      1.9.6:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/175608459/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.9.6 (September 18, 2024)
+
+            BUG FIXES:
+
+            * plan renderer: Render complete changes within unknown nested blocks. ([#35644](https://github.com/hashicorp/terraform/issues/35644))
+            * plan renderer: Fix crash when attempting to render unknown nested blocks that contain attributes forcing resource replacement. ([#35644](https://github.com/hashicorp/terraform/issues/35644))
+            * plan renderer: Fix crash when rendering a plan that contains null attributes being update to unknown values. ([#35709](https://github.com/hashicorp/terraform/issues/35709))
+
+          created_at: "2024-09-18T07:46:15Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.6
+          id: 175608459
+          name: v1.9.6
+          node_id: RE_kwDOAQ6CpM4Kd5KL
+          prerelease: false
+          published_at: "2024-09-18T08:34:32Z"
+          tag_name: v1.9.6
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.6
+          target_commitish: f164d45c3f5775f930c8ccb7d8c5295d8a5fcd52
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/175608459/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/175608459
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.6

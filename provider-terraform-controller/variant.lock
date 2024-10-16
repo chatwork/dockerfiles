@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.9.7
-    previousVersion: 1.9.6
+    version: 1.9.8
+    previousVersion: 1.9.7
     versions:
     - 1.2.5
     - 1.2.6
@@ -65,9 +65,10 @@ dependencies:
     - 1.9.5
     - 1.9.6
     - 1.9.7
+    - 1.9.8
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/178064306/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/180246745/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -88,26 +89,29 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
       body: |+
-        ## 1.9.7 (October 2, 2024)
+        ## 1.9.8 (October 16, 2024)
 
         BUG FIXES:
 
-        * config generation: escape map keys with whitespaces ([#35754](https://github.com/hashicorp/terraform/pull/35754))
+        * init: Highlight missing subdirectories of registry modules in error message ([#35848](https://github.com/hashicorp/terraform/pull/35848))
+        * init: Prevent crash when loading `provider_meta` blocks with invalid names ([#35842](https://github.com/hashicorp/terraform/pull/35842))
+        * config generation: Escape all invalid syntax in generate map keys with quotes ([#35837](https://github.com/hashicorp/terraform/pull/35837))
+        * plan: also validate provider requirements from state ([#35864](https://github.com/hashicorp/terraform/pull/35864))
 
-      created_at: "2024-10-02T16:58:26Z"
+      created_at: "2024-10-16T12:28:59Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.7
-      id: 178064306
-      name: v1.9.7
-      node_id: RE_kwDOAQ6CpM4KnQuy
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.8
+      id: 180246745
+      name: v1.9.8
+      node_id: RE_kwDOAQ6CpM4KvljZ
       prerelease: false
-      published_at: "2024-10-02T17:50:03Z"
-      tag_name: v1.9.7
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.7
-      target_commitish: 25c4dfba736ceba6456a57cca3703b1495a5ef62
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/178064306/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/178064306
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.7
+      published_at: "2024-10-16T14:25:20Z"
+      tag_name: v1.9.8
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.8
+      target_commitish: e044e569c5bc81f82e9a4d7891f37c6fbb0a8a10
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/180246745/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/180246745
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.8
 meta:
   dependencies:
     terraform:
@@ -3359,3 +3363,50 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/178064306/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/178064306
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.7
+      1.9.8:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/180246745/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+          body: |+
+            ## 1.9.8 (October 16, 2024)
+
+            BUG FIXES:
+
+            * init: Highlight missing subdirectories of registry modules in error message ([#35848](https://github.com/hashicorp/terraform/pull/35848))
+            * init: Prevent crash when loading `provider_meta` blocks with invalid names ([#35842](https://github.com/hashicorp/terraform/pull/35842))
+            * config generation: Escape all invalid syntax in generate map keys with quotes ([#35837](https://github.com/hashicorp/terraform/pull/35837))
+            * plan: also validate provider requirements from state ([#35864](https://github.com/hashicorp/terraform/pull/35864))
+
+          created_at: "2024-10-16T12:28:59Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.9.8
+          id: 180246745
+          name: v1.9.8
+          node_id: RE_kwDOAQ6CpM4KvljZ
+          prerelease: false
+          published_at: "2024-10-16T14:25:20Z"
+          tag_name: v1.9.8
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.9.8
+          target_commitish: e044e569c5bc81f82e9a4d7891f37c6fbb0a8a10
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/180246745/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/180246745
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.9.8

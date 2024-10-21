@@ -1,6 +1,6 @@
 FROM alpine:3.19
 
-ARG NR_VERSION=11.2.0.15
+ARG NR_VERSION=11.3.0.16
 ARG NR_FILE_NAME=newrelic-php5-${NR_VERSION}-linux-musl
 
 LABEL version="${NR_VERSION}"

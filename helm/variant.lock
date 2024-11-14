@@ -1,7 +1,7 @@
 dependencies:
   helm:
-    version: 3.16.2
-    previousVersion: 3.16.1
+    version: 3.16.3
+    previousVersion: 3.16.2
     versions:
     - 3.9.2
     - 3.9.3
@@ -35,19 +35,20 @@ dependencies:
     - 3.16.0
     - 3.16.1
     - 3.16.2
+    - 3.16.3
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-darwin-amd64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:57Z"
-        download_count: 0
-        id: 197985305
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-amd64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:16Z"
+        download_count: 1
+        id: 206364896
         label: null
-        name: helm-v3.16.2-darwin-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQQZ
+        name: helm-v3.16.3-darwin-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODg
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:48:57Z"
+        updated_at: "2024-11-14T02:36:16Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -67,452 +68,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985305
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-darwin-amd64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:57Z"
-        download_count: 0
-        id: 197985309
-        label: null
-        name: helm-v3.16.2-darwin-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQQd
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:57Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985309
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-darwin-amd64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:57Z"
-        download_count: 0
-        id: 197985311
-        label: null
-        name: helm-v3.16.2-darwin-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQQf
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:57Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985311
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-darwin-arm64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:57Z"
-        download_count: 0
-        id: 197985312
-        label: null
-        name: helm-v3.16.2-darwin-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQQg
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985312
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-darwin-arm64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:58Z"
-        download_count: 0
-        id: 197985314
-        label: null
-        name: helm-v3.16.2-darwin-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQQi
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985314
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-darwin-arm64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:58Z"
-        download_count: 0
-        id: 197985317
-        label: null
-        name: helm-v3.16.2-darwin-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQQl
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985317
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-386.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:58Z"
-        download_count: 0
-        id: 197985318
-        label: null
-        name: helm-v3.16.2-linux-386.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQQm
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985318
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-386.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:58Z"
-        download_count: 0
-        id: 197985320
-        label: null
-        name: helm-v3.16.2-linux-386.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQQo
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985320
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-386.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:58Z"
-        download_count: 0
-        id: 197985322
-        label: null
-        name: helm-v3.16.2-linux-386.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQQq
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:59Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985322
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-amd64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:59Z"
-        download_count: 3
-        id: 197985323
-        label: null
-        name: helm-v3.16.2-linux-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQQr
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:59Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985323
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-amd64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:59Z"
-        download_count: 3
-        id: 197985328
-        label: null
-        name: helm-v3.16.2-linux-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQQw
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:59Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985328
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-amd64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:59Z"
-        download_count: 0
-        id: 197985331
-        label: null
-        name: helm-v3.16.2-linux-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQQz
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:59Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985331
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-arm.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:59Z"
-        download_count: 0
-        id: 197985332
-        label: null
-        name: helm-v3.16.2-linux-arm.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQQ0
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:48:59Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985332
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-arm.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:48:59Z"
-        download_count: 0
-        id: 197985333
-        label: null
-        name: helm-v3.16.2-linux-arm.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQQ1
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:49:00Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985333
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-arm.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:00Z"
-        download_count: 0
-        id: 197985335
-        label: null
-        name: helm-v3.16.2-linux-arm.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQQ3
-        size: 833
-        state: uploaded
-        updated_at: "2024-10-09T19:49:00Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
-          events_url: https://api.github.com/users/mattfarina/events{/privacy}
-          followers_url: https://api.github.com/users/mattfarina/followers
-          following_url: https://api.github.com/users/mattfarina/following{/other_user}
-          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/mattfarina
-          id: 62991
-          login: mattfarina
-          node_id: MDQ6VXNlcjYyOTkx
-          organizations_url: https://api.github.com/users/mattfarina/orgs
-          received_events_url: https://api.github.com/users/mattfarina/received_events
-          repos_url: https://api.github.com/users/mattfarina/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
-          type: User
-          url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985335
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-arm64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:00Z"
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364896
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-amd64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:15Z"
         download_count: 2
-        id: 197985337
+        id: 206364895
         label: null
-        name: helm-v3.16.2-linux-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQQ5
+        name: helm-v3.16.3-darwin-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODf
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:00Z"
+        updated_at: "2024-11-14T02:36:16Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -532,18 +100,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985337
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-arm64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:00Z"
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364895
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-amd64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:15Z"
         download_count: 2
-        id: 197985338
+        id: 206364894
         label: null
-        name: helm-v3.16.2-linux-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQQ6
+        name: helm-v3.16.3-darwin-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODe
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:00Z"
+        updated_at: "2024-11-14T02:36:15Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -563,18 +132,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985338
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-arm64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:00Z"
-        download_count: 0
-        id: 197985339
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364894
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-arm64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:15Z"
+        download_count: 1
+        id: 206364893
         label: null
-        name: helm-v3.16.2-linux-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQQ7
+        name: helm-v3.16.3-darwin-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODd
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:00Z"
+        updated_at: "2024-11-14T02:36:15Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -594,18 +164,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985339
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-ppc64le.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:00Z"
-        download_count: 0
-        id: 197985344
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364893
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-arm64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:15Z"
+        download_count: 2
+        id: 206364891
         label: null
-        name: helm-v3.16.2-linux-ppc64le.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQRA
+        name: helm-v3.16.3-darwin-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODb
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:01Z"
+        updated_at: "2024-11-14T02:36:15Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -625,18 +196,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985344
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-ppc64le.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:01Z"
-        download_count: 0
-        id: 197985345
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364891
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-arm64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:14Z"
+        download_count: 2
+        id: 206364890
         label: null
-        name: helm-v3.16.2-linux-ppc64le.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQRB
+        name: helm-v3.16.3-darwin-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODa
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:01Z"
+        updated_at: "2024-11-14T02:36:15Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -656,18 +228,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985345
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-ppc64le.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:01Z"
-        download_count: 0
-        id: 197985346
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364890
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-386.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:14Z"
+        download_count: 1
+        id: 206364889
         label: null
-        name: helm-v3.16.2-linux-ppc64le.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQRC
+        name: helm-v3.16.3-linux-386.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODZ
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:01Z"
+        updated_at: "2024-11-14T02:36:14Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -687,18 +260,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985346
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-riscv64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:01Z"
-        download_count: 0
-        id: 197985348
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364889
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-386.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:14Z"
+        download_count: 2
+        id: 206364888
         label: null
-        name: helm-v3.16.2-linux-riscv64.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQRE
+        name: helm-v3.16.3-linux-386.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODY
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:01Z"
+        updated_at: "2024-11-14T02:36:14Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -718,18 +292,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985348
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-riscv64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:01Z"
-        download_count: 0
-        id: 197985349
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364888
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-386.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:14Z"
+        download_count: 2
+        id: 206364887
         label: null
-        name: helm-v3.16.2-linux-riscv64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQRF
+        name: helm-v3.16.3-linux-386.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODX
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:01Z"
+        updated_at: "2024-11-14T02:36:14Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -749,18 +324,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985349
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-riscv64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:01Z"
-        download_count: 0
-        id: 197985350
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364887
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-amd64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:14Z"
+        download_count: 3
+        id: 206364886
         label: null
-        name: helm-v3.16.2-linux-riscv64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQRG
+        name: helm-v3.16.3-linux-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODW
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:01Z"
+        updated_at: "2024-11-14T02:36:14Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -780,18 +356,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985350
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-s390x.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:01Z"
-        download_count: 0
-        id: 197985354
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364886
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-amd64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:13Z"
+        download_count: 4
+        id: 206364885
         label: null
-        name: helm-v3.16.2-linux-s390x.tar.gz.asc
-        node_id: RA_kwDOApspmc4LzQRK
+        name: helm-v3.16.3-linux-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODV
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:02Z"
+        updated_at: "2024-11-14T02:36:14Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -811,18 +388,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985354
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-s390x.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:02Z"
-        download_count: 0
-        id: 197985355
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364885
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-amd64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:13Z"
+        download_count: 2
+        id: 206364884
         label: null
-        name: helm-v3.16.2-linux-s390x.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4LzQRL
+        name: helm-v3.16.3-linux-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODU
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:02Z"
+        updated_at: "2024-11-14T02:36:13Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -842,18 +420,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985355
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-linux-s390x.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:02Z"
-        download_count: 0
-        id: 197985357
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364884
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:12Z"
+        download_count: 1
+        id: 206364880
         label: null
-        name: helm-v3.16.2-linux-s390x.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQRN
+        name: helm-v3.16.3-linux-arm.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODQ
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:02Z"
+        updated_at: "2024-11-14T02:36:12Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -873,18 +452,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985357
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-windows-amd64.zip.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:02Z"
-        download_count: 0
-        id: 197985360
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364880
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:12Z"
+        download_count: 2
+        id: 206364879
         label: null
-        name: helm-v3.16.2-windows-amd64.zip.asc
-        node_id: RA_kwDOApspmc4LzQRQ
+        name: helm-v3.16.3-linux-arm.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODP
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:02Z"
+        updated_at: "2024-11-14T02:36:12Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -904,18 +484,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985360
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-windows-amd64.zip.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:02Z"
-        download_count: 0
-        id: 197985362
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364879
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:12Z"
+        download_count: 2
+        id: 206364878
         label: null
-        name: helm-v3.16.2-windows-amd64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4LzQRS
+        name: helm-v3.16.3-linux-arm.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODO
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:02Z"
+        updated_at: "2024-11-14T02:36:12Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -935,18 +516,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985362
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-windows-amd64.zip.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:02Z"
-        download_count: 0
-        id: 197985364
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364878
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:13Z"
+        download_count: 3
+        id: 206364883
         label: null
-        name: helm-v3.16.2-windows-amd64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQRU
+        name: helm-v3.16.3-linux-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODT
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:02Z"
+        updated_at: "2024-11-14T02:36:13Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -966,18 +548,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985364
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-windows-arm64.zip.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:02Z"
-        download_count: 0
-        id: 197985367
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364883
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:13Z"
+        download_count: 4
+        id: 206364882
         label: null
-        name: helm-v3.16.2-windows-arm64.zip.asc
-        node_id: RA_kwDOApspmc4LzQRX
+        name: helm-v3.16.3-linux-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODS
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:03Z"
+        updated_at: "2024-11-14T02:36:13Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -997,18 +580,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985367
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-windows-arm64.zip.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:03Z"
-        download_count: 0
-        id: 197985370
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364882
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:12Z"
+        download_count: 2
+        id: 206364881
         label: null
-        name: helm-v3.16.2-windows-arm64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4LzQRa
+        name: helm-v3.16.3-linux-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODR
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:03Z"
+        updated_at: "2024-11-14T02:36:13Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -1028,18 +612,19 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985370
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.2/helm-v3.16.2-windows-arm64.zip.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2024-10-09T19:49:03Z"
-        download_count: 0
-        id: 197985372
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364881
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-ppc64le.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:12Z"
+        download_count: 1
+        id: 206364877
         label: null
-        name: helm-v3.16.2-windows-arm64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4LzQRc
+        name: helm-v3.16.3-linux-ppc64le.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODN
         size: 833
         state: uploaded
-        updated_at: "2024-10-09T19:49:03Z"
+        updated_at: "2024-11-14T02:36:12Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
           events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -1059,8 +644,457 @@ dependencies:
           subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
           url: https://api.github.com/users/mattfarina
-        url: https://api.github.com/repos/helm/helm/releases/assets/197985372
-      assets_url: https://api.github.com/repos/helm/helm/releases/179187504/assets
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364877
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-ppc64le.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:11Z"
+        download_count: 2
+        id: 206364876
+        label: null
+        name: helm-v3.16.3-linux-ppc64le.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODM
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:12Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364876
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-ppc64le.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:11Z"
+        download_count: 2
+        id: 206364875
+        label: null
+        name: helm-v3.16.3-linux-ppc64le.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODL
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:11Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364875
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-riscv64.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:11Z"
+        download_count: 1
+        id: 206364873
+        label: null
+        name: helm-v3.16.3-linux-riscv64.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODJ
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:11Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364873
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-riscv64.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:11Z"
+        download_count: 2
+        id: 206364872
+        label: null
+        name: helm-v3.16.3-linux-riscv64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODI
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:11Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364872
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-riscv64.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:10Z"
+        download_count: 2
+        id: 206364871
+        label: null
+        name: helm-v3.16.3-linux-riscv64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODH
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:11Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364871
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-s390x.tar.gz.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:10Z"
+        download_count: 1
+        id: 206364870
+        label: null
+        name: helm-v3.16.3-linux-s390x.tar.gz.asc
+        node_id: RA_kwDOApspmc4MTODG
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:10Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364870
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-s390x.tar.gz.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:10Z"
+        download_count: 2
+        id: 206364869
+        label: null
+        name: helm-v3.16.3-linux-s390x.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4MTODF
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:10Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364869
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-s390x.tar.gz.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:10Z"
+        download_count: 2
+        id: 206364867
+        label: null
+        name: helm-v3.16.3-linux-s390x.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODD
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:10Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364867
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-amd64.zip.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:09Z"
+        download_count: 1
+        id: 206364866
+        label: null
+        name: helm-v3.16.3-windows-amd64.zip.asc
+        node_id: RA_kwDOApspmc4MTODC
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:10Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364866
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-amd64.zip.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:09Z"
+        download_count: 2
+        id: 206364865
+        label: null
+        name: helm-v3.16.3-windows-amd64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4MTODB
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:09Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364865
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-amd64.zip.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:09Z"
+        download_count: 2
+        id: 206364864
+        label: null
+        name: helm-v3.16.3-windows-amd64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTODA
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:09Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364864
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-arm64.zip.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:09Z"
+        download_count: 1
+        id: 206364862
+        label: null
+        name: helm-v3.16.3-windows-arm64.zip.asc
+        node_id: RA_kwDOApspmc4MTOC-
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:09Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364862
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-arm64.zip.sha256.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:08Z"
+        download_count: 1
+        id: 206364861
+        label: null
+        name: helm-v3.16.3-windows-arm64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4MTOC9
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:09Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364861
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-arm64.zip.sha256sum.asc
+        content_type: text/plain
+        created_at: "2024-11-14T02:36:08Z"
+        download_count: 1
+        id: 206364854
+        label: null
+        name: helm-v3.16.3-windows-arm64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4MTOC2
+        size: 833
+        state: uploaded
+        updated_at: "2024-11-14T02:36:08Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+          type: User
+          url: https://api.github.com/users/mattfarina
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/206364854
+      assets_url: https://api.github.com/repos/helm/helm/releases/185328792/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
         events_url: https://api.github.com/users/mattfarina/events{/privacy}
@@ -1080,37 +1114,38 @@ dependencies:
         subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
         type: User
         url: https://api.github.com/users/mattfarina
-      body: "Helm v3.16.2 is a patch release. Users are encouraged to upgrade for
+        user_view_type: public
+      body: "Helm v3.16.3 is a patch release. Users are encouraged to upgrade for
         the best experience. Users are encouraged to upgrade for the best experience.\r\n\r\nThe
         community keeps growing, and we'd love to see you there!\r\n\r\n- Join the
         discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n  -  for
         questions and just to hang out\r\n  -  for discussing PRs, code, and bugs\r\n-
         Hang out at the Public Developer Call: Thursday, 9:30 Pacific via [Zoom](https://zoom.us/j/696660622)\r\n-
         Test, debug, and contribute charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
-        Installation and Upgrading\r\n\r\nDownload Helm v3.16.2. The common platform
-        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.16.2-darwin-amd64.tar.gz)
-        ([checksum](https://get.helm.sh/helm-v3.16.2-darwin-amd64.tar.gz.sha256sum)
-        / 33efd48492f2358a49a231873e8baf41f702b5ab059333ae9c31e5517633c16e)\r\n- [MacOS
-        arm64](https://get.helm.sh/helm-v3.16.2-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-darwin-arm64.tar.gz.sha256sum)
-        / 56413c7fbb496d2789881039cab61d849727c7b35db00826fae7a2685a403344)\r\n- [Linux
-        amd64](https://get.helm.sh/helm-v3.16.2-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-amd64.tar.gz.sha256sum)
-        / 9318379b847e333460d33d291d4c088156299a26cd93d570a7f5d0c36e50b5bb)\r\n- [Linux
-        arm](https://get.helm.sh/helm-v3.16.2-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-arm.tar.gz.sha256sum)
-        / f0f606d0806a518b749bd82e8dbfe6a803aa33340215590ef3977c60e366ba82)\r\n- [Linux
-        arm64](https://get.helm.sh/helm-v3.16.2-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-arm64.tar.gz.sha256sum)
-        / 1888301aeb7d08a03b6d9f4d2b73dcd09b89c41577e80e3455c113629fc657a4)\r\n- [Linux
-        i386](https://get.helm.sh/helm-v3.16.2-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-386.tar.gz.sha256sum)
-        / 4fb0cdf74a8a23622aac5980fbbc91cd95b08de5624ac0beba271d7b3b1a128d)\r\n- [Linux
-        ppc64le](https://get.helm.sh/helm-v3.16.2-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-ppc64le.tar.gz.sha256sum)
-        / 32a1b6073064a4a86d2a684180b6662ea202d1294b09ca52a6ba9d4cf071fec7)\r\n- [Linux
-        s390x](https://get.helm.sh/helm-v3.16.2-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-s390x.tar.gz.sha256sum)
-        / a2e80592b9e45487d8bb6b10721c759287cf18be4389b53d67c7cf1e91c84959)\r\n- [Linux
-        riscv64](https://get.helm.sh/helm-v3.16.2-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.2-linux-riscv64.tar.gz.sha256sum)
-        / c9730c8e6a1b2b30e119270793772bcac835737a16e613aabc36b07b8e027009)\r\n- [Windows
-        amd64](https://get.helm.sh/helm-v3.16.2-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.16.2-windows-amd64.zip.sha256sum)
-        / 57821dd47d5728912e14000ee62262680e9039e8d05e18342cc010d5ac7908d7)\r\n- [Windows
-        arm64](https://get.helm.sh/helm-v3.16.2-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.16.2-windows-arm64.zip.sha256sum)
-        / d746889023a6df98f71d2785835e32cd6fbbf81e21a21d5e9d4542ed3cfe168d)\r\n\r\nThis
+        Installation and Upgrading\r\n\r\nDownload Helm v3.16.3. The common platform
+        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.16.3-darwin-amd64.tar.gz)
+        ([checksum](https://get.helm.sh/helm-v3.16.3-darwin-amd64.tar.gz.sha256sum)
+        / 495d75b404a96fb664f1ca3f8cb01db2210aacc62dbfa1bbab30916abbb20a57)\r\n- [MacOS
+        arm64](https://get.helm.sh/helm-v3.16.3-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-darwin-arm64.tar.gz.sha256sum)
+        / 3a39f690173086e6eea17674751eb3c8b970c02697e49cecd4093eaa3cf89dcd)\r\n- [Linux
+        amd64](https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz.sha256sum)
+        / f5355c79190951eed23c5432a3b920e071f4c00a64f75e077de0dd4cb7b294ea)\r\n- [Linux
+        arm](https://get.helm.sh/helm-v3.16.3-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-arm.tar.gz.sha256sum)
+        / 02ba2f3b1524113f49be6df25a0b4b3190010d6e218c8e2b2fde4578a8439a9c)\r\n- [Linux
+        arm64](https://get.helm.sh/helm-v3.16.3-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-arm64.tar.gz.sha256sum)
+        / 5bd34ed774df6914b323ff84a0a156ea6ff2ba1eaf0113962fa773f3f9def798)\r\n- [Linux
+        i386](https://get.helm.sh/helm-v3.16.3-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-386.tar.gz.sha256sum)
+        / 70318f60fec3219680fff86c9293e2a92fb8b9a691d41791661074588f22768e)\r\n- [Linux
+        ppc64le](https://get.helm.sh/helm-v3.16.3-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-ppc64le.tar.gz.sha256sum)
+        / 266f7698c56a724fddd3a2f2b862ad496c4338dce79f0282fdbc6e23e1738608)\r\n- [Linux
+        s390x](https://get.helm.sh/helm-v3.16.3-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-s390x.tar.gz.sha256sum)
+        / bac414c409faead9c2b8af11d29281aa4f1aeb9139c62d5178baf982d71fc9bb)\r\n- [Linux
+        riscv64](https://get.helm.sh/helm-v3.16.3-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-riscv64.tar.gz.sha256sum)
+        / 492843d2584bb14bd38a735a9708af2d7f3ea7e1b6c43e650968f16fce0b5064)\r\n- [Windows
+        amd64](https://get.helm.sh/helm-v3.16.3-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.16.3-windows-amd64.zip.sha256sum)
+        / 1a52aa56e55168c3d3d2e45fa833a32290e4e3790559851dce1e707eb7728b81)\r\n- [Windows
+        arm64](https://get.helm.sh/helm-v3.16.3-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.16.3-windows-arm64.zip.sha256sum)
+        / 247a63269a83bb73c14e8f62b0cfd5a2e1d32b7d3f93977d3a6ef3902d218ff1)\r\n\r\nThis
         release was signed with `672C 657B E06B 4B30 969C 4A57 4614 49C2 5E36 B98E
         ` and can be found at @mattfarina [keybase account](https://keybase.io/mattfarina).
         Please use the attached signatures for verifying this release using `gpg`.\r\n\r\nThe
@@ -1118,33 +1153,30 @@ dependencies:
         from there. For **upgrade instructions** or detailed installation notes, check
         the [install guide](https://helm.sh/docs/intro/install/). You can also use
         a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
-        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.16.3 is the next
-        patch release and will be on November 13, 2024\r\n- 3.17.0 is the next feature
-        release and will be on January 15, 2025\r\n\r\n## Changelog\r\n\r\n- Revering
-        change unrelated to issue #13176 13654a52f7c70a143b1dd51416d633e1071faffb
-        (ricardo.bartels@telekom.de)\r\n- adds tests for handling of Helm index with
-        broken chart versions #13176 9fc8f1b614e1a2f41afa36e081c89ead21cd63bb (ricardo.bartels@telekom.de)\r\n-
-        improves handling of Helm index with broken helm chart versions #13176 961194d85dd0c9d18492a99c9193faa7f1556968
-        (ricardo.bartels@telekom.de)\r\n- Bump the k8s-io group with 7 updates f6be62b65a92c16927c24310885d01ecfb1d2aaf
-        (dependabot[bot])\r\n- adding check-latest:true 27d44cf4c9cbdb05aaed038e970263a5b11c0b51
-        (Robert Sirchia)\r\n- Grammar fixes 46e0a0f9e44b56b0d2fc81cc0e624534662b1df7
-        (Nathan Baulch)\r\n- Fix typos a1bd541d17cd6d120635c1f65ada92edcd224517 (Nathan
-        Baulch)\r\n"
-      created_at: "2024-10-09T19:24:07Z"
+        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.16.4 is the next
+        patch release and will be on December 11, 2024\r\n- 3.17.0 is the next feature
+        release and will be on January 15, 2025\r\n\r\n## Changelog\r\n\r\n- fix:
+        fix label name cfd07493f46efc9debd9cc1b02a0961186df7fdf (wangjingcun)\r\n-
+        Fix typo in pkg/lint/rules/chartfile_test.go a303060fc60bc713cd0757503b3fcb4636b14f34
+        (Zach Burgess)\r\n- Increasing the size of the runner used for releases. ab45e8a861e929e40163a7ad5a8636cb41f381ac
+        (Matt Farina)\r\n- fix(hooks): correct hooks delete order 19fe320ae87e8d1d4bc1952d9da8ea2fe435aa6e
+        (Suleiman Dibirov)\r\n- Bump github.com/containerd/containerd from 1.7.12
+        to 1.7.23 4fcc5c2cadf49d1399adfdbc5ab7222b2dff1d5b (dependabot[bot])"
+      created_at: "2024-11-14T02:18:31Z"
       draft: false
-      html_url: https://github.com/helm/helm/releases/tag/v3.16.2
-      id: 179187504
+      html_url: https://github.com/helm/helm/releases/tag/v3.16.3
+      id: 185328792
       mentions_count: 1
-      name: Helm v3.16.2
-      node_id: RE_kwDOApspmc4Kri8w
+      name: Helm v3.16.3
+      node_id: RE_kwDOApspmc4LC-SY
       prerelease: false
-      published_at: "2024-10-09T19:49:39Z"
-      tag_name: v3.16.2
-      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.16.2
+      published_at: "2024-11-14T02:36:59Z"
+      tag_name: v3.16.3
+      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.16.3
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/helm/helm/releases/179187504/assets{?name,label}
-      url: https://api.github.com/repos/helm/helm/releases/179187504
-      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.16.2
+      upload_url: https://uploads.github.com/repos/helm/helm/releases/185328792/assets{?name,label}
+      url: https://api.github.com/repos/helm/helm/releases/185328792
+      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.16.3
 meta:
   dependencies:
     helm:
@@ -32010,3 +32042,1149 @@ meta:
           upload_url: https://uploads.github.com/repos/helm/helm/releases/179187504/assets{?name,label}
           url: https://api.github.com/repos/helm/helm/releases/179187504
           zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.16.2
+      3.16.3:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-amd64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:16Z"
+            download_count: 1
+            id: 206364896
+            label: null
+            name: helm-v3.16.3-darwin-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODg
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364896
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-amd64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:15Z"
+            download_count: 2
+            id: 206364895
+            label: null
+            name: helm-v3.16.3-darwin-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODf
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364895
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-amd64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:15Z"
+            download_count: 2
+            id: 206364894
+            label: null
+            name: helm-v3.16.3-darwin-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODe
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364894
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-arm64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:15Z"
+            download_count: 1
+            id: 206364893
+            label: null
+            name: helm-v3.16.3-darwin-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODd
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364893
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-arm64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:15Z"
+            download_count: 2
+            id: 206364891
+            label: null
+            name: helm-v3.16.3-darwin-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODb
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364891
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-darwin-arm64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:14Z"
+            download_count: 2
+            id: 206364890
+            label: null
+            name: helm-v3.16.3-darwin-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODa
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364890
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-386.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:14Z"
+            download_count: 1
+            id: 206364889
+            label: null
+            name: helm-v3.16.3-linux-386.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODZ
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364889
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-386.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:14Z"
+            download_count: 2
+            id: 206364888
+            label: null
+            name: helm-v3.16.3-linux-386.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODY
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364888
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-386.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:14Z"
+            download_count: 2
+            id: 206364887
+            label: null
+            name: helm-v3.16.3-linux-386.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODX
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364887
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-amd64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:14Z"
+            download_count: 3
+            id: 206364886
+            label: null
+            name: helm-v3.16.3-linux-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODW
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364886
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-amd64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:13Z"
+            download_count: 4
+            id: 206364885
+            label: null
+            name: helm-v3.16.3-linux-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODV
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364885
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-amd64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:13Z"
+            download_count: 2
+            id: 206364884
+            label: null
+            name: helm-v3.16.3-linux-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODU
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364884
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:12Z"
+            download_count: 1
+            id: 206364880
+            label: null
+            name: helm-v3.16.3-linux-arm.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODQ
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364880
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:12Z"
+            download_count: 2
+            id: 206364879
+            label: null
+            name: helm-v3.16.3-linux-arm.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODP
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364879
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:12Z"
+            download_count: 2
+            id: 206364878
+            label: null
+            name: helm-v3.16.3-linux-arm.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODO
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364878
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:13Z"
+            download_count: 3
+            id: 206364883
+            label: null
+            name: helm-v3.16.3-linux-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODT
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364883
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:13Z"
+            download_count: 4
+            id: 206364882
+            label: null
+            name: helm-v3.16.3-linux-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODS
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364882
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-arm64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:12Z"
+            download_count: 2
+            id: 206364881
+            label: null
+            name: helm-v3.16.3-linux-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODR
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364881
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-ppc64le.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:12Z"
+            download_count: 1
+            id: 206364877
+            label: null
+            name: helm-v3.16.3-linux-ppc64le.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODN
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364877
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-ppc64le.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:11Z"
+            download_count: 2
+            id: 206364876
+            label: null
+            name: helm-v3.16.3-linux-ppc64le.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODM
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364876
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-ppc64le.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:11Z"
+            download_count: 2
+            id: 206364875
+            label: null
+            name: helm-v3.16.3-linux-ppc64le.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODL
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:11Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364875
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-riscv64.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:11Z"
+            download_count: 1
+            id: 206364873
+            label: null
+            name: helm-v3.16.3-linux-riscv64.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODJ
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:11Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364873
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-riscv64.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:11Z"
+            download_count: 2
+            id: 206364872
+            label: null
+            name: helm-v3.16.3-linux-riscv64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODI
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:11Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364872
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-riscv64.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:10Z"
+            download_count: 2
+            id: 206364871
+            label: null
+            name: helm-v3.16.3-linux-riscv64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODH
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:11Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364871
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-s390x.tar.gz.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:10Z"
+            download_count: 1
+            id: 206364870
+            label: null
+            name: helm-v3.16.3-linux-s390x.tar.gz.asc
+            node_id: RA_kwDOApspmc4MTODG
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:10Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364870
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-s390x.tar.gz.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:10Z"
+            download_count: 2
+            id: 206364869
+            label: null
+            name: helm-v3.16.3-linux-s390x.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4MTODF
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:10Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364869
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-linux-s390x.tar.gz.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:10Z"
+            download_count: 2
+            id: 206364867
+            label: null
+            name: helm-v3.16.3-linux-s390x.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODD
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:10Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364867
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-amd64.zip.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:09Z"
+            download_count: 1
+            id: 206364866
+            label: null
+            name: helm-v3.16.3-windows-amd64.zip.asc
+            node_id: RA_kwDOApspmc4MTODC
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:10Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364866
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-amd64.zip.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:09Z"
+            download_count: 2
+            id: 206364865
+            label: null
+            name: helm-v3.16.3-windows-amd64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4MTODB
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:09Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364865
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-amd64.zip.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:09Z"
+            download_count: 2
+            id: 206364864
+            label: null
+            name: helm-v3.16.3-windows-amd64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTODA
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:09Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364864
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-arm64.zip.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:09Z"
+            download_count: 1
+            id: 206364862
+            label: null
+            name: helm-v3.16.3-windows-arm64.zip.asc
+            node_id: RA_kwDOApspmc4MTOC-
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:09Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364862
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-arm64.zip.sha256.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:08Z"
+            download_count: 1
+            id: 206364861
+            label: null
+            name: helm-v3.16.3-windows-arm64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4MTOC9
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:09Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364861
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.16.3/helm-v3.16.3-windows-arm64.zip.sha256sum.asc
+            content_type: text/plain
+            created_at: "2024-11-14T02:36:08Z"
+            download_count: 1
+            id: 206364854
+            label: null
+            name: helm-v3.16.3-windows-arm64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4MTOC2
+            size: 833
+            state: uploaded
+            updated_at: "2024-11-14T02:36:08Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/206364854
+          assets_url: https://api.github.com/repos/helm/helm/releases/185328792/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+            events_url: https://api.github.com/users/mattfarina/events{/privacy}
+            followers_url: https://api.github.com/users/mattfarina/followers
+            following_url: https://api.github.com/users/mattfarina/following{/other_user}
+            gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/mattfarina
+            id: 62991
+            login: mattfarina
+            node_id: MDQ6VXNlcjYyOTkx
+            organizations_url: https://api.github.com/users/mattfarina/orgs
+            received_events_url: https://api.github.com/users/mattfarina/received_events
+            repos_url: https://api.github.com/users/mattfarina/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+            type: User
+            url: https://api.github.com/users/mattfarina
+            user_view_type: public
+          body: "Helm v3.16.3 is a patch release. Users are encouraged to upgrade
+            for the best experience. Users are encouraged to upgrade for the best
+            experience.\r\n\r\nThe community keeps growing, and we'd love to see you
+            there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+            \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
+            and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
+            via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute
+            charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
+            Installation and Upgrading\r\n\r\nDownload Helm v3.16.3. The common platform
+            binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.16.3-darwin-amd64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.16.3-darwin-amd64.tar.gz.sha256sum)
+            / 495d75b404a96fb664f1ca3f8cb01db2210aacc62dbfa1bbab30916abbb20a57)\r\n-
+            [MacOS arm64](https://get.helm.sh/helm-v3.16.3-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-darwin-arm64.tar.gz.sha256sum)
+            / 3a39f690173086e6eea17674751eb3c8b970c02697e49cecd4093eaa3cf89dcd)\r\n-
+            [Linux amd64](https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz.sha256sum)
+            / f5355c79190951eed23c5432a3b920e071f4c00a64f75e077de0dd4cb7b294ea)\r\n-
+            [Linux arm](https://get.helm.sh/helm-v3.16.3-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-arm.tar.gz.sha256sum)
+            / 02ba2f3b1524113f49be6df25a0b4b3190010d6e218c8e2b2fde4578a8439a9c)\r\n-
+            [Linux arm64](https://get.helm.sh/helm-v3.16.3-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-arm64.tar.gz.sha256sum)
+            / 5bd34ed774df6914b323ff84a0a156ea6ff2ba1eaf0113962fa773f3f9def798)\r\n-
+            [Linux i386](https://get.helm.sh/helm-v3.16.3-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-386.tar.gz.sha256sum)
+            / 70318f60fec3219680fff86c9293e2a92fb8b9a691d41791661074588f22768e)\r\n-
+            [Linux ppc64le](https://get.helm.sh/helm-v3.16.3-linux-ppc64le.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.16.3-linux-ppc64le.tar.gz.sha256sum)
+            / 266f7698c56a724fddd3a2f2b862ad496c4338dce79f0282fdbc6e23e1738608)\r\n-
+            [Linux s390x](https://get.helm.sh/helm-v3.16.3-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.16.3-linux-s390x.tar.gz.sha256sum)
+            / bac414c409faead9c2b8af11d29281aa4f1aeb9139c62d5178baf982d71fc9bb)\r\n-
+            [Linux riscv64](https://get.helm.sh/helm-v3.16.3-linux-riscv64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.16.3-linux-riscv64.tar.gz.sha256sum)
+            / 492843d2584bb14bd38a735a9708af2d7f3ea7e1b6c43e650968f16fce0b5064)\r\n-
+            [Windows amd64](https://get.helm.sh/helm-v3.16.3-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.16.3-windows-amd64.zip.sha256sum)
+            / 1a52aa56e55168c3d3d2e45fa833a32290e4e3790559851dce1e707eb7728b81)\r\n-
+            [Windows arm64](https://get.helm.sh/helm-v3.16.3-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.16.3-windows-arm64.zip.sha256sum)
+            / 247a63269a83bb73c14e8f62b0cfd5a2e1d32b7d3f93977d3a6ef3902d218ff1)\r\n\r\nThis
+            release was signed with `672C 657B E06B 4B30 969C 4A57 4614 49C2 5E36
+            B98E ` and can be found at @mattfarina [keybase account](https://keybase.io/mattfarina).
+            Please use the attached signatures for verifying this release using `gpg`.\r\n\r\nThe
+            [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you
+            going from there. For **upgrade instructions** or detailed installation
+            notes, check the [install guide](https://helm.sh/docs/intro/install/).
+            You can also use a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
+            on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.16.4 is the
+            next patch release and will be on December 11, 2024\r\n- 3.17.0 is the
+            next feature release and will be on January 15, 2025\r\n\r\n## Changelog\r\n\r\n-
+            fix: fix label name cfd07493f46efc9debd9cc1b02a0961186df7fdf (wangjingcun)\r\n-
+            Fix typo in pkg/lint/rules/chartfile_test.go a303060fc60bc713cd0757503b3fcb4636b14f34
+            (Zach Burgess)\r\n- Increasing the size of the runner used for releases.
+            ab45e8a861e929e40163a7ad5a8636cb41f381ac (Matt Farina)\r\n- fix(hooks):
+            correct hooks delete order 19fe320ae87e8d1d4bc1952d9da8ea2fe435aa6e (Suleiman
+            Dibirov)\r\n- Bump github.com/containerd/containerd from 1.7.12 to 1.7.23
+            4fcc5c2cadf49d1399adfdbc5ab7222b2dff1d5b (dependabot[bot])"
+          created_at: "2024-11-14T02:18:31Z"
+          draft: false
+          html_url: https://github.com/helm/helm/releases/tag/v3.16.3
+          id: 185328792
+          mentions_count: 1
+          name: Helm v3.16.3
+          node_id: RE_kwDOApspmc4LC-SY
+          prerelease: false
+          published_at: "2024-11-14T02:36:59Z"
+          tag_name: v3.16.3
+          tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.16.3
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/helm/helm/releases/185328792/assets{?name,label}
+          url: https://api.github.com/repos/helm/helm/releases/185328792
+          zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.16.3

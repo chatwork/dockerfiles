@@ -1,0 +1,8 @@
+command:
+  php -v:
+    exit-status: 0
+    stdout:
+      - "/^PHP 8.[0-9]+/"
+
+  aws help:
+    exit-status: 0

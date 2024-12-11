@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.10.1
-    previousVersion: 1.10.0
+    version: 1.10.2
+    previousVersion: 1.10.1
     versions:
     - 1.2.5
     - 1.2.6
@@ -68,9 +68,10 @@ dependencies:
     - 1.9.8
     - 1.10.0
     - 1.10.1
+    - 1.10.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/188912172/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/190191675/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -92,40 +93,25 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.10.1 (December 4, 2024)
+        ## 1.10.2 (December 11, 2024)
 
         BUG FIXES:
-        - cli: Complex variables values set via environment variables were parsed incorrectly during apply ([#36121](https://github.com/hashicorp/terraform/issues/36121))
-        - config: `templatefile` would panic if given and entirely unknown map of variables ([#36118](https://github.com/hashicorp/terraform/issues/36118))
-        - config: `templatefile` would panic if the variables map contains marked values ([#36127](https://github.com/hashicorp/terraform/issues/36127))
-        - config: Remove constraint that an expanded resource block must only be used in conjunction with imports using `for_each` ([#36119](https://github.com/hashicorp/terraform/issues/36119))
-        - backend/s3: Lock files could not be written to buckets with object locking enabled ([#36120](https://github.com/hashicorp/terraform/issues/36120))
+        - cli: variables in an auto-loaded tfvars file which were overridden during plan incorrectly show as changed during apply [GH-36180]
 
-      created_at: "2024-12-04T10:13:21Z"
+      created_at: "2024-12-11T11:26:13Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.10.1
-      id: 188912172
-      name: v1.10.1
-      node_id: RE_kwDOAQ6CpM4LQpIs
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.10.2
+      id: 190191675
+      name: v1.10.2
+      node_id: RE_kwDOAQ6CpM4LVhg7
       prerelease: false
-      published_at: "2024-12-04T11:25:33Z"
-      reactions:
-        "+1": 0
-        "-1": 0
-        confused: 0
-        eyes: 1
-        heart: 0
-        hooray: 1
-        laugh: 0
-        rocket: 1
-        total_count: 3
-        url: https://api.github.com/repos/hashicorp/terraform/releases/188912172/reactions
-      tag_name: v1.10.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.10.1
-      target_commitish: 7bffc912cea2a563f90bfffce68e8cf44d3d8a5c
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/188912172/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/188912172
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.1
+      published_at: "2024-12-11T12:34:24Z"
+      tag_name: v1.10.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.10.2
+      target_commitish: 99f2641df60ed3fa522d615d82d1d87abca8a9c7
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/190191675/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/190191675
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.2
 meta:
   dependencies:
     terraform:
@@ -3580,3 +3566,47 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/188912172/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/188912172
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.1
+      1.10.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/190191675/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.10.2 (December 11, 2024)
+
+            BUG FIXES:
+            - cli: variables in an auto-loaded tfvars file which were overridden during plan incorrectly show as changed during apply [GH-36180]
+
+          created_at: "2024-12-11T11:26:13Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.10.2
+          id: 190191675
+          name: v1.10.2
+          node_id: RE_kwDOAQ6CpM4LVhg7
+          prerelease: false
+          published_at: "2024-12-11T12:34:24Z"
+          tag_name: v1.10.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.10.2
+          target_commitish: 99f2641df60ed3fa522d615d82d1d87abca8a9c7
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/190191675/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/190191675
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.2

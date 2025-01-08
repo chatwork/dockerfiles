@@ -15,11 +15,11 @@ command:
   /usr/local/bin/helm version:
     exit-status: 0
     stdout:
-      - 3.15.3
+      - 3.16.4
   /usr/local/bin/helmfile -v:
     exit-status: 0
     stdout:
-      - 0.166.0
+      - 0.169.2
   /usr/local/bin/helm plugin list:
     exit-status: 0
     stdout:

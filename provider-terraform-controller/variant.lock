@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.10.3
-    previousVersion: 1.10.2
+    version: 1.10.4
+    previousVersion: 1.10.3
     versions:
     - 1.2.5
     - 1.2.6
@@ -70,9 +70,10 @@ dependencies:
     - 1.10.1
     - 1.10.2
     - 1.10.3
+    - 1.10.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/191426869/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/193676942/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -94,25 +95,30 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.10.3 (December 18, 2024)
+        ## 1.10.4 (January 8, 2025)
+
 
         BUG FIXES:
-        - Terraform could panic when encountering an error during plan encoding ([#36212](https://github.com/hashicorp/terraform/issues/36212))
 
-      created_at: "2024-12-18T09:47:41Z"
+        * type conversion: Empty map conversions now return correct type information ([#36262](https://github.com/hashicorp/terraform/issues/36262))
+
+        * `terraform console`: Fix crash when printing ephemeral values ([#36267](https://github.com/hashicorp/terraform/issues/36267))
+
+
+      created_at: "2025-01-08T10:27:08Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.10.3
-      id: 191426869
-      name: v1.10.3
-      node_id: RE_kwDOAQ6CpM4LaPE1
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.10.4
+      id: 193676942
+      name: v1.10.4
+      node_id: RE_kwDOAQ6CpM4Li0aO
       prerelease: false
-      published_at: "2024-12-18T12:34:50Z"
-      tag_name: v1.10.3
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.10.3
-      target_commitish: 7f205bcb3170da14ebb90d27cc170ddfe168e912
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/191426869/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/191426869
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.3
+      published_at: "2025-01-08T11:24:22Z"
+      tag_name: v1.10.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.10.4
+      target_commitish: 369495a8601caad9c0b5052739db42f421bf1c03
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/193676942/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/193676942
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.4
 meta:
   dependencies:
     terraform:
@@ -3655,3 +3661,52 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/191426869/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/191426869
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.3
+      1.10.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/193676942/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.10.4 (January 8, 2025)
+
+
+            BUG FIXES:
+
+            * type conversion: Empty map conversions now return correct type information ([#36262](https://github.com/hashicorp/terraform/issues/36262))
+
+            * `terraform console`: Fix crash when printing ephemeral values ([#36267](https://github.com/hashicorp/terraform/issues/36267))
+
+
+          created_at: "2025-01-08T10:27:08Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.10.4
+          id: 193676942
+          name: v1.10.4
+          node_id: RE_kwDOAQ6CpM4Li0aO
+          prerelease: false
+          published_at: "2025-01-08T11:24:22Z"
+          tag_name: v1.10.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.10.4
+          target_commitish: 369495a8601caad9c0b5052739db42f421bf1c03
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/193676942/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/193676942
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.10.4

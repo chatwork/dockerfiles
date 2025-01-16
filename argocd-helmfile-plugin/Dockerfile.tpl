@@ -3,16 +3,16 @@ FROM ubuntu:22.04
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG KUBECTL_VERSION=1.29.3
+ARG KUBECTL_VERSION=1.30.9
 ARG HELMFILE_VERSION={{ .helmfile_version }}
 ARG HELM_VERSION={{ .helm_version }}
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz
 ARG HELMFILE_FILE_NAME=helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
-ARG KUSTOMIZE_VERSION=5.2.1
+ARG KUSTOMIZE_VERSION=5.6.0
 ARG KUSTOMIZE_FILE_NAME=kustomize_v${KUSTOMIZE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
-ARG HELM_DIFF_VERSION=3.9.5
-ARG HELM_SECRETS_VERSION=4.6.0
-ARG HELM_GIT_VERSION=0.15.1
+ARG HELM_DIFF_VERSION=3.9.13
+ARG HELM_SECRETS_VERSION=4.6.2
+ARG HELM_GIT_VERSION=1.3.0
 ARG HELM_WORKING_DIR=/helm-working-dir
 
 LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}"
@@ -40,7 +40,7 @@ RUN apt update -qq \
     && chmod g=u $HELM_WORKING_DIR
 
 # kubectl
-ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
+ADD https://dl.k8s.io/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
 RUN mv /tmp/kubectl /usr/local/bin/kubectl \
   && chmod 755 /usr/local/bin/kubectl
 

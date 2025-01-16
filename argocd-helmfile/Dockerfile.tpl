@@ -1,6 +1,6 @@
 FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 
-LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
+LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}-1.30.9"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install

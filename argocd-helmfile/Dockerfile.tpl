@@ -1,6 +1,6 @@
 FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 
-LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
+LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}-1.30.9"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
@@ -14,11 +14,11 @@ ARG HELM_VERSION={{ .helm_version }}
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
 ARG HELMFILE_FILE_NAME="helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz"
-ARG KUBECTL_VERSION=1.29.3
-ARG SOPS_VERSION=3.8.1
-ARG HELM_DIFF_VERSION=3.9.5
-ARG HELM_SECRETS_VERSION=4.6.0
-ARG HELM_GIT_VERSION=0.15.1
+ARG KUBECTL_VERSION=1.30.9
+ARG SOPS_VERSION=3.9.3
+ARG HELM_DIFF_VERSION=3.9.13
+ARG HELM_SECRETS_VERSION=4.6.2
+ARG HELM_GIT_VERSION=1.3.0
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)
@@ -30,7 +30,7 @@ RUN apt-get update -y \
     && rm -rf /var/lib/apt/lists/*
 
 # kubectl
-ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
+ADD https://dl.k8s.io/release/v${KUBECTL_VERSION}/bin/${TARGETOS}/${TARGETARCH}/kubectl /tmp
 RUN mv /tmp/kubectl /usr/local/bin/kubectl \
   && chmod 755 /usr/local/bin/kubectl
 

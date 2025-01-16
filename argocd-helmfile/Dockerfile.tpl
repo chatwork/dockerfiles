@@ -1,6 +1,6 @@
 FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 
-LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}-1.30.9"
+LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
@@ -14,7 +14,7 @@ ARG HELM_VERSION={{ .helm_version }}
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
 ARG HELMFILE_FILE_NAME="helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz"
-ARG KUBECTL_VERSION=1.30.9
+ARG KUBECTL_VERSION=1.31.5
 ARG SOPS_VERSION=3.9.3
 ARG HELM_DIFF_VERSION=3.9.13
 ARG HELM_SECRETS_VERSION=4.6.2

@@ -31,7 +31,7 @@ jobs:
           name: Install buildx
           command: |
             docker buildx install
-            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
+            docker run --privileged --rm tonistiigi/binfmt:qemu-v7.0.0-28 --install "$BUILDX_PLATFORMS"
             docker buildx create --name malti-arch --use
             docker buildx ls
       - run: make ci:diff
@@ -77,7 +77,7 @@ jobs:
           name: Install buildx
           command: |
             docker buildx install
-            docker run --privileged --rm tonistiigi/binfmt --install "$BUILDX_PLATFORMS"
+            docker run --privileged --rm tonistiigi/binfmt:qemu-v7.0.0-28 --install "$BUILDX_PLATFORMS"
             docker buildx create --name malti-arch --use
             docker buildx ls
       - run: make ci:diff

@@ -1,4 +1,4 @@
-FROM chatwork/aws:2.24.8
+FROM chatwork/aws:2.24.9
 
 ARG TARGETARCH
 ARG ATLANTIS_VERSION=0.33.0

@@ -22,17 +22,20 @@ jobs:
         id: auto_merge
         run: |
           curl -L https://github.com/k-kinzal/pr/releases/download/v${{ env.PR_CLI_VERSION }}/pr_linux_amd64.tar.gz | tar xz
-          ./pr --help
+          ./pr --version
+          echo ""
 
-          ERR="$(./pr merge chatwork/dockerfiles --with-statuses --with-checks \
+          ./pr merge chatwork/dockerfiles --with-statuses --with-checks \
               -l 'state == `"open"`' \
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \
               -l 'user.login == `"cw-circleci"`' \
               -l 'length(statuses[?context == `"ci/circleci: test-arm64"` && state == `"success"`]) == `1`' \
-              -l 'length(statuses[?context == `"ci/circleci: test-x86_64"` && state == `"success"`]) == `1`' 2>1& > /dev/null)"
-          if [ -n "${ERR}" ]; then
-            echo "error_message=${ERR}" >> "$GITHUB_OUTPUT"
+              -l 'length(statuses[?context == `"ci/circleci: test-x86_64"` && state == `"success"`]) == `1`' 2> ./error.log
+          
+          cat ./error.log
+          if cat ./error.log | grep -v "no PR matches the rule"; then
+            echo "error_message=$(cat ./error.log)" >> "$GITHUB_OUTPUT"
             exit 1
           fi
         env:

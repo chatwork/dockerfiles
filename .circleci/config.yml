@@ -246,32 +246,6 @@ jobs:
               "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
                 --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
           when: on_fail
-  merge:
-    docker:
-      - image: kinzal/pr:0.2.4
-    environment:
-      - CIRCLECI_WORKSPACE: /root/project
-    steps:
-      - checkout
-      - run:
-          name: Auto merge
-          command: |
-            /usr/local/bin/pr merge chatwork/dockerfiles --with-statuses --with-checks \
-              -l 'state == `"open"`' \
-              -l 'base.ref == `"master"`' \
-              -l 'starts_with(head.ref, `"mod-up-"`)' \
-              -l 'user.login == `"cw-circleci"`' \
-              -l 'length(statuses[?context == `"ci/circleci: test-arm64"` && state == `"success"`]) == `1`' \
-              -l 'length(statuses[?context == `"ci/circleci: test-x86_64"` && state == `"success"`]) == `1`' 2> stderr
-      - run:
-          name: Notification failed
-          command: |
-            TITLE="CircleCI: Failed auto merge (devil)"
-            BODY="$(cat stderr)"
-            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_API_TOKEN}" \
-              "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
-                --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
-          when: on_fail
 workflows:
   version: 2
   integration:
@@ -308,17 +282,6 @@ workflows:
     triggers:
       - schedule:
           cron: "0 * * * *"
-          filters:
-            branches:
-              only:
-                - master
-  auto_merge:
-    jobs:
-      - merge:
-          context: "chatwork_api_token@circleci"
-    triggers:
-      - schedule:
-          cron: "0,10,20,30,40,50 * * * *"
           filters:
             branches:
               only:

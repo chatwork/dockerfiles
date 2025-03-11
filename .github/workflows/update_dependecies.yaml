@@ -31,8 +31,8 @@ jobs:
         id: update_dependencies
         run: |
           curl -L https://github.com/variantdev/mod/releases/download/v${{ env.MOD_CLI_VERSION }}/mod_${{ env.MOD_CLI_VERSION }}_linux_amd64.tar.gz | tar xz
-          
-          ls -al 
+
+          pwd
           # ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'cd {} && ./mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update" --skip-on-duplicate-pull-request-title'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

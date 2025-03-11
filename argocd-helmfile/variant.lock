@@ -1,7 +1,7 @@
 dependencies:
   argocd:
-    version: 2.14.4
-    previousVersion: 2.14.3
+    version: 2.14.5
+    previousVersion: 2.14.4
     versions:
     - 2.9.6
     - 2.10.1
@@ -28,179 +28,20 @@ dependencies:
     - 2.14.2
     - 2.14.3
     - 2.14.4
+    - 2.14.5
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-darwin-amd64
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-darwin-arm64
         content_type: application/octet-stream
-        created_at: "2025-03-04T21:38:58Z"
-        download_count: 1
-        id: 234633178
-        label: ""
-        name: argocd-darwin-amd64
-        node_id: RA_kwDOBzS60s4N_Dfa
-        size: 189498320
-        state: uploaded
-        updated_at: "2025-03-04T21:39:03Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633178
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-linux-arm64
-        content_type: application/octet-stream
-        created_at: "2025-03-04T21:38:58Z"
-        download_count: 2
-        id: 234633179
-        label: ""
-        name: argocd-linux-arm64
-        node_id: RA_kwDOBzS60s4N_Dfb
-        size: 182356260
-        state: uploaded
-        updated_at: "2025-03-04T21:39:02Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633179
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-linux-ppc64le
-        content_type: application/octet-stream
-        created_at: "2025-03-04T21:38:58Z"
-        download_count: 1
-        id: 234633180
-        label: ""
-        name: argocd-linux-ppc64le
-        node_id: RA_kwDOBzS60s4N_Dfc
-        size: 185667220
-        state: uploaded
-        updated_at: "2025-03-04T21:39:03Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633180
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-linux-amd64
-        content_type: application/octet-stream
-        created_at: "2025-03-04T21:38:58Z"
-        download_count: 109
-        id: 234633181
-        label: ""
-        name: argocd-linux-amd64
-        node_id: RA_kwDOBzS60s4N_Dfd
-        size: 187128221
-        state: uploaded
-        updated_at: "2025-03-04T21:39:03Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633181
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-linux-s390x
-        content_type: application/octet-stream
-        created_at: "2025-03-04T21:39:02Z"
-        download_count: 1
-        id: 234633209
-        label: ""
-        name: argocd-linux-s390x
-        node_id: RA_kwDOBzS60s4N_Df5
-        size: 192976847
-        state: uploaded
-        updated_at: "2025-03-04T21:39:07Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633209
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-darwin-arm64
-        content_type: application/octet-stream
-        created_at: "2025-03-04T21:39:03Z"
-        download_count: 1
-        id: 234633214
+        created_at: "2025-03-11T03:57:22Z"
+        download_count: 0
+        id: 236359389
         label: ""
         name: argocd-darwin-arm64
-        node_id: RA_kwDOBzS60s4N_Df-
-        size: 186130306
+        node_id: RA_kwDOBzS60s4OFo7d
+        size: 186130242
         state: uploaded
-        updated_at: "2025-03-04T21:39:08Z"
+        updated_at: "2025-03-11T03:57:27Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -221,18 +62,178 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633214
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-windows-amd64.exe
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359389
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-arm64
+        content_type: application/octet-stream
+        created_at: "2025-03-11T03:57:22Z"
+        download_count: 0
+        id: 236359390
+        label: ""
+        name: argocd-linux-arm64
+        node_id: RA_kwDOBzS60s4OFo7e
+        size: 182378717
+        state: uploaded
+        updated_at: "2025-03-11T03:57:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359390
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-amd64
+        content_type: application/octet-stream
+        created_at: "2025-03-11T03:57:22Z"
+        download_count: 0
+        id: 236359391
+        label: ""
+        name: argocd-linux-amd64
+        node_id: RA_kwDOBzS60s4OFo7f
+        size: 187125782
+        state: uploaded
+        updated_at: "2025-03-11T03:57:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359391
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-s390x
+        content_type: application/octet-stream
+        created_at: "2025-03-11T03:57:22Z"
+        download_count: 0
+        id: 236359392
+        label: ""
+        name: argocd-linux-s390x
+        node_id: RA_kwDOBzS60s4OFo7g
+        size: 192975416
+        state: uploaded
+        updated_at: "2025-03-11T03:57:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359392
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-darwin-amd64
+        content_type: application/octet-stream
+        created_at: "2025-03-11T03:57:27Z"
+        download_count: 0
+        id: 236359403
+        label: ""
+        name: argocd-darwin-amd64
+        node_id: RA_kwDOBzS60s4OFo7r
+        size: 189494176
+        state: uploaded
+        updated_at: "2025-03-11T03:57:33Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359403
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-ppc64le
+        content_type: application/octet-stream
+        created_at: "2025-03-11T03:57:27Z"
+        download_count: 0
+        id: 236359405
+        label: ""
+        name: argocd-linux-ppc64le
+        node_id: RA_kwDOBzS60s4OFo7t
+        size: 185666797
+        state: uploaded
+        updated_at: "2025-03-11T03:57:31Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359405
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-windows-amd64.exe
         content_type: application/x-ms-dos-executable
-        created_at: "2025-03-04T21:39:03Z"
-        download_count: 2
-        id: 234633216
+        created_at: "2025-03-11T03:57:27Z"
+        download_count: 0
+        id: 236359406
         label: ""
         name: argocd-windows-amd64.exe
-        node_id: RA_kwDOBzS60s4N_DgA
-        size: 189063168
+        node_id: RA_kwDOBzS60s4OFo7u
+        size: 189064704
         state: uploaded
-        updated_at: "2025-03-04T21:39:07Z"
+        updated_at: "2025-03-11T03:57:33Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -253,18 +254,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633216
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/cli_checksums.txt
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359406
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/cli_checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2025-03-04T21:39:03Z"
-        download_count: 3
-        id: 234633217
+        created_at: "2025-03-11T03:57:28Z"
+        download_count: 0
+        id: 236359408
         label: ""
         name: cli_checksums.txt
-        node_id: RA_kwDOBzS60s4N_DgB
+        node_id: RA_kwDOBzS60s4OFo7w
         size: 605
         state: uploaded
-        updated_at: "2025-03-04T21:39:04Z"
+        updated_at: "2025-03-11T03:57:28Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -285,50 +286,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633217
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/sbom.tar.gz
-        content_type: application/gzip
-        created_at: "2025-03-04T21:43:37Z"
-        download_count: 0
-        id: 234633968
-        label: ""
-        name: sbom.tar.gz
-        node_id: RA_kwDOBzS60s4N_Drw
-        size: 361582
-        state: uploaded
-        updated_at: "2025-03-04T21:43:38Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234633968
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-cli.intoto.jsonl
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359408
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-cli.intoto.jsonl
         content_type: application/octet-stream
-        created_at: "2025-03-04T21:45:35Z"
-        download_count: 1
-        id: 234634243
+        created_at: "2025-03-11T03:58:12Z"
+        download_count: 0
+        id: 236359486
         label: ""
         name: argocd-cli.intoto.jsonl
-        node_id: RA_kwDOBzS60s4N_DwD
-        size: 16414
+        node_id: RA_kwDOBzS60s4OFo8-
+        size: 16474
         state: uploaded
-        updated_at: "2025-03-04T21:45:35Z"
+        updated_at: "2025-03-11T03:58:13Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -349,18 +318,50 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234634243
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.4/argocd-sbom.intoto.jsonl
-        content_type: application/octet-stream
-        created_at: "2025-03-04T21:45:40Z"
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359486
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/sbom.tar.gz
+        content_type: application/gzip
+        created_at: "2025-03-11T04:00:49Z"
         download_count: 0
-        id: 234634250
+        id: 236359931
+        label: ""
+        name: sbom.tar.gz
+        node_id: RA_kwDOBzS60s4OFpD7
+        size: 361648
+        state: uploaded
+        updated_at: "2025-03-11T04:00:50Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359931
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-sbom.intoto.jsonl
+        content_type: application/octet-stream
+        created_at: "2025-03-11T04:01:29Z"
+        download_count: 0
+        id: 236360057
         label: ""
         name: argocd-sbom.intoto.jsonl
-        node_id: RA_kwDOBzS60s4N_DwK
-        size: 15462
+        node_id: RA_kwDOBzS60s4OFpF5
+        size: 15522
         state: uploaded
-        updated_at: "2025-03-04T21:45:40Z"
+        updated_at: "2025-03-11T04:01:29Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -381,8 +382,8 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/234634250
-      assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/203710045/assets
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236360057
+      assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/204896411/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
         events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -410,14 +411,14 @@ dependencies:
 
         ```shell
         kubectl create namespace argocd
-        kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.4/manifests/install.yaml
+        kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.5/manifests/install.yaml
         ```
 
         ### HA:
 
         ```shell
         kubectl create namespace argocd
-        kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.4/manifests/ha/install.yaml
+        kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.5/manifests/ha/install.yaml
         ```
 
         ## Release Signatures and Provenance
@@ -430,33 +431,28 @@ dependencies:
         If upgrading from a different minor version, be sure to read the [upgrading](https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/) documentation.
 
         ## Changelog
-        ### Bug fixes
-        * 52231dbc09c25a7b7840f0338b533b94a6332dc5: fix(actions): don't run empty Lua scripts (#22084) (cherry-pick #22161) (#22172) (@gcp-cherry-pick-bot[bot])
-        * 962d7a9ad9b5b1e13a118a3fb8974fa03647383d: fix(ci): use pinned Helm version for init-release (#22164) (cherry-pick #22165) (#22171) (@gcp-cherry-pick-bot[bot])
-        * 54170a4fd8760e4274204599e1976a3f273c8962: fix: make codegen permissions (cherry-pick #21667) (#22145) (@gcp-cherry-pick-bot[bot])
         ### Dependency updates
-        * 2eab10a3cbe68bb84bbde3c0e82966af408fb52c: chore(deps): revert accidental upgrade of go.mod packages (#22162) (@crenshaw-dev)
-        * 2b1e829986b30b4be11c3926f111a7a8dd95dc7f: chore(deps): switch gitops-engine back to release-2.14 branch (#22163) (@crenshaw-dev)
+        * ed242b9eee18b4c3ca14dce1161b656256769a0f: chore(deps): bump github.com/redis/go-redis/v9 from 9.7.0 to 9.7.1 (#21957) (#22255) (@anandf)
 
-        **Full Changelog**: https://github.com/argoproj/argo-cd/compare/v2.14.3...v2.14.4
+        **Full Changelog**: https://github.com/argoproj/argo-cd/compare/v2.14.4...v2.14.5
 
         <a href="https://argoproj.github.io/cd/"><img src="https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png" width="25%" ></a>
 
-      created_at: "2025-03-04T20:31:29Z"
+      created_at: "2025-03-11T03:11:20Z"
       draft: false
-      html_url: https://github.com/argoproj/argo-cd/releases/tag/v2.14.4
-      id: 203710045
+      html_url: https://github.com/argoproj/argo-cd/releases/tag/v2.14.5
+      id: 204896411
       mentions_count: 1
-      name: v2.14.4
-      node_id: RE_kwDOBzS60s4MJF5d
+      name: v2.14.5
+      node_id: RE_kwDOBzS60s4MNnib
       prerelease: false
-      published_at: "2025-03-04T21:39:08Z"
-      tag_name: v2.14.4
-      tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v2.14.4
+      published_at: "2025-03-11T03:57:34Z"
+      tag_name: v2.14.5
+      tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v2.14.5
       target_commitish: master
-      upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/203710045/assets{?name,label}
-      url: https://api.github.com/repos/argoproj/argo-cd/releases/203710045
-      zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.14.4
+      upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/204896411/assets{?name,label}
+      url: https://api.github.com/repos/argoproj/argo-cd/releases/204896411
+      zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.14.5
   helm:
     version: 3.17.1
     previousVersion: 3.17.0
@@ -11980,6 +11976,431 @@ meta:
           upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/203710045/assets{?name,label}
           url: https://api.github.com/repos/argoproj/argo-cd/releases/203710045
           zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.14.4
+      2.14.5:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-darwin-arm64
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:57:22Z"
+            download_count: 0
+            id: 236359389
+            label: ""
+            name: argocd-darwin-arm64
+            node_id: RA_kwDOBzS60s4OFo7d
+            size: 186130242
+            state: uploaded
+            updated_at: "2025-03-11T03:57:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359389
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-arm64
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:57:22Z"
+            download_count: 0
+            id: 236359390
+            label: ""
+            name: argocd-linux-arm64
+            node_id: RA_kwDOBzS60s4OFo7e
+            size: 182378717
+            state: uploaded
+            updated_at: "2025-03-11T03:57:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359390
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-amd64
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:57:22Z"
+            download_count: 0
+            id: 236359391
+            label: ""
+            name: argocd-linux-amd64
+            node_id: RA_kwDOBzS60s4OFo7f
+            size: 187125782
+            state: uploaded
+            updated_at: "2025-03-11T03:57:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359391
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-s390x
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:57:22Z"
+            download_count: 0
+            id: 236359392
+            label: ""
+            name: argocd-linux-s390x
+            node_id: RA_kwDOBzS60s4OFo7g
+            size: 192975416
+            state: uploaded
+            updated_at: "2025-03-11T03:57:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359392
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-darwin-amd64
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:57:27Z"
+            download_count: 0
+            id: 236359403
+            label: ""
+            name: argocd-darwin-amd64
+            node_id: RA_kwDOBzS60s4OFo7r
+            size: 189494176
+            state: uploaded
+            updated_at: "2025-03-11T03:57:33Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359403
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-linux-ppc64le
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:57:27Z"
+            download_count: 0
+            id: 236359405
+            label: ""
+            name: argocd-linux-ppc64le
+            node_id: RA_kwDOBzS60s4OFo7t
+            size: 185666797
+            state: uploaded
+            updated_at: "2025-03-11T03:57:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359405
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-windows-amd64.exe
+            content_type: application/x-ms-dos-executable
+            created_at: "2025-03-11T03:57:27Z"
+            download_count: 0
+            id: 236359406
+            label: ""
+            name: argocd-windows-amd64.exe
+            node_id: RA_kwDOBzS60s4OFo7u
+            size: 189064704
+            state: uploaded
+            updated_at: "2025-03-11T03:57:33Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359406
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/cli_checksums.txt
+            content_type: text/plain; charset=utf-8
+            created_at: "2025-03-11T03:57:28Z"
+            download_count: 0
+            id: 236359408
+            label: ""
+            name: cli_checksums.txt
+            node_id: RA_kwDOBzS60s4OFo7w
+            size: 605
+            state: uploaded
+            updated_at: "2025-03-11T03:57:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359408
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-cli.intoto.jsonl
+            content_type: application/octet-stream
+            created_at: "2025-03-11T03:58:12Z"
+            download_count: 0
+            id: 236359486
+            label: ""
+            name: argocd-cli.intoto.jsonl
+            node_id: RA_kwDOBzS60s4OFo8-
+            size: 16474
+            state: uploaded
+            updated_at: "2025-03-11T03:58:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359486
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/sbom.tar.gz
+            content_type: application/gzip
+            created_at: "2025-03-11T04:00:49Z"
+            download_count: 0
+            id: 236359931
+            label: ""
+            name: sbom.tar.gz
+            node_id: RA_kwDOBzS60s4OFpD7
+            size: 361648
+            state: uploaded
+            updated_at: "2025-03-11T04:00:50Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236359931
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v2.14.5/argocd-sbom.intoto.jsonl
+            content_type: application/octet-stream
+            created_at: "2025-03-11T04:01:29Z"
+            download_count: 0
+            id: 236360057
+            label: ""
+            name: argocd-sbom.intoto.jsonl
+            node_id: RA_kwDOBzS60s4OFpF5
+            size: 15522
+            state: uploaded
+            updated_at: "2025-03-11T04:01:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/236360057
+          assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/204896411/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+            events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+            followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+            following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+            gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/apps/github-actions
+            id: 41898282
+            login: github-actions[bot]
+            node_id: MDM6Qm90NDE4OTgyODI=
+            organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+            received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+            repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+            type: Bot
+            url: https://api.github.com/users/github-actions%5Bbot%5D
+            user_view_type: public
+          body: |+
+            ## Quick Start
+
+            ### Non-HA:
+
+            ```shell
+            kubectl create namespace argocd
+            kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.5/manifests/install.yaml
+            ```
+
+            ### HA:
+
+            ```shell
+            kubectl create namespace argocd
+            kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.14.5/manifests/ha/install.yaml
+            ```
+
+            ## Release Signatures and Provenance
+
+            All Argo CD container images are signed by cosign.  A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the [documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets) on how to verify.
+
+
+            ## Upgrading
+
+            If upgrading from a different minor version, be sure to read the [upgrading](https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/) documentation.
+
+            ## Changelog
+            ### Dependency updates
+            * ed242b9eee18b4c3ca14dce1161b656256769a0f: chore(deps): bump github.com/redis/go-redis/v9 from 9.7.0 to 9.7.1 (#21957) (#22255) (@anandf)
+
+            **Full Changelog**: https://github.com/argoproj/argo-cd/compare/v2.14.4...v2.14.5
+
+            <a href="https://argoproj.github.io/cd/"><img src="https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png" width="25%" ></a>
+
+          created_at: "2025-03-11T03:11:20Z"
+          draft: false
+          html_url: https://github.com/argoproj/argo-cd/releases/tag/v2.14.5
+          id: 204896411
+          mentions_count: 1
+          name: v2.14.5
+          node_id: RE_kwDOBzS60s4MNnib
+          prerelease: false
+          published_at: "2025-03-11T03:57:34Z"
+          tag_name: v2.14.5
+          tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v2.14.5
+          target_commitish: master
+          upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/204896411/assets{?name,label}
+          url: https://api.github.com/repos/argoproj/argo-cd/releases/204896411
+          zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v2.14.5
     helm:
       3.14.3:
         githubRelease:

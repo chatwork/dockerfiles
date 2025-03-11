@@ -29,6 +29,6 @@ jobs:
       - name: Update dependencies
         id: update_dependencies
         run: |
-          curl -L https://github.com/variantdev/mod/releases/download/v${{ env.MOD_CLI_VERSION }}/mod_{{ env.MOD_CLI_VERSION }}_linux_amd64.tar.gz | tar xz
+          curl -L https://github.com/variantdev/mod/releases/download/v${{ env.MOD_CLI_VERSION }}/mod_${{ env.MOD_CLI_VERSION }}_linux_amd64.tar.gz | tar xz
           ./mod --help
 

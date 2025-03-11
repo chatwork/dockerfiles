@@ -40,7 +40,7 @@ jobs:
       - name: Notification failed
         if: failure()
         run: |
-          TITLE="CircleCI: Failed update dependencies (devil)"
+          TITLE="Github Actions: Failed update dependencies (devil)"
           BODY="Check the error from the following URL."
           GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           curl -sS -X POST -H "X-ChatWorkToken: ${{ secrets.CHATWORK_API_TOKEN }}" \

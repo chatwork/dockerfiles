@@ -1,0 +1,48 @@
+name: Update dependencies
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  MOD_CLI_VERSION: '0.25.1'
+
+jobs:
+  mod:
+    runs-on: ubuntu-latest
+    outputs:
+      error_message: ${{ steps.auto_merge.outputs.error_message}}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.CW_DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.CW_DOCKER_HUB_TOKEN }}
+      - name: Update dependencies
+        id: update_dependencies
+        run: |
+          curl -L https://github.com/variantdev/mod/releases/download/v${{ env.MOD_CLI_VERSION }}/mod_${{ env.MOD_CLI_VERSION }}_linux_amd64.tar.gz | tar xz
+          chmod +x ./mod
+          mkdir -p ~/bin
+          mv ./mod ~/bin/
+
+          git config --global user.email "server_admin+cw-github@chatwork.com"
+          git config --global user.name "github-actions"
+          ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'cd {} && ~/bin/mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update" --skip-on-duplicate-pull-request-title'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Notification failed
+        if: failure()
+        run: |
+          TITLE="Github Actions: Failed update dependencies (devil)"
+          BODY="Check the error from the following URL."
+          GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          curl -sS -X POST -H "X-ChatWorkToken: ${{ secrets.CHATWORK_API_TOKEN }}" \
+            "https://api.chatwork.com/v2/rooms/${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}/messages" \
+              --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${GITHUB_JOB_URL}[/info]"

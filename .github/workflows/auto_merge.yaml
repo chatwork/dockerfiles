@@ -29,11 +29,10 @@ jobs:
               -l 'state == `"open"`' \
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \
-              -l 'user.login == `"cw-circleci"`' \
+              -l 'user.login == `"github-actions[bot]"`' \
               -l 'length(statuses[?context == `"ci/circleci: test-arm64"` && state == `"success"`]) == `1`' \
               -l 'length(statuses[?context == `"ci/circleci: test-x86_64"` && state == `"success"`]) == `1`' 2> ./error.log
-          
-          cat ./error.log
+
           if cat ./error.log | grep -v "no PR matches the rule"; then
             echo "error_message=$(cat ./error.log)" >> "$GITHUB_OUTPUT"
             exit 1
@@ -47,7 +46,7 @@ jobs:
     steps:
       - name: Notification failed
         run: |
-          TITLE="CircleCI: Failed auto merge (devil)"
+          TITLE="Github Actions: Failed auto merge (devil)"
           BODY="${{ needs.merge.outputs.error_message }}"
           GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           curl -sS -X POST -H "X-ChatWorkToken: ${{ secrets.CHATWORK_API_TOKEN }}" \

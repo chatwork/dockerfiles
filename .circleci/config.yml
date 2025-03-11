@@ -210,42 +210,6 @@ jobs:
             done
           when: on_success
 
-  mod:
-    docker:
-      - image: variantdev/mod:v0.25.1
-    environment:
-      - CIRCLECI_WORKSPACE: /root/project
-    steps:
-      - checkout
-      - run:
-          name: Docker login
-          command: |
-            mkdir -p ${HOME}/.docker
-            cat \<<EOS > ${HOME}/.docker/config.json
-            {
-                "auths": {
-                    "https://index.docker.io/v1/": {
-                        "auth": "$(echo -n "${DOCKER_REGISTRY_USERNAME}:${DOCKER_REGISTRY_PASSWORD}" | base64)",
-                        "email": "server_admin+cw-circleci@chatwork.com"
-                    }
-                }
-            }
-            EOS
-      - run:
-          name: Update dependencies
-          command: |
-            git config --global user.email "server_admin+cw-circleci@chatwork.com"
-            git config --global user.name "CircleCI"
-            ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'cd {} && mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update" --skip-on-duplicate-pull-request-title'
-      - run:
-          name: Notification failed
-          command: |
-            TITLE="CircleCI: Failed update dependencies (devil)"
-            BODY="Check the error from the following URL."
-            curl -sS -X POST -H "X-ChatWorkToken: ${CHATWORK_API_TOKEN}" \
-              "https://api.chatwork.com/v2/rooms/${CHATWORK_NOTIFICATION_ROOM_ID}/messages" \
-                --data-urlencode "body=[info][title]${TITLE}[/title]${BODY}[hr]${CIRCLE_BUILD_URL}[/info]"
-          when: on_fail
 workflows:
   version: 2
   integration:
@@ -274,15 +238,3 @@ workflows:
           filters:
             branches:
               only: master
-
-  update_dependecies:
-    jobs:
-      - mod:
-          context: "chatwork_api_token@circleci"
-    triggers:
-      - schedule:
-          cron: "0 * * * *"
-          filters:
-            branches:
-              only:
-                - master

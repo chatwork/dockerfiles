@@ -1,0 +1,34 @@
+name: Update dependencies
+
+on:
+  # schedule:
+  #   - cron: '0 * * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - migration-gha-wf-update_dependencies
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  MOD_CLI_VERSION: '0.25.1'
+
+jobs:
+  mod:
+    runs-on: ubuntu-latest
+    outputs:
+      error_message: ${{ steps.auto_merge.outputs.error_message}}
+    steps:
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.CW_DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.CW_DOCKER_HUB_TOKEN }}
+      - name: Update dependencies
+        id: update_dependencies
+        run: |
+          curl -L https://github.com/variantdev/mod/releases/download/v${{ env.MOD_CLI_VERSION }}/mod_{{ env.MOD_CLI_VERSION }}_linux_amd64.tar.gz | tar xz
+          ./mod --help
+

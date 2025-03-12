@@ -1,9 +1,0 @@
-file:
-  /usr/local/bin/kubectl:
-    exists: true
-    mode: "0711"
-command:
-  /usr/local/bin/kubectl version --client=true --output=json:
-    exit-status: 0
-    stdout:
-      - v1.28.15

@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.11.1
-    previousVersion: 1.11.0
+    version: 1.11.2
+    previousVersion: 1.11.1
     versions:
     - 1.2.5
     - 1.2.6
@@ -74,9 +74,10 @@ dependencies:
     - 1.10.5
     - 1.11.0
     - 1.11.1
+    - 1.11.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/203858254/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/205288033/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -98,36 +99,40 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.11.1 (March 5, 2025)
+        ## 1.11.2 (March 12, 2025)
+
+
+        ENHANCEMENTS:
+
+        * Azure Backend supports ADO Pipelines OIDC token refresh by using the `oidc_request_url`, `oidc_request_token` and (the new) `ado_pipeline_service_connection_id`. ([#36458](https://github.com/hashicorp/terraform/issues/36458))
 
 
         BUG FIXES:
 
-        * Temporarily revert updated Windows symlink handling until we can account for known existing configurations using non-symlink junctions. ([#36575](https://github.com/hashicorp/terraform/issues/36575))
+        * Return error when the templatestring function contains only a single interpolation that evaluates to a null value ([#36652](https://github.com/hashicorp/terraform/issues/36652))
 
-        * `terraform test`: Fix crash when a run block attempts to cleanup after a non-applyable plan. ([#36582](https://github.com/hashicorp/terraform/issues/36582))
-
-        * Updated dependency golang.org/x/oauth2 from v0.23.0 => v0.27.0 to integrate latest changes (fix for CVE-2025-22868) ([#36584](https://github.com/hashicorp/terraform/issues/36584))
-
-        * lang/funcs/transpose: Avoid crash due to map with null values ([#36611](https://github.com/hashicorp/terraform/issues/36611))
-
-        * Combining ephemeral and sensitive marks could fail when serializing planned changes ([#36619](https://github.com/hashicorp/terraform/issues/36619))
+        * Backend/azure: `subscription_id` be optional & skip *unnecessary* management plane API call in some setup ([#36595](https://github.com/hashicorp/terraform/issues/36595))
 
 
-      created_at: "2025-03-05T11:51:16Z"
+        NOTES:
+
+        * Updated dependency github.com/hashicorp/aws-sdk-go-base/v2 to v2.0.0-beta.62 to support newly added AWS regions ([#36625](https://github.com/hashicorp/terraform/issues/36625))
+
+
+      created_at: "2025-03-12T11:39:07Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.1
-      id: 203858254
-      name: v1.11.1
-      node_id: RE_kwDOAQ6CpM4MJqFO
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.2
+      id: 205288033
+      name: v1.11.2
+      node_id: RE_kwDOAQ6CpM4MPHJh
       prerelease: false
-      published_at: "2025-03-05T13:03:49Z"
-      tag_name: v1.11.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.1
-      target_commitish: 4920d0201ed629b15baa282395dff14307808d8a
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/203858254/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/203858254
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.1
+      published_at: "2025-03-12T13:16:03Z"
+      tag_name: v1.11.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.2
+      target_commitish: 42a3b0cecd467cf5e09652641f832589fc66888e
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/205288033/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/205288033
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.2
 meta:
   dependencies:
     terraform:
@@ -3931,3 +3936,62 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/203858254/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/203858254
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.1
+      1.11.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/205288033/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.11.2 (March 12, 2025)
+
+
+            ENHANCEMENTS:
+
+            * Azure Backend supports ADO Pipelines OIDC token refresh by using the `oidc_request_url`, `oidc_request_token` and (the new) `ado_pipeline_service_connection_id`. ([#36458](https://github.com/hashicorp/terraform/issues/36458))
+
+
+            BUG FIXES:
+
+            * Return error when the templatestring function contains only a single interpolation that evaluates to a null value ([#36652](https://github.com/hashicorp/terraform/issues/36652))
+
+            * Backend/azure: `subscription_id` be optional & skip *unnecessary* management plane API call in some setup ([#36595](https://github.com/hashicorp/terraform/issues/36595))
+
+
+            NOTES:
+
+            * Updated dependency github.com/hashicorp/aws-sdk-go-base/v2 to v2.0.0-beta.62 to support newly added AWS regions ([#36625](https://github.com/hashicorp/terraform/issues/36625))
+
+
+          created_at: "2025-03-12T11:39:07Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.2
+          id: 205288033
+          name: v1.11.2
+          node_id: RE_kwDOAQ6CpM4MPHJh
+          prerelease: false
+          published_at: "2025-03-12T13:16:03Z"
+          tag_name: v1.11.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.2
+          target_commitish: 42a3b0cecd467cf5e09652641f832589fc66888e
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/205288033/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/205288033
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.2

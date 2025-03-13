@@ -11,8 +11,8 @@ services:
       GOSS_FILES_STRATEGY: cp
     entrypoint: ""
     command: /usr/local/bin/dgoss run --entrypoint tail chatwork/konstraint -f /dev/null
-    container_name: konstraint
+    container_name: konstraint-v041
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      - konstraint
+      - konstraint-v041

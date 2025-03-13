@@ -1,0 +1,9 @@
+file:
+ /usr/local/bin/konstraint:
+    exists: true
+    mode: "0755"
+command:
+  /usr/local/bin/konstraint --version:
+    exit-status: 0
+    stdout:
+      - v0.41.0

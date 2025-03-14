@@ -29,7 +29,7 @@ jobs:
               -l 'state == `"open"`' \
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \
-              -l 'user.login == `"github-actions[bot]"`' \
+              -l 'user.login == `"cw-circleci"`' \
               -l 'length(statuses[?context == `"ci/circleci: test-arm64"` && state == `"success"`]) == `1`' \
               -l 'length(statuses[?context == `"ci/circleci: test-x86_64"` && state == `"success"`]) == `1`' 2> ./error.log
 
@@ -38,7 +38,7 @@ jobs:
             exit 1
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SELF_GITHUB_TOKEN }}
   notify:
     needs: merge
     runs-on: ubuntu-latest

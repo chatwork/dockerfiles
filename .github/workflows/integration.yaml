@@ -2,10 +2,6 @@ name: Integration
 
 on:
   push:
-    branches:
-      - '**'
-    tags:
-      - '**'
   workflow_dispatch:
 
 jobs:
@@ -53,7 +49,7 @@ jobs:
             fi
           done
       - name: Notification failed
-        if: failure() && github.actor == 'github-actions[bot]'
+        if: failure() && github.actor == 'cw-circleci'
         run: |
           GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           # TODO: Delete it once you have completed the migration from CircleCI.

@@ -32,11 +32,11 @@ jobs:
           mkdir -p ~/bin
           mv ./mod ~/bin/
 
-          git config --global user.email "server_admin+cw-github@chatwork.com"
+          git config --global user.email "${{ secrets.BOT_EMAIL }}"
           git config --global user.name "github-actions"
           ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'cd {} && ~/bin/mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update" --skip-on-duplicate-pull-request-title'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SELF_GITHUB_TOKEN }}
       - name: Notification failed
         if: failure()
         run: |

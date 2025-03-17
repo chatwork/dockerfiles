@@ -33,7 +33,7 @@ jobs:
           mv ./mod ~/bin/
 
           git config --global user.email "${{ secrets.BOT_EMAIL }}"
-          git config --global user.name "github-actions"
+          git config --global user.name "CircleCI"
           ls */variant.mod | xargs -I{} dirname {} | xargs -I{} /bin/bash -c 'cd {} && ~/bin/mod up --build  --pull-request --base master --branch 'mod-up-{}' --title "[{}] update" --skip-on-duplicate-pull-request-title'
         env:
           GITHUB_TOKEN: ${{ secrets.SELF_GITHUB_TOKEN }}

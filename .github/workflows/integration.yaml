@@ -1,7 +1,12 @@
 name: Integration
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - closed
+      - reopened
+      - synchronize
   workflow_dispatch:
 
 jobs:

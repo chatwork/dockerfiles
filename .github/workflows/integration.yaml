@@ -52,10 +52,6 @@ jobs:
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
               make build;
               make test;
-              if [ "${ARCH}" == "aarch64" ]; then
-                echo "error!!"
-                exit 1
-              fi
             else
               echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
@@ -137,7 +133,7 @@ jobs:
           GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           # TODO: Delete it once you have completed the migration from CircleCI.
           export CIRCLE_BUILD_URL="${GITHUB_JOB_URL}"
-          
+
           ARCH=`make arch`
           EXTENSION=`make extension`
 
@@ -145,6 +141,31 @@ jobs:
             if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
               make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
                               -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
+            else
+              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
+            fi
+          done
+        env:
+          CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
+          CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
+      - name: Notification success
+        if: success()
+        run: |
+          ARCH=`make arch`
+          EXTENSION=`make extension`
+
+          GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          export CIRCLE_BUILD_URL="${GITHUB_JOB_URL}"
+
+          make ci:diff | while read DIR; do
+            if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
+              echo "version: ${version}"
+              changelog=$(make ci:changelog -e DIR="${DIR}/");
+              echo "changelog: ${changelog}"
+              make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
+                                            -e BODY="$(echo -e "changelog\n${changelog}")";
             else
               echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
             fi

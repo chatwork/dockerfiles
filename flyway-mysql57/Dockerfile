@@ -23,6 +23,7 @@ RUN curl -o flyway-command.tar.gz ${FLYWAY_DOWNLOAD_URL} \
     && tar xvf flyway-command.tar.gz \
     && mv flyway-${FLYWAY_VERSION} flyway \
     && rm flyway-command.tar.gz \
-    && chmod a+x /opt/flyway/flyway
+    && chmod a+x /opt/flyway/flyway \
+    && echo test
 
 ENTRYPOINT ['/opt/flyway/flyway']

@@ -49,6 +49,9 @@ jobs:
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
               make build;
               make test;
+              if [ "${ARCH}" == "arm64" ]; then
+                exit 1
+              fi
             else
               echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
@@ -125,7 +128,7 @@ jobs:
             fi
           done
       - name: Notification failed
-        # if: failure()
+        if: failure()
         run: |
           GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           # TODO: Delete it once you have completed the migration from CircleCI.
@@ -134,16 +137,14 @@ jobs:
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          echo body="$(git log -1 --pretty=format:"%h - %an : %s")"
-
-          # make ci:diff | while read DIR; do
-          #   if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-          #     make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
-          #                     -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
-          #   else
-          #     echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
-          #   fi
-          # done
+          make ci:diff | while read DIR; do
+            if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
+                              -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
+            else
+              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
+            fi
+          done
         env:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}

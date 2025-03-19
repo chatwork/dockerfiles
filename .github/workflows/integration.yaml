@@ -65,7 +65,7 @@ jobs:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
   push:
-    if: ${{ github.ref_name == 'add-integration-wf-dry-run-push' }}
+    if: github.ref_name == 'add-integration-wf-dry-run-push'
     needs: test
     strategy:
       fail-fast: false

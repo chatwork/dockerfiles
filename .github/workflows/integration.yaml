@@ -134,12 +134,12 @@ jobs:
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          echo body="$(git log -1 --pretty=format:"%h - %an : %s" ${{ github.head_ref }})"
+          echo body="$(git log -1 --pretty=format:"%h - %an : %s")"
 
           # make ci:diff | while read DIR; do
           #   if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
           #     make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
-          #                     -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${{ github.head_ref }})";
+          #                     -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
           #   else
           #     echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
           #   fi

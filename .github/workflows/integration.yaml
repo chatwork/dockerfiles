@@ -52,7 +52,7 @@ jobs:
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
               make build;
               make test;
-              if [ "${ARCH}" == "arm64" ]; then
+              if [ "${ARCH}" == "aarch64" ]; then
                 echo "error!!"
                 exit 1
               fi

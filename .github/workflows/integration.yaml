@@ -9,6 +9,9 @@ on:
       - synchronize
   workflow_dispatch:
 
+env:
+  GITHUB_JOB_URL: "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
 jobs:
   test:
     strategy:
@@ -59,14 +62,13 @@ jobs:
       - name: Notification failed
         if: failure() && github.actor == 'cw-circleci'
         run: |
-          GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          # TODO: Delete it once you have completed the migration from CircleCI.
-          export CIRCLE_BUILD_URL="${GITHUB_JOB_URL}"
           make ci:notify -e TITLE="Github Actions: Failed to CI of PR created by automatic update of dependency (devil) arch: $(make arch)" \
             -e BODY="${{ github.event.pull_request.html_url }}"
         env:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          CIRCLE_BUILD_URL: ${{ env.GITHUB_JOB_URL }}
   push:
     # if: github.ref_name == 'master'
     if: github.head_ref == 'add-integration-wf-dry-run-push'
@@ -130,10 +132,6 @@ jobs:
       - name: Notification failed
         if: failure()
         run: |
-          GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          # TODO: Delete it once you have completed the migration from CircleCI.
-          export CIRCLE_BUILD_URL="${GITHUB_JOB_URL}"
-
           ARCH=`make arch`
           EXTENSION=`make extension`
 
@@ -148,15 +146,13 @@ jobs:
         env:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          CIRCLE_BUILD_URL: ${{ env.GITHUB_JOB_URL }}
       - name: Notification success
         if: success()
         run: |
           ARCH=`make arch`
           EXTENSION=`make extension`
-
-          GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          # TODO: Delete it once you have completed the migration from CircleCI.
-          export CIRCLE_BUILD_URL="${GITHUB_JOB_URL}"
 
           make ci:diff | while read DIR; do
             if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
@@ -173,3 +169,5 @@ jobs:
         env:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          CIRCLE_BUILD_URL: ${{ env.GITHUB_JOB_URL }}

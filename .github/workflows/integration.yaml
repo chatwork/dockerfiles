@@ -53,6 +53,7 @@ jobs:
               make build;
               make test;
               if [ "${ARCH}" == "arm64" ]; then
+                echo "error!!"
                 exit 1
               fi
             else

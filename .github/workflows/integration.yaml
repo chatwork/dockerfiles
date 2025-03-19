@@ -44,6 +44,9 @@ jobs:
           ARCH=`make arch`
           EXTENSION=`make extension`
 
+          echo ARCH: "${ARCH}"
+          echo EXTENSION: "${EXTENSION}"
+
           make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then

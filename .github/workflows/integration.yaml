@@ -134,14 +134,16 @@ jobs:
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          make ci:diff | while read DIR; do
-            if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-              make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
-                              -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${{ github.head_ref }})";
-            else
-              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
-            fi
-          done
+          echo body="$(git log -1 --pretty=format:"%h - %an : %s" ${{ github.head_ref }})"
+
+          # make ci:diff | while read DIR; do
+          #   if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+          #     make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
+          #                     -e BODY="$(git log -1 --pretty=format:"%h - %an : %s" ${{ github.head_ref }})";
+          #   else
+          #     echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
+          #   fi
+          # done
         env:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}

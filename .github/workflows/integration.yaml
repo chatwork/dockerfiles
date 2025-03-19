@@ -139,7 +139,7 @@ jobs:
           make ci:diff | while read DIR; do
             if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
               make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
-                              -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
+                -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
             else
               echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
             fi
@@ -161,8 +161,8 @@ jobs:
               echo "version: ${version}"
               changelog=$(make ci:changelog -e DIR="${DIR}/");
               echo "changelog: ${changelog}"
-              make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
-                                            -e BODY="$(echo -e "changelog\n${changelog}")";
+              # make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
+              #   -e BODY="$(echo -e "changelog\n${changelog}")";
             else
               echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
             fi
@@ -212,3 +212,15 @@ jobs:
           "
 
           hub-tool version
+      - name: Update manifest
+        run: |
+          make ci:diff
+          make ci:diff | while read DIR; do
+            if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
+              cd ${GITHUB_WORKSPACE}/${DIR};
+              make build;
+              echo "make manifest:push";
+            else
+              echo "skip manifest job"
+            fi
+          done

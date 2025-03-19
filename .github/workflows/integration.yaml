@@ -125,6 +125,7 @@ jobs:
           make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              # TODO: Once you have confirmed that it works on the master branch, run it.
               echo 'make push';
             else
               echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
@@ -219,8 +220,29 @@ jobs:
             if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
               cd ${GITHUB_WORKSPACE}/${DIR};
               make build;
+              # TODO: Once you have confirmed that it works on the master branch, run it.
               echo "make manifest:push";
             else
               echo "skip manifest job"
+            fi
+          done
+      - name: Notification failed
+        if: failure()
+        run: |
+          make ci:notify -e TITLE="CircleCI: Failed manifest (devil)" \
+            -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
+        env:
+          CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
+          CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          CIRCLE_BUILD_URL: ${{ env.GITHUB_JOB_URL }}
+      - name: Notification success
+        if: success()
+        run: |
+          make ci:diff | while read DIR; do
+            if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
+              make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
+                -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)";
             fi
           done

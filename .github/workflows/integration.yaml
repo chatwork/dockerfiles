@@ -175,9 +175,9 @@ jobs:
   manifest:
     # if: github.ref_name == 'master'
     if: github.head_ref == 'add-integration-wf-dry-run-push'
-    needs:
+    needs: 
       - test
-      - build
+      - push
     runs-on: ubuntu-latest
     steps:
       - name: Set environment variables

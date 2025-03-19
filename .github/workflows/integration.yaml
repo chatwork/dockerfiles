@@ -65,7 +65,7 @@ jobs:
           CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
           CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
   push:
-    if: github.ref_name == 'add-integration-wf-dry-run-push'
+    # if: github.ref_name == 'add-integration-wf-dry-run-push'
     needs: test
     strategy:
       fail-fast: false
@@ -77,6 +77,7 @@ jobs:
             platform: linux/arm64
     runs-on: ${{ matrix.runner }}
     steps:
+      - run: echo ${{ github.ref_name }}
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: 0

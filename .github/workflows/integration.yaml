@@ -21,6 +21,13 @@ jobs:
             platform: linux/arm64
     runs-on: ${{ matrix.runner }}
     steps:
+      - name: Set environment variables
+        run: |
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          echo "CIRCLE_BUILD_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
+          echo "GITHUB_JOB_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
+          echo "CHATWORK_API_TOKEN=${{ secrets.CHATWORK_API_TOKEN }}" >> $GITHUB_ENV
+          echo "CHATWORK_NOTIFICATION_ROOM_ID=${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}" >> $GITHUB_ENV
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: 0
@@ -44,6 +51,9 @@ jobs:
           ARCH=`make arch`
           EXTENSION=`make extension`
 
+          echo ARCH: "${ARCH}"
+          echo EXTENSION: "${EXTENSION}"
+
           make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
@@ -56,11 +66,178 @@ jobs:
       - name: Notification failed
         if: failure() && github.actor == 'cw-circleci'
         run: |
-          GITHUB_JOB_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          # TODO: Delete it once you have completed the migration from CircleCI.
-          export CIRCLE_BUILD_URL="${GITHUB_JOB_URL}"
           make ci:notify -e TITLE="Github Actions: Failed to CI of PR created by automatic update of dependency (devil) arch: $(make arch)" \
             -e BODY="${{ github.event.pull_request.html_url }}"
-        env:
-          CHATWORK_API_TOKEN: ${{ secrets.CHATWORK_API_TOKEN }}
-          CHATWORK_NOTIFICATION_ROOM_ID: ${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}
+  push:
+    if: github.ref_name == 'master'
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            platform: linux/amd64
+          - runner: ubuntu-24.04-arm
+            platform: linux/arm64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: Set environment variables
+        run: |
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          echo "CIRCLE_BUILD_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
+          echo "GITHUB_JOB_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
+          echo "CHATWORK_API_TOKEN=${{ secrets.CHATWORK_API_TOKEN }}" >> $GITHUB_ENV
+          echo "CHATWORK_NOTIFICATION_ROOM_ID=${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}" >> $GITHUB_ENV
+      - run: echo ${{ github.head_ref }}
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - name: Login to Docker Hub
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        with:
+          username: ${{ secrets.CW_DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.CW_DOCKER_HUB_TOKEN }}
+      - uses: docker/setup-buildx-action@b5ca514318bd6ebac0fb2aedd5d36ec1b5c232a2 # v3.10.0
+      # TODO: Replace docker-compose in each Makefile and then delete it.
+      - name: Add docker-compose
+        run: |
+          mkdir -p /home/runner/.local/bin
+          cat << EOT >> /home/runner/.local/bin/docker-compose
+          #!/bin/bash
+          docker compose "\$@"
+          EOT
+          chmod +x /home/runner/.local/bin/docker-compose
+      - run: make ci:diff
+      - name: Build
+        run: |
+          ARCH=`make arch`
+          EXTENSION=`make extension`
+
+          make ci:diff | while read DIR; do
+            cd ${GITHUB_WORKSPACE}/${DIR}
+            if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              make build;
+            else
+              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
+            fi
+          done
+      - name: Push
+        run: |
+          ARCH=`make arch`
+          EXTENSION=`make extension`
+
+          make ci:diff | while read DIR; do
+            cd ${GITHUB_WORKSPACE}/${DIR}
+            if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              # TODO: Once you have confirmed that it works on the master branch, run it.
+              echo 'make push';
+            else
+              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
+            fi
+          done
+      - name: Notification failed
+        if: failure()
+        run: |
+          ARCH=`make arch`
+          EXTENSION=`make extension`
+
+          make ci:diff | while read DIR; do
+            if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
+                -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
+            else
+              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
+            fi
+          done
+      - name: Notification success
+        if: success()
+        run: |
+          ARCH=`make arch`
+          EXTENSION=`make extension`
+
+          make ci:diff | while read DIR; do
+            if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
+              echo "version: ${version}"
+              changelog=$(make ci:changelog -e DIR="${DIR}/");
+              echo "changelog: ${changelog}"
+              # TODO: Once you have confirmed that it works on the master branch, run it.
+              # make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
+              #   -e BODY="$(echo -e "changelog\n${changelog}")";
+            else
+              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
+            fi
+          done
+  manifest:
+    if: github.ref_name == 'master'
+    needs: 
+      - test
+      - push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set environment variables
+        run: |
+          # TODO: Delete it once you have completed the migration from CircleCI.
+          echo "CIRCLE_BUILD_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
+          echo "GITHUB_JOB_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
+          echo "CHATWORK_API_TOKEN=${{ secrets.CHATWORK_API_TOKEN }}" >> $GITHUB_ENV
+          echo "CHATWORK_NOTIFICATION_ROOM_ID=${{ secrets.CHATWORK_NOTIFICATION_ROOM_ID }}" >> $GITHUB_ENV
+      - run: echo ${{ github.head_ref }}
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - name: Login to Docker Hub
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        with:
+          username: ${{ secrets.CW_DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.CW_DOCKER_HUB_TOKEN }}
+      - uses: docker/setup-buildx-action@b5ca514318bd6ebac0fb2aedd5d36ec1b5c232a2 # v3.10.0
+      - run: make ci:diff
+      - name: Install hub-tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y expect
+
+          curl -OL https://github.com/docker/hub-tool/releases/download/v0.4.3/hub-tool-linux-amd64.tar.gz
+          tar xvf hub-tool-linux-amd64.tar.gz
+          sudo mv ./hub-tool/hub-tool /usr/local/bin
+
+          expect -c "
+          set timeout 5
+          spawn env hub-tool login ${{ secrets.CW_DOCKER_HUB_USERNAME }}
+          expect \"Password:\"
+          send \"${{ secrets.CW_DOCKER_HUB_TOKEN }}\n\"
+          expect \"$\"
+          exit 0
+          "
+
+          hub-tool version
+      - name: Update manifest
+        run: |
+          make ci:diff
+          make ci:diff | while read DIR; do
+            if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
+              cd ${GITHUB_WORKSPACE}/${DIR};
+              make build;
+              # TODO: Once you have confirmed that it works on the master branch, run it.
+              echo "make manifest:push";
+            else
+              echo "skip manifest job"
+            fi
+          done
+      - name: Notification failed
+        if: failure()
+        run: |
+          make ci:notify -e TITLE="CircleCI: Failed manifest (devil)" \
+            -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
+      - name: Notification success
+        if: success()
+        run: |
+          make ci:diff | while read DIR; do
+            if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
+              # TODO: Once you have confirmed that it works on the master branch, run it.
+              # make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
+              #   -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)";
+            fi
+          done

@@ -2805,8 +2805,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.11.2
-    previousVersion: 1.11.1
+    version: 1.11.3
+    previousVersion: 1.11.2
     versions:
     - 1.3.2
     - 1.3.3
@@ -2866,9 +2866,10 @@ dependencies:
     - 1.11.0
     - 1.11.1
     - 1.11.2
+    - 1.11.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/205288033/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/208421541/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2890,40 +2891,30 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.11.2 (March 12, 2025)
-
-
-        ENHANCEMENTS:
-
-        * Azure Backend supports ADO Pipelines OIDC token refresh by using the `oidc_request_url`, `oidc_request_token` and (the new) `ado_pipeline_service_connection_id`. ([#36458](https://github.com/hashicorp/terraform/issues/36458))
+        ## 1.11.3 (March 26, 2025)
 
 
         BUG FIXES:
 
-        * Return error when the templatestring function contains only a single interpolation that evaluates to a null value ([#36652](https://github.com/hashicorp/terraform/issues/36652))
+        * Fixes unintended exit of CLI when using the remote backend and applying with post-plan tasks configured in HCP Terraform ([#36686](https://github.com/hashicorp/terraform/issues/36686))
 
-        * Backend/azure: `subscription_id` be optional & skip *unnecessary* management plane API call in some setup ([#36595](https://github.com/hashicorp/terraform/issues/36595))
-
-
-        NOTES:
-
-        * Updated dependency github.com/hashicorp/aws-sdk-go-base/v2 to v2.0.0-beta.62 to support newly added AWS regions ([#36625](https://github.com/hashicorp/terraform/issues/36625))
+        * Modules with zero instances that contain ephemeral resources could produce an error during apply ([#36719](https://github.com/hashicorp/terraform/issues/36719))
 
 
-      created_at: "2025-03-12T11:39:07Z"
+      created_at: "2025-03-26T12:34:40Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.2
-      id: 205288033
-      name: v1.11.2
-      node_id: RE_kwDOAQ6CpM4MPHJh
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.3
+      id: 208421541
+      name: v1.11.3
+      node_id: RE_kwDOAQ6CpM4MbEKl
       prerelease: false
-      published_at: "2025-03-12T13:16:03Z"
-      tag_name: v1.11.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.2
-      target_commitish: 42a3b0cecd467cf5e09652641f832589fc66888e
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/205288033/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/205288033
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.2
+      published_at: "2025-03-26T14:22:41Z"
+      tag_name: v1.11.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.3
+      target_commitish: 7ce537d5352f2a3346d55f69548f4fe6761b76ef
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/208421541/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/208421541
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.3
 meta:
   dependencies:
     atlantis:
@@ -40280,3 +40271,52 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/205288033/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/205288033
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.2
+      1.11.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/208421541/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.11.3 (March 26, 2025)
+
+
+            BUG FIXES:
+
+            * Fixes unintended exit of CLI when using the remote backend and applying with post-plan tasks configured in HCP Terraform ([#36686](https://github.com/hashicorp/terraform/issues/36686))
+
+            * Modules with zero instances that contain ephemeral resources could produce an error during apply ([#36719](https://github.com/hashicorp/terraform/issues/36719))
+
+
+          created_at: "2025-03-26T12:34:40Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.3
+          id: 208421541
+          name: v1.11.3
+          node_id: RE_kwDOAQ6CpM4MbEKl
+          prerelease: false
+          published_at: "2025-03-26T14:22:41Z"
+          tag_name: v1.11.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.3
+          target_commitish: 7ce537d5352f2a3346d55f69548f4fe6761b76ef
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/208421541/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/208421541
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.3

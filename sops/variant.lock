@@ -1,7 +1,7 @@
 dependencies:
   sops:
-    version: 3.9.4
-    previousVersion: 3.9.3
+    version: 3.10.0
+    previousVersion: 3.9.4
     versions:
     - 3.7.3
     - 3.8.0
@@ -11,19 +11,20 @@ dependencies:
     - 3.9.2
     - 3.9.3
     - 3.9.4
+    - 3.10.0
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-3.9.4-1.aarch64.rpm
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-3.10.0-1.aarch64.rpm
         content_type: application/x-rpm
-        created_at: "2025-01-25T19:46:45Z"
+        created_at: "2025-03-30T17:31:29Z"
         download_count: 0
-        id: 223438501
+        id: 242074518
         label: ""
-        name: sops-3.9.4-1.aarch64.rpm
-        node_id: RA_kwDOAmzKAc4NUWal
-        size: 12853020
+        name: sops-3.10.0-1.aarch64.rpm
+        node_id: RA_kwDOAmzKAc4ObcOW
+        size: 13048964
         state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
+        updated_at: "2025-03-30T17:31:29Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -44,18 +45,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438501
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-3.9.4-1.x86_64.rpm
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074518
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-3.10.0-1.x86_64.rpm
         content_type: application/x-rpm
-        created_at: "2025-01-25T19:46:45Z"
-        download_count: 0
-        id: 223438502
+        created_at: "2025-03-30T17:31:30Z"
+        download_count: 8
+        id: 242074521
         label: ""
-        name: sops-3.9.4-1.x86_64.rpm
-        node_id: RA_kwDOAmzKAc4NUWam
-        size: 13951565
+        name: sops-3.10.0-1.x86_64.rpm
+        node_id: RA_kwDOAmzKAc4ObcOZ
+        size: 14264505
         state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
+        updated_at: "2025-03-30T17:31:30Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -76,18 +77,146 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438502
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.checksums.pem
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074521
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.amd64.exe
+        content_type: application/x-msdownload
+        created_at: "2025-03-30T17:31:27Z"
+        download_count: 0
+        id: 242074507
+        label: ""
+        name: sops-v3.10.0.amd64.exe
+        node_id: RA_kwDOAmzKAc4ObcOL
+        size: 45308416
+        state: uploaded
+        updated_at: "2025-03-30T17:31:28Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074507
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.amd64.exe.spdx.sbom.json
+        content_type: application/json
+        created_at: "2025-03-30T17:31:31Z"
+        download_count: 0
+        id: 242074533
+        label: ""
+        name: sops-v3.10.0.amd64.exe.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcOl
+        size: 181005
+        state: uploaded
+        updated_at: "2025-03-30T17:31:31Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074533
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.arm64.exe
+        content_type: application/x-msdownload
+        created_at: "2025-03-30T17:31:28Z"
+        download_count: 0
+        id: 242074516
+        label: ""
+        name: sops-v3.10.0.arm64.exe
+        node_id: RA_kwDOAmzKAc4ObcOU
+        size: 42682368
+        state: uploaded
+        updated_at: "2025-03-30T17:31:30Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074516
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.arm64.exe.spdx.sbom.json
+        content_type: application/json
+        created_at: "2025-03-30T17:31:31Z"
+        download_count: 0
+        id: 242074576
+        label: ""
+        name: sops-v3.10.0.arm64.exe.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcPQ
+        size: 181005
+        state: uploaded
+        updated_at: "2025-03-30T17:31:31Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074576
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.pem
         content_type: application/x-x509-ca-cert
-        created_at: "2025-01-25T19:46:47Z"
-        download_count: 3
-        id: 223438513
+        created_at: "2025-03-30T17:31:32Z"
+        download_count: 1
+        id: 242074581
         label: ""
-        name: sops-v3.9.4.checksums.pem
-        node_id: RA_kwDOAmzKAc4NUWax
-        size: 3100
+        name: sops-v3.10.0.checksums.pem
+        node_id: RA_kwDOAmzKAc4ObcPV
+        size: 3120
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:32Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -108,18 +237,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438513
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.checksums.sig
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074581
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.sig
         content_type: application/pgp-signature
-        created_at: "2025-01-25T19:46:47Z"
-        download_count: 4
-        id: 223438512
+        created_at: "2025-03-30T17:31:32Z"
+        download_count: 1
+        id: 242074580
         label: ""
-        name: sops-v3.9.4.checksums.sig
-        node_id: RA_kwDOAmzKAc4NUWaw
+        name: sops-v3.10.0.checksums.sig
+        node_id: RA_kwDOAmzKAc4ObcPU
         size: 96
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:32Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -140,18 +269,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438512
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.checksums.txt
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074580
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2025-01-25T19:46:47Z"
-        download_count: 3
-        id: 223438511
+        created_at: "2025-03-30T17:31:31Z"
+        download_count: 1
+        id: 242074579
         label: ""
-        name: sops-v3.9.4.checksums.txt
-        node_id: RA_kwDOAmzKAc4NUWav
-        size: 529
+        name: sops-v3.10.0.checksums.txt
+        node_id: RA_kwDOAmzKAc4ObcPT
+        size: 630
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:32Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -172,18 +301,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438511
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.darwin
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074579
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin
         content_type: application/octet-stream
-        created_at: "2025-01-25T19:46:45Z"
+        created_at: "2025-03-30T17:31:29Z"
         download_count: 0
-        id: 223438499
+        id: 242074517
         label: ""
-        name: sops-v3.9.4.darwin
-        node_id: RA_kwDOAmzKAc4NUWaj
-        size: 87376018
+        name: sops-v3.10.0.darwin
+        node_id: RA_kwDOAmzKAc4ObcOV
+        size: 89151474
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -204,18 +333,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438499
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.darwin.amd64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074517
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.amd64
         content_type: application/octet-stream
-        created_at: "2025-01-25T19:46:44Z"
+        created_at: "2025-03-30T17:31:27Z"
         download_count: 0
-        id: 223438496
+        id: 242074509
         label: ""
-        name: sops-v3.9.4.darwin.amd64
-        node_id: RA_kwDOAmzKAc4NUWag
-        size: 44453392
+        name: sops-v3.10.0.darwin.amd64
+        node_id: RA_kwDOAmzKAc4ObcON
+        size: 45444448
         state: uploaded
-        updated_at: "2025-01-25T19:46:45Z"
+        updated_at: "2025-03-30T17:31:28Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -236,18 +365,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438496
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.darwin.amd64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074509
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.amd64.spdx.sbom.json
         content_type: application/json
-        created_at: "2025-01-25T19:46:47Z"
+        created_at: "2025-03-30T17:31:31Z"
         download_count: 0
-        id: 223438507
+        id: 242074531
         label: ""
-        name: sops-v3.9.4.darwin.amd64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4NUWar
-        size: 180594
+        name: sops-v3.10.0.darwin.amd64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcOj
+        size: 179609
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -268,18 +397,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438507
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.darwin.arm64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074531
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.arm64
         content_type: application/octet-stream
-        created_at: "2025-01-25T19:46:44Z"
+        created_at: "2025-03-30T17:31:27Z"
         download_count: 0
-        id: 223438495
+        id: 242074510
         label: ""
-        name: sops-v3.9.4.darwin.arm64
-        node_id: RA_kwDOAmzKAc4NUWaf
-        size: 42893458
+        name: sops-v3.10.0.darwin.arm64
+        node_id: RA_kwDOAmzKAc4ObcOO
+        size: 43685874
         state: uploaded
-        updated_at: "2025-01-25T19:46:45Z"
+        updated_at: "2025-03-30T17:31:28Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -300,18 +429,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438495
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.darwin.arm64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074510
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.arm64.spdx.sbom.json
         content_type: application/json
-        created_at: "2025-01-25T19:46:46Z"
+        created_at: "2025-03-30T17:31:31Z"
         download_count: 0
-        id: 223438505
+        id: 242074530
         label: ""
-        name: sops-v3.9.4.darwin.arm64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4NUWap
-        size: 180594
+        name: sops-v3.10.0.darwin.arm64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcOi
+        size: 179609
         state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -332,18 +461,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438505
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.darwin.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074530
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.spdx.sbom.json
         content_type: application/json
-        created_at: "2025-01-25T19:46:47Z"
+        created_at: "2025-03-30T17:31:31Z"
         download_count: 0
-        id: 223438509
+        id: 242074575
         label: ""
-        name: sops-v3.9.4.darwin.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4NUWat
-        size: 333317
+        name: sops-v3.10.0.darwin.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcPP
+        size: 331371
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -364,82 +493,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438509
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.exe
-        content_type: application/x-msdownload
-        created_at: "2025-01-25T19:46:44Z"
-        download_count: 0
-        id: 223438498
-        label: ""
-        name: sops-v3.9.4.exe
-        node_id: RA_kwDOAmzKAc4NUWai
-        size: 44313088
-        state: uploaded
-        updated_at: "2025-01-25T19:46:45Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438498
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.exe.spdx.sbom.json
-        content_type: application/json
-        created_at: "2025-01-25T19:46:46Z"
-        download_count: 0
-        id: 223438506
-        label: ""
-        name: sops-v3.9.4.exe.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4NUWaq
-        size: 181990
-        state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438506
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.intoto.jsonl
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074575
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.intoto.jsonl
         content_type: application/octet-stream
-        created_at: "2025-01-25T19:47:39Z"
+        created_at: "2025-03-30T17:32:43Z"
         download_count: 2
-        id: 223438696
+        id: 242074720
         label: ""
-        name: sops-v3.9.4.intoto.jsonl
-        node_id: RA_kwDOAmzKAc4NUWdo
-        size: 19712
+        name: sops-v3.10.0.intoto.jsonl
+        node_id: RA_kwDOAmzKAc4ObcRg
+        size: 26400
         state: uploaded
-        updated_at: "2025-01-25T19:47:39Z"
+        updated_at: "2025-03-30T17:32:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -460,18 +525,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438696
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.linux.amd64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074720
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.amd64
         content_type: application/octet-stream
-        created_at: "2025-01-25T19:46:44Z"
-        download_count: 15
-        id: 223438497
+        created_at: "2025-03-30T17:31:28Z"
+        download_count: 27
+        id: 242074515
         label: ""
-        name: sops-v3.9.4.linux.amd64
-        node_id: RA_kwDOAmzKAc4NUWah
-        size: 43122840
+        name: sops-v3.10.0.linux.amd64
+        node_id: RA_kwDOAmzKAc4ObcOT
+        size: 44101784
         state: uploaded
-        updated_at: "2025-01-25T19:46:45Z"
+        updated_at: "2025-03-30T17:31:30Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -492,18 +557,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438497
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.linux.amd64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074515
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.amd64.spdx.sbom.json
         content_type: application/json
-        created_at: "2025-01-25T19:46:47Z"
+        created_at: "2025-03-30T17:31:31Z"
         download_count: 0
-        id: 223438508
+        id: 242074544
         label: ""
-        name: sops-v3.9.4.linux.amd64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4NUWas
-        size: 180594
+        name: sops-v3.10.0.linux.amd64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcOw
+        size: 179609
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -524,18 +589,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438508
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.linux.arm64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074544
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.arm64
         content_type: application/octet-stream
-        created_at: "2025-01-25T19:46:45Z"
+        created_at: "2025-03-30T17:31:27Z"
         download_count: 0
-        id: 223438500
+        id: 242074508
         label: ""
-        name: sops-v3.9.4.linux.arm64
-        node_id: RA_kwDOAmzKAc4NUWak
-        size: 41353368
+        name: sops-v3.10.0.linux.arm64
+        node_id: RA_kwDOAmzKAc4ObcOM
+        size: 42139800
         state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
+        updated_at: "2025-03-30T17:31:28Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -556,18 +621,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438500
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.linux.arm64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074508
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.arm64.spdx.sbom.json
         content_type: application/json
-        created_at: "2025-01-25T19:46:47Z"
+        created_at: "2025-03-30T17:31:31Z"
         download_count: 0
-        id: 223438510
+        id: 242074539
         label: ""
-        name: sops-v3.9.4.linux.arm64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4NUWau
-        size: 180594
+        name: sops-v3.10.0.linux.arm64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4ObcOr
+        size: 179609
         state: uploaded
-        updated_at: "2025-01-25T19:46:47Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -588,18 +653,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438510
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops_3.9.4_amd64.deb
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074539
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops_3.10.0_amd64.deb
         content_type: application/vnd.debian.binary-package
-        created_at: "2025-01-25T19:46:46Z"
-        download_count: 0
-        id: 223438504
+        created_at: "2025-03-30T17:31:30Z"
+        download_count: 19
+        id: 242074528
         label: ""
-        name: sops_3.9.4_amd64.deb
-        node_id: RA_kwDOAmzKAc4NUWao
-        size: 13438158
+        name: sops_3.10.0_amd64.deb
+        node_id: RA_kwDOAmzKAc4ObcOg
+        size: 13704756
         state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
+        updated_at: "2025-03-30T17:31:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -620,18 +685,18 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438504
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.9.4/sops_3.9.4_arm64.deb
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074528
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops_3.10.0_arm64.deb
         content_type: application/vnd.debian.binary-package
-        created_at: "2025-01-25T19:46:46Z"
-        download_count: 0
-        id: 223438503
+        created_at: "2025-03-30T17:31:30Z"
+        download_count: 4
+        id: 242074524
         label: ""
-        name: sops_3.9.4_arm64.deb
-        node_id: RA_kwDOAmzKAc4NUWan
-        size: 12432798
+        name: sops_3.10.0_arm64.deb
+        node_id: RA_kwDOAmzKAc4ObcOc
+        size: 12632430
         state: uploaded
-        updated_at: "2025-01-25T19:46:46Z"
+        updated_at: "2025-03-30T17:31:30Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -652,8 +717,8 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/223438503
-      assets_url: https://api.github.com/repos/getsops/sops/releases/196786786/assets
+        url: https://api.github.com/repos/getsops/sops/releases/assets/242074524
+      assets_url: https://api.github.com/repos/getsops/sops/releases/209218006/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
         events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -683,10 +748,10 @@ dependencies:
 
         ```shell
         # Download the binary
-        curl -LO https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.linux.amd64
+        curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.amd64
 
         # Move the binary in to your PATH
-        mv sops-v3.9.4.linux.amd64 /usr/local/bin/sops
+        mv sops-v3.10.0.linux.amd64 /usr/local/bin/sops
 
         # Make the binary executable
         chmod +x /usr/local/bin/sops
@@ -698,14 +763,14 @@ dependencies:
 
         ```shell
         # Download the checksums file, certificate and signature
-        curl -LO https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.checksums.txt
-        curl -LO https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.checksums.pem
-        curl -LO https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.checksums.sig
+        curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.txt
+        curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.pem
+        curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.sig
 
         # Verify the checksums file
-        cosign verify-blob sops-v3.9.4.checksums.txt \
-          --certificate sops-v3.9.4.checksums.pem \
-          --signature sops-v3.9.4.checksums.sig \
+        cosign verify-blob sops-v3.10.0.checksums.txt \
+          --certificate sops-v3.10.0.checksums.pem \
+          --signature sops-v3.10.0.checksums.sig \
           --certificate-identity-regexp=https://github.com/getsops \
           --certificate-oidc-issuer=https://token.actions.githubusercontent.com
         ```
@@ -716,22 +781,22 @@ dependencies:
 
         ```shell
         # Verify the binary using the checksums file
-        sha256sum -c sops-v3.9.4.checksums.txt --ignore-missing
+        sha256sum -c sops-v3.10.0.checksums.txt --ignore-missing
         ```
 
         ### Verify artifact provenance
 
-        The [SLSA provenance](https://slsa.dev/provenance/v0.2) of the binaries, packages, and SBOMs can be found within the artifacts associated with this release. It is presented through an [in-toto](https://in-toto.io/) link metadata file named `sops-v3.9.4.intoto.jsonl`. To verify the provenance of an artifact, you can utilize the [`slsa-verifier`](https://github.com/slsa-framework/slsa-verifier#artifacts) tool:
+        The [SLSA provenance](https://slsa.dev/provenance/v0.2) of the binaries, packages, and SBOMs can be found within the artifacts associated with this release. It is presented through an [in-toto](https://in-toto.io/) link metadata file named `sops-v3.10.0.intoto.jsonl`. To verify the provenance of an artifact, you can utilize the [`slsa-verifier`](https://github.com/slsa-framework/slsa-verifier#artifacts) tool:
 
         ```shell
         # Download the metadata file
-        curl -LO  https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.intoto.jsonl
+        curl -LO  https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.intoto.jsonl
 
         # Verify the provenance of the artifact
         slsa-verifier verify-artifact <artifact> \
-          --provenance-path sops-v3.9.4.intoto.jsonl \
+          --provenance-path sops-v3.10.0.intoto.jsonl \
           --source-uri github.com/getsops/sops \
-          --source-tag v3.9.4
+          --source-tag v3.10.0
         ```
 
         ## Container Images
@@ -742,20 +807,20 @@ dependencies:
 
         ### GitHub Container Registry
 
-        - `ghcr.io/getsops/sops:v3.9.4`
-        - `ghcr.io/getsops/sops:v3.9.4-alpine`
+        - `ghcr.io/getsops/sops:v3.10.0`
+        - `ghcr.io/getsops/sops:v3.10.0-alpine`
 
         ### Quay.io
 
-        - `quay.io/getsops/sops:v3.9.4`
-        - `quay.io/getsops/sops:v3.9.4-alpine`
+        - `quay.io/getsops/sops:v3.10.0`
+        - `quay.io/getsops/sops:v3.10.0-alpine`
 
         ### Verify container image signature
 
         The container images are signed using [Cosign](https://docs.sigstore.dev/cosign/overview/) with GitHub OIDC. To validate the signature of an image, run the following command:
 
         ```shell
-        cosign verify ghcr.io/getsops/sops:v3.9.4 \
+        cosign verify ghcr.io/getsops/sops:v3.10.0 \
           --certificate-identity-regexp=https://github.com/getsops \
           --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
           -o text
@@ -770,36 +835,112 @@ dependencies:
         The Software Bill of Materials (SBOM) for each binary is accessible within the artifacts enclosed with this release. It is presented as an [SPDX](https://spdx.dev/) JSON file, formatted as `<binary>.spdx.sbom.json`.
 
         ## What's Changed
-        * build(deps): Bump the go group with 5 updates by @dependabot in https://github.com/getsops/sops/pull/1727
-        * build(deps): Bump tempfile from 3.14.0 to 3.15.0 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1728
-        * build(deps): Bump the go group with 16 updates by @dependabot in https://github.com/getsops/sops/pull/1732
-        * build(deps): Bump the ci group with 3 updates by @dependabot in https://github.com/getsops/sops/pull/1730
-        * build(deps): Bump serde_json from 1.0.134 to 1.0.135 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1731
-        * build(deps): Bump the go group with 12 updates by @dependabot in https://github.com/getsops/sops/pull/1734
-        * build(deps): Bump serde_json from 1.0.135 to 1.0.137 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1735
-        * Fix ToString for AWS KMS to include role, context, and profile by @felixfontein in https://github.com/getsops/sops/pull/1733
-        * build(deps): Bump the ci group with 3 updates by @dependabot in https://github.com/getsops/sops/pull/1738
-        * build(deps): Bump the go group with 6 updates by @dependabot in https://github.com/getsops/sops/pull/1739
-        * Release 3.9.4 by @felixfontein in https://github.com/getsops/sops/pull/1740
+        * build(deps): Bump alpine from 3.18 to 3.21 in /.release in the docker group across 1 directory by @dependabot in https://github.com/getsops/sops/pull/1700
+        * Convert changelog to MarkDown by @felixfontein in https://github.com/getsops/sops/pull/1741
+        * build(deps): Bump the go group with 7 updates by @dependabot in https://github.com/getsops/sops/pull/1743
+        * build(deps): Bump the go group with 9 updates by @dependabot in https://github.com/getsops/sops/pull/1745
+        * build(deps): Bump the rust group in /functional-tests with 2 updates by @dependabot in https://github.com/getsops/sops/pull/1744
+        * build(deps): Bump github/codeql-action from 3.28.5 to 3.28.8 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1746
+        * build(deps): Bump the go group with 12 updates by @dependabot in https://github.com/getsops/sops/pull/1751
+        * build(deps): Bump the ci group with 4 updates by @dependabot in https://github.com/getsops/sops/pull/1750
+        * Add --input-type option for filestatus subcommand by @felixfontein in https://github.com/getsops/sops/pull/1601
+        * Use SOPS_EDITOR before EDITOR by @felixfontein in https://github.com/getsops/sops/pull/1611
+        * Allow users to disable version check via environment variable by @nicklasfrahm in https://github.com/getsops/sops/pull/1684
+        * add duplicate section support to ini store by @reindlt in https://github.com/getsops/sops/pull/1452
+        * stores: test for duplicate keys, reserve keyword (yaml only now) by @holiman in https://github.com/getsops/sops/pull/1203
+        * Add same process option for exec-env by @ricmatsui in https://github.com/getsops/sops/pull/880
+        * outputs: add trailing newline at the end of JSON files by @duthils in https://github.com/getsops/sops/pull/1476
+        * set subcommand: add --idempotent flag that will not write the file if no change happened by @felixfontein in https://github.com/getsops/sops/pull/1754
+        * Encrypt and decrypt time.Time objects by @felixfontein in https://github.com/getsops/sops/pull/1759
+        * build(deps): Bump the go group with 8 updates by @dependabot in https://github.com/getsops/sops/pull/1763
+        * build(deps): Bump tempfile from 3.16.0 to 3.17.0 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1762
+        * build(deps): Bump goreleaser/goreleaser-action from 6.1.0 to 6.2.1 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1761
+        * fix(docs): typo in README.rst by @Paredev in https://github.com/getsops/sops/pull/1765
+        * Add SSH support for age by @haoqixu in https://github.com/getsops/sops/pull/1692
+        * make sure that tests do not pick keys.txt from user's HOME dir by @tomaszduda23 in https://github.com/getsops/sops/pull/1766
+        * support for age identity with passphrase by @tomaszduda23 in https://github.com/getsops/sops/pull/1400
+        * build(deps): Bump the rust group in /functional-tests with 4 updates by @dependabot in https://github.com/getsops/sops/pull/1768
+        * build(deps): Bump the go group with 12 updates by @dependabot in https://github.com/getsops/sops/pull/1769
+        * build(deps): Bump the ci group with 4 updates by @dependabot in https://github.com/getsops/sops/pull/1770
+        * build(deps): Bump github.com/go-jose/go-jose/v4 from 4.0.4 to 4.0.5 by @dependabot in https://github.com/getsops/sops/pull/1773
+        * feat: add age plugin support by @brianmcgee in https://github.com/getsops/sops/pull/1641
+        * Check GnuPG decryption result for non-empty size by @felixfontein in https://github.com/getsops/sops/pull/1776
+        * vendored age code: consolidate passphrase reading functionality by @felixfontein in https://github.com/getsops/sops/pull/1775
+        * Allow to encrypt and decrypt from stdin by @felixfontein in https://github.com/getsops/sops/pull/1690
+        * build(deps): Bump the go group with 11 updates by @dependabot in https://github.com/getsops/sops/pull/1784
+        * build(deps): Bump the ci group with 5 updates by @dependabot in https://github.com/getsops/sops/pull/1782
+        * build(deps): Bump serde_json from 1.0.139 to 1.0.140 in /functional-tests in the rust group; bump Rust to 1.85.0 by @dependabot in https://github.com/getsops/sops/pull/1783
+        * build(deps): Bump the go group with 13 updates by @dependabot in https://github.com/getsops/sops/pull/1797
+        * build(deps): Bump the rust group in /functional-tests with 3 updates by @dependabot in https://github.com/getsops/sops/pull/1796
+        * build(deps): Bump github/codeql-action from 3.28.10 to 3.28.11 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1795
+        * build(deps): Bump the go group with 6 updates by @dependabot in https://github.com/getsops/sops/pull/1802
+        * build(deps): Bump tempfile from 3.18.0 to 3.19.0 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1800
+        * build(deps): Bump docker/login-action from 3.3.0 to 3.4.0 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1801
+        * build(deps): Bump github.com/golang-jwt/jwt/v5 from 5.2.1 to 5.2.2 by @dependabot in https://github.com/getsops/sops/pull/1806
+        * goreleaser: add windows arm64 by @duthils in https://github.com/getsops/sops/pull/1791
+        * Add a way to set sops config location via envvar by @sledzikowy in https://github.com/getsops/sops/pull/1701
+        * build(deps): Bump the go group with 3 updates by @dependabot in https://github.com/getsops/sops/pull/1809
+        * build(deps): Bump the ci group with 5 updates by @dependabot in https://github.com/getsops/sops/pull/1808
+        * build(deps): Bump tempfile from 3.19.0 to 3.19.1 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1807
+        * Support --config option in publish subcommand by @felixfontein in https://github.com/getsops/sops/pull/1779
+        * Fix caching of Metadata.DataKey by @felixfontein in https://github.com/getsops/sops/pull/1781
+        * Lint by @felixfontein in https://github.com/getsops/sops/pull/1780
+        * updatekeys subcommand: rename GroupQuorum to ShamirThreshold by @felixfontein in https://github.com/getsops/sops/pull/1631
+        * If --filename-override is specified, convert it to an absolute path same as regular filenames by @felixfontein in https://github.com/getsops/sops/pull/1793
+        * Add support for `oauth2.TokenSource` in GCP KMS by @matheuscscp in https://github.com/getsops/sops/pull/1794
+        * Added SOPS_AGE_KEY_CMD option to age, fixes #1323 by @danilobuerger in https://github.com/getsops/sops/pull/1811
+        * chore: omitempty metadata to reduce the size of stored config by @cgetzen in https://github.com/getsops/sops/pull/1571
+        * Improve Shamir Secret Sharing code by @felixfontein in https://github.com/getsops/sops/pull/1813
+        * Update all dependencies by @felixfontein in https://github.com/getsops/sops/pull/1814
+        * Run 'gofmt -w' on all .go files by @felixfontein in https://github.com/getsops/sops/pull/1817
+        * Add option to explicitly check for the latest version; deprecate current default of always doing that unless disabled by @felixfontein in https://github.com/getsops/sops/pull/1816
+        * Build using Go 1.24 and drop support for 1.22 by @hiddeco in https://github.com/getsops/sops/pull/1819
+        * Support `GOOGLE_OAUTH_ACCESS_TOKEN` for Google Cloud Platform  by @marensofier in https://github.com/getsops/sops/pull/1578
+        * Warn about `.sops.yml` files found while searching for `.sops.yaml` by @felixfontein in https://github.com/getsops/sops/pull/1820
+        * Release 3.10.0 by @felixfontein in https://github.com/getsops/sops/pull/1815
+        * Added support for multiarch windows release binaries by @sabre1041 in https://github.com/getsops/sops/pull/1823
 
+        ## New Contributors
+        * @reindlt made their first contribution in https://github.com/getsops/sops/pull/1452
+        * @ricmatsui made their first contribution in https://github.com/getsops/sops/pull/880
+        * @Paredev made their first contribution in https://github.com/getsops/sops/pull/1765
+        * @haoqixu made their first contribution in https://github.com/getsops/sops/pull/1692
+        * @brianmcgee made their first contribution in https://github.com/getsops/sops/pull/1641
+        * @sledzikowy made their first contribution in https://github.com/getsops/sops/pull/1701
+        * @matheuscscp made their first contribution in https://github.com/getsops/sops/pull/1794
+        * @danilobuerger made their first contribution in https://github.com/getsops/sops/pull/1811
+        * @cgetzen made their first contribution in https://github.com/getsops/sops/pull/1571
+        * @marensofier made their first contribution in https://github.com/getsops/sops/pull/1578
+        * @sabre1041 made their first contribution in https://github.com/getsops/sops/pull/1823
 
-        **Full Changelog**: https://github.com/getsops/sops/compare/v3.9.3...v3.9.4
+        **Full Changelog**: https://github.com/getsops/sops/compare/v3.9.4...v3.10.0
 
-      created_at: "2025-01-25T18:18:36Z"
+      created_at: "2025-03-30T17:06:05Z"
       draft: false
-      html_url: https://github.com/getsops/sops/releases/tag/v3.9.4
-      id: 196786786
-      mentions_count: 2
-      name: v3.9.4
-      node_id: RE_kwDOAmzKAc4Lurpi
+      html_url: https://github.com/getsops/sops/releases/tag/v3.10.0
+      id: 209218006
+      mentions_count: 18
+      name: v3.10.0
+      node_id: RE_kwDOAmzKAc4MeGnW
       prerelease: false
-      published_at: "2025-01-25T19:46:43Z"
-      tag_name: v3.9.4
-      tarball_url: https://api.github.com/repos/getsops/sops/tarball/v3.9.4
+      published_at: "2025-03-30T17:31:26Z"
+      reactions:
+        "+1": 0
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 2
+        laugh: 0
+        rocket: 1
+        total_count: 3
+        url: https://api.github.com/repos/getsops/sops/releases/209218006/reactions
+      tag_name: v3.10.0
+      tarball_url: https://api.github.com/repos/getsops/sops/tarball/v3.10.0
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/getsops/sops/releases/196786786/assets{?name,label}
-      url: https://api.github.com/repos/getsops/sops/releases/196786786
-      zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.9.4
+      upload_url: https://uploads.github.com/repos/getsops/sops/releases/209218006/assets{?name,label}
+      url: https://api.github.com/repos/getsops/sops/releases/209218006
+      zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.10.0
 meta:
   dependencies:
     sops:
@@ -6391,3 +6532,933 @@ meta:
           upload_url: https://uploads.github.com/repos/getsops/sops/releases/196786786/assets{?name,label}
           url: https://api.github.com/repos/getsops/sops/releases/196786786
           zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.9.4
+      3.10.0:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-3.10.0-1.aarch64.rpm
+            content_type: application/x-rpm
+            created_at: "2025-03-30T17:31:29Z"
+            download_count: 0
+            id: 242074518
+            label: ""
+            name: sops-3.10.0-1.aarch64.rpm
+            node_id: RA_kwDOAmzKAc4ObcOW
+            size: 13048964
+            state: uploaded
+            updated_at: "2025-03-30T17:31:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074518
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-3.10.0-1.x86_64.rpm
+            content_type: application/x-rpm
+            created_at: "2025-03-30T17:31:30Z"
+            download_count: 8
+            id: 242074521
+            label: ""
+            name: sops-3.10.0-1.x86_64.rpm
+            node_id: RA_kwDOAmzKAc4ObcOZ
+            size: 14264505
+            state: uploaded
+            updated_at: "2025-03-30T17:31:30Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074521
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.amd64.exe
+            content_type: application/x-msdownload
+            created_at: "2025-03-30T17:31:27Z"
+            download_count: 0
+            id: 242074507
+            label: ""
+            name: sops-v3.10.0.amd64.exe
+            node_id: RA_kwDOAmzKAc4ObcOL
+            size: 45308416
+            state: uploaded
+            updated_at: "2025-03-30T17:31:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074507
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.amd64.exe.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074533
+            label: ""
+            name: sops-v3.10.0.amd64.exe.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcOl
+            size: 181005
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074533
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.arm64.exe
+            content_type: application/x-msdownload
+            created_at: "2025-03-30T17:31:28Z"
+            download_count: 0
+            id: 242074516
+            label: ""
+            name: sops-v3.10.0.arm64.exe
+            node_id: RA_kwDOAmzKAc4ObcOU
+            size: 42682368
+            state: uploaded
+            updated_at: "2025-03-30T17:31:30Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074516
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.arm64.exe.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074576
+            label: ""
+            name: sops-v3.10.0.arm64.exe.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcPQ
+            size: 181005
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074576
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.pem
+            content_type: application/x-x509-ca-cert
+            created_at: "2025-03-30T17:31:32Z"
+            download_count: 1
+            id: 242074581
+            label: ""
+            name: sops-v3.10.0.checksums.pem
+            node_id: RA_kwDOAmzKAc4ObcPV
+            size: 3120
+            state: uploaded
+            updated_at: "2025-03-30T17:31:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074581
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.sig
+            content_type: application/pgp-signature
+            created_at: "2025-03-30T17:31:32Z"
+            download_count: 1
+            id: 242074580
+            label: ""
+            name: sops-v3.10.0.checksums.sig
+            node_id: RA_kwDOAmzKAc4ObcPU
+            size: 96
+            state: uploaded
+            updated_at: "2025-03-30T17:31:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074580
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.txt
+            content_type: text/plain; charset=utf-8
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 1
+            id: 242074579
+            label: ""
+            name: sops-v3.10.0.checksums.txt
+            node_id: RA_kwDOAmzKAc4ObcPT
+            size: 630
+            state: uploaded
+            updated_at: "2025-03-30T17:31:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074579
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin
+            content_type: application/octet-stream
+            created_at: "2025-03-30T17:31:29Z"
+            download_count: 0
+            id: 242074517
+            label: ""
+            name: sops-v3.10.0.darwin
+            node_id: RA_kwDOAmzKAc4ObcOV
+            size: 89151474
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074517
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.amd64
+            content_type: application/octet-stream
+            created_at: "2025-03-30T17:31:27Z"
+            download_count: 0
+            id: 242074509
+            label: ""
+            name: sops-v3.10.0.darwin.amd64
+            node_id: RA_kwDOAmzKAc4ObcON
+            size: 45444448
+            state: uploaded
+            updated_at: "2025-03-30T17:31:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074509
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.amd64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074531
+            label: ""
+            name: sops-v3.10.0.darwin.amd64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcOj
+            size: 179609
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074531
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.arm64
+            content_type: application/octet-stream
+            created_at: "2025-03-30T17:31:27Z"
+            download_count: 0
+            id: 242074510
+            label: ""
+            name: sops-v3.10.0.darwin.arm64
+            node_id: RA_kwDOAmzKAc4ObcOO
+            size: 43685874
+            state: uploaded
+            updated_at: "2025-03-30T17:31:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074510
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.arm64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074530
+            label: ""
+            name: sops-v3.10.0.darwin.arm64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcOi
+            size: 179609
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074530
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.darwin.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074575
+            label: ""
+            name: sops-v3.10.0.darwin.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcPP
+            size: 331371
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074575
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.intoto.jsonl
+            content_type: application/octet-stream
+            created_at: "2025-03-30T17:32:43Z"
+            download_count: 2
+            id: 242074720
+            label: ""
+            name: sops-v3.10.0.intoto.jsonl
+            node_id: RA_kwDOAmzKAc4ObcRg
+            size: 26400
+            state: uploaded
+            updated_at: "2025-03-30T17:32:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074720
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.amd64
+            content_type: application/octet-stream
+            created_at: "2025-03-30T17:31:28Z"
+            download_count: 27
+            id: 242074515
+            label: ""
+            name: sops-v3.10.0.linux.amd64
+            node_id: RA_kwDOAmzKAc4ObcOT
+            size: 44101784
+            state: uploaded
+            updated_at: "2025-03-30T17:31:30Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074515
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.amd64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074544
+            label: ""
+            name: sops-v3.10.0.linux.amd64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcOw
+            size: 179609
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074544
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.arm64
+            content_type: application/octet-stream
+            created_at: "2025-03-30T17:31:27Z"
+            download_count: 0
+            id: 242074508
+            label: ""
+            name: sops-v3.10.0.linux.arm64
+            node_id: RA_kwDOAmzKAc4ObcOM
+            size: 42139800
+            state: uploaded
+            updated_at: "2025-03-30T17:31:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074508
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.arm64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2025-03-30T17:31:31Z"
+            download_count: 0
+            id: 242074539
+            label: ""
+            name: sops-v3.10.0.linux.arm64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4ObcOr
+            size: 179609
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074539
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops_3.10.0_amd64.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2025-03-30T17:31:30Z"
+            download_count: 19
+            id: 242074528
+            label: ""
+            name: sops_3.10.0_amd64.deb
+            node_id: RA_kwDOAmzKAc4ObcOg
+            size: 13704756
+            state: uploaded
+            updated_at: "2025-03-30T17:31:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074528
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.10.0/sops_3.10.0_arm64.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2025-03-30T17:31:30Z"
+            download_count: 4
+            id: 242074524
+            label: ""
+            name: sops_3.10.0_arm64.deb
+            node_id: RA_kwDOAmzKAc4ObcOc
+            size: 12632430
+            state: uploaded
+            updated_at: "2025-03-30T17:31:30Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/242074524
+          assets_url: https://api.github.com/repos/getsops/sops/releases/209218006/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+            events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+            followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+            following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+            gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/apps/github-actions
+            id: 41898282
+            login: github-actions[bot]
+            node_id: MDM6Qm90NDE4OTgyODI=
+            organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+            received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+            repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+            type: Bot
+            url: https://api.github.com/users/github-actions%5Bbot%5D
+            user_view_type: public
+          body: |+
+            ## Installation
+
+            To install `sops`, download one of the pre-built binaries provided for your platform from the artifacts attached to this release.
+
+            For instance, if you are using Linux on an AMD64 architecture:
+
+            ```shell
+            # Download the binary
+            curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.linux.amd64
+
+            # Move the binary in to your PATH
+            mv sops-v3.10.0.linux.amd64 /usr/local/bin/sops
+
+            # Make the binary executable
+            chmod +x /usr/local/bin/sops
+            ```
+
+            ### Verify checksums file signature
+
+            The checksums file provided within the artifacts attached to this release is signed using [Cosign](https://docs.sigstore.dev/cosign/overview/) with GitHub OIDC. To validate the signature of this file, run the following commands:
+
+            ```shell
+            # Download the checksums file, certificate and signature
+            curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.txt
+            curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.pem
+            curl -LO https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.checksums.sig
+
+            # Verify the checksums file
+            cosign verify-blob sops-v3.10.0.checksums.txt \
+              --certificate sops-v3.10.0.checksums.pem \
+              --signature sops-v3.10.0.checksums.sig \
+              --certificate-identity-regexp=https://github.com/getsops \
+              --certificate-oidc-issuer=https://token.actions.githubusercontent.com
+            ```
+
+            ### Verify binary integrity
+
+            To verify the integrity of the downloaded binary, you can utilize the checksums file after having validated its signature:
+
+            ```shell
+            # Verify the binary using the checksums file
+            sha256sum -c sops-v3.10.0.checksums.txt --ignore-missing
+            ```
+
+            ### Verify artifact provenance
+
+            The [SLSA provenance](https://slsa.dev/provenance/v0.2) of the binaries, packages, and SBOMs can be found within the artifacts associated with this release. It is presented through an [in-toto](https://in-toto.io/) link metadata file named `sops-v3.10.0.intoto.jsonl`. To verify the provenance of an artifact, you can utilize the [`slsa-verifier`](https://github.com/slsa-framework/slsa-verifier#artifacts) tool:
+
+            ```shell
+            # Download the metadata file
+            curl -LO  https://github.com/getsops/sops/releases/download/v3.10.0/sops-v3.10.0.intoto.jsonl
+
+            # Verify the provenance of the artifact
+            slsa-verifier verify-artifact <artifact> \
+              --provenance-path sops-v3.10.0.intoto.jsonl \
+              --source-uri github.com/getsops/sops \
+              --source-tag v3.10.0
+            ```
+
+            ## Container Images
+
+            The `sops` binaries are also available as container images, based on Debian (slim) and Alpine Linux. The Debian-based container images include any dependencies which may be required to make use of certain key services, such as GnuPG, AWS KMS, Azure Key Vault, and Google Cloud KMS. The Alpine-based container images are smaller in size, but do not include these dependencies.
+
+            These container images are available for the following architectures: `linux/amd64` and `linux/arm64`.
+
+            ### GitHub Container Registry
+
+            - `ghcr.io/getsops/sops:v3.10.0`
+            - `ghcr.io/getsops/sops:v3.10.0-alpine`
+
+            ### Quay.io
+
+            - `quay.io/getsops/sops:v3.10.0`
+            - `quay.io/getsops/sops:v3.10.0-alpine`
+
+            ### Verify container image signature
+
+            The container images are signed using [Cosign](https://docs.sigstore.dev/cosign/overview/) with GitHub OIDC. To validate the signature of an image, run the following command:
+
+            ```shell
+            cosign verify ghcr.io/getsops/sops:v3.10.0 \
+              --certificate-identity-regexp=https://github.com/getsops \
+              --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
+              -o text
+            ```
+
+            ### Verify container image provenance
+
+            The container images include [SLSA provenance](https://slsa.dev/provenance/v0.2) attestations. For more information around the verification of this, please refer to the [`slsa-verifier` documentation](https://github.com/slsa-framework/slsa-verifier#containers).
+
+            ## Software Bill of Materials
+
+            The Software Bill of Materials (SBOM) for each binary is accessible within the artifacts enclosed with this release. It is presented as an [SPDX](https://spdx.dev/) JSON file, formatted as `<binary>.spdx.sbom.json`.
+
+            ## What's Changed
+            * build(deps): Bump alpine from 3.18 to 3.21 in /.release in the docker group across 1 directory by @dependabot in https://github.com/getsops/sops/pull/1700
+            * Convert changelog to MarkDown by @felixfontein in https://github.com/getsops/sops/pull/1741
+            * build(deps): Bump the go group with 7 updates by @dependabot in https://github.com/getsops/sops/pull/1743
+            * build(deps): Bump the go group with 9 updates by @dependabot in https://github.com/getsops/sops/pull/1745
+            * build(deps): Bump the rust group in /functional-tests with 2 updates by @dependabot in https://github.com/getsops/sops/pull/1744
+            * build(deps): Bump github/codeql-action from 3.28.5 to 3.28.8 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1746
+            * build(deps): Bump the go group with 12 updates by @dependabot in https://github.com/getsops/sops/pull/1751
+            * build(deps): Bump the ci group with 4 updates by @dependabot in https://github.com/getsops/sops/pull/1750
+            * Add --input-type option for filestatus subcommand by @felixfontein in https://github.com/getsops/sops/pull/1601
+            * Use SOPS_EDITOR before EDITOR by @felixfontein in https://github.com/getsops/sops/pull/1611
+            * Allow users to disable version check via environment variable by @nicklasfrahm in https://github.com/getsops/sops/pull/1684
+            * add duplicate section support to ini store by @reindlt in https://github.com/getsops/sops/pull/1452
+            * stores: test for duplicate keys, reserve keyword (yaml only now) by @holiman in https://github.com/getsops/sops/pull/1203
+            * Add same process option for exec-env by @ricmatsui in https://github.com/getsops/sops/pull/880
+            * outputs: add trailing newline at the end of JSON files by @duthils in https://github.com/getsops/sops/pull/1476
+            * set subcommand: add --idempotent flag that will not write the file if no change happened by @felixfontein in https://github.com/getsops/sops/pull/1754
+            * Encrypt and decrypt time.Time objects by @felixfontein in https://github.com/getsops/sops/pull/1759
+            * build(deps): Bump the go group with 8 updates by @dependabot in https://github.com/getsops/sops/pull/1763
+            * build(deps): Bump tempfile from 3.16.0 to 3.17.0 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1762
+            * build(deps): Bump goreleaser/goreleaser-action from 6.1.0 to 6.2.1 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1761
+            * fix(docs): typo in README.rst by @Paredev in https://github.com/getsops/sops/pull/1765
+            * Add SSH support for age by @haoqixu in https://github.com/getsops/sops/pull/1692
+            * make sure that tests do not pick keys.txt from user's HOME dir by @tomaszduda23 in https://github.com/getsops/sops/pull/1766
+            * support for age identity with passphrase by @tomaszduda23 in https://github.com/getsops/sops/pull/1400
+            * build(deps): Bump the rust group in /functional-tests with 4 updates by @dependabot in https://github.com/getsops/sops/pull/1768
+            * build(deps): Bump the go group with 12 updates by @dependabot in https://github.com/getsops/sops/pull/1769
+            * build(deps): Bump the ci group with 4 updates by @dependabot in https://github.com/getsops/sops/pull/1770
+            * build(deps): Bump github.com/go-jose/go-jose/v4 from 4.0.4 to 4.0.5 by @dependabot in https://github.com/getsops/sops/pull/1773
+            * feat: add age plugin support by @brianmcgee in https://github.com/getsops/sops/pull/1641
+            * Check GnuPG decryption result for non-empty size by @felixfontein in https://github.com/getsops/sops/pull/1776
+            * vendored age code: consolidate passphrase reading functionality by @felixfontein in https://github.com/getsops/sops/pull/1775
+            * Allow to encrypt and decrypt from stdin by @felixfontein in https://github.com/getsops/sops/pull/1690
+            * build(deps): Bump the go group with 11 updates by @dependabot in https://github.com/getsops/sops/pull/1784
+            * build(deps): Bump the ci group with 5 updates by @dependabot in https://github.com/getsops/sops/pull/1782
+            * build(deps): Bump serde_json from 1.0.139 to 1.0.140 in /functional-tests in the rust group; bump Rust to 1.85.0 by @dependabot in https://github.com/getsops/sops/pull/1783
+            * build(deps): Bump the go group with 13 updates by @dependabot in https://github.com/getsops/sops/pull/1797
+            * build(deps): Bump the rust group in /functional-tests with 3 updates by @dependabot in https://github.com/getsops/sops/pull/1796
+            * build(deps): Bump github/codeql-action from 3.28.10 to 3.28.11 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1795
+            * build(deps): Bump the go group with 6 updates by @dependabot in https://github.com/getsops/sops/pull/1802
+            * build(deps): Bump tempfile from 3.18.0 to 3.19.0 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1800
+            * build(deps): Bump docker/login-action from 3.3.0 to 3.4.0 in the ci group by @dependabot in https://github.com/getsops/sops/pull/1801
+            * build(deps): Bump github.com/golang-jwt/jwt/v5 from 5.2.1 to 5.2.2 by @dependabot in https://github.com/getsops/sops/pull/1806
+            * goreleaser: add windows arm64 by @duthils in https://github.com/getsops/sops/pull/1791
+            * Add a way to set sops config location via envvar by @sledzikowy in https://github.com/getsops/sops/pull/1701
+            * build(deps): Bump the go group with 3 updates by @dependabot in https://github.com/getsops/sops/pull/1809
+            * build(deps): Bump the ci group with 5 updates by @dependabot in https://github.com/getsops/sops/pull/1808
+            * build(deps): Bump tempfile from 3.19.0 to 3.19.1 in /functional-tests in the rust group by @dependabot in https://github.com/getsops/sops/pull/1807
+            * Support --config option in publish subcommand by @felixfontein in https://github.com/getsops/sops/pull/1779
+            * Fix caching of Metadata.DataKey by @felixfontein in https://github.com/getsops/sops/pull/1781
+            * Lint by @felixfontein in https://github.com/getsops/sops/pull/1780
+            * updatekeys subcommand: rename GroupQuorum to ShamirThreshold by @felixfontein in https://github.com/getsops/sops/pull/1631
+            * If --filename-override is specified, convert it to an absolute path same as regular filenames by @felixfontein in https://github.com/getsops/sops/pull/1793
+            * Add support for `oauth2.TokenSource` in GCP KMS by @matheuscscp in https://github.com/getsops/sops/pull/1794
+            * Added SOPS_AGE_KEY_CMD option to age, fixes #1323 by @danilobuerger in https://github.com/getsops/sops/pull/1811
+            * chore: omitempty metadata to reduce the size of stored config by @cgetzen in https://github.com/getsops/sops/pull/1571
+            * Improve Shamir Secret Sharing code by @felixfontein in https://github.com/getsops/sops/pull/1813
+            * Update all dependencies by @felixfontein in https://github.com/getsops/sops/pull/1814
+            * Run 'gofmt -w' on all .go files by @felixfontein in https://github.com/getsops/sops/pull/1817
+            * Add option to explicitly check for the latest version; deprecate current default of always doing that unless disabled by @felixfontein in https://github.com/getsops/sops/pull/1816
+            * Build using Go 1.24 and drop support for 1.22 by @hiddeco in https://github.com/getsops/sops/pull/1819
+            * Support `GOOGLE_OAUTH_ACCESS_TOKEN` for Google Cloud Platform  by @marensofier in https://github.com/getsops/sops/pull/1578
+            * Warn about `.sops.yml` files found while searching for `.sops.yaml` by @felixfontein in https://github.com/getsops/sops/pull/1820
+            * Release 3.10.0 by @felixfontein in https://github.com/getsops/sops/pull/1815
+            * Added support for multiarch windows release binaries by @sabre1041 in https://github.com/getsops/sops/pull/1823
+
+            ## New Contributors
+            * @reindlt made their first contribution in https://github.com/getsops/sops/pull/1452
+            * @ricmatsui made their first contribution in https://github.com/getsops/sops/pull/880
+            * @Paredev made their first contribution in https://github.com/getsops/sops/pull/1765
+            * @haoqixu made their first contribution in https://github.com/getsops/sops/pull/1692
+            * @brianmcgee made their first contribution in https://github.com/getsops/sops/pull/1641
+            * @sledzikowy made their first contribution in https://github.com/getsops/sops/pull/1701
+            * @matheuscscp made their first contribution in https://github.com/getsops/sops/pull/1794
+            * @danilobuerger made their first contribution in https://github.com/getsops/sops/pull/1811
+            * @cgetzen made their first contribution in https://github.com/getsops/sops/pull/1571
+            * @marensofier made their first contribution in https://github.com/getsops/sops/pull/1578
+            * @sabre1041 made their first contribution in https://github.com/getsops/sops/pull/1823
+
+            **Full Changelog**: https://github.com/getsops/sops/compare/v3.9.4...v3.10.0
+
+          created_at: "2025-03-30T17:06:05Z"
+          draft: false
+          html_url: https://github.com/getsops/sops/releases/tag/v3.10.0
+          id: 209218006
+          mentions_count: 18
+          name: v3.10.0
+          node_id: RE_kwDOAmzKAc4MeGnW
+          prerelease: false
+          published_at: "2025-03-30T17:31:26Z"
+          reactions:
+            "+1": 0
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 2
+            laugh: 0
+            rocket: 1
+            total_count: 3
+            url: https://api.github.com/repos/getsops/sops/releases/209218006/reactions
+          tag_name: v3.10.0
+          tarball_url: https://api.github.com/repos/getsops/sops/tarball/v3.10.0
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/getsops/sops/releases/209218006/assets{?name,label}
+          url: https://api.github.com/repos/getsops/sops/releases/209218006
+          zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.10.0

@@ -129,8 +129,7 @@ jobs:
           make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-              # TODO: Once you have confirmed that it works on the master branch, run it.
-              echo 'make push';
+              make push;
             else
               echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
@@ -161,9 +160,8 @@ jobs:
               echo "version: ${version}"
               changelog=$(make ci:changelog -e DIR="${DIR}/");
               echo "changelog: ${changelog}"
-              # TODO: Once you have confirmed that it works on the master branch, run it.
-              # make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
-              #   -e BODY="$(echo -e "changelog\n${changelog}")";
+              make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
+                -e BODY="$(echo -e "changelog\n${changelog}")";
             else
               echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
             fi
@@ -219,8 +217,7 @@ jobs:
             if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
               cd ${GITHUB_WORKSPACE}/${DIR};
               make build;
-              # TODO: Once you have confirmed that it works on the master branch, run it.
-              echo "make manifest:push";
+              make manifest:push;
             else
               echo "skip manifest job"
             fi
@@ -236,8 +233,7 @@ jobs:
           make ci:diff | while read DIR; do
             if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
               version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
-              # TODO: Once you have confirmed that it works on the master branch, run it.
-              # make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
-              #   -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)";
+              make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
+                -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)";
             fi
           done

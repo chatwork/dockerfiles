@@ -30,7 +30,8 @@ jobs:
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \
               -l 'user.login == `"cw-circleci"`' \
-              -l 'mergeable_state == `"clean"`' 2> ./error.log
+              -l 'length(checks[?name == `"test (ubuntu-latest, linux/amd64)"` && status == `"completed"` && conclusion == `"success"`]) == `1`' \
+              -l 'length(checks[?name == `"test (ubuntu-24.04-arm, linux/arm64)"` && status == `"completed"` && conclusion == `"success"`]) == `1`' 2> ./error.log
 
           if cat ./error.log | grep -v "no PR matches the rule"; then
             echo "error_message=$(cat ./error.log)" >> "$GITHUB_OUTPUT"

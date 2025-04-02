@@ -39,5 +39,5 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD`:latest --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
+			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD`:latest --platform linux/${PLATFORM} -f Dockerfile --push .; \
 		fi

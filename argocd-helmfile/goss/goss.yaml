@@ -4,7 +4,7 @@ command:
   /usr/local/bin/argocd version:
     exit-status: 1
     stdout:
-    - 2.14.11
+    - 3.0.0
   /usr/local/bin/kubectl version --client:
     exit-status: 0
   /usr/local/bin/helm plugin list:

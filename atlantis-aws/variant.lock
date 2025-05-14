@@ -2841,8 +2841,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/127765384
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.17
   terraform:
-    version: 1.11.4
-    previousVersion: 1.11.3
+    version: 1.12.0
+    previousVersion: 1.11.4
     versions:
     - 1.3.2
     - 1.3.3
@@ -2904,9 +2904,10 @@ dependencies:
     - 1.11.2
     - 1.11.3
     - 1.11.4
+    - 1.12.0
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/211299858/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/218598268/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -2927,31 +2928,91 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
-      body: |+
-        ## 1.11.4 (April 9, 2025)
+      body: |
+        ## 1.12.0 (May 14, 2025)
+
+
+        NEW FEATURES:
+
+        * Added Terraform backend implementation for OCI Object Storage ([#34465](https://github.com/hashicorp/terraform/issues/34465))
+
+
+        ENHANCEMENTS:
+
+        * Terraform Test command now accepts a -parallelism=n option, which sets the number of parallel operations in a test run's plan/apply operation. ([#34237](https://github.com/hashicorp/terraform/issues/34237))
+
+        * Logical binary operators can now short-circuit ([#36224](https://github.com/hashicorp/terraform/issues/36224))
+
+        * Terraform Test: Runs can now be annotated for possible parallel execution. ([#34180](https://github.com/hashicorp/terraform/issues/34180))
+
+        * Allow terraform init when tests are present but no configuration files are directly inside the current directory ([#35040](https://github.com/hashicorp/terraform/issues/35040))
+
+        * Terraform Test: Continue subsequent test execution when an expected failure is not encountered. ([#34969](https://github.com/hashicorp/terraform/issues/34969))
+
+        * Produce detailed diagnostic objects when test run assertions fail ([#34428](https://github.com/hashicorp/terraform/issues/34428))
+
+        * backend/oss: Supports more standard environment variables to keep same with provider setting ([#36581](https://github.com/hashicorp/terraform/issues/36581))
+
+        * Improved elapsed time display in UI Hook to show minutes and seconds in `mm:ss` format. ([#36368](https://github.com/hashicorp/terraform/issues/36368))
+
+        * Update legacy term used in error messages. (Terraform Cloud agent => HCP Terraform Agent) ([#36706](https://github.com/hashicorp/terraform/issues/36706))
+
+        * `import` blocks: Now support importing a resource via a new identity attribute. This is mutually exclusive with the `id` attribute ([#36703](https://github.com/hashicorp/terraform/issues/36703))
 
 
         BUG FIXES:
 
-        * disable X25519Kyber768Draft00 in TLS to prevent timouts with some AWS network firewalls ([#36791](https://github.com/hashicorp/terraform/issues/36791))
+        * Refreshed state was not used in the plan for orphaned resource instances ([#36394](https://github.com/hashicorp/terraform/issues/36394))
 
-        * write-only attributes: internal providers should set write-only attributes to null ([#36824](https://github.com/hashicorp/terraform/issues/36824))
+        * Fixes malformed Terraform version error when the remote backend reads a remote workspace that specifies a Terraform version constraint. ([#36356](https://github.com/hashicorp/terraform/issues/36356))
+
+        * Changes to the order of sensitive attributes in the state format would erroneously indicate a plan contained changes when there were none. ([#36465](https://github.com/hashicorp/terraform/issues/36465))
+
+        * Avoid reporting duplicate attribute-associated diagnostics, such as "Available Write-only Attribute Alternative" ([#36579](https://github.com/hashicorp/terraform/issues/36579))
+
+        * for_each expressions in import blocks should not be able to reference the import target ([#36801](https://github.com/hashicorp/terraform/issues/36801))
 
 
-      created_at: "2025-04-09T13:10:05Z"
+        UPGRADE NOTES:
+
+        * On Linux, Terraform now requires Linux kernel version 3.2 or later; support for previous versions has been discontinued. ([#36478](https://github.com/hashicorp/terraform/issues/36478))
+
+
+        ## Previous Releases
+
+        For information on prior major and minor releases, refer to their changelogs:
+
+        - [v1.11](https://github.com/hashicorp/terraform/blob/v1.11/CHANGELOG.md)
+        - [v1.10](https://github.com/hashicorp/terraform/blob/v1.10/CHANGELOG.md)
+        - [v1.9](https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md)
+        - [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
+        - [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
+        - [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
+        - [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
+        - [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
+        - [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
+        - [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
+        - [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
+        - [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
+        - [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
+        - [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
+        - [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
+        - [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
+        - [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
+      created_at: "2025-05-14T14:11:25Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.11.4
-      id: 211299858
-      name: v1.11.4
-      node_id: RE_kwDOAQ6CpM4MmC4S
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.12.0
+      id: 218598268
+      name: v1.12.0
+      node_id: RE_kwDOAQ6CpM4NB4t8
       prerelease: false
-      published_at: "2025-04-09T14:06:49Z"
-      tag_name: v1.11.4
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.11.4
-      target_commitish: 35645b8fca68ff7e0b8785a3b563724a529a0caf
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/211299858/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/211299858
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.4
+      published_at: "2025-05-14T15:15:45Z"
+      tag_name: v1.12.0
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.12.0
+      target_commitish: f9e9a59d7b5b48acf343e07fab768464bcdde4d7
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/218598268/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/218598268
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.0
 meta:
   dependencies:
     atlantis:
@@ -42034,3 +42095,112 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/211299858/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/211299858
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.11.4
+      1.12.0:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/218598268/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |
+            ## 1.12.0 (May 14, 2025)
+
+
+            NEW FEATURES:
+
+            * Added Terraform backend implementation for OCI Object Storage ([#34465](https://github.com/hashicorp/terraform/issues/34465))
+
+
+            ENHANCEMENTS:
+
+            * Terraform Test command now accepts a -parallelism=n option, which sets the number of parallel operations in a test run's plan/apply operation. ([#34237](https://github.com/hashicorp/terraform/issues/34237))
+
+            * Logical binary operators can now short-circuit ([#36224](https://github.com/hashicorp/terraform/issues/36224))
+
+            * Terraform Test: Runs can now be annotated for possible parallel execution. ([#34180](https://github.com/hashicorp/terraform/issues/34180))
+
+            * Allow terraform init when tests are present but no configuration files are directly inside the current directory ([#35040](https://github.com/hashicorp/terraform/issues/35040))
+
+            * Terraform Test: Continue subsequent test execution when an expected failure is not encountered. ([#34969](https://github.com/hashicorp/terraform/issues/34969))
+
+            * Produce detailed diagnostic objects when test run assertions fail ([#34428](https://github.com/hashicorp/terraform/issues/34428))
+
+            * backend/oss: Supports more standard environment variables to keep same with provider setting ([#36581](https://github.com/hashicorp/terraform/issues/36581))
+
+            * Improved elapsed time display in UI Hook to show minutes and seconds in `mm:ss` format. ([#36368](https://github.com/hashicorp/terraform/issues/36368))
+
+            * Update legacy term used in error messages. (Terraform Cloud agent => HCP Terraform Agent) ([#36706](https://github.com/hashicorp/terraform/issues/36706))
+
+            * `import` blocks: Now support importing a resource via a new identity attribute. This is mutually exclusive with the `id` attribute ([#36703](https://github.com/hashicorp/terraform/issues/36703))
+
+
+            BUG FIXES:
+
+            * Refreshed state was not used in the plan for orphaned resource instances ([#36394](https://github.com/hashicorp/terraform/issues/36394))
+
+            * Fixes malformed Terraform version error when the remote backend reads a remote workspace that specifies a Terraform version constraint. ([#36356](https://github.com/hashicorp/terraform/issues/36356))
+
+            * Changes to the order of sensitive attributes in the state format would erroneously indicate a plan contained changes when there were none. ([#36465](https://github.com/hashicorp/terraform/issues/36465))
+
+            * Avoid reporting duplicate attribute-associated diagnostics, such as "Available Write-only Attribute Alternative" ([#36579](https://github.com/hashicorp/terraform/issues/36579))
+
+            * for_each expressions in import blocks should not be able to reference the import target ([#36801](https://github.com/hashicorp/terraform/issues/36801))
+
+
+            UPGRADE NOTES:
+
+            * On Linux, Terraform now requires Linux kernel version 3.2 or later; support for previous versions has been discontinued. ([#36478](https://github.com/hashicorp/terraform/issues/36478))
+
+
+            ## Previous Releases
+
+            For information on prior major and minor releases, refer to their changelogs:
+
+            - [v1.11](https://github.com/hashicorp/terraform/blob/v1.11/CHANGELOG.md)
+            - [v1.10](https://github.com/hashicorp/terraform/blob/v1.10/CHANGELOG.md)
+            - [v1.9](https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md)
+            - [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
+            - [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
+            - [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
+            - [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
+            - [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
+            - [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
+            - [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
+            - [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
+            - [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
+            - [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
+            - [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
+            - [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
+            - [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
+            - [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
+          created_at: "2025-05-14T14:11:25Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.12.0
+          id: 218598268
+          name: v1.12.0
+          node_id: RE_kwDOAQ6CpM4NB4t8
+          prerelease: false
+          published_at: "2025-05-14T15:15:45Z"
+          tag_name: v1.12.0
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.12.0
+          target_commitish: f9e9a59d7b5b48acf343e07fab768464bcdde4d7
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/218598268/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/218598268
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.0

@@ -4,7 +4,7 @@ command:
   /usr/local/bin/argocd version:
     exit-status: 1
     stdout:
-    - {{ .argocd_version }}
+    - "{{ .argocd_version }}"
   /usr/local/bin/kubectl version --client:
     exit-status: 0
   /usr/local/bin/helm plugin list:
@@ -16,8 +16,8 @@ command:
   /usr/local/bin/helm version:
     exit-status: 0
     stdout:
-      - {{ .helm_version }}
+      - "{{ .helm_version }}"
   /usr/local/bin/helmfile -v:
     exit-status: 0
     stdout:
-      - {{ .helmfile_version }}
+      - "{{ .helmfile_version }}"

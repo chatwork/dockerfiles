@@ -452,8 +452,8 @@ dependencies:
       url: https://api.github.com/repos/argoproj/argo-cd/releases/219531895
       zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v3.0.2
   helm:
-    version: 3.17.3
-    previousVersion: 3.17.2
+    version: 3.18.0
+    previousVersion: 3.17.3
     versions:
     - 3.14.1
     - 3.14.2
@@ -468,787 +468,20 @@ dependencies:
     - 3.17.1
     - 3.17.2
     - 3.17.3
+    - 3.18.0
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-darwin-amd64.tar.gz.asc
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-amd64.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:49Z"
-        download_count: 2
-        id: 244963019
-        label: null
-        name: helm-v3.17.3-darwin-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4OmdbL
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:49Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963019
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-darwin-amd64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:55Z"
-        download_count: 4
-        id: 244963072
-        label: null
-        name: helm-v3.17.3-darwin-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4OmdcA
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963072
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-darwin-amd64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:55Z"
-        download_count: 4
-        id: 244963071
-        label: null
-        name: helm-v3.17.3-darwin-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdb_
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963071
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-darwin-arm64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:55Z"
-        download_count: 2
-        id: 244963069
-        label: null
-        name: helm-v3.17.3-darwin-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdb9
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963069
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-darwin-arm64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:55Z"
-        download_count: 4
-        id: 244963068
-        label: null
-        name: helm-v3.17.3-darwin-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdb8
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963068
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-darwin-arm64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:54Z"
-        download_count: 4
-        id: 244963067
-        label: null
-        name: helm-v3.17.3-darwin-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdb7
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963067
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-386.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:54Z"
-        download_count: 2
-        id: 244963066
-        label: null
-        name: helm-v3.17.3-linux-386.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdb6
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963066
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-386.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:54Z"
-        download_count: 4
-        id: 244963065
-        label: null
-        name: helm-v3.17.3-linux-386.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdb5
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963065
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-386.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:54Z"
-        download_count: 4
-        id: 244963064
-        label: null
-        name: helm-v3.17.3-linux-386.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdb4
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963064
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-amd64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:54Z"
-        download_count: 44
-        id: 244963063
-        label: null
-        name: helm-v3.17.3-linux-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdb3
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963063
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-amd64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:54Z"
-        download_count: 41
-        id: 244963062
-        label: null
-        name: helm-v3.17.3-linux-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdb2
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963062
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-amd64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:53Z"
-        download_count: 5
-        id: 244963061
-        label: null
-        name: helm-v3.17.3-linux-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdb1
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963061
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-arm.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:53Z"
-        download_count: 2
-        id: 244963060
-        label: null
-        name: helm-v3.17.3-linux-arm.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdb0
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:53Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963060
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-arm.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:53Z"
-        download_count: 4
-        id: 244963057
-        label: null
-        name: helm-v3.17.3-linux-arm.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdbx
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:53Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963057
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-arm.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:53Z"
-        download_count: 4
-        id: 244963056
-        label: null
-        name: helm-v3.17.3-linux-arm.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdbw
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:53Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963056
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-arm64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:52Z"
-        download_count: 5
-        id: 244963054
-        label: null
-        name: helm-v3.17.3-linux-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdbu
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:53Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963054
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-arm64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:52Z"
-        download_count: 7
-        id: 244963052
-        label: null
-        name: helm-v3.17.3-linux-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdbs
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:52Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963052
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-arm64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:52Z"
-        download_count: 4
-        id: 244963051
-        label: null
-        name: helm-v3.17.3-linux-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdbr
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:52Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963051
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-ppc64le.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:52Z"
-        download_count: 2
-        id: 244963049
-        label: null
-        name: helm-v3.17.3-linux-ppc64le.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdbp
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:52Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963049
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-ppc64le.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:52Z"
-        download_count: 4
-        id: 244963046
-        label: null
-        name: helm-v3.17.3-linux-ppc64le.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdbm
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:52Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963046
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-ppc64le.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:52Z"
-        download_count: 4
-        id: 244963045
-        label: null
-        name: helm-v3.17.3-linux-ppc64le.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdbl
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:52Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963045
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-riscv64.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:51Z"
-        download_count: 2
-        id: 244963042
-        label: null
-        name: helm-v3.17.3-linux-riscv64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdbi
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:51Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963042
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-riscv64.tar.gz.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:51Z"
-        download_count: 4
-        id: 244963041
-        label: null
-        name: helm-v3.17.3-linux-riscv64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdbh
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:51Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963041
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-riscv64.tar.gz.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:51Z"
-        download_count: 4
-        id: 244963040
-        label: null
-        name: helm-v3.17.3-linux-riscv64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdbg
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:51Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963040
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-s390x.tar.gz.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:51Z"
+        created_at: "2025-05-19T17:54:43Z"
         download_count: 3
-        id: 244963039
+        id: 256089665
         label: null
-        name: helm-v3.17.3-linux-s390x.tar.gz.asc
-        node_id: RA_kwDOApspmc4Omdbf
+        name: helm-v3.18.0-darwin-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ55B
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:51Z"
+        updated_at: "2025-05-19T17:54:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1269,18 +502,18 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963039
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-s390x.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089665
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-amd64.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:51Z"
+        created_at: "2025-05-19T17:54:43Z"
         download_count: 4
-        id: 244963037
+        id: 256089664
         label: null
-        name: helm-v3.17.3-linux-s390x.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Omdbd
+        name: helm-v3.18.0-darwin-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ55A
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:51Z"
+        updated_at: "2025-05-19T17:54:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1301,18 +534,18 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963037
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-linux-s390x.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089664
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-amd64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:50Z"
+        created_at: "2025-05-19T17:54:43Z"
         download_count: 4
-        id: 244963035
+        id: 256089663
         label: null
-        name: helm-v3.17.3-linux-s390x.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Omdbb
+        name: helm-v3.18.0-darwin-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54_
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:50Z"
+        updated_at: "2025-05-19T17:54:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1333,18 +566,50 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963035
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-windows-amd64.zip.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089663
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-arm64.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:50Z"
+        created_at: "2025-05-19T17:54:43Z"
+        download_count: 3
+        id: 256089662
+        label: null
+        name: helm-v3.18.0-darwin-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ54-
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:43Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089662
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-arm64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:42Z"
         download_count: 4
-        id: 244963034
+        id: 256089660
         label: null
-        name: helm-v3.17.3-windows-amd64.zip.asc
-        node_id: RA_kwDOApspmc4Omdba
+        name: helm-v3.18.0-darwin-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ548
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:50Z"
+        updated_at: "2025-05-19T17:54:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1365,18 +630,18 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963034
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-windows-amd64.zip.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089660
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-arm64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:50Z"
+        created_at: "2025-05-19T17:54:42Z"
         download_count: 4
-        id: 244963032
+        id: 256089659
         label: null
-        name: helm-v3.17.3-windows-amd64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4OmdbY
+        name: helm-v3.18.0-darwin-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ547
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:50Z"
+        updated_at: "2025-05-19T17:54:42Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1397,18 +662,18 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963032
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-windows-amd64.zip.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089659
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-386.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:50Z"
+        created_at: "2025-05-19T17:54:42Z"
         download_count: 4
-        id: 244963030
+        id: 256089656
         label: null
-        name: helm-v3.17.3-windows-amd64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4OmdbW
+        name: helm-v3.18.0-linux-386.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ544
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:50Z"
+        updated_at: "2025-05-19T17:54:42Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1429,50 +694,18 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963030
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-windows-arm64.zip.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089656
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-386.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:50Z"
-        download_count: 2
-        id: 244963025
-        label: null
-        name: helm-v3.17.3-windows-arm64.zip.asc
-        node_id: RA_kwDOApspmc4OmdbR
-        size: 228
-        state: uploaded
-        updated_at: "2025-04-09T18:00:50Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963025
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-windows-arm64.zip.sha256.asc
-        content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:49Z"
+        created_at: "2025-05-19T17:54:42Z"
         download_count: 4
-        id: 244963024
+        id: 256089655
         label: null
-        name: helm-v3.17.3-windows-arm64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4OmdbQ
+        name: helm-v3.18.0-linux-386.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ543
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:50Z"
+        updated_at: "2025-05-19T17:54:42Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1493,18 +726,18 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963024
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.17.3/helm-v3.17.3-windows-arm64.zip.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089655
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-386.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-04-09T18:00:49Z"
+        created_at: "2025-05-19T17:54:42Z"
         download_count: 4
-        id: 244963022
+        id: 256089654
         label: null
-        name: helm-v3.17.3-windows-arm64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4OmdbO
+        name: helm-v3.18.0-linux-386.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ542
         size: 228
         state: uploaded
-        updated_at: "2025-04-09T18:00:49Z"
+        updated_at: "2025-05-19T17:54:42Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
           events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1525,8 +758,776 @@ dependencies:
           type: User
           url: https://api.github.com/users/robertsirc
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/244963022
-      assets_url: https://api.github.com/repos/helm/helm/releases/211354230/assets
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089654
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-amd64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:42Z"
+        download_count: 35
+        id: 256089652
+        label: null
+        name: helm-v3.18.0-linux-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ540
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:42Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089652
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-amd64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:41Z"
+        download_count: 33
+        id: 256089651
+        label: null
+        name: helm-v3.18.0-linux-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54z
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:42Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089651
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-amd64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:41Z"
+        download_count: 5
+        id: 256089650
+        label: null
+        name: helm-v3.18.0-linux-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54y
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:41Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089650
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:41Z"
+        download_count: 3
+        id: 256089649
+        label: null
+        name: helm-v3.18.0-linux-arm.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ54x
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:41Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089649
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:41Z"
+        download_count: 4
+        id: 256089648
+        label: null
+        name: helm-v3.18.0-linux-arm.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54w
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:41Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089648
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:41Z"
+        download_count: 4
+        id: 256089647
+        label: null
+        name: helm-v3.18.0-linux-arm.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54v
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:41Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089647
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:40Z"
+        download_count: 16
+        id: 256089646
+        label: null
+        name: helm-v3.18.0-linux-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ54u
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:41Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089646
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:40Z"
+        download_count: 16
+        id: 256089645
+        label: null
+        name: helm-v3.18.0-linux-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54t
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:40Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089645
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:40Z"
+        download_count: 4
+        id: 256089644
+        label: null
+        name: helm-v3.18.0-linux-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54s
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:40Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089644
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-ppc64le.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:40Z"
+        download_count: 3
+        id: 256089643
+        label: null
+        name: helm-v3.18.0-linux-ppc64le.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ54r
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:40Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089643
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-ppc64le.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:40Z"
+        download_count: 4
+        id: 256089642
+        label: null
+        name: helm-v3.18.0-linux-ppc64le.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54q
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:40Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089642
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-ppc64le.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:40Z"
+        download_count: 4
+        id: 256089641
+        label: null
+        name: helm-v3.18.0-linux-ppc64le.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54p
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:40Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089641
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-riscv64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:39Z"
+        download_count: 3
+        id: 256089640
+        label: null
+        name: helm-v3.18.0-linux-riscv64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ54o
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:40Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089640
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-riscv64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:39Z"
+        download_count: 4
+        id: 256089639
+        label: null
+        name: helm-v3.18.0-linux-riscv64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54n
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089639
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-riscv64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:39Z"
+        download_count: 4
+        id: 256089638
+        label: null
+        name: helm-v3.18.0-linux-riscv64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54m
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089638
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-s390x.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:39Z"
+        download_count: 3
+        id: 256089637
+        label: null
+        name: helm-v3.18.0-linux-s390x.tar.gz.asc
+        node_id: RA_kwDOApspmc4PQ54l
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089637
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-s390x.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:39Z"
+        download_count: 4
+        id: 256089635
+        label: null
+        name: helm-v3.18.0-linux-s390x.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54j
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089635
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-s390x.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:39Z"
+        download_count: 4
+        id: 256089634
+        label: null
+        name: helm-v3.18.0-linux-s390x.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54i
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089634
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-amd64.zip.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:38Z"
+        download_count: 3
+        id: 256089632
+        label: null
+        name: helm-v3.18.0-windows-amd64.zip.asc
+        node_id: RA_kwDOApspmc4PQ54g
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089632
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-amd64.zip.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:38Z"
+        download_count: 4
+        id: 256089631
+        label: null
+        name: helm-v3.18.0-windows-amd64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54f
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:38Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089631
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-amd64.zip.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:38Z"
+        download_count: 4
+        id: 256089630
+        label: null
+        name: helm-v3.18.0-windows-amd64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54e
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:38Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089630
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-arm64.zip.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:38Z"
+        download_count: 3
+        id: 256089629
+        label: null
+        name: helm-v3.18.0-windows-arm64.zip.asc
+        node_id: RA_kwDOApspmc4PQ54d
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:38Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089629
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-arm64.zip.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:38Z"
+        download_count: 4
+        id: 256089628
+        label: null
+        name: helm-v3.18.0-windows-arm64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4PQ54c
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:38Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089628
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-arm64.zip.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2025-05-19T17:54:37Z"
+        download_count: 4
+        id: 256089627
+        label: null
+        name: helm-v3.18.0-windows-arm64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4PQ54b
+        size: 228
+        state: uploaded
+        updated_at: "2025-05-19T17:54:38Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+          events_url: https://api.github.com/users/robertsirc/events{/privacy}
+          followers_url: https://api.github.com/users/robertsirc/followers
+          following_url: https://api.github.com/users/robertsirc/following{/other_user}
+          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/robertsirc
+          id: 13884882
+          login: robertsirc
+          node_id: MDQ6VXNlcjEzODg0ODgy
+          organizations_url: https://api.github.com/users/robertsirc/orgs
+          received_events_url: https://api.github.com/users/robertsirc/received_events
+          repos_url: https://api.github.com/users/robertsirc/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          type: User
+          url: https://api.github.com/users/robertsirc
+          user_view_type: public
+        url: https://api.github.com/repos/helm/helm/releases/assets/256089627
+      assets_url: https://api.github.com/repos/helm/helm/releases/219579996/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
         events_url: https://api.github.com/users/robertsirc/events{/privacy}
@@ -1547,58 +1548,156 @@ dependencies:
         type: User
         url: https://api.github.com/users/robertsirc
         user_view_type: public
-      body: "Helm v3.17.3 is a security (patch) release. Users are strongly recommended
-        to update to this release.\r\n\r\nThe community keeps growing, and we'd love
-        to see you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+      body: "Helm v3.18.0 is a feature release. Users are encouraged to upgrade for
+        the best experience.\r\n\r\nThe community keeps growing, and we'd love to
+        see you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
         \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
         and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
         via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute charts:
         [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
-        Installation and Upgrading\r\n\r\nDownload Helm v3.17.3. The common platform
-        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.17.3-darwin-amd64.tar.gz)
-        ([checksum](https://get.helm.sh/helm-v3.17.3-darwin-amd64.tar.gz.sha256sum)
-        / 20ef8df4671349a6fc556a621be1170dd709c6c0cf5f7e83a2d9fb0515fd97fc)\r\n- [MacOS
-        arm64](https://get.helm.sh/helm-v3.17.3-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-darwin-arm64.tar.gz.sha256sum)
-        / 89aec43ce07b06239f1bba4a6507236bb48ae487bc5065a8e254d3ce58a16997)\r\n- [Linux
-        amd64](https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-amd64.tar.gz.sha256sum)
-        / ee88b3c851ae6466a3de507f7be73fe94d54cbf2987cbaa3d1a3832ea331f2cd)\r\n- [Linux
-        arm](https://get.helm.sh/helm-v3.17.3-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-arm.tar.gz.sha256sum)
-        / 60d76d1e12d3e058a9e9a8209eff748a6fab5948028a1f0860f48e141243d33d)\r\n- [Linux
-        arm64](https://get.helm.sh/helm-v3.17.3-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-arm64.tar.gz.sha256sum)
-        / 7944e3defd386c76fd92d9e6fec5c2d65a323f6fadc19bfb5e704e3eee10348e)\r\n- [Linux
-        i386](https://get.helm.sh/helm-v3.17.3-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-386.tar.gz.sha256sum)
-        / 51742d78c066437e23b3ca98370df341f9136b408381fe5a150d70b9d9bf24d7)\r\n- [Linux
-        ppc64le](https://get.helm.sh/helm-v3.17.3-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-ppc64le.tar.gz.sha256sum)
-        / b821885a502b2fa159e3ef3afe9cde6e6c9876d4a623f18868829c3ee4a3c64c)\r\n- [Linux
-        s390x](https://get.helm.sh/helm-v3.17.3-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-s390x.tar.gz.sha256sum)
-        / 71a9c6058e29a7eef0bc72a61843ccbade11997e383dd3e13e1a591ddffd8598)\r\n- [Linux
-        riscv64](https://get.helm.sh/helm-v3.17.3-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.17.3-linux-riscv64.tar.gz.sha256sum)
-        / 4e4563d43a593e11533024c7a0ddb79fb7d1dec85f9a9f8417ed1bacda0d7d0e)\r\n- [Windows
-        amd64](https://get.helm.sh/helm-v3.17.3-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.17.3-windows-amd64.zip.sha256sum)
-        / 8ea93e2f6285e649dede583ac90ff8cdb938ca53ec6cf5fe909f2303fbc22d96)\r\n- [Windows
-        arm64](https://get.helm.sh/helm-v3.17.3-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.17.3-windows-arm64.zip.sha256sum)
-        / 70ce9dfdbc1ce6142626a829dbdc5920405146f3ce4dc6f6e6739dd308cc7baf)\r\n\r\nThe
+        Notable Changes\r\n\r\n- Add support for JSON Schema 2020\r\n- Enabled cpu
+        and memory profiling\r\n- Add hook annotation to output hook logs to client
+        on error\r\n\r\n## Installation and Upgrading\r\n\r\nDownload Helm v3.18.0.
+        The common platform binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.18.0-darwin-amd64.tar.gz)
+        ([checksum](https://get.helm.sh/helm-v3.18.0-darwin-amd64.tar.gz.sha256sum)
+        / 2be99836549413c2f0212d644e8740abd8ba5d7f55484c29d3363cea339891d9)\r\n- [MacOS
+        arm64](https://get.helm.sh/helm-v3.18.0-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-darwin-arm64.tar.gz.sha256sum)
+        / 4ce30bd86a3fc4f31d297827a5bf5b10ced8c4da2ff810bf9f53f561dbed7d10)\r\n- [Linux
+        amd64](https://get.helm.sh/helm-v3.18.0-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-amd64.tar.gz.sha256sum)
+        / 961e587fc2c03807f8a99ac25ef063fa9e6915f1894729399cbb95d2a79af931)\r\n- [Linux
+        arm](https://get.helm.sh/helm-v3.18.0-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-arm.tar.gz.sha256sum)
+        / 88f6264801fd9c5bb3d2d24c7b3da4e239d137b39bacd18d25b22823e6bd31f7)\r\n- [Linux
+        arm64](https://get.helm.sh/helm-v3.18.0-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-arm64.tar.gz.sha256sum)
+        / 489c9d2d3ea4e095331249d74b4407fb5ac1d338c28429d70cdedccfe6e2b029)\r\n- [Linux
+        i386](https://get.helm.sh/helm-v3.18.0-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-386.tar.gz.sha256sum)
+        / 3302c90957e259897d238feee65e05abb3fc586ab80a49cb577fd123b2e94cb3)\r\n- [Linux
+        ppc64le](https://get.helm.sh/helm-v3.18.0-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-ppc64le.tar.gz.sha256sum)
+        / 559036fe183593488275a19796ca0b13f56e9d586b697a0d968e8b1e24472d7c)\r\n- [Linux
+        s390x](https://get.helm.sh/helm-v3.18.0-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-s390x.tar.gz.sha256sum)
+        / ab0e347751b425ed9c4b619159a9ffeb85a82e07f7333921dec1a26780195a72)\r\n- [Linux
+        riscv64](https://get.helm.sh/helm-v3.18.0-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-riscv64.tar.gz.sha256sum)
+        / ae98c3d9d352ac91909d28dbb03d91fc506cafcce647cfbd1954a02ef84f91d1)\r\n- [Windows
+        amd64](https://get.helm.sh/helm-v3.18.0-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.18.0-windows-amd64.zip.sha256sum)
+        / ae6a1b832043e3433d2823fc42692057dbf007efad34292708130b412c169a94)\r\n- [Windows
+        arm64](https://get.helm.sh/helm-v3.18.0-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.18.0-windows-arm64.zip.sha256sum)
+        / f354f0bdf725a0530162754632bc54fed2c56ad11a899b031702ee1c70ecb5fc)\r\n\r\nThe
         [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you going
         from there. For **upgrade instructions** or detailed installation notes, check
         the [install guide](https://helm.sh/docs/intro/install/). You can also use
         a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
-        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.18.0 is the next
-        minor release and will be on May 14, 2025\r\n\r\n## Changelog\r\n\r\n- Unarchiving
-        fix e4da49785aa6e6ee2b86efd5dd9e43400318262b (Matt Farina)\r\n"
-      created_at: "2025-04-09T17:44:16Z"
+        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.18.1 on June 11th,
+        2025 will contain only bug fixes.\r\n- 3.19.0 on September 11th, 2025 is the
+        next feature release. \r\n\r\n## Changelog\r\n\r\n- build(deps): bump the
+        k8s-io group with 7 updates cc58e3f5a3aa615c6a86275e6f4444b5fdd3cc4e (dependabot[bot])\r\n-
+        fix: govulncheck workflow bf1436baf3c235cb1b689a016b7162d0cddd3947 (Matthieu
+        MOREL)\r\n- bump version to v3.18.0 d8edc2aebc2e5ad624640b56a22258b9bbec9099
+        (Robert Sirchia)\r\n- fix:add proxy support when mTLS configured 48377fe4515cc6a5bf5ac92ea6086090e7b82798
+        (Rongrong Liu)\r\n- docs: Note about http fallback for OCI registries cdd7c105a60929d733c1b67d4fe5062ff5619ac2
+        (Terry Howe)\r\n- Bump net package to avoid CVE on dev-v3 f9ab8f772a01ff918d4a54febe18d4cc6899f2e2
+        (Benoit Tigeot)\r\n- Bump toml 087fa18276033d37648deaf082de6b3ea635fb88 (Benoit
+        Tigeot)\r\n- backport #30677to dev3 2a5f83b960738cc58f090e67ac108418ac4dedf2
+        (dongjiang)\r\n- build(deps): bump github.com/rubenv/sql-migrate from 1.7.2
+        to 1.8.0 5df2f3018a6ac20db369390fed142463d97b487f (dependabot[bot])\r\n- Add
+        install test for TakeOwnership flag 0906fe7f6b201d9aa73eb22f518366ea75c57937
+        (Evans Mungai)\r\n- Fix --take-ownership 4ee3a19e9a98e3b58eb4579f019666e834408ca3
+        (Patrick Seidensal)\r\n- build(deps): bump github.com/rubenv/sql-migrate from
+        1.7.1 to 1.7.2 3538c2a677809308821c18bdc309e5954f822211 (dependabot[bot])\r\n-
+        build(deps): bump golang.org/x/crypto from 0.36.0 to 0.37.0 6fa95c805e449eb7332059cc4aee837a9358f334
+        (dependabot[bot])\r\n- build(deps): bump golang.org/x/term from 0.30.0 to
+        0.31.0 741b5beeb95b0858b1809a625870310a509a4d61 (dependabot[bot])\r\n- Testing
+        text bump 017f9fad2b2b51f1292c73922f0857b93d2fb233 (Benoit Tigeot)\r\n- Permit
+        more Go version and not only 1.23.8 666725202b2c7da205fe0c34a1ac5812e88d2500
+        (Benoit Tigeot)\r\n- Bumps github.com/distribution/distribution/v3 from 3.0.0-rc.3
+        to 3.0.0 4ad1ccd8fb8bbf4ffec8ccab411f2ee57360824d (Benoit Tigeot)\r\n- Unarchiving
+        fix 3ce10e4f81e064a3807098c3d466c33f2ece8a18 (Matt Farina)\r\n- Fix typo 422c58e4a2d7a00e2275916be1bfda0b28efba82
+        (Benoit Tigeot)\r\n- Report as debug log, the time spent waiting for resources
+        5e7f12d4c3e2e37fa4bc065fddde8e191c336a15 (Benoit Tigeot)\r\n- build(deps):
+        bump github.com/containerd/containerd from 1.7.26 to 1.7.27 dcc286ca562e91bc5ea052d734d11e4bf2905e19
+        (dependabot[bot])\r\n- Update pkg/registry/fallback.go 1435ec7c7717a147fb17701fd0da3992f7a44bb6
+        (Terry Howe)\r\n- automatic fallback to http 674e882c88535c75b672cb6986df8fc23ad21dad
+        (Terry Howe)\r\n- chore(oci): upgrade to ORAS v2 c188441757c66e8e863969c5cb1b27be61482a22
+        (Terry Howe)\r\n- Updating to 0.37.0 for x/net 2b12490c329e5a61c79f6f71cee8b450770b0752
+        (Matt Farina)\r\n- build(deps): bump the k8s-io group with 7 updates 0648918abbc894b035351353a2af82b5c8b161c8
+        (dependabot[bot])\r\n- build(deps): bump golang.org/x/crypto from 0.35.0 to
+        0.36.0 0911b9c7b0f29bd49905865cd77509c2d84c4479 (dependabot[bot])\r\n- build(deps):
+        bump github.com/opencontainers/image-spec 2f22d5544c78b3e81de95bac061515630cb5d157
+        (dependabot[bot])\r\n- build(deps): bump github.com/containerd/containerd
+        from 1.7.25 to 1.7.26 89361c905aae85cf0a20ec68df2fdd52103847ed (dependabot[bot])\r\n-
+        build(deps): bump golang.org/x/crypto from 0.33.0 to 0.35.0 6d64160ab65863892ef1cec022b5391b17147c6d
+        (dependabot[bot])\r\n- Fix cherry-pick helm.sh/helm/v4 -> helm.sh/helm/v3
+        bcb83e465f4487b481b8843f4d5dfe4f26472c55 (Scott Rigby)\r\n- Refactor based
+        on review comment 2aa90b8f2603f033479278eb99993d2efe39624c (Chris Berry)\r\n-
+        Refactor based on review comment 5739197faa75b3e2c7d32a999c3e17bd8949756d
+        (Chris Berry)\r\n- Add HookOutputFunc and generic yaml unmarshaller b8e13878fcf542aff465a90635b4d29f93dfb434
+        (Chris Berry)\r\n- clarify fix error message 97b0e11871252ad99054d911d92666f84fdac79a
+        (Scott Rigby)\r\n- fix err check 2f79afb0a3c506fd41ea89f13efcfa4379f88b5f
+        (Scott Rigby)\r\n- remove comments about previous functionality c77f4ec6c41db7d5641da723eb6f67d1b8b0e606
+        (Scott Rigby)\r\n- add short circuit return 3cd6afe845c905d2bc1dfa259e2ab4b571c19234
+        (Scott Rigby)\r\n- Update based on review comments 5367001f4fa283ffb4dd15741c2dff053b5dfb52
+        (Chris Berry)\r\n- Update based on review comments 3c445158d85b1bec417803f418f0b686188b2399
+        (Chris Berry)\r\n- Fix lint 4cb639ed4edab7729859328d443b102d05a4b32d (Chris
+        Berry)\r\n- Tidy up imports 20f859c9ffb5e0a7b48c8331093250bd162e3ee0 (Chris)\r\n-
+        Add hook annotations to output pod logs to client on success and fail ca90972b3d81acb1ad9d6f80bb1770113776f06a
+        (Chris Berry)\r\n- chore: use []error instead of []string a9e20757c6b348da7db789f81a874cdb5b315e9f
+        (Evans Mungai)\r\n- Update cmd/helm/profiling.go 996ad8445379b44bbefc9116e8b5a0cdd9bce259
+        (Evans Mungai)\r\n- chore: update profiling doc in CONTRIBUTING.md 867c97e70d42f523a223973770149c7faeb6f04f
+        (Evans Mungai)\r\n- Update CONTRIBUTING guide af2410192d0854f1431efaa9858b2d830f3312c4
+        (Evans Mungai)\r\n- Prefer environment variables to CLI flags c7dfa87f9d5640ed07b76bfda24dd1e3db635690
+        (Evans Mungai)\r\n- Fix linter warning b39411a66829d711168de543fa823cbd5e749ca4
+        (Evans Mungai)\r\n- Move pprof paths to HELM_PPROF env variable 4c50f01046be19467eb99495cbce51319700b81a
+        (Evans Mungai)\r\n- Update CONTRIBUTING.md 3b43f7be60c54edc3ea7d76d6253bb5d12eece32
+        (Evans Mungai)\r\n- Update CONTRIBUTING.md a32e11bdc3af0250a10ce6bbb8a2dc566f66cd3d
+        (Evans Mungai)\r\n- Additional review fixes from PR 483ebf915da5ab2c2bbdb46644bca2fe22ae51f9
+        (Evans Mungai)\r\n- feat: Add flags to enable CPU and memory profiling 461197f9c62f4c37ad2b727962db95378c3f3073
+        (Evans Mungai)\r\n- build(deps): bump github.com/distribution/distribution/v3
+        e7fa545819dbb51c8f94a1936174ee48b52db694 (dependabot[bot])\r\n- build(deps):
+        bump github.com/spf13/cobra from 1.8.1 to 1.9.1 d1687ba8d9c94c711215dc49ad88117585c9c765
+        (dependabot[bot])\r\n- Moving to SetOut and SetErr for Cobra 4c2f88b2abb53ee04d6003e67d6efa44b29eb832
+        (Matt Farina)\r\n- build(deps): bump the k8s-io group with 7 updates a2413aa26dd873a782b8f96cac424991b223c3da
+        (dependabot[bot])\r\n- build(deps): bump golang.org/x/crypto from 0.32.0 to
+        0.33.0 959d643b977b2b1571fe3ccd21d8e9cbfe1b4ea3 (dependabot[bot])\r\n- build(deps):
+        bump golang.org/x/term from 0.28.0 to 0.29.0 3a87c684e77eef5fcd5bb3b2c51f8e739b871a7c
+        (dependabot[bot])\r\n- build(deps): bump golang.org/x/text from 0.21.0 to
+        0.22.0 711cef8d1c0602a949b39be4c6eafe118e2fc30c (dependabot[bot])\r\n- build(deps):
+        bump github.com/spf13/pflag from 1.0.5 to 1.0.6 76806237ad36e527d2e6158f80ab84f237c52ec3
+        (dependabot[bot])\r\n- build(deps): bump github.com/cyphar/filepath-securejoin
+        03747d963f7e51e7fd1eac8a768f2791bf25a7e3 (dependabot[bot])\r\n- build(deps):
+        bump github.com/evanphx/json-patch f1db83f78f06ee017492b471bb2c19ff2249aacd
+        (dependabot[bot])\r\n- build(deps): bump the k8s-io group with 7 updates 3bc3751f7019d2a1f5b922421d398f9ddd880106
+        (dependabot[bot])\r\n- fix: check group for resource info match 2ebce786ba295a3ca7a281c3ffd78086cf561f89
+        (Jiasheng Zhu)\r\n- Bump github.com/cyphar/filepath-securejoin from 0.3.6
+        to 0.4.0 8e86e76d50a9f365e79b6211100dd4308289da6c (dependabot[bot])\r\n- add
+        test for nullifying nested global value 326c1e3f6782a7ed53980ac010c44689c0ae4fb6
+        (Ryan Hockstad)\r\n- Ensuring the file paths are clean prior to passing to
+        securejoin fba9d08dced3583ef88fc235b307995830173aa9 (Matt Farina)\r\n- Bump
+        github.com/containerd/containerd from 1.7.24 to 1.7.25 a79be7d5d348525257ea3be3305f7343522bb083
+        (dependabot[bot])\r\n- Bump golang.org/x/crypto from 0.31.0 to 0.32.0 b029d74a52009d4e14d406bcc952d2191e0200f0
+        (dependabot[bot])\r\n- Bump golang.org/x/term from 0.27.0 to 0.28.0 a1c0ae88a7ccbda9b5915bac196db54e677fd1d2
+        (dependabot[bot])\r\n- bump version to v3.17.0 d6db69ed66a3b127a96e3339a00ea84586310868
+        (Matt Farina)\r\n- Bump github.com/moby/term from 0.5.0 to 0.5.2 54ffefbcf79b5d835c29a730ea7aef6afd9109ee
+        (dependabot[bot])\r\n- Add test case for removing an entire object ef2eb552837446fe8a5a91bc68abf4d9eab685a8
+        (Ryan Hockstad)\r\n- Tests for bugfix: Override subcharts with null values
+        #12879 60fcce18d1646e266dfe8191e25a85dcdb7b0038 (Scott Rigby)\r\n- feat: Added
+        multi-platform plugin hook support to v3 Signed-off-by: Steve Hipwell <steve.hipwell@gmail.com>
+        83dddb183946266289e55eb3c3d8c8a35b24b34a (Andrew Block)\r\n- This commit fixes
+        the issue where the yaml.Unmarshaller converts all int values into float64,
+        this passes in option to decoder, which enables conversion of int into . 0a6834fdf060b4fbc4e1ea4bcb85908891539d48
+        (Althaf M)\r\n- merge null child chart objects 5a58751a053ea59b88399487a5f0f8f5c27b9461
+        (Ryan Hockstad)\r\n"
+      created_at: "2025-05-19T17:35:49Z"
       draft: false
-      html_url: https://github.com/helm/helm/releases/tag/v3.17.3
-      id: 211354230
-      name: 'Helm v3.17.3 '
-      node_id: RE_kwDOApspmc4MmQJ2
+      html_url: https://github.com/helm/helm/releases/tag/v3.18.0
+      id: 219579996
+      name: Helm v3.18.0
+      node_id: RE_kwDOApspmc4NFoZc
       prerelease: false
-      published_at: "2025-04-09T18:01:56Z"
-      tag_name: v3.17.3
-      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.17.3
+      published_at: "2025-05-19T17:54:54Z"
+      tag_name: v3.18.0
+      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.18.0
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/helm/helm/releases/211354230/assets{?name,label}
-      url: https://api.github.com/repos/helm/helm/releases/211354230
-      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.17.3
+      upload_url: https://uploads.github.com/repos/helm/helm/releases/219579996/assets{?name,label}
+      url: https://api.github.com/repos/helm/helm/releases/219579996
+      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.0
   helmfile:
     version: 1.0.0
     previousVersion: 0.171.0
@@ -28935,6 +29034,1245 @@ meta:
           upload_url: https://uploads.github.com/repos/helm/helm/releases/211354230/assets{?name,label}
           url: https://api.github.com/repos/helm/helm/releases/211354230
           zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.17.3
+      3.18.0:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-amd64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:43Z"
+            download_count: 3
+            id: 256089665
+            label: null
+            name: helm-v3.18.0-darwin-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ55B
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089665
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-amd64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:43Z"
+            download_count: 4
+            id: 256089664
+            label: null
+            name: helm-v3.18.0-darwin-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ55A
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089664
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-amd64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:43Z"
+            download_count: 4
+            id: 256089663
+            label: null
+            name: helm-v3.18.0-darwin-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54_
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089663
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-arm64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:43Z"
+            download_count: 3
+            id: 256089662
+            label: null
+            name: helm-v3.18.0-darwin-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ54-
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089662
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-arm64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:42Z"
+            download_count: 4
+            id: 256089660
+            label: null
+            name: helm-v3.18.0-darwin-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ548
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089660
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-darwin-arm64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:42Z"
+            download_count: 4
+            id: 256089659
+            label: null
+            name: helm-v3.18.0-darwin-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ547
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089659
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-386.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:42Z"
+            download_count: 4
+            id: 256089656
+            label: null
+            name: helm-v3.18.0-linux-386.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ544
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089656
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-386.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:42Z"
+            download_count: 4
+            id: 256089655
+            label: null
+            name: helm-v3.18.0-linux-386.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ543
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089655
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-386.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:42Z"
+            download_count: 4
+            id: 256089654
+            label: null
+            name: helm-v3.18.0-linux-386.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ542
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089654
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-amd64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:42Z"
+            download_count: 35
+            id: 256089652
+            label: null
+            name: helm-v3.18.0-linux-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ540
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089652
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-amd64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:41Z"
+            download_count: 33
+            id: 256089651
+            label: null
+            name: helm-v3.18.0-linux-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54z
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089651
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-amd64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:41Z"
+            download_count: 5
+            id: 256089650
+            label: null
+            name: helm-v3.18.0-linux-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54y
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089650
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:41Z"
+            download_count: 3
+            id: 256089649
+            label: null
+            name: helm-v3.18.0-linux-arm.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ54x
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089649
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:41Z"
+            download_count: 4
+            id: 256089648
+            label: null
+            name: helm-v3.18.0-linux-arm.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54w
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089648
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:41Z"
+            download_count: 4
+            id: 256089647
+            label: null
+            name: helm-v3.18.0-linux-arm.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54v
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089647
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:40Z"
+            download_count: 16
+            id: 256089646
+            label: null
+            name: helm-v3.18.0-linux-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ54u
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089646
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:40Z"
+            download_count: 16
+            id: 256089645
+            label: null
+            name: helm-v3.18.0-linux-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54t
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089645
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-arm64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:40Z"
+            download_count: 4
+            id: 256089644
+            label: null
+            name: helm-v3.18.0-linux-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54s
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089644
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-ppc64le.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:40Z"
+            download_count: 3
+            id: 256089643
+            label: null
+            name: helm-v3.18.0-linux-ppc64le.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ54r
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089643
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-ppc64le.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:40Z"
+            download_count: 4
+            id: 256089642
+            label: null
+            name: helm-v3.18.0-linux-ppc64le.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54q
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089642
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-ppc64le.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:40Z"
+            download_count: 4
+            id: 256089641
+            label: null
+            name: helm-v3.18.0-linux-ppc64le.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54p
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089641
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-riscv64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:39Z"
+            download_count: 3
+            id: 256089640
+            label: null
+            name: helm-v3.18.0-linux-riscv64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ54o
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089640
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-riscv64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:39Z"
+            download_count: 4
+            id: 256089639
+            label: null
+            name: helm-v3.18.0-linux-riscv64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54n
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089639
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-riscv64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:39Z"
+            download_count: 4
+            id: 256089638
+            label: null
+            name: helm-v3.18.0-linux-riscv64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54m
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089638
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-s390x.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:39Z"
+            download_count: 3
+            id: 256089637
+            label: null
+            name: helm-v3.18.0-linux-s390x.tar.gz.asc
+            node_id: RA_kwDOApspmc4PQ54l
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089637
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-s390x.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:39Z"
+            download_count: 4
+            id: 256089635
+            label: null
+            name: helm-v3.18.0-linux-s390x.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54j
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089635
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-linux-s390x.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:39Z"
+            download_count: 4
+            id: 256089634
+            label: null
+            name: helm-v3.18.0-linux-s390x.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54i
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089634
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-amd64.zip.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:38Z"
+            download_count: 3
+            id: 256089632
+            label: null
+            name: helm-v3.18.0-windows-amd64.zip.asc
+            node_id: RA_kwDOApspmc4PQ54g
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089632
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-amd64.zip.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:38Z"
+            download_count: 4
+            id: 256089631
+            label: null
+            name: helm-v3.18.0-windows-amd64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54f
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089631
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-amd64.zip.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:38Z"
+            download_count: 4
+            id: 256089630
+            label: null
+            name: helm-v3.18.0-windows-amd64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54e
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089630
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-arm64.zip.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:38Z"
+            download_count: 3
+            id: 256089629
+            label: null
+            name: helm-v3.18.0-windows-arm64.zip.asc
+            node_id: RA_kwDOApspmc4PQ54d
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089629
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-arm64.zip.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:38Z"
+            download_count: 4
+            id: 256089628
+            label: null
+            name: helm-v3.18.0-windows-arm64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4PQ54c
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089628
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.0/helm-v3.18.0-windows-arm64.zip.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-05-19T17:54:37Z"
+            download_count: 4
+            id: 256089627
+            label: null
+            name: helm-v3.18.0-windows-arm64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4PQ54b
+            size: 228
+            state: uploaded
+            updated_at: "2025-05-19T17:54:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+              events_url: https://api.github.com/users/robertsirc/events{/privacy}
+              followers_url: https://api.github.com/users/robertsirc/followers
+              following_url: https://api.github.com/users/robertsirc/following{/other_user}
+              gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/robertsirc
+              id: 13884882
+              login: robertsirc
+              node_id: MDQ6VXNlcjEzODg0ODgy
+              organizations_url: https://api.github.com/users/robertsirc/orgs
+              received_events_url: https://api.github.com/users/robertsirc/received_events
+              repos_url: https://api.github.com/users/robertsirc/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+              type: User
+              url: https://api.github.com/users/robertsirc
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/256089627
+          assets_url: https://api.github.com/repos/helm/helm/releases/219579996/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
+            events_url: https://api.github.com/users/robertsirc/events{/privacy}
+            followers_url: https://api.github.com/users/robertsirc/followers
+            following_url: https://api.github.com/users/robertsirc/following{/other_user}
+            gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/robertsirc
+            id: 13884882
+            login: robertsirc
+            node_id: MDQ6VXNlcjEzODg0ODgy
+            organizations_url: https://api.github.com/users/robertsirc/orgs
+            received_events_url: https://api.github.com/users/robertsirc/received_events
+            repos_url: https://api.github.com/users/robertsirc/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+            type: User
+            url: https://api.github.com/users/robertsirc
+            user_view_type: public
+          body: "Helm v3.18.0 is a feature release. Users are encouraged to upgrade
+            for the best experience.\r\n\r\nThe community keeps growing, and we'd
+            love to see you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+            \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
+            and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
+            via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute
+            charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
+            Notable Changes\r\n\r\n- Add support for JSON Schema 2020\r\n- Enabled
+            cpu and memory profiling\r\n- Add hook annotation to output hook logs
+            to client on error\r\n\r\n## Installation and Upgrading\r\n\r\nDownload
+            Helm v3.18.0. The common platform binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.18.0-darwin-amd64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.18.0-darwin-amd64.tar.gz.sha256sum)
+            / 2be99836549413c2f0212d644e8740abd8ba5d7f55484c29d3363cea339891d9)\r\n-
+            [MacOS arm64](https://get.helm.sh/helm-v3.18.0-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-darwin-arm64.tar.gz.sha256sum)
+            / 4ce30bd86a3fc4f31d297827a5bf5b10ced8c4da2ff810bf9f53f561dbed7d10)\r\n-
+            [Linux amd64](https://get.helm.sh/helm-v3.18.0-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-amd64.tar.gz.sha256sum)
+            / 961e587fc2c03807f8a99ac25ef063fa9e6915f1894729399cbb95d2a79af931)\r\n-
+            [Linux arm](https://get.helm.sh/helm-v3.18.0-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-arm.tar.gz.sha256sum)
+            / 88f6264801fd9c5bb3d2d24c7b3da4e239d137b39bacd18d25b22823e6bd31f7)\r\n-
+            [Linux arm64](https://get.helm.sh/helm-v3.18.0-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-arm64.tar.gz.sha256sum)
+            / 489c9d2d3ea4e095331249d74b4407fb5ac1d338c28429d70cdedccfe6e2b029)\r\n-
+            [Linux i386](https://get.helm.sh/helm-v3.18.0-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-386.tar.gz.sha256sum)
+            / 3302c90957e259897d238feee65e05abb3fc586ab80a49cb577fd123b2e94cb3)\r\n-
+            [Linux ppc64le](https://get.helm.sh/helm-v3.18.0-linux-ppc64le.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.18.0-linux-ppc64le.tar.gz.sha256sum)
+            / 559036fe183593488275a19796ca0b13f56e9d586b697a0d968e8b1e24472d7c)\r\n-
+            [Linux s390x](https://get.helm.sh/helm-v3.18.0-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.0-linux-s390x.tar.gz.sha256sum)
+            / ab0e347751b425ed9c4b619159a9ffeb85a82e07f7333921dec1a26780195a72)\r\n-
+            [Linux riscv64](https://get.helm.sh/helm-v3.18.0-linux-riscv64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.18.0-linux-riscv64.tar.gz.sha256sum)
+            / ae98c3d9d352ac91909d28dbb03d91fc506cafcce647cfbd1954a02ef84f91d1)\r\n-
+            [Windows amd64](https://get.helm.sh/helm-v3.18.0-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.18.0-windows-amd64.zip.sha256sum)
+            / ae6a1b832043e3433d2823fc42692057dbf007efad34292708130b412c169a94)\r\n-
+            [Windows arm64](https://get.helm.sh/helm-v3.18.0-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.18.0-windows-arm64.zip.sha256sum)
+            / f354f0bdf725a0530162754632bc54fed2c56ad11a899b031702ee1c70ecb5fc)\r\n\r\nThe
+            [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you
+            going from there. For **upgrade instructions** or detailed installation
+            notes, check the [install guide](https://helm.sh/docs/intro/install/).
+            You can also use a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
+            on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.18.1 on June
+            11th, 2025 will contain only bug fixes.\r\n- 3.19.0 on September 11th,
+            2025 is the next feature release. \r\n\r\n## Changelog\r\n\r\n- build(deps):
+            bump the k8s-io group with 7 updates cc58e3f5a3aa615c6a86275e6f4444b5fdd3cc4e
+            (dependabot[bot])\r\n- fix: govulncheck workflow bf1436baf3c235cb1b689a016b7162d0cddd3947
+            (Matthieu MOREL)\r\n- bump version to v3.18.0 d8edc2aebc2e5ad624640b56a22258b9bbec9099
+            (Robert Sirchia)\r\n- fix:add proxy support when mTLS configured 48377fe4515cc6a5bf5ac92ea6086090e7b82798
+            (Rongrong Liu)\r\n- docs: Note about http fallback for OCI registries
+            cdd7c105a60929d733c1b67d4fe5062ff5619ac2 (Terry Howe)\r\n- Bump net package
+            to avoid CVE on dev-v3 f9ab8f772a01ff918d4a54febe18d4cc6899f2e2 (Benoit
+            Tigeot)\r\n- Bump toml 087fa18276033d37648deaf082de6b3ea635fb88 (Benoit
+            Tigeot)\r\n- backport #30677to dev3 2a5f83b960738cc58f090e67ac108418ac4dedf2
+            (dongjiang)\r\n- build(deps): bump github.com/rubenv/sql-migrate from
+            1.7.2 to 1.8.0 5df2f3018a6ac20db369390fed142463d97b487f (dependabot[bot])\r\n-
+            Add install test for TakeOwnership flag 0906fe7f6b201d9aa73eb22f518366ea75c57937
+            (Evans Mungai)\r\n- Fix --take-ownership 4ee3a19e9a98e3b58eb4579f019666e834408ca3
+            (Patrick Seidensal)\r\n- build(deps): bump github.com/rubenv/sql-migrate
+            from 1.7.1 to 1.7.2 3538c2a677809308821c18bdc309e5954f822211 (dependabot[bot])\r\n-
+            build(deps): bump golang.org/x/crypto from 0.36.0 to 0.37.0 6fa95c805e449eb7332059cc4aee837a9358f334
+            (dependabot[bot])\r\n- build(deps): bump golang.org/x/term from 0.30.0
+            to 0.31.0 741b5beeb95b0858b1809a625870310a509a4d61 (dependabot[bot])\r\n-
+            Testing text bump 017f9fad2b2b51f1292c73922f0857b93d2fb233 (Benoit Tigeot)\r\n-
+            Permit more Go version and not only 1.23.8 666725202b2c7da205fe0c34a1ac5812e88d2500
+            (Benoit Tigeot)\r\n- Bumps github.com/distribution/distribution/v3 from
+            3.0.0-rc.3 to 3.0.0 4ad1ccd8fb8bbf4ffec8ccab411f2ee57360824d (Benoit Tigeot)\r\n-
+            Unarchiving fix 3ce10e4f81e064a3807098c3d466c33f2ece8a18 (Matt Farina)\r\n-
+            Fix typo 422c58e4a2d7a00e2275916be1bfda0b28efba82 (Benoit Tigeot)\r\n-
+            Report as debug log, the time spent waiting for resources 5e7f12d4c3e2e37fa4bc065fddde8e191c336a15
+            (Benoit Tigeot)\r\n- build(deps): bump github.com/containerd/containerd
+            from 1.7.26 to 1.7.27 dcc286ca562e91bc5ea052d734d11e4bf2905e19 (dependabot[bot])\r\n-
+            Update pkg/registry/fallback.go 1435ec7c7717a147fb17701fd0da3992f7a44bb6
+            (Terry Howe)\r\n- automatic fallback to http 674e882c88535c75b672cb6986df8fc23ad21dad
+            (Terry Howe)\r\n- chore(oci): upgrade to ORAS v2 c188441757c66e8e863969c5cb1b27be61482a22
+            (Terry Howe)\r\n- Updating to 0.37.0 for x/net 2b12490c329e5a61c79f6f71cee8b450770b0752
+            (Matt Farina)\r\n- build(deps): bump the k8s-io group with 7 updates 0648918abbc894b035351353a2af82b5c8b161c8
+            (dependabot[bot])\r\n- build(deps): bump golang.org/x/crypto from 0.35.0
+            to 0.36.0 0911b9c7b0f29bd49905865cd77509c2d84c4479 (dependabot[bot])\r\n-
+            build(deps): bump github.com/opencontainers/image-spec 2f22d5544c78b3e81de95bac061515630cb5d157
+            (dependabot[bot])\r\n- build(deps): bump github.com/containerd/containerd
+            from 1.7.25 to 1.7.26 89361c905aae85cf0a20ec68df2fdd52103847ed (dependabot[bot])\r\n-
+            build(deps): bump golang.org/x/crypto from 0.33.0 to 0.35.0 6d64160ab65863892ef1cec022b5391b17147c6d
+            (dependabot[bot])\r\n- Fix cherry-pick helm.sh/helm/v4 -> helm.sh/helm/v3
+            bcb83e465f4487b481b8843f4d5dfe4f26472c55 (Scott Rigby)\r\n- Refactor based
+            on review comment 2aa90b8f2603f033479278eb99993d2efe39624c (Chris Berry)\r\n-
+            Refactor based on review comment 5739197faa75b3e2c7d32a999c3e17bd8949756d
+            (Chris Berry)\r\n- Add HookOutputFunc and generic yaml unmarshaller b8e13878fcf542aff465a90635b4d29f93dfb434
+            (Chris Berry)\r\n- clarify fix error message 97b0e11871252ad99054d911d92666f84fdac79a
+            (Scott Rigby)\r\n- fix err check 2f79afb0a3c506fd41ea89f13efcfa4379f88b5f
+            (Scott Rigby)\r\n- remove comments about previous functionality c77f4ec6c41db7d5641da723eb6f67d1b8b0e606
+            (Scott Rigby)\r\n- add short circuit return 3cd6afe845c905d2bc1dfa259e2ab4b571c19234
+            (Scott Rigby)\r\n- Update based on review comments 5367001f4fa283ffb4dd15741c2dff053b5dfb52
+            (Chris Berry)\r\n- Update based on review comments 3c445158d85b1bec417803f418f0b686188b2399
+            (Chris Berry)\r\n- Fix lint 4cb639ed4edab7729859328d443b102d05a4b32d (Chris
+            Berry)\r\n- Tidy up imports 20f859c9ffb5e0a7b48c8331093250bd162e3ee0 (Chris)\r\n-
+            Add hook annotations to output pod logs to client on success and fail
+            ca90972b3d81acb1ad9d6f80bb1770113776f06a (Chris Berry)\r\n- chore: use
+            []error instead of []string a9e20757c6b348da7db789f81a874cdb5b315e9f (Evans
+            Mungai)\r\n- Update cmd/helm/profiling.go 996ad8445379b44bbefc9116e8b5a0cdd9bce259
+            (Evans Mungai)\r\n- chore: update profiling doc in CONTRIBUTING.md 867c97e70d42f523a223973770149c7faeb6f04f
+            (Evans Mungai)\r\n- Update CONTRIBUTING guide af2410192d0854f1431efaa9858b2d830f3312c4
+            (Evans Mungai)\r\n- Prefer environment variables to CLI flags c7dfa87f9d5640ed07b76bfda24dd1e3db635690
+            (Evans Mungai)\r\n- Fix linter warning b39411a66829d711168de543fa823cbd5e749ca4
+            (Evans Mungai)\r\n- Move pprof paths to HELM_PPROF env variable 4c50f01046be19467eb99495cbce51319700b81a
+            (Evans Mungai)\r\n- Update CONTRIBUTING.md 3b43f7be60c54edc3ea7d76d6253bb5d12eece32
+            (Evans Mungai)\r\n- Update CONTRIBUTING.md a32e11bdc3af0250a10ce6bbb8a2dc566f66cd3d
+            (Evans Mungai)\r\n- Additional review fixes from PR 483ebf915da5ab2c2bbdb46644bca2fe22ae51f9
+            (Evans Mungai)\r\n- feat: Add flags to enable CPU and memory profiling
+            461197f9c62f4c37ad2b727962db95378c3f3073 (Evans Mungai)\r\n- build(deps):
+            bump github.com/distribution/distribution/v3 e7fa545819dbb51c8f94a1936174ee48b52db694
+            (dependabot[bot])\r\n- build(deps): bump github.com/spf13/cobra from 1.8.1
+            to 1.9.1 d1687ba8d9c94c711215dc49ad88117585c9c765 (dependabot[bot])\r\n-
+            Moving to SetOut and SetErr for Cobra 4c2f88b2abb53ee04d6003e67d6efa44b29eb832
+            (Matt Farina)\r\n- build(deps): bump the k8s-io group with 7 updates a2413aa26dd873a782b8f96cac424991b223c3da
+            (dependabot[bot])\r\n- build(deps): bump golang.org/x/crypto from 0.32.0
+            to 0.33.0 959d643b977b2b1571fe3ccd21d8e9cbfe1b4ea3 (dependabot[bot])\r\n-
+            build(deps): bump golang.org/x/term from 0.28.0 to 0.29.0 3a87c684e77eef5fcd5bb3b2c51f8e739b871a7c
+            (dependabot[bot])\r\n- build(deps): bump golang.org/x/text from 0.21.0
+            to 0.22.0 711cef8d1c0602a949b39be4c6eafe118e2fc30c (dependabot[bot])\r\n-
+            build(deps): bump github.com/spf13/pflag from 1.0.5 to 1.0.6 76806237ad36e527d2e6158f80ab84f237c52ec3
+            (dependabot[bot])\r\n- build(deps): bump github.com/cyphar/filepath-securejoin
+            03747d963f7e51e7fd1eac8a768f2791bf25a7e3 (dependabot[bot])\r\n- build(deps):
+            bump github.com/evanphx/json-patch f1db83f78f06ee017492b471bb2c19ff2249aacd
+            (dependabot[bot])\r\n- build(deps): bump the k8s-io group with 7 updates
+            3bc3751f7019d2a1f5b922421d398f9ddd880106 (dependabot[bot])\r\n- fix: check
+            group for resource info match 2ebce786ba295a3ca7a281c3ffd78086cf561f89
+            (Jiasheng Zhu)\r\n- Bump github.com/cyphar/filepath-securejoin from 0.3.6
+            to 0.4.0 8e86e76d50a9f365e79b6211100dd4308289da6c (dependabot[bot])\r\n-
+            add test for nullifying nested global value 326c1e3f6782a7ed53980ac010c44689c0ae4fb6
+            (Ryan Hockstad)\r\n- Ensuring the file paths are clean prior to passing
+            to securejoin fba9d08dced3583ef88fc235b307995830173aa9 (Matt Farina)\r\n-
+            Bump github.com/containerd/containerd from 1.7.24 to 1.7.25 a79be7d5d348525257ea3be3305f7343522bb083
+            (dependabot[bot])\r\n- Bump golang.org/x/crypto from 0.31.0 to 0.32.0
+            b029d74a52009d4e14d406bcc952d2191e0200f0 (dependabot[bot])\r\n- Bump golang.org/x/term
+            from 0.27.0 to 0.28.0 a1c0ae88a7ccbda9b5915bac196db54e677fd1d2 (dependabot[bot])\r\n-
+            bump version to v3.17.0 d6db69ed66a3b127a96e3339a00ea84586310868 (Matt
+            Farina)\r\n- Bump github.com/moby/term from 0.5.0 to 0.5.2 54ffefbcf79b5d835c29a730ea7aef6afd9109ee
+            (dependabot[bot])\r\n- Add test case for removing an entire object ef2eb552837446fe8a5a91bc68abf4d9eab685a8
+            (Ryan Hockstad)\r\n- Tests for bugfix: Override subcharts with null values
+            #12879 60fcce18d1646e266dfe8191e25a85dcdb7b0038 (Scott Rigby)\r\n- feat:
+            Added multi-platform plugin hook support to v3 Signed-off-by: Steve Hipwell
+            <steve.hipwell@gmail.com> 83dddb183946266289e55eb3c3d8c8a35b24b34a (Andrew
+            Block)\r\n- This commit fixes the issue where the yaml.Unmarshaller converts
+            all int values into float64, this passes in option to decoder, which enables
+            conversion of int into . 0a6834fdf060b4fbc4e1ea4bcb85908891539d48 (Althaf
+            M)\r\n- merge null child chart objects 5a58751a053ea59b88399487a5f0f8f5c27b9461
+            (Ryan Hockstad)\r\n"
+          created_at: "2025-05-19T17:35:49Z"
+          draft: false
+          html_url: https://github.com/helm/helm/releases/tag/v3.18.0
+          id: 219579996
+          name: Helm v3.18.0
+          node_id: RE_kwDOApspmc4NFoZc
+          prerelease: false
+          published_at: "2025-05-19T17:54:54Z"
+          tag_name: v3.18.0
+          tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.18.0
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/helm/helm/releases/219579996/assets{?name,label}
+          url: https://api.github.com/repos/helm/helm/releases/219579996
+          zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.0
     helmfile:
       0.163.0:
         githubRelease:

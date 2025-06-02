@@ -462,8 +462,8 @@ dependencies:
       url: https://api.github.com/repos/argoproj/argo-cd/releases/221907853
       zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v3.0.5
   helm:
-    version: 3.18.1
-    previousVersion: 3.18.0
+    version: 3.18.2
+    previousVersion: 3.18.1
     versions:
     - 3.14.1
     - 3.14.2
@@ -480,1195 +480,1156 @@ dependencies:
     - 3.17.3
     - 3.18.0
     - 3.18.1
+    - 3.18.2
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-darwin-amd64.tar.gz.asc
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-amd64.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:03Z"
-        digest: null
-        download_count: 3
-        id: 258931908
+        created_at: "2025-06-02T13:41:11Z"
+        digest: sha256:75268a6cf3074ecfa8b83b7cfab231d509a1f5f1aaeec6d0bf8047e771ab3a00
+        download_count: 9
+        id: 260232958
         label: null
-        name: helm-v3.18.1-darwin-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4PbvzE
-        size: 228
+        name: helm-v3.18.2-darwin-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4Pgtb-
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:03Z"
+        updated_at: "2025-06-02T13:41:12Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931908
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-darwin-amd64.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232958
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-amd64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:09Z"
-        digest: null
-        download_count: 4
-        id: 258931950
+        created_at: "2025-06-02T13:41:12Z"
+        digest: sha256:20ec003528dd9f7f21bfd200dcda4c8f39847eb7bd0394b91fe14538a75ffc7a
+        download_count: 9
+        id: 260232960
         label: null
-        name: helm-v3.18.1-darwin-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Pbvzu
-        size: 228
+        name: helm-v3.18.2-darwin-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PgtcA
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:09Z"
+        updated_at: "2025-06-02T13:41:12Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931950
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-darwin-amd64.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232960
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-arm64.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:09Z"
-        digest: null
-        download_count: 4
-        id: 258931949
+        created_at: "2025-06-02T13:41:12Z"
+        digest: sha256:bd8b88c46fc384f92297da46739315774dec1ca6707f7ed01932b2f001fb3c07
+        download_count: 1
+        id: 260232961
         label: null
-        name: helm-v3.18.1-darwin-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvzt
-        size: 228
+        name: helm-v3.18.2-darwin-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PgtcB
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:09Z"
+        updated_at: "2025-06-02T13:41:12Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931949
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-darwin-arm64.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232961
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-arm64.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:09Z"
-        digest: null
-        download_count: 3
-        id: 258931948
+        created_at: "2025-06-02T13:41:12Z"
+        digest: sha256:803c299711b9fbb85042b5f3c62e99901e474e731ec74fa5f131ff36032e8342
+        download_count: 2
+        id: 260232963
         label: null
-        name: helm-v3.18.1-darwin-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Pbvzs
-        size: 228
+        name: helm-v3.18.2-darwin-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PgtcD
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:09Z"
+        updated_at: "2025-06-02T13:41:13Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931948
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-darwin-arm64.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232963
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-arm64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:08Z"
-        digest: null
-        download_count: 4
-        id: 258931947
+        created_at: "2025-06-02T13:41:13Z"
+        digest: sha256:f006690e04dc3d059294ee06a13111f7a0494c8a888b9950b7400dd82302e3d7
+        download_count: 2
+        id: 260232964
         label: null
-        name: helm-v3.18.1-darwin-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Pbvzr
-        size: 228
+        name: helm-v3.18.2-darwin-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PgtcE
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:09Z"
+        updated_at: "2025-06-02T13:41:13Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931947
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-darwin-arm64.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232964
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-386.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:08Z"
-        digest: null
-        download_count: 4
-        id: 258931946
+        created_at: "2025-06-02T13:41:13Z"
+        digest: sha256:83cc416d2c018bd15b0414a7b094fc4e1e97cef4df6d98473e85513966cb59b0
+        download_count: 7
+        id: 260232966
         label: null
-        name: helm-v3.18.1-darwin-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvzq
-        size: 228
+        name: helm-v3.18.2-linux-386.tar.gz.asc
+        node_id: RA_kwDOApspmc4PgtcG
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:09Z"
+        updated_at: "2025-06-02T13:41:13Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931946
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-386.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232966
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-386.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:08Z"
-        digest: null
-        download_count: 4
-        id: 258931944
+        created_at: "2025-06-02T13:41:13Z"
+        digest: sha256:c33dbd2d83fd5d94d26674d4aebef75d4ccaa1899425a4ed552a46b0bdaf13da
+        download_count: 9
+        id: 260232967
         label: null
-        name: helm-v3.18.1-linux-386.tar.gz.asc
-        node_id: RA_kwDOApspmc4Pbvzo
-        size: 228
+        name: helm-v3.18.2-linux-386.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PgtcH
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:08Z"
+        updated_at: "2025-06-02T13:41:13Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931944
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-386.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232967
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-386.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:08Z"
-        digest: null
-        download_count: 4
-        id: 258931943
+        created_at: "2025-06-02T13:41:13Z"
+        digest: sha256:19820274290eba817d9b7d9fdeda5f096206d0a98d77b3ea94c1db77de51128e
+        download_count: 8
+        id: 260232969
         label: null
-        name: helm-v3.18.1-linux-386.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Pbvzn
-        size: 228
+        name: helm-v3.18.2-linux-386.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PgtcJ
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:08Z"
+        updated_at: "2025-06-02T13:41:13Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931943
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-386.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232969
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-amd64.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:08Z"
-        digest: null
-        download_count: 4
-        id: 258931942
+        created_at: "2025-06-02T13:41:13Z"
+        digest: sha256:f70b839d7b369de45c0c8c7e10b4429e7ec23e266d4fefa26cc64a2dfb8667b9
+        download_count: 54
+        id: 260232970
         label: null
-        name: helm-v3.18.1-linux-386.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvzm
-        size: 228
+        name: helm-v3.18.2-linux-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PgtcK
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:08Z"
+        updated_at: "2025-06-02T13:41:14Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931942
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-amd64.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232970
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-amd64.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:08Z"
-        digest: null
-        download_count: 50
-        id: 258931941
+        created_at: "2025-06-02T13:41:14Z"
+        digest: sha256:042bec9118a1e465143102cf5e233568e07976acf020ec84b0e5dfe6efdc2925
+        download_count: 52
+        id: 260232971
         label: null
-        name: helm-v3.18.1-linux-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Pbvzl
-        size: 228
+        name: helm-v3.18.2-linux-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PgtcL
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:08Z"
+        updated_at: "2025-06-02T13:41:14Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931941
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-amd64.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232971
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-amd64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:07Z"
-        digest: null
-        download_count: 4
-        id: 258931940
+        created_at: "2025-06-02T13:41:14Z"
+        digest: sha256:781905db2ea5ee2798536df12ae1eb8c196bb2210887f3f1b0a2dfa4be629a00
+        download_count: 9
+        id: 260232973
         label: null
-        name: helm-v3.18.1-linux-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Pbvzk
-        size: 228
+        name: helm-v3.18.2-linux-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PgtcN
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:08Z"
+        updated_at: "2025-06-02T13:41:14Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931940
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-amd64.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232973
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:07Z"
-        digest: null
-        download_count: 4
-        id: 258931937
+        created_at: "2025-06-02T13:41:14Z"
+        digest: sha256:9a878578f4617f8fb9563d7e9b5e9cc89374a2189ae24a41d37be522aff0ac2d
+        download_count: 8
+        id: 260232974
         label: null
-        name: helm-v3.18.1-linux-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvzh
-        size: 228
+        name: helm-v3.18.2-linux-arm.tar.gz.asc
+        node_id: RA_kwDOApspmc4PgtcO
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:07Z"
+        updated_at: "2025-06-02T13:41:14Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931937
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-arm.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232974
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:07Z"
-        digest: null
-        download_count: 3
-        id: 258931936
+        created_at: "2025-06-02T13:41:14Z"
+        digest: sha256:1811ccfcd6b9cad51c640dbb0faa37a2ab9a25fc018380a110b0480bb890b401
+        download_count: 10
+        id: 260232975
         label: null
-        name: helm-v3.18.1-linux-arm.tar.gz.asc
-        node_id: RA_kwDOApspmc4Pbvzg
-        size: 228
+        name: helm-v3.18.2-linux-arm.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PgtcP
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:07Z"
+        updated_at: "2025-06-02T13:41:14Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931936
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-arm.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232975
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:07Z"
-        digest: null
-        download_count: 4
-        id: 258931934
+        created_at: "2025-06-02T13:41:14Z"
+        digest: sha256:be9456cf0df6ad4f8860ad8453f4c9eb1ddbdf03b4444f440d245ce30fe09ab9
+        download_count: 9
+        id: 260232976
         label: null
-        name: helm-v3.18.1-linux-arm.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Pbvze
-        size: 228
+        name: helm-v3.18.2-linux-arm.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PgtcQ
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:07Z"
+        updated_at: "2025-06-02T13:41:14Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931934
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-arm.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232976
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm64.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:07Z"
-        digest: null
-        download_count: 4
-        id: 258931933
+        created_at: "2025-06-02T13:41:14Z"
+        digest: sha256:fd4697116b8d986f8bc9d795d09103c15a507446634007e6c2cd987d10dbda90
+        download_count: 20
+        id: 260232982
         label: null
-        name: helm-v3.18.1-linux-arm.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvzd
-        size: 228
+        name: helm-v3.18.2-linux-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4PgtcW
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:07Z"
+        updated_at: "2025-06-02T13:41:15Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931933
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-arm64.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232982
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm64.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:06Z"
-        digest: null
-        download_count: 29
-        id: 258931932
+        created_at: "2025-06-02T13:41:15Z"
+        digest: sha256:7034ef20c9acf40e54bc286cf0c2c380a1f4465358e97d3884127276a66356dd
+        download_count: 21
+        id: 260232983
         label: null
-        name: helm-v3.18.1-linux-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4Pbvzc
-        size: 228
+        name: helm-v3.18.2-linux-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4PgtcX
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:07Z"
+        updated_at: "2025-06-02T13:41:15Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931932
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-arm64.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232983
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:06Z"
-        digest: null
-        download_count: 4
-        id: 258931931
+        created_at: "2025-06-02T13:41:15Z"
+        digest: sha256:4b14aa0686b66b6434f6080b3adc44472d99434c2aa685e49ca8e814de841ee3
+        download_count: 2
+        id: 260232985
         label: null
-        name: helm-v3.18.1-linux-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4Pbvzb
-        size: 228
+        name: helm-v3.18.2-linux-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4PgtcZ
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:06Z"
+        updated_at: "2025-06-02T13:41:15Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931931
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-arm64.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232985
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-ppc64le.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:06Z"
-        digest: null
-        download_count: 4
-        id: 258931930
+        created_at: "2025-06-02T13:41:15Z"
+        digest: sha256:4db55ee7e7e5d89e2ce92ac88da587e9c82e0d8534caca05bc236e83f879805f
+        download_count: 7
+        id: 260232987
         label: null
-        name: helm-v3.18.1-linux-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvza
-        size: 228
+        name: helm-v3.18.2-linux-ppc64le.tar.gz.asc
+        node_id: RA_kwDOApspmc4Pgtcb
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:06Z"
+        updated_at: "2025-06-02T13:41:15Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931930
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-ppc64le.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232987
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-ppc64le.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:06Z"
-        digest: null
-        download_count: 3
-        id: 258931928
+        created_at: "2025-06-02T13:41:15Z"
+        digest: sha256:31f666f85b6e2a5598cd22b8b4e1ee036f966a29da5345a33d1bcb2457f30361
+        download_count: 10
+        id: 260232988
         label: null
-        name: helm-v3.18.1-linux-ppc64le.tar.gz.asc
-        node_id: RA_kwDOApspmc4PbvzY
-        size: 228
+        name: helm-v3.18.2-linux-ppc64le.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4Pgtcc
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:06Z"
+        updated_at: "2025-06-02T13:41:15Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931928
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-ppc64le.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232988
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-ppc64le.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:06Z"
-        digest: null
-        download_count: 4
-        id: 258931926
+        created_at: "2025-06-02T13:41:15Z"
+        digest: sha256:6a8979487e76f616ca0a988161bc069214d0e9754e6a7ebad05721e5a45302a0
+        download_count: 8
+        id: 260232990
         label: null
-        name: helm-v3.18.1-linux-ppc64le.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4PbvzW
-        size: 228
+        name: helm-v3.18.2-linux-ppc64le.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4Pgtce
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:06Z"
+        updated_at: "2025-06-02T13:41:15Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931926
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-ppc64le.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232990
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-riscv64.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:06Z"
-        digest: null
-        download_count: 4
-        id: 258931925
+        created_at: "2025-06-02T13:41:15Z"
+        digest: sha256:653cbc585c048e954a7bc36439de9df84349b6730b128955031b89985133adde
+        download_count: 7
+        id: 260232992
         label: null
-        name: helm-v3.18.1-linux-ppc64le.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4PbvzV
-        size: 228
+        name: helm-v3.18.2-linux-riscv64.tar.gz.asc
+        node_id: RA_kwDOApspmc4Pgtcg
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:06Z"
+        updated_at: "2025-06-02T13:41:16Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931925
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-riscv64.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232992
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-riscv64.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:05Z"
-        digest: null
-        download_count: 3
-        id: 258931924
+        created_at: "2025-06-02T13:41:16Z"
+        digest: sha256:2da39541b201288b8d1a1493a2d50520e0efc08b581bdb4732b6da75c5ed58e7
+        download_count: 9
+        id: 260232993
         label: null
-        name: helm-v3.18.1-linux-riscv64.tar.gz.asc
-        node_id: RA_kwDOApspmc4PbvzU
-        size: 228
+        name: helm-v3.18.2-linux-riscv64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4Pgtch
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:06Z"
+        updated_at: "2025-06-02T13:41:16Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931924
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-riscv64.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232993
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-riscv64.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:05Z"
-        digest: null
-        download_count: 4
-        id: 258931923
+        created_at: "2025-06-02T13:41:16Z"
+        digest: sha256:6c543438af596483ae828e8e97926fd6418541f76c827e00be62080e555fccc3
+        download_count: 8
+        id: 260232995
         label: null
-        name: helm-v3.18.1-linux-riscv64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4PbvzT
-        size: 228
+        name: helm-v3.18.2-linux-riscv64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4Pgtcj
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:05Z"
+        updated_at: "2025-06-02T13:41:16Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931923
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-riscv64.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232995
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-s390x.tar.gz.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:05Z"
-        digest: null
-        download_count: 4
-        id: 258931922
+        created_at: "2025-06-02T13:41:16Z"
+        digest: sha256:d120766f6edc0bd2f548a1c60262e42ba4026f7244ab95c9e71e3e29eb37d35f
+        download_count: 7
+        id: 260232997
         label: null
-        name: helm-v3.18.1-linux-riscv64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4PbvzS
-        size: 228
+        name: helm-v3.18.2-linux-s390x.tar.gz.asc
+        node_id: RA_kwDOApspmc4Pgtcl
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:05Z"
+        updated_at: "2025-06-02T13:41:16Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931922
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-s390x.tar.gz.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232997
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-s390x.tar.gz.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:05Z"
-        digest: null
-        download_count: 3
-        id: 258931921
+        created_at: "2025-06-02T13:41:16Z"
+        digest: sha256:e626512e71d347f5b4f99f147ed6a73b2e5430db975ae0b605af10e96026da16
+        download_count: 10
+        id: 260232998
         label: null
-        name: helm-v3.18.1-linux-s390x.tar.gz.asc
-        node_id: RA_kwDOApspmc4PbvzR
-        size: 228
+        name: helm-v3.18.2-linux-s390x.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4Pgtcm
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:05Z"
+        updated_at: "2025-06-02T13:41:16Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931921
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-s390x.tar.gz.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260232998
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-s390x.tar.gz.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:05Z"
-        digest: null
-        download_count: 4
-        id: 258931920
+        created_at: "2025-06-02T13:41:16Z"
+        digest: sha256:e55b83f59f1b8a737eb654de55c061703490fcc413803d7a49c862400346375b
+        download_count: 8
+        id: 260233000
         label: null
-        name: helm-v3.18.1-linux-s390x.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4PbvzQ
-        size: 228
+        name: helm-v3.18.2-linux-s390x.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4Pgtco
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:05Z"
+        updated_at: "2025-06-02T13:41:17Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931920
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-linux-s390x.tar.gz.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233000
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-amd64.zip.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:04Z"
-        digest: null
-        download_count: 4
-        id: 258931918
+        created_at: "2025-06-02T13:41:17Z"
+        digest: sha256:f558e0a60f9829ae1d7373ae82af5f4ff10eb69f3cfbdf8b8f19d27143edcb37
+        download_count: 8
+        id: 260233002
         label: null
-        name: helm-v3.18.1-linux-s390x.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4PbvzO
-        size: 228
+        name: helm-v3.18.2-windows-amd64.zip.asc
+        node_id: RA_kwDOApspmc4Pgtcq
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:05Z"
+        updated_at: "2025-06-02T13:41:17Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931918
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-windows-amd64.zip.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233002
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-amd64.zip.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:04Z"
-        digest: null
-        download_count: 4
-        id: 258931917
+        created_at: "2025-06-02T13:41:17Z"
+        digest: sha256:6d55e680a29626d3a3fd7f45a74ce01e5a381474e0ce699e89bf6ccb85fcc6ba
+        download_count: 10
+        id: 260233003
         label: null
-        name: helm-v3.18.1-windows-amd64.zip.asc
-        node_id: RA_kwDOApspmc4PbvzN
-        size: 228
+        name: helm-v3.18.2-windows-amd64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4Pgtcr
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:04Z"
+        updated_at: "2025-06-02T13:41:17Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931917
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-windows-amd64.zip.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233003
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-amd64.zip.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:04Z"
-        digest: null
-        download_count: 5
-        id: 258931916
+        created_at: "2025-06-02T13:41:17Z"
+        digest: sha256:3906984576cc86863e6bdd5d8507940d9496fb1fd124007c1eb23e198246ebb8
+        download_count: 8
+        id: 260233004
         label: null
-        name: helm-v3.18.1-windows-amd64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4PbvzM
-        size: 228
+        name: helm-v3.18.2-windows-amd64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4Pgtcs
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:04Z"
+        updated_at: "2025-06-02T13:41:17Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931916
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-windows-amd64.zip.sha256sum.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233004
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-arm64.zip.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:04Z"
-        digest: null
-        download_count: 4
-        id: 258931914
+        created_at: "2025-06-02T13:41:17Z"
+        digest: sha256:7c93741d5435cd8b81c9066eea405e49e3687f41aabcbe15e5b3b2e15f612802
+        download_count: 1
+        id: 260233005
         label: null
-        name: helm-v3.18.1-windows-amd64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4PbvzK
-        size: 228
+        name: helm-v3.18.2-windows-arm64.zip.asc
+        node_id: RA_kwDOApspmc4Pgtct
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:04Z"
+        updated_at: "2025-06-02T13:41:17Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931914
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-windows-arm64.zip.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233005
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-arm64.zip.sha256.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:04Z"
-        digest: null
-        download_count: 4
-        id: 258931911
+        created_at: "2025-06-02T13:41:17Z"
+        digest: sha256:ae5c5fdea8aade88a2a625b97b11972cdc4a11234f98767ef1bff45b2109e70d
+        download_count: 2
+        id: 260233006
         label: null
-        name: helm-v3.18.1-windows-arm64.zip.asc
-        node_id: RA_kwDOApspmc4PbvzH
-        size: 228
+        name: helm-v3.18.2-windows-arm64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4Pgtcu
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:04Z"
+        updated_at: "2025-06-02T13:41:17Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931911
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-windows-arm64.zip.sha256.asc
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233006
+      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-arm64.zip.sha256sum.asc
         content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:03Z"
-        digest: null
-        download_count: 4
-        id: 258931909
+        created_at: "2025-06-02T13:41:17Z"
+        digest: sha256:627a4aa34c14c3445657e40b76798963415d53a9e59e69c3866e1852301b9c6c
+        download_count: 2
+        id: 260233007
         label: null
-        name: helm-v3.18.1-windows-arm64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4PbvzF
-        size: 228
+        name: helm-v3.18.2-windows-arm64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4Pgtcv
+        size: 833
         state: uploaded
-        updated_at: "2025-05-28T19:25:04Z"
+        updated_at: "2025-06-02T13:41:18Z"
         uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+          avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+          events_url: https://api.github.com/users/mattfarina/events{/privacy}
+          followers_url: https://api.github.com/users/mattfarina/followers
+          following_url: https://api.github.com/users/mattfarina/following{/other_user}
+          gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
           gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
+          html_url: https://github.com/mattfarina
+          id: 62991
+          login: mattfarina
+          node_id: MDQ6VXNlcjYyOTkx
+          organizations_url: https://api.github.com/users/mattfarina/orgs
+          received_events_url: https://api.github.com/users/mattfarina/received_events
+          repos_url: https://api.github.com/users/mattfarina/repos
           site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+          starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
           type: User
-          url: https://api.github.com/users/robertsirc
+          url: https://api.github.com/users/mattfarina
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931909
-      - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.1/helm-v3.18.1-windows-arm64.zip.sha256sum.asc
-        content_type: application/octet-stream
-        created_at: "2025-05-28T19:25:09Z"
-        digest: null
-        download_count: 4
-        id: 258931951
-        label: null
-        name: helm-v3.18.1-windows-arm64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4Pbvzv
-        size: 228
-        state: uploaded
-        updated_at: "2025-05-28T19:25:10Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-          events_url: https://api.github.com/users/robertsirc/events{/privacy}
-          followers_url: https://api.github.com/users/robertsirc/followers
-          following_url: https://api.github.com/users/robertsirc/following{/other_user}
-          gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/robertsirc
-          id: 13884882
-          login: robertsirc
-          node_id: MDQ6VXNlcjEzODg0ODgy
-          organizations_url: https://api.github.com/users/robertsirc/orgs
-          received_events_url: https://api.github.com/users/robertsirc/received_events
-          repos_url: https://api.github.com/users/robertsirc/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
-          type: User
-          url: https://api.github.com/users/robertsirc
-          user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/258931951
-      assets_url: https://api.github.com/repos/helm/helm/releases/221651277/assets
+        url: https://api.github.com/repos/helm/helm/releases/assets/260233007
+      assets_url: https://api.github.com/repos/helm/helm/releases/222443571/assets
       author:
-        avatar_url: https://avatars.githubusercontent.com/u/13884882?v=4
-        events_url: https://api.github.com/users/robertsirc/events{/privacy}
-        followers_url: https://api.github.com/users/robertsirc/followers
-        following_url: https://api.github.com/users/robertsirc/following{/other_user}
-        gists_url: https://api.github.com/users/robertsirc/gists{/gist_id}
+        avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+        events_url: https://api.github.com/users/mattfarina/events{/privacy}
+        followers_url: https://api.github.com/users/mattfarina/followers
+        following_url: https://api.github.com/users/mattfarina/following{/other_user}
+        gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
         gravatar_id: ""
-        html_url: https://github.com/robertsirc
-        id: 13884882
-        login: robertsirc
-        node_id: MDQ6VXNlcjEzODg0ODgy
-        organizations_url: https://api.github.com/users/robertsirc/orgs
-        received_events_url: https://api.github.com/users/robertsirc/received_events
-        repos_url: https://api.github.com/users/robertsirc/repos
+        html_url: https://github.com/mattfarina
+        id: 62991
+        login: mattfarina
+        node_id: MDQ6VXNlcjYyOTkx
+        organizations_url: https://api.github.com/users/mattfarina/orgs
+        received_events_url: https://api.github.com/users/mattfarina/received_events
+        repos_url: https://api.github.com/users/mattfarina/repos
         site_admin: false
-        starred_url: https://api.github.com/users/robertsirc/starred{/owner}{/repo}
-        subscriptions_url: https://api.github.com/users/robertsirc/subscriptions
+        starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+        subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
         type: User
-        url: https://api.github.com/users/robertsirc
+        url: https://api.github.com/users/mattfarina
         user_view_type: public
-      body: "v3.18.1\r\n\r\nHelm v3.18.1 is a patch release. Users are encouraged
-        to upgrade for the best experience. Users are encouraged to upgrade for the
-        best experience.\r\n\r\nThe community keeps growing, and we'd love to see
-        you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
-        \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
-        and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
-        via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute charts:
-        [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
-        Installation and Upgrading\r\n\r\nDownload Helm v3.18.1. The common platform
-        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.18.1-darwin-amd64.tar.gz)
-        ([checksum](https://get.helm.sh/helm-v3.18.1-darwin-amd64.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:4f8453aa-001e-003c-5205-d0dcf3000000\r\nTime:2025-05-28T19:20:05.5109560Z</Message></Error>)\r\n-
-        [MacOS arm64](https://get.helm.sh/helm-v3.18.1-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-darwin-arm64.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:a900358b-401e-005f-2f05-d04108000000\r\nTime:2025-05-28T19:20:07.2988256Z</Message></Error>)\r\n-
-        [Linux amd64](https://get.helm.sh/helm-v3.18.1-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-amd64.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:986fe6a5-d01e-002f-8005-d0f8ff000000\r\nTime:2025-05-28T19:20:08.7172759Z</Message></Error>)\r\n-
-        [Linux arm](https://get.helm.sh/helm-v3.18.1-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-arm.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:2f981509-f01e-005a-6505-d093d3000000\r\nTime:2025-05-28T19:20:11.8122083Z</Message></Error>)\r\n-
-        [Linux arm64](https://get.helm.sh/helm-v3.18.1-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-arm64.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:b3650821-501e-0043-4705-d01368000000\r\nTime:2025-05-28T19:20:13.2709106Z</Message></Error>)\r\n-
-        [Linux i386](https://get.helm.sh/helm-v3.18.1-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-386.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:5ed8caa4-501e-0053-1405-d0d600000000\r\nTime:2025-05-28T19:20:10.2914063Z</Message></Error>)\r\n-
-        [Linux ppc64le](https://get.helm.sh/helm-v3.18.1-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-ppc64le.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:56ba38e6-601e-0067-2f05-d0e5c8000000\r\nTime:2025-05-28T19:20:14.8541300Z</Message></Error>)\r\n-
-        [Linux s390x](https://get.helm.sh/helm-v3.18.1-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-s390x.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:be1aaddc-e01e-0034-0305-d0c6fc000000\r\nTime:2025-05-28T19:20:16.2794423Z</Message></Error>)\r\n-
-        [Linux riscv64](https://get.helm.sh/helm-v3.18.1-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.1-linux-riscv64.tar.gz.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:a677f8be-001e-0061-2505-d0d677000000\r\nTime:2025-05-28T19:20:18.0550305Z</Message></Error>)\r\n-
-        [Windows amd64](https://get.helm.sh/helm-v3.18.1-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.18.1-windows-amd64.zip.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:3626c97e-601e-0005-5805-d027ef000000\r\nTime:2025-05-28T19:20:19.5433518Z</Message></Error>)\r\n-
-        [Windows arm64](https://get.helm.sh/helm-v3.18.1-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.18.1-windows-arm64.zip.sha256sum)
-        / \uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The
-        specified blob does not exist.\r\nRequestId:5ed92440-501e-0053-5705-d0d600000000\r\nTime:2025-05-28T19:20:20.7596381Z</Message></Error>)\r\n\r\nThe
+      body: "Helm v3.18.2 is a patch release. Users are encouraged to upgrade for
+        the best experience. Users are encouraged to upgrade for the best experience.\r\n\r\nThe
+        community keeps growing, and we'd love to see you there!\r\n\r\n- Join the
+        discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n  -  for
+        questions and just to hang out\r\n  -  for discussing PRs, code, and bugs\r\n-
+        Hang out at the Public Developer Call: Thursday, 9:30 Pacific via [Zoom](https://zoom.us/j/696660622)\r\n-
+        Test, debug, and contribute charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
+        Installation and Upgrading\r\n\r\nDownload Helm v3.18.2. The common platform
+        binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.18.2-darwin-amd64.tar.gz)
+        ([checksum](https://get.helm.sh/helm-v3.18.2-darwin-amd64.tar.gz.sha256sum)
+        / 8bfc850d4451dccecb01c73bdc844cb1b3ed2f1b90a89fc47e7b1670e1f369ec)\r\n- [MacOS
+        arm64](https://get.helm.sh/helm-v3.18.2-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-darwin-arm64.tar.gz.sha256sum)
+        / d82a30d654862668ae1e58dbbba5ea6ed5f84312da59666ef628bf73b2188d39)\r\n- [Linux
+        amd64](https://get.helm.sh/helm-v3.18.2-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-amd64.tar.gz.sha256sum)
+        / c5deada86fe609deefdf40e9cbbe3da2f8cf3f6a4551a0ebe7886dc8fcf98bce)\r\n- [Linux
+        arm](https://get.helm.sh/helm-v3.18.2-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-arm.tar.gz.sha256sum)
+        / a848c9db5e51f7cc4975bcfbba415c30cdfb67e141b6efc0e8b3a66cd89e8607)\r\n- [Linux
+        arm64](https://get.helm.sh/helm-v3.18.2-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-arm64.tar.gz.sha256sum)
+        / 03181a494a0916b370a100a5b2536104963b095be53fb23d1e29b2afb1c7de8d)\r\n- [Linux
+        i386](https://get.helm.sh/helm-v3.18.2-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-386.tar.gz.sha256sum)
+        / dae13caca7a24d0adff3f59183a269275522964d75c1e4cbdb0ffaddc659e7bc)\r\n- [Linux
+        ppc64le](https://get.helm.sh/helm-v3.18.2-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-ppc64le.tar.gz.sha256sum)
+        / 1d21b2acdd79a13d20585b61fe90bababdd3f7047530d66aad650869c772b5c3)\r\n- [Linux
+        s390x](https://get.helm.sh/helm-v3.18.2-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-s390x.tar.gz.sha256sum)
+        / 382920a48a0800cf2bb67bf6ab403aab15f7631b369bed9df9bdcfdd5ebd5ae9)\r\n- [Linux
+        riscv64](https://get.helm.sh/helm-v3.18.2-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-riscv64.tar.gz.sha256sum)
+        / d702db0191e6a4091d631760aded83f809d8d7edf962d5252f1ea46804183ebf)\r\n- [Windows
+        amd64](https://get.helm.sh/helm-v3.18.2-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.18.2-windows-amd64.zip.sha256sum)
+        / 49fc2d74a351974ebf544f8252a4e43d7e5f9e0137472415393178c2d3996e9f)\r\n- [Windows
+        arm64](https://get.helm.sh/helm-v3.18.2-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.18.2-windows-arm64.zip.sha256sum)
+        / 6ecdf10aa6f356ebb841d1732225437100e65fdb90f99170e1b2e5726e4fd10d)\r\n\r\nThis
+        release was signed with `672C 657B E06B 4B30 969C 4A57 4614 49C2 5E36 B98E
+        ` and can be found at @mattfarina [keybase account](https://keybase.io/mattfarina).
+        Please use the attached signatures for verifying this release using `gpg`.\r\n\r\nThe
         [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you going
         from there. For **upgrade instructions** or detailed installation notes, check
         the [install guide](https://helm.sh/docs/intro/install/). You can also use
         a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
-        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.18.2 will contain
-        only bug fixes.\r\n- 3.19.0 on September 11th, 2025 is the next feature release.
-        \r\n\r\n## Changelog\r\n\r\n- fix(client): skipnode utilization for PreCopy
-        f6f8700a539c18101509434f3b59e6a21402a1b2 (Brandt Keller)\r\n- fix(client):
-        layers now returns manifest - remove duplicate from descriptors 4da701593f8c8a137fc36a95f9e9ecfe1d01528f
-        (Brandt Keller)\r\n- fix(client): return nil on non-allowed media types 1a8507fd5ad910f466accfd1c784ed0c333c343a
-        (Brandt Keller)\r\n- Prevent fetching newReference again as we have in calling
-        method 015531ca4f386a6fee6c9f48eae63124d19c76a7 (Benoit Tigeot)\r\n- Prevent
-        failure when resolving version tags in oras memory store 9db1a120f9f7404044cc4619ea7379b430004e36
-        (Benoit Tigeot)\r\n- Update pkg/plugin/plugin.go e8bfa0eed689ee822c6ba9b4bcae45ecdb36b671
-        (Benoit Tigeot)\r\n- Update pkg/plugin/plugin.go 24b44902a266f911617105273d4afd16f25f4aaf
-        (Benoit Tigeot)\r\n- Wait for Helm v4 before raising when platformCommand
-        and Command are set 7e8f53421a184125cf988814206237ce01d95139 (Benoit Tigeot)\r\n-
-        Fix 3.18.0 regression: registry login with scheme ea04cea48bf2b312e506ae03c412c6fd95929c5c
-        (Scott Rigby)\r\n- Revert \"fix (helm) : toToml` renders int as float [ backport
-        to v3 ]\" bec66098fdb4ac37298f46701a2d5b28e5776b72 (Matt Farina)\r\n\r\n"
-      created_at: "2025-05-28T19:13:59Z"
+        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.17.3 is the next
+        patch release and will be on July 09, 2025\r\n- 3.18.0 is the next minor release
+        and will be on September 11, 2025\r\n\r\n## Changelog\r\n\r\n- fix: legacy
+        docker support broken for login 04cad4610054e5d546aa5c5d9c1b1d5cf68ec1f8 (Terry
+        Howe)\r\n- Handle an empty registry config file. bc9f8a2d8baad5a54f7b421275f44c04117eb5cb
+        (Matt Farina)\r\n"
+      created_at: "2025-06-02T12:49:39Z"
       draft: false
-      html_url: https://github.com/helm/helm/releases/tag/v3.18.1
-      id: 221651277
-      name: Helm v3.18.1
-      node_id: RE_kwDOApspmc4NNiFN
+      html_url: https://github.com/helm/helm/releases/tag/v3.18.2
+      id: 222443571
+      mentions_count: 1
+      name: Helm 3.18.2
+      node_id: RE_kwDOApspmc4NQjgz
       prerelease: false
-      published_at: "2025-05-28T19:25:31Z"
-      tag_name: v3.18.1
-      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.18.1
-      target_commitish: dev-v3
-      upload_url: https://uploads.github.com/repos/helm/helm/releases/221651277/assets{?name,label}
-      url: https://api.github.com/repos/helm/helm/releases/221651277
-      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.1
+      published_at: "2025-06-02T13:41:33Z"
+      reactions:
+        "+1": 0
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 1
+        total_count: 1
+        url: https://api.github.com/repos/helm/helm/releases/222443571/reactions
+      tag_name: v3.18.2
+      tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.18.2
+      target_commitish: main
+      upload_url: https://uploads.github.com/repos/helm/helm/releases/222443571/assets{?name,label}
+      url: https://api.github.com/repos/helm/helm/releases/222443571
+      zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.2
   helmfile:
     version: 1.1.1
     previousVersion: 1.1.0
@@ -32645,6 +32606,1159 @@ meta:
           upload_url: https://uploads.github.com/repos/helm/helm/releases/221651277/assets{?name,label}
           url: https://api.github.com/repos/helm/helm/releases/221651277
           zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.1
+      3.18.2:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-amd64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:11Z"
+            digest: sha256:75268a6cf3074ecfa8b83b7cfab231d509a1f5f1aaeec6d0bf8047e771ab3a00
+            download_count: 9
+            id: 260232958
+            label: null
+            name: helm-v3.18.2-darwin-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4Pgtb-
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232958
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-amd64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:12Z"
+            digest: sha256:20ec003528dd9f7f21bfd200dcda4c8f39847eb7bd0394b91fe14538a75ffc7a
+            download_count: 9
+            id: 260232960
+            label: null
+            name: helm-v3.18.2-darwin-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PgtcA
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232960
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-arm64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:12Z"
+            digest: sha256:bd8b88c46fc384f92297da46739315774dec1ca6707f7ed01932b2f001fb3c07
+            download_count: 1
+            id: 260232961
+            label: null
+            name: helm-v3.18.2-darwin-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PgtcB
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:12Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232961
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-arm64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:12Z"
+            digest: sha256:803c299711b9fbb85042b5f3c62e99901e474e731ec74fa5f131ff36032e8342
+            download_count: 2
+            id: 260232963
+            label: null
+            name: helm-v3.18.2-darwin-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PgtcD
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232963
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-darwin-arm64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:13Z"
+            digest: sha256:f006690e04dc3d059294ee06a13111f7a0494c8a888b9950b7400dd82302e3d7
+            download_count: 2
+            id: 260232964
+            label: null
+            name: helm-v3.18.2-darwin-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PgtcE
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232964
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-386.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:13Z"
+            digest: sha256:83cc416d2c018bd15b0414a7b094fc4e1e97cef4df6d98473e85513966cb59b0
+            download_count: 7
+            id: 260232966
+            label: null
+            name: helm-v3.18.2-linux-386.tar.gz.asc
+            node_id: RA_kwDOApspmc4PgtcG
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232966
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-386.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:13Z"
+            digest: sha256:c33dbd2d83fd5d94d26674d4aebef75d4ccaa1899425a4ed552a46b0bdaf13da
+            download_count: 9
+            id: 260232967
+            label: null
+            name: helm-v3.18.2-linux-386.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PgtcH
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232967
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-386.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:13Z"
+            digest: sha256:19820274290eba817d9b7d9fdeda5f096206d0a98d77b3ea94c1db77de51128e
+            download_count: 8
+            id: 260232969
+            label: null
+            name: helm-v3.18.2-linux-386.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PgtcJ
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:13Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232969
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-amd64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:13Z"
+            digest: sha256:f70b839d7b369de45c0c8c7e10b4429e7ec23e266d4fefa26cc64a2dfb8667b9
+            download_count: 54
+            id: 260232970
+            label: null
+            name: helm-v3.18.2-linux-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PgtcK
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232970
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-amd64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:14Z"
+            digest: sha256:042bec9118a1e465143102cf5e233568e07976acf020ec84b0e5dfe6efdc2925
+            download_count: 52
+            id: 260232971
+            label: null
+            name: helm-v3.18.2-linux-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PgtcL
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232971
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-amd64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:14Z"
+            digest: sha256:781905db2ea5ee2798536df12ae1eb8c196bb2210887f3f1b0a2dfa4be629a00
+            download_count: 9
+            id: 260232973
+            label: null
+            name: helm-v3.18.2-linux-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PgtcN
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232973
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:14Z"
+            digest: sha256:9a878578f4617f8fb9563d7e9b5e9cc89374a2189ae24a41d37be522aff0ac2d
+            download_count: 8
+            id: 260232974
+            label: null
+            name: helm-v3.18.2-linux-arm.tar.gz.asc
+            node_id: RA_kwDOApspmc4PgtcO
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232974
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:14Z"
+            digest: sha256:1811ccfcd6b9cad51c640dbb0faa37a2ab9a25fc018380a110b0480bb890b401
+            download_count: 10
+            id: 260232975
+            label: null
+            name: helm-v3.18.2-linux-arm.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PgtcP
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232975
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:14Z"
+            digest: sha256:be9456cf0df6ad4f8860ad8453f4c9eb1ddbdf03b4444f440d245ce30fe09ab9
+            download_count: 9
+            id: 260232976
+            label: null
+            name: helm-v3.18.2-linux-arm.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PgtcQ
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232976
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:14Z"
+            digest: sha256:fd4697116b8d986f8bc9d795d09103c15a507446634007e6c2cd987d10dbda90
+            download_count: 20
+            id: 260232982
+            label: null
+            name: helm-v3.18.2-linux-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4PgtcW
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232982
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:15Z"
+            digest: sha256:7034ef20c9acf40e54bc286cf0c2c380a1f4465358e97d3884127276a66356dd
+            download_count: 21
+            id: 260232983
+            label: null
+            name: helm-v3.18.2-linux-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4PgtcX
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232983
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-arm64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:15Z"
+            digest: sha256:4b14aa0686b66b6434f6080b3adc44472d99434c2aa685e49ca8e814de841ee3
+            download_count: 2
+            id: 260232985
+            label: null
+            name: helm-v3.18.2-linux-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4PgtcZ
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232985
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-ppc64le.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:15Z"
+            digest: sha256:4db55ee7e7e5d89e2ce92ac88da587e9c82e0d8534caca05bc236e83f879805f
+            download_count: 7
+            id: 260232987
+            label: null
+            name: helm-v3.18.2-linux-ppc64le.tar.gz.asc
+            node_id: RA_kwDOApspmc4Pgtcb
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232987
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-ppc64le.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:15Z"
+            digest: sha256:31f666f85b6e2a5598cd22b8b4e1ee036f966a29da5345a33d1bcb2457f30361
+            download_count: 10
+            id: 260232988
+            label: null
+            name: helm-v3.18.2-linux-ppc64le.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4Pgtcc
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232988
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-ppc64le.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:15Z"
+            digest: sha256:6a8979487e76f616ca0a988161bc069214d0e9754e6a7ebad05721e5a45302a0
+            download_count: 8
+            id: 260232990
+            label: null
+            name: helm-v3.18.2-linux-ppc64le.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4Pgtce
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:15Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232990
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-riscv64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:15Z"
+            digest: sha256:653cbc585c048e954a7bc36439de9df84349b6730b128955031b89985133adde
+            download_count: 7
+            id: 260232992
+            label: null
+            name: helm-v3.18.2-linux-riscv64.tar.gz.asc
+            node_id: RA_kwDOApspmc4Pgtcg
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232992
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-riscv64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:16Z"
+            digest: sha256:2da39541b201288b8d1a1493a2d50520e0efc08b581bdb4732b6da75c5ed58e7
+            download_count: 9
+            id: 260232993
+            label: null
+            name: helm-v3.18.2-linux-riscv64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4Pgtch
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232993
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-riscv64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:16Z"
+            digest: sha256:6c543438af596483ae828e8e97926fd6418541f76c827e00be62080e555fccc3
+            download_count: 8
+            id: 260232995
+            label: null
+            name: helm-v3.18.2-linux-riscv64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4Pgtcj
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232995
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-s390x.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:16Z"
+            digest: sha256:d120766f6edc0bd2f548a1c60262e42ba4026f7244ab95c9e71e3e29eb37d35f
+            download_count: 7
+            id: 260232997
+            label: null
+            name: helm-v3.18.2-linux-s390x.tar.gz.asc
+            node_id: RA_kwDOApspmc4Pgtcl
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232997
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-s390x.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:16Z"
+            digest: sha256:e626512e71d347f5b4f99f147ed6a73b2e5430db975ae0b605af10e96026da16
+            download_count: 10
+            id: 260232998
+            label: null
+            name: helm-v3.18.2-linux-s390x.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4Pgtcm
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:16Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260232998
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-linux-s390x.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:16Z"
+            digest: sha256:e55b83f59f1b8a737eb654de55c061703490fcc413803d7a49c862400346375b
+            download_count: 8
+            id: 260233000
+            label: null
+            name: helm-v3.18.2-linux-s390x.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4Pgtco
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:17Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233000
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-amd64.zip.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:17Z"
+            digest: sha256:f558e0a60f9829ae1d7373ae82af5f4ff10eb69f3cfbdf8b8f19d27143edcb37
+            download_count: 8
+            id: 260233002
+            label: null
+            name: helm-v3.18.2-windows-amd64.zip.asc
+            node_id: RA_kwDOApspmc4Pgtcq
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:17Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233002
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-amd64.zip.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:17Z"
+            digest: sha256:6d55e680a29626d3a3fd7f45a74ce01e5a381474e0ce699e89bf6ccb85fcc6ba
+            download_count: 10
+            id: 260233003
+            label: null
+            name: helm-v3.18.2-windows-amd64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4Pgtcr
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:17Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233003
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-amd64.zip.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:17Z"
+            digest: sha256:3906984576cc86863e6bdd5d8507940d9496fb1fd124007c1eb23e198246ebb8
+            download_count: 8
+            id: 260233004
+            label: null
+            name: helm-v3.18.2-windows-amd64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4Pgtcs
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:17Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233004
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-arm64.zip.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:17Z"
+            digest: sha256:7c93741d5435cd8b81c9066eea405e49e3687f41aabcbe15e5b3b2e15f612802
+            download_count: 1
+            id: 260233005
+            label: null
+            name: helm-v3.18.2-windows-arm64.zip.asc
+            node_id: RA_kwDOApspmc4Pgtct
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:17Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233005
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-arm64.zip.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:17Z"
+            digest: sha256:ae5c5fdea8aade88a2a625b97b11972cdc4a11234f98767ef1bff45b2109e70d
+            download_count: 2
+            id: 260233006
+            label: null
+            name: helm-v3.18.2-windows-arm64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4Pgtcu
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:17Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233006
+          - browser_download_url: https://github.com/helm/helm/releases/download/v3.18.2/helm-v3.18.2-windows-arm64.zip.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2025-06-02T13:41:17Z"
+            digest: sha256:627a4aa34c14c3445657e40b76798963415d53a9e59e69c3866e1852301b9c6c
+            download_count: 2
+            id: 260233007
+            label: null
+            name: helm-v3.18.2-windows-arm64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4Pgtcv
+            size: 833
+            state: uploaded
+            updated_at: "2025-06-02T13:41:18Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+              events_url: https://api.github.com/users/mattfarina/events{/privacy}
+              followers_url: https://api.github.com/users/mattfarina/followers
+              following_url: https://api.github.com/users/mattfarina/following{/other_user}
+              gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/mattfarina
+              id: 62991
+              login: mattfarina
+              node_id: MDQ6VXNlcjYyOTkx
+              organizations_url: https://api.github.com/users/mattfarina/orgs
+              received_events_url: https://api.github.com/users/mattfarina/received_events
+              repos_url: https://api.github.com/users/mattfarina/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+              type: User
+              url: https://api.github.com/users/mattfarina
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/260233007
+          assets_url: https://api.github.com/repos/helm/helm/releases/222443571/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/62991?v=4
+            events_url: https://api.github.com/users/mattfarina/events{/privacy}
+            followers_url: https://api.github.com/users/mattfarina/followers
+            following_url: https://api.github.com/users/mattfarina/following{/other_user}
+            gists_url: https://api.github.com/users/mattfarina/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/mattfarina
+            id: 62991
+            login: mattfarina
+            node_id: MDQ6VXNlcjYyOTkx
+            organizations_url: https://api.github.com/users/mattfarina/orgs
+            received_events_url: https://api.github.com/users/mattfarina/received_events
+            repos_url: https://api.github.com/users/mattfarina/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/mattfarina/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/mattfarina/subscriptions
+            type: User
+            url: https://api.github.com/users/mattfarina
+            user_view_type: public
+          body: "Helm v3.18.2 is a patch release. Users are encouraged to upgrade
+            for the best experience. Users are encouraged to upgrade for the best
+            experience.\r\n\r\nThe community keeps growing, and we'd love to see you
+            there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+            \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
+            and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
+            via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute
+            charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
+            Installation and Upgrading\r\n\r\nDownload Helm v3.18.2. The common platform
+            binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v3.18.2-darwin-amd64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.18.2-darwin-amd64.tar.gz.sha256sum)
+            / 8bfc850d4451dccecb01c73bdc844cb1b3ed2f1b90a89fc47e7b1670e1f369ec)\r\n-
+            [MacOS arm64](https://get.helm.sh/helm-v3.18.2-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-darwin-arm64.tar.gz.sha256sum)
+            / d82a30d654862668ae1e58dbbba5ea6ed5f84312da59666ef628bf73b2188d39)\r\n-
+            [Linux amd64](https://get.helm.sh/helm-v3.18.2-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-amd64.tar.gz.sha256sum)
+            / c5deada86fe609deefdf40e9cbbe3da2f8cf3f6a4551a0ebe7886dc8fcf98bce)\r\n-
+            [Linux arm](https://get.helm.sh/helm-v3.18.2-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-arm.tar.gz.sha256sum)
+            / a848c9db5e51f7cc4975bcfbba415c30cdfb67e141b6efc0e8b3a66cd89e8607)\r\n-
+            [Linux arm64](https://get.helm.sh/helm-v3.18.2-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-arm64.tar.gz.sha256sum)
+            / 03181a494a0916b370a100a5b2536104963b095be53fb23d1e29b2afb1c7de8d)\r\n-
+            [Linux i386](https://get.helm.sh/helm-v3.18.2-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-386.tar.gz.sha256sum)
+            / dae13caca7a24d0adff3f59183a269275522964d75c1e4cbdb0ffaddc659e7bc)\r\n-
+            [Linux ppc64le](https://get.helm.sh/helm-v3.18.2-linux-ppc64le.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.18.2-linux-ppc64le.tar.gz.sha256sum)
+            / 1d21b2acdd79a13d20585b61fe90bababdd3f7047530d66aad650869c772b5c3)\r\n-
+            [Linux s390x](https://get.helm.sh/helm-v3.18.2-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v3.18.2-linux-s390x.tar.gz.sha256sum)
+            / 382920a48a0800cf2bb67bf6ab403aab15f7631b369bed9df9bdcfdd5ebd5ae9)\r\n-
+            [Linux riscv64](https://get.helm.sh/helm-v3.18.2-linux-riscv64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v3.18.2-linux-riscv64.tar.gz.sha256sum)
+            / d702db0191e6a4091d631760aded83f809d8d7edf962d5252f1ea46804183ebf)\r\n-
+            [Windows amd64](https://get.helm.sh/helm-v3.18.2-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v3.18.2-windows-amd64.zip.sha256sum)
+            / 49fc2d74a351974ebf544f8252a4e43d7e5f9e0137472415393178c2d3996e9f)\r\n-
+            [Windows arm64](https://get.helm.sh/helm-v3.18.2-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v3.18.2-windows-arm64.zip.sha256sum)
+            / 6ecdf10aa6f356ebb841d1732225437100e65fdb90f99170e1b2e5726e4fd10d)\r\n\r\nThis
+            release was signed with `672C 657B E06B 4B30 969C 4A57 4614 49C2 5E36
+            B98E ` and can be found at @mattfarina [keybase account](https://keybase.io/mattfarina).
+            Please use the attached signatures for verifying this release using `gpg`.\r\n\r\nThe
+            [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you
+            going from there. For **upgrade instructions** or detailed installation
+            notes, check the [install guide](https://helm.sh/docs/intro/install/).
+            You can also use a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3)
+            on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 3.17.3 is the
+            next patch release and will be on July 09, 2025\r\n- 3.18.0 is the next
+            minor release and will be on September 11, 2025\r\n\r\n## Changelog\r\n\r\n-
+            fix: legacy docker support broken for login 04cad4610054e5d546aa5c5d9c1b1d5cf68ec1f8
+            (Terry Howe)\r\n- Handle an empty registry config file. bc9f8a2d8baad5a54f7b421275f44c04117eb5cb
+            (Matt Farina)\r\n"
+          created_at: "2025-06-02T12:49:39Z"
+          draft: false
+          html_url: https://github.com/helm/helm/releases/tag/v3.18.2
+          id: 222443571
+          mentions_count: 1
+          name: Helm 3.18.2
+          node_id: RE_kwDOApspmc4NQjgz
+          prerelease: false
+          published_at: "2025-06-02T13:41:33Z"
+          reactions:
+            "+1": 0
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 1
+            total_count: 1
+            url: https://api.github.com/repos/helm/helm/releases/222443571/reactions
+          tag_name: v3.18.2
+          tarball_url: https://api.github.com/repos/helm/helm/tarball/v3.18.2
+          target_commitish: main
+          upload_url: https://uploads.github.com/repos/helm/helm/releases/222443571/assets{?name,label}
+          url: https://api.github.com/repos/helm/helm/releases/222443571
+          zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.2
     helmfile:
       0.163.0:
         githubRelease:

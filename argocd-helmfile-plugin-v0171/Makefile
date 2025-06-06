@@ -40,5 +40,5 @@ push:
 		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/${IMAGE_NAME}:$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/${IMAGE_NAME}:$$version -t chatwork/${IMAGE_NAME}:latest --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
+			docker buildx build -t chatwork/${IMAGE_NAME}:$$version --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
 		fi

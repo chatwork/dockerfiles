@@ -17,3 +17,8 @@ dependencies:
       githubReleases:
         source: helm/helm
     version: "> 1.0"
+  helmfile:  
+    releasesFrom:  
+      githubReleases:  
+        source: helmfile/helmfile  
+    version: "< 1.0"  

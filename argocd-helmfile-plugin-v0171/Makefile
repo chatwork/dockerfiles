@@ -9,18 +9,19 @@ PLATFORM:=$(shell case "$(ARCH)" in \
 	("x86_64") echo "amd64" ;; \
 	(*) echo $(ARCH) ;; \
 esac)
+IMAGE_NAME:=$(shell basename $$PWD | sed 's/-v.*$$//')
 
 .PHONY: build
 build:
-	@docker buildx build -t chatwork/`basename $$PWD`:latest --platform linux/${PLATFORM} -f Dockerfile --load .; \
-	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
+	@docker buildx build -t chatwork/${IMAGE_NAME}:latest --platform linux/${PLATFORM} -f Dockerfile --load .; \
+	version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/${IMAGE_NAME}:latest); \
 	if [ -n "$$version" ]; then \
-		docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
+		docker tag chatwork/${IMAGE_NAME}:latest chatwork/${IMAGE_NAME}:$$version; \
 	fi
 
 .PHONY: check
 check:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/${IMAGE_NAME}); \
 		if [ -z "$$version" ]; then \
 			echo "\033[91mError: version is not defined in Dockerfile.\033[0m"; \
 			exit 1; \
@@ -35,9 +36,9 @@ test: build
 
 .PHONY: push
 push:
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`:latest); \
-		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/$$(basename $$PWD):$$version >/dev/null 2>&1; then \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/${IMAGE_NAME}:latest); \
+		if docker inspect --format='{{index .RepoDigests 0}}' chatwork/${IMAGE_NAME}:$$version >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker buildx build -t chatwork/`basename $$PWD`:$$version -t chatwork/`basename $$PWD`:latest --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
+			docker buildx build -t chatwork/${IMAGE_NAME}:$$version -t chatwork/${IMAGE_NAME}:latest --platform linux/amd64,linux/arm64 -f Dockerfile --push .; \
 		fi

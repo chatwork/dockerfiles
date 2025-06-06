@@ -12,11 +12,6 @@ provisioners:
         helmfile_version: "{{ .helmfile.version }}"
 
 dependencies:
-  helmfile:
-    releasesFrom:
-      githubReleases:
-        source: helmfile/helmfile
-    version: "> 0.1"
   helm:
     releasesFrom:
       githubReleases:

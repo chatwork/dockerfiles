@@ -19,11 +19,6 @@ dependencies:
       githubReleases:
         source: argoproj/argo-cd
     version: "> 1.5.0"
-  helmfile:
-    releasesFrom:
-      githubReleases:
-        source: helmfile/helmfile
-    version: "> 0.1"
   helm:
     releasesFrom:
       githubReleases:

@@ -1,5 +1,7 @@
 FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 
+LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
+LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
 USER root
@@ -17,9 +19,6 @@ ARG SOPS_VERSION=3.10.1
 ARG HELM_DIFF_VERSION=3.12.0
 ARG HELM_SECRETS_VERSION=4.6.5
 ARG HELM_GIT_VERSION=1.3.0
-
-LABEL version="${HELMFILE_VERSION}-${HELM_VERSION}"
-LABEL maintainer="sakamoto@chatwork.com"
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)

@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.12.1
-    previousVersion: 1.12.0
+    version: 1.12.2
+    previousVersion: 1.12.1
     versions:
     - 1.2.5
     - 1.2.6
@@ -79,9 +79,10 @@ dependencies:
     - 1.11.4
     - 1.12.0
     - 1.12.1
+    - 1.12.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/220067191/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/224570480/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -103,32 +104,28 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.12.1 (May 21, 2025)
+        ## 1.12.2 (June 11, 2025)
 
 
         BUG FIXES:
 
-        * Include resource identity in import apply UI output ([#37044](https://github.com/hashicorp/terraform/issues/37044))
-
-        * Fix regression during provider installation by reverting back to not sending HEAD requests. ([#36998](https://github.com/hashicorp/terraform/issues/36998))
-
-        * Avoid crash on test failure in comparison in function call ([#37071](https://github.com/hashicorp/terraform/issues/37071))
+        * partial ephemeral values were rejected in ephemeral outputs ([#37210](https://github.com/hashicorp/terraform/issues/37210))
 
 
-      created_at: "2025-05-21T12:10:43Z"
+      created_at: "2025-06-11T10:22:08Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.12.1
-      id: 220067191
-      name: v1.12.1
-      node_id: RE_kwDOAQ6CpM4NHfV3
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.12.2
+      id: 224570480
+      name: v1.12.2
+      node_id: RE_kwDOAQ6CpM4NYqxw
       prerelease: false
-      published_at: "2025-05-21T13:02:01Z"
-      tag_name: v1.12.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.12.1
-      target_commitish: 33aa0f719b08aa42217777a43df597eefabc4448
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/220067191/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/220067191
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.1
+      published_at: "2025-06-11T11:02:09Z"
+      tag_name: v1.12.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.12.2
+      target_commitish: ce0baf874af938310a4cb03ad2d71150d474fa70
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/224570480/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/224570480
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.2
 meta:
   dependencies:
     terraform:
@@ -4249,3 +4246,50 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/220067191/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/220067191
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.1
+      1.12.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/224570480/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.12.2 (June 11, 2025)
+
+
+            BUG FIXES:
+
+            * partial ephemeral values were rejected in ephemeral outputs ([#37210](https://github.com/hashicorp/terraform/issues/37210))
+
+
+          created_at: "2025-06-11T10:22:08Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.12.2
+          id: 224570480
+          name: v1.12.2
+          node_id: RE_kwDOAQ6CpM4NYqxw
+          prerelease: false
+          published_at: "2025-06-11T11:02:09Z"
+          tag_name: v1.12.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.12.2
+          target_commitish: ce0baf874af938310a4cb03ad2d71150d474fa70
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/224570480/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/224570480
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.2

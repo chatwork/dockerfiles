@@ -1211,8 +1211,8 @@ dependencies:
       url: https://api.github.com/repos/helm/helm/releases/230962935
       zipball_url: https://api.github.com/repos/helm/helm/zipball/v3.18.4
   helmfile:
-    version: 1.1.2
-    previousVersion: 1.1.1
+    version: 1.1.3
+    previousVersion: 1.1.2
     versions:
     - 0.144.0
     - 0.145.2
@@ -1220,7 +1220,7 @@ dependencies:
     - "0145.4"
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/helmfile/helmfile/releases/224843702/assets
+      assets_url: https://api.github.com/repos/helmfile/helmfile/releases/231625110/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/11087727?v=4
         events_url: https://api.github.com/users/yxxhero/events{/privacy}
@@ -1241,35 +1241,41 @@ dependencies:
         type: User
         url: https://api.github.com/users/yxxhero
         user_view_type: public
-      body: "## What's Changed\r\n* build(deps): bump github.com/helmfile/chartify
-        from 0.24.2 to 0.24.3 by @dependabot in https://github.com/helmfile/helmfile/pull/2065\r\n*
-        build: update Helm to v3.18.2 and adjust related configurations by @yxxhero
-        in https://github.com/helmfile/helmfile/pull/2064\r\n* build(deps): bump github.com/helmfile/vals
-        from 0.41.1 to 0.41.2 by @dependabot in https://github.com/helmfile/helmfile/pull/2067\r\n*
-        build(deps): bump golang.org/x/sync from 0.14.0 to 0.15.0 by @dependabot in
-        https://github.com/helmfile/helmfile/pull/2068\r\n* fix-insecure-flag by @anontrex
-        in https://github.com/helmfile/helmfile/pull/2072\r\n* build(deps): bump github.com/cloudflare/circl
-        from 1.4.0 to 1.6.1 by @dependabot in https://github.com/helmfile/helmfile/pull/2074\r\n*
-        fix: update helm-diff to version 3.12.2 in CI and Dockerfiles by @yxxhero
-        in https://github.com/helmfile/helmfile/pull/2073\r\n* fix: `TestToYaml` not
-        working with 32-bit architectures by @ProbstDJakob in https://github.com/helmfile/helmfile/pull/2075\r\n\r\n##
-        New Contributors\r\n* @anontrex made their first contribution in https://github.com/helmfile/helmfile/pull/2072\r\n\r\n**Full
-        Changelog**: https://github.com/helmfile/helmfile/compare/v1.1.1...v1.1.2"
-      created_at: "2025-06-12T09:15:48Z"
+      body: "## What's Changed\r\n* build: update Helm to v3.18.3 and related dependencies
+        by @yxxhero in https://github.com/helmfile/helmfile/pull/2082\r\n* Expose
+        release version as .Release.ChartVersion for templating by @Simske in https://github.com/helmfile/helmfile/pull/2080\r\n*
+        build(deps): bump github.com/helmfile/chartify from 0.24.3 to 0.24.4 by @dependabot[bot]
+        in https://github.com/helmfile/helmfile/pull/2083\r\n* build(deps): bump k8s.io/apimachinery
+        from 0.33.1 to 0.33.2 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2086\r\n*
+        build(deps): bump github.com/helmfile/chartify from 0.24.4 to 0.24.5 by @dependabot[bot]
+        in https://github.com/helmfile/helmfile/pull/2087\r\n* build(deps): bump github.com/Masterminds/semver/v3
+        from 3.3.1 to 3.4.0 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2089\r\n*
+        build(deps): bump github.com/hashicorp/hcl/v2 from 2.23.0 to 2.24.0 by @dependabot[bot]
+        in https://github.com/helmfile/helmfile/pull/2092\r\n* build: update Helm
+        and plugin versions to v3.18.4 and v3.12.3 by @yxxhero in https://github.com/helmfile/helmfile/pull/2093\r\n*
+        docs: update status section with May 2025 release information by @yxxhero
+        in https://github.com/helmfile/helmfile/pull/2096\r\n* build(deps): bump golang.org/x/sync
+        from 0.15.0 to 0.16.0 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2099\r\n*
+        build(deps): bump golang.org/x/term from 0.32.0 to 0.33.0 by @dependabot[bot]
+        in https://github.com/helmfile/helmfile/pull/2098\r\n\r\n## New Contributors\r\n*
+        @Simske made their first contribution in https://github.com/helmfile/helmfile/pull/2080\r\n\r\n**Full
+        Changelog**: https://github.com/helmfile/helmfile/compare/v1.1.2...v1.1.3"
+      created_at: "2025-07-10T22:55:14Z"
       draft: false
-      html_url: https://github.com/helmfile/helmfile/releases/tag/v1.1.2
-      id: 224843702
-      mentions_count: 4
-      name: v1.1.2
-      node_id: RE_kwDOHEifes4NZte2
+      html_url: https://github.com/helmfile/helmfile/releases/tag/v1.1.3
+      id: 231625110
+      immutable: false
+      mentions_count: 3
+      name: v1.1.3
+      node_id: RE_kwDOHEifes4NzlGW
       prerelease: false
-      published_at: "2025-06-12T09:56:09Z"
-      tag_name: v1.1.2
-      tarball_url: https://api.github.com/repos/helmfile/helmfile/tarball/v1.1.2
+      published_at: "2025-07-10T22:56:24Z"
+      tag_name: v1.1.3
+      tarball_url: https://api.github.com/repos/helmfile/helmfile/tarball/v1.1.3
       target_commitish: main
-      upload_url: https://uploads.github.com/repos/helmfile/helmfile/releases/224843702/assets{?name,label}
-      url: https://api.github.com/repos/helmfile/helmfile/releases/224843702
-      zipball_url: https://api.github.com/repos/helmfile/helmfile/zipball/v1.1.2
+      upload_url: https://uploads.github.com/repos/helmfile/helmfile/releases/231625110/assets{?name,label}
+      url: https://api.github.com/repos/helmfile/helmfile/releases/231625110
+      zipball_url: https://api.github.com/repos/helmfile/helmfile/zipball/v1.1.3
 meta:
   dependencies:
     helm:

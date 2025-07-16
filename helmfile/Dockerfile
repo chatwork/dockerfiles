@@ -22,7 +22,8 @@ WORKDIR /
 
 RUN yum update -y \
     && yum upgrade -y \
-    && yum install jq bash tar gzip unzip git curl wget -y \
+    && yum install jq bash tar gzip unzip git wget -y \
+    && yum install curl -y --allowerasing \
     && yum clean all \
     && rm -rf /var/cache/yum/*
 

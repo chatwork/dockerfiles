@@ -1,4 +1,4 @@
-FROM chatwork/aws:2.27.50
+FROM chatwork/aws:2.27.51
 
 ARG TARGETARCH
 ARG ATLANTIS_VERSION=0.35.0
@@ -11,6 +11,11 @@ LABEL maintainer="sakamoto@chatwork.com"
 
 # In the official Atlantis image we only have the latest of each Terraform version.
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN dnf update -y && \
+    dnf install -y dirmngr --allowerasing && \
+    dnf clean all && \
+    rm -rf /var/cache/dnf
+
 RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1.1.9 1.2.9 ${DEFAULT_TERRAFORM_VERSION}" && \
     case "${TARGETARCH}" in \
         "amd64") TERRAFORM_ARCH=amd64 ;; \

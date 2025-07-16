@@ -4,7 +4,7 @@ ARG TARGETOS
 ARG TARGETARCH
 
 ARG KUBECTL_VERSION=1.28.7
-ARG HELMFILE_VERSION=1.1.2
+ARG HELMFILE_VERSION=1.1.3
 ARG HELM_VERSION=3.18.4
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz
 ARG HELMFILE_FILE_NAME=helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
@@ -22,7 +22,8 @@ WORKDIR /
 
 RUN yum update -y \
     && yum upgrade -y \
-    && yum install jq bash tar gzip unzip git curl wget -y \
+    && yum install jq bash tar gzip unzip git wget -y \
+    && yum install curl -y --allowerasing \
     && yum clean all \
     && rm -rf /var/cache/yum/*
 

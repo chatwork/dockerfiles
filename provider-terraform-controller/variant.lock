@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.12.2
-    previousVersion: 1.12.1
+    version: 1.13.0
+    previousVersion: 1.12.2
     versions:
     - 1.2.5
     - 1.2.6
@@ -80,9 +80,10 @@ dependencies:
     - 1.12.0
     - 1.12.1
     - 1.12.2
+    - 1.13.0
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/224570480/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/241266667/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -103,29 +104,101 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
-      body: |+
-        ## 1.12.2 (June 11, 2025)
+      body: |
+        ## 1.13.0 (August 20, 2025)
+
+
+        NEW FEATURES:
+
+        * The new command `terraform stacks` exposes some stack operations through the cli. The available subcommands depend on the stacks plugin implementation. Use `terraform stacks -help` to see available commands. ([#36931](https://github.com/hashicorp/terraform/issues/36931))
+
+
+        ENHANCEMENTS:
+
+        * Filesystem functions are now checked for consistent results to catch invalid data during apply ([#37001](https://github.com/hashicorp/terraform/issues/37001))
+
+        * Allow successful init when provider constraint matches at least one valid version ([#37137](https://github.com/hashicorp/terraform/issues/37137))
+
+        * Performance fix for evaluating high cardinality resources ([#37154](https://github.com/hashicorp/terraform/issues/37154))
+
+        *  TF Test: Allow parallel execution of teardown operations ([#37169](https://github.com/hashicorp/terraform/issues/37169))
+
+        * `terraform test`: Test authors can now specify definitions for external variables that are referenced within test files directly within the test file itself. ([#37195](https://github.com/hashicorp/terraform/issues/37195))
+
+        * `terraform test`: File-level variable blocks can now reference run outputs and other variables." ([#37205](https://github.com/hashicorp/terraform/issues/37205))
+
+        * skip redundant comparisons when comparing planned set changes ([#37280](https://github.com/hashicorp/terraform/issues/37280))
+
+        * type checking: improve error message on type mismatches. ([#37298](https://github.com/hashicorp/terraform/issues/37298))
 
 
         BUG FIXES:
 
-        * partial ephemeral values were rejected in ephemeral outputs ([#37210](https://github.com/hashicorp/terraform/issues/37210))
+        * Added a missing warning diagnostic that alerts users when child module contains an ignored `cloud` block. ([#37180](https://github.com/hashicorp/terraform/issues/37180))
+
+        * Nested module outputs could lose sensitivity, even when marked as such in the configuration ([#37212](https://github.com/hashicorp/terraform/issues/37212))
+
+        * workspace: Updated validation to reject workspaces named "" ([#37267](https://github.com/hashicorp/terraform/issues/37267))
+
+        * workspace: Updated the `workspace delete` command to reject `""` as an invalid workspace name ([#37275](https://github.com/hashicorp/terraform/issues/37275))
+
+        * plan: truncate invalid or dynamic references in the relevant attributes ([#37290](https://github.com/hashicorp/terraform/issues/37290))
+
+        * Test run Parallelism of 1 should not result in deadlock ([#37292](https://github.com/hashicorp/terraform/issues/37292))
+
+        * static validation: detect invalid static references via indexes on objects. ([#37298](https://github.com/hashicorp/terraform/issues/37298))
+
+        * Fixes resource identity being dropped from state in certain cases ([#37396](https://github.com/hashicorp/terraform/issues/37396))
 
 
-      created_at: "2025-06-11T10:22:08Z"
+        NOTES:
+
+        * The command `terraform rpcapi` is now generally available. It is not intended for public consumption, but exposes certain Terraform operations through an RPC interface compatible with [go-plugin](https://github.com/hashicorp/go-plugin). ([#37067](https://github.com/hashicorp/terraform/issues/37067))
+
+
+        UPGRADE NOTES:
+
+        * `terraform test`: External variables referenced within test files should now be accompanied by a `variable` definition block within the test file. This is optional, but users with complex external variables may see error diagnostics without the additional variable definition. ([#37195](https://github.com/hashicorp/terraform/issues/37195))
+
+
+        ## Previous Releases
+
+        For information on prior major and minor releases, refer to their changelogs:
+
+        - [v1.12](https://github.com/hashicorp/terraform/blob/v1.12/CHANGELOG.md)
+        - [v1.11](https://github.com/hashicorp/terraform/blob/v1.11/CHANGELOG.md)
+        - [v1.10](https://github.com/hashicorp/terraform/blob/v1.10/CHANGELOG.md)
+        - [v1.9](https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md)
+        - [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
+        - [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
+        - [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
+        - [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
+        - [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
+        - [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
+        - [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
+        - [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
+        - [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
+        - [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
+        - [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
+        - [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
+        - [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
+        - [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
+      created_at: "2025-08-20T14:30:07Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.12.2
-      id: 224570480
-      name: v1.12.2
-      node_id: RE_kwDOAQ6CpM4NYqxw
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.0
+      id: 241266667
+      immutable: false
+      name: v1.13.0
+      node_id: RE_kwDOAQ6CpM4OYW_r
       prerelease: false
-      published_at: "2025-06-11T11:02:09Z"
-      tag_name: v1.12.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.12.2
-      target_commitish: ce0baf874af938310a4cb03ad2d71150d474fa70
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/224570480/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/224570480
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.2
+      published_at: "2025-08-20T16:22:54Z"
+      tag_name: v1.13.0
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.0
+      target_commitish: 945ce80e51593b2aef5705e944f108cbdf532a68
+      updated_at: "2025-08-20T16:22:54Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/241266667/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/241266667
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.0
 meta:
   dependencies:
     terraform:
@@ -4293,3 +4366,122 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/224570480/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/224570480
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.12.2
+      1.13.0:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/241266667/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |
+            ## 1.13.0 (August 20, 2025)
+
+
+            NEW FEATURES:
+
+            * The new command `terraform stacks` exposes some stack operations through the cli. The available subcommands depend on the stacks plugin implementation. Use `terraform stacks -help` to see available commands. ([#36931](https://github.com/hashicorp/terraform/issues/36931))
+
+
+            ENHANCEMENTS:
+
+            * Filesystem functions are now checked for consistent results to catch invalid data during apply ([#37001](https://github.com/hashicorp/terraform/issues/37001))
+
+            * Allow successful init when provider constraint matches at least one valid version ([#37137](https://github.com/hashicorp/terraform/issues/37137))
+
+            * Performance fix for evaluating high cardinality resources ([#37154](https://github.com/hashicorp/terraform/issues/37154))
+
+            *  TF Test: Allow parallel execution of teardown operations ([#37169](https://github.com/hashicorp/terraform/issues/37169))
+
+            * `terraform test`: Test authors can now specify definitions for external variables that are referenced within test files directly within the test file itself. ([#37195](https://github.com/hashicorp/terraform/issues/37195))
+
+            * `terraform test`: File-level variable blocks can now reference run outputs and other variables." ([#37205](https://github.com/hashicorp/terraform/issues/37205))
+
+            * skip redundant comparisons when comparing planned set changes ([#37280](https://github.com/hashicorp/terraform/issues/37280))
+
+            * type checking: improve error message on type mismatches. ([#37298](https://github.com/hashicorp/terraform/issues/37298))
+
+
+            BUG FIXES:
+
+            * Added a missing warning diagnostic that alerts users when child module contains an ignored `cloud` block. ([#37180](https://github.com/hashicorp/terraform/issues/37180))
+
+            * Nested module outputs could lose sensitivity, even when marked as such in the configuration ([#37212](https://github.com/hashicorp/terraform/issues/37212))
+
+            * workspace: Updated validation to reject workspaces named "" ([#37267](https://github.com/hashicorp/terraform/issues/37267))
+
+            * workspace: Updated the `workspace delete` command to reject `""` as an invalid workspace name ([#37275](https://github.com/hashicorp/terraform/issues/37275))
+
+            * plan: truncate invalid or dynamic references in the relevant attributes ([#37290](https://github.com/hashicorp/terraform/issues/37290))
+
+            * Test run Parallelism of 1 should not result in deadlock ([#37292](https://github.com/hashicorp/terraform/issues/37292))
+
+            * static validation: detect invalid static references via indexes on objects. ([#37298](https://github.com/hashicorp/terraform/issues/37298))
+
+            * Fixes resource identity being dropped from state in certain cases ([#37396](https://github.com/hashicorp/terraform/issues/37396))
+
+
+            NOTES:
+
+            * The command `terraform rpcapi` is now generally available. It is not intended for public consumption, but exposes certain Terraform operations through an RPC interface compatible with [go-plugin](https://github.com/hashicorp/go-plugin). ([#37067](https://github.com/hashicorp/terraform/issues/37067))
+
+
+            UPGRADE NOTES:
+
+            * `terraform test`: External variables referenced within test files should now be accompanied by a `variable` definition block within the test file. This is optional, but users with complex external variables may see error diagnostics without the additional variable definition. ([#37195](https://github.com/hashicorp/terraform/issues/37195))
+
+
+            ## Previous Releases
+
+            For information on prior major and minor releases, refer to their changelogs:
+
+            - [v1.12](https://github.com/hashicorp/terraform/blob/v1.12/CHANGELOG.md)
+            - [v1.11](https://github.com/hashicorp/terraform/blob/v1.11/CHANGELOG.md)
+            - [v1.10](https://github.com/hashicorp/terraform/blob/v1.10/CHANGELOG.md)
+            - [v1.9](https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md)
+            - [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
+            - [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
+            - [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
+            - [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
+            - [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
+            - [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
+            - [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
+            - [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
+            - [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
+            - [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
+            - [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
+            - [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
+            - [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
+            - [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
+          created_at: "2025-08-20T14:30:07Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.0
+          id: 241266667
+          immutable: false
+          name: v1.13.0
+          node_id: RE_kwDOAQ6CpM4OYW_r
+          prerelease: false
+          published_at: "2025-08-20T16:22:54Z"
+          tag_name: v1.13.0
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.0
+          target_commitish: 945ce80e51593b2aef5705e944f108cbdf532a68
+          updated_at: "2025-08-20T16:22:54Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/241266667/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/241266667
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.0

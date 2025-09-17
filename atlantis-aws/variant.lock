@@ -2993,8 +2993,8 @@ dependencies:
       url: https://api.github.com/repos/tianon/gosu/releases/244943391
       zipball_url: https://api.github.com/repos/tianon/gosu/zipball/1.18
   terraform:
-    version: 1.13.2
-    previousVersion: 1.13.1
+    version: 1.13.3
+    previousVersion: 1.13.2
     versions:
     - 1.3.2
     - 1.3.3
@@ -3062,9 +3062,10 @@ dependencies:
     - 1.13.0
     - 1.13.1
     - 1.13.2
+    - 1.13.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/246191885/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/247981745/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -3086,32 +3087,30 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.13.2 (September 10, 2025)
+        ## 1.13.3 (September 17, 2025)
 
 
         BUG FIXES:
 
-        * test: Fix the order of execution of cleanup nodes ([#37546](https://github.com/hashicorp/terraform/issues/37546))
-
-        * apply: hide sensitive inputs when values have changed between plan and apply ([#37582](https://github.com/hashicorp/terraform/issues/37582))
+        * variable validation: keep sensitive and ephemeral metadata when evaluating variable conditions. ([#37595](https://github.com/hashicorp/terraform/issues/37595))
 
 
-      created_at: "2025-09-10T12:34:07Z"
+      created_at: "2025-09-17T11:27:53Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.2
-      id: 246191885
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.3
+      id: 247981745
       immutable: false
-      name: v1.13.2
-      node_id: RE_kwDOAQ6CpM4OrJcN
+      name: v1.13.3
+      node_id: RE_kwDOAQ6CpM4Ox-ax
       prerelease: false
-      published_at: "2025-09-10T14:10:50Z"
-      tag_name: v1.13.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.2
-      target_commitish: 9325a5d6b5be8450cf378d5f1f21c8abe1b10ec8
-      updated_at: "2025-09-10T14:10:50Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/246191885/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/246191885
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.2
+      published_at: "2025-09-17T13:40:26Z"
+      tag_name: v1.13.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.3
+      target_commitish: 9eaccddfede10d61aa6e11ee0770a71be73974ff
+      updated_at: "2025-09-17T13:40:26Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/247981745/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/247981745
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.3
 meta:
   dependencies:
     atlantis:
@@ -47335,3 +47334,52 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/246191885/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/246191885
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.2
+      1.13.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/247981745/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.13.3 (September 17, 2025)
+
+
+            BUG FIXES:
+
+            * variable validation: keep sensitive and ephemeral metadata when evaluating variable conditions. ([#37595](https://github.com/hashicorp/terraform/issues/37595))
+
+
+          created_at: "2025-09-17T11:27:53Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.3
+          id: 247981745
+          immutable: false
+          name: v1.13.3
+          node_id: RE_kwDOAQ6CpM4Ox-ax
+          prerelease: false
+          published_at: "2025-09-17T13:40:26Z"
+          tag_name: v1.13.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.3
+          target_commitish: 9eaccddfede10d61aa6e11ee0770a71be73974ff
+          updated_at: "2025-09-17T13:40:26Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/247981745/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/247981745
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.3

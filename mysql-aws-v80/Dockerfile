@@ -9,9 +9,7 @@ ARG MYSQL_VERSION=8.0.28
 ARG AWSCLI_VERSION=2.31.3
 ARG VAULT_VERSION=1.20.4
 
-RUN microdnf update -y \
-    && microdnf upgrade -y \
-    && microdnf install -y curl jq unzip \
+RUN microdnf install -y curl jq unzip \
     && microdnf clean all
 
 RUN AWS_CLI_ARCH="" \

@@ -16,7 +16,7 @@ dependencies:
     releasesFrom:
       validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+-debian"
       dockerImageTags:
-        source: _/mysql
+        source: mysql
     version: "~ 8.0.0"
   awscli:
     releasesFrom:

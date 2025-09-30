@@ -23,8 +23,8 @@ command:
   /usr/bin/mysql --version:
     exit-status: 0
     stdout:
-      - 8.0.43
+      - {{ .mysql_version }}
   /usr/local/bin/aws --version:
     exit-status: 0
     stdout:
-      - 2.31.3
+      - {{ .awscli_version }}

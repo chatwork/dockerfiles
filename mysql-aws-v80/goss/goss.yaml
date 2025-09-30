@@ -17,3 +17,14 @@ file:
     exists: true
   /bin/sed:
     exists: true
+  /usr/local/bin/vault:
+    exists: true
+command:
+  /usr/bin/mysql --version:
+    exit-status: 0
+    stdout:
+      - 8.0.43
+  /usr/local/bin/aws --version:
+    exit-status: 0
+    stdout:
+      - 2.31.3

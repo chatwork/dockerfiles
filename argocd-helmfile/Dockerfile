@@ -1,6 +1,6 @@
-FROM quay.io/argoproj/argocd:v3.1.7
+FROM quay.io/argoproj/argocd:v3.1.8
 
-LABEL version="3.1.7-1.1.7"
+LABEL version="3.1.8-1.1.7"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install

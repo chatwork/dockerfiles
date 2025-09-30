@@ -1,4 +1,4 @@
-FROM mysql:{{ .mysql_version }}-oracle
+FROM mysql:{{ .mysql_version }}
 
 LABEL version="{{ .mysql_version }}-{{ .awscli_version }}"
 

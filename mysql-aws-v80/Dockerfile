@@ -1,12 +1,12 @@
 FROM mysql:8.0.43
 
-LABEL version="8.0.43-2.31.3"
+LABEL version="8.0.43-2.31.4"
 
 ARG TARGETOS
 ARG TARGETARCH
 
 ARG MYSQL_VERSION=8.0.43
-ARG AWSCLI_VERSION=2.31.3
+ARG AWSCLI_VERSION=2.31.4
 ARG VAULT_VERSION=1.20.4
 
 RUN microdnf update -y \
@@ -22,7 +22,7 @@ RUN AWS_CLI_ARCH="" \
     esac \
     && echo ${AWS_CLI_ARCH} \
     && cd /tmp \
-    && curl "https://awscli.amazonaws.com/awscli-exe-${TARGETOS}-${AWS_CLI_ARCH}.zip" -o "awscliv2.zip" \
+    && curl "https://awscli.amazonaws.com/awscli-exe-${TARGETOS}-${AWS_CLI_ARCH}-${AWSCLI_VERSION}.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
     && ./aws/install \
     && cd ${HOME} \

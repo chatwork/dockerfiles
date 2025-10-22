@@ -1,8 +1,10 @@
 provisioners:
-  textReplace:
+  files:
     Dockerfile:
-      from: "ARG KUBECTL_VERSION={{ .kubectl.previousVersion }}"
-      to: "ARG KUBECTL_VERSION={{ .kubectl.version }}"
+      source: Dockerfile.tpl
+      arguments:
+        kubectl_version: "{{ .kubectl.version }}"
+  textReplace:
     goss/goss.yaml:
       from: "- v{{ .kubectl.previousVersion }}"
       to: "- v{{ .kubectl.version }}"

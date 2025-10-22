@@ -1,6 +1,6 @@
 FROM amazon/aws-cli:latest
 
-ARG KUBECTL_VERSION=1.33.5
+ARG KUBECTL_VERSION={{ .kubectl_version }}
 ARG TARGETOS
 ARG TARGETARCH
 

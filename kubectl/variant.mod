@@ -4,10 +4,10 @@ provisioners:
       source: Dockerfile.tpl
       arguments:
         kubectl_version: "{{ .kubectl.version }}"
-  textReplace:
     goss/goss.yaml:
-      from: "- v{{ .kubectl.previousVersion }}"
-      to: "- v{{ .kubectl.version }}"
+      source: goss/goss.yaml.tpl
+      arguments:
+        kubectl_version: "{{ .kubectl.version }}"
 
 dependencies:
   kubectl:
@@ -16,5 +16,5 @@ dependencies:
         command: curl
         args:
         - -s
-        - 'https://storage.googleapis.com/kubernetes-release/release/stable.txt'
+        - 'https://cdn.dl.k8s.io/release/stable.txt'
     version: "> 1.0"

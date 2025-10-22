@@ -3,5 +3,5 @@ file:
     exists: true
     mode: "0711"
 command:
-  /usr/local/bin/kubectl version --client=true --output=json:
+  /usr/local/bin/kubectl version --client=true:
     exit-status: 0

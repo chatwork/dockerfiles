@@ -3,7 +3,7 @@ provisioners:
     Dockerfile:
       source: Dockerfile.tpl
       arguments:
-        kubectl_version: "{{ .kubectl.previousVersion }}"
+        kubectl_version: "{{ .kubectl.version }}"
   textReplace:
     goss/goss.yaml:
       from: "- v{{ .kubectl.previousVersion }}"

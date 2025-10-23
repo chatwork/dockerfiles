@@ -9,6 +9,10 @@ on:
       - synchronize
   workflow_dispatch:
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   test:
     strategy:

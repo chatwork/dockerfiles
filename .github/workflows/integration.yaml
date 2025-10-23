@@ -62,15 +62,15 @@ jobs:
           echo ARCH: "${ARCH}"
           echo EXTENSION: "${EXTENSION}"
 
-          while read DIR; do
+          make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-              make build
-              make test
+              make build;
+              make test;
             else
-              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped."
+              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
-          done < <(make ci:diff)
+          done
       - name: Notification failed
         if: failure() && github.actor == 'cw-circleci'
         run: |
@@ -129,59 +129,59 @@ jobs:
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          while read DIR; do
+          make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-              make build
+              make build;
             else
-              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped."
+              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
-          done < <(make ci:diff)
+          done
       - name: Push
         run: |
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          while read DIR; do
+          make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
             if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-              make push
+              make push;
             else
-              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped."
+              echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
-          done < <(make ci:diff)
+          done
       - name: Notification failed
         if: failure()
         run: |
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          while read DIR; do
+          make ci:diff | while read DIR; do
             if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
               make ci:notify -e TITLE="Github Actions: Failed push chatwork/${DIR} arch: $(make arch) (devil)" \
-                -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")"
+                -e BODY="$(git log -1 --pretty=format:"%h - %an : %s")";
             else
-              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped."
+              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
             fi
-          done < <(make ci:diff)
+          done
       - name: Notification success
         if: success()
         run: |
           ARCH=`make arch`
           EXTENSION=`make extension`
 
-          while read DIR; do
+          make ci:diff | while read DIR; do
             if find ./${DIR} -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
-              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR})
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
               echo "version: ${version}"
-              changelog=$(make ci:changelog -e DIR="${DIR}/")
+              changelog=$(make ci:changelog -e DIR="${DIR}/");
               echo "changelog: ${changelog}"
               make ci:notify -e TITLE="Release chatwork/${DIR}:${version} arch: $(make arch) (gogo)" \
-                -e BODY="$(echo -e "changelog\n${changelog}")"
+                -e BODY="$(echo -e "changelog\n${changelog}")";
             else
-              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped."
+              echo "chatwork/${DIR} is ${ARCH} not supported. docker push was skipped.";
             fi
-          done < <(make ci:diff)
+          done
   manifest:
     if: github.ref_name == 'master'
     needs:
@@ -232,15 +232,15 @@ jobs:
       - name: Update manifest
         run: |
           make ci:diff
-          while read DIR; do
+          make ci:diff | while read DIR; do
             if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
-              cd ${GITHUB_WORKSPACE}/${DIR}
-              make build
-              make manifest:push
+              cd ${GITHUB_WORKSPACE}/${DIR};
+              make build;
+              make manifest:push;
             else
               echo "skip manifest job"
             fi
-          done < <(make ci:diff)
+          done
       - name: Notification failed
         if: failure()
         run: |
@@ -249,10 +249,10 @@ jobs:
       - name: Notification success
         if: success()
         run: |
-          while read DIR; do
+          make ci:diff | while read DIR; do
             if [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ] && [ -e "$GITHUB_WORKSPACE/$DIR/Dockerfile" ] && [ ! -L "$GITHUB_WORKSPACE/$DIR/Dockerfile.arm64" ]; then
-              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR})
+              version=$(docker inspect -f {{.Config.Labels.version}} chatwork/${DIR});
               make ci:notify -e TITLE="manifest succeeded chatwork/${DIR}:${version} (gogo)" \
-                -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)"
+                -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)";
             fi
-          done < <(make ci:diff)
+          done

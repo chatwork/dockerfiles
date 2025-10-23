@@ -9,10 +9,6 @@ on:
       - synchronize
   workflow_dispatch:
 
-defaults:
-  run:
-    shell: bash -e -o pipefail {0}
-
 jobs:
   test:
     strategy:
@@ -24,6 +20,9 @@ jobs:
           - runner: ubuntu-24.04-arm
             platform: linux/arm64
     runs-on: ${{ matrix.runner }}
+    defaults:
+      run:
+        shell: bash
     steps:
       - name: Set environment variables
         run: |

@@ -14,7 +14,7 @@ RUN chmod +x /usr/local/bin/kubectl
 
 RUN yum update -y \
     && yum upgrade -y \
-    && yum install jq bash tar gzip unzip curl wget -y \
+    && yum install jq bash tar gzip unzip wget -y \
     && yum clean all \
     && rm -rf /var/cache/yum/*
 

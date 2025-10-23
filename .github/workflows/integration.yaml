@@ -60,16 +60,14 @@ jobs:
           echo ARCH: "${ARCH}"
           echo EXTENSION: "${EXTENSION}"
 
-          while read DIR; do
+          make ci:diff | while read DIR; do
             cd ${GITHUB_WORKSPACE}/${DIR}
-            files=$(find . -type l -o -type f -name "Dockerfile${EXTENSION}" 2>/dev/null || true)
-            if [ -n "$files" ]; then
-              make build
-              make test
+            if find . -type l -o -type f -name "Dockerfile${EXTENSION}" | grep Dockerfile ; then
+              make build;
             else
               echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
-          done < <(make ci:diff)
+          done
       - name: Notification failed
         if: failure() && github.actor == 'cw-circleci'
         run: |

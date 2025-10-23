@@ -20,9 +20,6 @@ jobs:
           - runner: ubuntu-24.04-arm
             platform: linux/arm64
     runs-on: ${{ matrix.runner }}
-    defaults:
-      run:
-        shell: bash -e -o pipefail {0}
     steps:
       - name: Set environment variables
         run: |
@@ -71,6 +68,7 @@ jobs:
               echo "${DIR} is ${ARCH} not supported. make build & make test was skipped.";
             fi
           done
+        shell: bash -e -o pipefail {0}
       - name: Notification failed
         if: failure() && github.actor == 'cw-circleci'
         run: |
@@ -88,9 +86,6 @@ jobs:
           - runner: ubuntu-24.04-arm
             platform: linux/arm64
     runs-on: ${{ matrix.runner }}
-    defaults:
-      run:
-        shell: bash -e -o pipefail {0}
     steps:
       - name: Set environment variables
         run: |
@@ -184,13 +179,10 @@ jobs:
           done
   manifest:
     if: github.ref_name == 'master'
-    needs:
+    needs: 
       - test
       - push
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -e -o pipefail {0}
     steps:
       - name: Set environment variables
         run: |

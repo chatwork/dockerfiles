@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.13.4
-    previousVersion: 1.13.3
+    version: 1.13.5
+    previousVersion: 1.13.4
     versions:
     - 1.2.5
     - 1.2.6
@@ -85,9 +85,10 @@ dependencies:
     - 1.13.2
     - 1.13.3
     - 1.13.4
+    - 1.13.5
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/254644141/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/259869999/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -109,30 +110,32 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.13.4 (October 15, 2025)
+        ## 1.13.5 (November 5, 2025)
 
 
         BUG FIXES:
 
-        * Fix crash when showing a cloud plan without having a cloud backend ([#37751](https://github.com/hashicorp/terraform/issues/37751))
+        * impure functions could cause templatefile to incorrectly fail consistency checks ([#37807](https://github.com/hashicorp/terraform/issues/37807))
+
+        * Allow filesystem functions to return inconsistent results when evaluated within provider configuration ([#37854](https://github.com/hashicorp/terraform/issues/37854))
 
 
-      created_at: "2025-10-15T09:47:55Z"
+      created_at: "2025-11-05T10:33:17Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.4
-      id: 254644141
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.5
+      id: 259869999
       immutable: false
-      name: v1.13.4
-      node_id: RE_kwDOAQ6CpM4PLY-t
+      name: v1.13.5
+      node_id: RE_kwDOAQ6CpM4PfU0v
       prerelease: false
-      published_at: "2025-10-15T10:43:39Z"
-      tag_name: v1.13.4
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.4
-      target_commitish: e15f8b30b6e1ecf0d09bbe143c1525d9d2d51b54
-      updated_at: "2025-10-15T10:43:39Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/254644141/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/254644141
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.4
+      published_at: "2025-11-05T11:42:10Z"
+      tag_name: v1.13.5
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.5
+      target_commitish: 328813676aec7a4e2a491484f91b5e0b67847b6c
+      updated_at: "2025-11-05T11:42:10Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/259869999/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/259869999
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.5
 meta:
   dependencies:
     terraform:
@@ -4619,3 +4622,54 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/254644141/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/254644141
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.4
+      1.13.5:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/259869999/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.13.5 (November 5, 2025)
+
+
+            BUG FIXES:
+
+            * impure functions could cause templatefile to incorrectly fail consistency checks ([#37807](https://github.com/hashicorp/terraform/issues/37807))
+
+            * Allow filesystem functions to return inconsistent results when evaluated within provider configuration ([#37854](https://github.com/hashicorp/terraform/issues/37854))
+
+
+          created_at: "2025-11-05T10:33:17Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.5
+          id: 259869999
+          immutable: false
+          name: v1.13.5
+          node_id: RE_kwDOAQ6CpM4PfU0v
+          prerelease: false
+          published_at: "2025-11-05T11:42:10Z"
+          tag_name: v1.13.5
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.5
+          target_commitish: 328813676aec7a4e2a491484f91b5e0b67847b6c
+          updated_at: "2025-11-05T11:42:10Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/259869999/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/259869999
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.5

@@ -34,7 +34,7 @@ RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1
     done && \
     ln -s "/usr/local/bin/tf/versions/${DEFAULT_TERRAFORM_VERSION}/terraform" /usr/local/bin/terraform
 
-ARG CONFTEST_VERSION=0.63.0
+ARG CONFTEST_VERSION=0.64.0
 ARG CONFTEST_RPM_FILE="conftest_${CONFTEST_VERSION}_linux_${TARGETARCH}.rpm"
 
 RUN curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_RPM_FILE} && \

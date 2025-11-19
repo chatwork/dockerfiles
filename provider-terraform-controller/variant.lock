@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.13.5
-    previousVersion: 1.13.4
+    version: 1.14.0
+    previousVersion: 1.13.5
     versions:
     - 1.2.5
     - 1.2.6
@@ -86,9 +86,10 @@ dependencies:
     - 1.13.3
     - 1.13.4
     - 1.13.5
+    - 1.14.0
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/259869999/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/263653089/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -109,33 +110,108 @@ dependencies:
         type: User
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
-      body: |+
-        ## 1.13.5 (November 5, 2025)
+      body: |
+        ## 1.14.0 (November 19, 2025)
+
+
+        NEW FEATURES:
+
+        * **List Resources**: List resources can be defined in `*.tfquery.hcl` files and allow querying and filterting existing infrastructure.
+
+        * A new Terraform command `terraform query`: Executes list operations against existing infrastructure and displays the results. The command can optionally generate configuration for importing results into Terraform.
+
+        * A new GenerateResourceConfiguration RPC allows providers to create more precise configuration values during import. ([#37515](https://github.com/hashicorp/terraform/issues/37515))
+
+        * New top-level Actions block: Actions are provider defined and meant to codify use cases outside the normal CRUD model in your Terraform configuration. Providers can define Actions like `aws_lambda_invoke` or `aws_cloudfront_create_invalidation` that do something imparative outside of Terraforms normal CRUD model. You can configure such a side-effect with an action block and have actions triggered through the lifecycle of a resource or through passing the `-invoke` CLI flag. ([#37553](https://github.com/hashicorp/terraform/issues/37553))
+
+
+        ENHANCEMENTS:
+
+        * terraform test: expected diagnostics will be included in test output when running in verbose mode" ([#37362](https://github.com/hashicorp/terraform/issues/37362))
+
+        * terraform test: ignore prevent_destroy attribute during when cleaning up tests" ([#37364](https://github.com/hashicorp/terraform/issues/37364))
+
+        * `terraform stacks` command support for `-help` flag ([#37645](https://github.com/hashicorp/terraform/issues/37645))
+
+        * query: support offline validation of query files via -query flag in the validate command ([#37671](https://github.com/hashicorp/terraform/issues/37671))
+
+        * Updates to support the AWS European Sovereign Cloud ([#37721](https://github.com/hashicorp/terraform/issues/37721))
 
 
         BUG FIXES:
 
-        * impure functions could cause templatefile to incorrectly fail consistency checks ([#37807](https://github.com/hashicorp/terraform/issues/37807))
+        * Retrieve all workspace variables while doing a `terraform import`, include variables inherited from variable sets but not overwritten by the workspace. ([#37241](https://github.com/hashicorp/terraform/issues/37241))
+
+        * Fix OSS backend proxy support by adding a proxy layer for OSS backend operations. Resolves hashicorp/terraform#36897. ([#36897](https://github.com/hashicorp/terraform/issues/36897))
+
+        * console and test: return explicit diagnostics when referencing resources that were not included in the most recent operation. ([#37663](https://github.com/hashicorp/terraform/issues/37663))
+
+        * query: generate unique resource identifiers for results of expanded list resources ([#37681](https://github.com/hashicorp/terraform/issues/37681))
+
+        * The CLI now summarizes the number of actions invoked during `terraform apply`, matching the plan output. ([#37689](https://github.com/hashicorp/terraform/issues/37689))
 
         * Allow filesystem functions to return inconsistent results when evaluated within provider configuration ([#37854](https://github.com/hashicorp/terraform/issues/37854))
 
+        * query: improve error handling for missing identity schemas ([#37863](https://github.com/hashicorp/terraform/issues/37863))
 
-      created_at: "2025-11-05T10:33:17Z"
+
+        UPGRADE NOTES:
+
+        * The parallelism of Terraform operations within container runtimes may be reduced depending on the CPU bandwidth limit setting. ([#37436](https://github.com/hashicorp/terraform/issues/37436))
+
+        * Building Terraform 1.14 requires macOS Monterey or later (due to being built on Go 1.25 which imposes these requirements) ([#37436](https://github.com/hashicorp/terraform/issues/37436))
+
+
+        ## Previous Releases
+
+        For information on prior major and minor releases, refer to their changelogs:
+
+        - [v1.13](https://github.com/hashicorp/terraform/blob/v1.13/CHANGELOG.md)
+        - [v1.12](https://github.com/hashicorp/terraform/blob/v1.12/CHANGELOG.md)
+        - [v1.11](https://github.com/hashicorp/terraform/blob/v1.11/CHANGELOG.md)
+        - [v1.10](https://github.com/hashicorp/terraform/blob/v1.10/CHANGELOG.md)
+        - [v1.9](https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md)
+        - [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
+        - [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
+        - [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
+        - [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
+        - [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
+        - [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
+        - [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
+        - [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
+        - [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
+        - [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
+        - [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
+        - [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
+        - [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
+        - [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
+      created_at: "2025-11-19T13:33:06Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.13.5
-      id: 259869999
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.0
+      id: 263653089
       immutable: false
-      name: v1.13.5
-      node_id: RE_kwDOAQ6CpM4PfU0v
+      name: v1.14.0
+      node_id: RE_kwDOAQ6CpM4Ptwbh
       prerelease: false
-      published_at: "2025-11-05T11:42:10Z"
-      tag_name: v1.13.5
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.13.5
-      target_commitish: 328813676aec7a4e2a491484f91b5e0b67847b6c
-      updated_at: "2025-11-05T11:42:10Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/259869999/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/259869999
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.5
+      published_at: "2025-11-19T14:17:22Z"
+      reactions:
+        "+1": 2
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 2
+        url: https://api.github.com/repos/hashicorp/terraform/releases/263653089/reactions
+      tag_name: v1.14.0
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.0
+      target_commitish: 70a2bb44574bb2f9502b688df8eb8a600611be8e
+      updated_at: "2025-11-19T14:17:22Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/263653089/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/263653089
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.0
 meta:
   dependencies:
     terraform:
@@ -4673,3 +4749,129 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/259869999/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/259869999
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.13.5
+      1.14.0:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/263653089/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |
+            ## 1.14.0 (November 19, 2025)
+
+
+            NEW FEATURES:
+
+            * **List Resources**: List resources can be defined in `*.tfquery.hcl` files and allow querying and filterting existing infrastructure.
+
+            * A new Terraform command `terraform query`: Executes list operations against existing infrastructure and displays the results. The command can optionally generate configuration for importing results into Terraform.
+
+            * A new GenerateResourceConfiguration RPC allows providers to create more precise configuration values during import. ([#37515](https://github.com/hashicorp/terraform/issues/37515))
+
+            * New top-level Actions block: Actions are provider defined and meant to codify use cases outside the normal CRUD model in your Terraform configuration. Providers can define Actions like `aws_lambda_invoke` or `aws_cloudfront_create_invalidation` that do something imparative outside of Terraforms normal CRUD model. You can configure such a side-effect with an action block and have actions triggered through the lifecycle of a resource or through passing the `-invoke` CLI flag. ([#37553](https://github.com/hashicorp/terraform/issues/37553))
+
+
+            ENHANCEMENTS:
+
+            * terraform test: expected diagnostics will be included in test output when running in verbose mode" ([#37362](https://github.com/hashicorp/terraform/issues/37362))
+
+            * terraform test: ignore prevent_destroy attribute during when cleaning up tests" ([#37364](https://github.com/hashicorp/terraform/issues/37364))
+
+            * `terraform stacks` command support for `-help` flag ([#37645](https://github.com/hashicorp/terraform/issues/37645))
+
+            * query: support offline validation of query files via -query flag in the validate command ([#37671](https://github.com/hashicorp/terraform/issues/37671))
+
+            * Updates to support the AWS European Sovereign Cloud ([#37721](https://github.com/hashicorp/terraform/issues/37721))
+
+
+            BUG FIXES:
+
+            * Retrieve all workspace variables while doing a `terraform import`, include variables inherited from variable sets but not overwritten by the workspace. ([#37241](https://github.com/hashicorp/terraform/issues/37241))
+
+            * Fix OSS backend proxy support by adding a proxy layer for OSS backend operations. Resolves hashicorp/terraform#36897. ([#36897](https://github.com/hashicorp/terraform/issues/36897))
+
+            * console and test: return explicit diagnostics when referencing resources that were not included in the most recent operation. ([#37663](https://github.com/hashicorp/terraform/issues/37663))
+
+            * query: generate unique resource identifiers for results of expanded list resources ([#37681](https://github.com/hashicorp/terraform/issues/37681))
+
+            * The CLI now summarizes the number of actions invoked during `terraform apply`, matching the plan output. ([#37689](https://github.com/hashicorp/terraform/issues/37689))
+
+            * Allow filesystem functions to return inconsistent results when evaluated within provider configuration ([#37854](https://github.com/hashicorp/terraform/issues/37854))
+
+            * query: improve error handling for missing identity schemas ([#37863](https://github.com/hashicorp/terraform/issues/37863))
+
+
+            UPGRADE NOTES:
+
+            * The parallelism of Terraform operations within container runtimes may be reduced depending on the CPU bandwidth limit setting. ([#37436](https://github.com/hashicorp/terraform/issues/37436))
+
+            * Building Terraform 1.14 requires macOS Monterey or later (due to being built on Go 1.25 which imposes these requirements) ([#37436](https://github.com/hashicorp/terraform/issues/37436))
+
+
+            ## Previous Releases
+
+            For information on prior major and minor releases, refer to their changelogs:
+
+            - [v1.13](https://github.com/hashicorp/terraform/blob/v1.13/CHANGELOG.md)
+            - [v1.12](https://github.com/hashicorp/terraform/blob/v1.12/CHANGELOG.md)
+            - [v1.11](https://github.com/hashicorp/terraform/blob/v1.11/CHANGELOG.md)
+            - [v1.10](https://github.com/hashicorp/terraform/blob/v1.10/CHANGELOG.md)
+            - [v1.9](https://github.com/hashicorp/terraform/blob/v1.9/CHANGELOG.md)
+            - [v1.8](https://github.com/hashicorp/terraform/blob/v1.8/CHANGELOG.md)
+            - [v1.7](https://github.com/hashicorp/terraform/blob/v1.7/CHANGELOG.md)
+            - [v1.6](https://github.com/hashicorp/terraform/blob/v1.6/CHANGELOG.md)
+            - [v1.5](https://github.com/hashicorp/terraform/blob/v1.5/CHANGELOG.md)
+            - [v1.4](https://github.com/hashicorp/terraform/blob/v1.4/CHANGELOG.md)
+            - [v1.3](https://github.com/hashicorp/terraform/blob/v1.3/CHANGELOG.md)
+            - [v1.2](https://github.com/hashicorp/terraform/blob/v1.2/CHANGELOG.md)
+            - [v1.1](https://github.com/hashicorp/terraform/blob/v1.1/CHANGELOG.md)
+            - [v1.0](https://github.com/hashicorp/terraform/blob/v1.0/CHANGELOG.md)
+            - [v0.15](https://github.com/hashicorp/terraform/blob/v0.15/CHANGELOG.md)
+            - [v0.14](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md)
+            - [v0.13](https://github.com/hashicorp/terraform/blob/v0.13/CHANGELOG.md)
+            - [v0.12](https://github.com/hashicorp/terraform/blob/v0.12/CHANGELOG.md)
+            - [v0.11 and earlier](https://github.com/hashicorp/terraform/blob/v0.11/CHANGELOG.md)
+          created_at: "2025-11-19T13:33:06Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.0
+          id: 263653089
+          immutable: false
+          name: v1.14.0
+          node_id: RE_kwDOAQ6CpM4Ptwbh
+          prerelease: false
+          published_at: "2025-11-19T14:17:22Z"
+          reactions:
+            "+1": 2
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 2
+            url: https://api.github.com/repos/hashicorp/terraform/releases/263653089/reactions
+          tag_name: v1.14.0
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.0
+          target_commitish: 70a2bb44574bb2f9502b688df8eb8a600611be8e
+          updated_at: "2025-11-19T14:17:22Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/263653089/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/263653089
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.0

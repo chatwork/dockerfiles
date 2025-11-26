@@ -6,12 +6,14 @@ provisioners:
         argocd_version: "{{ .argocd.version }}"
         helm_version: "{{ .helm.version }}"
         helmfile_version: "{{ .helmfile.version }}"
+        kubectl_version: "{{ .kubectl.version }}"
     goss/goss.yaml:
       source: goss/goss.yaml.tpl
       arguments:
         argocd_version: "{{ .argocd.version }}"
         helm_version: "{{ .helm.version }}"
         helmfile_version: "{{ .helmfile.version }}"
+        kubectl_version: "{{ .kubectl.version }}"
 
 dependencies:
   argocd:
@@ -29,3 +31,11 @@ dependencies:
       githubReleases:
         source: helmfile/helmfile
     version: "< 1.0"
+  kubectl:
+    releasesFrom:
+      exec:
+        command: curl
+        args:
+        - -s
+        - 'https://cdn.dl.k8s.io/release/stable.txt'
+    version: "> 1.0"

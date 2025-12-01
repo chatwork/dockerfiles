@@ -16,9 +16,9 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: helmfile/helmfile
-    version: "> 0.1"
+    version: "1.1.5" # helmfileV1以降のため、一旦versionを固定する
   helm:
     releasesFrom:
       githubReleases:
         source: helm/helm
-    version: "> 1.0"
+    version: "3.19.2" # helmfileV1以降のため、一旦versionを固定する

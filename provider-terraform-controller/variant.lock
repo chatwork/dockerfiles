@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.14.2
-    previousVersion: 1.14.1
+    version: 1.14.3
+    previousVersion: 1.14.2
     versions:
     - 1.2.5
     - 1.2.6
@@ -89,9 +89,10 @@ dependencies:
     - 1.14.0
     - 1.14.1
     - 1.14.2
+    - 1.14.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/269509399/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/271056055/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -113,37 +114,30 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.14.2 (December 11, 2025)
-
-
-        ENHANCEMENTS:
-
-        * Add component registry source resolution support to Terraform Stacks ([#37888](https://github.com/hashicorp/terraform/issues/37888))
+        ## 1.14.3 (December 17, 2025)
 
 
         BUG FIXES:
 
-        * stacks: surface runtime issues with local values to user during plan ([#37980](https://github.com/hashicorp/terraform/issues/37980))
-
-        * resource instance apply failures should not cause the resource instance state to be empty. ([#37981](https://github.com/hashicorp/terraform/issues/37981))
+        * stacks: change absolute paths in path.module/path.root to be relative, as documented ([#37982](https://github.com/hashicorp/terraform/issues/37982))
 
 
-      created_at: "2025-12-11T11:54:09Z"
+      created_at: "2025-12-17T10:46:55Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.2
-      id: 269509399
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.3
+      id: 271056055
       immutable: false
-      name: v1.14.2
-      node_id: RE_kwDOAQ6CpM4QEGMX
+      name: v1.14.3
+      node_id: RE_kwDOAQ6CpM4QJ_y3
       prerelease: false
-      published_at: "2025-12-11T12:47:33Z"
-      tag_name: v1.14.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.2
-      target_commitish: a7f13bf12b7cd8b478021debc4eee058efd1a3ce
-      updated_at: "2025-12-11T12:47:33Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/269509399/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/269509399
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.2
+      published_at: "2025-12-17T11:53:08Z"
+      tag_name: v1.14.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.3
+      target_commitish: 9fb1177c3566c247c72e6c36ca219463c4b6be2b
+      updated_at: "2025-12-17T11:53:08Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/271056055/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/271056055
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.3
 meta:
   dependencies:
     terraform:
@@ -4920,3 +4914,52 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/269509399/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/269509399
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.2
+      1.14.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/271056055/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.14.3 (December 17, 2025)
+
+
+            BUG FIXES:
+
+            * stacks: change absolute paths in path.module/path.root to be relative, as documented ([#37982](https://github.com/hashicorp/terraform/issues/37982))
+
+
+          created_at: "2025-12-17T10:46:55Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.3
+          id: 271056055
+          immutable: false
+          name: v1.14.3
+          node_id: RE_kwDOAQ6CpM4QJ_y3
+          prerelease: false
+          published_at: "2025-12-17T11:53:08Z"
+          tag_name: v1.14.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.3
+          target_commitish: 9fb1177c3566c247c72e6c36ca219463c4b6be2b
+          updated_at: "2025-12-17T11:53:08Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/271056055/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/271056055
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.3

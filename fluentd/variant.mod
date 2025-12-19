@@ -15,4 +15,5 @@ dependencies:
       validVersionPattern: "[0-9]+\\.[0-9]+\\.[0-9]+-debian-[0-9.]+"
       dockerImageTags:
         source: fluent/fluentd
+        host: registry.hub.docker.com
     version: "~ 1.17.0-debian-1.0"

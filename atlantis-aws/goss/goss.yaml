@@ -21,7 +21,7 @@ command:
   /usr/local/bin/aws --version:
     exit-status: 0
     stdout:
-      - 2.32.21
+      - 2.32.22
   /usr/bin/conftest --version:
     exit-status: 0
     stdout:
@@ -33,7 +33,7 @@ command:
   /usr/local/bin/atlantis version:
     exit-status: 0
     stdout:
-      - 0.38.0
+      - 0.39.0
   /usr/bin/git-lfs --version:
     exit-status: 0
     stdout:

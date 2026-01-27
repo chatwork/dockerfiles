@@ -3,7 +3,7 @@ file:
     exists: true
     mode: "0755"
 command:
-  /usr/local/bin/konstraint --version:
+  /usr/local/bin/konstraint -h:
     exit-status: 0
     stdout:
-      - v0.38.0
+      - "A tool to create and manage Gatekeeper CRDs from Rego"

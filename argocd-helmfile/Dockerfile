@@ -1,6 +1,6 @@
-FROM quay.io/argoproj/argocd:v3.2.0
+FROM quay.io/argoproj/argocd:v3.2.6
 
-LABEL version="3.2.0-1.1.9"
+LABEL version="3.2.6-1.2.3"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # Switch to root for the ability to perform install
@@ -9,8 +9,8 @@ USER root
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG HELMFILE_VERSION=1.1.9
-ARG HELM_VERSION=3.19.1
+ARG HELMFILE_VERSION=1.2.3
+ARG HELM_VERSION=4.1.0
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
 ARG HELMFILE_FILE_NAME="helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz"
@@ -55,6 +55,6 @@ RUN chmod 755 /usr/local/bin/sops
 # Switch back to non-root user
 USER argocd
 
-RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} && \
-    helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} && \
-    helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION}
+RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} --verify=false && \
+    helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} --verify=false && \
+    helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION} --verify=false

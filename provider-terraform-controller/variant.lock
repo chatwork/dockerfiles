@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.14.3
-    previousVersion: 1.14.2
+    version: 1.14.4
+    previousVersion: 1.14.3
     versions:
     - 1.2.5
     - 1.2.6
@@ -90,9 +90,10 @@ dependencies:
     - 1.14.1
     - 1.14.2
     - 1.14.3
+    - 1.14.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/271056055/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/280662475/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -114,30 +115,34 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.14.3 (December 17, 2025)
+        ## 1.14.4 (January 28, 2026)
 
 
         BUG FIXES:
 
-        * stacks: change absolute paths in path.module/path.root to be relative, as documented ([#37982](https://github.com/hashicorp/terraform/issues/37982))
+        * backend: Fix nil pointer dereference crash during `terraform init` when the destination backend returns an error ([#38027](https://github.com/hashicorp/terraform/issues/38027))
+
+        * Fixes an issue where any warning diagnostics generated during terraform query execution failed to render in the cloud backend session ([#38040](https://github.com/hashicorp/terraform/issues/38040))
+
+        * actions in modules without instances failed the plan graph ([#38089](https://github.com/hashicorp/terraform/issues/38089))
 
 
-      created_at: "2025-12-17T10:46:55Z"
+      created_at: "2026-01-28T10:08:55Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.3
-      id: 271056055
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.4
+      id: 280662475
       immutable: false
-      name: v1.14.3
-      node_id: RE_kwDOAQ6CpM4QJ_y3
+      name: v1.14.4
+      node_id: RE_kwDOAQ6CpM4QupHL
       prerelease: false
-      published_at: "2025-12-17T11:53:08Z"
-      tag_name: v1.14.3
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.3
-      target_commitish: 9fb1177c3566c247c72e6c36ca219463c4b6be2b
-      updated_at: "2025-12-17T11:53:08Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/271056055/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/271056055
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.3
+      published_at: "2026-01-28T11:07:12Z"
+      tag_name: v1.14.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.4
+      target_commitish: 3054e67ab7cdb9f944fd1d90dd6f6d57238b034c
+      updated_at: "2026-01-28T11:07:12Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/280662475/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/280662475
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.4
 meta:
   dependencies:
     terraform:
@@ -4963,3 +4968,56 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/271056055/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/271056055
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.3
+      1.14.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/280662475/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.14.4 (January 28, 2026)
+
+
+            BUG FIXES:
+
+            * backend: Fix nil pointer dereference crash during `terraform init` when the destination backend returns an error ([#38027](https://github.com/hashicorp/terraform/issues/38027))
+
+            * Fixes an issue where any warning diagnostics generated during terraform query execution failed to render in the cloud backend session ([#38040](https://github.com/hashicorp/terraform/issues/38040))
+
+            * actions in modules without instances failed the plan graph ([#38089](https://github.com/hashicorp/terraform/issues/38089))
+
+
+          created_at: "2026-01-28T10:08:55Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.14.4
+          id: 280662475
+          immutable: false
+          name: v1.14.4
+          node_id: RE_kwDOAQ6CpM4QupHL
+          prerelease: false
+          published_at: "2026-01-28T11:07:12Z"
+          tag_name: v1.14.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.14.4
+          target_commitish: 3054e67ab7cdb9f944fd1d90dd6f6d57238b034c
+          updated_at: "2026-01-28T11:07:12Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/280662475/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/280662475
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.14.4

@@ -1,4 +1,4 @@
-FROM docker:20.10.17
+FROM docker:27
 
 ARG GOSS_VERSION=0.4.9
 

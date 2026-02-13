@@ -6,8 +6,8 @@ ARG TARGETARCH
 
 ARG RUNNER_VERSION=2.309.0-ubuntu-22.04-ead26ab
 ARG KUBECTL_VERSION=1.28.2
-ARG HELMFILE_VERSION=1.1.9
-ARG HELM_VERSION=3.19.2
+ARG HELMFILE_VERSION=1.2.3
+ARG HELM_VERSION=4.1.1
 ARG HELM_FILE_NAME=helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz
 ARG HELMFILE_FILE_NAME=helmfile_${HELMFILE_VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz
 ARG KUSTOMIZE_VERSION=4.5.7
@@ -57,11 +57,11 @@ RUN tar -zxvf /tmp/${HELMFILE_FILE_NAME} -C /tmp \
   && chmod 755 /usr/local/bin/helmfile \
   && rm -rf /tmp/*
 
-RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} \
-    && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} \
-    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION}
-
 USER runner
+
+RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} --verify=false \
+    && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} --verify=false \
+    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION} --verify=false
 
 ENTRYPOINT ["/bin/bash", "-c"]
 CMD ["entrypoint.sh"]

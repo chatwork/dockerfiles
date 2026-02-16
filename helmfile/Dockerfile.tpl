@@ -50,8 +50,8 @@ RUN tar -zxvf /tmp/${HELMFILE_FILE_NAME} -C /tmp \
   && chmod 755 /usr/local/bin/helmfile \
   && rm -rf /tmp/*
 
-RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} \
-    && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} \
-    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION}
+RUN helm plugin install https://github.com/databus23/helm-diff --version v${HELM_DIFF_VERSION} --verify=false \
+    && helm plugin install https://github.com/jkroepke/helm-secrets --version v${HELM_SECRETS_VERSION} --verify=false \
+    && helm plugin install https://github.com/aslafy-z/helm-git.git --version v${HELM_GIT_VERSION} --verify=false
 
 ENTRYPOINT ["/usr/local/bin/helmfile"]

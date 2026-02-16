@@ -30,5 +30,5 @@ dependencies:
         command: curl
         args:
         - -s
-        - 'https://cdn.dl.k8s.io/release/stable.txt'
+        - 'https://dl.k8s.io/release/stable.txt'
     version: "> 1.0"

@@ -25,15 +25,20 @@ jobs:
           ./pr --version
           echo ""
 
-          ./pr merge chatwork/dockerfiles --with-statuses --with-checks \
+          exit_code=0
+          ./pr merge chatwork/dockerfiles --exit-code --with-statuses --with-checks \
               -l 'state == `"open"`' \
               -l 'base.ref == `"master"`' \
               -l 'starts_with(head.ref, `"mod-up-"`)' \
               -l 'user.login == `"cw-circleci"`' \
               -l 'length(checks[?name == `"test (ubuntu-latest, linux/amd64)"` && status == `"completed"` && conclusion == `"success"`]) == `1`' \
-              -l 'length(checks[?name == `"test (ubuntu-24.04-arm, linux/arm64)"` && status == `"completed"` && conclusion == `"success"`]) == `1`' 2> ./error.log
+              -l 'length(checks[?name == `"test (ubuntu-24.04-arm, linux/arm64)"` && status == `"completed"` && conclusion == `"success"`]) == `1`' 2> ./error.log || exit_code=$?
 
-          if cat ./error.log | grep -v "no PR matches the rule"; then
+          if [ $exit_code -eq 127 ]; then
+            echo "No PRs to merge at this time."
+          elif [ $exit_code -ne 0 ]; then
+            echo "Auto merge failed with error (exit code $exit_code):"
+            cat ./error.log
             echo "error_message=$(cat ./error.log)" >> "$GITHUB_OUTPUT"
             exit 1
           fi

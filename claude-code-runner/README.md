@@ -2,7 +2,7 @@
 
 A base Docker image for running [Claude Code](https://claude.ai/code) in containers. Provides the Claude Code CLI and common dependencies pre-installed.
 
-This image is designed to be used as a base (`FROM chatwork/claude-code-runner`) by teams building their own plugin marketplace runner images.
+This image is designed to be used as a base (`FROM chatwork/claude-code-runner`) by teams building their own plugin marketplace runner images, or directly in Kubernetes CronJobs.
 
 ## Usage
 
@@ -14,16 +14,25 @@ FROM chatwork/claude-code-runner:latest
 # Copy your marketplace plugins
 COPY . /marketplace
 RUN claude plugin marketplace add /marketplace
+```
 
-# (Optional) Override entrypoint
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+### In a Kubernetes CronJob
+
+```yaml
+containers:
+  - name: task
+    image: chatwork/claude-code-runner:latest
+    command: ["/bin/bash", "-lc"]
+    args:
+      - |
+        set -euo pipefail
+        claude --print "Generate weekly report"
 ```
 
 ### Standalone
 
 ```
-$ docker run chatwork/claude-code-runner
+$ docker run --rm chatwork/claude-code-runner claude --version
 ```
 
 ## Included
@@ -37,4 +46,4 @@ $ docker run chatwork/claude-code-runner
 
 ## Version management
 
-Claude Code CLI version is pinned and automatically updated via [variant mod](https://github.com/mumoshu/variant). See `variant.mod` and `variant.lock` for details.
+Claude Code CLI version is pinned and automatically updated via [variant mod](https://github.com/variantdev/mod). See `variant.mod` and `variant.lock` for details.

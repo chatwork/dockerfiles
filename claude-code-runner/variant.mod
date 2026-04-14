@@ -11,9 +11,8 @@ dependencies:
   claude_code:
     releasesFrom:
       exec:
-        command: curl
+        command: bash
         args:
-        - -s
-        - 'https://registry.npmjs.org/@anthropic-ai/claude-code'
-        jsonPath: $.versions.*.version
+        - -c
+        - "curl -s https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/latest"
     version: "> 2.0"

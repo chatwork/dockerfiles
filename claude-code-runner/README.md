@@ -28,8 +28,13 @@ $ docker run chatwork/claude-code-runner
 
 ## Included
 
-- Claude Code CLI
-- curl, ca-certificates, git, jq, yq, unzip
-- python3, python3-pip, awscli
-- gh (GitHub CLI)
-- Debugging tools (bash, less, procps, net-tools, dnsutils, vim-tiny, strace)
+| Category | Tools |
+|---|---|
+| Core | Claude Code CLI, curl, ca-certificates, git, bash, less |
+| Data processing | jq, yq, unzip |
+| Cloud / CI | awscli, gh (GitHub CLI), python3 |
+| Security | gpg, openssh-client |
+
+## Version management
+
+Claude Code CLI version is pinned and automatically updated via [variant mod](https://github.com/mumoshu/variant). See `variant.mod` and `variant.lock` for details.

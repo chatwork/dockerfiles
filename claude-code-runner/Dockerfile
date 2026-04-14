@@ -1,35 +1,27 @@
 FROM debian:bookworm-slim
 
-ARG CLAUDE_CODE_VERSION=latest
+ARG CLAUDE_CODE_VERSION=2.1.105
 
 LABEL version="${CLAUDE_CODE_VERSION}"
 
-# Common dependencies + debugging tools
+# Common dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    # Claude Code CLI install requirement
     curl \
     ca-certificates \
-    # Plugin common dependencies
     git \
     jq \
     unzip \
     python3 \
-    python3-pip \
     awscli \
-    # Shell / container debugging
+    gpg \
+    openssh-client \
     bash \
     less \
-    procps \
-    net-tools \
-    dnsutils \
-    iputils-ping \
-    vim-tiny \
-    strace \
     && rm -rf /var/lib/apt/lists/*
 
 # Claude Code CLI (Native Install)
 ENV PATH="/root/.local/bin:${PATH}"
-RUN curl -fsSL https://claude.ai/install.sh | bash
+RUN curl -fsSL https://claude.ai/install.sh | bash -s "${CLAUDE_CODE_VERSION}"
 
 # yq
 ARG YQ_VERSION=4.44.6

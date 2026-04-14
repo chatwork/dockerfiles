@@ -5,7 +5,7 @@ command:
   claude --version:
     exit-status: 0
     stdout:
-      - /\d+\.\d+\.\d+/
+      - 2.1.105
   git --version:
     exit-status: 0
   jq --version:
@@ -15,4 +15,6 @@ command:
   yq --version:
     exit-status: 0
   gh --version:
+    exit-status: 0
+  gpg --version:
     exit-status: 0

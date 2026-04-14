@@ -1,0 +1,20 @@
+file:
+  /home/claude/.local/bin/claude:
+    exists: true
+command:
+  claude --version:
+    exit-status: 0
+    stdout:
+      - 2.1.105
+  git --version:
+    exit-status: 0
+  jq --version:
+    exit-status: 0
+  python3 --version:
+    exit-status: 0
+  yq --version:
+    exit-status: 0
+  gh --version:
+    exit-status: 0
+  gpg --version:
+    exit-status: 0

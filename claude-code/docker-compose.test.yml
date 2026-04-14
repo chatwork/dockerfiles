@@ -1,18 +1,18 @@
 version: '3'
 services:
-  claude-code-runner:
+  claude-code:
     build:
       context: .
-    image: chatwork/claude-code-runner
+    image: chatwork/claude-code
   sut:
     image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
     entrypoint: ""
-    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/claude-code-runner tail -f /dev/null
-    container_name: claude-code-runner
+    command: /usr/local/bin/dgoss run --entrypoint '' chatwork/claude-code tail -f /dev/null
+    container_name: claude-code
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      - claude-code-runner
+      - claude-code

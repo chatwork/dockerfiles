@@ -1,15 +1,15 @@
-# claude-code-runner
+# claude-code
 
 A base Docker image for running [Claude Code](https://claude.ai/code) in containers. Provides the Claude Code CLI and common dependencies pre-installed.
 
-This image is designed to be used as a base (`FROM chatwork/claude-code-runner`) by teams building their own plugin marketplace runner images, or directly in Kubernetes CronJobs.
+This image is designed to be used as a base (`FROM chatwork/claude-code`) by teams building their own plugin marketplace runner images, or directly in Kubernetes CronJobs.
 
 ## Usage
 
 ### As a base image
 
 ```dockerfile
-FROM chatwork/claude-code-runner:latest
+FROM chatwork/claude-code:latest
 
 # Copy your marketplace plugins
 COPY . /marketplace
@@ -21,7 +21,7 @@ RUN claude plugin marketplace add /marketplace
 ```yaml
 containers:
   - name: task
-    image: chatwork/claude-code-runner:latest
+    image: chatwork/claude-code:latest
     command: ["/bin/bash", "-lc"]
     args:
       - |
@@ -32,7 +32,7 @@ containers:
 ### Standalone
 
 ```
-$ docker run --rm chatwork/claude-code-runner claude --version
+$ docker run --rm chatwork/claude-code claude --version
 ```
 
 ## Included

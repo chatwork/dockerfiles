@@ -42,17 +42,17 @@ push:
 .PHONY: manifest\:push
 manifest\:push:
 	@version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)); \
-		if docker inspect --format='{{index .RepoDigests 0}}' $(call image_ref,$$version) >/dev/null 2>&1; then \
+		if docker buildx imagetools inspect $(call image_ref,$$version) >/dev/null 2>&1; then \
 			echo "no changes"; \
 		else \
-			docker pull $(call image_ref,$$version,$(ARM64_SUFFIX)); \
-			docker pull $(call image_ref,$$version,$(AMD64_SUFFIX)); \
-			arm64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' $(call image_ref,$$version,$(ARM64_SUFFIX))); \
-			amd64_digest=$$(docker inspect -f '{{index .RepoDigests 0}}' $(call image_ref,$$version,$(AMD64_SUFFIX))); \
-			docker buildx imagetools create -t $(call image_ref,$$version) $$arm64_digest $$amd64_digest; \
-			docker buildx imagetools create -t $(call image_ref,latest) $$arm64_digest $$amd64_digest; \
-			hub-tool tag rm $(call image_ref,$$version,$(ARM64_SUFFIX)) -f; \
-			hub-tool tag rm $(call image_ref,$$version,$(AMD64_SUFFIX)) -f; \
+			docker buildx imagetools create -t $(call image_ref,$$version) \
+				$(call image_ref,$$version,$(ARM64_SUFFIX)) \
+				$(call image_ref,$$version,$(AMD64_SUFFIX)); \
+			docker buildx imagetools create -t $(call image_ref,latest) \
+				$(call image_ref,$$version,$(ARM64_SUFFIX)) \
+				$(call image_ref,$$version,$(AMD64_SUFFIX)); \
+			hub-tool tag rm $(call image_ref,$$version,$(ARM64_SUFFIX)) -f || true; \
+			hub-tool tag rm $(call image_ref,$$version,$(AMD64_SUFFIX)) -f || true; \
 		fi
 
 .PHONY: manifest\:succeed-message

@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.15.1
-    previousVersion: 1.15.0
+    version: 1.15.2
+    previousVersion: 1.15.1
     versions:
     - 1.2.5
     - 1.2.6
@@ -98,9 +98,10 @@ dependencies:
     - 1.14.9
     - 1.15.0
     - 1.15.1
+    - 1.15.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/316452175/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/318423994/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -122,44 +123,35 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.15.1 (May 1, 2026)
+        ## 1.15.2 (May 6, 2026)
+
+
+        ENHANCEMENTS:
+
+        * stacks: add ouput values to plan component instance change description ([#38360](https://github.com/hashicorp/terraform/issues/38360))
 
 
         BUG FIXES:
 
-        * Fixed crash when configuration has an invalid `action_trigger` nested block in `data` or `ephemeral` lifecycle blocks ([#38402](https://github.com/hashicorp/terraform/issues/38402))
-
-        * validate: Removed validation of attributes inside `backend` blocks due to incompatibility with workflows using the `-backend-config` flag. ([#38466](https://github.com/hashicorp/terraform/issues/38466))
-
-        * Fix non-const variable checks on `init` ([#38470](https://github.com/hashicorp/terraform/issues/38470))
-
-        * Avoid warnings in 'terraform output -raw' ([#38487](https://github.com/hashicorp/terraform/issues/38487))
-
-        * Ignore undeclared variable values from the cloud backend ([#38490](https://github.com/hashicorp/terraform/issues/38490))
-
-        * Fix panic for types modules with no expanded instances ([#38491](https://github.com/hashicorp/terraform/issues/38491))
-
-        * Fixed "unknown provider function" errors occurring during init ([#38472](https://github.com/hashicorp/terraform/issues/38472))
-
-        * init: Fixed a bug that impacted use of provider pre-releases during init ([#38496](https://github.com/hashicorp/terraform/issues/38496))
+        * Avoid printing warnings from 'terraform output -json' ([#38530](https://github.com/hashicorp/terraform/issues/38530))
 
 
-      created_at: "2026-05-01T15:50:10Z"
+      created_at: "2026-05-06T10:54:16Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.1
-      id: 316452175
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.2
+      id: 318423994
       immutable: false
-      name: v1.15.1
-      node_id: RE_kwDOAQ6CpM4S3K1P
+      name: v1.15.2
+      node_id: RE_kwDOAQ6CpM4S-sO6
       prerelease: false
-      published_at: "2026-05-01T16:43:30Z"
-      tag_name: v1.15.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.1
-      target_commitish: 65520b709a68f0c48d9ad3e24513b7d536062bdb
-      updated_at: "2026-05-01T16:43:30Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/316452175/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/316452175
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.1
+      published_at: "2026-05-06T13:56:22Z"
+      tag_name: v1.15.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.2
+      target_commitish: 750e6168cc69f1143cfe7acd364ba2b5b9d97f34
+      updated_at: "2026-05-06T13:56:22Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/318423994/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/318423994
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.2
 meta:
   dependencies:
     terraform:
@@ -5510,3 +5502,57 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/316452175/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/316452175
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.1
+      1.15.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/318423994/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.15.2 (May 6, 2026)
+
+
+            ENHANCEMENTS:
+
+            * stacks: add ouput values to plan component instance change description ([#38360](https://github.com/hashicorp/terraform/issues/38360))
+
+
+            BUG FIXES:
+
+            * Avoid printing warnings from 'terraform output -json' ([#38530](https://github.com/hashicorp/terraform/issues/38530))
+
+
+          created_at: "2026-05-06T10:54:16Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.2
+          id: 318423994
+          immutable: false
+          name: v1.15.2
+          node_id: RE_kwDOAQ6CpM4S-sO6
+          prerelease: false
+          published_at: "2026-05-06T13:56:22Z"
+          tag_name: v1.15.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.2
+          target_commitish: 750e6168cc69f1143cfe7acd364ba2b5b9d97f34
+          updated_at: "2026-05-06T13:56:22Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/318423994/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/318423994
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.2

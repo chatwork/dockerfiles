@@ -21,19 +21,19 @@ command:
   /usr/local/bin/aws --version:
     exit-status: 0
     stdout:
-      - 2.34.15
+      - 2.34.37
   /usr/bin/conftest --version:
     exit-status: 0
     stdout:
-      - 0.67.0
+      - 0.68.2
   /usr/local/bin/terraform --version:
     exit-status: 0
     stdout:
-      - 1.14.7
+      - 1.15.2
   /usr/local/bin/atlantis version:
     exit-status: 0
     stdout:
-      - 0.40.0
+      - 0.43.0
   /usr/bin/git-lfs --version:
     exit-status: 0
     stdout:

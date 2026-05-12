@@ -1,0 +1,63 @@
+ARCH:=$(shell uname -m)
+PLATFORM:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo "arm64" ;; \
+	("x86_64") echo "amd64" ;; \
+	(*) echo $(ARCH) ;; \
+esac)
+
+ARM64_SUFFIX:=aarch64
+AMD64_SUFFIX:=x86_64
+SUFFIX:=$(shell case "$(ARCH)" in \
+	("arm64"|"aarch64") echo "$(ARM64_SUFFIX)" ;; \
+	("x86_64") echo "$(AMD64_SUFFIX)" ;; \
+	(*) echo $(ARCH) ;; \
+esac)
+
+# $(call image_ref,version,suffix) -> chatwork/gha-runner-scale-set-helmfile:<version>[-<suffix>]
+image_ref=chatwork/gha-runner-scale-set-helmfile:$(1)$(if $(2),-$(2))
+
+.PHONY: build
+build:
+	@docker buildx build -t $(call image_ref,latest) --platform linux/${PLATFORM} -f Dockerfile --load .; \
+	version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)); \
+	if [ -n "$$version" ]; then \
+		docker tag $(call image_ref,latest) $(call image_ref,$$version); \
+	fi
+
+.PHONY: test
+test: build
+	docker-compose -f docker-compose.test.yml up --no-start sut
+	docker cp $(shell pwd)/goss gha-runner-scale-set-helmfile:/goss
+	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut sut
+
+.PHONY: push
+push:
+	@version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)); \
+		if docker inspect --format='{{index .RepoDigests 0}}' $(call image_ref,$$version,$(SUFFIX)) >/dev/null 2>&1; then \
+			echo "no changes"; \
+		else \
+			docker buildx build -t $(call image_ref,$$version,$(SUFFIX)) --platform linux/${PLATFORM} -f Dockerfile --push .; \
+		fi
+
+.PHONY: manifest\:push
+manifest\:push:
+	@version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)); \
+		if docker buildx imagetools inspect $(call image_ref,$$version) >/dev/null 2>&1; then \
+			echo "no changes"; \
+		else \
+			docker buildx imagetools create -t $(call image_ref,$$version) \
+				$(call image_ref,$$version,$(ARM64_SUFFIX)) \
+				$(call image_ref,$$version,$(AMD64_SUFFIX)); \
+			docker buildx imagetools create -t $(call image_ref,latest) \
+				$(call image_ref,$$version,$(ARM64_SUFFIX)) \
+				$(call image_ref,$$version,$(AMD64_SUFFIX)); \
+			hub-tool tag rm $(call image_ref,$$version,$(ARM64_SUFFIX)) -f || true; \
+			hub-tool tag rm $(call image_ref,$$version,$(AMD64_SUFFIX)) -f || true; \
+		fi
+
+.PHONY: manifest\:succeed-message
+manifest\:succeed-message:
+	@version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)); \
+		echo "Released new tags."; \
+		echo "- $(call image_ref,$$version)"; \
+		echo "- $(call image_ref,latest)"

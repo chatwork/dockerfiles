@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.15.2
-    previousVersion: 1.15.1
+    version: 1.15.3
+    previousVersion: 1.15.2
     versions:
     - 1.2.5
     - 1.2.6
@@ -99,9 +99,10 @@ dependencies:
     - 1.15.0
     - 1.15.1
     - 1.15.2
+    - 1.15.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/318423994/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/321772564/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -123,35 +124,34 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.15.2 (May 6, 2026)
-
-
-        ENHANCEMENTS:
-
-        * stacks: add ouput values to plan component instance change description ([#38360](https://github.com/hashicorp/terraform/issues/38360))
+        ## 1.15.3 (May 13, 2026)
 
 
         BUG FIXES:
 
-        * Avoid printing warnings from 'terraform output -json' ([#38530](https://github.com/hashicorp/terraform/issues/38530))
+        * stacks: Fixed a bug that prevented migrating resources under multiple layers of module nesting with implicit provider configuration. ([#38528](https://github.com/hashicorp/terraform/issues/38528))
+
+        * cloud backend will now forward -generate-config-out flag usage to query create request ([#38539](https://github.com/hashicorp/terraform/issues/38539))
+
+        * Fix crash during provider installation when there is no config ([#38560](https://github.com/hashicorp/terraform/issues/38560))
 
 
-      created_at: "2026-05-06T10:54:16Z"
+      created_at: "2026-05-13T07:39:28Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.2
-      id: 318423994
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.3
+      id: 321772564
       immutable: false
-      name: v1.15.2
-      node_id: RE_kwDOAQ6CpM4S-sO6
+      name: v1.15.3
+      node_id: RE_kwDOAQ6CpM4TLdwU
       prerelease: false
-      published_at: "2026-05-06T13:56:22Z"
-      tag_name: v1.15.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.2
-      target_commitish: 750e6168cc69f1143cfe7acd364ba2b5b9d97f34
-      updated_at: "2026-05-06T13:56:22Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/318423994/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/318423994
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.2
+      published_at: "2026-05-13T09:58:43Z"
+      tag_name: v1.15.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.3
+      target_commitish: 94363314099a4b374a521f19fa43aa4f09cc5da9
+      updated_at: "2026-05-13T09:58:43Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/321772564/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/321772564
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.3
 meta:
   dependencies:
     terraform:
@@ -5556,3 +5556,56 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/318423994/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/318423994
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.2
+      1.15.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/321772564/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.15.3 (May 13, 2026)
+
+
+            BUG FIXES:
+
+            * stacks: Fixed a bug that prevented migrating resources under multiple layers of module nesting with implicit provider configuration. ([#38528](https://github.com/hashicorp/terraform/issues/38528))
+
+            * cloud backend will now forward -generate-config-out flag usage to query create request ([#38539](https://github.com/hashicorp/terraform/issues/38539))
+
+            * Fix crash during provider installation when there is no config ([#38560](https://github.com/hashicorp/terraform/issues/38560))
+
+
+          created_at: "2026-05-13T07:39:28Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.3
+          id: 321772564
+          immutable: false
+          name: v1.15.3
+          node_id: RE_kwDOAQ6CpM4TLdwU
+          prerelease: false
+          published_at: "2026-05-13T09:58:43Z"
+          tag_name: v1.15.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.3
+          target_commitish: 94363314099a4b374a521f19fa43aa4f09cc5da9
+          updated_at: "2026-05-13T09:58:43Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/321772564/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/321772564
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.3

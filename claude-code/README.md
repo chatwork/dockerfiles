@@ -1,6 +1,6 @@
 # claude-code
 
-A base Docker image for running [Claude Code](https://claude.ai/code) in containers. Provides the Claude Code CLI and common dependencies pre-installed.
+A base Docker image for running [Claude Code](https://claude.ai/code) in containers. Provides only the Claude Code CLI and the minimum TLS-capable runtime; anything plugin-specific is the extension image's responsibility.
 
 This image is designed to be used as a base (`FROM chatwork/claude-code`) by teams building their own plugin marketplace runner images, or directly in Kubernetes CronJobs.
 
@@ -37,12 +37,10 @@ $ docker run --rm chatwork/claude-code claude --version
 
 ## Included
 
-| Category | Tools |
-|---|---|
-| Core | Claude Code CLI, curl, ca-certificates, git, bash, less |
-| Data processing | jq, yq, unzip |
-| Cloud / CI | awscli, gh (GitHub CLI), python3 |
-| Security | gpg, openssh-client |
+- Claude Code CLI (Native Install) under `/home/claude/.local/bin/claude`
+- `curl`, `ca-certificates`, `bash` — required by the installer and TLS-based runtime usage
+
+That's it. Plugin-specific tooling (`git`, `python3`, `jq`, `yq`, `gh`, `awscli`, ...) is intentionally **not** bundled here; extension images install what they need.
 
 ## Version management
 

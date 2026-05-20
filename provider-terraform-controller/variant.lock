@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.15.3
-    previousVersion: 1.15.2
+    version: 1.15.4
+    previousVersion: 1.15.3
     versions:
     - 1.2.5
     - 1.2.6
@@ -100,9 +100,10 @@ dependencies:
     - 1.15.1
     - 1.15.2
     - 1.15.3
+    - 1.15.4
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/321772564/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/326114716/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -124,34 +125,35 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.15.3 (May 13, 2026)
+        ## 1.15.4 (May 20, 2026)
+
+
+        NEW FEATURES:
+
+        * We now produce builds for Linux s390x (zLinux) ([#38615](https://github.com/hashicorp/terraform/issues/38615))
 
 
         BUG FIXES:
 
-        * stacks: Fixed a bug that prevented migrating resources under multiple layers of module nesting with implicit provider configuration. ([#38528](https://github.com/hashicorp/terraform/issues/38528))
-
-        * cloud backend will now forward -generate-config-out flag usage to query create request ([#38539](https://github.com/hashicorp/terraform/issues/38539))
-
-        * Fix crash during provider installation when there is no config ([#38560](https://github.com/hashicorp/terraform/issues/38560))
+        * init: Prevent provider binaries from being installed into symlinked directories ([#38611](https://github.com/hashicorp/terraform/issues/38611))
 
 
-      created_at: "2026-05-13T07:39:28Z"
+      created_at: "2026-05-20T10:13:03Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.3
-      id: 321772564
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.4
+      id: 326114716
       immutable: false
-      name: v1.15.3
-      node_id: RE_kwDOAQ6CpM4TLdwU
+      name: v1.15.4
+      node_id: RE_kwDOAQ6CpM4TcB2c
       prerelease: false
-      published_at: "2026-05-13T09:58:43Z"
-      tag_name: v1.15.3
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.3
-      target_commitish: 94363314099a4b374a521f19fa43aa4f09cc5da9
-      updated_at: "2026-05-13T09:58:43Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/321772564/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/321772564
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.3
+      published_at: "2026-05-20T16:52:18Z"
+      tag_name: v1.15.4
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.4
+      target_commitish: 6781b1a9991548a60c062f1d8aa68d86171a0123
+      updated_at: "2026-05-20T16:52:18Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/326114716/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/326114716
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.4
 meta:
   dependencies:
     terraform:
@@ -5609,3 +5611,57 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/321772564/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/321772564
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.3
+      1.15.4:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/326114716/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.15.4 (May 20, 2026)
+
+
+            NEW FEATURES:
+
+            * We now produce builds for Linux s390x (zLinux) ([#38615](https://github.com/hashicorp/terraform/issues/38615))
+
+
+            BUG FIXES:
+
+            * init: Prevent provider binaries from being installed into symlinked directories ([#38611](https://github.com/hashicorp/terraform/issues/38611))
+
+
+          created_at: "2026-05-20T10:13:03Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.4
+          id: 326114716
+          immutable: false
+          name: v1.15.4
+          node_id: RE_kwDOAQ6CpM4TcB2c
+          prerelease: false
+          published_at: "2026-05-20T16:52:18Z"
+          tag_name: v1.15.4
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.4
+          target_commitish: 6781b1a9991548a60c062f1d8aa68d86171a0123
+          updated_at: "2026-05-20T16:52:18Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/326114716/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/326114716
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.4

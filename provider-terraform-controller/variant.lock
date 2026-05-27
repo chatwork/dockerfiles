@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.15.4
-    previousVersion: 1.15.3
+    version: 1.15.5
+    previousVersion: 1.15.4
     versions:
     - 1.2.5
     - 1.2.6
@@ -101,9 +101,10 @@ dependencies:
     - 1.15.2
     - 1.15.3
     - 1.15.4
+    - 1.15.5
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/326114716/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/330283734/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -125,35 +126,35 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.15.4 (May 20, 2026)
+        ## 1.15.5 (May 27, 2026)
 
 
-        NEW FEATURES:
+        ENHANCEMENTS:
 
-        * We now produce builds for Linux s390x (zLinux) ([#38615](https://github.com/hashicorp/terraform/issues/38615))
+        * Support for module version evaluating to `null` (in the context of dynamic module sources) ([#38632](https://github.com/hashicorp/terraform/issues/38632))
 
 
         BUG FIXES:
 
-        * init: Prevent provider binaries from being installed into symlinked directories ([#38611](https://github.com/hashicorp/terraform/issues/38611))
+        * Fix crash on `init` for modules with empty source ([#38628](https://github.com/hashicorp/terraform/issues/38628))
 
 
-      created_at: "2026-05-20T10:13:03Z"
+      created_at: "2026-05-27T12:28:31Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.4
-      id: 326114716
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.5
+      id: 330283734
       immutable: false
-      name: v1.15.4
-      node_id: RE_kwDOAQ6CpM4TcB2c
+      name: v1.15.5
+      node_id: RE_kwDOAQ6CpM4Tr7rW
       prerelease: false
-      published_at: "2026-05-20T16:52:18Z"
-      tag_name: v1.15.4
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.4
-      target_commitish: 6781b1a9991548a60c062f1d8aa68d86171a0123
-      updated_at: "2026-05-20T16:52:18Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/326114716/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/326114716
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.4
+      published_at: "2026-05-27T14:52:52Z"
+      tag_name: v1.15.5
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.5
+      target_commitish: aa593a05e2811f9da7eb74460b203a85285899eb
+      updated_at: "2026-05-27T14:52:52Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/330283734/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/330283734
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.5
 meta:
   dependencies:
     terraform:
@@ -5665,3 +5666,57 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/326114716/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/326114716
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.4
+      1.15.5:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/330283734/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.15.5 (May 27, 2026)
+
+
+            ENHANCEMENTS:
+
+            * Support for module version evaluating to `null` (in the context of dynamic module sources) ([#38632](https://github.com/hashicorp/terraform/issues/38632))
+
+
+            BUG FIXES:
+
+            * Fix crash on `init` for modules with empty source ([#38628](https://github.com/hashicorp/terraform/issues/38628))
+
+
+          created_at: "2026-05-27T12:28:31Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.5
+          id: 330283734
+          immutable: false
+          name: v1.15.5
+          node_id: RE_kwDOAQ6CpM4Tr7rW
+          prerelease: false
+          published_at: "2026-05-27T14:52:52Z"
+          tag_name: v1.15.5
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.5
+          target_commitish: aa593a05e2811f9da7eb74460b203a85285899eb
+          updated_at: "2026-05-27T14:52:52Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/330283734/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/330283734
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.5

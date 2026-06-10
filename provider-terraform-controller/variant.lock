@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.15.5
-    previousVersion: 1.15.4
+    version: 1.15.6
+    previousVersion: 1.15.5
     versions:
     - 1.2.5
     - 1.2.6
@@ -102,9 +102,10 @@ dependencies:
     - 1.15.3
     - 1.15.4
     - 1.15.5
+    - 1.15.6
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/330283734/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/337194753/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -126,35 +127,36 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.15.5 (May 27, 2026)
-
-
-        ENHANCEMENTS:
-
-        * Support for module version evaluating to `null` (in the context of dynamic module sources) ([#38632](https://github.com/hashicorp/terraform/issues/38632))
+        ## 1.15.6 (June 10, 2026)
 
 
         BUG FIXES:
 
-        * Fix crash on `init` for modules with empty source ([#38628](https://github.com/hashicorp/terraform/issues/38628))
+        * Fixed an issue where resources being removed from state via `removed` block were incorrectly listed under `planned_values` in json representations of the plan file. ([#38665](https://github.com/hashicorp/terraform/issues/38665))
+
+        * console: Fixed a panic caused by evaluating an expression involving deprecated values ([#38676](https://github.com/hashicorp/terraform/issues/38676))
+
+        * Fix exit code for plan, query, and refresh commands for variable-related errors ([#38685](https://github.com/hashicorp/terraform/issues/38685))
+
+        * Fix two module installation edge cases with `null` and sensitive/ephemeral module sources ([#38704](https://github.com/hashicorp/terraform/issues/38704))
 
 
-      created_at: "2026-05-27T12:28:31Z"
+      created_at: "2026-06-10T10:16:44Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.5
-      id: 330283734
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.6
+      id: 337194753
       immutable: false
-      name: v1.15.5
-      node_id: RE_kwDOAQ6CpM4Tr7rW
+      name: v1.15.6
+      node_id: RE_kwDOAQ6CpM4UGS8B
       prerelease: false
-      published_at: "2026-05-27T14:52:52Z"
-      tag_name: v1.15.5
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.5
-      target_commitish: aa593a05e2811f9da7eb74460b203a85285899eb
-      updated_at: "2026-05-27T14:52:52Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/330283734/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/330283734
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.5
+      published_at: "2026-06-10T11:52:20Z"
+      tag_name: v1.15.6
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.6
+      target_commitish: 699fc4df3a2e8f2205ec7b02698ccd76dfdc095d
+      updated_at: "2026-06-10T11:52:20Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/337194753/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/337194753
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.6
 meta:
   dependencies:
     terraform:
@@ -5720,3 +5722,58 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/330283734/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/330283734
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.5
+      1.15.6:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/337194753/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.15.6 (June 10, 2026)
+
+
+            BUG FIXES:
+
+            * Fixed an issue where resources being removed from state via `removed` block were incorrectly listed under `planned_values` in json representations of the plan file. ([#38665](https://github.com/hashicorp/terraform/issues/38665))
+
+            * console: Fixed a panic caused by evaluating an expression involving deprecated values ([#38676](https://github.com/hashicorp/terraform/issues/38676))
+
+            * Fix exit code for plan, query, and refresh commands for variable-related errors ([#38685](https://github.com/hashicorp/terraform/issues/38685))
+
+            * Fix two module installation edge cases with `null` and sensitive/ephemeral module sources ([#38704](https://github.com/hashicorp/terraform/issues/38704))
+
+
+          created_at: "2026-06-10T10:16:44Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.15.6
+          id: 337194753
+          immutable: false
+          name: v1.15.6
+          node_id: RE_kwDOAQ6CpM4UGS8B
+          prerelease: false
+          published_at: "2026-06-10T11:52:20Z"
+          tag_name: v1.15.6
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.15.6
+          target_commitish: 699fc4df3a2e8f2205ec7b02698ccd76dfdc095d
+          updated_at: "2026-06-10T11:52:20Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/337194753/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/337194753
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.15.6

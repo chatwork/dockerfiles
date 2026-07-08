@@ -35,9 +35,14 @@ RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1
     ln -s "/usr/local/bin/tf/versions/${DEFAULT_TERRAFORM_VERSION}/terraform" /usr/local/bin/terraform
 
 ARG CONFTEST_VERSION={{ .conftest_version }}
-ARG CONFTEST_RPM_FILE="conftest_${CONFTEST_VERSION}_linux_${TARGETARCH}.rpm"
 
-RUN curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_RPM_FILE} && \
+RUN case "${TARGETARCH}" in \
+        "amd64") CONFTEST_ARCH=x86_64 ;; \
+        "arm64") CONFTEST_ARCH=arm64 ;; \
+        *) echo "ERROR: 'TARGETARCH' value expected: ${TARGETARCH}"; exit 1 ;; \
+    esac && \
+    CONFTEST_RPM_FILE="conftest_${CONFTEST_VERSION}_Linux_${CONFTEST_ARCH}.rpm" && \
+    curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_RPM_FILE} && \
     rpm -i ./${CONFTEST_RPM_FILE} && \
     rm -f ./${CONFTEST_RPM_FILE}
 

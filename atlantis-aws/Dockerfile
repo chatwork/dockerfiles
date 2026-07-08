@@ -1,11 +1,11 @@
-FROM chatwork/aws:2.34.15
+FROM chatwork/aws:2.34.49
 
 ARG TARGETARCH
-ARG ATLANTIS_VERSION=0.42.0
+ARG ATLANTIS_VERSION=0.46.0
 ARG GOSU_VERSION=1.19
 ARG GIT_LFS_VERSION=3.7.1
 ARG DUMB_INIT_VERSION=1.2.5
-ENV DEFAULT_TERRAFORM_VERSION=1.14.7
+ENV DEFAULT_TERRAFORM_VERSION=1.15.7
 LABEL version="${ATLANTIS_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
@@ -34,10 +34,15 @@ RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1
     done && \
     ln -s "/usr/local/bin/tf/versions/${DEFAULT_TERRAFORM_VERSION}/terraform" /usr/local/bin/terraform
 
-ARG CONFTEST_VERSION=0.67.0
-ARG CONFTEST_RPM_FILE="conftest_${CONFTEST_VERSION}_linux_${TARGETARCH}.rpm"
+ARG CONFTEST_VERSION=0.68.2
 
-RUN curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_RPM_FILE} && \
+RUN case "${TARGETARCH}" in \
+        "amd64") CONFTEST_ARCH=x86_64 ;; \
+        "arm64") CONFTEST_ARCH=arm64 ;; \
+        *) echo "ERROR: 'TARGETARCH' value expected: ${TARGETARCH}"; exit 1 ;; \
+    esac && \
+    CONFTEST_RPM_FILE="conftest_${CONFTEST_VERSION}_Linux_${CONFTEST_ARCH}.rpm" && \
+    curl -LOs https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_RPM_FILE} && \
     rpm -i ./${CONFTEST_RPM_FILE} && \
     rm -f ./${CONFTEST_RPM_FILE}
 

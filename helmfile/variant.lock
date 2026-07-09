@@ -1,7 +1,7 @@
 dependencies:
   helm:
-    version: 4.2.0
-    previousVersion: 4.1.4
+    version: 4.2.2
+    previousVersion: 4.2.0
     versions:
     - 3.9.2
     - 3.9.3
@@ -49,20 +49,21 @@ dependencies:
     - 4.1.3
     - 4.1.4
     - 4.2.0
+    - 4.2.2
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-darwin-amd64.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:44Z"
-        digest: sha256:49f84ef21cec937fca0dba29101d355a11a86c4cc44d250a5fa83d82106e554c
-        download_count: 3
-        id: 419759819
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-amd64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:25Z"
+        digest: sha256:6f89d8fabf7810c3489168eb511f9a0808a49417c87a274033500c42fff8e725
+        download_count: 150
+        id: 450564105
         label: null
-        name: helm-v4.2.0-darwin-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQbL
+        name: helm-v4.2.2-darwin-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xAJ
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:45Z"
+        updated_at: "2026-06-17T20:46:27Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -83,19 +84,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759819
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-darwin-amd64.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:45Z"
-        digest: sha256:36ffaf871fb41b7408e5287d44aa6f1cfc3a9139d68beaa77dd6de00cca4ac39
-        download_count: 4
-        id: 419759828
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564105
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-amd64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:27Z"
+        digest: sha256:d4ba6b86bc97ca4d65df67a4bd2382b0a1f30f646d8335ae0a7a445e62f6ab04
+        download_count: 105
+        id: 450564120
         label: null
-        name: helm-v4.2.0-darwin-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQbU
+        name: helm-v4.2.2-darwin-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xAY
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:45Z"
+        updated_at: "2026-06-17T20:46:27Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -116,19 +117,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759828
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-darwin-amd64.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:45Z"
-        digest: sha256:1acbad5f8870a0b8a2ad2d4435ed86b1dfe38da51b813fa3631fa8fa9516c574
-        download_count: 4
-        id: 419759829
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564120
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-amd64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:27Z"
+        digest: sha256:c3f9b6dc5e462a46c67ebe78946b231d668ab7588b6728584d8610c1d9612e12
+        download_count: 106
+        id: 450564136
         label: null
-        name: helm-v4.2.0-darwin-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQbV
+        name: helm-v4.2.2-darwin-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xAo
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:45Z"
+        updated_at: "2026-06-17T20:46:28Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -149,19 +150,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759829
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-darwin-arm64.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:45Z"
-        digest: sha256:ebfdf3a0513bb153f38f2cd88ccff28c7e608e3d431cba1505cc4b5a1f565f3b
-        download_count: 3
-        id: 419759830
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564136
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-arm64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:28Z"
+        digest: sha256:4686b94c57b1e25cc9d169c4a5db9f1dd9154abb8417f076afa8aa37f32ffe90
+        download_count: 92
+        id: 450564145
         label: null
-        name: helm-v4.2.0-darwin-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQbW
+        name: helm-v4.2.2-darwin-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xAx
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:46Z"
+        updated_at: "2026-06-17T20:46:29Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -182,19 +183,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759830
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-darwin-arm64.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:46Z"
-        digest: sha256:fffe3cbbcb9fd612989381b153609cb08eb554a45dcea928c42a56cde2065815
-        download_count: 4
-        id: 419759831
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564145
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-arm64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:29Z"
+        digest: sha256:40da391aaae54c2fcc1d9dff9a76e662aa4a8a99c6f71b349f5ab2e38f1d61c1
+        download_count: 91
+        id: 450564148
         label: null
-        name: helm-v4.2.0-darwin-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQbX
+        name: helm-v4.2.2-darwin-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xA0
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:46Z"
+        updated_at: "2026-06-17T20:46:29Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -215,19 +216,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759831
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-darwin-arm64.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:46Z"
-        digest: sha256:9f71b51137844ff96f7986792879555219ce647b9b4dd2c165b596fc37f15e4d
-        download_count: 4
-        id: 419759833
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564148
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-arm64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:29Z"
+        digest: sha256:123026c42484f7bb86575c6dbe08819b50567ff9ae49edbeb2ba1d5865a51bf3
+        download_count: 92
+        id: 450564161
         label: null
-        name: helm-v4.2.0-darwin-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQbZ
+        name: helm-v4.2.2-darwin-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xBB
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:46Z"
+        updated_at: "2026-06-17T20:46:30Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -248,19 +249,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759833
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-386.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:46Z"
-        digest: sha256:ca671d95984225c3398b05e10697e93808d2e3d3397ccaf37ff6e3926e8d1572
-        download_count: 3
-        id: 419759834
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564161
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-386.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:30Z"
+        digest: sha256:99f1998d2650810af607b6232e50ed0b19136ab37f523a91c42e975cddc94167
+        download_count: 123
+        id: 450564166
         label: null
-        name: helm-v4.2.0-linux-386.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQba
+        name: helm-v4.2.2-linux-386.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xBG
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:47Z"
+        updated_at: "2026-06-17T20:46:30Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -281,19 +282,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759834
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-386.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:47Z"
-        digest: sha256:1c693c92da163cb8f674ca55815d347f4cf8ed0875936a7911f673b57f833350
-        download_count: 4
-        id: 419759835
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564166
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-386.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:30Z"
+        digest: sha256:2d8a98ba0ff1abbd9ba0bb618af74ac3a28354c9e41e5495feac933ee767177d
+        download_count: 101
+        id: 450564176
         label: null
-        name: helm-v4.2.0-linux-386.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQbb
+        name: helm-v4.2.2-linux-386.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xBQ
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:47Z"
+        updated_at: "2026-06-17T20:46:31Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -314,19 +315,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759835
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-386.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:47Z"
-        digest: sha256:0b9aa5deadc57889a15949b5c2d4e65fd6b029f9476be267095f9ad495791cd2
-        download_count: 4
-        id: 419759838
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564176
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-386.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:31Z"
+        digest: sha256:a733ab1d57e31e1c67f95fe38b239916358d5bf12f4d2f62e074a3081f924027
+        download_count: 115
+        id: 450564180
         label: null
-        name: helm-v4.2.0-linux-386.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQbe
+        name: helm-v4.2.2-linux-386.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xBU
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:47Z"
+        updated_at: "2026-06-17T20:46:32Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -347,19 +348,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759838
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-amd64.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:47Z"
-        digest: sha256:6354fe9f457ff639bdfe7f460ad6e8204e9bc22d03dfab6b4f3326475d129647
-        download_count: 29
-        id: 419759845
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564180
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-amd64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:32Z"
+        digest: sha256:b23ae4300fa80c0b5ed742cd61ee6baee68f3bb88b1e6c66a5bb67e3be932bb1
+        download_count: 7521
+        id: 450564187
         label: null
-        name: helm-v4.2.0-linux-amd64.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQbl
+        name: helm-v4.2.2-linux-amd64.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xBb
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:47Z"
+        updated_at: "2026-06-17T20:46:32Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -380,19 +381,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759845
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-amd64.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:47Z"
-        digest: sha256:98d26ab74108e9464bfa008edeb3c726f6b7fb0ee3b2b13e5d960d59235b4ce9
-        download_count: 30
-        id: 419759848
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564187
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-amd64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:32Z"
+        digest: sha256:d01eded7f217deb08312d1b2cb11438edda040b0a7540f74af08f24574e56eeb
+        download_count: 6851
+        id: 450564196
         label: null
-        name: helm-v4.2.0-linux-amd64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQbo
+        name: helm-v4.2.2-linux-amd64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xBk
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:48Z"
+        updated_at: "2026-06-17T20:46:33Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -413,19 +414,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759848
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-amd64.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:48Z"
-        digest: sha256:f7a6d1f43c95c72bcc1568f78c1ef907f1b08903a275d8215a0ce4b4e158e297
-        download_count: 5
-        id: 419759850
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564196
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-amd64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:33Z"
+        digest: sha256:18cb5700fbd4d13d6d962b122073e75d55022f187bea4b04ba535dd4052aa52e
+        download_count: 375
+        id: 450564210
         label: null
-        name: helm-v4.2.0-linux-amd64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQbq
+        name: helm-v4.2.2-linux-amd64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xBy
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:48Z"
+        updated_at: "2026-06-17T20:46:34Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -446,19 +447,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759850
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-arm.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:48Z"
-        digest: sha256:ea075b70662080d76a9b56dac49bdf632d4fc55a7eebfc65838f3ba956c6bcc7
-        download_count: 3
-        id: 419759851
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564210
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:34Z"
+        digest: sha256:ec26181c11ad01ac88347ab8e6d39d86d0a58127148bc840b8db95b9fce3f262
+        download_count: 80
+        id: 450564219
         label: null
-        name: helm-v4.2.0-linux-arm.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQbr
+        name: helm-v4.2.2-linux-arm.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xB7
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:48Z"
+        updated_at: "2026-06-17T20:46:34Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -479,19 +480,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759851
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-arm.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:48Z"
-        digest: sha256:cb58ab4213b65c89d295d3a315f3af8b55864ae0c5d41ca71f8301725be468fe
-        download_count: 4
-        id: 419759853
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564219
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:34Z"
+        digest: sha256:c1263faf36d2ac5eb3c203fce2636351728c1d4b5b44ee16eedc6b2df739479e
+        download_count: 76
+        id: 450564224
         label: null
-        name: helm-v4.2.0-linux-arm.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQbt
+        name: helm-v4.2.2-linux-arm.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xCA
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:49Z"
+        updated_at: "2026-06-17T20:46:35Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -512,19 +513,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759853
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-arm.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:49Z"
-        digest: sha256:d69fc6a73196326567a1b2e10ba0606400d53fce0747677421ab92175648e601
-        download_count: 4
-        id: 419759856
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564224
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:35Z"
+        digest: sha256:5ef550bc6cc0b28a35d2255a051300600aea8136f87ae815b43050e822b33550
+        download_count: 83
+        id: 450564228
         label: null
-        name: helm-v4.2.0-linux-arm.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQbw
+        name: helm-v4.2.2-linux-arm.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xCE
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:49Z"
+        updated_at: "2026-06-17T20:46:36Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -545,19 +546,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759856
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-arm64.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:49Z"
-        digest: sha256:f1f226cb644903e5c8308821a315127f018866fb20fd8413d4e8b6a2ab635a22
-        download_count: 5
-        id: 419759864
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564228
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:35Z"
+        digest: sha256:a89fc320e2f99de30f256876bd0600aae4911cdd4a582315c20c54e8bfe863c7
+        download_count: 1407
+        id: 450564238
         label: null
-        name: helm-v4.2.0-linux-arm64.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQb4
+        name: helm-v4.2.2-linux-arm64.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xCO
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:49Z"
+        updated_at: "2026-06-17T20:46:36Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -578,19 +579,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759864
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-arm64.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:49Z"
-        digest: sha256:b34226197b52138134d9f36fbc96e0e74365eb2a0ec53f6e436b289ea8c9b6b2
-        download_count: 6
-        id: 419759872
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564238
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:36Z"
+        digest: sha256:3e08d338c3c5fee58fa501d5bd9aebb7a38d7bef8152ffc9891af0d9d7c3e1ea
+        download_count: 1311
+        id: 450564241
         label: null
-        name: helm-v4.2.0-linux-arm64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQcA
+        name: helm-v4.2.2-linux-arm64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xCR
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:50Z"
+        updated_at: "2026-06-17T20:46:37Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -611,19 +612,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759872
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-arm64.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:50Z"
-        digest: sha256:8228c23fa20d82a6339c8c22d380e69a543fe9004bc6547593a380ee8e6464ea
-        download_count: 4
-        id: 419759874
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564241
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:37Z"
+        digest: sha256:e957a5d9a73fe0fc87463ff70156bd6131fa033c5961a3f411504f63b4f2079f
+        download_count: 135
+        id: 450564250
         label: null
-        name: helm-v4.2.0-linux-arm64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQcC
+        name: helm-v4.2.2-linux-arm64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xCa
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:50Z"
+        updated_at: "2026-06-17T20:46:37Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -644,19 +645,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759874
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-loong64.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:50Z"
-        digest: sha256:743ba64b832c8785fec9a33d18c4d804563821b5f5f030fa925056a3baddd2c2
-        download_count: 3
-        id: 419759876
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564250
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-loong64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:37Z"
+        digest: sha256:5c63bff8206d4505023707404685b62d93e5ff39c5b05939fe24c0d3c0264de0
+        download_count: 80
+        id: 450564257
         label: null
-        name: helm-v4.2.0-linux-loong64.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQcE
+        name: helm-v4.2.2-linux-loong64.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xCh
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:50Z"
+        updated_at: "2026-06-17T20:46:38Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -677,19 +678,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759876
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-loong64.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:50Z"
-        digest: sha256:1274ab9568bec8e8a373cb7ba5dc4adf6b288f5e86ccaf8196eba74cf4ee9c23
-        download_count: 4
-        id: 419759879
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564257
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-loong64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:38Z"
+        digest: sha256:8c9de8005355ba19c0ca8181dd26db4b9f15009c44077d795b77e7c1dc5f507d
+        download_count: 82
+        id: 450564259
         label: null
-        name: helm-v4.2.0-linux-loong64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQcH
+        name: helm-v4.2.2-linux-loong64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xCj
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:51Z"
+        updated_at: "2026-06-17T20:46:39Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -710,19 +711,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759879
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-loong64.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:51Z"
-        digest: sha256:c7cbe86b05a377d7ad9eee59855d9e7593055de72287ead1617bce968f3df7ac
-        download_count: 4
-        id: 419759881
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564259
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-loong64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:39Z"
+        digest: sha256:f31e5bfe3ab34f37b6ecade80018ae43e06cccc8a13d916c7a2072f6c60fd0d0
+        download_count: 80
+        id: 450564270
         label: null
-        name: helm-v4.2.0-linux-loong64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQcJ
+        name: helm-v4.2.2-linux-loong64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xCu
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:51Z"
+        updated_at: "2026-06-17T20:46:39Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -743,19 +744,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759881
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-ppc64le.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:51Z"
-        digest: sha256:2a087d7e7355ba3a6ad2da1d11a9e9459d4b16e086a05e4204fb55348f08d3d8
-        download_count: 3
-        id: 419759882
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564270
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-ppc64le.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:39Z"
+        digest: sha256:344b9306863ce65634f2139dd36476c751bb47ca4a96b001ccfff50c9129ce1c
+        download_count: 78
+        id: 450564276
         label: null
-        name: helm-v4.2.0-linux-ppc64le.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQcK
+        name: helm-v4.2.2-linux-ppc64le.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xC0
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:51Z"
+        updated_at: "2026-06-17T20:46:40Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -776,19 +777,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759882
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-ppc64le.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:51Z"
-        digest: sha256:9a34587a0129f343291dd7083d7757d0774ac74a3965647ed6d78cd51601eb47
-        download_count: 4
-        id: 419759886
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564276
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-ppc64le.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:40Z"
+        digest: sha256:f70a4fb471204d35ba59655b5eadf94dd6258b9619f047d974b7c2d245dbc7a4
+        download_count: 78
+        id: 450564278
         label: null
-        name: helm-v4.2.0-linux-ppc64le.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQcO
+        name: helm-v4.2.2-linux-ppc64le.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xC2
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:52Z"
+        updated_at: "2026-06-17T20:46:41Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -809,19 +810,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759886
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-ppc64le.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:52Z"
-        digest: sha256:126bcc68acf75d0cc92285bc8121d2a36bd1e243406f67cb03849934c94f6edb
-        download_count: 4
-        id: 419759891
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564278
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:41Z"
+        digest: sha256:5c192dc472f565b8f4bbc358cec35b0b37396de9967db5d07d295beef0f843fc
+        download_count: 81
+        id: 450564288
         label: null
-        name: helm-v4.2.0-linux-ppc64le.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQcT
+        name: helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xDA
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:52Z"
+        updated_at: "2026-06-17T20:46:41Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -842,19 +843,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759891
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-riscv64.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:52Z"
-        digest: sha256:3f441c89929c4387d7b79abc2ef8385e6a4b96f72e7ff318cf82e75ab27291f5
-        download_count: 3
-        id: 419759892
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564288
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-riscv64.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:42Z"
+        digest: sha256:ad2a0fbc38eb89e50c1b9d3169713a04838b51ce5ced55dc5f68e5b9ae67425c
+        download_count: 80
+        id: 450564292
         label: null
-        name: helm-v4.2.0-linux-riscv64.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQcU
+        name: helm-v4.2.2-linux-riscv64.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xDE
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:52Z"
+        updated_at: "2026-06-17T20:46:42Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -875,19 +876,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759892
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-riscv64.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:52Z"
-        digest: sha256:0ae88020d6172e297082c76f2bac044b43b69c488b713349f74ba35d8da620c5
-        download_count: 4
-        id: 419759893
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564292
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-riscv64.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:42Z"
+        digest: sha256:b38b7116ce84d1ce75b2a662c09d9db726d7150854aae0aee327d33559d99273
+        download_count: 82
+        id: 450564302
         label: null
-        name: helm-v4.2.0-linux-riscv64.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQcV
+        name: helm-v4.2.2-linux-riscv64.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xDO
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:53Z"
+        updated_at: "2026-06-17T20:46:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -908,19 +909,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759893
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-riscv64.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:53Z"
-        digest: sha256:ee85f48a4ea6c5509c54f749fe0154640857bdd2c468235f2812d9e237874bdf
-        download_count: 4
-        id: 419759895
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564302
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-riscv64.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:43Z"
+        digest: sha256:43e8be39358ea460d5dc92ec2878e2f7540a38def77fc478b263578d1bd2ecd2
+        download_count: 81
+        id: 450564305
         label: null
-        name: helm-v4.2.0-linux-riscv64.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQcX
+        name: helm-v4.2.2-linux-riscv64.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xDR
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:53Z"
+        updated_at: "2026-06-17T20:46:43Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -941,19 +942,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759895
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-s390x.tar.gz.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:53Z"
-        digest: sha256:ec7e5ad331060a99a47e88a1012fe0199a923eb80eb0c5ae09d1c46592d677e5
-        download_count: 3
-        id: 419759897
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564305
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-s390x.tar.gz.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:43Z"
+        digest: sha256:4670853cf73cd6bf6e1ef0391e6b18e6d2b9e1928a51d09a146237c9591d954d
+        download_count: 81
+        id: 450564311
         label: null
-        name: helm-v4.2.0-linux-s390x.tar.gz.asc
-        node_id: RA_kwDOApspmc4ZBQcZ
+        name: helm-v4.2.2-linux-s390x.tar.gz.asc
+        node_id: RA_kwDOApspmc4a2xDX
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:53Z"
+        updated_at: "2026-06-17T20:46:44Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -974,19 +975,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759897
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-s390x.tar.gz.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:53Z"
-        digest: sha256:f234940c2481fdb0bd7a26b9575965065e8f594007f3ec38e480717ec468fb4e
-        download_count: 4
-        id: 419759899
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564311
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-s390x.tar.gz.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:44Z"
+        digest: sha256:34ce52f3e389d426141c5c554d620105d352388d365a0a57039feef42ee773f2
+        download_count: 77
+        id: 450564317
         label: null
-        name: helm-v4.2.0-linux-s390x.tar.gz.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQcb
+        name: helm-v4.2.2-linux-s390x.tar.gz.sha256.asc
+        node_id: RA_kwDOApspmc4a2xDd
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:54Z"
+        updated_at: "2026-06-17T20:46:45Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1007,19 +1008,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759899
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-linux-s390x.tar.gz.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:54Z"
-        digest: sha256:0d7c1840e68da59d9d4acd0a8a7053af52af529db5c3681b5fbea2fa1f104e9d
-        download_count: 4
-        id: 419759900
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564317
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-s390x.tar.gz.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:45Z"
+        digest: sha256:3d76ecfad5b6273b7db1e9fec878800c8b7175b5e93dcd099246c3a8cd6ba721
+        download_count: 81
+        id: 450564326
         label: null
-        name: helm-v4.2.0-linux-s390x.tar.gz.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQcc
+        name: helm-v4.2.2-linux-s390x.tar.gz.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xDm
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:54Z"
+        updated_at: "2026-06-17T20:46:45Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1040,19 +1041,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759900
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-windows-amd64.zip.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:54Z"
-        digest: sha256:4ca659a8deeb855b4c8dc8706803ba99c72d111e4c45a74a46d7bf4be8acca18
-        download_count: 3
-        id: 419759901
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564326
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-amd64.zip.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:45Z"
+        digest: sha256:27f006d1152726243df419221322117c73b5a774256721e11dd04eb4eeb89202
+        download_count: 185
+        id: 450564331
         label: null
-        name: helm-v4.2.0-windows-amd64.zip.asc
-        node_id: RA_kwDOApspmc4ZBQcd
+        name: helm-v4.2.2-windows-amd64.zip.asc
+        node_id: RA_kwDOApspmc4a2xDr
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:55Z"
+        updated_at: "2026-06-17T20:46:46Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1073,19 +1074,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759901
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-windows-amd64.zip.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:55Z"
-        digest: sha256:d929ad25f5934323d60e261e5576eedde1317ecdbaff2bf21e348240a11e3750
-        download_count: 5
-        id: 419759902
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564331
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-amd64.zip.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:46Z"
+        digest: sha256:13db26b426fad07e02f0aaf6246c7ee39a158ce01f66dbe67fb57d91a0dd443f
+        download_count: 112
+        id: 450564342
         label: null
-        name: helm-v4.2.0-windows-amd64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQce
+        name: helm-v4.2.2-windows-amd64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4a2xD2
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:55Z"
+        updated_at: "2026-06-17T20:46:47Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1106,19 +1107,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759902
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-windows-amd64.zip.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:55Z"
-        digest: sha256:76e7d65a1f86e085ebec93dde914ee9e4cc329141b65f307650721300c94ef10
-        download_count: 4
-        id: 419759904
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564342
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-amd64.zip.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:47Z"
+        digest: sha256:69ea378262e2304e807cdf7c91b0d54ce7237f2e69c8ee95d9b1c3880970af69
+        download_count: 92
+        id: 450564353
         label: null
-        name: helm-v4.2.0-windows-amd64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQcg
+        name: helm-v4.2.2-windows-amd64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xEB
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:56Z"
+        updated_at: "2026-06-17T20:46:47Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1139,19 +1140,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759904
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-windows-arm64.zip.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:56Z"
-        digest: sha256:53de41963367de1d7524be3743e898651911d99bd2ffbf4e48ddbce96957c622
-        download_count: 3
-        id: 419759912
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564353
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-arm64.zip.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:47Z"
+        digest: sha256:3b62e7beb49f7ac3dda00acb75b7226fe7dc3e66d468b0de319290cb597c70b4
+        download_count: 88
+        id: 450564362
         label: null
-        name: helm-v4.2.0-windows-arm64.zip.asc
-        node_id: RA_kwDOApspmc4ZBQco
+        name: helm-v4.2.2-windows-arm64.zip.asc
+        node_id: RA_kwDOApspmc4a2xEK
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:56Z"
+        updated_at: "2026-06-17T20:46:48Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1172,19 +1173,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759912
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-windows-arm64.zip.sha256.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:56Z"
-        digest: sha256:4b02d20f4f44422f853bd83bfe845230208e6e5e9c859c49060310488545481c
-        download_count: 4
-        id: 419759924
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564362
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-arm64.zip.sha256.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:48Z"
+        digest: sha256:6532fa0d9e824c519fee0445e3d33c2f1fe311907ef214f853c06edee3590bc9
+        download_count: 72
+        id: 450564374
         label: null
-        name: helm-v4.2.0-windows-arm64.zip.sha256.asc
-        node_id: RA_kwDOApspmc4ZBQc0
+        name: helm-v4.2.2-windows-arm64.zip.sha256.asc
+        node_id: RA_kwDOApspmc4a2xEW
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:57Z"
+        updated_at: "2026-06-17T20:46:49Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1205,19 +1206,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759924
-      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.0/helm-v4.2.0-windows-arm64.zip.sha256sum.asc
-        content_type: text/plain
-        created_at: "2026-05-14T01:08:57Z"
-        digest: sha256:d71bcdd23b8cf249fc4ab37fbc91b955c8352e82e1e3139fc67e3aeace971475
-        download_count: 4
-        id: 419759930
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564374
+      - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-arm64.zip.sha256sum.asc
+        content_type: application/octet-stream
+        created_at: "2026-06-17T20:46:49Z"
+        digest: sha256:6dd3792f16b53be8d15f9698d8ce626a7335efb18d76e6f12c4e3d4f4b7e6aff
+        download_count: 69
+        id: 450564382
         label: null
-        name: helm-v4.2.0-windows-arm64.zip.sha256sum.asc
-        node_id: RA_kwDOApspmc4ZBQc6
+        name: helm-v4.2.2-windows-arm64.zip.sha256sum.asc
+        node_id: RA_kwDOApspmc4a2xEe
         size: 265
         state: uploaded
-        updated_at: "2026-05-14T01:08:57Z"
+        updated_at: "2026-06-17T20:46:49Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
           events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1238,8 +1239,8 @@ dependencies:
           type: User
           url: https://api.github.com/users/gjenkins8
           user_view_type: public
-        url: https://api.github.com/repos/helm/helm/releases/assets/419759930
-      assets_url: https://api.github.com/repos/helm/helm/releases/322259404/assets
+        url: https://api.github.com/repos/helm/helm/releases/assets/450564382
+      assets_url: https://api.github.com/repos/helm/helm/releases/341038643/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
         events_url: https://api.github.com/users/gjenkins8/events{/privacy}
@@ -1260,42 +1261,41 @@ dependencies:
         type: User
         url: https://api.github.com/users/gjenkins8
         user_view_type: public
-      body: "Helm v4.2.0 is a feature release. Users are encouraged to upgrade for
-        the best experience.\r\n\r\nThe community keeps growing, and we'd love to
-        see you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+      body: "Helm v4.2.2 is a patch release. Users are encouraged to upgrade for the
+        best experience.\r\n\r\nThe community keeps growing, and we'd love to see
+        you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
         \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
         and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
         via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute charts:
         [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
-        Notable Changes\r\n\r\n- Switch to `goreleaser` for release builds\r\n- Kubernetes
-        client libraries to v1.36\r\n- Add `mustToToml` template function\r\n- deprecate
-        unused `--hide-notes` and `--render-subchart-notes` flags \r\n- `--dry-run=server`
-        now respects `generateName:`\r\n\r\n## Installation and Upgrading\r\n\r\nDownload
-        Helm v4.2.0. The common platform binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v4.2.0-darwin-amd64.tar.gz)
-        ([checksum](https://get.helm.sh/helm-v4.2.0-darwin-amd64.tar.gz.sha256sum)
-        / 1376ea697140e4db316736e760d5a47d12afc1524dce704476ef06fd7fdeddc6)\r\n- [MacOS
-        arm64](https://get.helm.sh/helm-v4.2.0-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-darwin-arm64.tar.gz.sha256sum)
-        / f13f959015447b6bc309f9fd506509926543988a39035c088b52522ec95e2acb)\r\n- [Linux
-        amd64](https://get.helm.sh/helm-v4.2.0-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-amd64.tar.gz.sha256sum)
-        / 97dbeb971be4ac4b27e3839976d9564c0fb35c6f3b1da89dd1e292d236af4096)\r\n- [Linux
-        arm](https://get.helm.sh/helm-v4.2.0-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-arm.tar.gz.sha256sum)
-        / ae624870b2d50e655b6462daff117eb9d28c4bad45234ef24c1275113540fcb0)\r\n- [Linux
-        arm64](https://get.helm.sh/helm-v4.2.0-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-arm64.tar.gz.sha256sum)
-        / 1f8de130dfbd04de64978e7b852a7a547be1404956a366608276d2520b678670)\r\n- [Linux
-        i386](https://get.helm.sh/helm-v4.2.0-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-386.tar.gz.sha256sum)
-        / 9cf44acc59081aca98b4d9f09138348836b26761258e02ad2b99616f66eead5c)\r\n- [Linux
-        loong64](https://get.helm.sh/helm-v4.2.0-linux-loong64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-loong64.tar.gz.sha256sum)
-        / 5b04f0167b8b415a057c1f4f809ede86d5ead840e0aa560db097da5be19f86d0)\r\n- [Linux
-        ppc64le](https://get.helm.sh/helm-v4.2.0-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-ppc64le.tar.gz.sha256sum)
-        / 48f0637b93247717b725e8d4a8d2cf8df0e2fdea91bdd0e36e2426c2d5c76e4e)\r\n- [Linux
-        s390x](https://get.helm.sh/helm-v4.2.0-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-s390x.tar.gz.sha256sum)
-        / 328e9ed27904f9910026240c4311bb1b0bf91c6fde1634f212097694507a702f)\r\n- [Linux
-        riscv64](https://get.helm.sh/helm-v4.2.0-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.0-linux-riscv64.tar.gz.sha256sum)
-        / 5d292d57ab1f40e47e373a87187bafa66e8daac4ddc4a1333421c174e8184755)\r\n- [Windows
-        amd64](https://get.helm.sh/helm-v4.2.0-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v4.2.0-windows-amd64.zip.sha256sum)
-        / 614f68ddc567ac9bfb0c205f869b1f83ba4e0a9aacd26cbae47743ae6082a579)\r\n- [Windows
-        arm64](https://get.helm.sh/helm-v4.2.0-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v4.2.0-windows-arm64.zip.sha256sum)
-        / e740e4c19b6e2a0b428f7a52c38b7f0b092f0c43ac49870537d7e7fac9cedc07)\r\n\r\nThis
+        Notable Changes\r\n\r\n- Revert: Fixed a race condition in WaitForDelete where
+        the status observer canceled the watch too early, causing intermittent failures
+        when running a full test suite #32214\r\n\r\n## Installation and Upgrading\r\n\r\nDownload
+        Helm v4.2.2. The common platform binaries are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v4.2.2-darwin-amd64.tar.gz)
+        ([checksum](https://get.helm.sh/helm-v4.2.2-darwin-amd64.tar.gz.sha256sum)
+        / 10c1e36ee8c5f2e2ee25a16599cb03ab74c0953cd889cacb980a49ba4b6574ba)\r\n- [MacOS
+        arm64](https://get.helm.sh/helm-v4.2.2-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-darwin-arm64.tar.gz.sha256sum)
+        / 5410a0dae3d5d91f45653b161260d9301aabc4ae80ae50a6605d66884b6df8ea)\r\n- [Linux
+        amd64](https://get.helm.sh/helm-v4.2.2-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-amd64.tar.gz.sha256sum)
+        / 9adafecab4d406853bba163a70e9f104f47dbbf65ce24b7653bae7e36150bcb6)\r\n- [Linux
+        arm](https://get.helm.sh/helm-v4.2.2-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-arm.tar.gz.sha256sum)
+        / 7e9490169874695e04ab1af47c5620621fc13c84219a258fcc1afdcd40ca7438)\r\n- [Linux
+        arm64](https://get.helm.sh/helm-v4.2.2-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-arm64.tar.gz.sha256sum)
+        / 78803142087a0069fa4b50d3f32a84d3ef25c14d1ee8a40fbccf86a6216d2f36)\r\n- [Linux
+        i386](https://get.helm.sh/helm-v4.2.2-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-386.tar.gz.sha256sum)
+        / 8e1fdcda4a476ffc5d1179c7f16d33a3d54267efa08fd720f7678277d68bc2d5)\r\n- [Linux
+        loong64](https://get.helm.sh/helm-v4.2.2-linux-loong64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-loong64.tar.gz.sha256sum)
+        / b8bfe96b8b0b0e2af51af4a00ef521cc5a7e03793aea3568cf8500a63ae05041)\r\n- [Linux
+        ppc64le](https://get.helm.sh/helm-v4.2.2-linux-ppc64le.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum)
+        / 814a80fd98eb9e4c5a9d610f3b9c15ffe120c2f5e39df16a2f491723ebc90126)\r\n- [Linux
+        s390x](https://get.helm.sh/helm-v4.2.2-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-s390x.tar.gz.sha256sum)
+        / d84cdf1123f20cfbef19a2af1cd6afe8b00626bd9846bccb9dae978c810c8274)\r\n- [Linux
+        riscv64](https://get.helm.sh/helm-v4.2.2-linux-riscv64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-riscv64.tar.gz.sha256sum)
+        / f07c105180dff2619ab45134b9b47b7845387e8f3299e12ebe0efb87c7548717)\r\n- [Windows
+        amd64](https://get.helm.sh/helm-v4.2.2-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v4.2.2-windows-amd64.zip.sha256sum)
+        / 5fad8562e98c34fa5af3ef904086a5874a6701050f9bf36e30238c975df94dcd)\r\n- [Windows
+        arm64](https://get.helm.sh/helm-v4.2.2-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v4.2.2-windows-arm64.zip.sha256sum)
+        / 2e993d6a1dd8197a33e65d8e90b26df9d248ff3501701dea401856aa265a2dab)\r\n\r\nThis
         release was signed by @gjenkins8 with key BF88 8333 D96A 1C18 E268 2AAE D79D
         67C9 EC01 6739, which can be found at https://keys.openpgp.org/vks/v1/by-fingerprint/BF888333D96A1C18E2682AAED79D67C9EC016739.
         Please use the attached signatures for verifying this release using gpg.\r\n\r\nThe
@@ -1303,282 +1303,43 @@ dependencies:
         from there. For **upgrade instructions** or detailed installation notes, check
         the [install guide](https://helm.sh/docs/intro/install/). You can also use
         a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4)
-        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 4.2.1 will contain
-        only bug fixes\r\n- 4.3.0 is the next feature release\r\n\r\n## Changelog\r\n\r\n-
-        Bump to version v4.2 06468084e85c244c712834933d25ea232a4c2093 (George Jenkins)\r\n-
-        build: Clean up Goreleaser change (#32098) e23bf3af53c52185123278e83b7023c102707778
-        (Scott Rigby)\r\n- fix: add -extldflags -static to dist target to match build-cross
-        f60ab7c31c81a73b8e0aade5aff41bfc01c08820 (Terry Howe)\r\n- build: use goreleaser
-        build with manual archive creation 64aa46f2f1cf239cf6535c5e847e14dcb933a847
-        (Terry Howe)\r\n- chore: remove build-cross dependency from test-acceptance
-        d199a1a42c04bccb287f2c7d9c3f73b669412e5a (Terry Howe)\r\n- ci: add fetch-depth
-        0 to canary checkout for goreleaser 82899404a68f3826389bb38cf67bf75085db6b2c
-        (Terry Howe)\r\n- fix: address goreleaser build issues flagged in review c075022ce16489f5f7afd45a37b679cf58fa36ea
-        (Terry Howe)\r\n- fix: pass VERSION as GORELEASER_CURRENT_TAG to preserve
-        v-prefix in archive names 04885dd905b6f8a823733dbc9b9f5cb2843a975f (Terry
-        Howe)\r\n- fix: disable goreleaser checksums.txt and restrict zip to windows
-        only 93103ce66cb6374d9d7b552802f53b21ea2c2dd1 (Terry Howe)\r\n- fix: use index
-        for optional env var in version_template e49a1dc16eee526928d8928b8d96c01ee513ebd9
-        (Terry Howe)\r\n- fix: canary build file names eaa09100b9b18175d878b1e114cbe9df2a3f70c2
-        (Terry Howe)\r\n- Fix archive name 5a75279c1a017a60b97bd44986288af7399c6ff8
-        (Terry Howe)\r\n- fix goreleaser archive 37284a9211972f7f41a2acc3c3313517596dd4b0
-        (Terry Howe)\r\n- add support for loong64 45336ccd5b2621357e3f785c1fe93627c5990a6e
-        (Terry Howe)\r\n- fix artifact directory a9659b07e3eec20ab5b964fddae05f51f478f704
-        (Terry Howe)\r\n- update configuration to v2 e368f170af8a200e672adac5f765b8101db0c8fa
-        (Terry Howe)\r\n- remove GOTOOLCHAIN e7bea8513c30475664919f031774e18fecdf1f66
-        (Terry Howe)\r\n- chore: replace mitchellh/gox with goreleaser 075c096afec70155bc43ac3587a119df1ae5fcc6
-        (Terry Howe)\r\n- chore(deps): bump github.com/distribution/distribution/v3
-        12f2c41c0d7a74739c58a5995cbbb3125d9247e5 (dependabot[bot])\r\n- chore(deps):
-        bump github/codeql-action from 4.35.2 to 4.35.3 58e8ffdc3302260b1b55718c9b72c6f169a76ee0
-        (dependabot[bot])\r\n- chore(deps): bump github.com/Masterminds/semver/v3
-        from 3.4.0 to 3.5.0 e61bbfbfff41958b0ba1984e4d6799fe131f325e (dependabot[bot])\r\n-
-        Upgrade kstatus to 1.2 and controller-runtime to 0.24 081c6dff537087f52ec6e470d8986439e24e8e33
-        (Matheus Pimenta)\r\n- fix: adds topLevel permissions to improve openSSF scores
-        277d9702555532d13426119d31c70fffb389d589 (Gagan H R)\r\n- Upgrade Go to 1.26,
-        Kubernetes to 1.36, kstatus to 1.1 a4a9cc7a314d98456a2f23798a78e9ad05d96d0c
-        (Matheus Pimenta)\r\n- fix(templating): hooks conflicting with templates in
-        post-renderers (#32049) 8f56f24d638612a46f3e23265d06338c1f93bccb (Matheus
-        Pimenta)\r\n- docs: fix grammar and spacing in CONTRIBUTING.md db40adb1d13573280b65bc2002df7d75c009235a
-        (Mohit)\r\n- chore(deps): bump the k8s-io group with 7 updates 775e794319639f5c1e6b40448ce15ad3cc10d4e1
-        (dependabot[bot])\r\n- chore(deps): bump github/codeql-action from 4.35.1
-        to 4.35.2 934ace35dfaef9eeb9997bf1ee385db0986daecc (dependabot[bot])\r\n-
-        fix(templating): SplitManifests must preserve line endings for downstream
-        YAML parsers (#31952) 265c5eb530a36ec651e79ecf4d37ba2f098b7e59 (Matheus Pimenta)\r\n-
-        chore(deps): bump github.com/mattn/go-shellwords from 1.0.12 to 1.0.13 48e2b7ddd4e960b768fe5daee34a33cb89852a6e
-        (dependabot[bot])\r\n- Update pkg/chart/common/util/coalesce.go a8e249714f5311b9aff44c4bd2bfc433ab1ab952
-        (Evans Mungai)\r\n- test(values): Add test for nil cleanup in partially overridden
-        subchart maps 52fc971da37cf34aa26e7d7c460f2430dfb01b26 (Johannes Lohmer)\r\n-
-        fix(values): do not copy chart-default nils into coalesced values 00638773d1366dc962c785de3d297cf0279b9a0d
-        (Johannes Lohmer)\r\n- test(values): add test for subchart nil producing %!s(<nil>)
-        6eb4ebf0e1afb0c63d748bf116145a5b9e0842b7 (Johannes Lohmer)\r\n- test(values):
-        add tests for subchart nil value regressions 5cb4e7d992d85d372f5d86c238330102d936bfe5
-        (Johannes Lohmer)\r\n- chore(deps): bump actions/upload-artifact from 7.0.0
-        to 7.0.1 b5c7c80de317643e383ca2926ebc0ad884021bba (dependabot[bot])\r\n- fix(templating):
-        fix wrong YAML separator parsing for post-renderers (#31941) a27f1add79c6c02459413dbb60f8438d8051cf06
-        (Matheus Pimenta)\r\n- fix: add debug logging to HTTP getter for helm pull
-        c26be60d81e5cb6a147d6088477cf86fd5aaf1f0 (Cairon)\r\n- chore(deps): bump golang.org/x/crypto
-        from 0.49.0 to 0.50.0 953f5f031bb7fa8f3eccdea6520e09fd44fe3923 (dependabot[bot])\r\n-
-        chore(deps): bump golang.org/x/term from 0.41.0 to 0.42.0 10fc5f335b5fbb09f5d04cb0450839790ae15634
-        (dependabot[bot])\r\n- chore(deps): bump golang.org/x/text from 0.35.0 to
-        0.36.0 d89e7c60762910204044c4215c7bb2f43ac3ef8f (dependabot[bot])\r\n- chore:
-        Update release notes script for Helm v4 8a954619255a82890a08b7d1fa9e86a437c4cebb
-        (George Jenkins)\r\n- refactor(cli): share RetryingRoundTripper via pkg/kubeenv
-        213c869a988f2c7390c65673e3d677970d6220fd (Sumit Solanki)\r\n- chore(deps):
-        bump github.com/lib/pq from 1.12.2 to 1.12.3 bd5027a9cf07993d7bfe4b60702b1a489fe8783e
-        (dependabot[bot])\r\n- fix: unnecessary-format lint issues from merge 087736b66e97393ccaa0bdf1e5df13dcc9d88340
-        (George Jenkins)\r\n- fix: Plugin missing provenance bypass 586eb57338d848e65686a3a9616e2776e87cfd1e
-        (George Jenkins)\r\n- chore(deps): bump github.com/fluxcd/cli-utils c8c5dfad630cd7b238236c619c466488a547725c
-        (dependabot[bot])\r\n- chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp
-        998466cfcfee189ce7e3df5be8ffe79ed5f1f097 (dependabot[bot])\r\n- chore(deps):
-        bump go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp b0cec589f50a7e16d942ad3385598a6dda2b0a20
-        (dependabot[bot])\r\n- chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp
-        6ebfb29dbf006ce78e9af8878008bda3578dcd3e (dependabot[bot])\r\n- test(kube):
-        fix flaky WaitForDelete test by avoiding informer sync race a7f84439aacd3864b40055b60a3c3e54292d1646
-        (Terry Howe)\r\n- test(kube): fix flaky WaitForDelete timing in status wait
-        tests 4c0d21f53f2ca78b525e31dbbf9cc9cfb818a2e3 (Terry Howe)\r\n- chore(deps):
-        bump github.com/distribution/distribution/v3 08dea9c140084b5d9fecb59a45a05f417415b591
-        (dependabot[bot])\r\n- Minor nit: fix import instructions to comply with canonical
-        import paths de58531ca7ff557342acaa2c906082e58521ef47 (Anmol Virdi)\r\n- chore(deps):
-        bump github.com/distribution/distribution/v3 9b1ad4cf027452b828affb07318db2e931e734a5
-        (dependabot[bot])\r\n- fix(action): return correct error variable in prepareUpgrade
-        8ef2d45934ba1b9ca341818f1157112fcf7cdf1d (Rhys McNeill)\r\n- chore(deps):
-        bump github.com/lib/pq from 1.12.1 to 1.12.2 cd7cf76a174e856fd171b391995d9a65f97a79d3
-        (dependabot[bot])\r\n- chore(deps): bump github/codeql-action from 4.30.7
-        to 4.35.1 45ee55b83f8ad23798c84560ff65686e2ab298af (dependabot[bot])\r\n-
-        chore(deps): bump github.com/lib/pq from 1.12.0 to 1.12.1 9a0674188412d1dcb2e7f018730aaa71781bd03b
-        (dependabot[bot])\r\n- chore(deps): bump actions/setup-go from 6.2.0 to 6.4.0
-        d1e31ca507412d770a602e722060e6d7379f4f1a (dependabot[bot])\r\n- fix(kube):
-        clarify server-side apply patch errors f257c95c783f5595e36cb5a7dcc862cc1f6266b5
-        (abhay1999)\r\n- fix: pin codeql-action/upload-sarif to commit SHA in scorecards
-        workflow 7025480397d8b6b7fd8cdb5e083dc37b62dbd3d8 (Terry Howe)\r\n- refactor(cli):
-        decouple EnvSettings from pkg/kube 64f1d0af5b53f0a9292af2ba1efc42a46a57ed00
-        (Sumit Solanki)\r\n- docs(registry): fix incorrect and improve clarity of
-        comments in client.go 85bf56ea82fd21452e53cae91b380b0afb3e8b83 (Debasish Mohanty)\r\n-
-        refactor(cli): decouple EnvSettings from pkg/kube to avoid import cycles 154993723aadf45601d124c6750e8f4ae3b9f2fd
-        (Sumit Solanki)\r\n- chore(deps): bump github.com/ProtonMail/go-crypto from
-        1.3.0 to 1.4.1 c7a75b16cb8b0859bf32bf74ae98300e5b55361b (dependabot[bot])\r\n-
-        chore(deps): bump github.com/lib/pq from 1.11.2 to 1.12.0 3a7573a81ed5be2e00dfb74fa8d95c0cbe1c4f0d
-        (dependabot[bot])\r\n- chore(deps): bump github.com/fatih/color from 1.18.0
-        to 1.19.0 0229da1803a29671b1becc4561c77f85db609aac (dependabot[bot])\r\n-
-        docs(engine): fix misleading toTOML doc comment c1a5a6e260bd070bce9a8299795400340e10c468
-        (Ilya Kiselev)\r\n- feat(engine): add mustToToml template function b075f7a35d25ec0a4414b011142744f8f1821b47
-        (Ilya Kiselev)\r\n- chore: fix unnecessary-format issues from revive 7edfff33ebcb0f5d961afec34393c222de92de12
-        (Matthieu MOREL)\r\n- chore(deps): bump google.golang.org/grpc from 1.78.0
-        to 1.79.3 37185d2ea6a091b93d2e71cc55ab16b2c0f3f9e9 (dependabot[bot])\r\n-
-        chore: fix bool-compare issues from testifylint 071558d69ffbb408dcb56403d387a1aa90a7d3a8
-        (Matthieu MOREL)\r\n- chore: enable perfsprint linter 62494896e9a105b63df2c76c638c53304a37121e
-        (Matthieu MOREL)\r\n- ignore error plugin loads (cli, getter) 47a084091eeb1c5de221e061866b319f5b5f99f5
-        (George Jenkins)\r\n- chore(deps): bump golang.org/x/crypto from 0.48.0 to
-        0.49.0 3d06fd1feb37f11d050e78f7c17df3c713fcd344 (dependabot[bot])\r\n- fix(kube):
-        remove legacy import comments from test files e64d628a139fab8c876a1d2f4c2928096b286bed
-        (Terry Howe)\r\n- pkg/kube: remove legacy import comments d7cdc9e8fb20c42d19a2371f37ee719be6be6b94
-        (abhay1999)\r\n- fix: Plugin version path traversal 36dcc27ca3c0cd6d0d08713b03dca82f43d7c5f9
-        (George Jenkins)\r\n- chore(deps): bump golang.org/x/term from 0.40.0 to 0.41.0
-        c4be7af2a14c1a01f21231ebb5dd41806fcb0797 (dependabot[bot])\r\n- chore: fix
-        some minor issues in the comments 259f181808f267493d56eccd7f6191f78225a6fa
-        (tsinglua)\r\n- fix: Chart dot-name path bug 60184996e5332d26e0b6390cefbf86776829dc46
-        (George Jenkins)\r\n- chore(deps): bump sigs.k8s.io/controller-runtime from
-        0.23.1 to 0.23.3 74e7cf877a4a674b65f7b7894d2dfde2832e39b1 (dependabot[bot])\r\n-
-        fix: insert newline after doc separators glued to content by template trimming
-        af94abf976ce69dd635aaf086a0bb4b17bd95bc1 (Matheus Pimenta)\r\n- chore(deps):
-        bump github.com/cloudflare/circl from 1.6.1 to 1.6.3 16073b1e3c7b90cda41ed70c8192eb6d16816723
-        (dependabot[bot])\r\n- chore: enable modernize linter (#31860) e31a078e6e0667dde72ff3bf4b5dfb625127076f
-        (Matthieu MOREL)\r\n- Restored --atomic flag on install command 16573f87f5aebf8c2f9c40e67cc3cbe5eb93e733
-        (Travis Leeden)\r\n- fix: bump go.opentelemetry.io/otel/sdk to v1.40.0 for
-        GO-2026-4394 b550ce90946b3b47cecd290fc5d0eee637ddb531 (Terry Howe)\r\n- fix:
-        bump fluxcd/cli-utils to v0.37.2-flux.1 1dfa77ed8ba6f9e26542064248bc9eab40c1a662
-        (Terry Howe)\r\n- Update pkg/cmd/status.go 5d40f17011a477620841edb740d381a012716ae8
-        (Matthieu MOREL)\r\n- chore(internal): enable perfsprint linter (#31871) d4f6193a7ec7ae9ea479da3372eeaf22b445ebcc
-        (Matthieu MOREL)\r\n- chore(deps): bump actions/upload-artifact from 6.0.0
-        to 7.0.0 82d9bedea7d3e342011d82e2e11ff83b396dffbe (dependabot[bot])\r\n- chore(pkg):
-        fix perfsprint linter issues part 6 dc0e3f10c3ba8f25aa71c523d2e273690d338a17
-        (Matthieu MOREL)\r\n- chore(pkg): enable perfsprint linter e3c74fd9fae52c85899ee0ca9a0c1422d59e2bc2
-        (Matthieu MOREL)\r\n- chore(pkg): enable perfsprint linter 1d2d63cc4330fcac786e70926f805b69c0b49ca2
-        (Matthieu MOREL)\r\n- chore(pkg): enable perfsprint linter 63f03c0f5c41b53de3d432b446da9430da99f5bd
-        (Matthieu MOREL)\r\n- chore(pkg): enable perfsprint linter c25c988cfb7bbe3b139dec39cad1db4be33b13c6
-        (Matthieu MOREL)\r\n- chore(pkg): enable perfsprint linter 0fecfd04c2f9a748046a8421595f3b9da6c895c7
-        (Matthieu MOREL)\r\n- chore(internal): enable perfsprint linter 6524162a0e39bed187a16b692243703d78735471
-        (Matthieu MOREL)\r\n- chore(pkg): enable perfsprint linter 6c2cb2f54784b5ef6158dca0660f428a3baf75f5
-        (Matthieu MOREL)\r\n- chore(internal): enable perfsprint linter 9409226e15b26d05621f0b263f4ad6f597dfb7aa
-        (Matthieu MOREL)\r\n- Replace unneeded use of t.Fatalf with t.Fatal 36cb3a2fe92a4564d2d7d79141f209af19b45d40
-        (Mads Jensen)\r\n- fix: enable nolinlint linter 5b6c6bbfc7ca9850c69d3823ca1e21b445e75c0d
-        (Matthieu MOREL)\r\n- fixup `strings.Cut` variables b6673174220a2633fe97b5cd70a8386b79103464
-        (George Jenkins)\r\n- chore: Improve `AGENTS.md` 956c7245c346fc304c24ace930dada5f2c99f2b1
-        (George Jenkins)\r\n- chore:  fixes 92b64e87ad6245d64d5b49bbbbf8dead83faac22
-        (George Jenkins)\r\n- fix: correct import comment in statuswait.go from v3
-        to v4 c59c140ce07ce973f16fe50c0c5e991e1d6308a6 (rohansood10)\r\n- fix: handle
-        OCI digest algorithm prefix in chart downloader (#31601) ee018608f6fbf381fac1bae9759164a65c6a0b1f
-        (Evans Mungai)\r\n- chore(deps): bump actions/stale from 10.1.1 to 10.2.0
-        304d25ffd34fafccbcb81713cb3cfff1be595ae5 (dependabot[bot])\r\n- chore(deps):
-        bump the k8s-io group with 7 updates 0b134362f442fec44ace35e9cfae6760a6b4e005
-        (dependabot[bot])\r\n- feat(release): add internal/release/v2 package for
-        chart v3 support (#31709) 4a91f3ad5cc0c1521f6d4dcb5681e2da4baaa157 (Evans
-        Mungai)\r\n- chore(deps): bump golang.org/x/crypto from 0.47.0 to 0.48.0 782385397ce1871f4c8a4d2e3c857937bd8988c9
-        (dependabot[bot])\r\n- chore(deps): bump golang.org/x/term from 0.39.0 to
-        0.40.0 aec7aced38d053a2df5d0973abdf21848778a722 (dependabot[bot])\r\n- chore(deps):
-        bump github.com/lib/pq from 1.11.1 to 1.11.2 a23b6388ac74984460fd4055de5120d2fc03d841
-        (dependabot[bot])\r\n- chore(deps): bump golang.org/x/text from 0.33.0 to
-        0.34.0 5cddc95bed0572b8d63a910843f0a70477a4ce33 (dependabot[bot])\r\n- chore(deps):
-        bump sigs.k8s.io/kustomize/kyaml from 0.21.0 to 0.21.1 2e266c3ec9d70a6e656f8041bb31475e25e9eb22
-        (dependabot[bot])\r\n- fix(pkg): errorlint linter 259f76a849391e6ff60a9a2e95ce7310d958c602
-        (Matthieu MOREL)\r\n- fix(internal): errorlint linter 025418291a7911441e7962895ba4bc24b72b55b3
-        (Matthieu MOREL)\r\n- fix(pkg): errorlint linter 6d1490ed1ea5968235087658d03bb440e4014a36
-        (Matthieu MOREL)\r\n- fix(pkg): errorlint linter 4d0ae7f33a09093f8f52d02b952e3822c87b8c5f
-        (Matthieu MOREL)\r\n- fix(internal): errorlint linter abecafa0f507a69888877b9ddb714095714b64c8
-        (Matthieu MOREL)\r\n- fix(pkg): errorlint linter 4330bdea0409f428e75145f15532bfa0e2bc945c
-        (Matthieu MOREL)\r\n- fix(pkg): errorlint linter c8989d984ff69e8ad21b27d6ac6193dd3150b1a7
-        (Matthieu MOREL)\r\n- fix(cmd): errorlint linter edbd705bd034246700cc0998016caa303cff42dc
-        (Matthieu MOREL)\r\n- chore: new KEYS entry for George Jenkins 5638c35399464b6432ba81b92a341218991efa5c
-        (George Jenkins)\r\n- fix(downloader): safely handle concurrent file writes
-        on Windows 76eb37c01aaece271343039f44d7803017dd5c81 (Orgad Shaneh)\r\n- fix(install):
-        check nil for restClientGetter and fix tests 9817a68618245370e98e09d7f06c7cc1cefe8a62
-        (Manuel Alonso)\r\n- feat(create): add --chart-api-version flag (when HELM_EXPERIMENTAL_CHART_V3
-        env var is set) (#31592) 5aac32077f87ed8cd80da1648abbd323320d4a0b (Evans Mungai)\r\n-
-        chore(pkg): fix modernize linter 0d75d8611d3daa6b820d94fc95347a069b062f72
-        (Matthieu MOREL)\r\n- chore(internal): fix modernize linter 859292e31bd4ceb170050eaa49e727bcd69572e2
-        (Matthieu MOREL)\r\n- chore(pkg): fix modernize linter 5cc2e55714d20e6d1bd2663878a00571c084d6c2
-        (Matthieu MOREL)\r\n- chore(pkg): fix modernize linter ba38159313d4f09280591ba7f860ef0523716220
-        (Matthieu MOREL)\r\n- chore(internal): fix modernize linter e2d184c79e9049c19bcc466bfe1289ccc6b73717
-        (Matthieu MOREL)\r\n- chore(pkg): fix modernize linter 111d4e6e0e86af6ba25a355be1a7599f5258ee58
-        (Matthieu MOREL)\r\n- add image index test e8f386b5aac232c114a036598c2e3015fe296edc
-        (Pedro Tôrres)\r\n- fix pulling charts from OCI indices d983696e354a9e0605cbb3034937dc84af42995c
-        (Pedro Tôrres)\r\n- chore(deps): bump github.com/lib/pq from 1.10.9 to 1.11.1
-        9c9c3a6b5c0f1cd1e4c4e9f002aa411c58dd656a (dependabot[bot])\r\n- Revert \"Consider
-        GroupVersionKind when matching resources\" 787b61cedb933d22011e1da1368d0e615ea60ffe
-        (Matheus Pimenta)\r\n- chore(deps): bump sigs.k8s.io/controller-runtime from
-        0.23.0 to 0.23.1 becf9bf7e33867a3f26affac34e9d51e277767bf (dependabot[bot])\r\n-
-        fix(template): deprecate unused --hide-notes and --render-subchart-notes flags
-        6d5f56fa6e7c8e4462d80895fcce87b926e4b8ce (Scott Rigby)\r\n- chore(deps): bump
-        github.com/fluxcd/cli-utils b53198e7eee04dab651c15cb7b3b6b77dd92553c (dependabot[bot])\r\n-
-        chore(deps): bump actions/checkout from 6.0.1 to 6.0.2 b59e533b7675122631e0733adbfd6b35dd3515a6
-        (dependabot[bot])\r\n- whitespace ec0726523e52448eb05c8b5b3faae969e3a79266
-        (Austin Abro)\r\n- fix(copystructure): handle nil elements in slice copying
-        e3829ebbbb833e159926c6193e474eb9d067ef75 (Philipp Born)\r\n- use logger with
-        waiter 63b40a7a5e0d3f00ef2b4c1de9f50fb7d6df4ead (Austin Abro)\r\n- feat(kstatus):
-        fine-grained context options for waiting b0b35f1231b0b885b1624c5586938cfa69d30995
-        (Matheus Pimenta)\r\n- Apply suggestions from code review 26e28e846af1ceaf63e16c4f2e52bbfbab411ba1
-        (George Jenkins)\r\n- Remove legacy sync-repo.sh script 97fd00786f16ebc3b68164bff7133592f19f70b6
-        (Jeevan Yewale)\r\n- chore(deps): bump sigs.k8s.io/controller-runtime from
-        0.22.4 to 0.23.0 52620076e21ad6afd0f48df6772001b1466c966b (dependabot[bot])\r\n-
-        docs: document uninstall using cascade foreground flag e70d59de7cd7ea2a501d809b3245ebfa0412e0ec
-        (Evans Mungai)\r\n- bugfix(kstatus): do not wait forever on failed resources
-        bbec77c1f762c4d92678e7f455951757a2e036a3 (Matheus Pimenta)\r\n- Modernize
-        Helm v3 CONTRIBUTING.md 443a2a6924fc384e87ff4251e5ac9c077d607f0f (George Jenkins)\r\n-
-        chore(defaults): server-side apply SDK defaults should always match the CLI
-        defaults c1cc6253232d697ad2ae29957cc49de223306b62 (Matheus Pimenta)\r\n- chore:
-        clarify --wait flag help text 828038a8fe2142599ec557da2d12bb88b76fa0dd (Evans
-        Mungai)\r\n- chore(deps): bump actions/setup-go from 6.1.0 to 6.2.0 e22377124dbca4b032c55f522358def0415a0e8a
-        (dependabot[bot])\r\n- chore(refactor): better testing and functionality for
-        installing crd 6501ef490a45e9b7edfed1432702532c5b11c6d2 (Manuel Alonso)\r\n-
-        bugfix(storage): fix storage not getting logger from driver a8eb5278478c940c615741312ca9f4fec0d84c1a
-        (Matheus Pimenta)\r\n- chore(deps): bump golang.org/x/crypto from 0.46.0 to
-        0.47.0 da1d68adea91ab13b308c059c39381d48045a73a (dependabot[bot])\r\n- fix(test):
-        fix tests and check nil for restclient 0f949a92c149cf11e5bb19caf4d19d05567be6eb
-        (Manuel Alonso)\r\n- fix(test): merge fix correctly 561410ae1d09c2aa289ff8d8cad5b7fa979cd135
-        (Manuel Alonso Gonzalez)\r\n- Remove refactorring changes from coalesce_test.go
-        0298b2ffd0823eead74c75e1b890b0bf47d0db62 (Evans Mungai)\r\n- Fix import b8937ad1922bca47be8bbf8e6274608ebc34a778
-        (Evans Mungai)\r\n- Update pkg/chart/common/util/coalesce_test.go a333bbaf273645bf53fb873228040ca8edde849a
-        (Evans Mungai)\r\n- Fix rollback for missing resources 374aeb4b4e0463f72e3a0175138ed4bf7e87a156
-        (Feruzjon Muyassarov)\r\n- fix(install): add more tests and check nil file
-        data 00f0a48a7dae379c2b6bd0dea43984d42b27a494 (Manuel Alonso)\r\n- fix(test):
-        no check empty resources 0357e8d0f7eab074252ca49e1ca3aded834a001d (Manuel
-        Alonso)\r\n- fix(install): check lenght and file nil, add tests 52235cc0bf7d0c8faf17c7dc8cddd77f93434aea
-        (Manuel Alonso)\r\n- fix(action): crd resources can be empty 268593bf2e9769ef4b75328b33dfb4195e6e9e5a
-        (Manuel Alonso)\r\n- fix: casing issue fixed 170911459bc4f2b5efea7e549e09bd45c7578cc4
-        (Mujib Ahasan)\r\n- fix: error handled correctly 94860626ce9c83a9227b5bce02a5c03a050816ac
-        (Mujib Ahasan)\r\n- fix: doc string added 12e8b715aa0732b613c3a9896fa6af29b3201536
-        (Mujib Ahasan)\r\n- Fix lint warning 3416dd5f215a6421a70c6ab22340a96312ce8c0b
-        (Evans Mungai)\r\n- Preserve nil values in chart already 679f0519804afeaa5ce8b930a30976ade2860fe0
-        (Evans Mungai)\r\n- fix(values): preserve nil values when chart default is
-        empty map 292fe702193e8ba9ce4c8ffffdd90cdfa761501c (Evans Mungai)\r\n- update:
-        test coverage added for helper function validateNameAndGenerateName 115409976b5c3fd94c893eabde114e655c01c573
-        (Mujib Ahasan)\r\n- update: helper function added for the business logic 522d2fe61508639cfe8f06a43235e7c3eaea3b9a
-        (Mujib Ahasan)\r\n- generateName is also considered in logic 6769fb6fb6704e29fe1215c802ecf0ea62b39715
-        (Mujib Ahasan)\r\n- fxi: test concurrency download index 64bae717c58e80f05a60b84ddcd1f78387b4caee
-        (Terry Howe)\r\n- update: business logic respected for skipping object missing
-        name b357bcae8640508f110b7e63a8dfacd865c27b6e (Mujib Ahasan)\r\n- fixed: --dry-run=server
-        now respect generateName 2820ebe8c97b7d7b8a447375b74c9cb3741a4ffa (Mujib Ahasan)\r\n-
-        Make error message instructional for the case of lock file being out of date
-        1836c598f06377fd1571702fb2e0642f004cedef (Andreas Sommer)\r\n\r\n## New Contributors\r\n*
-        @JeevanYewale made their first contribution in https://github.com/helm/helm/pull/31742\r\n*
-        @tamcore made their first contribution in https://github.com/helm/helm/pull/31751\r\n*
-        @orgads made their first contribution in https://github.com/helm/helm/pull/31128\r\n*
-        @manute made their first contribution in https://github.com/helm/helm/pull/31578\r\n*
-        @Mujib-Ahasan made their first contribution in https://github.com/helm/helm/pull/31563\r\n*
-        @rohansood10 made their first contribution in https://github.com/helm/helm/pull/31852\r\n*
-        @tleed5 made their first contribution in https://github.com/helm/helm/pull/31901\r\n*
-        @tsinglua made their first contribution in https://github.com/helm/helm/pull/31921\r\n*
-        @abhay1999 made their first contribution in https://github.com/helm/helm/pull/31931\r\n*
-        @Mentigen made their first contribution in https://github.com/helm/helm/pull/31957\r\n*
-        @Debasish-87 made their first contribution in https://github.com/helm/helm/pull/31973\r\n*
-        @AnmolVirdi made their first contribution in https://github.com/helm/helm/pull/32014\r\n*
-        @Y0-L0 made their first contribution in https://github.com/helm/helm/pull/31979\r\n*
-        @MohitSalvi16 made their first contribution in https://github.com/helm/helm/pull/32057\r\n*
-        @rhysmcneill made their first contribution in https://github.com/helm/helm/pull/32008\r\n*
-        @cairon-ab made their first contribution in https://github.com/helm/helm/pull/32034\r\n*
-        @gaganhr94 made their first contribution in https://github.com/helm/helm/pull/31923\r\n*
-        @isumitsolanki made their first contribution in https://github.com/helm/helm/pull/31970\r\n\r\n**Full
-        Changelog**: https://github.com/helm/helm/compare/v4.1.0...v4.2.0"
-      created_at: "2026-05-14T00:31:27Z"
+        on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 4.2.3 and 3.21.2
+        are the next patch releases scheduled for July 8, 2026\r\n- 4.3.0 and 3.22.0
+        are the next minor releases scheduled for September 9, 2026\r\n\r\n## Changelog\r\n\r\n-
+        Revert \"fix(kube): prevent spurious early exit in WaitForDelete during informer
+        sync\" b05881cf967a5a09e19866799d0edfd40675803a (George Jenkins)\r\n\r\n**Full
+        Changelog**: https://github.com/helm/helm/compare/v4.2.1...v4.2.2"
+      created_at: "2026-06-17T20:07:36Z"
       draft: false
-      html_url: https://github.com/helm/helm/releases/tag/v4.2.0
-      id: 322259404
+      html_url: https://github.com/helm/helm/releases/tag/v4.2.2
+      id: 341038643
       immutable: false
-      mentions_count: 19
-      name: Helm v4.2.0
-      node_id: RE_kwDOApspmc4TNUnM
+      mentions_count: 1
+      name: Helm v4.2.2
+      node_id: RE_kwDOApspmc4UU9Yz
       prerelease: false
-      published_at: "2026-05-14T01:13:00Z"
-      tag_name: v4.2.0
-      tarball_url: https://api.github.com/repos/helm/helm/tarball/v4.2.0
+      published_at: "2026-06-17T20:50:16Z"
+      reactions:
+        "+1": 2
+        "-1": 0
+        confused: 0
+        eyes: 2
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 4
+        url: https://api.github.com/repos/helm/helm/releases/341038643/reactions
+      tag_name: v4.2.2
+      tarball_url: https://api.github.com/repos/helm/helm/tarball/v4.2.2
       target_commitish: main
-      updated_at: "2026-05-14T01:31:58Z"
-      upload_url: https://uploads.github.com/repos/helm/helm/releases/322259404/assets{?name,label}
-      url: https://api.github.com/repos/helm/helm/releases/322259404
-      zipball_url: https://api.github.com/repos/helm/helm/zipball/v4.2.0
+      updated_at: "2026-06-17T20:50:16Z"
+      upload_url: https://uploads.github.com/repos/helm/helm/releases/341038643/assets{?name,label}
+      url: https://api.github.com/repos/helm/helm/releases/341038643
+      zipball_url: https://api.github.com/repos/helm/helm/zipball/v4.2.2
   helmfile:
-    version: 1.5.1
-    previousVersion: 1.5.0
+    version: 1.7.0
+    previousVersion: 1.5.1
     versions:
     - 0.144.0
     - 0.145.2
@@ -1586,18 +1347,18 @@ dependencies:
     - "0145.4"
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_checksums.txt
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2026-05-11T14:58:31Z"
-        digest: sha256:2390f89409a305bce02a5f97fbe595c05edf4f1ce6f74dd7e863e7b8a3d515d6
-        download_count: 30
-        id: 417525917
+        created_at: "2026-07-04T12:41:00Z"
+        digest: sha256:0037f5fe6903ccf420bb42f2ac22223ca8303905d129a219a2cd707329f133b1
+        download_count: 819
+        id: 466319022
         label: ""
-        name: helmfile_1.5.1_checksums.txt
-        node_id: RA_kwDOHEifes4Y4vCd
+        name: helmfile_1.7.0_checksums.txt
+        node_id: RA_kwDOHEifes4by3au
         size: 804
         state: uploaded
-        updated_at: "2026-05-11T14:58:31Z"
+        updated_at: "2026-07-04T12:41:00Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -1618,19 +1379,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525917
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_darwin_amd64.tar.gz
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466319022
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_darwin_amd64.tar.gz
         content_type: application/gzip
-        created_at: "2026-05-11T14:58:25Z"
-        digest: sha256:f9b807a3f3e5c97f1c13877c17465ec3e1897acc0b7a3fc4a5ab745e3fae3fd3
-        download_count: 2
-        id: 417525853
+        created_at: "2026-07-04T12:40:54Z"
+        digest: sha256:cdf782db13a0dcd5c17973796e03d0d2068433b09d78511fb79976b238718f77
+        download_count: 34
+        id: 466318978
         label: ""
-        name: helmfile_1.5.1_darwin_amd64.tar.gz
-        node_id: RA_kwDOHEifes4Y4vBd
-        size: 47331026
+        name: helmfile_1.7.0_darwin_amd64.tar.gz
+        node_id: RA_kwDOHEifes4by3aC
+        size: 48281587
         state: uploaded
-        updated_at: "2026-05-11T14:58:27Z"
+        updated_at: "2026-07-04T12:40:57Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -1651,19 +1412,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525853
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_darwin_arm64.tar.gz
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318978
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_darwin_arm64.tar.gz
         content_type: application/gzip
-        created_at: "2026-05-11T14:58:25Z"
-        digest: sha256:ff3c0b754906f60f3b191924de2bcc3f95100e61786653446294680846dd20b3
-        download_count: 7
-        id: 417525855
+        created_at: "2026-07-04T12:40:54Z"
+        digest: sha256:cadabe6b7df68366ac43edc17145d9bd55d0934428d064b8bb671d845f0df715
+        download_count: 216
+        id: 466318977
         label: ""
-        name: helmfile_1.5.1_darwin_arm64.tar.gz
-        node_id: RA_kwDOHEifes4Y4vBf
-        size: 44451515
+        name: helmfile_1.7.0_darwin_arm64.tar.gz
+        node_id: RA_kwDOHEifes4by3aB
+        size: 45375136
         state: uploaded
-        updated_at: "2026-05-11T14:58:27Z"
+        updated_at: "2026-07-04T12:40:56Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -1684,19 +1445,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525855
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_linux_386.tar.gz
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318977
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_linux_386.tar.gz
         content_type: application/gzip
-        created_at: "2026-05-11T14:58:28Z"
-        digest: sha256:53db146eb1d5e84226a3401d6515ee1349e9e19f3f5ebd8edd73fef95e8235f4
-        download_count: 2
-        id: 417525888
+        created_at: "2026-07-04T12:40:57Z"
+        digest: sha256:09e4f201183f1aeb648391d9e8ae033cd2ac15a8df9bb80407c9d7a21a7ac14f
+        download_count: 15
+        id: 466318990
         label: ""
-        name: helmfile_1.5.1_linux_386.tar.gz
-        node_id: RA_kwDOHEifes4Y4vCA
-        size: 43042559
+        name: helmfile_1.7.0_linux_386.tar.gz
+        node_id: RA_kwDOHEifes4by3aO
+        size: 43985427
         state: uploaded
-        updated_at: "2026-05-11T14:58:30Z"
+        updated_at: "2026-07-04T12:40:59Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -1717,19 +1478,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525888
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_linux_amd64.tar.gz
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318990
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_linux_amd64.tar.gz
         content_type: application/gzip
-        created_at: "2026-05-11T14:58:25Z"
-        digest: sha256:4c0c92f711aaf95b953065a0a76c6adfd4f7fb9f8c7065db5c94d32a0caf288f
-        download_count: 213
-        id: 417525856
+        created_at: "2026-07-04T12:40:54Z"
+        digest: sha256:cac1f5f851ba5d3aa4ad06373752a69132c0ad70171bc45275ec4c014877c8a3
+        download_count: 9411
+        id: 466318979
         label: ""
-        name: helmfile_1.5.1_linux_amd64.tar.gz
-        node_id: RA_kwDOHEifes4Y4vBg
-        size: 46337794
+        name: helmfile_1.7.0_linux_amd64.tar.gz
+        node_id: RA_kwDOHEifes4by3aD
+        size: 47259840
         state: uploaded
-        updated_at: "2026-05-11T14:58:27Z"
+        updated_at: "2026-07-04T12:40:57Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -1750,19 +1511,118 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525856
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_linux_arm64.tar.gz
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318979
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_linux_arm64.tar.gz
         content_type: application/gzip
-        created_at: "2026-05-11T14:58:25Z"
-        digest: sha256:580984c7c2785d6c7255dc49cc24d3a4c70dae5d7f25a80f58f93b08d91cf753
+        created_at: "2026-07-04T12:40:57Z"
+        digest: sha256:2b674b68ed5a6ff628c4800cd369051176bf98dffe596d6db426422916d4195d
+        download_count: 576
+        id: 466318991
+        label: ""
+        name: helmfile_1.7.0_linux_arm64.tar.gz
+        node_id: RA_kwDOHEifes4by3aP
+        size: 43006725
+        state: uploaded
+        updated_at: "2026-07-04T12:40:59Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318991
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_windows_386.tar.gz
+        content_type: application/gzip
+        created_at: "2026-07-04T12:40:57Z"
+        digest: sha256:987b5a2b00c9d16c4297985a8d08f1956d948ca9258fcc073e6f3f1476d02c4e
+        download_count: 22
+        id: 466318992
+        label: ""
+        name: helmfile_1.7.0_windows_386.tar.gz
+        node_id: RA_kwDOHEifes4by3aQ
+        size: 46051082
+        state: uploaded
+        updated_at: "2026-07-04T12:40:59Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318992
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_windows_amd64.tar.gz
+        content_type: application/gzip
+        created_at: "2026-07-04T12:40:57Z"
+        digest: sha256:9ccda9d8049a2e2a1a912b001a705cfe293e859679f024bc5457f5e3041b2566
+        download_count: 216
+        id: 466318993
+        label: ""
+        name: helmfile_1.7.0_windows_amd64.tar.gz
+        node_id: RA_kwDOHEifes4by3aR
+        size: 48473512
+        state: uploaded
+        updated_at: "2026-07-04T12:41:00Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318993
+      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.7.0/helmfile_1.7.0_windows_arm64.tar.gz
+        content_type: application/gzip
+        created_at: "2026-07-04T12:40:54Z"
+        digest: sha256:0b754349a99946ad959c2acf935283482c0561e468e6483e98f95746c778adc3
         download_count: 16
-        id: 417525860
+        id: 466318976
         label: ""
-        name: helmfile_1.5.1_linux_arm64.tar.gz
-        node_id: RA_kwDOHEifes4Y4vBk
-        size: 42119638
+        name: helmfile_1.7.0_windows_arm64.tar.gz
+        node_id: RA_kwDOHEifes4by3aA
+        size: 43113974
         state: uploaded
-        updated_at: "2026-05-11T14:58:27Z"
+        updated_at: "2026-07-04T12:40:57Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -1783,107 +1643,8 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525860
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_windows_386.tar.gz
-        content_type: application/gzip
-        created_at: "2026-05-11T14:58:28Z"
-        digest: sha256:b4f4b30a8d68f2aae69904b89b328307426d3a18fd00e65fe9fd0882a3ce81a8
-        download_count: 1
-        id: 417525886
-        label: ""
-        name: helmfile_1.5.1_windows_386.tar.gz
-        node_id: RA_kwDOHEifes4Y4vB-
-        size: 45093845
-        state: uploaded
-        updated_at: "2026-05-11T14:58:30Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525886
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_windows_amd64.tar.gz
-        content_type: application/gzip
-        created_at: "2026-05-11T14:58:28Z"
-        digest: sha256:82c1f5773200a7f6cabe4bbc479e0c52898c8627e42c349a71381272c0278a93
-        download_count: 4
-        id: 417525892
-        label: ""
-        name: helmfile_1.5.1_windows_amd64.tar.gz
-        node_id: RA_kwDOHEifes4Y4vCE
-        size: 47518437
-        state: uploaded
-        updated_at: "2026-05-11T14:58:31Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525892
-      - browser_download_url: https://github.com/helmfile/helmfile/releases/download/v1.5.1/helmfile_1.5.1_windows_arm64.tar.gz
-        content_type: application/gzip
-        created_at: "2026-05-11T14:58:28Z"
-        digest: sha256:a5124ec14433bfa6a1efebd9059fee0bb0d5751bdfca4de8bc56d0a438e6e633
-        download_count: 2
-        id: 417525890
-        label: ""
-        name: helmfile_1.5.1_windows_arm64.tar.gz
-        node_id: RA_kwDOHEifes4Y4vCC
-        size: 42239696
-        state: uploaded
-        updated_at: "2026-05-11T14:58:30Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/417525890
-      assets_url: https://api.github.com/repos/helmfile/helmfile/releases/320529583/assets
+        url: https://api.github.com/repos/helmfile/helmfile/releases/assets/466318976
+      assets_url: https://api.github.com/repos/helmfile/helmfile/releases/348944151/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/11087727?v=4
         events_url: https://api.github.com/users/yxxhero/events{/privacy}
@@ -1904,42 +1665,63 @@ dependencies:
         type: User
         url: https://api.github.com/users/yxxhero
         user_view_type: public
-      body: "## What's Changed\r\n* fix: add trackFailOnError option to control kubedog
-        exit code by @yxxhero in https://github.com/helmfile/helmfile/pull/2576\r\n*
-        docs: update helmfile skill to reflect v1.1 documentation by @yxxhero in https://github.com/helmfile/helmfile/pull/2577\r\n*
-        fix(state): resolve OCI repo prefix in ad-hoc release dependencies by @dschmidt
-        in https://github.com/helmfile/helmfile/pull/2579\r\n* feat(state): add mergeStrategy:
-        fallback for first-file-wins env values by @dschmidt in https://github.com/helmfile/helmfile/pull/2578\r\n*
-        Expose internal apis by @ceriath in https://github.com/helmfile/helmfile/pull/2520\r\n*
-        build(deps): bump github.com/aws/aws-sdk-go-v2/service/s3 from 1.100.1 to
-        1.101.0 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2581\r\n*
-        chore: Deduplicate preparation code of sync and apply by @ceriath in https://github.com/helmfile/helmfile/pull/2523\r\n*
-        build(deps): bump gitpython from 3.1.47 to 3.1.49 in /docs by @dependabot[bot]
-        in https://github.com/helmfile/helmfile/pull/2582\r\n* chore: Emit \"cleanup\"
-        events later to match the behavior in \"apply\" by @ceriath in https://github.com/helmfile/helmfile/pull/2522\r\n*
-        build(deps): bump golang.org/x/term from 0.42.0 to 0.43.0 by @dependabot[bot]
-        in https://github.com/helmfile/helmfile/pull/2584\r\n* build(deps): bump gitpython
-        from 3.1.49 to 3.1.50 in /docs by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2585\r\n*
-        fix: template helmDefaults.postRendererArgs with release data by @yxxhero
-        in https://github.com/helmfile/helmfile/pull/2583\r\n\r\n\r\n**Full Changelog**:
-        https://github.com/helmfile/helmfile/compare/v1.5.0...v1.5.1"
-      created_at: "2026-05-11T01:05:06Z"
+      body: "## What's Changed\r\n* build(deps): bump azure/setup-helm from 5.0.0
+        to 5.0.1 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2664\r\n*
+        fix: ensure OCI charts are prepared for needed releases with --include-needs
+        by @yxxhero in https://github.com/helmfile/helmfile/pull/2663\r\n* fix: serialize
+        concurrent helm operations for same chart to fix #768 by @yxxhero in https://github.com/helmfile/helmfile/pull/2662\r\n*
+        fix: clean up chartify temp directories after helm operations by @yxxhero
+        in https://github.com/helmfile/helmfile/pull/2668\r\n* feat: add --template-args
+        flag to template/apply/sync for helm lookup() support by @yxxhero in https://github.com/helmfile/helmfile/pull/2666\r\n*
+        fix: support go-getter URLs in ad-hoc dependencies to fix #821 by @yxxhero
+        in https://github.com/helmfile/helmfile/pull/2670\r\n* test: add integration
+        test for issue #1880 transformers with file:// deps by @yxxhero in https://github.com/helmfile/helmfile/pull/2673\r\n*
+        fix: replace YAML-based DeepCopy with recursive deep copy to fix #973 by @yxxhero
+        in https://github.com/helmfile/helmfile/pull/2675\r\n* build(deps): bump github.com/helmfile/vals
+        from 0.44.2 to 0.44.3 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2677\r\n*
+        test: add integration test for selector filtering with requiredEnv (#1172)
+        by @yxxhero in https://github.com/helmfile/helmfile/pull/2678\r\n* build(deps):
+        bump github.com/aws/aws-sdk-go-v2/config from 1.32.25 to 1.32.26 by @dependabot[bot]
+        in https://github.com/helmfile/helmfile/pull/2681\r\n* build(deps): bump github.com/aws/aws-sdk-go-v2/service/s3
+        from 1.104.0 to 1.104.1 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2682\r\n*
+        feat: add `inherits:` for sub-helmfile config inheritance by @yxxhero in https://github.com/helmfile/helmfile/pull/2680\r\n*
+        feat: Add ConditionTemplate support in releaseSpec by @agarov in https://github.com/helmfile/helmfile/pull/2669\r\n*
+        build(deps): bump github.com/aws/aws-sdk-go-v2/config from 1.32.26 to 1.32.27
+        by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2684\r\n*
+        build(deps): bump github.com/aws/aws-sdk-go-v2/service/s3 from 1.104.1 to
+        1.104.2 by @dependabot[bot] in https://github.com/helmfile/helmfile/pull/2685\r\n*
+        build(deps): bump github.com/helmfile/vals from 0.44.3 to 0.44.4 by @dependabot[bot]
+        in https://github.com/helmfile/helmfile/pull/2686\r\n\r\n## New Contributors\r\n*
+        @agarov made their first contribution in https://github.com/helmfile/helmfile/pull/2669\r\n\r\n**Full
+        Changelog**: https://github.com/helmfile/helmfile/compare/v1.6.0...v1.7.0"
+      created_at: "2026-07-04T08:50:48Z"
       draft: false
-      html_url: https://github.com/helmfile/helmfile/releases/tag/v1.5.1
-      id: 320529583
+      html_url: https://github.com/helmfile/helmfile/releases/tag/v1.7.0
+      id: 348944151
       immutable: false
-      mentions_count: 4
-      name: v1.5.1
-      node_id: RE_kwDOHEifes4TGuSv
+      mentions_count: 3
+      name: v1.7.0
+      node_id: RE_kwDOHEifes4UzHcX
       prerelease: false
-      published_at: "2026-05-11T14:33:42Z"
-      tag_name: v1.5.1
-      tarball_url: https://api.github.com/repos/helmfile/helmfile/tarball/v1.5.1
+      published_at: "2026-07-04T12:14:36Z"
+      reactions:
+        "+1": 3
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 3
+        url: https://api.github.com/repos/helmfile/helmfile/releases/348944151/reactions
+      tag_name: v1.7.0
+      tarball_url: https://api.github.com/repos/helmfile/helmfile/tarball/v1.7.0
       target_commitish: main
-      updated_at: "2026-05-11T14:58:31Z"
-      upload_url: https://uploads.github.com/repos/helmfile/helmfile/releases/320529583/assets{?name,label}
-      url: https://api.github.com/repos/helmfile/helmfile/releases/320529583
-      zipball_url: https://api.github.com/repos/helmfile/helmfile/zipball/v1.5.1
+      updated_at: "2026-07-04T12:41:00Z"
+      upload_url: https://uploads.github.com/repos/helmfile/helmfile/releases/348944151/assets{?name,label}
+      url: https://api.github.com/repos/helmfile/helmfile/releases/348944151
+      zipball_url: https://api.github.com/repos/helmfile/helmfile/zipball/v1.7.0
 meta:
   dependencies:
     helm:
@@ -50475,6 +50257,1298 @@ meta:
           upload_url: https://uploads.github.com/repos/helm/helm/releases/322259404/assets{?name,label}
           url: https://api.github.com/repos/helm/helm/releases/322259404
           zipball_url: https://api.github.com/repos/helm/helm/zipball/v4.2.0
+      4.2.2:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-amd64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:25Z"
+            digest: sha256:6f89d8fabf7810c3489168eb511f9a0808a49417c87a274033500c42fff8e725
+            download_count: 150
+            id: 450564105
+            label: null
+            name: helm-v4.2.2-darwin-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xAJ
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564105
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-amd64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:27Z"
+            digest: sha256:d4ba6b86bc97ca4d65df67a4bd2382b0a1f30f646d8335ae0a7a445e62f6ab04
+            download_count: 105
+            id: 450564120
+            label: null
+            name: helm-v4.2.2-darwin-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xAY
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564120
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-amd64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:27Z"
+            digest: sha256:c3f9b6dc5e462a46c67ebe78946b231d668ab7588b6728584d8610c1d9612e12
+            download_count: 106
+            id: 450564136
+            label: null
+            name: helm-v4.2.2-darwin-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xAo
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564136
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-arm64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:28Z"
+            digest: sha256:4686b94c57b1e25cc9d169c4a5db9f1dd9154abb8417f076afa8aa37f32ffe90
+            download_count: 92
+            id: 450564145
+            label: null
+            name: helm-v4.2.2-darwin-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xAx
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564145
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-arm64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:29Z"
+            digest: sha256:40da391aaae54c2fcc1d9dff9a76e662aa4a8a99c6f71b349f5ab2e38f1d61c1
+            download_count: 91
+            id: 450564148
+            label: null
+            name: helm-v4.2.2-darwin-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xA0
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564148
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-darwin-arm64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:29Z"
+            digest: sha256:123026c42484f7bb86575c6dbe08819b50567ff9ae49edbeb2ba1d5865a51bf3
+            download_count: 92
+            id: 450564161
+            label: null
+            name: helm-v4.2.2-darwin-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xBB
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:30Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564161
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-386.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:30Z"
+            digest: sha256:99f1998d2650810af607b6232e50ed0b19136ab37f523a91c42e975cddc94167
+            download_count: 123
+            id: 450564166
+            label: null
+            name: helm-v4.2.2-linux-386.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xBG
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:30Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564166
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-386.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:30Z"
+            digest: sha256:2d8a98ba0ff1abbd9ba0bb618af74ac3a28354c9e41e5495feac933ee767177d
+            download_count: 101
+            id: 450564176
+            label: null
+            name: helm-v4.2.2-linux-386.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xBQ
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:31Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564176
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-386.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:31Z"
+            digest: sha256:a733ab1d57e31e1c67f95fe38b239916358d5bf12f4d2f62e074a3081f924027
+            download_count: 115
+            id: 450564180
+            label: null
+            name: helm-v4.2.2-linux-386.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xBU
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564180
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-amd64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:32Z"
+            digest: sha256:b23ae4300fa80c0b5ed742cd61ee6baee68f3bb88b1e6c66a5bb67e3be932bb1
+            download_count: 7521
+            id: 450564187
+            label: null
+            name: helm-v4.2.2-linux-amd64.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xBb
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564187
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-amd64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:32Z"
+            digest: sha256:d01eded7f217deb08312d1b2cb11438edda040b0a7540f74af08f24574e56eeb
+            download_count: 6851
+            id: 450564196
+            label: null
+            name: helm-v4.2.2-linux-amd64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xBk
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:33Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564196
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-amd64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:33Z"
+            digest: sha256:18cb5700fbd4d13d6d962b122073e75d55022f187bea4b04ba535dd4052aa52e
+            download_count: 375
+            id: 450564210
+            label: null
+            name: helm-v4.2.2-linux-amd64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xBy
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:34Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564210
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:34Z"
+            digest: sha256:ec26181c11ad01ac88347ab8e6d39d86d0a58127148bc840b8db95b9fce3f262
+            download_count: 80
+            id: 450564219
+            label: null
+            name: helm-v4.2.2-linux-arm.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xB7
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:34Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564219
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:34Z"
+            digest: sha256:c1263faf36d2ac5eb3c203fce2636351728c1d4b5b44ee16eedc6b2df739479e
+            download_count: 76
+            id: 450564224
+            label: null
+            name: helm-v4.2.2-linux-arm.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xCA
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:35Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564224
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:35Z"
+            digest: sha256:5ef550bc6cc0b28a35d2255a051300600aea8136f87ae815b43050e822b33550
+            download_count: 83
+            id: 450564228
+            label: null
+            name: helm-v4.2.2-linux-arm.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xCE
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:36Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564228
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:35Z"
+            digest: sha256:a89fc320e2f99de30f256876bd0600aae4911cdd4a582315c20c54e8bfe863c7
+            download_count: 1407
+            id: 450564238
+            label: null
+            name: helm-v4.2.2-linux-arm64.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xCO
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:36Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564238
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:36Z"
+            digest: sha256:3e08d338c3c5fee58fa501d5bd9aebb7a38d7bef8152ffc9891af0d9d7c3e1ea
+            download_count: 1311
+            id: 450564241
+            label: null
+            name: helm-v4.2.2-linux-arm64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xCR
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:37Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564241
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-arm64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:37Z"
+            digest: sha256:e957a5d9a73fe0fc87463ff70156bd6131fa033c5961a3f411504f63b4f2079f
+            download_count: 135
+            id: 450564250
+            label: null
+            name: helm-v4.2.2-linux-arm64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xCa
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:37Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564250
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-loong64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:37Z"
+            digest: sha256:5c63bff8206d4505023707404685b62d93e5ff39c5b05939fe24c0d3c0264de0
+            download_count: 80
+            id: 450564257
+            label: null
+            name: helm-v4.2.2-linux-loong64.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xCh
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564257
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-loong64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:38Z"
+            digest: sha256:8c9de8005355ba19c0ca8181dd26db4b9f15009c44077d795b77e7c1dc5f507d
+            download_count: 82
+            id: 450564259
+            label: null
+            name: helm-v4.2.2-linux-loong64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xCj
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564259
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-loong64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:39Z"
+            digest: sha256:f31e5bfe3ab34f37b6ecade80018ae43e06cccc8a13d916c7a2072f6c60fd0d0
+            download_count: 80
+            id: 450564270
+            label: null
+            name: helm-v4.2.2-linux-loong64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xCu
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564270
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-ppc64le.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:39Z"
+            digest: sha256:344b9306863ce65634f2139dd36476c751bb47ca4a96b001ccfff50c9129ce1c
+            download_count: 78
+            id: 450564276
+            label: null
+            name: helm-v4.2.2-linux-ppc64le.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xC0
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:40Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564276
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-ppc64le.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:40Z"
+            digest: sha256:f70a4fb471204d35ba59655b5eadf94dd6258b9619f047d974b7c2d245dbc7a4
+            download_count: 78
+            id: 450564278
+            label: null
+            name: helm-v4.2.2-linux-ppc64le.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xC2
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564278
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:41Z"
+            digest: sha256:5c192dc472f565b8f4bbc358cec35b0b37396de9967db5d07d295beef0f843fc
+            download_count: 81
+            id: 450564288
+            label: null
+            name: helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xDA
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564288
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-riscv64.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:42Z"
+            digest: sha256:ad2a0fbc38eb89e50c1b9d3169713a04838b51ce5ced55dc5f68e5b9ae67425c
+            download_count: 80
+            id: 450564292
+            label: null
+            name: helm-v4.2.2-linux-riscv64.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xDE
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564292
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-riscv64.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:42Z"
+            digest: sha256:b38b7116ce84d1ce75b2a662c09d9db726d7150854aae0aee327d33559d99273
+            download_count: 82
+            id: 450564302
+            label: null
+            name: helm-v4.2.2-linux-riscv64.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xDO
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564302
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-riscv64.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:43Z"
+            digest: sha256:43e8be39358ea460d5dc92ec2878e2f7540a38def77fc478b263578d1bd2ecd2
+            download_count: 81
+            id: 450564305
+            label: null
+            name: helm-v4.2.2-linux-riscv64.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xDR
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:43Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564305
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-s390x.tar.gz.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:43Z"
+            digest: sha256:4670853cf73cd6bf6e1ef0391e6b18e6d2b9e1928a51d09a146237c9591d954d
+            download_count: 81
+            id: 450564311
+            label: null
+            name: helm-v4.2.2-linux-s390x.tar.gz.asc
+            node_id: RA_kwDOApspmc4a2xDX
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:44Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564311
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-s390x.tar.gz.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:44Z"
+            digest: sha256:34ce52f3e389d426141c5c554d620105d352388d365a0a57039feef42ee773f2
+            download_count: 77
+            id: 450564317
+            label: null
+            name: helm-v4.2.2-linux-s390x.tar.gz.sha256.asc
+            node_id: RA_kwDOApspmc4a2xDd
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564317
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-linux-s390x.tar.gz.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:45Z"
+            digest: sha256:3d76ecfad5b6273b7db1e9fec878800c8b7175b5e93dcd099246c3a8cd6ba721
+            download_count: 81
+            id: 450564326
+            label: null
+            name: helm-v4.2.2-linux-s390x.tar.gz.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xDm
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564326
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-amd64.zip.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:45Z"
+            digest: sha256:27f006d1152726243df419221322117c73b5a774256721e11dd04eb4eeb89202
+            download_count: 185
+            id: 450564331
+            label: null
+            name: helm-v4.2.2-windows-amd64.zip.asc
+            node_id: RA_kwDOApspmc4a2xDr
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564331
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-amd64.zip.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:46Z"
+            digest: sha256:13db26b426fad07e02f0aaf6246c7ee39a158ce01f66dbe67fb57d91a0dd443f
+            download_count: 112
+            id: 450564342
+            label: null
+            name: helm-v4.2.2-windows-amd64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4a2xD2
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564342
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-amd64.zip.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:47Z"
+            digest: sha256:69ea378262e2304e807cdf7c91b0d54ce7237f2e69c8ee95d9b1c3880970af69
+            download_count: 92
+            id: 450564353
+            label: null
+            name: helm-v4.2.2-windows-amd64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xEB
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564353
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-arm64.zip.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:47Z"
+            digest: sha256:3b62e7beb49f7ac3dda00acb75b7226fe7dc3e66d468b0de319290cb597c70b4
+            download_count: 88
+            id: 450564362
+            label: null
+            name: helm-v4.2.2-windows-arm64.zip.asc
+            node_id: RA_kwDOApspmc4a2xEK
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:48Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564362
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-arm64.zip.sha256.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:48Z"
+            digest: sha256:6532fa0d9e824c519fee0445e3d33c2f1fe311907ef214f853c06edee3590bc9
+            download_count: 72
+            id: 450564374
+            label: null
+            name: helm-v4.2.2-windows-arm64.zip.sha256.asc
+            node_id: RA_kwDOApspmc4a2xEW
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:49Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564374
+          - browser_download_url: https://github.com/helm/helm/releases/download/v4.2.2/helm-v4.2.2-windows-arm64.zip.sha256sum.asc
+            content_type: application/octet-stream
+            created_at: "2026-06-17T20:46:49Z"
+            digest: sha256:6dd3792f16b53be8d15f9698d8ce626a7335efb18d76e6f12c4e3d4f4b7e6aff
+            download_count: 69
+            id: 450564382
+            label: null
+            name: helm-v4.2.2-windows-arm64.zip.sha256sum.asc
+            node_id: RA_kwDOApspmc4a2xEe
+            size: 265
+            state: uploaded
+            updated_at: "2026-06-17T20:46:49Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+              events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+              followers_url: https://api.github.com/users/gjenkins8/followers
+              following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+              gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/gjenkins8
+              id: 2787248
+              login: gjenkins8
+              node_id: MDQ6VXNlcjI3ODcyNDg=
+              organizations_url: https://api.github.com/users/gjenkins8/orgs
+              received_events_url: https://api.github.com/users/gjenkins8/received_events
+              repos_url: https://api.github.com/users/gjenkins8/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+              type: User
+              url: https://api.github.com/users/gjenkins8
+              user_view_type: public
+            url: https://api.github.com/repos/helm/helm/releases/assets/450564382
+          assets_url: https://api.github.com/repos/helm/helm/releases/341038643/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/2787248?v=4
+            events_url: https://api.github.com/users/gjenkins8/events{/privacy}
+            followers_url: https://api.github.com/users/gjenkins8/followers
+            following_url: https://api.github.com/users/gjenkins8/following{/other_user}
+            gists_url: https://api.github.com/users/gjenkins8/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/gjenkins8
+            id: 2787248
+            login: gjenkins8
+            node_id: MDQ6VXNlcjI3ODcyNDg=
+            organizations_url: https://api.github.com/users/gjenkins8/orgs
+            received_events_url: https://api.github.com/users/gjenkins8/received_events
+            repos_url: https://api.github.com/users/gjenkins8/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/gjenkins8/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/gjenkins8/subscriptions
+            type: User
+            url: https://api.github.com/users/gjenkins8
+            user_view_type: public
+          body: "Helm v4.2.2 is a patch release. Users are encouraged to upgrade for
+            the best experience.\r\n\r\nThe community keeps growing, and we'd love
+            to see you there!\r\n\r\n- Join the discussion in [Kubernetes Slack](https://kubernetes.slack.com):\r\n
+            \ -  for questions and just to hang out\r\n  -  for discussing PRs, code,
+            and bugs\r\n- Hang out at the Public Developer Call: Thursday, 9:30 Pacific
+            via [Zoom](https://zoom.us/j/696660622)\r\n- Test, debug, and contribute
+            charts: [ArtifactHub/packages](https://artifacthub.io/packages/search?kind=0)\r\n\r\n##
+            Notable Changes\r\n\r\n- Revert: Fixed a race condition in WaitForDelete
+            where the status observer canceled the watch too early, causing intermittent
+            failures when running a full test suite #32214\r\n\r\n## Installation
+            and Upgrading\r\n\r\nDownload Helm v4.2.2. The common platform binaries
+            are here:\r\n\r\n- [MacOS amd64](https://get.helm.sh/helm-v4.2.2-darwin-amd64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v4.2.2-darwin-amd64.tar.gz.sha256sum)
+            / 10c1e36ee8c5f2e2ee25a16599cb03ab74c0953cd889cacb980a49ba4b6574ba)\r\n-
+            [MacOS arm64](https://get.helm.sh/helm-v4.2.2-darwin-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-darwin-arm64.tar.gz.sha256sum)
+            / 5410a0dae3d5d91f45653b161260d9301aabc4ae80ae50a6605d66884b6df8ea)\r\n-
+            [Linux amd64](https://get.helm.sh/helm-v4.2.2-linux-amd64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-amd64.tar.gz.sha256sum)
+            / 9adafecab4d406853bba163a70e9f104f47dbbf65ce24b7653bae7e36150bcb6)\r\n-
+            [Linux arm](https://get.helm.sh/helm-v4.2.2-linux-arm.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-arm.tar.gz.sha256sum)
+            / 7e9490169874695e04ab1af47c5620621fc13c84219a258fcc1afdcd40ca7438)\r\n-
+            [Linux arm64](https://get.helm.sh/helm-v4.2.2-linux-arm64.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-arm64.tar.gz.sha256sum)
+            / 78803142087a0069fa4b50d3f32a84d3ef25c14d1ee8a40fbccf86a6216d2f36)\r\n-
+            [Linux i386](https://get.helm.sh/helm-v4.2.2-linux-386.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-386.tar.gz.sha256sum)
+            / 8e1fdcda4a476ffc5d1179c7f16d33a3d54267efa08fd720f7678277d68bc2d5)\r\n-
+            [Linux loong64](https://get.helm.sh/helm-v4.2.2-linux-loong64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v4.2.2-linux-loong64.tar.gz.sha256sum)
+            / b8bfe96b8b0b0e2af51af4a00ef521cc5a7e03793aea3568cf8500a63ae05041)\r\n-
+            [Linux ppc64le](https://get.helm.sh/helm-v4.2.2-linux-ppc64le.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum)
+            / 814a80fd98eb9e4c5a9d610f3b9c15ffe120c2f5e39df16a2f491723ebc90126)\r\n-
+            [Linux s390x](https://get.helm.sh/helm-v4.2.2-linux-s390x.tar.gz) ([checksum](https://get.helm.sh/helm-v4.2.2-linux-s390x.tar.gz.sha256sum)
+            / d84cdf1123f20cfbef19a2af1cd6afe8b00626bd9846bccb9dae978c810c8274)\r\n-
+            [Linux riscv64](https://get.helm.sh/helm-v4.2.2-linux-riscv64.tar.gz)
+            ([checksum](https://get.helm.sh/helm-v4.2.2-linux-riscv64.tar.gz.sha256sum)
+            / f07c105180dff2619ab45134b9b47b7845387e8f3299e12ebe0efb87c7548717)\r\n-
+            [Windows amd64](https://get.helm.sh/helm-v4.2.2-windows-amd64.zip) ([checksum](https://get.helm.sh/helm-v4.2.2-windows-amd64.zip.sha256sum)
+            / 5fad8562e98c34fa5af3ef904086a5874a6701050f9bf36e30238c975df94dcd)\r\n-
+            [Windows arm64](https://get.helm.sh/helm-v4.2.2-windows-arm64.zip) ([checksum](https://get.helm.sh/helm-v4.2.2-windows-arm64.zip.sha256sum)
+            / 2e993d6a1dd8197a33e65d8e90b26df9d248ff3501701dea401856aa265a2dab)\r\n\r\nThis
+            release was signed by @gjenkins8 with key BF88 8333 D96A 1C18 E268 2AAE
+            D79D 67C9 EC01 6739, which can be found at https://keys.openpgp.org/vks/v1/by-fingerprint/BF888333D96A1C18E2682AAED79D67C9EC016739.
+            Please use the attached signatures for verifying this release using gpg.\r\n\r\nThe
+            [Quickstart Guide](https://helm.sh/docs/intro/quickstart/) will get you
+            going from there. For **upgrade instructions** or detailed installation
+            notes, check the [install guide](https://helm.sh/docs/intro/install/).
+            You can also use a [script to install](https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4)
+            on any system with `bash`.\r\n\r\n## What's Next\r\n\r\n- 4.2.3 and 3.21.2
+            are the next patch releases scheduled for July 8, 2026\r\n- 4.3.0 and
+            3.22.0 are the next minor releases scheduled for September 9, 2026\r\n\r\n##
+            Changelog\r\n\r\n- Revert \"fix(kube): prevent spurious early exit in
+            WaitForDelete during informer sync\" b05881cf967a5a09e19866799d0edfd40675803a
+            (George Jenkins)\r\n\r\n**Full Changelog**: https://github.com/helm/helm/compare/v4.2.1...v4.2.2"
+          created_at: "2026-06-17T20:07:36Z"
+          draft: false
+          html_url: https://github.com/helm/helm/releases/tag/v4.2.2
+          id: 341038643
+          immutable: false
+          mentions_count: 1
+          name: Helm v4.2.2
+          node_id: RE_kwDOApspmc4UU9Yz
+          prerelease: false
+          published_at: "2026-06-17T20:50:16Z"
+          reactions:
+            "+1": 2
+            "-1": 0
+            confused: 0
+            eyes: 2
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 4
+            url: https://api.github.com/repos/helm/helm/releases/341038643/reactions
+          tag_name: v4.2.2
+          tarball_url: https://api.github.com/repos/helm/helm/tarball/v4.2.2
+          target_commitish: main
+          updated_at: "2026-06-17T20:50:16Z"
+          upload_url: https://uploads.github.com/repos/helm/helm/releases/341038643/assets{?name,label}
+          url: https://api.github.com/repos/helm/helm/releases/341038643
+          zipball_url: https://api.github.com/repos/helm/helm/zipball/v4.2.2
     helmfile:
       0.145.3:
         githubRelease:

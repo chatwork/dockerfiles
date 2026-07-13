@@ -1,7 +1,7 @@
 > [!CAUTION]
-> This is a **public** repository. Do **not** include internal-only references (e.g. internal ticket keys, internal domains, internal tool/service names) in this PR title, description, commits, or any attached files.
+> This is a **public** repository, visible to anyone on the internet. If you are a Kubell/Chatwork internal contributor, do **not** include internal-only references (e.g. internal ticket keys, internal domains, internal tool/service names) in this PR title, description, commits, or any attached files.
 >
-> このリポジトリは **public** です。社内限定の情報（社内チケットキー、社内ドメイン、社内ツール/サービス名など）を PR のタイトル・本文・コミット・添付ファイルに含めないでください。
+> このリポジトリは **public** で、インターネット上の誰でも閲覧できます。Kubell/Chatwork の社内の方は、社内限定の情報（社内チケットキー、社内ドメイン、社内ツール/サービス名など）を PR のタイトル・本文・コミット・添付ファイルに含めないようにしてください。
 
 ## Checklist
 

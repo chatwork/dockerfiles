@@ -6,8 +6,8 @@
 ## Checklist
 
 **Kubell/Chatwork internal contributors / 社内(Kubell・Chatwork)の方**
-- [ ] This PR title, description, and commit messages do not contain internal-only ticket keys (e.g. JIRA) / PRのタイトル・本文・コミットメッセージに社内限定のチケットキー（JIRA等）が含まれていない
-- [ ] No internal domains, internal URLs, secret/service names, or other internal-only info are included / 社内ドメイン・内部URL・シークレット名/サービス名などの社内限定情報が含まれていない
+- [ ] This PR's title, description, commit messages, and comments have never contained internal-only ticket keys (e.g. JIRA) — including any text since edited or deleted / PRのタイトル・本文・コミットメッセージ・コメントに、編集・削除済みのものも含めて社内限定のチケットキー（JIRA等）を一度も含めていない
+- [ ] The same applies to internal domains, internal URLs, secret/service names, or other internal-only info / 社内ドメイン・内部URL・シークレット名/サービス名などの社内限定情報についても同様に、編集・削除済みのものも含めて一度も含めていない
 
 **External contributors / 社外の方**
 - [ ] I have read the [README](../README.md) and this change follows the repository's conventions / [README](../README.md)を読み、このリポジトリの規約に沿っている

@@ -10,4 +10,4 @@
 - [ ] The same applies to internal domains, internal URLs, secret/service names, or other internal-only info / 社内ドメイン・内部URL・シークレット名/サービス名などの社内限定情報についても同様に、編集・削除済みのものも含めて一度も含めていない
 
 **External contributors / 社外の方**
-- [ ] I have read the [README](../README.md) and this change follows the repository's conventions / [README](../README.md)を読み、このリポジトリの規約に沿っている
+- [ ] I have read the [README](https://github.com/chatwork/dockerfiles/blob/master/README.md) and this change follows the repository's conventions / [README](https://github.com/chatwork/dockerfiles/blob/master/README.md)を読み、このリポジトリの規約に沿っている

@@ -11,3 +11,4 @@
 
 **External contributors / 社外の方**
 - [ ] I have read the [README](https://github.com/chatwork/dockerfiles/blob/master/README.md) and this change follows the repository's conventions / [README](https://github.com/chatwork/dockerfiles/blob/master/README.md)を読み、このリポジトリの規約に沿っている
+- [ ] This PR does not contain my own personal information (e.g. private email address, phone number, home directory paths, hostnames) that I don't intend to make public / このPRに、公開する意図のない自分自身の個人情報（個人のメールアドレス、電話番号、ホームディレクトリのパス、ホスト名など）が含まれていない

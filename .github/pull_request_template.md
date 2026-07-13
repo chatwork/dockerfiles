@@ -5,10 +5,14 @@
 
 ## Checklist
 
+**All contributors / 全員**
+- [ ] The diff does not contain hardcoded secrets, API keys, tokens, or passwords / diffの中にシークレット・APIキー・トークン・パスワードなどの実値がハードコードされていない
+
 **Kubell/Chatwork internal contributors / 社内(Kubell・Chatwork)の方**
 - [ ] This PR's title, description, commit messages, and comments have never contained internal-only ticket keys (e.g. JIRA) — including any text since edited or deleted / PRのタイトル・本文・コミットメッセージ・コメントに、編集・削除済みのものも含めて社内限定のチケットキー（JIRA等）を一度も含めていない
 - [ ] The same applies to internal domains, internal URLs, secret/service names, or other internal-only info / 社内ドメイン・内部URL・シークレット名/サービス名などの社内限定情報についても同様に、編集・削除済みのものも含めて一度も含めていない
 - [ ] I have actually checked the edit history of this PR/issue/commits (not just the current text) for the above / 現在の表示上の文面だけでなく、このPR/Issue/コミットの編集履歴も実際に確認した
+- [ ] Attached files/screenshots do not show internal domains, internal URLs, hostnames, or other internal-only info / 添付したファイル・スクリーンショットに社内ドメイン・内部URL・ホスト名などの社内限定情報が写り込んでいない
 
 **External contributors / 社外の方**
 - [ ] I have read the [README](https://github.com/chatwork/dockerfiles/blob/master/README.md) and this change follows the repository's conventions / [README](https://github.com/chatwork/dockerfiles/blob/master/README.md)を読み、このリポジトリの規約に沿っている

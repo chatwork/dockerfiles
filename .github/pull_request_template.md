@@ -9,7 +9,7 @@
 - [ ] The diff does not contain hardcoded secrets, API keys, tokens, or passwords  
   diffの中にシークレット・APIキー・トークン・パスワードなどの実値がハードコードされていない
 
-**Kubell/Chatwork internal contributors / 社内(Kubell・Chatwork)の方**
+**Kubell/Chatwork internal contributors / 社内(Kubell)の方**
 - [ ] This PR's title, description, commit messages, and comments have never contained internal-only ticket keys (e.g. JIRA) — including any text since edited or deleted  
   PRのタイトル・本文・コミットメッセージ・コメントに、編集・削除済みのものも含めて社内限定のチケットキー（JIRA等）を一度も含めていない
 - [ ] The same applies to internal domains, internal URLs, secret/service names, or other internal-only info  
@@ -20,7 +20,7 @@
   添付したファイル・スクリーンショットに社内ドメイン・内部URL・ホスト名などの社内限定情報が写り込んでいない
 
 **External contributors / 社外の方**
-- [ ] I have read the [README](https://github.com/chatwork/dockerfiles/blob/master/README.md) and this change follows the repository's conventions  
-  [README](https://github.com/chatwork/dockerfiles/blob/master/README.md)を読み、このリポジトリの規約に沿っている
+- [ ] I have read the [README](/README.md) and this change follows the repository's conventions  
+  [README](/README.md)を読み、このリポジトリの規約に沿っている
 - [ ] This PR does not contain my own personal information (e.g. private email address, phone number, home directory paths, hostnames) that I don't intend to make public  
   このPRに、公開する意図のない自分自身の個人情報（個人のメールアドレス、電話番号、ホームディレクトリのパス、ホスト名など）が含まれていない

@@ -1,3 +1,2 @@
-# chatwork/dockerfiles
-
-このリポジトリは **public**。PR を作成する際は [.github/pull_request_template.md](.github/pull_request_template.md) の警告・チェックリストに従うこと（社内限定情報・個人情報・シークレットを含めない）。
+# This repository is public. Make sure to inform contributors of this. See .github/pull_request_template.md for details.
+# このリポジトリはパブリックです。作業者にそのことを必ず伝えてください。詳しくは.github/pull_request_template.mdを参照

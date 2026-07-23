@@ -1,7 +1,7 @@
 dependencies:
   sops:
-    version: 3.13.2
-    previousVersion: 3.13.1
+    version: 3.13.3
+    previousVersion: 3.13.2
     versions:
     - 3.7.3
     - 3.8.0
@@ -20,20 +20,21 @@ dependencies:
     - 3.13.0
     - 3.13.1
     - 3.13.2
+    - 3.13.3
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-3.13.2-1.aarch64.rpm
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-3.13.3-1.aarch64.rpm
         content_type: application/x-rpm
-        created_at: "2026-06-30T05:17:25Z"
-        digest: sha256:798b31134ceb7d990d127adbbeca4f563dfcb4aac8291f340aafefa5f4e2c6a8
-        download_count: 0
-        id: 461838767
+        created_at: "2026-07-23T05:28:01Z"
+        digest: sha256:0b3a519c93abaff3edfcaf8a16b19cd3b7cc935daf604999b3b52aac96e5770e
+        download_count: 2
+        id: 486808232
         label: ""
-        name: sops-3.13.2-1.aarch64.rpm
-        node_id: RA_kwDOAmzKAc4bhxmv
-        size: 15332602
+        name: sops-3.13.3-1.aarch64.rpm
+        node_id: RA_kwDOAmzKAc4dBBqo
+        size: 15381222
         state: uploaded
-        updated_at: "2026-06-30T05:17:26Z"
+        updated_at: "2026-07-23T05:28:02Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -54,19 +55,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838767
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-3.13.2-1.x86_64.rpm
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808232
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-3.13.3-1.x86_64.rpm
         content_type: application/x-rpm
-        created_at: "2026-06-30T05:17:27Z"
-        digest: sha256:7c217f6af9b2e6e264ef8a4af439c881e3ec5f0d2523fd3ba0446f49c8d742b0
-        download_count: 0
-        id: 461838779
+        created_at: "2026-07-23T05:28:02Z"
+        digest: sha256:f362eabc5b17b84894952fc57737eccf26ef8a4321453c165f4b1205b5544123
+        download_count: 8
+        id: 486808260
         label: ""
-        name: sops-3.13.2-1.x86_64.rpm
-        node_id: RA_kwDOAmzKAc4bhxm7
-        size: 17042146
+        name: sops-3.13.3-1.x86_64.rpm
+        node_id: RA_kwDOAmzKAc4dBBrE
+        size: 17080545
         state: uploaded
-        updated_at: "2026-06-30T05:17:27Z"
+        updated_at: "2026-07-23T05:28:03Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -87,19 +88,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838779
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.amd64.exe
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808260
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.amd64.exe
         content_type: application/x-msdownload
-        created_at: "2026-06-30T05:17:22Z"
-        digest: sha256:cb6fec76e23cb4ac56771ac38472b0fe1ba79a849bf2200aeda7c9467a045b7b
-        download_count: 0
-        id: 461838690
+        created_at: "2026-07-23T05:27:58Z"
+        digest: sha256:a4a9a398858fe8b2ef72d9686d930bf7c5cece9be74ad83ac3b53cfdd70e6b1c
+        download_count: 19
+        id: 486808200
         label: ""
-        name: sops-v3.13.2.amd64.exe
-        node_id: RA_kwDOAmzKAc4bhxli
-        size: 53494784
+        name: sops-v3.13.3.amd64.exe
+        node_id: RA_kwDOAmzKAc4dBBqI
+        size: 53497856
         state: uploaded
-        updated_at: "2026-06-30T05:17:24Z"
+        updated_at: "2026-07-23T05:28:00Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -120,19 +121,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838690
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.amd64.exe.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808200
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.amd64.exe.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:e07b283e8725a786fbfae79886a5093f9edc3b2bfc969fd5e42e4ced62b54d60
-        download_count: 0
-        id: 461838802
+        created_at: "2026-07-23T05:28:05Z"
+        digest: sha256:5b673c00bf5daf84d6e541d706e0e2a87292199722a33d74ea1403a5967c29b5
+        download_count: 2
+        id: 486808331
         label: ""
-        name: sops-v3.13.2.amd64.exe.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnS
+        name: sops-v3.13.3.amd64.exe.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBsL
         size: 198111
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:05Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -153,19 +154,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838802
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.arm64.exe
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808331
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.arm64.exe
         content_type: application/x-msdownload
-        created_at: "2026-06-30T05:17:22Z"
-        digest: sha256:259d895aae68bd3ba954cfa36a6c9f9ae0b7e062602f0e387b5cd801c325bbfc
-        download_count: 0
-        id: 461838688
+        created_at: "2026-07-23T05:27:58Z"
+        digest: sha256:7f936a0d08edbeba3eb8f50bad1fe71eba83a140a80dfd17051f3bdb4facb08a
+        download_count: 4
+        id: 486808199
         label: ""
-        name: sops-v3.13.2.arm64.exe
-        node_id: RA_kwDOAmzKAc4bhxlg
-        size: 48925696
+        name: sops-v3.13.3.arm64.exe
+        node_id: RA_kwDOAmzKAc4dBBqH
+        size: 48963072
         state: uploaded
-        updated_at: "2026-06-30T05:17:24Z"
+        updated_at: "2026-07-23T05:28:00Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -186,19 +187,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838688
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.arm64.exe.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808199
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.arm64.exe.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:e2ee44a419f0b6308e405e1450a2c067d002b19a40770a9a4e81b88bfab30bf9
-        download_count: 0
-        id: 461838790
+        created_at: "2026-07-23T05:28:05Z"
+        digest: sha256:bcee23d05f4d4a6037c9a5dcbe508960c145cdf085fa292d52c37d7e00247d95
+        download_count: 2
+        id: 486808336
         label: ""
-        name: sops-v3.13.2.arm64.exe.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnG
+        name: sops-v3.13.3.arm64.exe.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBsQ
         size: 198111
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:05Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -219,19 +220,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838790
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.checksums.sigstore.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808336
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.sigstore.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:29Z"
-        digest: sha256:bddc5deda68ace08710166f45bd92b93710aef62187fa9646ee0a083958b1758
-        download_count: 0
-        id: 461838809
+        created_at: "2026-07-23T05:28:06Z"
+        digest: sha256:b140370c339c465dff725b879e0caad3e7ff441fdbbef51179924f9c4b45082f
+        download_count: 17
+        id: 486808368
         label: ""
-        name: sops-v3.13.2.checksums.sigstore.json
-        node_id: RA_kwDOAmzKAc4bhxnZ
-        size: 9907
+        name: sops-v3.13.3.checksums.sigstore.json
+        node_id: RA_kwDOAmzKAc4dBBsw
+        size: 10331
         state: uploaded
-        updated_at: "2026-06-30T05:17:29Z"
+        updated_at: "2026-07-23T05:28:06Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -252,19 +253,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838809
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.checksums.txt
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808368
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2026-06-30T05:17:29Z"
-        digest: sha256:dbfb547bc0f2f5b69284678ed0ba740955cbea07f4aaa9b09dc23fd900ce1675
-        download_count: 0
-        id: 461838808
+        created_at: "2026-07-23T05:28:06Z"
+        digest: sha256:91710ede6a3218e5b62286412543768a92d0c3449434951bd148d21043aad538
+        download_count: 36
+        id: 486808360
         label: ""
-        name: sops-v3.13.2.checksums.txt
-        node_id: RA_kwDOAmzKAc4bhxnY
+        name: sops-v3.13.3.checksums.txt
+        node_id: RA_kwDOAmzKAc4dBBso
         size: 630
         state: uploaded
-        updated_at: "2026-06-30T05:17:29Z"
+        updated_at: "2026-07-23T05:28:06Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -285,19 +286,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838808
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.darwin
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808360
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin
         content_type: application/octet-stream
-        created_at: "2026-06-30T05:17:25Z"
-        digest: sha256:8f7835359f3ef4f7e88a6ac5c666bad7331950db91a06db3f6f83fc905ca9ac0
-        download_count: 0
-        id: 461838766
+        created_at: "2026-07-23T05:28:00Z"
+        digest: sha256:ada49efb072e8d02434b15cdd4746561b7b37e82813ce11efe5cb311439f288b
+        download_count: 2
+        id: 486808227
         label: ""
-        name: sops-v3.13.2.darwin
-        node_id: RA_kwDOAmzKAc4bhxmu
-        size: 103812578
+        name: sops-v3.13.3.darwin
+        node_id: RA_kwDOAmzKAc4dBBqj
+        size: 103874898
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:04Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -318,19 +319,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838766
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.darwin.amd64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808227
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.amd64
         content_type: application/octet-stream
-        created_at: "2026-06-30T05:17:24Z"
-        digest: sha256:5a66836229ff4a73779b19644b6db28fd574a6b995c15fc333469b2f93ee2acd
-        download_count: 0
-        id: 461838762
+        created_at: "2026-07-23T05:28:00Z"
+        digest: sha256:42162d5cef10b74fcf80a045a70e658d7ce6e63d6ea1be6f347e44015714468d
+        download_count: 7
+        id: 486808228
         label: ""
-        name: sops-v3.13.2.darwin.amd64
-        node_id: RA_kwDOAmzKAc4bhxmq
-        size: 53666192
+        name: sops-v3.13.3.darwin.amd64
+        node_id: RA_kwDOAmzKAc4dBBqk
+        size: 53674896
         state: uploaded
-        updated_at: "2026-06-30T05:17:26Z"
+        updated_at: "2026-07-23T05:28:03Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -351,19 +352,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838762
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.darwin.amd64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808228
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.amd64.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:88053cf652563c7fa4ff8de6602aeaf8a4eccc3b16c1711c37b8e8948299aabc
-        download_count: 0
-        id: 461838803
+        created_at: "2026-07-23T05:28:05Z"
+        digest: sha256:76a083dcdf0c2eb8a8c4f556f533154095bb281c8eb3704846a44f9d2a2c90dc
+        download_count: 2
+        id: 486808341
         label: ""
-        name: sops-v3.13.2.darwin.amd64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnT
+        name: sops-v3.13.3.darwin.amd64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBsV
         size: 195722
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:05Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -384,19 +385,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838803
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.darwin.arm64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808341
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.arm64
         content_type: application/octet-stream
-        created_at: "2026-06-30T05:17:22Z"
-        digest: sha256:412c475b52f167f1facd75d564422ffd1fa5302aaa7a404bdf4e30087e04b5a8
-        download_count: 0
-        id: 461838691
+        created_at: "2026-07-23T05:27:58Z"
+        digest: sha256:b97c0d434aab577dc40310e8d22ff9e45eef4c80638ab978daae9b4681c59286
+        download_count: 11
+        id: 486808198
         label: ""
-        name: sops-v3.13.2.darwin.arm64
-        node_id: RA_kwDOAmzKAc4bhxlj
-        size: 50122210
+        name: sops-v3.13.3.darwin.arm64
+        node_id: RA_kwDOAmzKAc4dBBqG
+        size: 50168146
         state: uploaded
-        updated_at: "2026-06-30T05:17:24Z"
+        updated_at: "2026-07-23T05:28:00Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -417,19 +418,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838691
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.darwin.arm64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808198
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.arm64.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:0f74fa1126ad415caefad1eff75755e3e8b74cebd33622d0a6a4538095cec343
-        download_count: 0
-        id: 461838789
+        created_at: "2026-07-23T05:28:04Z"
+        digest: sha256:c7e89a3b39fdf89dc6a2ae082bda75c3d7c37313b540f8c7caf9a28fde8a3385
+        download_count: 2
+        id: 486808294
         label: ""
-        name: sops-v3.13.2.darwin.arm64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnF
+        name: sops-v3.13.3.darwin.arm64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBrm
         size: 195722
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:04Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -450,19 +451,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838789
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.darwin.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808294
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:f5e4a79830f0eeaef29767b2c5460b9ac96ceb5ffeef05733044f43e64f54d4c
-        download_count: 0
-        id: 461838806
+        created_at: "2026-07-23T05:28:05Z"
+        digest: sha256:6df89a4a84ea2a356eff1128a1ff99dd68714129f387e19478331003312bde48
+        download_count: 2
+        id: 486808338
         label: ""
-        name: sops-v3.13.2.darwin.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnW
+        name: sops-v3.13.3.darwin.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBsS
         size: 361390
         state: uploaded
-        updated_at: "2026-06-30T05:17:29Z"
+        updated_at: "2026-07-23T05:28:05Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -483,19 +484,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838806
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.intoto.jsonl
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808338
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.intoto.jsonl
         content_type: application/octet-stream
-        created_at: "2026-06-30T05:18:19Z"
-        digest: sha256:b6116ee59037047c047736134fe839680f97e2e99349199f807df5b771763bc3
-        download_count: 0
-        id: 461839216
+        created_at: "2026-07-23T05:29:10Z"
+        digest: sha256:d8756a37a9b0f37e8cbe473535e97e154f899bf8202d5e46ee4610455a47ac9b
+        download_count: 29
+        id: 486809017
         label: ""
-        name: sops-v3.13.2.intoto.jsonl
-        node_id: RA_kwDOAmzKAc4bhxtw
-        size: 26991
+        name: sops-v3.13.3.intoto.jsonl
+        node_id: RA_kwDOAmzKAc4dBB25
+        size: 27187
         state: uploaded
-        updated_at: "2026-06-30T05:18:19Z"
+        updated_at: "2026-07-23T05:29:11Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -516,19 +517,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461839216
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.linux.amd64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486809017
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64
         content_type: application/octet-stream
-        created_at: "2026-06-30T05:17:22Z"
-        digest: sha256:154dfe4cd70554bdd82b98e4cd4acf191d43d01ead6f00a73477aa44c4ac42ef
-        download_count: 0
-        id: 461838689
+        created_at: "2026-07-23T05:27:58Z"
+        digest: sha256:e5bec3346a873ae91d871550f3e698c1aad962aff462a080e40f25fde17fef6b
+        download_count: 456
+        id: 486808201
         label: ""
-        name: sops-v3.13.2.linux.amd64
-        node_id: RA_kwDOAmzKAc4bhxlh
-        size: 52129954
+        name: sops-v3.13.3.linux.amd64
+        node_id: RA_kwDOAmzKAc4dBBqJ
+        size: 52121762
         state: uploaded
-        updated_at: "2026-06-30T05:17:24Z"
+        updated_at: "2026-07-23T05:28:00Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -549,19 +550,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838689
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.linux.amd64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808201
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:32b4fc60211f04aff6384266ba566ec050534d151dc5d775beda9284ce480d43
-        download_count: 0
-        id: 461838791
+        created_at: "2026-07-23T05:28:04Z"
+        digest: sha256:5e8c6c956d16dc7bf53aedea19feb81f7fd16f9cc00b47b0ae827e035e71a0bb
+        download_count: 4
+        id: 486808317
         label: ""
-        name: sops-v3.13.2.linux.amd64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnH
+        name: sops-v3.13.3.linux.amd64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBr9
         size: 195722
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:05Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -582,19 +583,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838791
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.linux.arm64
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808317
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.arm64
         content_type: application/octet-stream
-        created_at: "2026-06-30T05:17:25Z"
-        digest: sha256:78abf2e15c86250a1553ae6f53aba96be6b2a8126f160b1534959add3467ad76
-        download_count: 0
-        id: 461838764
+        created_at: "2026-07-23T05:28:01Z"
+        digest: sha256:53b0abacd38ef1b12a66d6c100956691b9cefce018d91f81e73ddf7438b94d77
+        download_count: 51
+        id: 486808229
         label: ""
-        name: sops-v3.13.2.linux.arm64
-        node_id: RA_kwDOAmzKAc4bhxms
+        name: sops-v3.13.3.linux.arm64
+        node_id: RA_kwDOAmzKAc4dBBql
         size: 48300194
         state: uploaded
-        updated_at: "2026-06-30T05:17:27Z"
+        updated_at: "2026-07-23T05:28:03Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -615,19 +616,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838764
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.linux.arm64.spdx.sbom.json
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808229
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.arm64.spdx.sbom.json
         content_type: application/json
-        created_at: "2026-06-30T05:17:28Z"
-        digest: sha256:f441a67c0406387b48afafd60774d6f6e80b743c9c8a45d3757881c1c65bfdff
-        download_count: 0
-        id: 461838804
+        created_at: "2026-07-23T05:28:06Z"
+        digest: sha256:c3a8fe409a9bebd8e75987e9b044ea2f5b9f551c985302fa41c3269448d57a8a
+        download_count: 2
+        id: 486808358
         label: ""
-        name: sops-v3.13.2.linux.arm64.spdx.sbom.json
-        node_id: RA_kwDOAmzKAc4bhxnU
+        name: sops-v3.13.3.linux.arm64.spdx.sbom.json
+        node_id: RA_kwDOAmzKAc4dBBsm
         size: 195722
         state: uploaded
-        updated_at: "2026-06-30T05:17:29Z"
+        updated_at: "2026-07-23T05:28:06Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -648,19 +649,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838804
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops_3.13.2_amd64.deb
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808358
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops_3.13.3_amd64.deb
         content_type: application/vnd.debian.binary-package
-        created_at: "2026-06-30T05:17:27Z"
-        digest: sha256:979bd1665a577c9ce208e64c332d51635e852faca37cc11df853bc0dc8e8ca34
-        download_count: 0
-        id: 461838784
+        created_at: "2026-07-23T05:28:03Z"
+        digest: sha256:927c45f2ccb5b1c9acb1e80c7befaea0672c721fd3f222697a51e0a7081e3f3b
+        download_count: 16
+        id: 486808285
         label: ""
-        name: sops_3.13.2_amd64.deb
-        node_id: RA_kwDOAmzKAc4bhxnA
-        size: 16422300
+        name: sops_3.13.3_amd64.deb
+        node_id: RA_kwDOAmzKAc4dBBrd
+        size: 16485534
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:04Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -681,19 +682,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838784
-      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.2/sops_3.13.2_arm64.deb
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808285
+      - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops_3.13.3_arm64.deb
         content_type: application/vnd.debian.binary-package
-        created_at: "2026-06-30T05:17:27Z"
-        digest: sha256:4e9c59d53b492f589fbe3cc558a0a91005ceacad1b1120420a55d1f528bd43f6
-        download_count: 0
-        id: 461838780
+        created_at: "2026-07-23T05:28:03Z"
+        digest: sha256:21cf1ee8860bb9c2a0b09ac97901b41ca9f95734f3402ea358e31e296e6be823
+        download_count: 4
+        id: 486808281
         label: ""
-        name: sops_3.13.2_arm64.deb
-        node_id: RA_kwDOAmzKAc4bhxm8
-        size: 14813258
+        name: sops_3.13.3_arm64.deb
+        node_id: RA_kwDOAmzKAc4dBBrZ
+        size: 14887884
         state: uploaded
-        updated_at: "2026-06-30T05:17:28Z"
+        updated_at: "2026-07-23T05:28:04Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -714,8 +715,8 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/getsops/sops/releases/assets/461838780
-      assets_url: https://api.github.com/repos/getsops/sops/releases/346630465/assets
+        url: https://api.github.com/repos/getsops/sops/releases/assets/486808281
+      assets_url: https://api.github.com/repos/getsops/sops/releases/358471161/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
         events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -745,10 +746,10 @@ dependencies:
 
         ```shell
         # Download the binary
-        curl -LO https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.linux.amd64
+        curl -LO https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64
 
         # Move the binary in to your PATH
-        mv sops-v3.13.2.linux.amd64 /usr/local/bin/sops
+        mv sops-v3.13.3.linux.amd64 /usr/local/bin/sops
 
         # Make the binary executable
         chmod +x /usr/local/bin/sops
@@ -760,12 +761,12 @@ dependencies:
 
         ```shell
         # Download the checksums file, certificate and signature
-        curl -LO https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.checksums.txt
-        curl -LO https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.checksums.sigstore.json
+        curl -LO https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.txt
+        curl -LO https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.sigstore.json
 
         # Verify the checksums file
-        cosign verify-blob sops-v3.13.2.checksums.txt \
-          --bundle sops-v3.13.2.checksums.sigstore.json \
+        cosign verify-blob sops-v3.13.3.checksums.txt \
+          --bundle sops-v3.13.3.checksums.sigstore.json \
           --certificate-identity-regexp=https://github.com/getsops \
           --certificate-oidc-issuer=https://token.actions.githubusercontent.com
         ```
@@ -776,22 +777,22 @@ dependencies:
 
         ```shell
         # Verify the binary using the checksums file
-        sha256sum -c sops-v3.13.2.checksums.txt --ignore-missing
+        sha256sum -c sops-v3.13.3.checksums.txt --ignore-missing
         ```
 
         ### Verify artifact provenance
 
-        The [SLSA provenance](https://slsa.dev/provenance/v0.2) of the binaries, packages, and SBOMs can be found within the artifacts associated with this release. It is presented through an [in-toto](https://in-toto.io/) link metadata file named `sops-v3.13.2.intoto.jsonl`. To verify the provenance of an artifact, you can utilize the [`slsa-verifier`](https://github.com/slsa-framework/slsa-verifier#artifacts) tool:
+        The [SLSA provenance](https://slsa.dev/provenance/v0.2) of the binaries, packages, and SBOMs can be found within the artifacts associated with this release. It is presented through an [in-toto](https://in-toto.io/) link metadata file named `sops-v3.13.3.intoto.jsonl`. To verify the provenance of an artifact, you can utilize the [`slsa-verifier`](https://github.com/slsa-framework/slsa-verifier#artifacts) tool:
 
         ```shell
         # Download the metadata file
-        curl -LO  https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.intoto.jsonl
+        curl -LO  https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.intoto.jsonl
 
         # Verify the provenance of the artifact
         slsa-verifier verify-artifact <artifact> \
-          --provenance-path sops-v3.13.2.intoto.jsonl \
+          --provenance-path sops-v3.13.3.intoto.jsonl \
           --source-uri github.com/getsops/sops \
-          --source-tag v3.13.2
+          --source-tag v3.13.3
         ```
 
         ## Container Images
@@ -802,20 +803,20 @@ dependencies:
 
         ### GitHub Container Registry
 
-        - `ghcr.io/getsops/sops:v3.13.2`
-        - `ghcr.io/getsops/sops:v3.13.2-alpine`
+        - `ghcr.io/getsops/sops:v3.13.3`
+        - `ghcr.io/getsops/sops:v3.13.3-alpine`
 
         ### Quay.io
 
-        - `quay.io/getsops/sops:v3.13.2`
-        - `quay.io/getsops/sops:v3.13.2-alpine`
+        - `quay.io/getsops/sops:v3.13.3`
+        - `quay.io/getsops/sops:v3.13.3-alpine`
 
         ### Verify container image signature
 
         The container images are signed using [Cosign](https://docs.sigstore.dev/cosign/overview/) with GitHub OIDC. To validate the signature of an image, run the following command:
 
         ```shell
-        cosign verify ghcr.io/getsops/sops:v3.13.2 \
+        cosign verify ghcr.io/getsops/sops:v3.13.3 \
           --certificate-identity-regexp=https://github.com/getsops \
           --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
           -o text
@@ -830,57 +831,53 @@ dependencies:
         The Software Bill of Materials (SBOM) for each binary is accessible within the artifacts enclosed with this release. It is presented as an [SPDX](https://spdx.dev/) JSON file, formatted as `<binary>.spdx.sbom.json`.
 
         ## What's Changed
-        * build(deps): Bump the go group with 3 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2185
-        * build(deps): Bump github/codeql-action from 4.35.4 to 4.35.5 in the ci group by @dependabot[bot] in https://github.com/getsops/sops/pull/2184
-        * build(deps): Bump the go group with 11 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2193
-        * build(deps): Bump the ci group with 4 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2192
-        * build(deps): Bump serde_json from 1.0.149 to 1.0.150 in /functional-tests in the rust group by @dependabot[bot] in https://github.com/getsops/sops/pull/2191
-        * build(deps): Bump the go group with 11 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2197
-        * build(deps): Bump docker/setup-qemu-action from 4.0.0 to 4.1.0 in the ci group by @dependabot[bot] in https://github.com/getsops/sops/pull/2196
-        * test: unset all age env vars in make test target by @arpitjain099 in https://github.com/getsops/sops/pull/2208
-        * build(deps): Bump the go group with 10 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2212
-        * build(deps): Bump the ci group with 2 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2211
-        * build(deps): Bump the go group with 15 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2218
-        * build(deps): Bump alpine from 3.23 to 3.24 in /.release in the docker group by @dependabot[bot] in https://github.com/getsops/sops/pull/2217
-        * fix: handle pointers when serializing context by @tlercher in https://github.com/getsops/sops/pull/2219
-        * docs: fix typo in exec-file --filename help text by @s3onghyun in https://github.com/getsops/sops/pull/2221
-        * JSON store: preserve large integers that fit into int64 by @s3onghyun in https://github.com/getsops/sops/pull/2222
-        * Fix panic when expecting an encrypted string, but a non-string is encountered by @felixfontein in https://github.com/getsops/sops/pull/2227
-        * Fix INI store no longer double-encoding newlines by @felixfontein in https://github.com/getsops/sops/pull/2189
-        * exec-file/exec-env: reset supplementary groups when changing user by @felixfontein in https://github.com/getsops/sops/pull/2194
-        * build(deps): Bump the go group with 6 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2229
-        * build(deps): Bump actions/checkout from 6.0.3 to 7.0.0 in the ci group by @dependabot[bot] in https://github.com/getsops/sops/pull/2228
-        * Fix issue when changing user in exec subcommands by @sabre1041 in https://github.com/getsops/sops/pull/2230
-        * Shorten .md lines by @felixfontein in https://github.com/getsops/sops/pull/2206
-        * Update all Go dependencies with `go get -t -u ./...` by @felixfontein in https://github.com/getsops/sops/pull/2231
-        * build(deps): Bump github.com/opencontainers/runc from 1.2.8 to 1.3.6 by @dependabot[bot] in https://github.com/getsops/sops/pull/2233
-        * build(deps): Bump the ci group with 2 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2236
-        * Release 3.13.2 by @felixfontein in https://github.com/getsops/sops/pull/2232
+        * Add ini to supported input/output type descriptions by @TheKhanj in https://github.com/getsops/sops/pull/2239
+        * build(deps): Bump the go group with 10 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2242
+        * build(deps): Bump the ci group with 6 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2241
+        * fix: include decrypted sequence comments in the MAC (fixes #2243) by @cbcoutinho in https://github.com/getsops/sops/pull/2245
+        * build(deps): Bump the go group with 14 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2251
+        * build(deps): Bump the ci group with 2 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2250
+        * build(deps): Bump the go group with 11 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2261
+        * build(deps): Bump the ci group with 3 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2260
+        * build(deps): Bump the rust group in /functional-tests with 3 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2259
+        * Update dependencies with 'go get -t -u ./...' by @felixfontein in https://github.com/getsops/sops/pull/2248
+        * Completion scripts: remove leading newline by @felixfontein in https://github.com/getsops/sops/pull/2253
+        * Release 3.13.3 by @felixfontein in https://github.com/getsops/sops/pull/2249
 
         ## New Contributors
-        * @arpitjain099 made their first contribution in https://github.com/getsops/sops/pull/2208
-        * @tlercher made their first contribution in https://github.com/getsops/sops/pull/2219
-        * @s3onghyun made their first contribution in https://github.com/getsops/sops/pull/2221
+        * @TheKhanj made their first contribution in https://github.com/getsops/sops/pull/2239
+        * @cbcoutinho made their first contribution in https://github.com/getsops/sops/pull/2245
 
-        **Full Changelog**: https://github.com/getsops/sops/compare/v3.13.1...v3.13.2
+        **Full Changelog**: https://github.com/getsops/sops/compare/v3.13.2...v3.13.3
 
-      created_at: "2026-06-30T04:50:47Z"
+      created_at: "2026-07-23T04:56:54Z"
       draft: false
-      html_url: https://github.com/getsops/sops/releases/tag/v3.13.2
-      id: 346630465
+      html_url: https://github.com/getsops/sops/releases/tag/v3.13.3
+      id: 358471161
       immutable: false
-      mentions_count: 6
-      name: v3.13.2
-      node_id: RE_kwDOAmzKAc4UqSlB
+      mentions_count: 4
+      name: v3.13.3
+      node_id: RE_kwDOAmzKAc4VXdX5
       prerelease: false
-      published_at: "2026-06-30T05:17:22Z"
-      tag_name: v3.13.2
-      tarball_url: https://api.github.com/repos/getsops/sops/tarball/v3.13.2
+      published_at: "2026-07-23T05:27:57Z"
+      reactions:
+        "+1": 2
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 2
+        url: https://api.github.com/repos/getsops/sops/releases/358471161/reactions
+      tag_name: v3.13.3
+      tarball_url: https://api.github.com/repos/getsops/sops/tarball/v3.13.3
       target_commitish: main
-      updated_at: "2026-06-30T05:18:19Z"
-      upload_url: https://uploads.github.com/repos/getsops/sops/releases/346630465/assets{?name,label}
-      url: https://api.github.com/repos/getsops/sops/releases/346630465
-      zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.13.2
+      updated_at: "2026-07-23T05:29:11Z"
+      upload_url: https://uploads.github.com/repos/getsops/sops/releases/358471161/assets{?name,label}
+      url: https://api.github.com/repos/getsops/sops/releases/358471161
+      zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.13.3
 meta:
   dependencies:
     sops:
@@ -14398,3 +14395,861 @@ meta:
           upload_url: https://uploads.github.com/repos/getsops/sops/releases/346630465/assets{?name,label}
           url: https://api.github.com/repos/getsops/sops/releases/346630465
           zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.13.2
+      3.13.3:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-3.13.3-1.aarch64.rpm
+            content_type: application/x-rpm
+            created_at: "2026-07-23T05:28:01Z"
+            digest: sha256:0b3a519c93abaff3edfcaf8a16b19cd3b7cc935daf604999b3b52aac96e5770e
+            download_count: 2
+            id: 486808232
+            label: ""
+            name: sops-3.13.3-1.aarch64.rpm
+            node_id: RA_kwDOAmzKAc4dBBqo
+            size: 15381222
+            state: uploaded
+            updated_at: "2026-07-23T05:28:02Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808232
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-3.13.3-1.x86_64.rpm
+            content_type: application/x-rpm
+            created_at: "2026-07-23T05:28:02Z"
+            digest: sha256:f362eabc5b17b84894952fc57737eccf26ef8a4321453c165f4b1205b5544123
+            download_count: 8
+            id: 486808260
+            label: ""
+            name: sops-3.13.3-1.x86_64.rpm
+            node_id: RA_kwDOAmzKAc4dBBrE
+            size: 17080545
+            state: uploaded
+            updated_at: "2026-07-23T05:28:03Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808260
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.amd64.exe
+            content_type: application/x-msdownload
+            created_at: "2026-07-23T05:27:58Z"
+            digest: sha256:a4a9a398858fe8b2ef72d9686d930bf7c5cece9be74ad83ac3b53cfdd70e6b1c
+            download_count: 19
+            id: 486808200
+            label: ""
+            name: sops-v3.13.3.amd64.exe
+            node_id: RA_kwDOAmzKAc4dBBqI
+            size: 53497856
+            state: uploaded
+            updated_at: "2026-07-23T05:28:00Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808200
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.amd64.exe.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:05Z"
+            digest: sha256:5b673c00bf5daf84d6e541d706e0e2a87292199722a33d74ea1403a5967c29b5
+            download_count: 2
+            id: 486808331
+            label: ""
+            name: sops-v3.13.3.amd64.exe.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBsL
+            size: 198111
+            state: uploaded
+            updated_at: "2026-07-23T05:28:05Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808331
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.arm64.exe
+            content_type: application/x-msdownload
+            created_at: "2026-07-23T05:27:58Z"
+            digest: sha256:7f936a0d08edbeba3eb8f50bad1fe71eba83a140a80dfd17051f3bdb4facb08a
+            download_count: 4
+            id: 486808199
+            label: ""
+            name: sops-v3.13.3.arm64.exe
+            node_id: RA_kwDOAmzKAc4dBBqH
+            size: 48963072
+            state: uploaded
+            updated_at: "2026-07-23T05:28:00Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808199
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.arm64.exe.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:05Z"
+            digest: sha256:bcee23d05f4d4a6037c9a5dcbe508960c145cdf085fa292d52c37d7e00247d95
+            download_count: 2
+            id: 486808336
+            label: ""
+            name: sops-v3.13.3.arm64.exe.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBsQ
+            size: 198111
+            state: uploaded
+            updated_at: "2026-07-23T05:28:05Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808336
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.sigstore.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:06Z"
+            digest: sha256:b140370c339c465dff725b879e0caad3e7ff441fdbbef51179924f9c4b45082f
+            download_count: 17
+            id: 486808368
+            label: ""
+            name: sops-v3.13.3.checksums.sigstore.json
+            node_id: RA_kwDOAmzKAc4dBBsw
+            size: 10331
+            state: uploaded
+            updated_at: "2026-07-23T05:28:06Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808368
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.txt
+            content_type: text/plain; charset=utf-8
+            created_at: "2026-07-23T05:28:06Z"
+            digest: sha256:91710ede6a3218e5b62286412543768a92d0c3449434951bd148d21043aad538
+            download_count: 36
+            id: 486808360
+            label: ""
+            name: sops-v3.13.3.checksums.txt
+            node_id: RA_kwDOAmzKAc4dBBso
+            size: 630
+            state: uploaded
+            updated_at: "2026-07-23T05:28:06Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808360
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin
+            content_type: application/octet-stream
+            created_at: "2026-07-23T05:28:00Z"
+            digest: sha256:ada49efb072e8d02434b15cdd4746561b7b37e82813ce11efe5cb311439f288b
+            download_count: 2
+            id: 486808227
+            label: ""
+            name: sops-v3.13.3.darwin
+            node_id: RA_kwDOAmzKAc4dBBqj
+            size: 103874898
+            state: uploaded
+            updated_at: "2026-07-23T05:28:04Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808227
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.amd64
+            content_type: application/octet-stream
+            created_at: "2026-07-23T05:28:00Z"
+            digest: sha256:42162d5cef10b74fcf80a045a70e658d7ce6e63d6ea1be6f347e44015714468d
+            download_count: 7
+            id: 486808228
+            label: ""
+            name: sops-v3.13.3.darwin.amd64
+            node_id: RA_kwDOAmzKAc4dBBqk
+            size: 53674896
+            state: uploaded
+            updated_at: "2026-07-23T05:28:03Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808228
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.amd64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:05Z"
+            digest: sha256:76a083dcdf0c2eb8a8c4f556f533154095bb281c8eb3704846a44f9d2a2c90dc
+            download_count: 2
+            id: 486808341
+            label: ""
+            name: sops-v3.13.3.darwin.amd64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBsV
+            size: 195722
+            state: uploaded
+            updated_at: "2026-07-23T05:28:05Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808341
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.arm64
+            content_type: application/octet-stream
+            created_at: "2026-07-23T05:27:58Z"
+            digest: sha256:b97c0d434aab577dc40310e8d22ff9e45eef4c80638ab978daae9b4681c59286
+            download_count: 11
+            id: 486808198
+            label: ""
+            name: sops-v3.13.3.darwin.arm64
+            node_id: RA_kwDOAmzKAc4dBBqG
+            size: 50168146
+            state: uploaded
+            updated_at: "2026-07-23T05:28:00Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808198
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.arm64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:04Z"
+            digest: sha256:c7e89a3b39fdf89dc6a2ae082bda75c3d7c37313b540f8c7caf9a28fde8a3385
+            download_count: 2
+            id: 486808294
+            label: ""
+            name: sops-v3.13.3.darwin.arm64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBrm
+            size: 195722
+            state: uploaded
+            updated_at: "2026-07-23T05:28:04Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808294
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:05Z"
+            digest: sha256:6df89a4a84ea2a356eff1128a1ff99dd68714129f387e19478331003312bde48
+            download_count: 2
+            id: 486808338
+            label: ""
+            name: sops-v3.13.3.darwin.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBsS
+            size: 361390
+            state: uploaded
+            updated_at: "2026-07-23T05:28:05Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808338
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.intoto.jsonl
+            content_type: application/octet-stream
+            created_at: "2026-07-23T05:29:10Z"
+            digest: sha256:d8756a37a9b0f37e8cbe473535e97e154f899bf8202d5e46ee4610455a47ac9b
+            download_count: 29
+            id: 486809017
+            label: ""
+            name: sops-v3.13.3.intoto.jsonl
+            node_id: RA_kwDOAmzKAc4dBB25
+            size: 27187
+            state: uploaded
+            updated_at: "2026-07-23T05:29:11Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486809017
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64
+            content_type: application/octet-stream
+            created_at: "2026-07-23T05:27:58Z"
+            digest: sha256:e5bec3346a873ae91d871550f3e698c1aad962aff462a080e40f25fde17fef6b
+            download_count: 456
+            id: 486808201
+            label: ""
+            name: sops-v3.13.3.linux.amd64
+            node_id: RA_kwDOAmzKAc4dBBqJ
+            size: 52121762
+            state: uploaded
+            updated_at: "2026-07-23T05:28:00Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808201
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:04Z"
+            digest: sha256:5e8c6c956d16dc7bf53aedea19feb81f7fd16f9cc00b47b0ae827e035e71a0bb
+            download_count: 4
+            id: 486808317
+            label: ""
+            name: sops-v3.13.3.linux.amd64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBr9
+            size: 195722
+            state: uploaded
+            updated_at: "2026-07-23T05:28:05Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808317
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.arm64
+            content_type: application/octet-stream
+            created_at: "2026-07-23T05:28:01Z"
+            digest: sha256:53b0abacd38ef1b12a66d6c100956691b9cefce018d91f81e73ddf7438b94d77
+            download_count: 51
+            id: 486808229
+            label: ""
+            name: sops-v3.13.3.linux.arm64
+            node_id: RA_kwDOAmzKAc4dBBql
+            size: 48300194
+            state: uploaded
+            updated_at: "2026-07-23T05:28:03Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808229
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.arm64.spdx.sbom.json
+            content_type: application/json
+            created_at: "2026-07-23T05:28:06Z"
+            digest: sha256:c3a8fe409a9bebd8e75987e9b044ea2f5b9f551c985302fa41c3269448d57a8a
+            download_count: 2
+            id: 486808358
+            label: ""
+            name: sops-v3.13.3.linux.arm64.spdx.sbom.json
+            node_id: RA_kwDOAmzKAc4dBBsm
+            size: 195722
+            state: uploaded
+            updated_at: "2026-07-23T05:28:06Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808358
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops_3.13.3_amd64.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2026-07-23T05:28:03Z"
+            digest: sha256:927c45f2ccb5b1c9acb1e80c7befaea0672c721fd3f222697a51e0a7081e3f3b
+            download_count: 16
+            id: 486808285
+            label: ""
+            name: sops_3.13.3_amd64.deb
+            node_id: RA_kwDOAmzKAc4dBBrd
+            size: 16485534
+            state: uploaded
+            updated_at: "2026-07-23T05:28:04Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808285
+          - browser_download_url: https://github.com/getsops/sops/releases/download/v3.13.3/sops_3.13.3_arm64.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2026-07-23T05:28:03Z"
+            digest: sha256:21cf1ee8860bb9c2a0b09ac97901b41ca9f95734f3402ea358e31e296e6be823
+            download_count: 4
+            id: 486808281
+            label: ""
+            name: sops_3.13.3_arm64.deb
+            node_id: RA_kwDOAmzKAc4dBBrZ
+            size: 14887884
+            state: uploaded
+            updated_at: "2026-07-23T05:28:04Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/getsops/sops/releases/assets/486808281
+          assets_url: https://api.github.com/repos/getsops/sops/releases/358471161/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+            events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+            followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+            following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+            gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/apps/github-actions
+            id: 41898282
+            login: github-actions[bot]
+            node_id: MDM6Qm90NDE4OTgyODI=
+            organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+            received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+            repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+            type: Bot
+            url: https://api.github.com/users/github-actions%5Bbot%5D
+            user_view_type: public
+          body: |+
+            ## Installation
+
+            To install `sops`, download one of the pre-built binaries provided for your platform from the artifacts attached to this release.
+
+            For instance, if you are using Linux on an AMD64 architecture:
+
+            ```shell
+            # Download the binary
+            curl -LO https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64
+
+            # Move the binary in to your PATH
+            mv sops-v3.13.3.linux.amd64 /usr/local/bin/sops
+
+            # Make the binary executable
+            chmod +x /usr/local/bin/sops
+            ```
+
+            ### Verify checksums file signature
+
+            The checksums file provided within the artifacts attached to this release is signed using [Cosign](https://docs.sigstore.dev/cosign/overview/) with GitHub OIDC. To validate the signature of this file, run the following commands:
+
+            ```shell
+            # Download the checksums file, certificate and signature
+            curl -LO https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.txt
+            curl -LO https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.checksums.sigstore.json
+
+            # Verify the checksums file
+            cosign verify-blob sops-v3.13.3.checksums.txt \
+              --bundle sops-v3.13.3.checksums.sigstore.json \
+              --certificate-identity-regexp=https://github.com/getsops \
+              --certificate-oidc-issuer=https://token.actions.githubusercontent.com
+            ```
+
+            ### Verify binary integrity
+
+            To verify the integrity of the downloaded binary, you can utilize the checksums file after having validated its signature:
+
+            ```shell
+            # Verify the binary using the checksums file
+            sha256sum -c sops-v3.13.3.checksums.txt --ignore-missing
+            ```
+
+            ### Verify artifact provenance
+
+            The [SLSA provenance](https://slsa.dev/provenance/v0.2) of the binaries, packages, and SBOMs can be found within the artifacts associated with this release. It is presented through an [in-toto](https://in-toto.io/) link metadata file named `sops-v3.13.3.intoto.jsonl`. To verify the provenance of an artifact, you can utilize the [`slsa-verifier`](https://github.com/slsa-framework/slsa-verifier#artifacts) tool:
+
+            ```shell
+            # Download the metadata file
+            curl -LO  https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.intoto.jsonl
+
+            # Verify the provenance of the artifact
+            slsa-verifier verify-artifact <artifact> \
+              --provenance-path sops-v3.13.3.intoto.jsonl \
+              --source-uri github.com/getsops/sops \
+              --source-tag v3.13.3
+            ```
+
+            ## Container Images
+
+            The `sops` binaries are also available as container images, based on Debian (slim) and Alpine Linux. The Debian-based container images include any dependencies which may be required to make use of certain key services, such as GnuPG, AWS KMS, Azure Key Vault, and Google Cloud KMS. The Alpine-based container images are smaller in size, but do not include these dependencies.
+
+            These container images are available for the following architectures: `linux/amd64` and `linux/arm64`.
+
+            ### GitHub Container Registry
+
+            - `ghcr.io/getsops/sops:v3.13.3`
+            - `ghcr.io/getsops/sops:v3.13.3-alpine`
+
+            ### Quay.io
+
+            - `quay.io/getsops/sops:v3.13.3`
+            - `quay.io/getsops/sops:v3.13.3-alpine`
+
+            ### Verify container image signature
+
+            The container images are signed using [Cosign](https://docs.sigstore.dev/cosign/overview/) with GitHub OIDC. To validate the signature of an image, run the following command:
+
+            ```shell
+            cosign verify ghcr.io/getsops/sops:v3.13.3 \
+              --certificate-identity-regexp=https://github.com/getsops \
+              --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
+              -o text
+            ```
+
+            ### Verify container image provenance
+
+            The container images include [SLSA provenance](https://slsa.dev/provenance/v0.2) attestations. For more information around the verification of this, please refer to the [`slsa-verifier` documentation](https://github.com/slsa-framework/slsa-verifier#containers).
+
+            ## Software Bill of Materials
+
+            The Software Bill of Materials (SBOM) for each binary is accessible within the artifacts enclosed with this release. It is presented as an [SPDX](https://spdx.dev/) JSON file, formatted as `<binary>.spdx.sbom.json`.
+
+            ## What's Changed
+            * Add ini to supported input/output type descriptions by @TheKhanj in https://github.com/getsops/sops/pull/2239
+            * build(deps): Bump the go group with 10 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2242
+            * build(deps): Bump the ci group with 6 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2241
+            * fix: include decrypted sequence comments in the MAC (fixes #2243) by @cbcoutinho in https://github.com/getsops/sops/pull/2245
+            * build(deps): Bump the go group with 14 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2251
+            * build(deps): Bump the ci group with 2 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2250
+            * build(deps): Bump the go group with 11 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2261
+            * build(deps): Bump the ci group with 3 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2260
+            * build(deps): Bump the rust group in /functional-tests with 3 updates by @dependabot[bot] in https://github.com/getsops/sops/pull/2259
+            * Update dependencies with 'go get -t -u ./...' by @felixfontein in https://github.com/getsops/sops/pull/2248
+            * Completion scripts: remove leading newline by @felixfontein in https://github.com/getsops/sops/pull/2253
+            * Release 3.13.3 by @felixfontein in https://github.com/getsops/sops/pull/2249
+
+            ## New Contributors
+            * @TheKhanj made their first contribution in https://github.com/getsops/sops/pull/2239
+            * @cbcoutinho made their first contribution in https://github.com/getsops/sops/pull/2245
+
+            **Full Changelog**: https://github.com/getsops/sops/compare/v3.13.2...v3.13.3
+
+          created_at: "2026-07-23T04:56:54Z"
+          draft: false
+          html_url: https://github.com/getsops/sops/releases/tag/v3.13.3
+          id: 358471161
+          immutable: false
+          mentions_count: 4
+          name: v3.13.3
+          node_id: RE_kwDOAmzKAc4VXdX5
+          prerelease: false
+          published_at: "2026-07-23T05:27:57Z"
+          reactions:
+            "+1": 2
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 2
+            url: https://api.github.com/repos/getsops/sops/releases/358471161/reactions
+          tag_name: v3.13.3
+          tarball_url: https://api.github.com/repos/getsops/sops/tarball/v3.13.3
+          target_commitish: main
+          updated_at: "2026-07-23T05:29:11Z"
+          upload_url: https://uploads.github.com/repos/getsops/sops/releases/358471161/assets{?name,label}
+          url: https://api.github.com/repos/getsops/sops/releases/358471161
+          zipball_url: https://api.github.com/repos/getsops/sops/zipball/v3.13.3

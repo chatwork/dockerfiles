@@ -34,7 +34,7 @@ RUN AVAILABLE_TERRAFORM_VERSIONS="0.11.15 0.12.31 0.13.7 0.14.11 0.15.5 1.0.11 1
     done && \
     ln -s "/usr/local/bin/tf/versions/${DEFAULT_TERRAFORM_VERSION}/terraform" /usr/local/bin/terraform
 
-ARG CONFTEST_VERSION=0.68.2
+ARG CONFTEST_VERSION=0.69.0
 
 RUN case "${TARGETARCH}" in \
         "amd64") CONFTEST_ARCH=x86_64 ;; \

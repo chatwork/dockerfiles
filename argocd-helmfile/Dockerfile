@@ -3,6 +3,10 @@ FROM quay.io/argoproj/argocd:v3.5.0
 LABEL version="3.5.0-1.7.3"
 LABEL maintainer="sakamoto@chatwork.com"
 
+# NOTE: This image is pushed as linux/amd64 and linux/arm64 in a single build,
+# so one of the two is always built under QEMU emulation on either runner.
+# An outdated binfmt image cannot emulate syscalls used by newer base images.
+
 # Switch to root for the ability to perform install
 USER root
 

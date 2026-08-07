@@ -8,6 +8,11 @@ on:
       - reopened
       - synchronize
   workflow_dispatch:
+    # TEMPORARY: SREP-5256 検証用。マージ前に削除する。
+    inputs:
+      binfmt_image:
+        description: 'binfmt image to verify'
+        default: 'tonistiigi/binfmt:qemu-v10.2.3-68'
 
 jobs:
   test:
@@ -244,3 +249,56 @@ jobs:
                 -e BODY="$(make manifest:succeed-message -f ${GITHUB_WORKSPACE}/${DIR}/Makefile)";
             fi
           done
+
+  # TEMPORARY: SREP-5256 検証用。マージ前に削除する。
+  verify-emulation-setup:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    outputs:
+      dirs: ${{ steps.list.outputs.dirs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: list
+        run: |
+          dirs=$(grep -rl -- '--platform linux/amd64,linux/arm64' */Makefile \
+            | xargs -n1 dirname \
+            | sort -u \
+            | jq -R . | jq -sc .)
+          echo "dirs=${dirs}" >> $GITHUB_OUTPUT
+          echo "target dirs: ${dirs}"
+
+  # TEMPORARY: SREP-5256 検証用。マージ前に削除する。
+  verify-emulation:
+    if: github.event_name == 'workflow_dispatch'
+    needs: verify-emulation-setup
+    strategy:
+      fail-fast: false
+      matrix:
+        dir: ${{ fromJSON(needs.verify-emulation-setup.outputs.dirs) }}
+        target:
+          - runner: ubuntu-latest
+            emulated: linux/arm64
+          - runner: ubuntu-24.04-arm
+            emulated: linux/amd64
+    runs-on: ${{ matrix.target.runner }}
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Login to Docker Hub
+        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        with:
+          username: ${{ secrets.CW_DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.CW_DOCKER_HUB_TOKEN }}
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@96fe6ef7f33517b61c61be40b68a1882f3264fb8 # v4.2.0
+        with:
+          image: ${{ inputs.binfmt_image }}
+          platforms: linux/amd64,linux/arm64
+      - uses: docker/setup-buildx-action@bb05f3f5519dd87d3ba754cc423b652a5edd6d2c # v4.2.0
+      - name: Emulated build
+        working-directory: ${{ matrix.dir }}
+        run: |
+          docker buildx build \
+            --platform ${{ matrix.target.emulated }} \
+            -f Dockerfile \
+            --output=type=cacheonly .

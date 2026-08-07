@@ -3,6 +3,10 @@ FROM quay.io/argoproj/argocd:v{{ .argocd_version }}
 LABEL version="{{ .argocd_version }}-{{ .helmfile_version }}"
 LABEL maintainer="sakamoto@chatwork.com"
 
+# NOTE: このイメージは push 時に linux/amd64 と linux/arm64 を1度に焼くため、
+# どちらのランナーでも片方が QEMU エミュレーション下でビルドされる。
+# binfmt が古いと新しい土台イメージの syscall に対応できず失敗する（SREP-5256）。
+
 # Switch to root for the ability to perform install
 USER root
 

@@ -16,4 +16,4 @@ dependencies:
       dockerImageTags:
         source: fluent/fluentd
         host: registry.hub.docker.com
-    version: "~ 1.17.0-debian-1.0"
+    version: "~ 1.19.0-debian-1.0"

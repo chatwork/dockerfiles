@@ -30,6 +30,7 @@ check:
 
 .PHONY: test
 test: build
+	-@docker rm -f ${IMAGE_NAME} 2>/dev/null || true
 	docker-compose -f docker-compose.test.yml up --no-start sut
 	docker cp $(shell pwd)/goss ${IMAGE_NAME}:/goss
 	docker-compose -f docker-compose.test.yml up --no-recreate --exit-code-from sut sut

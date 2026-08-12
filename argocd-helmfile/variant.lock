@@ -1,7 +1,7 @@
 dependencies:
   argocd:
-    version: 3.5.0
-    previousVersion: 3.4.6
+    version: 3.5.1
+    previousVersion: 3.5.0
     versions:
     - 2.9.6
     - 2.10.1
@@ -72,20 +72,21 @@ dependencies:
     - 3.4.5
     - 3.4.6
     - 3.5.0
+    - 3.5.1
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-cli.intoto.jsonl
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-cli.intoto.jsonl
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:37:01Z"
-        digest: sha256:8f5b6e84d2bd35a3433be5acb188d2b7d8867f6aacb33e1e7cd18d61c3c4681b
-        download_count: 4
-        id: 501099176
+        created_at: "2026-08-12T12:14:13Z"
+        digest: sha256:94225a0ee0d58a5d9c3c47479e7614364c4fc4a096a7277a078901bf26a48adc
+        download_count: 0
+        id: 511532511
         label: ""
         name: argocd-cli.intoto.jsonl
-        node_id: RA_kwDOBzS60s4d3iqo
-        size: 23831
+        node_id: RA_kwDOBzS60s4efV3f
+        size: 24099
         state: uploaded
-        updated_at: "2026-08-04T08:37:01Z"
+        updated_at: "2026-08-12T12:14:14Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -106,19 +107,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501099176
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-darwin-amd64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511532511
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-darwin-amd64
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:39Z"
-        digest: sha256:eff88815d7832e25a01790397f6abe073e42cff9a38c4515f082637ea47df1d1
+        created_at: "2026-08-12T12:12:47Z"
+        digest: sha256:b23cf247e8e56db825f8ab7ed5b36333e5f193ebcffcc95f4e5dba1fbf025bfa
         download_count: 0
-        id: 501097804
+        id: 511531408
         label: ""
         name: argocd-darwin-amd64
-        node_id: RA_kwDOBzS60s4d3iVM
-        size: 256734160
+        node_id: RA_kwDOBzS60s4efVmQ
+        size: 256767808
         state: uploaded
-        updated_at: "2026-08-04T08:35:47Z"
+        updated_at: "2026-08-12T12:12:58Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -139,19 +140,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097804
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-darwin-arm64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531408
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-darwin-arm64
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:47Z"
-        digest: sha256:842740ce687e738f2bb5be9e48e74cd1ee51549bdbecc7490a534cdb4ddd7e72
+        created_at: "2026-08-12T12:12:47Z"
+        digest: sha256:3607c5891028bf0c7505284afb54df350f0c67585f32d688ad03e3856ba58b1f
         download_count: 0
-        id: 501097945
+        id: 511531399
         label: ""
         name: argocd-darwin-arm64
-        node_id: RA_kwDOBzS60s4d3iXZ
-        size: 246004258
+        node_id: RA_kwDOBzS60s4efVmH
+        size: 246054674
         state: uploaded
-        updated_at: "2026-08-04T08:35:54Z"
+        updated_at: "2026-08-12T12:12:58Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -172,19 +173,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097945
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-linux-amd64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531399
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-amd64
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:48Z"
-        digest: sha256:82f2ffe3f3df32baed1229963f0866e9a8a3c74e136e9e5f36646d9004332cc5
-        download_count: 222
-        id: 501097954
+        created_at: "2026-08-12T12:12:36Z"
+        digest: sha256:0a66b7150608e3f8ae07c521d56c9f34244033cf88a83e0953f7337a3799035e
+        download_count: 0
+        id: 511531269
         label: ""
         name: argocd-linux-amd64
-        node_id: RA_kwDOBzS60s4d3iXi
-        size: 249621025
+        node_id: RA_kwDOBzS60s4efVkF
+        size: 249656542
         state: uploaded
-        updated_at: "2026-08-04T08:35:54Z"
+        updated_at: "2026-08-12T12:12:46Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -205,19 +206,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097954
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-linux-arm64
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531269
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-arm64
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:39Z"
-        digest: sha256:8192c7bffdadb6e17711146e602837f9d2a75abd005ddea20b322208d32a1086
-        download_count: 22
-        id: 501097806
+        created_at: "2026-08-12T12:12:36Z"
+        digest: sha256:7d5e175b2299924459d8d6c9a766da0875449d00d687a06a17b8210117c0a431
+        download_count: 0
+        id: 511531267
         label: ""
         name: argocd-linux-arm64
-        node_id: RA_kwDOBzS60s4d3iVO
-        size: 236803652
+        node_id: RA_kwDOBzS60s4efVkD
+        size: 236881065
         state: uploaded
-        updated_at: "2026-08-04T08:35:47Z"
+        updated_at: "2026-08-12T12:12:47Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -238,19 +239,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097806
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-linux-ppc64le
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531267
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-ppc64le
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:48Z"
-        digest: sha256:9dc665cb2deb0eb48947ccff63ed0c37a07a5f8dea5b7fee52a0e64331cb7d01
+        created_at: "2026-08-12T12:12:36Z"
+        digest: sha256:5a6c734fef3cb0479a9fff61480273bc4aefd8be9cdbd7b48a3fd048b4a4db1c
         download_count: 0
-        id: 501097951
+        id: 511531265
         label: ""
         name: argocd-linux-ppc64le
-        node_id: RA_kwDOBzS60s4d3iXf
-        size: 245716198
+        node_id: RA_kwDOBzS60s4efVkB
+        size: 245720723
         state: uploaded
-        updated_at: "2026-08-04T08:35:56Z"
+        updated_at: "2026-08-12T12:12:46Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -271,19 +272,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097951
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-linux-s390x
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531265
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-s390x
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:39Z"
-        digest: sha256:e88a2cc05e68056966733f92dd575100f1991f61d2564440e6a4a6c18a26151c
+        created_at: "2026-08-12T12:12:46Z"
+        digest: sha256:a91d2cb023fb214622b8aee1b4a762edccad3663b8e373e99d1cf89d9364df55
         download_count: 0
-        id: 501097805
+        id: 511531391
         label: ""
         name: argocd-linux-s390x
-        node_id: RA_kwDOBzS60s4d3iVN
-        size: 253557256
+        node_id: RA_kwDOBzS60s4efVl_
+        size: 253630101
         state: uploaded
-        updated_at: "2026-08-04T08:35:47Z"
+        updated_at: "2026-08-12T12:12:55Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -304,52 +305,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097805
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-sbom.intoto.jsonl
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531391
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-windows-amd64.exe
         content_type: application/octet-stream
-        created_at: "2026-08-04T08:40:07Z"
-        digest: sha256:86c411b0d906e7b98e0bb8c79c7363eec23142e0489c3c8b0bb0e2314bde72c5
+        created_at: "2026-08-12T12:12:36Z"
+        digest: sha256:f7dc9289a43be9f1ab8fae0ca89f67d05069b73dfea5bcc8c5c86cf7433a3166
         download_count: 0
-        id: 501102317
-        label: ""
-        name: argocd-sbom.intoto.jsonl
-        node_id: RA_kwDOBzS60s4d3jbt
-        size: 23019
-        state: uploaded
-        updated_at: "2026-08-04T08:40:08Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501102317
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-windows-amd64.exe
-        content_type: application/octet-stream
-        created_at: "2026-08-04T08:35:39Z"
-        digest: sha256:81554f01b168b20a8fb5933384ebf8673573eafa3c46700d8e5619eef8e76ced
-        download_count: 4
-        id: 501097803
+        id: 511531266
         label: ""
         name: argocd-windows-amd64.exe
-        node_id: RA_kwDOBzS60s4d3iVL
-        size: 251837952
+        node_id: RA_kwDOBzS60s4efVkC
+        size: 251872256
         state: uploaded
-        updated_at: "2026-08-04T08:35:47Z"
+        updated_at: "2026-08-12T12:12:46Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -370,19 +338,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097803
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/cli_checksums.txt
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531266
+      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/cli_checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2026-08-04T08:35:48Z"
-        digest: sha256:6270306f2b33dee7a20726b1cceb7b249beffa206acfefbb81633e909a7f9bef
-        download_count: 4
-        id: 501097955
+        created_at: "2026-08-12T12:12:47Z"
+        digest: sha256:fc1ca7cf2e607ea79be707784ad6326389cc6ac61813da494686107336256e47
+        download_count: 0
+        id: 511531418
         label: ""
         name: cli_checksums.txt
-        node_id: RA_kwDOBzS60s4d3iXj
+        node_id: RA_kwDOBzS60s4efVma
         size: 605
         state: uploaded
-        updated_at: "2026-08-04T08:35:48Z"
+        updated_at: "2026-08-12T12:12:48Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -403,41 +371,8 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501097955
-      - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/sbom.tar.gz
-        content_type: application/gzip
-        created_at: "2026-08-04T08:39:17Z"
-        digest: sha256:b055dd1b84d224b4e5081068fb9f309a7128696a13b1bc4fcc0e00a263d20244
-        download_count: 0
-        id: 501101424
-        label: ""
-        name: sbom.tar.gz
-        node_id: RA_kwDOBzS60s4d3jNw
-        size: 134545
-        state: uploaded
-        updated_at: "2026-08-04T08:39:17Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/501101424
-      assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/364720007/assets
+        url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531418
+      assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/369213663/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
         events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -465,14 +400,14 @@ dependencies:
 
         ```shell
         kubectl create namespace argocd
-        kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0/manifests/install.yaml
+        kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.1/manifests/install.yaml
         ```
 
         ### HA:
 
         ```shell
         kubectl create namespace argocd
-        kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0/manifests/ha/install.yaml
+        kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.1/manifests/ha/install.yaml
         ```
 
         ## Release Signatures and Provenance
@@ -487,681 +422,39 @@ dependencies:
         If upgrading from a different minor version, be sure to read the [upgrading](https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/) documentation.
 
         ## Changelog
-        ### Features
-        * be19446a015a33ba33bb91a0029b984d394ae1a7: feat(Jitter): Add Configurable Jitter for Webhook-Triggered application Refreshes (#25433) (@adityaraj178)
-        * 5b3073986f50b6775ea6ddef8d83aff05284eece: feat(appset): add concurrency when managing applications (#26642) (@rumstead)
-        * 29fd8db39ac979e4dcf2611fb9716ee14a632454: feat(appset): filtering repos by archived status #20736 (#21505) (@prune998)
-        * 57942cef9091e732b1ab6c158201f1d9728044db: feat(cli): Add support for Source Integrity configuration (#26997) (@olivergondza)
-        * 3cc6ba749640dfd3a4d9ed4d73ec44c29c38e7df: feat(cli): add --app-namespace flag to missing argocd app subcommands (#27942) (@Mangaal)
-        * 0e729cce3474818bf19e8deb6ff015fffe3fed7d: feat(cli): add appset-namespace for appset command (#27022) (@Mangaal)
-        * 744983be594fbf0bc651b28d639235b758a6c7a9: feat(health): Add healthcheck for gardener "Shoot" resources (#25750) (@Sven1410)
-        * 6cc786d056d77c6d0f24a384c1d0809ef6a87258: feat(health): add GatewayClass health check (#26591) (@dnfwlq8054)
-        * eabd4d64041dad10b3e1d500e0f13f1f66ce3394: feat(health): add pause and unpause actions to psmdb resource (#27616) (@KyriosGN0)
-        * daadf868db028bacde40e008524ba89d49b0dc8e: feat(health): additional promoter.argoproj.io health checks (#27170) (@crenshaw-dev)
-        * 4b69a7f468850bee3897e660ef0a4cff09b913d9: feat(health): finalizer messages for Promoter checks (#27478) (@crenshaw-dev)
-        * 289a4c01dbf67aa520a3ae973da74080689650a3: feat(health): support BackendTLSPolicy.gateway.networking.k8s.io (#27385) (@snorwin)
-        * 4cdc650a581cc92d393b50daf396c90de12d0e09: feat(helm):  support wildcard glob patterns for `valueFiles` (#26768) (@nitishfy)
-        * f7a7deb8d7dcb9c95957a425f26a4bbf23be04ad: feat(hydrator): dynamically manage README template from argocd-cm ConfigMap [updated] (#19067) (#24309) (@gyu-young-park)
-        * 86936e24c5f7c739d89bc8692d286355ae749086: feat(hydrator): make manifest hydration queue concurrency configurable (#27926) (#27948) (@GuruduGanesh)
-        * 2308e17da20423c82525e59b1a974673594be2fe: feat(hydrator): opt-in source integrity verification for dry sources (Alpha) (#19302) (#28084) (@mladjan-gadzic)
-        * bf1591de63e39b7c3be5f5ba54abe8763de1a48c: feat(hydrator): support syncSource repoURL for separate destination repo (#27011) (@boostrack)
-        * 41b6fee59d67b8ba22bba995a7c0bbc44eb2512f: feat(impersonation): allow to disable strict enforcement (#27084) (cherry-pick #27573 for 3.5) (#28595) (@argo-cd-cherry-pick-bot[bot])
-        * 0c0140ce3e9fc4e9b1137c898e9304318c14e201: feat(metrics): add parallelism limit repo server (#27911) (@pjiang-dev)
-        * 7d2eb7722fba79be7b3745f0ced39e9301a9a407: feat(renovate): clean up config and remove github app (#27738) (@rumstead)
-        * 153ec679073278008d6c9f85c4e449e140176382: feat(resource_customizations): add health checks for VictoriaMetrics (#27451) (@megative)
-        * 6b84ea938d9cdaba0ac9eca6e55f05db6bc38343: feat(server): drop objects from non-allowed namespaces before they enter the cache. (#28018) (@christianh814)
-        * 224b75af210188ef7763c47ac4a9f95a7d3da79e: feat(server): use typed Argo CD EventList for event-listing APIs (#25767) (#26322) (@chansuke)
-        * 64a04177beed5e02b52328f93412c4d09b507699: feat(ui): Add AppSet to Application Resource Tree (#26601) (@pjiang-dev)
-        * b035a77b815fb117b002757b7c258289228a3a38: feat(ui): ApplicationSet Preview Apps tab in UI (#27799) (@pjiang-dev)
-        * 566c1720583acc949c0e7027f337b1c2aed13edb: feat(ui): add GitOps Promoter resource icon (#26894) (@crenshaw-dev)
-        * 0dd887435f92a54650949bad3ab611a1b179fe8d: feat(ui): add nauth.io resource icon (#28226) (@choufraise)
-        * f16d08ad2d24ba44520c5d4977c93943bab3133e: feat(ui): add repo url as  filter in home page (#26670) (#27418) (@adityaraj178)
-        * 91e7664f3f87129320bca9808d4ff2c99d7a83fb: feat(ui): per-application notice banner and info icon (#14405) (#27719) (@gdsoumya)
-        * 1b405ce2b53fa6c7c586dbcf4e6416f08f4fb1dd: feat(ui): search filter by target revision (#24038) (@choejwoo)
-        * 706a0370c2f10d335b703c1eaed9452df413cb1e: feat(ui): support creating multi-source applications in New App panel `[CONTINUED..]` (#27095) (@aali309)
-        * 2fcf10476f80fae05c4a02416bc1b047244b0087: feat(ui): support spec.sourceHydrator.drySource.repoURL (@crenshaw-dev)
-        * 74d1fe0a13d34f7e6488c70b0f8f687f476f9be3: feat(ui): use toggle-auto-sync resource action in app details page (#21564) (#27226) (@shiiyan)
-        * db7d672f05cca2a525cbcc66cf7d64439f71c086: feat(webhooks): add webhook support for GHCR (#26462) (@nitishfy)
-        * 6d92e177b45fcd51bde0dbc169f7f923acc9a79d: feat: Add ProvideClusterInfo and Config fields to ExecProviderConfig (#24282) (#27976) (@mikeshng)
-        * 022f9354ff82f70bbd19f2dcc5b86a6de208e9f9: feat: Add basic support for git tag path prefixes (#27290) (@k4r1)
-        * aad3422ac44bd9afdefd56406bf25730db11f620: feat: Add suspend/resume actions for MariaDB (#27675) (#27674) (@mgross2)
-        * 586430c1a37787e6f431783913dceb45fd30a486: feat: Migrate from Helm 3 to Helm 4 (#28076) (@reggie-k)
-        * c61c1dcf3a4fd709080a1f52ddf3e1cc1369e39d: feat: Render Helm ValuesObject as YAML in log output instead of binary (#18342) (#27649) (@subhramit)
-        * 9a1973591898d29ddda6b56e3c7839981057d7c9: feat: Support Azure Service Principal authentication for Azure DevOps repositories (#25324) (@allanyung)
-        * 97082e82759f46a16389e38745e77b2ba1a94efa: feat: add Gateway API support to network view (#26188) (@tete17)
-        * 603c900ab57b394fc7d3839c1db6ce0391d87331: feat: add action to delete recyclable Numaflow pipelines (#25900) (@dpadhiar)
-        * de9416137d40bb8974114f76b49948d3144c33fe: feat: add action to restart StrimziPodSet (#27266) (@KyriosGN0)
-        * a2b91ce309ec9b0a84c8afcf188c5c04121bda43: feat: add depth option to ui (#26618) (@blakepettersson)
-        * 1dc2ad04ffea216957a0a49113943daa52576d6b: feat: add health check for karpenter.sh/NodeClaim (#26876) (@Navneet072300)
-        * 611fcb012c7e2cc48c6a9cb906b21f6097a9f9bc: feat: add sync overrun option to sync windows (#25361) (#25510) (@puskunalis)
-        * 48f18e29055d01dfacf882c3dcac2d6c2f6f3e0c: feat: add toggle-auto-sync resource action for Application (#21564) (#26477) (@vikasrao23)
-        * 2df5f75727d5365ac5018d40b8d3eadc1d51decf: feat: adds mTLS support in repo-server (#26715) (@ppapapetrou76)
-        * 4d02fc2f59bd2f0d89f991ac2a769105fcfeca8c: feat: expose Appset UI and fix pie chart summary (#26666) (@pjiang-dev)
-        * a889f467ada89ad0d7b24c7e8c2d28b926f375be: feat: make appset proxy-url param a native flag (#27788) (@ppapapetrou76)
-        * ad310c2452b5a973dbc698d70b48973687f38e3e: feat: replace error message in webhook handler with metrics (#27215) (@alexmt)
-        * 01187d114b072d2a253896a5abc6c9b3f47fc1f2: feat: support Azure AD groups claims overflow via Microsoft Graph API (#27397) (@gravufo)
-        * f71239cc2a69614bf2f2e60e4f86ab20a6364ac8: feat: support destinationServiceAccounts in global projects (#23059) (@enneitex)
-        * f460a3ca4c09ef90967bafacddb70f55f211f5d0: feat: surface root cause in sync failure message and cache discovery errors (#27750) (@ppapapetrou76)
-        * 3eebbcb33b9d1684d967ea91459bd16235cb6e04: feat: use impersonation for server operations (logs, delete, etc) #22996 (#26898) (@alexymantha)
         ### Bug fixes
-        * b982144fb8d72cf300315496f89245c6799a25f5: Revert "fix: prevent automatic refreshes from informer resync and status updates" (#27562) (@agaudreault)
-        * c5d1c914bbc3373d133de16d49bbc06acac6dfe8: fix(UI): show RollingSync step clearly when labels match no step (#26877) (@aali309)
-        * c52bf66380a2dd37855f2ffdf5803f6400d0bd2d: fix(appcontroller): application controller in core mode fails to sync when server.secretkey is missing (#26793) (@anandf)
-        * e81969ff50c1d097d69efb8566d912a59be788ba: fix(applicationset): include repo URL in git file generator errors (#28075) (@morning-verlu)
-        * e4fe7f6a949632a6267bda50c399eb8c7cf1fdc6: fix(appset): don't release finalizer while children still terminate (cherry-pick #28999 for 3.5) (#29006) (@argo-cd-cherry-pick-bot[bot])
-        * 06fae9ddd5798ff1be10c007624174673d31eb1b: fix(appset): fall back to create when patch returns NotFound (#17312) (cherry-pick #28645 for 3.5) (#28716) (@argo-cd-cherry-pick-bot[bot])
-        * 45a84dfa38c17483baef283e3fb5f80a13b988cf: fix(ci): add .gitkeep to images dir (#26892) (@blakepettersson)
-        * 4c42071c7b98d30b891f0d1722c37edaea62f615: fix(ci): openssf scorecard doesn't allow global vars (#27203) (@crenshaw-dev)
-        * 36f4ff7f35ce330dd08f52e2a5f0d12782c83735: fix(ci): pin goreman version used in ci-build.yaml (#27062) (#27061) (@dudinea)
-        * 25b30374852bb71f0a2bdadbf8f37f604c2c7980: fix(ci): pnpm sbom generation (#27337) (#27339) (@crenshaw-dev)
-        * 99c51dfd2c710f8cea7a1dd522b9b105fc2a7387: fix(ci): renovatebot action uses floating image tag (#27023) (#27024) (@dudinea)
-        * fb82b16b2db239960392a86bfa74ac64c89012a1: fix(ci): run yarn install with --frozen-lockfile (#27098) (#27099) (@dudinea)
-        * b403f5c177aec17aae2ea674864a38e7c40f77ae: fix(cli): hide unsupported --tls-server-name kubectl REST flag (#27694) (#27711) (@SAY-5)
-        * 60b878d0c5c86600a1297e296039bfb18436e017: fix(cli): hide unsupported kubectl REST flags (#25875) (#25977) (@HyejunKoo)
-        * 21fe1fbd086a1361056a3eae72b71a45cb8699fd: fix(cli): honor --kube-context when creating core-mode REST config (#12883) (#27661) (@ystkfujii)
-        * 52f7b3bed49a89d7599d08706d4b0642f7502689: fix(cli): print clear timeout message when argocd app wait times out (#28274) (@pncloud)
-        * f48091a3f0e409c2c9963b56f1a5fbc15f011846: fix(cli): return immediately from 'app wait' when app is already in desired state (#12211) (#27503) (@jheyduk)
-        * 6256abf182c2765d814df55791f654ffe84ae710: fix(cli): uses DrySource revision for app diff/manifests with sourceHydrator (#23817) (#24670) (@adityaraj178)
-        * c3c12c1cad5dd54a96d3ac216c89e839f80c67d4: fix(commitserver): Static analysis fixes (#27085) (@olivergondza)
-        * 5a20f9b966e885c2a69820e9d9bd97a2bab76515: fix(controller): gracefully handle k8s resource size limit for applications (#27802) (@nitishfy)
-        * 32f23a446febe4a281db3384b8770816fd719749: fix(controller): reduce secret deepcopies and deserialization (#27049) (@rumstead)
-        * 4051511698ebeaf643e33b85c54f3d54c387d9ef: fix(controller): replace removed kubectl PodRequestsAndLimits (#27895) (@mfacenet)
-        * 5ec06031ba40b52e090475ad6e24fd097e11aa0e: fix(controller): requeue source hydration on periodic refresh timeout (#27009) (@boostrack)
-        * a62624ae60e70e1e16b379dd8fae66dfc67282fd: fix(diff): don't drop manager-owned descendant fields when filtering webhook mutations (cherry-pick #28819 for 3.5) (#28895) (@argo-cd-cherry-pick-bot[bot])
-        * e96063557a0c13d0cbc835cd4381d6607c2e29b2: fix(docs): Fix formatting and clarity about requestedScopes in Keycloak integration docs (#27019) (@todaywasawesome)
-        * d449294f0315d1e8029055841630a160540e169b: fix(docs): Fix manifest path in Source Hydrator docs (#27123) (@olivergondza)
-        * 2f48cfb56f1332b571f4973ccffa3367f82b560b: fix(docs): revert bogus 3.3-3.4 upgrade guide changes in #26322 (@dudinea)
-        * c2044db23830dfa91f4475183dfcae0bef243053: fix(health): PromotionStrategy stuck Progressing after no-op re-hydration (#28124) (#28125) (@crenshaw-dev)
-        * 9c67c89f15bafc62f604581bf3292914f1c56efd: fix(health): add missing HPA degraded states for metric failures (#26274) (@rickbrouwer)
-        * 0b42a6d6ea4cad492448d11cd282f980bf6cbcc3: fix(helm): pass registry passwords through stdin (Cherry-Pick) (#28834) (@nitishfy)
-        * ae10c0c6c3adb996600aa53e3b2a92121953d015: fix(hook): Fixed hook code issues that caused stuck applications on "Deleting" state (Issues #18355 and #17191) (#26724) (@nikos445)
-        * 4d2b6fa94090c9e20584375817e391ecf92eb5ce: fix(hydrator): align dry source validation cache keys with hydrator (#27182) (@agaudreault)
-        * 8c29202f1c60e75de976760cf96817c1f9f88a75: fix(hydrator): fix race condition in status update with hydrate annotation (#27183) (@agaudreault)
-        * f298f4500f7e060a276e84990d3f0f6e42624ddf: fix(hydrator): preserve all source type fields in GetDrySource() (#27189) (@agaudreault)
-        * f73e136cc5135d1eb0b1308e2c828dc8aa8c7519: fix(lint): unnecessary nesting (#27815) (@crenshaw-dev)
-        * 6a0457a0dcb4ebca26faca72b9ada5b3746c880b: fix(makefile): Run goals with bind mounts on SELinux enabled host (build-ui,build-docs,serve-docs) (#28003) (@olivergondza)
-        * 7fa7d82d7c090ae10049cbc0700e085292e0aea8: fix(normalizers): include resource context in failed normalization log (#27769) (@rafaelmfried)
-        * d0810e3afc5aa2a359981148d0fb8acf5a622c02: fix(oidc_userinfo): allow userInfo URL to be customized (#27720) (@the-technat)
-        * 87d79f9392cc593da26d091864ec6434c6967b04: fix(performance): add cache support for ResolveRevision to reduce Git operations (#27193) (@agaudreault)
-        * 5c1b9303eb2e6397146182260ff7947ad1afabd1: fix(progressivesync): check if error == notfound (cherry-pick #28663 for 3.5) (#28670) (@argo-cd-cherry-pick-bot[bot])
-        * 4f47dd0afa1952515208156d8a4eb27ca63bc02a: fix(rbac): resolve RBAC regression for project-scoped resources in multi-namespace architecture (#25289) (#26573) (@tcfwbper)
-        * 3b60b5ec9b7c9d9fd57accf9cbd3b59ea3f347c2: fix(reposerver): honor depth of referenced source instead of primary source (cherry-pick #28339 for 3.5) (#28340) (@alexandresavicki)
-        * f397bf64d632f7fd7eca4798ea07d47936be0ca0: fix(server): Avoid error when attempting a second delete operation (#27495) (@thomastaylor312)
-        * 382c507beb853d0b2d0ed9ed63196b2ece8a24fa: fix(server): Cache glob patterns to improve RBAC evaluation performance (#25759) (@Sinhyeok)
-        * 4259f467b0d8c6eb12ed9c377c20f6739af9b7bb: fix(server): Ensure OIDC config is refreshed at server restart (#26913) (@OpenGuidou)
-        * 91d83d37c431a674656302418f0edee4888318de: fix(server): fix find container logic for terminal  (#26858) (@linghaoSu)
-        * d6b2be87f0bfc77c66d0c7460be6aa756caa3e1d: fix(server): make server.glob.cache.size optional (#28242) (#28243) (@crenshaw-dev)
-        * 1dd9075a7210fb6b19dd14e5541eeb22d79ac91f: fix(settings): only trigger reload for app.kubernetes.io/part-of=argocd secrets (#27213) (@EronWright)
-        * 212f51d851dcb15bc84c8bd4e29d6cbdebcf0eca: fix(sharding): fix log format verb and document intentional shard-0 fallback  (#27222) (@nitishfy)
-        * 8feb146b5213614b1bcc5d8d4e6e6ecf0fc4bb35: fix(ssa): do not run auth reconcile with SSA (#26175) (#27601) (@agaudreault)
-        * 134b428d78ca9fdafc63c83e61855decdbe677a8: fix(ssd): regression causing diff to error on new objects (#27679) (#27703) (@agaudreault)
-        * 63a009effa8b7aac9ed0315f25ed0b7025e6184f: fix(test): make fail message better for TestAuthReconcileWithMissingNamespace (#26856) (@cjcocokrisp)
-        * abf731173cf0e7bc6c51c267721d7e0931b1a5ec: fix(ui): Application Summary crashes on load for non-hydrator apps (#28112) (@agaudreault)
-        * b4af746c4fdd9beeffe1e85e9169b53c45aa5a7d: fix(ui): ApplicationSet detail view for non-default namespace (#27928) (#27931) (@AsifAd)
-        * 25df43d7a0f042fad792e4cd189daffe9066e1c3: fix(ui): Improve message on self-healing disabling panel (#26977) (#26978) (@bebosudo)
-        * 30efe53bf2dfb055ecf17e8b2f6bbe3741bd03e8: fix(ui): OCI revision metadata never renders due to conflicting guard clause (#26948) (#27097) (@karimzakzouk)
-        * 30ab5b5b70ed41f81bde4a52f3a386bc9360e8eb: fix(ui): adapt new applicationset icon test to react-testing-library (@jwinters01)
-        * 993533a717d78a739cc49ffd84fefb75e9e6e1a0: fix(ui): add icon for view.promoter.argoproj.io API group (#28246) (#28247) (@crenshaw-dev)
-        * 1bd0d48c82459111a9741d3a443762228a15bf2f: fix(ui): add truncation and tooltip for long sync status branch names (#27260) (@choejwoo)
-        * a5012a0be10a20fe1cbf611c3175472a7e1ef50e: fix(ui): add url origin to return_url (#27733) (@Sumis34)
-        * f6ade146276baae891f6af866a21af5904974849: fix(ui): app/appset size of ResourceIcon (#28141) (@agaudreault)
-        * 0c80d136cac81d86377fac282c2ba4351104a35f: fix(ui): avoid mutating toolbar input in AddAuthToToolbar (@jwinters01)
-        * 8206eb972ebd3d95474c9cb0515d923281f0180d: fix(ui): contain settings textareas within panel width (#27943) (@choejwoo)
-        * d1d0e5d10d8f2db6ff9cc23373f2916aada5aa40: fix(ui): don't prefetch errors (#27877) (#27925) (@blakepettersson)
-        * 4fbe92afc24238e5a0fd7b2faf620b13a6ea623d: fix(ui): guard against undefined groupName in project role groups edit (@jwinters01)
-        * 8e2571fdcab7a009fed5e8f1a261cd9808bd9181: fix(ui): handle 401 error in stream (#26917) (@linghaoSu)
-        * 2653f25ee776239d56d40fc2cdfbde205f05a3ac: fix(ui): include Deleting and Terminated apps in Syncing operation filter (#27874) (@choejwoo)
-        * 4b4bbc8bb22c05c258b15eceb5f4cabc646e8885: fix(ui): include _-prefixed dirs in embedded assets (#26589) (@choejwoo)
-        * 9a05e0e7f391d8f5fccdc800f430c7c36162e515: fix(ui): placate sonar with adding compare function for repo path sort autocomplete (#26906) (@reggie-k)
-        * 54531728fa1d854a6a095b422b6f09dd18886b85: fix(ui): prevent pod logs viewer crash on stale container index (#27553) (@youhonglian)
-        * b6a715c118ecf7e766d038598a773e5d4ac5948d: fix(ui): prevent wide gaps in grouped resource tree (#25747) (@choejwoo)
-        * 566c62259920eae47da31afde71f6faadf8670ef: fix(ui): reduce loaded application data on list operation (Relates [#15509]) (#25451) (@aveuiller)
-        * 3c889f4e5bc1835e09f19304d366f4b4e92912b8: fix(ui): regenerate pnpm-lock.yaml against public npm registry (@jwinters01)
-        * a39953d21f51d7403d2b4b8fe0ba1425aa4d5751: fix(ui): remove auto-sync toggle from app top bar (#27868) (@shiiyan)
-        * b1db1b1b134100842983032b5d4df2c553c8e7d3: fix(ui): restore public registry tarball URLs in pnpm-lock.yaml (@jwinters01)
-        * fc821b8a4162caa01b41faefbb5e0ce7ddbf21d3: fix(ui): restore token diff highlighting in resource diff view (@jwinters01)
-        * 26621ad0d9318b49b52ae537ec6887bb87b5a292: fix(ui): return full source for non-hydrator apps in Parameters tab (#26946) (@himeshp)
-        * 45b926d796822105cc673b3f168b0ba7782b3f4b: fix(ui): show clear-all button for annotation-only filters (#26937) (@choejwoo)
-        * bc5d359c86d68a55250bedd624a86dfce239486a: fix(ui): update cluster count logic in ApplicationsSummary (cherry-pick #28768 for 3.5) (#28777) (@argo-cd-cherry-pick-bot[bot])
-        * 9fb0c8ce893501d24e4e4d5e4bccb210c15bc6c3: fix(ui): wrap component in AppContextReact.Provider (#28131) (@blakepettersson)
-        * 3e015945fdb7e2f2ea33369238ce5bbc81160102: fix(ui):ArgoCD UI Displays Layouts Before Login Page (#25463) (@aali309)
-        * 68cbd05e520aaeadb4a9fa7b68abb37e8f3d5043: fix: Add X-Frame-Options and CSP headers to Swagger UI endpoints (#26521) (@rohansood10)
-        * 0aa8c41e164bdaad994dffe87832410e116aaea2: fix: ApplicationSet DuckType Generator panics on non-string values in Clus… (#27265) (@xiangjingli)
-        * d011b7b5089f1b784fc1911bf9fe99143868aa82: fix: Bitbucket webhook diffstat does not work with upper case repo slug (#26594) (@Mangaal)
-        * 4535a1fde7b9fae3d08f231dc955972fcd3b0027: fix: Don't mark CRD degraded while 'Installing' (#26126) (@kbweave)
-        * c70acd502446c47228eb8de257b52bdbf2177ded: fix: GetRefSources populates refSources for multi source app with a single source (#27787) (@reggie-k)
-        * cd2255a84bab6f24ecd4068bcb4fb4a7a7c2f441: fix: GnuPG keys listed with unicode characters mangled (#27591) (@olivergondza)
-        * 269e0b850b1dddb6643a53dfac4d27a639f1c584: fix: Hook resources not created at PostSync when configured with PreDelete PostDelete hooks (#26996) (@reggie-k)
-        * 422ef230fa634d48da5712951abca4d7bc77a468: fix: Revert "fix: avoid calling UpdateRevisionForPaths unnecessary (#25151)" (#27241) (@alexmt)
-        * 69e6f94f2436b24ffb59a2f8a8940676f8406c5e: fix: Subscription health check when installplanapproval is set to manual (#25923) (@mbaldessari)
-        * 3cbae653d41ced2fcdec5d07c25fff2693c4242e: fix: Update checkPermissions to not exit the namespace loop after the first namespace regardless (#23855) (#24735) (@andrii-korotkov)
-        * 5fa6fd3f2604d2fcdc7a67d097681d98e6149c32: fix: Watch APIServices like we do CRDs (cherry-pick #28289 for 3.5) (#28320) (@argo-cd-cherry-pick-bot[bot])
-        * 5d039f81f8c2ab7752b0e7fbd6b9a6db14492b1c: fix: add a lock on clusterinformer (cherry-pick #28216 for 3.5) (#28311) (@argo-cd-cherry-pick-bot[bot])
-        * 62670d6595745bec30382ba20563e4160fc61a20: fix: address SSD applier nil pointer in error cases (#27126) (@leoluz)
-        * ab27dd3ccf5bb8a9a3c3dc711b2436768e5d9810: fix: address nil pointer when SSD returns error (@leoluz)
-        * 8569aad6f7ea1edc481202cb2fe097637cf96331: fix: arch less ui build (#28180) (@blakepettersson)
-        * 9a5c6b71a678a72e41d114c97bc053133bd876f0: fix: auto-sync skipped when newer commit arrives during sync with manifest-generate-paths (#27875) (cherry-pick #28227 for 3.5) (#28332) (@argo-cd-cherry-pick-bot[bot])
-        * 92c3ef2559285713617a0da5e4aa5f3d3e3a20a3: fix: avoid scanning symlinks in whole repo on each app manifest operation (#26718) (@alexmt)
-        * 21615be541725e1debcce4f5dcc2af5b72220e92: fix: avoid stale informer cache in RevisionMetadata handler (#27392) (@gdsoumya)
-        * c3b498c2aef9e67b18abc931a1e4df128f3b9a83: fix: cancel log stream goroutines on client disconnect (#27243) (@alexmt)
-        * e684b7e10f8be63e36b8fa62225eebe073753c65: fix: clean up orphaned temp packfiles left by an interrupted git fetch (#18831) (#28083) (@lexfrei)
-        * 8981a5b855719a252b90e2ff1983e433f887b0ec: fix: controller incorrectly detecting diff during app normalization (#27002) (@alexmt)
-        * aa3269e3683dda1f3499e3bc810b6396716901ff: fix: correct grammar and capitalization in CLI help text (#27637) (@Rishmish94)
-        * bc04869cd45e63523045222955d74433cd646c8e: fix: deleted resource are incorrectly shown in UI (cherry-pick #28322 for 3.5) (#28335) (@argo-cd-cherry-pick-bot[bot])
-        * 54fa590345032f0f9ced81e27c37bac61ddb1df9: fix: don't clobber non-ignored fields on "replace" (cherry-pick #27136 for 3.5) (#28505) (@argo-cd-cherry-pick-bot[bot])
-        * e0e827dab037db517d172ae6b2bf898703a66da5: fix: downgrade DiffFromCache log level for cache-miss errors (#26185) (@cp319391)
-        * 6bb2027730b7ff65662200af9dbcf2ed1b5a7631: fix: exclude live status from normalization (#28201) (@blakepettersson)
-        * bec3925bf022c8fb107b227112347b8d4a145577: fix: fix failure on Sync of resources that do not fit into last-applied-configuration (#28421) (cherry-pick #28440 for 3.5) (#28523) (@argo-cd-cherry-pick-bot[bot])
-        * a5e6a2e8bbd203ef6475dce1a2eebf4bf24941c0: fix: fixes a regression of dex config env vars substituion - Cherry pick of #28369 in 3.5 (#28409) (@ppapapetrou76)
-        * 3ede508dafc6014da5991a28daa75fc8a2541f5e: fix: fixes a regression of wif for google cloud repos (#27883) (@ppapapetrou76)
-        * 985f6f5d62b99078aa95a37f4e212cfd4cc19119: fix: fixes parsing of dex passwords with dollar sign (#28027) (@ppapapetrou76)
-        * 1042e12c6a3fafc3bedc6a2a7e8b16e36a2a8a6d: fix: force attempt http2 with custom tls config (#26975) (#26976) (@maxverbeek)
-        * facb1a1990386f71f945e8351214a42105308ffe: fix: honor repo depth setting in gitSourceHasChanges and fetch functions (#27838) (@alexandresavicki)
-        * 6ba0727217d88831c812b4de0fa3bee41b53da6f: fix: improve error message when `hydrateTo` sync path does not exist yet (#27336) (@nitishfy)
-        * 2bbf91c0cf74d2389d86f11ca9678aff7a20a1b0: fix: improve perf: switch parentUIDToChildren to map of sets, remove cache rebuild (#26863) (#26864) (@jcogilvie)
-        * 759e746e87968ad1355e07477768b44ab97d1892: fix: invalid URL or protocol not validated consistently by server and UI (#27052) (@aali309)
-        * 85a5abb90e57f536423d43a972fabe3488793a83: fix: isolate UI extension loading failures to prevent cascade errors (#27513) (@jwinters01)
-        * 4b5a098615d732006de14c96cc53441eba938a60: fix: missing import (#27491) (@crenshaw-dev)
-        * b6bff3b3d4f35fc4ea113b59eafdc4e8046e4ba4: fix: mount argocd-cmd-params-cm in repo-server so pprof can be enabled (cherry-pick #28863 for 3.5) (#28866) (@argo-cd-cherry-pick-bot[bot])
-        * 748abaf1136fa7df3fd6477f7057196dd8a7b724: fix: nil-check (#28039) (@blakepettersson)
-        * cb882f37c81f4a64ca97370fc3547afdd7d9c147: fix: normalize Helm valuesObject in source comparison to avoid spurious appdetails 403 (#28288) (cherry-pick #28318 for 3.5) (#28334) (@argo-cd-cherry-pick-bot[bot])
-        * 061bd2bd3f7f9bafc6de79563a8e52c2c6c6caa2: fix: only do annotation backfill if live unset (cherry-pick #28770 for 3.5) (#28775) (@argo-cd-cherry-pick-bot[bot])
-        * 393152ddad95b0cb6ae192f061e5f05e2a8f7187: fix: pass repo.insecure flag to `helm dependency build` (#27078) (@blakepettersson)
-        * 86778eb4ae17c6f2f41449c21bddff8610b06c55: fix: post-merge fixes for pnpm + React 19 reconciliation (@jwinters01)
-        * 9ccee2bd83aeb8fb567a40202010a043ea6b395f: fix: prevent InvalidSpecError race in application controller startup (#27672) (@mbaldessari)
-        * 57dfe55e701f9c51fb2cef3f2f8487c5cfc70ea5: fix: prevent automatic refreshes from informer resync and status updates (#25290) (@aali309)
-        * d5598764c90eabfe61603e141019f7799d60aa81: fix: prevent nil-pointer panic for unknown repo types (#27993) (@nitishfy)
-        * 442aed496f24292ba22e7154bd17184c2cbeefa2: fix: prevent panic on nil APIResource in permission validator (#26610) (@loafoe)
-        * 7c582dfe709482b0768a3cb35c9c2ae0cba24504: fix: put/get ocimetadata to/from redis cache (#27521) (#27589) (@blakepettersson)
-        * a912a3e496784bf814c35f41637edf6f5743529d: fix: race fix in setdefaultrole (#28044) (@blakepettersson)
-        * b74c08ec5cec3f07b8423340f24e643ad576c2c7: fix: remove resourceVersion from ssd (#27406) (@pjiang-dev)
-        * 0b95bbc14bc8fe04cd2e698d6c7ffb8d5a1b9ea8: fix: replace k8s.io/cri-streaming (cherry-pick #28315 for 3.5) (#28319) (@argo-cd-cherry-pick-bot[bot])
-        * a34dbb7a14eb277b464469f1a8035c963ae9ec13: fix: resolve HPA v2/v1 conversion error in structured merge diff (#27809) (@Bisman-Singh)
-        * a6c855ef5ea7dd7f663b30393d5a39ce677e0037: fix: resolve cross-generator Values templates in RenderGeneratorParams (#27827) (#27830) (@ppapapetrou76)
-        * 8fbb72d1ebc58ca881735be8b882d0e48289f50d: fix: revert autosync event message format change (#27387) (@gdsoumya)
-        * 93ce9c963307617d795126da5f708427fff0d13f: fix: runs git lfs install --system that writes the following to /etc/gitconfig (#27961) (@ppapapetrou76)
-        * 67db597810188690d6df1dccd7a9b2295238abb0: fix: stack overflow when processing circular ownerrefs in resource graph (#26783) (#26790) (@jcogilvie)
-        * 7a58d4d1117a03a5413869b7bb0a6a284aea2d86: fix: stop hydrator retry loop after recent failed hydration (#28051) (#28052) (@crenshaw-dev)
-        * fe30b2c60ace96223f4aa5389b3be10d79fc7932: fix: trigger app sync on app-set spec change (#26811) (@ppapapetrou76)
-        * f8707f822736352ae557a2a3bd6589666b88402b: fix: truncate labels for deletion hook resources (#27542) (@choejwoo)
-        * 4aabf526c8af2a971647ddded4b4df4b8b76c283: fix: typo in error message for multi-source apps (#26936) (@honarkhah)
-        * 0a292b97978a11d1b5318c8b39b53f40ef0b22fc: fix: update USERS.md to add OpenChoreo to the correct place in the list (#28297) (@kavishkafernando)
-        * 786e1850f961d6acea7a0c1e2af0fee5f5ef8ffd: fix: update package imports to v2 for time and sync utilities (#27490) (@mmorel-35)
-        * f1b39c88b8997dc87f6909e4e2b845474f05e8b6: fix: use Entra ID uti claim as token id when jti is absent (#28625) (cherry-pick #28656 for 3.5) (#28675) (@argo-cd-cherry-pick-bot[bot])
-        * 7cde9f43784e956bb69b304ddeaf0e9f7b1f64dd: fix: use OIDC refresh tokens to renew expired sessions (#27041, #12189) (cherry-pick #27777 for 3.5) (#28689) (@argo-cd-cherry-pick-bot[bot])
-        * 45a32a5c32677ab21d8dbc31e6f45553e98f56b0: fix: use unique names for initial commits (#27171) (@seankhliao)
-        * dee497ed9884ac090681088699c4771caf5f227d: fix: wrap lines toggle causes log lines to overflow container - Fixes [Issue #27586] (#27627) (@Knickkennedy)
-        * f97e2d2844f9b0367341a2a90fd7693f0179e44c: fix: wrong installation id returned from cache (#26969) (@zachaller)
-        ### Documentation
-        * 7fc39fdb8089f2431e7fc54709c498687e1bcc1e:  docs: update progressive syncs beta since version (#27622) (@DorBreger)
-        * 08e959d767ed40f81c467a2700de8c640c1b2b2a: docs(hydrator): promote Source Hydrator from alpha to beta (#28229) (@crenshaw-dev)
-        * 631e8e736b95ab73f4a40faf1510d34889d233b5: docs(hydrator): updates and clarifications (#28142) (@crenshaw-dev)
-        * 3c233ccda6af4879a9ee7dc3889e9de9a137fc86: docs(impersonation): promote feature to beta (#27576) (@agaudreault)
-        * cde9db8b29d78841751fb6ffec758b39150810a4: docs: Add Car & Classic to USERS.md (#27297) (@bram-pkg)
-        * 6d2eda5a8e1bdd273d51588d913866f08742547c: docs: Add FRAYT to USERS.md (#28230) (@ianstanton)
-        * 0f0044098d99dd144a2ba3b4c476521378f3ee1e: docs: Added "revert" to PR message (#27632) (@Kevinjoeharris)
-        * 77732d89b37f4005d092b4570ad69348bed7cf75: docs: Formatting and style for source-hydrator.md (#26949) (@olivergondza)
-        * 62422a9c303c330c83cdfcb8eab47c0266b30424: docs: Improve wording in contributing guide (#27295) (@allexistence)
-        * 5103112b9abbd3eebee4d31dd7fca4f3732806b6: docs: Promote ApplicationSet in any namespace to stable (#27417) (@Mangaal)
-        * 39b9bf4785027301d2db2e2e849004de4edb3568: docs: Reverse release dates table and clarify about Helm, Kustomize and Go upgrades (#27892) (@reggie-k)
-        * 21b826e2048bb567f3c9bf46cf4d03ca13ece633: docs: Revise vulnerability reporting and remove bounty details (#27212) (@crenshaw-dev)
-        * 1da9473041500bb1f33e1b5a7d5bfa431ac99e7f: docs: Update Keycloak PKCE setting name and fix redirect URL (#24369) (@gpchelkin)
-        * d92a55b9cc90ba69263688233cb275602cd65b41: docs: Update OpenUnison integration docs and screenshots for 28138 (#28139) (@mlbiam)
-        * 321153a69ecdaa88aea83c86724cd1e30b833829: docs: Update releasing.md with handling a failed release (#26049) (@reggie-k)
-        * 04fa70c4a471d6fe8c6e7c2cc6b2758f7c3832a0: docs: Update the status of the feature, appset in any namespace, from beta to stable (#27353) (@Mangaal)
-        * 1a0f5d4ef249b549017147e41aff2ab3920043ae: docs: add AGENTS.md file to the repository (#27315) (#27316) (@dudinea)
-        * a1af401f5ff2b94162ba82df03ea9e1f21e13983: docs: add Circle to USERS.md (#27349) (@seanl-circle)
-        * 266b604eb13f1d997a4bc5eae1c7ecd724dd843c: docs: add Eskimi to USERS.md (#28222) (@nedasjan)
-        * c509bc4634bce5a6ea08778e82274b03a5a49cc5: docs: add Etherflow to USERS.md (#27702) (@vinzank)
-        * f189f66c5103c44cc8d02f888f5963af4b475914: docs: add GenAI policy references to docs site (#27761) (@Kevinjoeharris)
-        * 21df1cb98a463004a8edb19b7e4e7b5e27d1d9fb: docs: add Mac Intel (x86_64) CLI installation instructions (#25144) (@shashax42)
-        * cc3165f4189243d7b9a627b07b60138ed80ca795: docs: add OpenChoreo to the USERS.md list (#28283) (@kavishkafernando)
-        * 634e76f9f2379b73efe004cbf462774666db2e9e: docs: add React 19 upgrade guide for UI extensions (@jwinters01)
-        * 670c08fcc7331d9b19c04fb41597eb1133536ef7: docs: add Stone Payments to USERS.md (#27834) (@gadsilva)
-        * f4b00c9047ba8654126f2c4a55085c1147341163: docs: add docs for Appset UI (#27910) (@pjiang-dev)
-        * 47e9a6c568a35b6a1247c97fc99a61a5fb2ff341: docs: add drawbacks/alternatives to server-side pagination proposal (#27524) (@crenshaw-dev)
-        * 8bf5676eb3af6334025ce0a30ff77ba7c8ebfede: docs: add memory tuning with GOMEMLIMIT (#27914) (@Julian-Chu)
-        * fb1b240c9e5e4561364cb89d796fdf2f0ada74ec: docs: add missing content for Automatic Retry with a limit section  (#27092) (@nitishfy)
-        * 998aac60b060a09e62ffeccb25da7a1ff79bc1b1: docs: add more guidelines to writing custom health checks (#28013) (@reggie-k)
-        * 9ad1c81b2a239b989c1817b2df5a75131c8ac963: docs: add note of linkage between shallow clones and MGP (#28151) (@verokarhu)
-        * 5ceb8354e6ce9bc689389ecb30c1f23756993c1c: docs: add orphaned resources FAQ entry (#26833) (@kovan)
-        * c3af4251d8bec6a890c582c261472b7afe46c0af: docs: add revert prefix to PR title documentation (#27439) (@choejwoo)
-        * c0966d848c32f038ec942f63a1179d26d90b6844: docs: add scraping guidance for HA application controller metrics (#27901) (#28132) (@choejwoo)
-        * 4070b6feeaca78805fd27f4a0524e9440e43d11a: docs: add warning in orphan resource doc (#26874) (@agaudreault)
-        * b8da88a2882ebc587ae28e0cf4293af9e5e8e918: docs: clarify Helm hook delete-policy semantics (#26828) (@Vedant-Mhatre)
-        * bfc332d871c1c1fde98aea123c57ae276b302b46: docs: clarify prune ordering for sync waves (#27352) (@revitalbarletz)
-        * 4bc5d38634e621610ea770d556fe19e79ca3030d: docs: clarify selective sync and ApplyOutOfSyncOnly (#27393) (@agaudreault)
-        * b532528a0b6762214c92b998c0e7df9000a70ead: docs: fix README GitHub branding in community section (#27050) (@pratik268)
-        * 67de02b1c4b562737c2beea6ab60a3bf8b818b94: docs: fix enumeration line breaks (#27333) (@Miroka96)
-        * d54338004f1a14bd2df0a2e6252714f8c95798a0: docs: fix globalProjects valid operators (#27944) (@anubhav06)
-        * 539c35b295e4d69d6ae23a49ffa6ea1fbc4333eb: docs: fix incorrect wording for ApplicationSets in other namespaces (#26893) (@ekam-walia)
-        * d19e2a40cf8b9a1085367c2ca609d70177604c09: docs: fix minor typos in Istio ingress documentation (#28108) (@allexistence)
-        * 83a4cc776a877b65abffe4f2bd71172149c5b4a9: docs: fix minor typos in running-locally.md (#28298) (@allexistence)
-        * cdcef453b8e53095fe8fcd827b766e158610a940: docs: fix progressive sync since version to reflect beta promotion in v3.3.0 (#27608) (@choejwoo)
-        * aadabc634d20861f24280f61325ebc114548691b: docs: fix reference to tokenref.strict.mode key in TokenRef restrictions doc (#28110) (@nmirasch)
-        * 44f087f63883f623bdfe8115821a39d0fbb59378: docs: fix some typos and grammatical errors in Notifications section of Operator Manual (#28169) (#28187) (@vivshaw)
-        * 490f02116caad09e4b60f91391eddf12f3181c42: docs: fix submit-your-pr rebase target to upstream/master (#27144) (@seitarof)
-        * 3570031fa83dc5d49b76e29295d82210eef80dc6: docs: fix typo in metrics (#26951) (@dancer1325)
-        * 4220eddbf3d3567c68c47c274880148809c76018: docs: fix typos (#27254) (@EoinTrial)
-        * 8eafcc6ecb39e1343a3482c1864952bafa67f655: docs: formating markdown so generated HTML is more readable (#27938) (@arthurzenika)
-        * a0a81be2f1b079ea69dfd83c42cc9b106e72ec37: docs: link React 19 UI extensions upgrade guide from 3.4-3.5 notes (@jwinters01)
-        * 482fec8751391c171e398032c2a337d855aafa50: docs: move notification timezone docs to functions page (#14670) (#27662) (@ystkfujii)
-        * 13cd51747012961ded63bc7e06d0baf9a52668ae: docs: move releases to Tuesdays (#26859) (@reggie-k)
-        * 8f9f03632e14fca74944ab3645945b675f6d9820: docs: numbering fix (#28231) (@crenshaw-dev)
-        * 9ad336dcaa388a5afe29c8c5ba7b356b7c29fdaf: docs: redirect previous-version banner to stable page instead of homepage (#26857) (#27428) (@firasmosbehi)
-        * e00345bff724723f32f6ac15f4a5a23ce83e6473: docs: replace `resource_hooks` links with `sync-waves` (#26187) (@choejwoo)
-        * b39f613372f1868e35e2f3e22e2e24b91eaf68c2: docs: specify ApplicationSet can be installed in any namespace (#27579) (@dancer1325)
-        * 1afb15418e45dfd79e897c6b238a3619e83b44fc: docs: update `MAINTAINERS.md` (#28093) (@choejwoo)
-        * 94d8ba92a8b464a33bb2f6ee8b5667d4b46ce4c6: docs: update cosign install and docs links (#27042) (@cjcocokrisp)
-        * 94942ad51d3343994fcbef7b9e7b3dca1952475b: docs: update release issue template with tools bump section (#27776) (@reggie-k)
-        ### Dependency updates
-        * 6b267cb0bc8a01b7eb7f251ef6aa48534d40ed74: chore(deprecated): delete dockerfile for gitops-engine not used (#27647) (@manute)
-        * 559da44135450255516489d61de04bc110f5c04d: chore(deps): bump Helm to 3.20.1 (#26896) (@crenshaw-dev)
-        * 7933370e8749c4f79fc31c985af1cd3183986952: chore(deps): bump Helm to 4.2.1 (#28273) (@crenshaw-dev)
-        * 5fa00453114ab0ae9b6c1b6ee6bae3c351b7ebc0: chore(deps): bump SonarSource/sonarqube-scan-action from 7.0.0 to 7.1.0 (#27116) (@dependabot[bot])
-        * bc3b04a830ba6ecbd1c2fed7ffe2d5fd51cd6c3b: chore(deps): bump SonarSource/sonarqube-scan-action from 7.1.0 to 7.2.0 (#27584) (@dependabot[bot])
-        * 22bf69cecbb68fcb326148ced3fbb141fed803c7: chore(deps): bump SonarSource/sonarqube-scan-action from 7.2.0 to 8.0.0 (#27602) (@dependabot[bot])
-        * f2fbb04f7f90e3bd68751732c0c16f7e664930a1: chore(deps): bump SonarSource/sonarqube-scan-action from 8.0.0 to 8.1.0 (#27922) (@dependabot[bot])
-        * 7e7972fd0465b5b33e5dede8c2eb17229322c6e9: chore(deps): bump SonarSource/sonarqube-scan-action from 8.1.0 to 8.2.0 (#28209) (@dependabot[bot])
-        * 928161242640b97263afdf182e6d1657fe915783: chore(deps): bump Ubuntu base to 26.04 (#26630) (#28181) (@crenshaw-dev)
-        * 148c86ad4289dab811ef938e05bc57f07540341a: chore(deps): bump actions/cache from 5.0.3 to 5.0.4 (#26901) (@dependabot[bot])
-        * dd8ba4f2d2b67b3b4964a14afa768e00a92b4992: chore(deps): bump actions/checkout from 6.0.2 to 6.0.3 (#28118) (@dependabot[bot])
-        * 71da5f64baf01695542be703939d71d1a333350e: chore(deps): bump actions/create-github-app-token from 1.12.0 to 2.1.1 (#24360) (@dependabot[bot])
-        * c4f3e389a268ade4f362e5ffd224f2df6297e417: chore(deps): bump actions/create-github-app-token from 3.0.0 to 3.1.1 (#27313) (@dependabot[bot])
-        * 9fd0ab1571ca0e234a62fa66a99c35600b3d0425: chore(deps): bump actions/create-github-app-token from 3.1.1 to 3.2.0 (#27825) (@dependabot[bot])
-        * da7a61b75c5bf135680f5e5b3102c96e94fc9719: chore(deps): bump actions/setup-go from 6.3.0 to 6.4.0 (#27066) (@dependabot[bot])
-        * b2a8bc99e4bbf6df369c7d5155a7217ddee535d8: chore(deps): bump actions/setup-node from 4.4.0 to 6.3.0 (#27244) (@dependabot[bot])
-        * 26f71b315978d0a759885d4a4de690e735c81457: chore(deps): bump actions/setup-node from 6.3.0 to 6.4.0 (#27452) (@dependabot[bot])
-        * f7ea5bc6586f7ba1a4dcda4aeb6e842c38a6a94e: chore(deps): bump actions/stale from 10.2.0 to 10.3.0 (#27952) (@dependabot[bot])
-        * d65af147d22d79d4897cf14a4bae06c5aa07b36b: chore(deps): bump actions/upload-artifact from 7.0.0 to 7.0.1 (#27310) (@dependabot[bot])
-        * 14854f580756b4f2cfd6da0b3a0921f8aabea6c3: chore(deps): bump code.gitea.io/sdk/gitea from 0.23.2 to 0.25.1 (#27824) (@dependabot[bot])
-        * 30db3551971f9c8fc53af194d99848449be633a1: chore(deps): bump codecov/codecov-action from 5.5.2 to 5.5.3 (#26900) (@dependabot[bot])
-        * 303e001b8bd99e7ccfb6da29265061bc127df93e: chore(deps): bump codecov/codecov-action from 5.5.4 to 6.0.0 (#27030) (@dependabot[bot])
-        * 5331d668d41dceefa358d01696f8e1e8ae23a703: chore(deps): bump codecov/codecov-action from 6.0.0 to 6.0.1 (#27921) (@dependabot[bot])
-        * 1ef964598945cdba41b202ab2bf96f3cf8f0aa82: chore(deps): bump deepmerge from 3.3.0 to 4.3.1 in /ui (#27410) (@dependabot[bot])
-        * 579fbab1952c246de362281d48c4696eb9f3fc32: chore(deps): bump docker/build-push-action from 7.0.0 to 7.1.0 (#27312) (@dependabot[bot])
-        * 795549adc87baa1a092e2c6d41282b6f782e6a24: chore(deps): bump docker/build-push-action from 7.1.0 to 7.2.0 (#27969) (@dependabot[bot])
-        * 719ac073d825ac4555b8490105e17d605bf15907: chore(deps): bump docker/login-action from 4.0.0 to 4.1.0 (#27138) (@dependabot[bot])
-        * efdb2e78389fa388e4c7059108dce2732d80cb8b: chore(deps): bump docker/login-action from 4.1.0 to 4.2.0 (#27986) (@dependabot[bot])
-        * 16085322563b8cbdfc790693f0b409309b52af87: chore(deps): bump docker/setup-buildx-action from 4.0.0 to 4.1.0 (#27985) (@dependabot[bot])
-        * 87315e01e611328331e194694b55a20e9e63726d: chore(deps): bump docker/setup-qemu-action from 4.0.0 to 4.1.0 (#28035) (@dependabot[bot])
-        * 04e4e080df8124664e7030f6356358f5308a3908: chore(deps): bump flatted from 3.3.1 to 3.4.2 in /ui (#26928) (@dependabot[bot])
-        * 35bd575eb06162a0ee004fce4aa5149c8bf6c394: chore(deps): bump github.com/Azure/azure-sdk-for-go/sdk/azcore from 1.21.0 to 1.21.1 (#27413) (@dependabot[bot])
-        * 3c6645f6f2aabb84a8e33240d8800946bfa5ef59: chore(deps): bump github.com/Azure/azure-sdk-for-go/sdk/azcore from 1.21.1 to 1.22.0 (#28144) (@dependabot[bot])
-        * 877cdf6b9d14f0dedd3b84c2d58e93e97b217b5f: chore(deps): bump github.com/Azure/azure-sdk-for-go/sdk/azidentity from 1.13.1 to 1.14.0 (#28295) (@dependabot[bot])
-        * 38a3826df8395a82257080a15cfef235fe8b7c54: chore(deps): bump github.com/Azure/kubelogin from 0.2.16 to 0.2.17 (#27269) (@dependabot[bot])
-        * e2d13883250b28e5c5b1ca7fb948dc917d63661b: chore(deps): bump github.com/Azure/kubelogin from 0.2.17 to 0.2.18 (#28079) (@dependabot[bot])
-        * 682de3eacfc723a9fdf1b3d25535c9cb7cd3d3d3: chore(deps): bump github.com/alicebob/miniredis/v2 from 2.37.0 to 2.38.0 (#27801) (@dependabot[bot])
-        * 0191c1684dd53acc0b43c673572c2fc2b4022529: chore(deps): bump github.com/aws/aws-sdk-go-v2/config from 1.32.11 to 1.32.12 (#26844) (@dependabot[bot])
-        * f3b803f284414ec56dbd9127e8188235222e8aeb: chore(deps): bump github.com/aws/aws-sdk-go-v2/config from 1.32.14 to 1.32.15 in the aws-sdk-v2 group (#27412) (@dependabot[bot])
-        * 59aea0476a1e18b34cee3aeb4b4dcf5d90745ab2: chore(deps): bump github.com/aws/aws-sdk-go-v2/credentials from 1.19.11 to 1.19.12 (#26840) (@dependabot[bot])
-        * a892317c67d6d5af2f438eb0f2a60dc971f1b391: chore(deps): bump github.com/aws/aws-sdk-go-v2/credentials from 1.19.12 to 1.19.13 (#27032) (@dependabot[bot])
-        * 6a22728fd55fa77f60e2e261e65ab0fb0c9a1b12: chore(deps): bump github.com/aws/aws-sdk-go-v2/service/codecommit from 1.33.11 to 1.33.12 (#27035) (@dependabot[bot])
-        * 648e9d2750696abc869b1ff55998cd75556abfca: chore(deps): bump github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi from 1.31.12 to 1.32.0 in the aws-sdk-v2 group (#28019) (@dependabot[bot])
-        * 0c02de795e1cd299c1da7fbd23429f67c00bcf4d: chore(deps): bump github.com/aws/aws-sdk-go-v2/service/sts from 1.41.9 to 1.41.10 (#27037) (@dependabot[bot])
-        * 5c03a8b37d6c2416002d9a0c24c9a1d3fd6ba859: chore(deps): bump github.com/aws/smithy-go from 1.24.2 to 1.24.3 (#27141) (@dependabot[bot])
-        * a216fdb8f44655ebc42cd72bdbffae2f17ccac3d: chore(deps): bump github.com/aws/smithy-go from 1.24.3 to 1.25.0 (#27369) (@dependabot[bot])
-        * d6545155a6c233f9cbb2d2218a924d2a54eac024: chore(deps): bump github.com/aws/smithy-go from 1.25.0 to 1.25.1 (#27531) (@dependabot[bot])
-        * cbce5bf52f6eb39f6639f3daf43b711af096ef95: chore(deps): bump github.com/aws/smithy-go from 1.25.1 to 1.26.0 (#28036) (@dependabot[bot])
-        * 83d812f2de4f13301de4bd8168acad3bd3f53aed: chore(deps): bump github.com/aws/smithy-go from 1.26.0 to 1.27.0 (#28120) (@dependabot[bot])
-        * 02607a683b46717c91b210ac54659285808d3bbc: chore(deps): bump github.com/aws/smithy-go from 1.27.0 to 1.27.1 (#28146) (@dependabot[bot])
-        * df2b0b25d458b5f2bc20d195577fbbe1ededb88f: chore(deps): bump github.com/aws/smithy-go from 1.27.1 to 1.27.2 (#28170) (@dependabot[bot])
-        * 028f5e181defa4df8f55db8376edeb01a0aa543d: chore(deps): bump github.com/bradleyfalzon/ghinstallation/v2 from 2.18.0 to 2.19.0 (#28261) (@dependabot[bot])
-        * f86cd078fca5af3ccfcf0d6bb4fcec34c7c564a3: chore(deps): bump github.com/coreos/go-oidc/v3 from 3.17.0 to 3.18.0 (#27247) (@dependabot[bot])
-        * 9c8ae9a294615d5a19833bb8d6f2ae25455524f3: chore(deps): bump github.com/dlclark/regexp2 from 1.11.5 to 1.12.0 (#27456) (@dependabot[bot])
-        * 38095fc8bc6742d48cf43bdd34f653c7043fa388: chore(deps): bump github.com/felixge/httpsnoop from 1.0.4 to 1.1.0 (#28263) (@dependabot[bot])
-        * 4fc98c0031832e4ec95f9fcec345bda44d3371b4: chore(deps): bump github.com/fsnotify/fsnotify from 1.10.0 to 1.10.1 (#27688) (@dependabot[bot])
-        * 03cbfbf59eac5afb0813a927be631b1b079acc4f: chore(deps): bump github.com/fsnotify/fsnotify from 1.9.0 to 1.10.0 (#27605) (@dependabot[bot])
-        * b004246b6f387c9297e07ecbdf10c9b716e6b029: chore(deps): bump github.com/go-git/go-billy/v5 from 5.6.2 to 5.9.0 (#27847) (@dependabot[bot])
-        * 88663928f65880b36602abc2d356bd4a4991303a: chore(deps): bump github.com/go-jose/go-jose/v3 from 3.0.1 to 3.0.5 (#27142) (@dependabot[bot])
-        * a5073f1eccfa93b38d8bd1ed28541b0dfc2dd292: chore(deps): bump github.com/go-jose/go-jose/v4 from 4.1.3 to 4.1.4 (#27101) (@dependabot[bot])
-        * 8c673b9ce3a9d7602e215d795da8a225bc1e2182: chore(deps): bump github.com/go-openapi/loads from 0.23.3 to 0.23.4 (#28121) (@dependabot[bot])
-        * 7b7e3a721ab4d93ea120c10cf4af3bd9902b67a6: chore(deps): bump github.com/go-openapi/loads from 0.23.4 to 0.24.0 (#28171) (@dependabot[bot])
-        * f54cc0bc61bae75a54c8a84c5510c3cf10c1f858: chore(deps): bump github.com/go-openapi/runtime from 0.29.3 to 0.29.4 (#27457) (@dependabot[bot])
-        * 6c79944aed5c604994603c1aef3212f9ef6375c5: chore(deps): bump github.com/go-openapi/runtime from 0.29.4 to 0.29.5 (#27689) (@dependabot[bot])
-        * d91cef6652d436b5f7390d74a54c29700549bc94: chore(deps): bump github.com/go-openapi/runtime from 0.29.5 to 0.32.2 (#28037) (@dependabot[bot])
-        * ebfe9c6bbfefdfec544c0ea72a3842f4fa8e4338: chore(deps): bump github.com/go-openapi/runtime/server-middleware from 0.30.0 to 0.32.2 (#28059) (@dependabot[bot])
-        * a53d82e98529c6bd5ffcffd6389c951f8177dd3a: chore(deps): bump github.com/go-openapi/runtime/server-middleware from 0.32.2 to 0.32.3 (#28122) (@dependabot[bot])
-        * bb66ffe0fab9fc4c5f8abf2c94c86992dafdd9dd: chore(deps): bump github.com/google/go-jsonnet from 0.21.0 to 0.22.0 (#26992) (@dependabot[bot])
-        * 0e4f7c857d5734f2792bf7b1a34b7f07f741f468: chore(deps): bump github.com/itchyny/gojq from 0.12.18 to 0.12.19 (#27118) (@dependabot[bot])
-        * c201994e93f3d7395528a857cc287ae4ab826e15: chore(deps): bump github.com/ktrysmt/go-bitbucket from 0.9.100 to 0.10.0 (#27989) (@dependabot[bot])
-        * 721a7e722ea0c6dd22a9b02cce944c6a121dd63a: chore(deps): bump github.com/ktrysmt/go-bitbucket from 0.9.94 to 0.9.95 (#27175) (@dependabot[bot])
-        * 77d559c3b0fcdbf27f03b2f093ee18d91bc0a266: chore(deps): bump github.com/ktrysmt/go-bitbucket from 0.9.95 to 0.9.96 (#27547) (@dependabot[bot])
-        * 7cf79553d3d1cc52e5ba2f972a14c89c60e760e5: chore(deps): bump github.com/ktrysmt/go-bitbucket from 0.9.96 to 0.9.98 (#27604) (@dependabot[bot])
-        * cc13e46b82fcd0022e3d4201407d8b0b6958ead6: chore(deps): bump github.com/ktrysmt/go-bitbucket from 0.9.98 to 0.9.100 (#27630) (@dependabot[bot])
-        * 9cfbeb72f04a5a7ff4525ddac0d0f37ffd671484: chore(deps): bump github.com/mattn/go-isatty from 0.0.20 to 0.0.21 (#27245) (@dependabot[bot])
-        * 4a51ec4972495cedcb5b3a6ce49343747cdb7a59: chore(deps): bump github.com/mattn/go-isatty from 0.0.21 to 0.0.22 (#27566) (@dependabot[bot])
-        * d017512baa432dfcca4fdb9d20db50497c99279d: chore(deps): bump github.com/moby/spdystream from 0.5.0 to 0.5.1 (#27401) (@dependabot[bot])
-        * 1b2f78485a2fa42129d9025f611f2ebbddca9746: chore(deps): bump github.com/redis/go-redis/v9 from 9.18.0 to 9.19.0 (#27582) (@dependabot[bot])
-        * 3185b3974f32d4d887329d846c094555a7316220: chore(deps): bump github.com/redis/go-redis/v9 from 9.19.0 to 9.20.0 (#28060) (@dependabot[bot])
-        * 3336cf6b9fdd272b4b47f5f6e6c0c3b62d2bac84: chore(deps): bump github.com/redis/go-redis/v9 from 9.20.0 to 9.20.1 (#28262) (@dependabot[bot])
-        * 4090619a18f1f3390a6cffa7f97e7e49dae9f926: chore(deps): bump github.com/skeema/knownhosts from 1.3.1 to 1.3.2 (#27988) (@dependabot[bot])
-        * bd1cccfb9aa46454572af99dbe90c1ef8a51d791: chore(deps): bump github.com/yuin/gopher-lua from 1.1.1 to 1.1.2 (#27100) (@dependabot[bot])
-        * 7af68d277f3b1ab1dd1fd7f49feceed78e06b389: chore(deps): bump github/codeql-action bundle to v4.35.1 (#27068) (@Kevinjoeharris)
-        * 576002fb72fbbb39622d51ba4e06262660337eba: chore(deps): bump github/codeql-action from 4.35.1 to 4.35.2 (#27372) (@dependabot[bot])
-        * e5a2a0092a4f938f5d60682c0c94d0aad01acf0b: chore(deps): bump github/codeql-action from 4.35.2 to 4.35.3 (#27651) (@dependabot[bot])
-        * f7a4c0919469ffe3d18985072f0fb2892d1489bc: chore(deps): bump github/codeql-action from 4.35.3 to 4.35.4 (#27745) (@dependabot[bot])
-        * daf567f116ee8c20fceda53ee8d8b600be957706: chore(deps): bump github/codeql-action from 4.35.4 to 4.35.5 (#27897) (@dependabot[bot])
-        * 967e6d870d771e4ca45851ef090dd71795ca8c8a: chore(deps): bump github/codeql-action from 4.35.5 to 4.36.0 (#27984) (@dependabot[bot])
-        * f35fe849b40b64d92d3ea97fbb71f66691742539: chore(deps): bump github/codeql-action from 4.36.0 to 4.36.1 (#28115) (@dependabot[bot])
-        * 0e2e47610f46de53dfd7ca3bf4900bc1e88d125b: chore(deps): bump github/codeql-action from 4.36.1 to 4.36.2 (#28145) (@dependabot[bot])
-        * 2f58395f7405cc9e8086ee5e5ff9588a500e108e: chore(deps): bump go-client to v0.36.1, controller-runtime to v0.24.1 (#27804) (#27955) (@dudinea)
-        * c90b92252268b9f338b2c68b36a0d93ac840bac0: chore(deps): bump golang.org/x/crypto from 0.49.0 to 0.50.0 (#27268) (@dependabot[bot])
-        * f40bc68440a57610488ae7a3bf0b99ec037e8548: chore(deps): bump golang.org/x/crypto from 0.50.0 to 0.51.0 (#27783) (@dependabot[bot])
-        * 0a7e0ef8615a4709d293cb3ef76a759214526ffb: chore(deps): bump golang.org/x/crypto from 0.51.0 to 0.52.0 (#27967) (@dependabot[bot])
-        * 47059fa7b6e38574b4aaa5691c97ef9ed3af0563: chore(deps): bump golang.org/x/crypto from 0.52.0 to 0.53.0 (#28190) (@dependabot[bot])
-        * 25e0c38363eee3c60ac54249a8ecbab084047948: chore(deps): bump golang.org/x/net from 0.52.0 to 0.53.0 (#27272) (@dependabot[bot])
-        * a9d087e0267dd80c344f09201fdffe22070f82d4: chore(deps): bump golang.org/x/net from 0.53.0 to 0.54.0 (#27782) (@dependabot[bot])
-        * 087f4e68fdc293beccc07b5a278dfae89ca929ce: chore(deps): bump golang.org/x/net from 0.54.0 to 0.55.0 (#27966) (@dependabot[bot])
-        * b535b526f4b640f5600ca02fb7922bea2efbaf3d: chore(deps): bump golang.org/x/net from 0.55.0 to 0.56.0 (#28237) (@dependabot[bot])
-        * 99306c7a97c85702f8c7c3b17f87c73b4ad31230: chore(deps): bump golang.org/x/term from 0.43.0 to 0.44.0 (#28192) (@dependabot[bot])
-        * 5dc959904bc36d1a74bac5abd87d3a8177ae7bdf: chore(deps): bump golangci/golangci-lint-action from 9.2.0 to 9.2.1 (#27970) (@dependabot[bot])
-        * 20439902ebd6e32a7f21b1c7b200c61c504c3439: chore(deps): bump google.golang.org/grpc from 1.79.2 to 1.79.3 (#26886) (@dependabot[bot])
-        * ba4d2a2104971ead2d0803ab333d41439a511fe5: chore(deps): bump google.golang.org/grpc from 1.79.3 to 1.80.0 (#27119) (@dependabot[bot])
-        * 14b9d68079eec5e484f9f38a7cc9ed227efa442f: chore(deps): bump google.golang.org/grpc from 1.80.0 to 1.81.0 (#27687) (@dependabot[bot])
-        * 438ba7ced3b8b27889b724a1b9a6bd1d4dbd432a: chore(deps): bump google.golang.org/grpc from 1.81.0 to 1.81.1 (#27869) (@dependabot[bot])
-        * 68505a81edf51b2894317f25262c27c55fe7dac7: chore(deps): bump goreleaser/goreleaser-action from 7.0.0 to 7.1.0 (#27454) (@dependabot[bot])
-        * 6755bf1da7d56c2413149ad5d08ef30933c49f44: chore(deps): bump goreleaser/goreleaser-action from 7.1.0 to 7.2.1 (#27548) (@dependabot[bot])
-        * af6997b7c6741b9be5bc79064f1b0a819db53d6d: chore(deps): bump goreleaser/goreleaser-action from 7.2.1 to 7.2.2 (#27920) (@dependabot[bot])
-        * 191b4e3cafcfa9573d0e9447dd46a6fc59c4b0b2: chore(deps): bump helm to 3.20.2 (#27774) (@reggie-k)
-        * 5471c9465714367fbb10f1e079c154f5b034aebf: chore(deps): bump helm to 3.21.0 (#27855) (@nitishfy)
-        * 06fad73492d9503dfeadc6110ae15caed6936984: chore(deps): bump js-yaml from 3.14.1 to 4.2.0 in /ui (#28133) (@dependabot[bot])
-        * 771e096916674a955dab0552c7e44958ba6487b7: chore(deps): bump js-yaml from 3.14.1 to 5.2.0 in /ui (#28509) (#28947) (@aali309)
-        * 9d8abf49de4abdd6f7ab31de64dee43409a740b4: chore(deps): bump library/busybox from `1487d0a` to `fd8d9aa` in /test/e2e/multiarch-container (#27981) (@dependabot[bot])
-        * 4e3904a55490ec8f519bf880f25cd7da1538c98d: chore(deps): bump library/busybox from `b3255e7` to `1487d0a` in /test/e2e/multiarch-container (#26990) (@dependabot[bot])
-        * 9e80e058e73cf8a895102a63ba183089bb0cf827: chore(deps): bump library/golang from 1.26.1 to 1.26.2 in /test/container (#27248) (@dependabot[bot])
-        * 86fcb1447fb0f9e1ca85fbbab6de18357ca9e0af: chore(deps): bump library/golang from 1.26.1 to 1.26.2 in /test/remote (#27216) (@dependabot[bot])
-        * a73a4cdb185b676d8e13e694af220f325e942263: chore(deps): bump library/golang from 1.26.2 to 1.26.3 in /test/container (#27748) (@dependabot[bot])
-        * b7666e9590608cf66c8fe0005290a835a2d47a07: chore(deps): bump library/golang from 1.26.2 to 1.26.3 in /test/remote (#27744) (@dependabot[bot])
-        * 7358cb7c489a1927a14118ebd3fe9dfe3513aff8: chore(deps): bump library/golang from 1.26.3 to 1.26.4 in /test/container (#28116) (@dependabot[bot])
-        * 15fd01e891af34ce90df568d3407a6083221a0cb: chore(deps): bump library/golang from 1.26.3 to 1.26.4 in /test/remote (#28114) (@dependabot[bot])
-        * 526eeabfd8d22241badd08822df0be6b37b7bdc4: chore(deps): bump library/golang from `11fd8f7` to `87a41d2` in /test/container (#28260) (@dependabot[bot])
-        * cc65c2c3d6715f0342b985b2fd4778668e45b9e2: chore(deps): bump library/golang from `11fd8f7` to `87a41d2` in /test/remote (#28258) (@dependabot[bot])
-        * 1c1981065f3b271caa14f2f263ee30cf1c54c530: chore(deps): bump library/golang from `1e598ea` to `b54cbf5` in /test/container (#27549) (@dependabot[bot])
-        * 6d29bd8b7dae276f6d1baa3f6305761dc844e6e4: chore(deps): bump library/golang from `1e598ea` to `b54cbf5` in /test/remote (#27545) (@dependabot[bot])
-        * 662302f99f67f6c245c3e7c368c8606536dd226f: chore(deps): bump library/golang from `2981696` to `633d23b` in /test/container (#27826) (@dependabot[bot])
-        * 70be03388539b6bb6eb8df4e341d64db84995f1c: chore(deps): bump library/golang from `2981696` to `633d23b` in /test/remote (#27822) (@dependabot[bot])
-        * 0dd5e08d6486e8908d6015c2d2cafa509c748835: chore(deps): bump library/golang from `2a2b4b5` to `fcdb3e4` in /test/container (#27309) (@dependabot[bot])
-        * 0737418abbd08a36a8a23adabee511a5e6d71e1c: chore(deps): bump library/golang from `2a2b4b5` to `fcdb3e4` in /test/remote (#27307) (@dependabot[bot])
-        * b25ef7160b1abf362639a7b804b43c05d7053398: chore(deps): bump library/golang from `313faae` to `8530a4f` in /test/container (#27940) (@dependabot[bot])
-        * 7019a8ec82c6a0177131360ce7da767ef148bb25: chore(deps): bump library/golang from `313faae` to `8530a4f` in /test/remote (#27939) (@dependabot[bot])
-        * adcf8c46a98230f700575ec4d0115767ba3e88c0: chore(deps): bump library/golang from `5f3787b` to `1e598ea` in /test/container (#27518) (@dependabot[bot])
-        * 04c64b7a15d0ad0fd9e532cc8f7878ee9c927e5d: chore(deps): bump library/golang from `5f3787b` to `1e598ea` in /test/remote (#27517) (@dependabot[bot])
-        * 92415464cdcd1f3d363bb2c9b733659c5e5adf66: chore(deps): bump library/golang from `633d23b` to `313faae` in /test/container (#27853) (@dependabot[bot])
-        * 4d17143651858a7f341a0469c3e45960acb22da3: chore(deps): bump library/golang from `633d23b` to `313faae` in /test/remote (#27850) (@dependabot[bot])
-        * 5b1b1fbcb822a4112eb50e12b5ee3292b519a0c7: chore(deps): bump library/golang from `68cb6d6` to `11fd8f7` in /test/container (#28211) (@dependabot[bot])
-        * da21a42971b37f91b8121c704781a82492a01ee6: chore(deps): bump library/golang from `68cb6d6` to `11fd8f7` in /test/remote (#28208) (@dependabot[bot])
-        * 2117aa8253a59abda831dbb420c005932aa0fb85: chore(deps): bump library/golang from `6df14f4` to `2d6c802` in /test/container (#27983) (@dependabot[bot])
-        * 980158e03b9e38710c927ff6410fe350ef378931: chore(deps): bump library/golang from `6df14f4` to `2d6c802` in /test/remote (#27982) (@dependabot[bot])
-        * b6c358436dc8657f2d976f482626cf14440a7b24: chore(deps): bump library/golang from `8530a4f` to `6df14f4` in /test/container (#27951) (@dependabot[bot])
-        * 412c96fcdf389eec531256a547130e9fd37b1555: chore(deps): bump library/golang from `8530a4f` to `6df14f4` in /test/remote (#27950) (@dependabot[bot])
-        * b51828c3916a4fd8f8dd4766af92361be4d2edcc: chore(deps): bump library/golang from `87a41d2` to `792443b` in /test/container (#28296) (@dependabot[bot])
-        * 96a97b2c0a338abe1ec807c1aff09784ba8adb1a: chore(deps): bump library/golang from `87a41d2` to `792443b` in /test/remote (#28293) (@dependabot[bot])
-        * 6b352466052b42d3bbd1e2a970adeafe1bb9d88b: chore(deps): bump library/golang from `c7e98cc` to `595c784` in /test/container (#26960) (@dependabot[bot])
-        * c86e6b6014a16d5f27eb111319660037df9da40f: chore(deps): bump library/golang from `efaccb5` to `2981696` in /test/container (#27785) (@dependabot[bot])
-        * 8ed29d194319a2a650a17aaceae5f503890d0c56: chore(deps): bump library/golang from `efaccb5` to `2981696` in /test/remote (#27779) (@dependabot[bot])
-        * 0a0cd0b68715ca5602d57bd2b96331f0bc82fc3d: chore(deps): bump library/golang from `fcdb3e4` to `5f3787b` in /test/container (#27347) (@dependabot[bot])
-        * ea3dae667e04b341511e5e7af24d268552659a70: chore(deps): bump library/golang from `fcdb3e4` to `5f3787b` in /test/remote (#27346) (@dependabot[bot])
-        * d4ec3282d45c85c24eb3df2c20d742b4c36d741c: chore(deps): bump library/redis from 8.6.1 to 8.6.2 in /test/container (#26991) (@dependabot[bot])
-        * b3eda0f3c2aa9a47b3a118e061142eadf2eb5799: chore(deps): bump library/redis from 8.6.2 to 8.6.3 in /test/container (#27704) (@dependabot[bot])
-        * de52992f3274ec25193bdd2704c9e72a8f9e03bc: chore(deps): bump library/redis from 8.6.3 to 8.8.0 in /test/container (#28020) (@dependabot[bot])
-        * 12b241a56eb7e0e92ea0c76d2105af8faa08f562: chore(deps): bump library/redis from `009cc37` to `970b561` in /test/container (#27218) (@dependabot[bot])
-        * 10b6c45af0794ccaa56ac7354f822d8f08f07b8a: chore(deps): bump library/redis from `0c34149` to `e628485` in /test/container (#27941) (@dependabot[bot])
-        * 8142920ab8695002eda4d09c8d41c4c54e5e11a8: chore(deps): bump library/redis from `1c054d5` to `a019c00` in /test/container (#26865) (@dependabot[bot])
-        * ac3ef590776feb37e88f60020edfbc17e3bd59a1: chore(deps): bump library/redis from `1f07381` to `83619e7` in /test/container (#27493) (@dependabot[bot])
-        * 5bbf557b45760dc273f397327852e4d34ad01a78: chore(deps): bump library/redis from `25dbb04` to `7ead790` in /test/container (#27747) (@dependabot[bot])
-        * 7bde1189eab9cd4245800c0999e21ffd71c23e41: chore(deps): bump library/redis from `25e102b` to `aa049e6` in /test/container (#28056) (@dependabot[bot])
-        * 0fb522baf998f0684fa96bc8792049d81113d82c: chore(deps): bump library/redis from `4c7ecf5` to `0a97239` in /test/container (#28282) (@dependabot[bot])
-        * 5b6561efa574918f5be365e78153641b73c9baf3: chore(deps): bump library/redis from `7ead790` to `0c34149` in /test/container (#27781) (@dependabot[bot])
-        * 170b89fe7bbc826a566ae3f363c09441b4c336d7: chore(deps): bump library/redis from `970b561` to `1f07381` in /test/container (#27273) (@dependabot[bot])
-        * aabe8524baa24301fe5528e7c9c3c8950ff810a8: chore(deps): bump library/redis from `a019c00` to `315270d` in /test/container (#26902) (@dependabot[bot])
-        * fb107e448f675fbcfa92b845334591eb66d77cf1: chore(deps): bump library/redis from `aa049e6` to `f792aaa` in /test/container (#28235) (@dependabot[bot])
-        * 0850e97b77bd6e264635ade08fca0171001ed331: chore(deps): bump library/redis from `d372cf7` to `832d778` in /test/container (#27532) (@dependabot[bot])
-        * 122e6e7bbfacd8202ba41c38fa2fbd01a7dafee1: chore(deps): bump library/redis from `e628485` to `4d25e2f` in /test/container (#27965) (@dependabot[bot])
-        * 2aaa40ba777de6b12e7b949ad031cd2c8587d8df: chore(deps): bump library/redis from `f792aaa` to `4c7ecf5` in /test/container (#28259) (@dependabot[bot])
-        * 884ba71afc1254e8146b529e9c9ee4df57e5da30: chore(deps): bump library/registry from 3.0 to 3.1 in /test/container (#27201) (@dependabot[bot])
-        * 3eb51047508977e3aae6cafe9d5221ae96655bd5: chore(deps): bump library/registry from `afcd13f` to `b0f3668` in /test/container (#27374) (@dependabot[bot])
-        * 24c3abd8dd8cfc7579dd194af83a35b5c1223cfc: chore(deps): bump library/ubuntu from `5798086` to `91832dc` in /test/container (#26930) (@dependabot[bot])
-        * b6f84290fa07ee6f6181cf407562b4d68938b4f8: chore(deps): bump library/ubuntu from `5e27572` to `f3d2860` in /test/container (#27690) (@dependabot[bot])
-        * b018313aec0a9ae59c1909414ea0b2f32e8e3d76: chore(deps): bump library/ubuntu from `730382b` to `a072b64` in /test/container (#27137) (@dependabot[bot])
-        * 44e08631f2624a982a7cc043bf412997b7cfc1d2: chore(deps): bump library/ubuntu from `91832dc` to `730382b` in /test/container (#27117) (@dependabot[bot])
-        * 1a195cc04f08549b4972d27644a73fb039caf05c: chore(deps): bump library/ubuntu from `cc925e5` to `5e27572` in /test/container (#27373) (@dependabot[bot])
-        * d80a122502694ae0ef0b5b986c51edd4f45e9afa: chore(deps): bump library/ubuntu from `fed6ddb` to `5798086` in /test/container (#26887) (@dependabot[bot])
-        * 86a245c8bc92c68eaf1c47756fa5e3d8ec0592ac: chore(deps): bump lodash from 4.17.23 to 4.18.1 in /ui (#27135) (@dependabot[bot])
-        * 3c47518db42c9a34c9a36722a999bf7b1d7dc486: chore(deps): bump lodash-es from 4.17.23 to 4.18.1 in /ui (#27120) (@dependabot[bot])
-        * 0c4946f12f89c4715b2911396f2c34c211f80b24: chore(deps): bump minimatch from 3.1.3 to 3.1.4 in /ui (#26641) (@dependabot[bot])
-        * 4f8f4d2e2190135b42ce32815227d9dcf69a20e6: chore(deps): bump node from 20 to 24 (#23466) (@dependabot[bot])
-        * 1ff6a41be1f03340ab55f30b520de98895efb6ec: chore(deps): bump oras.land/oras-go/v2 from 2.6.0 to 2.6.1 (#28193) (@dependabot[bot])
-        * e21d4719654fe7c0f0ee069ad9934e0c5dc50efd: chore(deps): bump picomatch from 2.3.1 to 2.3.2 in /ui (#27017) (@dependabot[bot])
-        * a98eba200ec104b278201033c95973a1d4e050e1: chore(deps): bump pnpm/action-setup from 4.1.0 to 5.0.0 (#27246) (@dependabot[bot])
-        * 460c5bc942013ec21ecd682114ed4fd8a293cfb4: chore(deps): bump pnpm/action-setup from 5.0.0 to 6.0.8 (#28002) (@dependabot[bot])
-        * 82c53c0c2a3ff21d48c1eb017e18d4fa5c9a7a6d: chore(deps): bump pnpm/action-setup from 6.0.8 to 6.0.9 (#28294) (@dependabot[bot])
-        * 211cbf42502373034c9f71170a3609584156db6b: chore(deps): bump pymdown-extensions from 10.17.1 to 10.21.3 in /docs (#27935) (@dependabot[bot])
-        * d6391e416869383bbfb69806dd718d71843e2cb0: chore(deps): bump redoc/dompurify to v3.4.0 in /ui for fixing CVE-2026-41240 (#27751) (@alkakumari016)
-        * 48ed12ede72c51c9536268042e15ec823761197b: chore(deps): bump renovatebot/github-action from 46.1.10 to 46.1.11 (#27546) (@dependabot[bot])
-        * 8465672913ebc7dfd9f983a5cc31c2a94b0a02a8: chore(deps): bump renovatebot/github-action from 46.1.11 to 46.1.12 (#27583) (@dependabot[bot])
-        * 9a0c75c1e7d1fae8f7b0dd705ca1fe2618f61f35: chore(deps): bump renovatebot/github-action from 46.1.12 to 46.1.13 (#27665) (@dependabot[bot])
-        * 00222823d98e7e2285c9e3343735013217b202a5: chore(deps): bump renovatebot/github-action from 46.1.13 to 46.1.14 (#27784) (@dependabot[bot])
-        * 2c9f570bc0e14f0fa9926f76faa3019f9b180ff4: chore(deps): bump renovatebot/github-action from 46.1.14 to 46.1.15 (#28188) (@dependabot[bot])
-        * bd7b16cbeb9e8e2398af8eb08374e56bc594675b: chore(deps): bump renovatebot/github-action from 46.1.5 to 46.1.6 (#26961) (@dependabot[bot])
-        * ab0070994b9eb405811ded54f7568dc67ac9b9d7: chore(deps): bump renovatebot/github-action from 46.1.6 to 46.1.7 (#27065) (@dependabot[bot])
-        * bb2cfd95532994ce3aaa4b1389e8cf5151ec07b5: chore(deps): bump renovatebot/github-action from 46.1.7 to 46.1.8 (#27176) (@dependabot[bot])
-        * 0c01fc895e11a61ba100115dbcc0df200865b6d2: chore(deps): bump renovatebot/github-action from 46.1.8 to 46.1.9 (#27332) (@dependabot[bot])
-        * 99b10b5e2931db94ea311369d0f60d7aa839aae2: chore(deps): bump renovatebot/github-action from 46.1.9 to 46.1.10 (#27453) (@dependabot[bot])
-        * e6aa9059dd1f9c250d62349445a2f2cb76ac386b: chore(deps): bump sigs.k8s.io/structured-merge-diff/v6 from 6.3.2 to 6.4.0 (#27371) (@dependabot[bot])
-        * d75a6b1523e5f26eb9d50ccde92a225877516693: chore(deps): bump sigstore/cosign-installer from 4.1.0 to 4.1.1 (#27031) (@dependabot[bot])
-        * 00d51b3527827579f65eeafa8689ca97d3625166: chore(deps): bump sigstore/cosign-installer from 4.1.1 to 4.1.2 (#27728) (@dependabot[bot])
-        * f409135f17f440cef917aa33b75c6904c427c6be: chore(deps): bump softprops/action-gh-release from 2.5.0 to 2.6.1 (#26838) (@dependabot[bot])
-        * c9b2e4b35944d8a52561f80a01a9e987fab78edf: chore(deps): bump softprops/action-gh-release from 2.6.1 to 3.0.0 (#27311) (@dependabot[bot])
-        * 7262e61704c857be54faf87c5544958812e29f5e: chore(deps): bump step-security/harden-runner from 2.16.0 to 2.16.1 (#27202) (@dependabot[bot])
-        * cd8a25c195bb0fb5497de2e4b1628828f1412941: chore(deps): bump step-security/harden-runner from 2.16.1 to 2.17.0 (#27271) (@dependabot[bot])
-        * 9cfce1df0e5ae01118c8f5d7fbeeee05256e6ea7: chore(deps): bump step-security/harden-runner from 2.17.0 to 2.18.0 (#27370) (@dependabot[bot])
-        * a7853eb7b674a4c3aabd053188b0376137c443e8: chore(deps): bump step-security/harden-runner from 2.18.0 to 2.19.0 (#27471) (@dependabot[bot])
-        * 661873404558df648f48559bb88423f9011c2863: chore(deps): bump step-security/harden-runner from 2.19.0 to 2.19.1 (#27666) (@dependabot[bot])
-        * aaecdb6e893545486a15e508987ea17707be0a18: chore(deps): bump step-security/harden-runner from 2.19.1 to 2.19.2 (#27852) (@dependabot[bot])
-        * c01aa3168ab0374b64777e42594499b47ba53bc3: chore(deps): bump step-security/harden-runner from 2.19.2 to 2.19.3 (#27870) (@dependabot[bot])
-        * e771b75cc348b94530333fa89efaf88997acd355: chore(deps): bump step-security/harden-runner from 2.19.3 to 2.19.4 (#27968) (@dependabot[bot])
-        * d4acd0b33b7dd4737f00b1b43fda45183e27a0d7: chore(deps): bump the aws-sdk-v2 group across 1 directory with 6 updates (#28119) (@dependabot[bot])
-        * 95e0696d50d890218e72a55ec335d628054c52f5: chore(deps): bump the aws-sdk-v2 group with 2 updates (#27987) (@dependabot[bot])
-        * 666fbf83c75e7fee205011ea9b89fcc3ea38933d: chore(deps): bump the aws-sdk-v2 group with 2 updates (#28236) (@dependabot[bot])
-        * 54f9cf08e45938be9958c8fb6ce3cc425d9decde: chore(deps): bump the aws-sdk-v2 group with 3 updates (#27186) (@dependabot[bot])
-        * 5a4a551478103d01f7028c9aea822d63f7bc1070: chore(deps): bump the aws-sdk-v2 group with 6 updates (#27455) (@dependabot[bot])
-        * 42498e696225b49930614c385aa5a066d54a5772: chore(deps): bump the aws-sdk-v2 group with 6 updates (#27603) (@dependabot[bot])
-        * 1ad5a696fda12d18551a2dfb46a66cd693ff9d68: chore(deps): bump the aws-sdk-v2 group with 6 updates (#28057) (@dependabot[bot])
-        * 8229c2da91f4839e13d0d7b9a6efd252619f793a: chore(deps): bump the aws-sdk-v2 group with 6 updates (#28078) (@dependabot[bot])
-        * c2664edfb3f66ba2faa6e54464ec809ca45d2e40: chore(deps): bump the aws-sdk-v2 group with 6 updates (#28189) (@dependabot[bot])
-        * 73962555bbe881f9bcbd73142019df4d4b9b89b5: chore(deps): bump the otel group across 1 directory with 2 updates (#27217) (@dependabot[bot])
-        * 9f723393e8d4a90aabc928c0ba0675f6718f85f6: chore(deps): bump the otel group across 1 directory with 4 updates (#27174) (@dependabot[bot])
-        * d0cf7cabe9469c37a617da5306f128d36646c6f3: chore(deps): bump the otel group with 2 updates (#28058) (@dependabot[bot])
-        * b10ba77da6f04ef82915222dd5be7031fd41a916: chore(deps): bump the otel group with 4 updates (#28034) (@dependabot[bot])
-        * b01aa188fdbf425162ba1472fdb7f2336528cd8e: chore(deps): bump tj-actions/changed-files from 47.0.5 to 47.0.6 (#27470) (@dependabot[bot])
-        * e972bfca78658e25af21d01dbd4ed2fda10e599d: chore(deps): bump yaml from 1.10.2 to 1.10.3 in /ui (#27015) (@dependabot[bot])
-        * 5101db5225d49596ba4c411e222f95b54a7fff08: chore(deps): migrate to go.yaml.in/yaml/v3 (#27063) (@thevilledev)
-        * 7308ed98af19cbf985a1c4626d83b3014d8ff961: chore(deps): update actions/cache action to v5.0.5 (#27334) (@renovate[bot])
-        * 9ceaf0e8ee05247cbfaf2c5f94ef09d54f65c18d: chore(deps): update actions/create-github-app-token action to v2.2.2 (#27034) (@renovate[bot])
-        * 8e0b6e689a5888f49fde8cf3cdbaef984a7142ec: chore(deps): update codecov/codecov-action action to v5.5.4 (#27038) (@renovate[bot])
-        * 7accd34f640570601628035c82e32e821bb35815: chore(deps): update dependency eslint-config-prettier to v9.1.2 (#27323) (@renovate[bot])
-        * 1fde0d075f0f9617d7c983c0e4f44b74e3cf9264: chore(deps): update dependency formidable to v2.1.3 [security] (#27233) (@renovate[bot])
-        * 3a2e2f62802afe84e9af74d1d61123f0208819ee: chore(deps): update dependency golang to v1.26.3 (#27737) (@argoproj-renovate[bot])
-        * 8a80c5ab7d62af8a1fd43ee3187a3771db9696aa: chore(deps): update dependency markdown to v3.10.2 (#27559) (@renovate[bot])
-        * db8f3f7b6f456abcc9623e2b94785d126863e75d: chore(deps): update dependency pygments to v2.20.0 [security] (#27999) (@argoproj-renovate[bot])
-        * fccd69a3ea2df475d56b8d5fdacd0ff63951d5ae: chore(deps): update dependency pymdown-extensions to v10.21.3 [security] (#27934) (@argoproj-renovate[bot])
-        * 84553d3980bb482f4dd0a33dcb6337e99320d9ec: chore(deps): update docker.io/library/golang docker tag to v1.26.3 (#27742) (@argoproj-renovate[bot])
-        * 6d3e641ccaf02cb132d2ac08919f9d6b96d59a8e: chore(deps): update docker.io/library/golang:1.26.1 docker digest to 42ebbf7 (#27205) (@argoproj-renovate[bot])
-        * 047c0ae7347e98cf17a8be2cb76f1095cfab9be7: chore(deps): update docker.io/library/golang:1.26.1 docker digest to 5e69504 (#27211) (@argoproj-renovate[bot])
-        * d3b06f113f85f32bfa78b768e2beabc82a10db23: chore(deps): update docker.io/library/golang:1.26.1 docker digest to cd78d88 (#27214) (@argoproj-renovate[bot])
-        * 880433f03b5235ca41b9f62a8d01edd7191d62c3: chore(deps): update docker.io/library/golang:1.26.1 docker digest to cd78d88 (#27231) (@renovate[bot])
-        * ecc178f03e94298daec8a481b970e98fc1d2b724: chore(deps): update docker.io/library/golang:1.26.2 docker digest to 5f3787b (#27343) (@argoproj-renovate[bot])
-        * 5083a2184bca0d0c769d4aaa7065259872bc5273: chore(deps): update docker.io/library/golang:1.26.2 docker digest to b54cbf5 (#27557) (@renovate[bot])
-        * 538d42640ac5418b9aaeb56c429eabb82c391087: chore(deps): update docker.io/library/golang:1.26.2 docker digest to f715906 (#27498) (@argoproj-renovate[bot])
-        * 85913f797ee4cea94320d10a92d5a76e6d40bebf: chore(deps): update docker.io/library/golang:1.26.2 docker digest to fcdb3e4 (#27296) (@argoproj-renovate[bot])
-        * 9a95da51a210600633bf89f9ddec4a8faf53fc1b: chore(deps): update docker.io/library/golang:1.26.3 docker digest to 13605db (#27763) (@argoproj-renovate[bot])
-        * 9375dc10b48473becb414ed310ebbf4ce5c42b73: chore(deps): update docker.io/library/golang:1.26.3 docker digest to 2981696 (#27793) (@argoproj-renovate[bot])
-        * 68d7fcc6b1ce139f18fd942d475b953f6b574766: chore(deps): update docker.io/library/golang:1.26.3 docker digest to 2d6c802 (#27980) (@argoproj-renovate[bot])
-        * 4be6c4e70765c8234d30e9f86525c3d5ae81dd7b: chore(deps): update docker.io/library/golang:1.26.3 docker digest to 313faae (#27842) (@argoproj-renovate[bot])
-        * 55bea32e91c4e53f56df70ed9cf1f1cce0f84af7: chore(deps): update docker.io/library/golang:1.26.3 docker digest to 633d23b (#27821) (@argoproj-renovate[bot])
-        * 0dc4f57ee9e0971daa1498379e1bc0fdfd671705: chore(deps): update docker.io/library/golang:1.26.3 docker digest to 6df14f4 (#27945) (@argoproj-renovate[bot])
-        * ef2a67a094667e9638be48dfcbba21512be5a88c: chore(deps): update docker.io/library/golang:1.26.3 docker digest to cc9a5d7 (#27937) (@argoproj-renovate[bot])
-        * 8727851a3d20b0f14bb51e52e724a53d4ee512eb: chore(deps): update docker.io/library/golang:1.26.4 docker digest to 11fd8f7 (#28206) (@argoproj-renovate[bot])
-        * 6186eb74db4a49bf734b4c0e4be5079a6f5b05d4: chore(deps): update docker.io/library/golang:1.26.4 docker digest to 68cb6d6 (#28111) (@argoproj-renovate[bot])
-        * 67c86185d22a795832743efa117c0dccf244bc13: chore(deps): update docker.io/library/golang:1.26.4 docker digest to 792443b (#28292) (@argoproj-renovate[bot])
-        * 7d028d469f0e01ca146fcfc6fb4e0a48923eeec3: chore(deps): update docker.io/library/golang:1.26.4 docker digest to 87a41d2 (#28245) (@argoproj-renovate[bot])
-        * 0af18dcaa3bb2685ddd4054d26b89f8e6b6bde10: chore(deps): update docker.io/library/golang:1.26.4 docker digest to d184d9b (#28240) (@argoproj-renovate[bot])
-        * 27fa900912b6f13f669be75b0705d3f017b50910: chore(deps): update docker.io/library/golang:1.26.4 docker digest to d47ca13 (#28238) (@argoproj-renovate[bot])
-        * 04d41af921ef11789b01c9d66a5dd86d08c26ff4: chore(deps): update docker.io/library/registry:3.1 docker digest to 85347ed (#27685) (@renovate[bot])
-        * 37e10dba75380ae8a8a55f59850f433bb61dce1b: chore(deps): update docker.io/library/registry:3.1 docker digest to 8a7c1aa (#27405) (@renovate[bot])
-        * 19983129f28f6abb1f60d31cbe92160746782e0e: chore(deps): update docker.io/library/ubuntu:26.04 docker digest to cc925e5 (#27232) (@renovate[bot])
-        * 34b38428e9f6ad2f86837d3c290d6f94833853e2: chore(deps): update group golang to v1.26.2 (#27224) (@argoproj-renovate[bot])
-        * 4e99f75cfea0caaae7a7e1d5f745fb4953948c4c: chore(deps): update group golang to v1.26.4 (#28104) (@argoproj-renovate[bot])
-        * 19219e06d2e3c4c8bb62e6d391a5763d06ab31a1: chore(deps): update group node to v24 (major) (#25096) (@argoproj-renovate[bot])
-        * e1bb50926455469c109466dcaee37ce5b4334a07: chore(deps): update module github.com/golangci/golangci-lint/v2 to v2.11.4 (#26957) (@argoproj-renovate[bot])
-        * d08fec4c39c83fab9cddbac8dc5d5ca2f79e51de: chore(deps): update module github.com/vektra/mockery/v3 to v3.7.1 (#28270) (@argoproj-renovate[bot])
-        * 67c6d19820ee1e25629f7a0497f5785bb46207d4: chore(deps-dev): bump @babel/core from 7.29.0 to 7.29.6 in /ui (#28300) (@dependabot[bot])
-        * 7b5b6a874495976e56b6608d77b7ce7cb6d9e889: chore(deps-dev): bump @types/dagre from 0.7.42 to 0.7.54 in /ui (#27184) (@dependabot[bot])
-        * 82f71400a473d8cfdeca121c7cb8acd126d1a856: chore(deps-dev): bump postcss from 8.5.6 to 8.5.10 in /ui (#27537) (@dependabot[bot])
-        * eb752a434ec2586f0ef5fbfd1ff518557519f792: chore(deps-dev): bump prettier from 3.8.3 to 3.8.4 in /ui (#28212) (@dependabot[bot])
-        * 0a7f9f5e8ae816ff26bdc432e71b77b5f8a844b4: chore(deps-dev): bump sass from 1.99.0 to 1.100.0 in /ui (#28210) (@dependabot[bot])
-        * fc038691806ec8a7e1d908d9a54051df5c1aff2a: chore(deps-dev): bump webpack from 5.94.0 to 5.105.4 in /ui (#27185) (@dependabot[bot])
-        * bbe9acf437a63fb26ca68972b0a50407f7d7f7f2: chore(deps-dev): webpack 5 (#27404) (@blakepettersson)
+        * 33f3bc59faeec96204cda3a5ae211be17d15f1ac: fix(appset): stop progressive sync reconciling in a tight loop (#27577) (#29139) (@himeshp)
+        * d358e75b3539c3fc43eb2372317bde7a0d01c55f: fix(appset): verify terminating Applications against the API server (#29042) (#29138) (@himeshp)
+        * ecf37373a9d3a72b259a73abfee7ce27226b960a: fix(controller): cherry-pick treat `timeout.reconciliation=0` as disabled soft expiry (#27683) (#29007) (@aali309)
+        * 978fa65006565baaaf35894918fd661d610f5953: fix(controller): reuse server-side diff result when masking Secret data (#27858) (#29074) (@1ovsss)
+        * f399c84f85fc4e3a19ac1e8314ff111493d26fee: fix(controller): use diff cache when timeout.reconciliation is disabled (cherry-pick #29073 for 3.5) (#29158) (@argo-cd-cherry-pick-bot[bot])
+        * 960bed7f2efcdc8b43fe392dd6d17cf95507c9f2: fix(server): prevent SSD CLI secret mask spoofing (cherry-pick #29089 for 3.5) (#29130) (@argo-cd-cherry-pick-bot[bot])
+        * 9f360f4953a1dc0f3474aa9c482d72366863ea33: fix(ssd): hide secret in last-applied-configuration annotation (#28989) (#29052) (@pjiang-dev)
         ### Other work
-        * 9d5b5dfe36cdf3c3b285ab3b24929223c3e00eb7: Fix UI extension event listener loop and expose ReactJSXRuntime global (@jwinters01)
-        * 5151f6fa9696a85ffa136cff2833831107838f71: Fix react-diff-view (@jwinters01)
-        * 84442e03bc1e2c436d6255b36050f0f7752dfea1: Honor stderrthreshold when logtostderr is enabled (@pierluigilenoci)
-        * eef7506e22c11accd02d863b788276c6e1b6130e: Integrate react-testing-library (@jwinters01)
-        * d8bd9e92752df3d4992d188f5ac38fc105ae9824: Merge branch 'master' into react-19 (@jwinters01)
-        * f3fe6284285fbc54c1788d8bc2f5c33cdb2b58db: Merge branch 'react-19' of ssh://github.com/jwinters01/argo-cd into react-19 (@jwinters01)
-        * dcda17a40d1f91dc5a66fe93805bc2ac6ca34668: Merge commit from fork (@pjiang-dev)
-        * cb1c112ce3acaa2c2c6751435f0e0bf932fdcbbb: Merge commit from fork (@blakepettersson)
-        * 5b87aa8fddb94c0d906ca2cdd4740c8491884ba6: Merge commit from fork (@alexmt)
-        * 4aeca2fbf8ccbedb3757074a501ad45a761ee6d4: Merge pull request #27001 from leoluz/fix-ssd-npe (@alexmt)
-        * 8705f6965e7869efda10350b11d267159cbaebc2: Merge pull request #27029 from pierluigilenoci/fix/honor-stderrthreshold (@alexmt)
-        * ca353a7ae3f8e1c3ea5b873e4e430a582d222b57: Merge pull request #27091 from jwinters01/react-19 (@jwinters01)
-        * 8546e61f4bf3b9e7cdd5bebc53e9169975bf39c5: Merge pull request #28038 from argoproj/argocd-fix-docs-for-eventlist-changes (@dudinea)
-        * 19d99f5d799e5ec3ae9399487f32459af9a4e5f8: Merge pull request #28053 from crenshaw-dev/ui-drysource-repourl (@jwinters01)
-        * d24ba5b2c7e8fcddf4a5f21a1462a23b6bd2499d: Merge pull request #28159 from argoproj/fix-codecov-public-key-problem (@dudinea)
-        * 17bfd97448049737ab502aaa9850041b5253e27f: Merge remote-tracking branch 'upstream/master' into react-19 (@jwinters01)
-        * 620c174ca46c80bbfad81de3f8256181e6dcfb35: Merge remote-tracking branch 'upstream/master' into react-19 (@jwinters01)
-        * 447abc8ecb71356bd05d66e01993cc0d69337f5d: Merge remote-tracking branch 'upstream/master' into react-19 (@jwinters01)
-        * 2b7a9e05aee1a6c3367bc8fe02b0911c5b5d3e53: Merge remote-tracking branch 'upstream/master' into react-19 (@jwinters01)
-        * 4e2bd6740af7f74640112ccc1515a15ae92b5f93: NODE_ENV=test only for jest tests (@jwinters01)
-        * 099dbd7fe1cbfe7a076678bb67d3f25cea61465f: chore(CODEOWNERS): expand @argoproj/argocd-approvers-ci role ownership (#27721) (@dudinea)
-        * 364bd00647eee56f8454c65627d8b91d3810e819: chore(ci):  add Step Security Harden Runner to workflows in audit mode (#27168) (@dudinea)
-        * 3a6083cb2dde4718f9dc3b02281af8fc4a2145a2: chore(ci): Enable harden runner blocking mode for workflows - part 1 (#27163) (#27256) (@dudinea)
-        * 7f3ecfcf4222448810595664ead4366ce3b8c5b5: chore(ci): add revert to title checker config (#27424) (@ranakan19)
-        * a87aab146e2cab61b181a177099e875cb88801d3: chore(ci): attempt to make test less flaky (#26890) (@blakepettersson)
-        * 17daff381f8fa7065e7a328f0914b6489972c7ea: chore(ci): bump codecov action to 7.0.0 to fix the GPG issue (@dudinea)
-        * 67e3ba57e1faeda777cd6aa505b06f77c141580e: chore(ci): fix gitops-engine/hack/update_static_schema.sh work on Linux (#28126) (#28127) (@dudinea)
-        * 87ccebc51aa5f7ee42a9882d3b7a2db6c0e80297: chore(ci): remove cherry-pick branch if already present (#26881) (@blakepettersson)
-        * eaa4bf691387f4b6c600723877827cf5e37b5148: chore(dev): change default appset webhook port in goreman (#28015) (@blakepettersson)
-        * 2ccc2ea4663fa3cef0fb02e55af5e8ff6c293a52: chore(docs): Fix godoc in util/db/certificate.go (#27380) (@olivergondza)
-        * db493ac2cd8205aec46951b4e53d94c1692d9e51: chore(gitops-engine): drop dead autoscaling/v2beta1 and v2beta2 references (#27887) (@mfacenet)
-        * 3dcc91cb3a3819141015720b1ea184d4a357a06d: chore(gitops-engine): migrate to mockery (#27696) (@blakepettersson)
-        * 596f6c09e2660a7c1cbff24b04d2cee8f9871836: chore(makefile): disable compiler optimization for DEV_IMAGE build (#28167) (#28168) (@dudinea)
-        * e75b8e091d3e7fc4c367b497923a3ba9ca2d6ca7: chore(refactor): separate progressive sync into its own package (#27701) (@ranakan19)
-        * 789b9dde8bc9c303e1296a2c617eebb2da45df3b: chore(release): adds Eugene as release champion for 3.6 (#27717) (@dudinea)
-        * 47a074685164f01c01b9845877df7bfbb8f8aa24: chore(renovate): group aws-sdk-v2-updates (#26848) (@blakepettersson)
-        * 21ea32e6d9502f63e7827fd2dee812f2e883a8f6: chore(ui): add change origin (#27947) (@blakepettersson)
-        * 930a3621517df21d4715f2499c7048d742fe2f52: chore(ui): bump argo-ui to c089d1d2d84df87f3712ae661273a5ab0d1ef3b0 (@jwinters01)
-        * 2107c9cbd5fd8f74f7ef8d0d610e1f137e66d50b: chore(ui): bump typescript-eslint (#28129) (@blakepettersson)
-        * ee5c132766595ae023d1fa79dcd75a0445244a7f: chore(ui): pin argo-ui to upstream React 19 merge commit (@jwinters01)
-        * 7660efb23b2d56bf01b0189ba5e2c2ab12badf71: chore:  bump version to 3.5.0-rc3 on release-3.5 branch (#28938) (@github-actions[bot])
-        * 97e31db9035766a2ec4092b8a762519e36274b0a: chore: Configure Renovate (#27739) (@argoproj-renovate[bot])
-        * b37d389f62d22fc4cd65d718891fab9ee2fccf24: chore: Lint change, Prevent class components from being created (#27420) (@alexrecuenco)
-        * bfe5cfb5870c4a51c9ba880d8625663fe14930f6: chore: New gif for docs (#27081) (@Kevinjoeharris)
-        * 99438e5a0f1f8b545ff00db41e05351d3d691fd7: chore: Refactor manifest caching to prevent function arg bloating (#28025) (@olivergondza)
-        * 46ffedca2bc0b1402e8fed3ad252d670f099ef15: chore: Update go.mod with comments on version management (#27508) (@crenshaw-dev)
-        * d34e83f60c921da44b407bcaab95918f4acc5488: chore: add Mollie to USERS.md (#26895) (@andrea-matera)
-        * f1b922765d76671470b2326f206f28c9b9cbd945: chore: add Techcom Securities to USERS.md (#26889) (@hdt12a1)
-        * 0c6427effc9d4ebd29ee27f0f5208a9e09c00dcd: chore: add UI approver scope (#27946) (@crenshaw-dev)
-        * 873f63aa0d8c828e4e71d67b4318e69a762f884d: chore: align Go version to 1.26.1 across repository (#27112) (@thev1ndu)
-        * 2b6489828bb31940ed1971b0fec5cf1297d54fe1: chore: allow multiple signoff lines (#26875) (@blakepettersson)
-        * 1bed88faea064498723b4bef636e134f3984ec31: chore: bump go-git (#26513) (@blakepettersson)
-        * e95e1be88a2da6c06bff5c2fe1791e4d233ed810: chore: bump version to 3.5.0 on release-3.5 branch (#29045) (@github-actions[bot])
-        * 6743cdf9cc705c4dfa5dac3213e9970600452410: chore: don't read current user git configs in tests (#27172) (@seankhliao)
-        * dce3f6e8a5cec6cba0d52d5960792aa857f4cff0: chore: enable unnecessary-format rule from revive (#26958) (@mmorel-35)
-        * be6cab0e5c186a7b741fde16c4e23609a453396b: chore: extract common layout components for apps and appset (#27864) (@pjiang-dev)
-        * 3f15cc6c9edfb9d9762a96495187378f13412797: chore: fix bad indentation (#26989) (@emirot)
-        * 43d94f2b5570a170b570329bbadf29b2bb316888: chore: group aws sdk v2 prs (#27179) (@blakepettersson)
-        * f1388674cc1013a4553b5aa2a5b60ba057aeb7bb: chore: migrate to cluster informer (#27206) (@blakepettersson)
-        * f5f3bf8a064956efd13eb02cc6702319ab564ed6: chore: migrate to pnpm (#23937) (@blakepettersson)
-        * f246c7390537fa43435526b36329b324ae987d6a: chore: move mockgen in codegen-local (#27648) a (@blakepettersson)
-        * e5f1ada5034686b2ae1f69332ecb9a945ddc6575: chore: remove obsolete buster-backports apt source from builder stages (#28250) (@crenshaw-dev)
-        * 7c6bc9efead84ae22d9f75061093aeb3df538e00: chore: remove ui-test (#27635) (@blakepettersson)
-        * 9b7685a1648527d5c611fc681383b68ecd070066: chore: remove unused parameter (#27510) (@crenshaw-dev)
-        * 12ab91a6fa7d800c513f247c2026023c7a2a76f2: chore: stop renovate from creating gitops-engine PRs (#27641) (@rumstead)
-        * 972e46b44eb7ab1b5a82eea8e7150cdb79dbde3c: chore: switch reconcile trigger log to info level for managed resource (cherry-pick #28456 for 3.5) (#28519) (@argo-cd-cherry-pick-bot[bot])
-        * 3132b0de4fc15ca92e858d2421cae5974cad2e13: chore: update Maintainers.md and move Pasha Kostohrys to octopus deploy org (#27450) (@pasha-codefresh)
-        * 1f7f12c3a2667d666658e2a9c448d5acc9dedb92: chore: wrap errors in util/db/gpgkeys.go to improve observability (#1… (#27849) (@IanEff)
-        * 187ff1302bd6245553558148867d5319a9c2718a: chore: wrap errors in util/rbac to improve observability (#10592) (#27840) (@IanEff)
-        * 79922c06d6cb34b05740a0f6d5b92d0aa3bf8b13: ci: Improve Go build timing with effective caching (#26628) (@Kevinjoeharris)
-        * 76c6b59db4c915a1c9a22a966242722f1f691dc2: ci: bump goreleaser (#28033) (@blakepettersson)
-        * 7445f7ed735cb41a71a3c3557cd2c101ea23f207: ci: harden-runner: whitelist get.helm.sh  and registry.npmjs.org for renovate workflow (#27163) (#27328) (@dudinea)
-        * 70e6d764c2db150803acd0b79ac0319b2128b165: ci: pin codecov version and fix minor typos in comments (#27074) (@reggie-k)
-        * 5aa83735f252824a4c364e82fabeb366039e8ae6: ci: pin images of setup-qemu-action, setup-buildx-action and goreleaser CLI version (#27060) (@reggie-k)
-        * 9e86e9ed36de9a888a6493bde84c854a503357d8: ci: replace goreleaser github api calls with git commands (#27706) (@reggie-k)
-        * 9c3a0fe1a4304af79e4dcacea06b5daf1f1f615d: ci: support K8s 1.36.0 (#27775) (@reggie-k)
-        * d678193e8d57920f8d4e12db002d3f740bd04a55: ci: update-snyk action security hardening (#27163) (#27658) (@dudinea)
-        * f0d061349aa142e79fdb779560224080fd89783c: ci: use github release notes in goreleaser (#28048) (@reggie-k)
-        * fbf28c0dc7a9ce42f43616cc5fdb9754c809778c: docs(): fix wrong commentary to argocd proj command (#27515) (@dancer1325)
-        * da470645ac35eca216afbe58af18ccdec33e1aec: docs(operator-manual): Add docs for F5 NGINX Ingress (#27225) (@josemaia)
-        * a6c12987593d5ca7fef2b1e4d3d0bb8549750740: feat(source-integrity): Implement Source Integrity checking (#25371) (@olivergondza)
-        * 1245d88848bbb03f718bf21996e5ab1efef1e41b: fix error (@jwinters01)
-        * e8d21d08840b57a9eb7f383c0a421bc2c656a15c: fix imports (@jwinters01)
-        * 48d7cf1b963d1c520a485534080821fe4bf645d0: fix linting (@jwinters01)
-        * f31a45b3255d04a3df5795c3d4e8727967f1cddb: fix react-form compatibility issues (@jwinters01)
-        * 3ce32a988032cd2756c84441a55004b0058e9c9d: fix(#25983): update theme default to auto (#25985) (@eltondeboer)
-        * a7b70b5c8b13ce5bdabbe6b9ec61f8686439bc36: fix(gitops-engine): apply HideSecretData to server-side diff results for Secrets (#27598) (@pjiang-dev)
-        * 9d8fcd607d7f8d0c810234745544bb89e52ab9e0: fix(gitops-engine): fix nil pointer dereference error in removeWebookMutation() (#27749) (@peikk0)
-        * faaa0b66df1b4e8016cc630ef9b1d3db30b8c40e: fix(repo-server): honor `ARGOCD_REPO_SERVER_OTLP_HEADERS` in repo-server (Cherry-pick - 3.5) (#28715) (@nitishfy)
-        * aeddcb938c81fb1e5872740dbb30a19aac5c16f0: fix(source-integrity): Prevent key id masking (#28196) (@olivergondza)
-        * 75bca0f4990a26f0cc1da2c8f1b62e0a7bb60104: form reroute (@jwinters01)
-        * ee6991d42dacd8b8c4274810c7ef8450d845db1c: include branch for argo-ui (@jwinters01)
-        * 6952d02b03d5ba412f6a86c2efff2ae8bc2dad5e: include fallback for destructuring of data loader (@jwinters01)
-        * d21890d8ea34ed6f83f27fe786a1d7295cfd61c0: include tests (@jwinters01)
-        * cc9758e3d6a75f429ca3ff4425c16bf93ff3f6d7: initial upgrade changes (@jwinters01)
-        * f83161915f8d9f7b8d1cd0cd447205457bd01179: pin argo-ui to upgrade branch (@jwinters01)
-        * 7aedb44dd742474a0b33103a9f89797e15a2c9e7: pin to argo-ui branch (@jwinters01)
-        * e1ebfa3ea5e9ab822f6bd0c2a10259670b84dfe2: re-introduce warning silencer (@jwinters01)
-        * 6a2b4cd1f6753ff3a28bc4f24bff83e6aeae42a2: refactor(cli): extract and consolidate diff functions (#27338) (@agaudreault)
-        * 0acae9a32d44eed27447c0ca910871d52322eb6e: refactor(ssd): use same applier for ssd and ssa (#27624) (@agaudreault)
-        * 495abf1e176b3d82c2c931a88d59de09203e2042: refactor(webhook): create common interface (#27796) (@blakepettersson)
-        * 6bf97ec1fddca528e7ddd0502e72a5f3f033a8dc: refactor: Move NodeUpdateAnimation to functional from classes (#27382) (@alexrecuenco)
-        * 032d9e1e8057c4f6f1c2bbcb60e9ee61ae3474a3: refactor: simplify UpdateRevisionForPaths logic and add early returns (#27190) (@agaudreault)
-        * 0eeaadb6158f46603226339a92b494cabf732b65: refactor: upgrade nottification engine and docs (#27682) (@KyriosGN0)
-        * 82789b70712e3f4da41ae106906f045c32c55d59: refactor: use new(expr) for pointer literals in Go 1.26 (#27143) (@seitarof)
-        * 69074e98327fa8ab7c88883447a168ddadc1503a: remove webpack config change (@jwinters01)
-        * ca4fe470b1bdd52dabe9b555d5ce9db4cb3b1e82: separate yarn build and yarn test (@jwinters01)
-        * 3e2c297ece5fb956bd9b99d76ee93184f68832fe: test(e2e): Add test for second Sync after initial for different resources/options (#28156) (#28155) (@dudinea)
-        * fabbbbe6ee199fbf292481e0a5e020c3c379723b: test(e2e): add e2e tests for reverse deletionOrder when progressive sync enabled (#26673) (@ranakan19)
-        * bd9d14be440ec19ac6f94dc09fdbca3094b2c8ce: test(e2e): fix cleanup of CRDs for e2e tests (#28157) (#28158) (@dudinea)
-        * 8ffead8d98ad0987686c2c5c77b7be38dc2ddefc: test(e2e): fix github's failure to show complete results of e2e test (#28727) (cherry-pick #28726 for 3.5) (#28728) (@argo-cd-cherry-pick-bot[bot])
-        * 0dc5b3f8e43ba8ccd2bd760c895da057acbb3143: test(sharding): add e2e test for sharding (#27466) (@cjcocokrisp)
-        * f7b5ef8310a872a8da00a7293c3039bd4eaa2399: update snapshots (@jwinters01)
-        * 67d5a359cbf8953d279767e8c533f697de46ca70: various typescript fixes (@jwinters01)
-        * d3d49574690eac7a940cf669fe7237650b24b306: working build (@jwinters01)
-        * 3e99bdd39fa8bd3211eeafacf8c2d431375fc464: working integration with argo-ui (@jwinters01)
+        * 109ca7ca71139e514114499d294a492e7910a965: chore: bump version to 3.5.1 on release-3.5 branch (#29165) (@github-actions[bot])
+        * b44fbbc2e040e303c18a69182fd5dbe2c36cfdf9: fix(manifest-generate-paths): Consistent gen manifest cache key (#28074 and #29037) (#29049) (@agaudreault)
 
-        **Full Changelog**: https://github.com/argoproj/argo-cd/compare/v3.4.6...v3.5.0
+        **Full Changelog**: https://github.com/argoproj/argo-cd/compare/v3.5.0...v3.5.1
 
         <a href="https://argoproj.github.io/cd/"><img src="https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png" width="25%" ></a>
 
-      created_at: "2026-08-04T07:46:15Z"
+      created_at: "2026-08-12T11:24:40Z"
       draft: false
-      html_url: https://github.com/argoproj/argo-cd/releases/tag/v3.5.0
-      id: 364720007
+      html_url: https://github.com/argoproj/argo-cd/releases/tag/v3.5.1
+      id: 369213663
       immutable: false
-      mentions_count: 136
-      name: v3.5.0
-      node_id: RE_kwDOBzS60s4VvS-H
+      mentions_count: 5
+      name: v3.5.1
+      node_id: RE_kwDOBzS60s4WAcDf
       prerelease: false
-      published_at: "2026-08-04T08:35:57Z"
-      tag_name: v3.5.0
-      tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v3.5.0
+      published_at: "2026-08-12T12:12:58Z"
+      tag_name: v3.5.1
+      tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v3.5.1
       target_commitish: master
-      updated_at: "2026-08-04T08:40:08Z"
-      upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/364720007/assets{?name,label}
-      url: https://api.github.com/repos/argoproj/argo-cd/releases/364720007
-      zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v3.5.0
+      updated_at: "2026-08-12T12:14:14Z"
+      upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/369213663/assets{?name,label}
+      url: https://api.github.com/repos/argoproj/argo-cd/releases/369213663
+      zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v3.5.1
   helm:
     version: 4.2.3
     previousVersion: 4.2.2
@@ -36292,6 +35585,389 @@ meta:
           upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/364720007/assets{?name,label}
           url: https://api.github.com/repos/argoproj/argo-cd/releases/364720007
           zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v3.5.0
+      3.5.1:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-cli.intoto.jsonl
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:14:13Z"
+            digest: sha256:94225a0ee0d58a5d9c3c47479e7614364c4fc4a096a7277a078901bf26a48adc
+            download_count: 0
+            id: 511532511
+            label: ""
+            name: argocd-cli.intoto.jsonl
+            node_id: RA_kwDOBzS60s4efV3f
+            size: 24099
+            state: uploaded
+            updated_at: "2026-08-12T12:14:14Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511532511
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-darwin-amd64
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:47Z"
+            digest: sha256:b23cf247e8e56db825f8ab7ed5b36333e5f193ebcffcc95f4e5dba1fbf025bfa
+            download_count: 0
+            id: 511531408
+            label: ""
+            name: argocd-darwin-amd64
+            node_id: RA_kwDOBzS60s4efVmQ
+            size: 256767808
+            state: uploaded
+            updated_at: "2026-08-12T12:12:58Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531408
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-darwin-arm64
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:47Z"
+            digest: sha256:3607c5891028bf0c7505284afb54df350f0c67585f32d688ad03e3856ba58b1f
+            download_count: 0
+            id: 511531399
+            label: ""
+            name: argocd-darwin-arm64
+            node_id: RA_kwDOBzS60s4efVmH
+            size: 246054674
+            state: uploaded
+            updated_at: "2026-08-12T12:12:58Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531399
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-amd64
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:36Z"
+            digest: sha256:0a66b7150608e3f8ae07c521d56c9f34244033cf88a83e0953f7337a3799035e
+            download_count: 0
+            id: 511531269
+            label: ""
+            name: argocd-linux-amd64
+            node_id: RA_kwDOBzS60s4efVkF
+            size: 249656542
+            state: uploaded
+            updated_at: "2026-08-12T12:12:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531269
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-arm64
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:36Z"
+            digest: sha256:7d5e175b2299924459d8d6c9a766da0875449d00d687a06a17b8210117c0a431
+            download_count: 0
+            id: 511531267
+            label: ""
+            name: argocd-linux-arm64
+            node_id: RA_kwDOBzS60s4efVkD
+            size: 236881065
+            state: uploaded
+            updated_at: "2026-08-12T12:12:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531267
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-ppc64le
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:36Z"
+            digest: sha256:5a6c734fef3cb0479a9fff61480273bc4aefd8be9cdbd7b48a3fd048b4a4db1c
+            download_count: 0
+            id: 511531265
+            label: ""
+            name: argocd-linux-ppc64le
+            node_id: RA_kwDOBzS60s4efVkB
+            size: 245720723
+            state: uploaded
+            updated_at: "2026-08-12T12:12:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531265
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-linux-s390x
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:46Z"
+            digest: sha256:a91d2cb023fb214622b8aee1b4a762edccad3663b8e373e99d1cf89d9364df55
+            download_count: 0
+            id: 511531391
+            label: ""
+            name: argocd-linux-s390x
+            node_id: RA_kwDOBzS60s4efVl_
+            size: 253630101
+            state: uploaded
+            updated_at: "2026-08-12T12:12:55Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531391
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/argocd-windows-amd64.exe
+            content_type: application/octet-stream
+            created_at: "2026-08-12T12:12:36Z"
+            digest: sha256:f7dc9289a43be9f1ab8fae0ca89f67d05069b73dfea5bcc8c5c86cf7433a3166
+            download_count: 0
+            id: 511531266
+            label: ""
+            name: argocd-windows-amd64.exe
+            node_id: RA_kwDOBzS60s4efVkC
+            size: 251872256
+            state: uploaded
+            updated_at: "2026-08-12T12:12:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531266
+          - browser_download_url: https://github.com/argoproj/argo-cd/releases/download/v3.5.1/cli_checksums.txt
+            content_type: text/plain; charset=utf-8
+            created_at: "2026-08-12T12:12:47Z"
+            digest: sha256:fc1ca7cf2e607ea79be707784ad6326389cc6ac61813da494686107336256e47
+            download_count: 0
+            id: 511531418
+            label: ""
+            name: cli_checksums.txt
+            node_id: RA_kwDOBzS60s4efVma
+            size: 605
+            state: uploaded
+            updated_at: "2026-08-12T12:12:48Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/argoproj/argo-cd/releases/assets/511531418
+          assets_url: https://api.github.com/repos/argoproj/argo-cd/releases/369213663/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+            events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+            followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+            following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+            gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/apps/github-actions
+            id: 41898282
+            login: github-actions[bot]
+            node_id: MDM6Qm90NDE4OTgyODI=
+            organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+            received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+            repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+            type: Bot
+            url: https://api.github.com/users/github-actions%5Bbot%5D
+            user_view_type: public
+          body: |+
+            ## Quick Start
+
+            ### Non-HA:
+
+            ```shell
+            kubectl create namespace argocd
+            kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.1/manifests/install.yaml
+            ```
+
+            ### HA:
+
+            ```shell
+            kubectl create namespace argocd
+            kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.1/manifests/ha/install.yaml
+            ```
+
+            ## Release Signatures and Provenance
+
+            All Argo CD container images are signed by cosign.  A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the [documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets) on how to verify.
+
+            ## Release Notes Blog Post
+            For a detailed breakdown of the key changes and improvements in this release, check out the [official blog post](https://blog.argoproj.io/argo-cd-v3-0-release-candidate-a0b933f4e58f)
+
+            ## Upgrading
+
+            If upgrading from a different minor version, be sure to read the [upgrading](https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/) documentation.
+
+            ## Changelog
+            ### Bug fixes
+            * 33f3bc59faeec96204cda3a5ae211be17d15f1ac: fix(appset): stop progressive sync reconciling in a tight loop (#27577) (#29139) (@himeshp)
+            * d358e75b3539c3fc43eb2372317bde7a0d01c55f: fix(appset): verify terminating Applications against the API server (#29042) (#29138) (@himeshp)
+            * ecf37373a9d3a72b259a73abfee7ce27226b960a: fix(controller): cherry-pick treat `timeout.reconciliation=0` as disabled soft expiry (#27683) (#29007) (@aali309)
+            * 978fa65006565baaaf35894918fd661d610f5953: fix(controller): reuse server-side diff result when masking Secret data (#27858) (#29074) (@1ovsss)
+            * f399c84f85fc4e3a19ac1e8314ff111493d26fee: fix(controller): use diff cache when timeout.reconciliation is disabled (cherry-pick #29073 for 3.5) (#29158) (@argo-cd-cherry-pick-bot[bot])
+            * 960bed7f2efcdc8b43fe392dd6d17cf95507c9f2: fix(server): prevent SSD CLI secret mask spoofing (cherry-pick #29089 for 3.5) (#29130) (@argo-cd-cherry-pick-bot[bot])
+            * 9f360f4953a1dc0f3474aa9c482d72366863ea33: fix(ssd): hide secret in last-applied-configuration annotation (#28989) (#29052) (@pjiang-dev)
+            ### Other work
+            * 109ca7ca71139e514114499d294a492e7910a965: chore: bump version to 3.5.1 on release-3.5 branch (#29165) (@github-actions[bot])
+            * b44fbbc2e040e303c18a69182fd5dbe2c36cfdf9: fix(manifest-generate-paths): Consistent gen manifest cache key (#28074 and #29037) (#29049) (@agaudreault)
+
+            **Full Changelog**: https://github.com/argoproj/argo-cd/compare/v3.5.0...v3.5.1
+
+            <a href="https://argoproj.github.io/cd/"><img src="https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png" width="25%" ></a>
+
+          created_at: "2026-08-12T11:24:40Z"
+          draft: false
+          html_url: https://github.com/argoproj/argo-cd/releases/tag/v3.5.1
+          id: 369213663
+          immutable: false
+          mentions_count: 5
+          name: v3.5.1
+          node_id: RE_kwDOBzS60s4WAcDf
+          prerelease: false
+          published_at: "2026-08-12T12:12:58Z"
+          tag_name: v3.5.1
+          tarball_url: https://api.github.com/repos/argoproj/argo-cd/tarball/v3.5.1
+          target_commitish: master
+          updated_at: "2026-08-12T12:14:14Z"
+          upload_url: https://uploads.github.com/repos/argoproj/argo-cd/releases/369213663/assets{?name,label}
+          url: https://api.github.com/repos/argoproj/argo-cd/releases/369213663
+          zipball_url: https://api.github.com/repos/argoproj/argo-cd/zipball/v3.5.1
     helm:
       3.14.3:
         githubRelease:

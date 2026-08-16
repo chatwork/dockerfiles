@@ -9,6 +9,12 @@ LABEL maintainer="ozaki@chatwork.com"
 LABEL maintainer="sakamoto@chatwork.com"
 
 USER root
+
+# The base image LD_PRELOADs jemalloc, which segfaults under QEMU user-mode
+# emulation: every process in the RUN below, down to /bin/sh itself, dies before
+# it starts. Clear it for the build and restore it for runtime.
+ENV LD_PRELOAD=
+
 RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && apt-get update \
     && apt-get install -y --no-install-recommends $buildDeps \
@@ -32,6 +38,8 @@ RUN buildDeps="make gcc g++ libc-dev ruby-dev" \
     && rm -rf /var/lib/apt/lists/* \
     && gem sources --clear-all \
     && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
+
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
 
 USER fluent
 ENTRYPOINT ["tini",  "--", "/bin/entrypoint.sh"]

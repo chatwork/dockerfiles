@@ -392,8 +392,8 @@ dependencies:
       url: https://api.github.com/repos/runatlantis/atlantis/releases/373948402
       zipball_url: https://api.github.com/repos/runatlantis/atlantis/zipball/v0.47.1
   awscli:
-    version: 2.36.32
-    previousVersion: 2.36.31
+    version: 2.36.33
+    previousVersion: 2.36.32
     versions:
     - 2.8.2
     - 2.8.3
@@ -1019,6 +1019,7 @@ dependencies:
     - 2.36.30
     - 2.36.31
     - 2.36.32
+    - 2.36.33
   conftest:
     version: 0.69.0
     previousVersion: 0.68.2
@@ -1709,8 +1710,8 @@ dependencies:
       url: https://api.github.com/repos/open-policy-agent/conftest/releases/364136651
       zipball_url: https://api.github.com/repos/open-policy-agent/conftest/zipball/v0.69.0
   git_lfs:
-    version: 3.7.1
-    previousVersion: 3.7.0
+    version: 3.8.0
+    previousVersion: 3.7.1
     versions:
     - 3.2.0
     - 3.3.0
@@ -1721,53 +1722,54 @@ dependencies:
     - 3.6.1
     - 3.7.0
     - 3.7.1
+    - 3.8.0
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-darwin-amd64-v3.7.1.zip
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-darwin-amd64-v3.8.0.zip
         content_type: application/zip
-        created_at: "2025-10-17T01:04:54Z"
-        digest: sha256:b5b1b641c0648c83661fa9eda991cd3eff945264dabc2cdf411a80dfe7ec0970
-        download_count: 5
-        id: 305262587
-        label: Darwin AMD64
-        name: git-lfs-darwin-amd64-v3.7.1.zip
-        node_id: RA_kwDOAMayZs4SMe_7
-        size: 5790188
-        state: uploaded
-        updated_at: "2025-10-17T01:04:54Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262587
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-darwin-arm64-v3.7.1.zip
-        content_type: application/zip
-        created_at: "2025-10-17T01:04:55Z"
-        digest: sha256:76260fb34f4ee622ff0a66b857e5954aa49c7e343a92e57a1ec4a760618c94b2
+        created_at: "2026-08-27T23:21:31Z"
+        digest: sha256:f1c17aeca0b4eaab9ea606226477dbed3b84b56fe0811a9f967d2ea2b2393c53
         download_count: 7
-        id: 305262593
+        id: 532993568
+        label: Darwin AMD64
+        name: git-lfs-darwin-amd64-v3.8.0.zip
+        node_id: RA_kwDOAMayZs4fxNYg
+        size: 6198060
+        state: uploaded
+        updated_at: "2026-08-27T23:21:32Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993568
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-darwin-arm64-v3.8.0.zip
+        content_type: application/zip
+        created_at: "2026-08-27T23:21:32Z"
+        digest: sha256:caff76a7d070d8160c89bc39b6e85d98f24135b6fed038a3b4de2590d25102d8
+        download_count: 66
+        id: 532993595
         label: Darwin ARM64
-        name: git-lfs-darwin-arm64-v3.7.1.zip
-        node_id: RA_kwDOAMayZs4SMfAB
-        size: 5289015
+        name: git-lfs-darwin-arm64-v3.8.0.zip
+        node_id: RA_kwDOAMayZs4fxNY7
+        size: 5550634
         state: uploaded
-        updated_at: "2025-10-17T01:04:56Z"
+        updated_at: "2026-08-27T23:21:33Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
           events_url: https://api.github.com/users/chrisd8088/events{/privacy}
@@ -1788,514 +1790,547 @@ dependencies:
           type: User
           url: https://api.github.com/users/chrisd8088
           user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262593
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-freebsd-386-v3.7.1.tar.gz
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993595
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-freebsd-386-v3.8.0.tar.gz
         content_type: application/gzip
-        created_at: "2025-10-17T01:04:56Z"
-        digest: sha256:811cf7b7d459ba507e01d01172b05f5bfea2fce9b6b9a22a98f8de87dfd4d1da
-        download_count: 3
-        id: 305262598
-        label: FreeBSD 386
-        name: git-lfs-freebsd-386-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfAG
-        size: 5261072
-        state: uploaded
-        updated_at: "2025-10-17T01:04:57Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262598
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-freebsd-amd64-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:04:57Z"
-        digest: sha256:50931d36415a80f5bd427cbb1e283d4c825a1b24fa6da0481c9fa1b5f5803c6f
-        download_count: 3
-        id: 305262613
-        label: FreeBSD AMD64
-        name: git-lfs-freebsd-amd64-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfAV
-        size: 5492308
-        state: uploaded
-        updated_at: "2025-10-17T01:04:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262613
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-386-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:04:59Z"
-        digest: sha256:a49eed4612d9a33db848db8cb9079b15d5f3116bbca2c1a11cb89a70e3218921
-        download_count: 3
-        id: 305262619
-        label: Linux 386
-        name: git-lfs-linux-386-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfAb
-        size: 5294828
-        state: uploaded
-        updated_at: "2025-10-17T01:04:59Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262619
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-amd64-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:00Z"
-        digest: sha256:1c0b6ee5200ca708c5cebebb18fdeb0e1c98f1af5c1a9cba205a4c0ab5a5ec08
-        download_count: 9
-        id: 305262626
-        label: Linux AMD64
-        name: git-lfs-linux-amd64-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfAi
-        size: 5524590
-        state: uploaded
-        updated_at: "2025-10-17T01:05:01Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262626
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-arm-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:02Z"
-        digest: sha256:567002d2735ceb0e876e326736f1b72895931d5ac156002cc8561b072a4ce9a3
-        download_count: 3
-        id: 305262634
-        label: Linux ARM
-        name: git-lfs-linux-arm-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfAq
-        size: 5262815
-        state: uploaded
-        updated_at: "2025-10-17T01:05:03Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262634
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-arm64-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:03Z"
-        digest: sha256:73a9c90eeb4312133a63c3eaee0c38c019ea7bfa0953d174809d25b18588dd8d
-        download_count: 5
-        id: 305262644
-        label: Linux ARM64
-        name: git-lfs-linux-arm64-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfA0
-        size: 5025763
-        state: uploaded
-        updated_at: "2025-10-17T01:05:04Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262644
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-loong64-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:05Z"
-        digest: sha256:10c300a81968b070e331d36abcf21da18e478b17f4a61c009eb9d2b50374132c
-        download_count: 3
-        id: 305262649
-        label: Linux 64-bit LoongArch
-        name: git-lfs-linux-loong64-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfA5
-        size: 5197855
-        state: uploaded
-        updated_at: "2025-10-17T01:05:05Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262649
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-ppc64le-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:06Z"
-        digest: sha256:100fbefdd86722dafd56737121510289ece9574c7bb8ec01b4633f8892acc427
-        download_count: 3
-        id: 305262659
-        label: Linux Little-endian 64-bit PowerPC
-        name: git-lfs-linux-ppc64le-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfBD
-        size: 5074793
-        state: uploaded
-        updated_at: "2025-10-17T01:05:07Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262659
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-riscv64-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:07Z"
-        digest: sha256:4e17b28e64416b680a68cb2ac3e3514cecb86548603c78774519b26686683928
-        download_count: 3
-        id: 305262666
-        label: Linux 64-bit RISC-V
-        name: git-lfs-linux-riscv64-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfBK
-        size: 5200342
-        state: uploaded
-        updated_at: "2025-10-17T01:05:08Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262666
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-s390x-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:09Z"
-        digest: sha256:d4b68db5d7cc34395b8d6c392326aeff98a297bde2053625560df6c76eb97c69
-        download_count: 3
-        id: 305262670
-        label: Linux S390X
-        name: git-lfs-linux-s390x-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfBO
-        size: 5444986
-        state: uploaded
-        updated_at: "2025-10-17T01:05:10Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262670
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-v3.7.1.tar.gz
-        content_type: application/gzip
-        created_at: "2025-10-17T01:05:10Z"
-        digest: sha256:8f56058622edfea1d111e50e9844ef2f5ce670b2dbe4d55d48e765c943af4351
-        download_count: 6
-        id: 305262677
-        label: Source
-        name: git-lfs-v3.7.1.tar.gz
-        node_id: RA_kwDOAMayZs4SMfBV
-        size: 713503
-        state: uploaded
-        updated_at: "2025-10-17T01:05:11Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262677
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-windows-386-v3.7.1.zip
-        content_type: application/zip
-        created_at: "2025-10-17T01:05:11Z"
-        digest: sha256:06c05c06523abf3930301b3022527ad881b1a7f8bf036ed6d93c8e68569041bb
-        download_count: 4
-        id: 305262680
-        label: Windows 386
-        name: git-lfs-windows-386-v3.7.1.zip
-        node_id: RA_kwDOAMayZs4SMfBY
-        size: 5316883
-        state: uploaded
-        updated_at: "2025-10-17T01:05:12Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262680
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-windows-amd64-v3.7.1.zip
-        content_type: application/zip
-        created_at: "2025-10-17T01:05:13Z"
-        digest: sha256:8683cdc3d6c029b49393dcebbaa6265bd6efd9abdcf837be855b4cd42e5e80b6
-        download_count: 5
-        id: 305262684
-        label: Windows AMD64
-        name: git-lfs-windows-amd64-v3.7.1.zip
-        node_id: RA_kwDOAMayZs4SMfBc
-        size: 5469282
-        state: uploaded
-        updated_at: "2025-10-17T01:05:13Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262684
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-windows-arm64-v3.7.1.zip
-        content_type: application/zip
-        created_at: "2025-10-17T01:05:14Z"
-        digest: sha256:9441383a3928a7f387223711929292a46ace95580ceed443d61e7b8a4d9615c3
-        download_count: 4
-        id: 305262695
-        label: Windows ARM64
-        name: git-lfs-windows-arm64-v3.7.1.zip
-        node_id: RA_kwDOAMayZs4SMfBn
-        size: 4936229
-        state: uploaded
-        updated_at: "2025-10-17T01:05:15Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262695
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-windows-v3.7.1.exe
-        content_type: application/octet-stream
-        created_at: "2025-10-17T01:05:16Z"
-        digest: sha256:bcd9a40a1ab8e9bdb948d05b736c8129001ba167627d04384aa68086847830a9
-        download_count: 3
-        id: 305262703
-        label: Windows Installer
-        name: git-lfs-windows-v3.7.1.exe
-        node_id: RA_kwDOAMayZs4SMfBv
-        size: 12124248
-        state: uploaded
-        updated_at: "2025-10-17T01:05:18Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
-          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
-          followers_url: https://api.github.com/users/chrisd8088/followers
-          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
-          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/chrisd8088
-          id: 28857117
-          login: chrisd8088
-          node_id: MDQ6VXNlcjI4ODU3MTE3
-          organizations_url: https://api.github.com/users/chrisd8088/orgs
-          received_events_url: https://api.github.com/users/chrisd8088/received_events
-          repos_url: https://api.github.com/users/chrisd8088/repos
-          site_admin: true
-          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
-          type: User
-          url: https://api.github.com/users/chrisd8088
-          user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305262703
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/hashes.asc
-        content_type: text/plain
-        created_at: "2025-10-17T02:01:07Z"
-        digest: sha256:5b28310a24b404f241a6ce25bf528918a4192a7fff083c1b14779bff3a6e8729
+        created_at: "2026-08-27T23:21:34Z"
+        digest: sha256:e9690666b13fbcbaafde1f51a79e480816490a6073706a48b157c15f9c9e13a8
         download_count: 2
-        id: 305283132
+        id: 532993621
+        label: FreeBSD 386
+        name: git-lfs-freebsd-386-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNZV
+        size: 5690465
+        state: uploaded
+        updated_at: "2026-08-27T23:21:35Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993621
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-freebsd-amd64-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:35Z"
+        digest: sha256:f1df7a374593ddc5c9b3fd960cb0614d58c2e6d2c9b89fbc1eb6a916858c74d6
+        download_count: 2
+        id: 532993656
+        label: FreeBSD AMD64
+        name: git-lfs-freebsd-amd64-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNZ4
+        size: 5880880
+        state: uploaded
+        updated_at: "2026-08-27T23:21:36Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993656
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-386-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:37Z"
+        digest: sha256:5f6f5f9c53f2f517546486a8aa9cc8c34b958a1c9c167797aa70a44ac4a3da44
+        download_count: 2
+        id: 532993694
+        label: Linux 386
+        name: git-lfs-linux-386-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNae
+        size: 5727172
+        state: uploaded
+        updated_at: "2026-08-27T23:21:38Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993694
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-amd64-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:39Z"
+        digest: sha256:e455e00f15d9b95661b8d53498ffb0c3367962cf1ec73c31ab7369516cd6ab8d
+        download_count: 69
+        id: 532993734
+        label: Linux AMD64
+        name: git-lfs-linux-amd64-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNbG
+        size: 5909255
+        state: uploaded
+        updated_at: "2026-08-27T23:21:39Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993734
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-arm-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:40Z"
+        digest: sha256:67144f93c2342f46456d22dbf33077f54e0581cb91f2966393151871ca328553
+        download_count: 2
+        id: 532993782
+        label: Linux ARM
+        name: git-lfs-linux-arm-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNb2
+        size: 5675090
+        state: uploaded
+        updated_at: "2026-08-27T23:21:41Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993782
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-arm64-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:42Z"
+        digest: sha256:ac9c8efac980bb0505ead384d087e2acb6486fd8498691a2165fa174ec6118c2
+        download_count: 19
+        id: 532993825
+        label: Linux ARM64
+        name: git-lfs-linux-arm64-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNch
+        size: 5341074
+        state: uploaded
+        updated_at: "2026-08-27T23:21:42Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993825
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-loong64-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:43Z"
+        digest: sha256:7daa0d9db09a2dbb3b159834d1a5b3e8517ea7ac4cbc123f670d2b0b34cc7aea
+        download_count: 2
+        id: 532993852
+        label: Linux 64-bit LoongArch
+        name: git-lfs-linux-loong64-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNc8
+        size: 5614107
+        state: uploaded
+        updated_at: "2026-08-27T23:21:44Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993852
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-ppc64le-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:45Z"
+        digest: sha256:fdd988653b956922f163b8e7601e255e8c64a52eabe0dff8eec756f15213b304
+        download_count: 2
+        id: 532993876
+        label: Linux Little-endian 64-bit PowerPC
+        name: git-lfs-linux-ppc64le-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNdU
+        size: 5416905
+        state: uploaded
+        updated_at: "2026-08-27T23:21:46Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993876
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-riscv64-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:46Z"
+        digest: sha256:7a6aa67edb57b3a2e35437c97977b1a3dd2e40b30d78cd7c429235967bfe9c5a
+        download_count: 2
+        id: 532993896
+        label: Linux 64-bit RISC-V
+        name: git-lfs-linux-riscv64-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNdo
+        size: 5553790
+        state: uploaded
+        updated_at: "2026-08-27T23:21:47Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993896
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-s390x-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:48Z"
+        digest: sha256:6fd83c1381c7085f6b32aa615dcb68a366d037c7c2502e49e99291bda06a5c08
+        download_count: 2
+        id: 532993913
+        label: Linux S390X
+        name: git-lfs-linux-s390x-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNd5
+        size: 5807820
+        state: uploaded
+        updated_at: "2026-08-27T23:21:49Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993913
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:49Z"
+        digest: sha256:4f75492c6832038fa73d39a45316657208bb6caa23b273451cb4ec2358d42ccb
+        download_count: 5
+        id: 532993923
+        label: Source
+        name: git-lfs-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNeD
+        size: 748916
+        state: uploaded
+        updated_at: "2026-08-27T23:21:50Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993923
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-vendor-v3.8.0.tar.gz
+        content_type: application/gzip
+        created_at: "2026-08-27T23:21:50Z"
+        digest: sha256:28c49d50bea97d0b860fd1599cc5ab45aac937fd31125db8374bf149bb95622f
+        download_count: 2
+        id: 532993935
+        label: Source with Vendored Modules
+        name: git-lfs-vendor-v3.8.0.tar.gz
+        node_id: RA_kwDOAMayZs4fxNeP
+        size: 3598783
+        state: uploaded
+        updated_at: "2026-08-27T23:21:51Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993935
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-386-v3.8.0.zip
+        content_type: application/zip
+        created_at: "2026-08-27T23:21:52Z"
+        digest: sha256:657337f2ee95c2f2e5e431eb7cf9de3481346f11d708ce116c8a96a622288386
+        download_count: 2
+        id: 532993956
+        label: Windows 386
+        name: git-lfs-windows-386-v3.8.0.zip
+        node_id: RA_kwDOAMayZs4fxNek
+        size: 5770441
+        state: uploaded
+        updated_at: "2026-08-27T23:21:52Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993956
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-amd64-v3.8.0.zip
+        content_type: application/zip
+        created_at: "2026-08-27T23:21:53Z"
+        digest: sha256:b62e7b8ceddee635f691233d77de8eaa4b213e9209e0173811d8cfa77f7882c1
+        download_count: 3
+        id: 532993969
+        label: Windows AMD64
+        name: git-lfs-windows-amd64-v3.8.0.zip
+        node_id: RA_kwDOAMayZs4fxNex
+        size: 5862396
+        state: uploaded
+        updated_at: "2026-08-27T23:21:54Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993969
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-arm64-v3.8.0.zip
+        content_type: application/zip
+        created_at: "2026-08-27T23:21:55Z"
+        digest: sha256:72403a96eae6689c3a4038c99e5d9e0938ef5552c71a234aef65ef0c314af081
+        download_count: 2
+        id: 532994000
+        label: Windows ARM64
+        name: git-lfs-windows-arm64-v3.8.0.zip
+        node_id: RA_kwDOAMayZs4fxNfQ
+        size: 5260326
+        state: uploaded
+        updated_at: "2026-08-27T23:21:55Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532994000
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-v3.8.0.exe
+        content_type: application/octet-stream
+        created_at: "2026-08-27T23:21:56Z"
+        digest: sha256:aa2d69214905d6b348f1b038beb2d68e4828342f9b3fe47dae5a5f023823fe92
+        download_count: 25
+        id: 532994040
+        label: Windows Installer
+        name: git-lfs-windows-v3.8.0.exe
+        node_id: RA_kwDOAMayZs4fxNf4
+        size: 13245480
+        state: uploaded
+        updated_at: "2026-08-27T23:21:58Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+          events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+          followers_url: https://api.github.com/users/chrisd8088/followers
+          following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+          gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/chrisd8088
+          id: 28857117
+          login: chrisd8088
+          node_id: MDQ6VXNlcjI4ODU3MTE3
+          organizations_url: https://api.github.com/users/chrisd8088/orgs
+          received_events_url: https://api.github.com/users/chrisd8088/received_events
+          repos_url: https://api.github.com/users/chrisd8088/repos
+          site_admin: true
+          starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+          type: User
+          url: https://api.github.com/users/chrisd8088
+          user_view_type: public
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532994040
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/hashes.asc
+        content_type: text/plain
+        created_at: "2026-08-28T00:09:24Z"
+        digest: sha256:fdccbf3a68456d4b6a1bec0acc088e2799abf0bf13bd91c8559bf8f15b36ba9f
+        download_count: 1
+        id: 533030050
         label: Signed Hashes
         name: hashes.asc
-        node_id: RA_kwDOAMayZs4SMkA8
-        size: 22020
+        node_id: RA_kwDOAMayZs4fxWSi
+        size: 23233
         state: uploaded
-        updated_at: "2025-10-17T02:01:08Z"
+        updated_at: "2026-08-28T00:09:24Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
           events_url: https://api.github.com/users/chrisd8088/events{/privacy}
@@ -2316,19 +2351,19 @@ dependencies:
           type: User
           url: https://api.github.com/users/chrisd8088
           user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305283132
-      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/sha256sums.asc
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/533030050
+      - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/sha256sums.asc
         content_type: text/plain
-        created_at: "2025-10-17T02:01:08Z"
-        digest: sha256:4b34ca0f37ff3955a4b8e217b75d4a0b744a13ee6d442989f7ae3c6e7cec07eb
-        download_count: 5
-        id: 305283133
+        created_at: "2026-08-28T00:09:25Z"
+        digest: sha256:ca28b1768b1889964350910aabe304f37c9ef3245e90520309c13118c5ff8e07
+        download_count: 24
+        id: 533030058
         label: Signed SHA-256 Hashes
         name: sha256sums.asc
-        node_id: RA_kwDOAMayZs4SMkA9
-        size: 2526
+        node_id: RA_kwDOAMayZs4fxWSq
+        size: 2621
         state: uploaded
-        updated_at: "2025-10-17T02:01:08Z"
+        updated_at: "2026-08-28T00:09:25Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
           events_url: https://api.github.com/users/chrisd8088/events{/privacy}
@@ -2349,8 +2384,8 @@ dependencies:
           type: User
           url: https://api.github.com/users/chrisd8088
           user_view_type: public
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/305283133
-      assets_url: https://api.github.com/repos/git-lfs/git-lfs/releases/255184872/assets
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/533030058
+      assets_url: https://api.github.com/repos/git-lfs/git-lfs/releases/378176431/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
         events_url: https://api.github.com/users/chrisd8088/events{/privacy}
@@ -2371,49 +2406,148 @@ dependencies:
         type: User
         url: https://api.github.com/users/chrisd8088
         user_view_type: public
-      body: "This release introduces security fixes for Linux, macOS, and Windows\r\nsystems,
-        which have been collectively assigned CVE-2025-26625.\r\n\r\nWhen populating
-        a Git repository's working tree with the contents of\r\nGit LFS objects, certain
-        Git LFS commands may write to files visible\r\noutside the current Git working
-        tree if symbolic or hard links exist\r\nwhich collide with the paths of files
-        tracked by Git LFS.\r\n\r\nGit LFS has resolved this problem by revising the
-        `git lfs checkout` and\r\n`git lfs pull` commands so that they check for symbolic
-        links in the same\r\nmanner as performed by Git before writing to files in
-        the working tree.\r\nThese commands now also remove existing files in the
-        working tree before\r\nwriting new files in their place.\r\n\r\nAs well, Git
-        LFS has resolved a problem whereby the `git lfs checkout` and\r\n`git lfs
-        pull` commands, when run in a bare repository, could write to\r\nfiles visible
-        outside the repository.  While a specific and relatively\r\nunlikely set of
-        conditions were required for this to occur, it is no\r\nlonger possible under
-        any circumstances.\r\n\r\nWe would like to extend a special thanks to the
-        following open-source\r\ncontributors:\r\n\r\n* Apple Product Security for
-        reporting this to us responsibly\r\n\r\n### Bugs\r\n\r\n* Detect symbolic
-        links on checkout and pull (@chrisd8088)\r\n\r\n### Misc\r\n\r\n* Upgrade
-        to Go 1.25 (@chrisd8088)\r\n## Packages\r\n\r\nUp to date packages are available
-        on [PackageCloud](https://packagecloud.io/github/git-lfs) and [Homebrew](http://brew.sh/).\r\n\r\n[RPM
-        RHEL 8/Rocky Linux 8](https://packagecloud.io/github/git-lfs/packages/el/8/git-lfs-3.7.1-1.el8.x86_64.rpm/download)\r\n[RPM
-        RHEL 9/Rocky Linux 9](https://packagecloud.io/github/git-lfs/packages/el/9/git-lfs-3.7.1-1.el9.x86_64.rpm/download)\r\n[RPM
-        RHEL 10/Rocky Linux 10](https://packagecloud.io/github/git-lfs/packages/el/10/git-lfs-3.7.1-1.el10.x86_64.rpm/download)\r\n[Debian
-        11](https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.7.1_amd64.deb/download)\r\n[Debian
-        12](https://packagecloud.io/github/git-lfs/packages/debian/bookworm/git-lfs_3.7.1_amd64.deb/download)\r\n\r\n##
-        SHA-256 hashes:\r\n**git-lfs-darwin-amd64-v3.7.1.zip**\r\nb5b1b641c0648c83661fa9eda991cd3eff945264dabc2cdf411a80dfe7ec0970\r\n\r\n**git-lfs-darwin-arm64-v3.7.1.zip**\r\n76260fb34f4ee622ff0a66b857e5954aa49c7e343a92e57a1ec4a760618c94b2\r\n\r\n**git-lfs-freebsd-386-v3.7.1.tar.gz**\r\n811cf7b7d459ba507e01d01172b05f5bfea2fce9b6b9a22a98f8de87dfd4d1da\r\n\r\n**git-lfs-freebsd-amd64-v3.7.1.tar.gz**\r\n50931d36415a80f5bd427cbb1e283d4c825a1b24fa6da0481c9fa1b5f5803c6f\r\n\r\n**git-lfs-linux-386-v3.7.1.tar.gz**\r\na49eed4612d9a33db848db8cb9079b15d5f3116bbca2c1a11cb89a70e3218921\r\n\r\n**git-lfs-linux-amd64-v3.7.1.tar.gz**\r\n1c0b6ee5200ca708c5cebebb18fdeb0e1c98f1af5c1a9cba205a4c0ab5a5ec08\r\n\r\n**git-lfs-linux-arm-v3.7.1.tar.gz**\r\n567002d2735ceb0e876e326736f1b72895931d5ac156002cc8561b072a4ce9a3\r\n\r\n**git-lfs-linux-arm64-v3.7.1.tar.gz**\r\n73a9c90eeb4312133a63c3eaee0c38c019ea7bfa0953d174809d25b18588dd8d\r\n\r\n**git-lfs-linux-loong64-v3.7.1.tar.gz**\r\n10c300a81968b070e331d36abcf21da18e478b17f4a61c009eb9d2b50374132c\r\n\r\n**git-lfs-linux-ppc64le-v3.7.1.tar.gz**\r\n100fbefdd86722dafd56737121510289ece9574c7bb8ec01b4633f8892acc427\r\n\r\n**git-lfs-linux-riscv64-v3.7.1.tar.gz**\r\n4e17b28e64416b680a68cb2ac3e3514cecb86548603c78774519b26686683928\r\n\r\n**git-lfs-linux-s390x-v3.7.1.tar.gz**\r\nd4b68db5d7cc34395b8d6c392326aeff98a297bde2053625560df6c76eb97c69\r\n\r\n**git-lfs-v3.7.1.tar.gz**\r\n8f56058622edfea1d111e50e9844ef2f5ce670b2dbe4d55d48e765c943af4351\r\n\r\n**git-lfs-windows-386-v3.7.1.zip**\r\n06c05c06523abf3930301b3022527ad881b1a7f8bf036ed6d93c8e68569041bb\r\n\r\n**git-lfs-windows-amd64-v3.7.1.zip**\r\n8683cdc3d6c029b49393dcebbaa6265bd6efd9abdcf837be855b4cd42e5e80b6\r\n\r\n**git-lfs-windows-arm64-v3.7.1.zip**\r\n9441383a3928a7f387223711929292a46ace95580ceed443d61e7b8a4d9615c3\r\n\r\n**git-lfs-windows-v3.7.1.exe**\r\nbcd9a40a1ab8e9bdb948d05b736c8129001ba167627d04384aa68086847830a9\r\n\r\n**hashes.asc**\r\n5b28310a24b404f241a6ce25bf528918a4192a7fff083c1b14779bff3a6e8729\r\n\r\n**sha256sums.asc**\r\n4b34ca0f37ff3955a4b8e217b75d4a0b744a13ee6d442989f7ae3c6e7cec07eb\r\n"
-      created_at: "2025-10-16T23:06:33Z"
+      body: "This release is a feature release which adds support for\r\nzstd-compressed
+        object downloads and introduces several new options,\r\nincluding the ability
+        to fetch Git LFS objects for a list of references\r\npiped to standard input
+        and the ability to limit how long Git LFS\r\nwill wait when instructed by
+        a server to retry an HTTP request.\r\n\r\nGit LFS now determines the case
+        sensitivity of filesystems from the\r\n`core.ignoreCase` Git configuration
+        option, respects global and\r\nsystem-wide Git attribute files when migrating
+        repositories, and\r\ntries the default Git LFS HTTP URL derived from an SSH
+        URL when\r\nHTTP authentication via SSH is not available.\r\n\r\nThis Git
+        LFS release improves SSH session reuse, parses invalid\r\ncustom transfer
+        adapter configurations and invalid Git attribute\r\npatterns without crashing,
+        handles file deletion conflicts on Windows\r\nin the same manner as Git, resolves
+        remote-tracking branches for\r\ndownloads correctly, avoids re-reading working
+        tree files during\r\n`clean` filter operations since the files may be in an
+        inconsistent\r\nstate, and terminates lengthy or endless HTTP authentication
+        sequences\r\nafter a limited number of requests.\r\n\r\nNote that we now provide
+        official packages and support for versions\r\nof Linux distributions based
+        on Debian 13 (\"trixie\").  We also now\r\nprovide a source code package with
+        all of our Go module dependencies\r\nin a `vendor` directory.\r\n\r\nThis
+        release is built using Go v1.27 and therefore requires macOS\r\nversion 13
+        (Ventura) or later on macOS systems.\r\n\r\nWe would like to extend special
+        thanks to the following open-source\r\ncontributors:\r\n\r\n* @aymanbagabas
+        for rectifying our authentication timeouts on 32-bit systems\r\n* @bk2204
+        for augmenting our filesystem case-sensitivity support\r\n* @cynix for solving
+        a race condition in our `clean` filter\r\n* @Diamondemon for improving Git
+        attribute parsing in our `migrate` command\r\n* @fzlzjerry for resolving a
+        crash in our Git attribute parsing code\r\n* @joshfriend for multiple corrections
+        to our SSH and transfer queue code\r\n* @jylenhof for describing a new installation
+        utility in our documentation\r\n* @lawrence3699 for making our `unlock` command
+        ignore missing files\r\n* @manturovDan and @tamaracvjetkovic for fixing an
+        infinite HTTP recursion bug\r\n* @markshep-wbg for ensuring our locking commands
+        honour the `--remote` option\r\n* @mzr for introducing support for zstd-compressed
+        HTTP object downloads\r\n* @opohorel for correcting our lock verification
+        error messages\r\n* @osasisorae for standardizing the ways to output our main
+        manual page\r\n* @sambostock for editing the documentation of our `track`
+        command\r\n* @stanhu for helping our `smudge` filter avoid deletion conflicts
+        on Windows\r\n* @star-ga for adding advice on case-insensitive filename patterns
+        to our FAQ\r\n* @TheRootDaemon for creating an option to limit HTTP retry
+        delay times\r\n* @vikhik for documenting our `--no-rewrite` migration option
+        more clearly\r\n* @ypfaff for preventing duplication of extra HTTP headers
+        in our retry logic\r\n* @zbleness for implementing a fallback to our hybrid
+        SSH/HTTP authentication\r\n* @zh1C for revising our `pointer` command to support
+        pointer extensions\r\n\r\n### Features\r\n\r\n* Enhance LFS transfer retries
+        with maximum retry time limit #6304 (@TheRootDaemon)\r\n* fall back to guessed
+        endpoint when git-lfs-authenticate is unavailable #6286 (@zbleness)\r\n* add
+        lfs.httpDownloadEncoding with zstd and gzip support #6196 (@mzr)\r\n* Use
+        `core.ignorecase` to determine case sensitivity #6212 (@bk2204)\r\n* Full
+        support of special attributes in `migrate` #6170 (@Diamondemon)\r\n* feat:
+        git lfs pointer support extensions #6093 (@zh1C)\r\n* fetch: allow providing
+        refs via stdin #6088 (@larsxschneider)\r\n\r\n### Bugs\r\n\r\n* gitattr: handle
+        invalid wildmatch patterns #6324 (@fzlzjerry)\r\n* filter-process: Ignore
+        file size in working copy when cleaning #6011 (@cynix)\r\n* Handle unknown
+        object sizes in progress log and fix throttling #6288 (@chrisd8088)\r\n* Fix
+        standalone adapter crash and ignore invalid custom adapter names #6252 (@chrisd8088)\r\n*
+        Reuse SSH sessions when possible and only close at client exit #6266 (@chrisd8088)\r\n*
+        locking: ignore missing files after unlock #6244 (@lawrence3699)\r\n* Fix
+        remote ref resolution for download operations #6250 (@larsxschneider)\r\n*
+        Fix concurrent map/struct races in sshCache and lazyManifest #6243 (@joshfriend)\r\n*
+        Fix `--remote` option when a git push remote is set #6228 (@markshep-wbg)\r\n*
+        Fix adapter reuse when server returns empty transfer adapter name #6240 (@joshfriend)\r\n*
+        commands: fix format string type mismatch in lockverifier #6237 (@opohorel)\r\n*
+        Fix extra header duplication on retry #6204 (@ypfaff)\r\n* tools: add RobustRemove()
+        for Windows to handle file lock errors #6221 (@stanhu)\r\n* transform DoWithAuth
+        from recursive to loop approach to prevent endless authentication attempts
+        #6018 (@manturovDan)\r\n* lfshttp: fix auth response ExpiresIn data type #6200
+        (@aymanbagabas)\r\n* commands: show root help for -h #6172 (@osasisorae)\r\n*
+        Handle `git lfs checkout` merge conflict option file paths correctly #6136
+        (@chrisd8088)\r\n* Support Macro in migrate `--fixup` #6126 (@Diamondemon)\r\n\r\n###
+        Misc\r\n\r\n* Add missing patch version entries in primary change log #6334
+        (@chrisd8088)\r\n* Update Linux distributions and include Debian ARM64 links
+        in releases #6333 (@chrisd8088)\r\n* Upgrade to Go v1.27 #6332 (@chrisd8088)\r\n*
+        Remove stale Linux distributions before v3.8.0 release #6291 (@chrisd8088)\r\n*
+        t/t-pre-push.sh: use calc\\_oid\\_file in URL optimization test #6287 (@larsxschneider)\r\n*
+        Update tests to dynamically match internal program limits #6285 (@chrisd8088)\r\n*
+        Update Go modules and Dependabot configuration #6278 (@chrisd8088)\r\n* Add
+        corrupt object download tests #6274 (@chrisd8088)\r\n* Fix and revise chunked
+        transfer encoding test #6273 (@chrisd8088)\r\n* Temporarily restore concurrency
+        limit to historical fixed default #6258 (@chrisd8088)\r\n* Simplify client
+        structure initializations #6254 (@chrisd8088)\r\n* Use consistent exit functions
+        for all commands #6255 (@chrisd8088)\r\n* Add `--add-i386` option to RPM build
+        script #6251 (@chrisd8088)\r\n* Update Linux distribution package list for
+        v3.8.0 release #6248 (@chrisd8088)\r\n* Scale default concurrent transfers
+        by CPU count #6241 (@joshfriend)\r\n* Fix and refactor HTTP encoding and retry
+        tests #6207 (@chrisd8088)\r\n* Update Windows release signing action #6222
+        (@chrisd8088)\r\n* Simplify object storage directory traversals #6223 (@chrisd8088)\r\n*
+        Upgrade to Go v1.26 and build separate Windows resource files on 386 and amd64
+        platforms #6220 (@chrisd8088)\r\n* Various gopls lint cleanups for package
+        `git` #6211 (@bk2204)\r\n* Log additional HTTP request headers when tracing
+        #6195 (@chrisd8088)\r\n* Docs: recommend bracket-glob patterns for cross-platform
+        case safety in FAQ (refs #6187) #6192 (@star-ga)\r\n* Improve formatting of
+        manual page synopses #6188 (@chrisd8088)\r\n* docs(README): add mise alternative
+        method installation #6169 (@jylenhof)\r\n* Makefile,script: add vendored source
+        release asset #6159 (@chrisd8088)\r\n* Correct and improve `grep -v` and `grep
+        -c` usage in tests #6151 (@chrisd8088)\r\n* Add missing backticks around `--no-modify-attrs`
+        #6154 (@sambostock)\r\n* Add missing options to manual pages and make JSON
+        options consistent #6152 (@chrisd8088)\r\n* Detect invalid object IDs and
+        repo names in test functions #6142 (@chrisd8088)\r\n* Use relative paths exclusively
+        for internal checkout and pull operations #6140 (@chrisd8088)\r\n* Fix manual
+        page formatting errors from AsciiDoc conversion #6138 (@chrisd8088)\r\n* Add
+        a FAQ entry re memory usage by Git when cloning #6137 (@chrisd8088)\r\n* docs:
+        Provide clearer instructions for non destructive imports #6111 (@vikhik)\r\n*
+        Upgrade to Go 1.25 #6116 (@chrisd8088)\r\n* commands: use Exit() function
+        to exit with a warning message #6095 (@larsxschneider)\r\n## Packages\r\n\r\nUp
+        to date packages are available on [PackageCloud](https://packagecloud.io/github/git-lfs)
+        and [Homebrew](http://brew.sh/).\r\n\r\n[RPM RHEL 8/Rocky Linux 8](https://packagecloud.io/github/git-lfs/packages/el/8/git-lfs-3.8.0-1.el8.x86_64.rpm/download)\r\n[RPM
+        RHEL 9/Rocky Linux 9](https://packagecloud.io/github/git-lfs/packages/el/9/git-lfs-3.8.0-1.el9.x86_64.rpm/download)\r\n[RPM
+        RHEL 10/Rocky Linux 10](https://packagecloud.io/github/git-lfs/packages/el/10/git-lfs-3.8.0-1.el10.x86_64.rpm/download)\r\n[Debian
+        11 (AMD64)](https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.8.0_amd64.deb/download)\r\n[Debian
+        11 (ARM64)](https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.8.0_arm64.deb/download)\r\n[Debian
+        12 (AMD64)](https://packagecloud.io/github/git-lfs/packages/debian/bookworm/git-lfs_3.8.0_amd64.deb/download)\r\n[Debian
+        12 (ARM64)](https://packagecloud.io/github/git-lfs/packages/debian/bookworm/git-lfs_3.8.0_arm64.deb/download)\r\n[Debian
+        13 (AMD64)](https://packagecloud.io/github/git-lfs/packages/debian/trixie/git-lfs_3.8.0_amd64.deb/download)\r\n[Debian
+        13 (ARM64)](https://packagecloud.io/github/git-lfs/packages/debian/trixie/git-lfs_3.8.0_arm64.deb/download)\r\n\r\n##
+        SHA-256 hashes:\r\n**git-lfs-darwin-amd64-v3.8.0.zip**\r\nf1c17aeca0b4eaab9ea606226477dbed3b84b56fe0811a9f967d2ea2b2393c53\r\n\r\n**git-lfs-darwin-arm64-v3.8.0.zip**\r\ncaff76a7d070d8160c89bc39b6e85d98f24135b6fed038a3b4de2590d25102d8\r\n\r\n**git-lfs-freebsd-386-v3.8.0.tar.gz**\r\ne9690666b13fbcbaafde1f51a79e480816490a6073706a48b157c15f9c9e13a8\r\n\r\n**git-lfs-freebsd-amd64-v3.8.0.tar.gz**\r\nf1df7a374593ddc5c9b3fd960cb0614d58c2e6d2c9b89fbc1eb6a916858c74d6\r\n\r\n**git-lfs-linux-386-v3.8.0.tar.gz**\r\n5f6f5f9c53f2f517546486a8aa9cc8c34b958a1c9c167797aa70a44ac4a3da44\r\n\r\n**git-lfs-linux-amd64-v3.8.0.tar.gz**\r\ne455e00f15d9b95661b8d53498ffb0c3367962cf1ec73c31ab7369516cd6ab8d\r\n\r\n**git-lfs-linux-arm-v3.8.0.tar.gz**\r\n67144f93c2342f46456d22dbf33077f54e0581cb91f2966393151871ca328553\r\n\r\n**git-lfs-linux-arm64-v3.8.0.tar.gz**\r\nac9c8efac980bb0505ead384d087e2acb6486fd8498691a2165fa174ec6118c2\r\n\r\n**git-lfs-linux-loong64-v3.8.0.tar.gz**\r\n7daa0d9db09a2dbb3b159834d1a5b3e8517ea7ac4cbc123f670d2b0b34cc7aea\r\n\r\n**git-lfs-linux-ppc64le-v3.8.0.tar.gz**\r\nfdd988653b956922f163b8e7601e255e8c64a52eabe0dff8eec756f15213b304\r\n\r\n**git-lfs-linux-riscv64-v3.8.0.tar.gz**\r\n7a6aa67edb57b3a2e35437c97977b1a3dd2e40b30d78cd7c429235967bfe9c5a\r\n\r\n**git-lfs-linux-s390x-v3.8.0.tar.gz**\r\n6fd83c1381c7085f6b32aa615dcb68a366d037c7c2502e49e99291bda06a5c08\r\n\r\n**git-lfs-v3.8.0.tar.gz**\r\n4f75492c6832038fa73d39a45316657208bb6caa23b273451cb4ec2358d42ccb\r\n\r\n**git-lfs-vendor-v3.8.0.tar.gz**\r\n28c49d50bea97d0b860fd1599cc5ab45aac937fd31125db8374bf149bb95622f\r\n\r\n**git-lfs-windows-386-v3.8.0.zip**\r\n657337f2ee95c2f2e5e431eb7cf9de3481346f11d708ce116c8a96a622288386\r\n\r\n**git-lfs-windows-amd64-v3.8.0.zip**\r\nb62e7b8ceddee635f691233d77de8eaa4b213e9209e0173811d8cfa77f7882c1\r\n\r\n**git-lfs-windows-arm64-v3.8.0.zip**\r\n72403a96eae6689c3a4038c99e5d9e0938ef5552c71a234aef65ef0c314af081\r\n\r\n**git-lfs-windows-v3.8.0.exe**\r\naa2d69214905d6b348f1b038beb2d68e4828342f9b3fe47dae5a5f023823fe92\r\n\r\n**hashes.asc**\r\nfdccbf3a68456d4b6a1bec0acc088e2799abf0bf13bd91c8559bf8f15b36ba9f\r\n\r\n**sha256sums.asc**\r\nca28b1768b1889964350910aabe304f37c9ef3245e90520309c13118c5ff8e07\r\n"
+      created_at: "2026-08-27T19:31:19Z"
       draft: false
-      html_url: https://github.com/git-lfs/git-lfs/releases/tag/v3.7.1
-      id: 255184872
+      html_url: https://github.com/git-lfs/git-lfs/releases/tag/v3.8.0
+      id: 378176431
       immutable: false
-      mentions_count: 1
-      name: v3.7.1
-      node_id: RE_kwDOAMayZs4PNc_o
+      mentions_count: 24
+      name: v3.8.0
+      node_id: RE_kwDOAMayZs4WioOv
       prerelease: false
-      published_at: "2025-10-17T02:46:05Z"
-      tag_name: v3.7.1
-      tarball_url: https://api.github.com/repos/git-lfs/git-lfs/tarball/v3.7.1
+      published_at: "2026-08-28T00:23:08Z"
+      reactions:
+        "+1": 1
+        "-1": 0
+        confused: 0
+        eyes: 0
+        heart: 0
+        hooray: 0
+        laugh: 0
+        rocket: 0
+        total_count: 1
+        url: https://api.github.com/repos/git-lfs/git-lfs/releases/378176431/reactions
+      tag_name: v3.8.0
+      tarball_url: https://api.github.com/repos/git-lfs/git-lfs/tarball/v3.8.0
       target_commitish: main
-      updated_at: "2025-10-17T02:46:05Z"
-      upload_url: https://uploads.github.com/repos/git-lfs/git-lfs/releases/255184872/assets{?name,label}
-      url: https://api.github.com/repos/git-lfs/git-lfs/releases/255184872
-      zipball_url: https://api.github.com/repos/git-lfs/git-lfs/zipball/v3.7.1
+      updated_at: "2026-08-28T00:23:08Z"
+      upload_url: https://uploads.github.com/repos/git-lfs/git-lfs/releases/378176431/assets{?name,label}
+      url: https://api.github.com/repos/git-lfs/git-lfs/releases/378176431
+      zipball_url: https://api.github.com/repos/git-lfs/git-lfs/zipball/v3.8.0
   gosu:
     version: "1.19"
     previousVersion: "1.18"
@@ -48916,6 +49050,838 @@ meta:
           upload_url: https://uploads.github.com/repos/git-lfs/git-lfs/releases/255184872/assets{?name,label}
           url: https://api.github.com/repos/git-lfs/git-lfs/releases/255184872
           zipball_url: https://api.github.com/repos/git-lfs/git-lfs/zipball/v3.7.1
+      3.8.0:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-darwin-amd64-v3.8.0.zip
+            content_type: application/zip
+            created_at: "2026-08-27T23:21:31Z"
+            digest: sha256:f1c17aeca0b4eaab9ea606226477dbed3b84b56fe0811a9f967d2ea2b2393c53
+            download_count: 7
+            id: 532993568
+            label: Darwin AMD64
+            name: git-lfs-darwin-amd64-v3.8.0.zip
+            node_id: RA_kwDOAMayZs4fxNYg
+            size: 6198060
+            state: uploaded
+            updated_at: "2026-08-27T23:21:32Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993568
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-darwin-arm64-v3.8.0.zip
+            content_type: application/zip
+            created_at: "2026-08-27T23:21:32Z"
+            digest: sha256:caff76a7d070d8160c89bc39b6e85d98f24135b6fed038a3b4de2590d25102d8
+            download_count: 66
+            id: 532993595
+            label: Darwin ARM64
+            name: git-lfs-darwin-arm64-v3.8.0.zip
+            node_id: RA_kwDOAMayZs4fxNY7
+            size: 5550634
+            state: uploaded
+            updated_at: "2026-08-27T23:21:33Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993595
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-freebsd-386-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:34Z"
+            digest: sha256:e9690666b13fbcbaafde1f51a79e480816490a6073706a48b157c15f9c9e13a8
+            download_count: 2
+            id: 532993621
+            label: FreeBSD 386
+            name: git-lfs-freebsd-386-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNZV
+            size: 5690465
+            state: uploaded
+            updated_at: "2026-08-27T23:21:35Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993621
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-freebsd-amd64-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:35Z"
+            digest: sha256:f1df7a374593ddc5c9b3fd960cb0614d58c2e6d2c9b89fbc1eb6a916858c74d6
+            download_count: 2
+            id: 532993656
+            label: FreeBSD AMD64
+            name: git-lfs-freebsd-amd64-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNZ4
+            size: 5880880
+            state: uploaded
+            updated_at: "2026-08-27T23:21:36Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993656
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-386-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:37Z"
+            digest: sha256:5f6f5f9c53f2f517546486a8aa9cc8c34b958a1c9c167797aa70a44ac4a3da44
+            download_count: 2
+            id: 532993694
+            label: Linux 386
+            name: git-lfs-linux-386-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNae
+            size: 5727172
+            state: uploaded
+            updated_at: "2026-08-27T23:21:38Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993694
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-amd64-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:39Z"
+            digest: sha256:e455e00f15d9b95661b8d53498ffb0c3367962cf1ec73c31ab7369516cd6ab8d
+            download_count: 69
+            id: 532993734
+            label: Linux AMD64
+            name: git-lfs-linux-amd64-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNbG
+            size: 5909255
+            state: uploaded
+            updated_at: "2026-08-27T23:21:39Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993734
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-arm-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:40Z"
+            digest: sha256:67144f93c2342f46456d22dbf33077f54e0581cb91f2966393151871ca328553
+            download_count: 2
+            id: 532993782
+            label: Linux ARM
+            name: git-lfs-linux-arm-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNb2
+            size: 5675090
+            state: uploaded
+            updated_at: "2026-08-27T23:21:41Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993782
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-arm64-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:42Z"
+            digest: sha256:ac9c8efac980bb0505ead384d087e2acb6486fd8498691a2165fa174ec6118c2
+            download_count: 19
+            id: 532993825
+            label: Linux ARM64
+            name: git-lfs-linux-arm64-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNch
+            size: 5341074
+            state: uploaded
+            updated_at: "2026-08-27T23:21:42Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993825
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-loong64-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:43Z"
+            digest: sha256:7daa0d9db09a2dbb3b159834d1a5b3e8517ea7ac4cbc123f670d2b0b34cc7aea
+            download_count: 2
+            id: 532993852
+            label: Linux 64-bit LoongArch
+            name: git-lfs-linux-loong64-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNc8
+            size: 5614107
+            state: uploaded
+            updated_at: "2026-08-27T23:21:44Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993852
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-ppc64le-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:45Z"
+            digest: sha256:fdd988653b956922f163b8e7601e255e8c64a52eabe0dff8eec756f15213b304
+            download_count: 2
+            id: 532993876
+            label: Linux Little-endian 64-bit PowerPC
+            name: git-lfs-linux-ppc64le-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNdU
+            size: 5416905
+            state: uploaded
+            updated_at: "2026-08-27T23:21:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993876
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-riscv64-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:46Z"
+            digest: sha256:7a6aa67edb57b3a2e35437c97977b1a3dd2e40b30d78cd7c429235967bfe9c5a
+            download_count: 2
+            id: 532993896
+            label: Linux 64-bit RISC-V
+            name: git-lfs-linux-riscv64-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNdo
+            size: 5553790
+            state: uploaded
+            updated_at: "2026-08-27T23:21:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993896
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-s390x-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:48Z"
+            digest: sha256:6fd83c1381c7085f6b32aa615dcb68a366d037c7c2502e49e99291bda06a5c08
+            download_count: 2
+            id: 532993913
+            label: Linux S390X
+            name: git-lfs-linux-s390x-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNd5
+            size: 5807820
+            state: uploaded
+            updated_at: "2026-08-27T23:21:49Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993913
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:49Z"
+            digest: sha256:4f75492c6832038fa73d39a45316657208bb6caa23b273451cb4ec2358d42ccb
+            download_count: 5
+            id: 532993923
+            label: Source
+            name: git-lfs-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNeD
+            size: 748916
+            state: uploaded
+            updated_at: "2026-08-27T23:21:50Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993923
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-vendor-v3.8.0.tar.gz
+            content_type: application/gzip
+            created_at: "2026-08-27T23:21:50Z"
+            digest: sha256:28c49d50bea97d0b860fd1599cc5ab45aac937fd31125db8374bf149bb95622f
+            download_count: 2
+            id: 532993935
+            label: Source with Vendored Modules
+            name: git-lfs-vendor-v3.8.0.tar.gz
+            node_id: RA_kwDOAMayZs4fxNeP
+            size: 3598783
+            state: uploaded
+            updated_at: "2026-08-27T23:21:51Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993935
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-386-v3.8.0.zip
+            content_type: application/zip
+            created_at: "2026-08-27T23:21:52Z"
+            digest: sha256:657337f2ee95c2f2e5e431eb7cf9de3481346f11d708ce116c8a96a622288386
+            download_count: 2
+            id: 532993956
+            label: Windows 386
+            name: git-lfs-windows-386-v3.8.0.zip
+            node_id: RA_kwDOAMayZs4fxNek
+            size: 5770441
+            state: uploaded
+            updated_at: "2026-08-27T23:21:52Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993956
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-amd64-v3.8.0.zip
+            content_type: application/zip
+            created_at: "2026-08-27T23:21:53Z"
+            digest: sha256:b62e7b8ceddee635f691233d77de8eaa4b213e9209e0173811d8cfa77f7882c1
+            download_count: 3
+            id: 532993969
+            label: Windows AMD64
+            name: git-lfs-windows-amd64-v3.8.0.zip
+            node_id: RA_kwDOAMayZs4fxNex
+            size: 5862396
+            state: uploaded
+            updated_at: "2026-08-27T23:21:54Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532993969
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-arm64-v3.8.0.zip
+            content_type: application/zip
+            created_at: "2026-08-27T23:21:55Z"
+            digest: sha256:72403a96eae6689c3a4038c99e5d9e0938ef5552c71a234aef65ef0c314af081
+            download_count: 2
+            id: 532994000
+            label: Windows ARM64
+            name: git-lfs-windows-arm64-v3.8.0.zip
+            node_id: RA_kwDOAMayZs4fxNfQ
+            size: 5260326
+            state: uploaded
+            updated_at: "2026-08-27T23:21:55Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532994000
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-v3.8.0.exe
+            content_type: application/octet-stream
+            created_at: "2026-08-27T23:21:56Z"
+            digest: sha256:aa2d69214905d6b348f1b038beb2d68e4828342f9b3fe47dae5a5f023823fe92
+            download_count: 25
+            id: 532994040
+            label: Windows Installer
+            name: git-lfs-windows-v3.8.0.exe
+            node_id: RA_kwDOAMayZs4fxNf4
+            size: 13245480
+            state: uploaded
+            updated_at: "2026-08-27T23:21:58Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/532994040
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/hashes.asc
+            content_type: text/plain
+            created_at: "2026-08-28T00:09:24Z"
+            digest: sha256:fdccbf3a68456d4b6a1bec0acc088e2799abf0bf13bd91c8559bf8f15b36ba9f
+            download_count: 1
+            id: 533030050
+            label: Signed Hashes
+            name: hashes.asc
+            node_id: RA_kwDOAMayZs4fxWSi
+            size: 23233
+            state: uploaded
+            updated_at: "2026-08-28T00:09:24Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/533030050
+          - browser_download_url: https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/sha256sums.asc
+            content_type: text/plain
+            created_at: "2026-08-28T00:09:25Z"
+            digest: sha256:ca28b1768b1889964350910aabe304f37c9ef3245e90520309c13118c5ff8e07
+            download_count: 24
+            id: 533030058
+            label: Signed SHA-256 Hashes
+            name: sha256sums.asc
+            node_id: RA_kwDOAMayZs4fxWSq
+            size: 2621
+            state: uploaded
+            updated_at: "2026-08-28T00:09:25Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+              events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+              followers_url: https://api.github.com/users/chrisd8088/followers
+              following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+              gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/chrisd8088
+              id: 28857117
+              login: chrisd8088
+              node_id: MDQ6VXNlcjI4ODU3MTE3
+              organizations_url: https://api.github.com/users/chrisd8088/orgs
+              received_events_url: https://api.github.com/users/chrisd8088/received_events
+              repos_url: https://api.github.com/users/chrisd8088/repos
+              site_admin: true
+              starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+              type: User
+              url: https://api.github.com/users/chrisd8088
+              user_view_type: public
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/assets/533030058
+          assets_url: https://api.github.com/repos/git-lfs/git-lfs/releases/378176431/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/28857117?v=4
+            events_url: https://api.github.com/users/chrisd8088/events{/privacy}
+            followers_url: https://api.github.com/users/chrisd8088/followers
+            following_url: https://api.github.com/users/chrisd8088/following{/other_user}
+            gists_url: https://api.github.com/users/chrisd8088/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/chrisd8088
+            id: 28857117
+            login: chrisd8088
+            node_id: MDQ6VXNlcjI4ODU3MTE3
+            organizations_url: https://api.github.com/users/chrisd8088/orgs
+            received_events_url: https://api.github.com/users/chrisd8088/received_events
+            repos_url: https://api.github.com/users/chrisd8088/repos
+            site_admin: true
+            starred_url: https://api.github.com/users/chrisd8088/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/chrisd8088/subscriptions
+            type: User
+            url: https://api.github.com/users/chrisd8088
+            user_view_type: public
+          body: "This release is a feature release which adds support for\r\nzstd-compressed
+            object downloads and introduces several new options,\r\nincluding the
+            ability to fetch Git LFS objects for a list of references\r\npiped to
+            standard input and the ability to limit how long Git LFS\r\nwill wait
+            when instructed by a server to retry an HTTP request.\r\n\r\nGit LFS now
+            determines the case sensitivity of filesystems from the\r\n`core.ignoreCase`
+            Git configuration option, respects global and\r\nsystem-wide Git attribute
+            files when migrating repositories, and\r\ntries the default Git LFS HTTP
+            URL derived from an SSH URL when\r\nHTTP authentication via SSH is not
+            available.\r\n\r\nThis Git LFS release improves SSH session reuse, parses
+            invalid\r\ncustom transfer adapter configurations and invalid Git attribute\r\npatterns
+            without crashing, handles file deletion conflicts on Windows\r\nin the
+            same manner as Git, resolves remote-tracking branches for\r\ndownloads
+            correctly, avoids re-reading working tree files during\r\n`clean` filter
+            operations since the files may be in an inconsistent\r\nstate, and terminates
+            lengthy or endless HTTP authentication sequences\r\nafter a limited number
+            of requests.\r\n\r\nNote that we now provide official packages and support
+            for versions\r\nof Linux distributions based on Debian 13 (\"trixie\").
+            \ We also now\r\nprovide a source code package with all of our Go module
+            dependencies\r\nin a `vendor` directory.\r\n\r\nThis release is built
+            using Go v1.27 and therefore requires macOS\r\nversion 13 (Ventura) or
+            later on macOS systems.\r\n\r\nWe would like to extend special thanks
+            to the following open-source\r\ncontributors:\r\n\r\n* @aymanbagabas for
+            rectifying our authentication timeouts on 32-bit systems\r\n* @bk2204
+            for augmenting our filesystem case-sensitivity support\r\n* @cynix for
+            solving a race condition in our `clean` filter\r\n* @Diamondemon for improving
+            Git attribute parsing in our `migrate` command\r\n* @fzlzjerry for resolving
+            a crash in our Git attribute parsing code\r\n* @joshfriend for multiple
+            corrections to our SSH and transfer queue code\r\n* @jylenhof for describing
+            a new installation utility in our documentation\r\n* @lawrence3699 for
+            making our `unlock` command ignore missing files\r\n* @manturovDan and
+            @tamaracvjetkovic for fixing an infinite HTTP recursion bug\r\n* @markshep-wbg
+            for ensuring our locking commands honour the `--remote` option\r\n* @mzr
+            for introducing support for zstd-compressed HTTP object downloads\r\n*
+            @opohorel for correcting our lock verification error messages\r\n* @osasisorae
+            for standardizing the ways to output our main manual page\r\n* @sambostock
+            for editing the documentation of our `track` command\r\n* @stanhu for
+            helping our `smudge` filter avoid deletion conflicts on Windows\r\n* @star-ga
+            for adding advice on case-insensitive filename patterns to our FAQ\r\n*
+            @TheRootDaemon for creating an option to limit HTTP retry delay times\r\n*
+            @vikhik for documenting our `--no-rewrite` migration option more clearly\r\n*
+            @ypfaff for preventing duplication of extra HTTP headers in our retry
+            logic\r\n* @zbleness for implementing a fallback to our hybrid SSH/HTTP
+            authentication\r\n* @zh1C for revising our `pointer` command to support
+            pointer extensions\r\n\r\n### Features\r\n\r\n* Enhance LFS transfer retries
+            with maximum retry time limit #6304 (@TheRootDaemon)\r\n* fall back to
+            guessed endpoint when git-lfs-authenticate is unavailable #6286 (@zbleness)\r\n*
+            add lfs.httpDownloadEncoding with zstd and gzip support #6196 (@mzr)\r\n*
+            Use `core.ignorecase` to determine case sensitivity #6212 (@bk2204)\r\n*
+            Full support of special attributes in `migrate` #6170 (@Diamondemon)\r\n*
+            feat: git lfs pointer support extensions #6093 (@zh1C)\r\n* fetch: allow
+            providing refs via stdin #6088 (@larsxschneider)\r\n\r\n### Bugs\r\n\r\n*
+            gitattr: handle invalid wildmatch patterns #6324 (@fzlzjerry)\r\n* filter-process:
+            Ignore file size in working copy when cleaning #6011 (@cynix)\r\n* Handle
+            unknown object sizes in progress log and fix throttling #6288 (@chrisd8088)\r\n*
+            Fix standalone adapter crash and ignore invalid custom adapter names #6252
+            (@chrisd8088)\r\n* Reuse SSH sessions when possible and only close at
+            client exit #6266 (@chrisd8088)\r\n* locking: ignore missing files after
+            unlock #6244 (@lawrence3699)\r\n* Fix remote ref resolution for download
+            operations #6250 (@larsxschneider)\r\n* Fix concurrent map/struct races
+            in sshCache and lazyManifest #6243 (@joshfriend)\r\n* Fix `--remote` option
+            when a git push remote is set #6228 (@markshep-wbg)\r\n* Fix adapter reuse
+            when server returns empty transfer adapter name #6240 (@joshfriend)\r\n*
+            commands: fix format string type mismatch in lockverifier #6237 (@opohorel)\r\n*
+            Fix extra header duplication on retry #6204 (@ypfaff)\r\n* tools: add
+            RobustRemove() for Windows to handle file lock errors #6221 (@stanhu)\r\n*
+            transform DoWithAuth from recursive to loop approach to prevent endless
+            authentication attempts #6018 (@manturovDan)\r\n* lfshttp: fix auth response
+            ExpiresIn data type #6200 (@aymanbagabas)\r\n* commands: show root help
+            for -h #6172 (@osasisorae)\r\n* Handle `git lfs checkout` merge conflict
+            option file paths correctly #6136 (@chrisd8088)\r\n* Support Macro in
+            migrate `--fixup` #6126 (@Diamondemon)\r\n\r\n### Misc\r\n\r\n* Add missing
+            patch version entries in primary change log #6334 (@chrisd8088)\r\n* Update
+            Linux distributions and include Debian ARM64 links in releases #6333 (@chrisd8088)\r\n*
+            Upgrade to Go v1.27 #6332 (@chrisd8088)\r\n* Remove stale Linux distributions
+            before v3.8.0 release #6291 (@chrisd8088)\r\n* t/t-pre-push.sh: use calc\\_oid\\_file
+            in URL optimization test #6287 (@larsxschneider)\r\n* Update tests to
+            dynamically match internal program limits #6285 (@chrisd8088)\r\n* Update
+            Go modules and Dependabot configuration #6278 (@chrisd8088)\r\n* Add corrupt
+            object download tests #6274 (@chrisd8088)\r\n* Fix and revise chunked
+            transfer encoding test #6273 (@chrisd8088)\r\n* Temporarily restore concurrency
+            limit to historical fixed default #6258 (@chrisd8088)\r\n* Simplify client
+            structure initializations #6254 (@chrisd8088)\r\n* Use consistent exit
+            functions for all commands #6255 (@chrisd8088)\r\n* Add `--add-i386` option
+            to RPM build script #6251 (@chrisd8088)\r\n* Update Linux distribution
+            package list for v3.8.0 release #6248 (@chrisd8088)\r\n* Scale default
+            concurrent transfers by CPU count #6241 (@joshfriend)\r\n* Fix and refactor
+            HTTP encoding and retry tests #6207 (@chrisd8088)\r\n* Update Windows
+            release signing action #6222 (@chrisd8088)\r\n* Simplify object storage
+            directory traversals #6223 (@chrisd8088)\r\n* Upgrade to Go v1.26 and
+            build separate Windows resource files on 386 and amd64 platforms #6220
+            (@chrisd8088)\r\n* Various gopls lint cleanups for package `git` #6211
+            (@bk2204)\r\n* Log additional HTTP request headers when tracing #6195
+            (@chrisd8088)\r\n* Docs: recommend bracket-glob patterns for cross-platform
+            case safety in FAQ (refs #6187) #6192 (@star-ga)\r\n* Improve formatting
+            of manual page synopses #6188 (@chrisd8088)\r\n* docs(README): add mise
+            alternative method installation #6169 (@jylenhof)\r\n* Makefile,script:
+            add vendored source release asset #6159 (@chrisd8088)\r\n* Correct and
+            improve `grep -v` and `grep -c` usage in tests #6151 (@chrisd8088)\r\n*
+            Add missing backticks around `--no-modify-attrs` #6154 (@sambostock)\r\n*
+            Add missing options to manual pages and make JSON options consistent #6152
+            (@chrisd8088)\r\n* Detect invalid object IDs and repo names in test functions
+            #6142 (@chrisd8088)\r\n* Use relative paths exclusively for internal checkout
+            and pull operations #6140 (@chrisd8088)\r\n* Fix manual page formatting
+            errors from AsciiDoc conversion #6138 (@chrisd8088)\r\n* Add a FAQ entry
+            re memory usage by Git when cloning #6137 (@chrisd8088)\r\n* docs: Provide
+            clearer instructions for non destructive imports #6111 (@vikhik)\r\n*
+            Upgrade to Go 1.25 #6116 (@chrisd8088)\r\n* commands: use Exit() function
+            to exit with a warning message #6095 (@larsxschneider)\r\n## Packages\r\n\r\nUp
+            to date packages are available on [PackageCloud](https://packagecloud.io/github/git-lfs)
+            and [Homebrew](http://brew.sh/).\r\n\r\n[RPM RHEL 8/Rocky Linux 8](https://packagecloud.io/github/git-lfs/packages/el/8/git-lfs-3.8.0-1.el8.x86_64.rpm/download)\r\n[RPM
+            RHEL 9/Rocky Linux 9](https://packagecloud.io/github/git-lfs/packages/el/9/git-lfs-3.8.0-1.el9.x86_64.rpm/download)\r\n[RPM
+            RHEL 10/Rocky Linux 10](https://packagecloud.io/github/git-lfs/packages/el/10/git-lfs-3.8.0-1.el10.x86_64.rpm/download)\r\n[Debian
+            11 (AMD64)](https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.8.0_amd64.deb/download)\r\n[Debian
+            11 (ARM64)](https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.8.0_arm64.deb/download)\r\n[Debian
+            12 (AMD64)](https://packagecloud.io/github/git-lfs/packages/debian/bookworm/git-lfs_3.8.0_amd64.deb/download)\r\n[Debian
+            12 (ARM64)](https://packagecloud.io/github/git-lfs/packages/debian/bookworm/git-lfs_3.8.0_arm64.deb/download)\r\n[Debian
+            13 (AMD64)](https://packagecloud.io/github/git-lfs/packages/debian/trixie/git-lfs_3.8.0_amd64.deb/download)\r\n[Debian
+            13 (ARM64)](https://packagecloud.io/github/git-lfs/packages/debian/trixie/git-lfs_3.8.0_arm64.deb/download)\r\n\r\n##
+            SHA-256 hashes:\r\n**git-lfs-darwin-amd64-v3.8.0.zip**\r\nf1c17aeca0b4eaab9ea606226477dbed3b84b56fe0811a9f967d2ea2b2393c53\r\n\r\n**git-lfs-darwin-arm64-v3.8.0.zip**\r\ncaff76a7d070d8160c89bc39b6e85d98f24135b6fed038a3b4de2590d25102d8\r\n\r\n**git-lfs-freebsd-386-v3.8.0.tar.gz**\r\ne9690666b13fbcbaafde1f51a79e480816490a6073706a48b157c15f9c9e13a8\r\n\r\n**git-lfs-freebsd-amd64-v3.8.0.tar.gz**\r\nf1df7a374593ddc5c9b3fd960cb0614d58c2e6d2c9b89fbc1eb6a916858c74d6\r\n\r\n**git-lfs-linux-386-v3.8.0.tar.gz**\r\n5f6f5f9c53f2f517546486a8aa9cc8c34b958a1c9c167797aa70a44ac4a3da44\r\n\r\n**git-lfs-linux-amd64-v3.8.0.tar.gz**\r\ne455e00f15d9b95661b8d53498ffb0c3367962cf1ec73c31ab7369516cd6ab8d\r\n\r\n**git-lfs-linux-arm-v3.8.0.tar.gz**\r\n67144f93c2342f46456d22dbf33077f54e0581cb91f2966393151871ca328553\r\n\r\n**git-lfs-linux-arm64-v3.8.0.tar.gz**\r\nac9c8efac980bb0505ead384d087e2acb6486fd8498691a2165fa174ec6118c2\r\n\r\n**git-lfs-linux-loong64-v3.8.0.tar.gz**\r\n7daa0d9db09a2dbb3b159834d1a5b3e8517ea7ac4cbc123f670d2b0b34cc7aea\r\n\r\n**git-lfs-linux-ppc64le-v3.8.0.tar.gz**\r\nfdd988653b956922f163b8e7601e255e8c64a52eabe0dff8eec756f15213b304\r\n\r\n**git-lfs-linux-riscv64-v3.8.0.tar.gz**\r\n7a6aa67edb57b3a2e35437c97977b1a3dd2e40b30d78cd7c429235967bfe9c5a\r\n\r\n**git-lfs-linux-s390x-v3.8.0.tar.gz**\r\n6fd83c1381c7085f6b32aa615dcb68a366d037c7c2502e49e99291bda06a5c08\r\n\r\n**git-lfs-v3.8.0.tar.gz**\r\n4f75492c6832038fa73d39a45316657208bb6caa23b273451cb4ec2358d42ccb\r\n\r\n**git-lfs-vendor-v3.8.0.tar.gz**\r\n28c49d50bea97d0b860fd1599cc5ab45aac937fd31125db8374bf149bb95622f\r\n\r\n**git-lfs-windows-386-v3.8.0.zip**\r\n657337f2ee95c2f2e5e431eb7cf9de3481346f11d708ce116c8a96a622288386\r\n\r\n**git-lfs-windows-amd64-v3.8.0.zip**\r\nb62e7b8ceddee635f691233d77de8eaa4b213e9209e0173811d8cfa77f7882c1\r\n\r\n**git-lfs-windows-arm64-v3.8.0.zip**\r\n72403a96eae6689c3a4038c99e5d9e0938ef5552c71a234aef65ef0c314af081\r\n\r\n**git-lfs-windows-v3.8.0.exe**\r\naa2d69214905d6b348f1b038beb2d68e4828342f9b3fe47dae5a5f023823fe92\r\n\r\n**hashes.asc**\r\nfdccbf3a68456d4b6a1bec0acc088e2799abf0bf13bd91c8559bf8f15b36ba9f\r\n\r\n**sha256sums.asc**\r\nca28b1768b1889964350910aabe304f37c9ef3245e90520309c13118c5ff8e07\r\n"
+          created_at: "2026-08-27T19:31:19Z"
+          draft: false
+          html_url: https://github.com/git-lfs/git-lfs/releases/tag/v3.8.0
+          id: 378176431
+          immutable: false
+          mentions_count: 24
+          name: v3.8.0
+          node_id: RE_kwDOAMayZs4WioOv
+          prerelease: false
+          published_at: "2026-08-28T00:23:08Z"
+          reactions:
+            "+1": 1
+            "-1": 0
+            confused: 0
+            eyes: 0
+            heart: 0
+            hooray: 0
+            laugh: 0
+            rocket: 0
+            total_count: 1
+            url: https://api.github.com/repos/git-lfs/git-lfs/releases/378176431/reactions
+          tag_name: v3.8.0
+          tarball_url: https://api.github.com/repos/git-lfs/git-lfs/tarball/v3.8.0
+          target_commitish: main
+          updated_at: "2026-08-28T00:23:08Z"
+          upload_url: https://uploads.github.com/repos/git-lfs/git-lfs/releases/378176431/assets{?name,label}
+          url: https://api.github.com/repos/git-lfs/git-lfs/releases/378176431
+          zipball_url: https://api.github.com/repos/git-lfs/git-lfs/zipball/v3.8.0
     gosu:
       "1.14":
         githubRelease:

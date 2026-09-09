@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.16.1
-    previousVersion: 1.16.0
+    version: 1.16.2
+    previousVersion: 1.16.1
     versions:
     - 1.2.5
     - 1.2.6
@@ -108,9 +108,10 @@ dependencies:
     - 1.15.9
     - 1.16.0
     - 1.16.1
+    - 1.16.2
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/381346113/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/385535336/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -132,42 +133,30 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.16.1 (September 2, 2026)
+        ## 1.16.2 (September 9, 2026)
 
 
         BUG FIXES:
 
-        * cloud: Fixed a bug causing the CLI to pause indefinitely after a run task failure with pending policy evaluations ([#38751](https://github.com/hashicorp/terraform/issues/38751))
-
-        * Support referencing modules containing dynamic sources in Terraform Test ([#38950](https://github.com/hashicorp/terraform/issues/38950))
-
-        * stacks: Fixed validation to ensure the provider versions in the lock file and configuration are compatible. ([#38829](https://github.com/hashicorp/terraform/issues/38829))
-
-        * Fix panic when import identity references sensitive value ([#39013](https://github.com/hashicorp/terraform/issues/39013))
-
-        * import: Fixed a bug where import blocks would be ignored when multiple imports targeted different instances of a resource config using `for_each` or `count`. ([#39068](https://github.com/hashicorp/terraform/issues/39068))
-
-        * state show: Fix a panic when given an attribute path instead of a resource instance address ([#39087](https://github.com/hashicorp/terraform/issues/39087))
-
-        * Fix create_before_destroy ordering in some combinations of changes ([#39091](https://github.com/hashicorp/terraform/issues/39091))
+        * Fix panic in module installation when encoutering invalid module calls ([#39129](https://github.com/hashicorp/terraform/issues/39129))
 
 
-      created_at: "2026-09-02T12:53:27Z"
+      created_at: "2026-09-09T12:27:59Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.16.1
-      id: 381346113
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.16.2
+      id: 385535336
       immutable: false
-      name: v1.16.1
-      node_id: RE_kwDOAQ6CpM4WuuFB
+      name: v1.16.2
+      node_id: RE_kwDOAQ6CpM4W-s1o
       prerelease: false
-      published_at: "2026-09-02T14:49:32Z"
-      tag_name: v1.16.1
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.16.1
-      target_commitish: 58e916f6706597d9d87898f9ecedf811b68c6f29
-      updated_at: "2026-09-02T14:49:32Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/381346113/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/381346113
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.1
+      published_at: "2026-09-09T13:22:31Z"
+      tag_name: v1.16.2
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.16.2
+      target_commitish: 82e042fb6372443813f6759056308d6adc642fa1
+      updated_at: "2026-09-09T13:22:31Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/385535336/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/385535336
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.2
 meta:
   dependencies:
     terraform:
@@ -6182,3 +6171,52 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/381346113/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/381346113
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.1
+      1.16.2:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/385535336/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.16.2 (September 9, 2026)
+
+
+            BUG FIXES:
+
+            * Fix panic in module installation when encoutering invalid module calls ([#39129](https://github.com/hashicorp/terraform/issues/39129))
+
+
+          created_at: "2026-09-09T12:27:59Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.16.2
+          id: 385535336
+          immutable: false
+          name: v1.16.2
+          node_id: RE_kwDOAQ6CpM4W-s1o
+          prerelease: false
+          published_at: "2026-09-09T13:22:31Z"
+          tag_name: v1.16.2
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.16.2
+          target_commitish: 82e042fb6372443813f6759056308d6adc642fa1
+          updated_at: "2026-09-09T13:22:31Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/385535336/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/385535336
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.2

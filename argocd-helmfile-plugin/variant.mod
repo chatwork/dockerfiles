@@ -21,4 +21,4 @@ dependencies:
     releasesFrom:
       githubReleases:
         source: helm/helm
-    version: "~ 3" # helm v4 への移行は別途判断するため 3 系に留める
+    version: "~ 3" # stay on 3.x; moving to v4 is a separate decision

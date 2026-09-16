@@ -6,8 +6,8 @@ dependencies:
     - 0.2.0
     - 0.3.0
   terraform:
-    version: 1.16.2
-    previousVersion: 1.16.1
+    version: 1.16.3
+    previousVersion: 1.16.2
     versions:
     - 1.2.5
     - 1.2.6
@@ -109,9 +109,10 @@ dependencies:
     - 1.16.0
     - 1.16.1
     - 1.16.2
+    - 1.16.3
     githubRelease:
       assets: []
-      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/385535336/assets
+      assets_url: https://api.github.com/repos/hashicorp/terraform/releases/390005903/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
         events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
@@ -133,30 +134,36 @@ dependencies:
         url: https://api.github.com/users/hc-github-team-es-release-engineering
         user_view_type: public
       body: |+
-        ## 1.16.2 (September 9, 2026)
+        ## 1.16.3 (September 16, 2026)
 
 
         BUG FIXES:
 
-        * Fix panic in module installation when encoutering invalid module calls ([#39129](https://github.com/hashicorp/terraform/issues/39129))
+        * Fix handling of destroy=false around create_before_destroy instances ([#39169](https://github.com/hashicorp/terraform/issues/39169))
+
+        * Fix function result comparison when there are multiple marks ([#39170](https://github.com/hashicorp/terraform/issues/39170))
+
+        * Filter logic for marks could cause values with multiple marks to erroneously fail validations ([#39171](https://github.com/hashicorp/terraform/issues/39171))
+
+        * Fix issue with import provider resolution ([#39185](https://github.com/hashicorp/terraform/issues/39185))
 
 
-      created_at: "2026-09-09T12:27:59Z"
+      created_at: "2026-09-16T12:18:12Z"
       draft: false
-      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.16.2
-      id: 385535336
+      html_url: https://github.com/hashicorp/terraform/releases/tag/v1.16.3
+      id: 390005903
       immutable: false
-      name: v1.16.2
-      node_id: RE_kwDOAQ6CpM4W-s1o
+      name: v1.16.3
+      node_id: RE_kwDOAQ6CpM4XPwSP
       prerelease: false
-      published_at: "2026-09-09T13:22:31Z"
-      tag_name: v1.16.2
-      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.16.2
-      target_commitish: 82e042fb6372443813f6759056308d6adc642fa1
-      updated_at: "2026-09-09T13:22:31Z"
-      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/385535336/assets{?name,label}
-      url: https://api.github.com/repos/hashicorp/terraform/releases/385535336
-      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.2
+      published_at: "2026-09-16T14:33:39Z"
+      tag_name: v1.16.3
+      tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.16.3
+      target_commitish: 42121cd5ca5e1ab1d37e286540ce11acf70e290a
+      updated_at: "2026-09-16T14:33:39Z"
+      upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/390005903/assets{?name,label}
+      url: https://api.github.com/repos/hashicorp/terraform/releases/390005903
+      zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.3
 meta:
   dependencies:
     terraform:
@@ -6220,3 +6227,58 @@ meta:
           upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/385535336/assets{?name,label}
           url: https://api.github.com/repos/hashicorp/terraform/releases/385535336
           zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.2
+      1.16.3:
+        githubRelease:
+          assets: []
+          assets_url: https://api.github.com/repos/hashicorp/terraform/releases/390005903/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/82989873?v=4
+            events_url: https://api.github.com/users/hc-github-team-es-release-engineering/events{/privacy}
+            followers_url: https://api.github.com/users/hc-github-team-es-release-engineering/followers
+            following_url: https://api.github.com/users/hc-github-team-es-release-engineering/following{/other_user}
+            gists_url: https://api.github.com/users/hc-github-team-es-release-engineering/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/hc-github-team-es-release-engineering
+            id: 82989873
+            login: hc-github-team-es-release-engineering
+            node_id: MDQ6VXNlcjgyOTg5ODcz
+            organizations_url: https://api.github.com/users/hc-github-team-es-release-engineering/orgs
+            received_events_url: https://api.github.com/users/hc-github-team-es-release-engineering/received_events
+            repos_url: https://api.github.com/users/hc-github-team-es-release-engineering/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/hc-github-team-es-release-engineering/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/hc-github-team-es-release-engineering/subscriptions
+            type: User
+            url: https://api.github.com/users/hc-github-team-es-release-engineering
+            user_view_type: public
+          body: |+
+            ## 1.16.3 (September 16, 2026)
+
+
+            BUG FIXES:
+
+            * Fix handling of destroy=false around create_before_destroy instances ([#39169](https://github.com/hashicorp/terraform/issues/39169))
+
+            * Fix function result comparison when there are multiple marks ([#39170](https://github.com/hashicorp/terraform/issues/39170))
+
+            * Filter logic for marks could cause values with multiple marks to erroneously fail validations ([#39171](https://github.com/hashicorp/terraform/issues/39171))
+
+            * Fix issue with import provider resolution ([#39185](https://github.com/hashicorp/terraform/issues/39185))
+
+
+          created_at: "2026-09-16T12:18:12Z"
+          draft: false
+          html_url: https://github.com/hashicorp/terraform/releases/tag/v1.16.3
+          id: 390005903
+          immutable: false
+          name: v1.16.3
+          node_id: RE_kwDOAQ6CpM4XPwSP
+          prerelease: false
+          published_at: "2026-09-16T14:33:39Z"
+          tag_name: v1.16.3
+          tarball_url: https://api.github.com/repos/hashicorp/terraform/tarball/v1.16.3
+          target_commitish: 42121cd5ca5e1ab1d37e286540ce11acf70e290a
+          updated_at: "2026-09-16T14:33:39Z"
+          upload_url: https://uploads.github.com/repos/hashicorp/terraform/releases/390005903/assets{?name,label}
+          url: https://api.github.com/repos/hashicorp/terraform/releases/390005903
+          zipball_url: https://api.github.com/repos/hashicorp/terraform/zipball/v1.16.3

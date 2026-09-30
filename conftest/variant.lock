@@ -1,7 +1,7 @@
 dependencies:
   conftest:
-    version: 0.70.1
-    previousVersion: 0.70.0
+    version: 0.71.0
+    previousVersion: 0.70.1
     versions:
     - 0.34.0
     - 0.35.0
@@ -48,20 +48,21 @@ dependencies:
     - 0.69.0
     - 0.70.0
     - 0.70.1
+    - 0.71.0
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/checksums.txt
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2026-09-19T17:19:58Z"
-        digest: sha256:8a644f00a265ab705711ea559a0b116e791dac1c957964514e9a5c2143400a3c
-        download_count: 14
-        id: 575168490
+        created_at: "2026-09-30T01:28:29Z"
+        digest: sha256:ce0cae8bc5d96977607174c8a69d530614b636d60ce84cd1e40256f356cb7dda
+        download_count: 8
+        id: 599706413
         label: ""
         name: checksums.txt
-        node_id: RA_kwDOCp_e9c4iSF_q
-        size: 1603
+        node_id: RA_kwDOCp_e9c4jvsst
+        size: 2496
         state: uploaded
-        updated_at: "2026-09-19T17:19:58Z"
+        updated_at: "2026-09-30T01:28:29Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -82,19 +83,85 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168490
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Darwin_arm64.tar.gz
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706413
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_arm64.tar.gz
         content_type: application/gzip
-        created_at: "2026-09-19T17:19:52Z"
-        digest: sha256:b8eae5ce6c7c3a768a9b9c6c12b0c01f8fc065a99267c94646d309c479b218dd
+        created_at: "2026-09-30T01:28:20Z"
+        digest: sha256:78051b6ef0422082ba237f0df10a636737878941927880a68893469663b9e724
+        download_count: 5
+        id: 599706112
+        label: ""
+        name: conftest_0.71.0_Darwin_arm64.tar.gz
+        node_id: RA_kwDOCp_e9c4jvsoA
+        size: 21811760
+        state: uploaded
+        updated_at: "2026-09-30T01:28:21Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706112
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_arm64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:27Z"
+        digest: sha256:310a75984f9f70299c06be85a21ffd2a20e79b38340beef7446a9f5a8f2515e3
+        download_count: 3
+        id: 599706346
+        label: ""
+        name: conftest_0.71.0_Darwin_arm64.tar.gz.sbom.json
+        node_id: RA_kwDOCp_e9c4jvsrq
+        size: 262030
+        state: uploaded
+        updated_at: "2026-09-30T01:28:28Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706346
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_x86_64.tar.gz
+        content_type: application/gzip
+        created_at: "2026-09-30T01:28:20Z"
+        digest: sha256:97a49726a9de43e5c56072b49c4ae3fa449d7a75a80a32c4b27c1467fa42c812
         download_count: 4
-        id: 575168334
+        id: 599706110
         label: ""
-        name: conftest_0.70.1_Darwin_arm64.tar.gz
-        node_id: RA_kwDOCp_e9c4iSF9O
-        size: 21684894
+        name: conftest_0.71.0_Darwin_x86_64.tar.gz
+        node_id: RA_kwDOCp_e9c4jvsn-
+        size: 23574867
         state: uploaded
-        updated_at: "2026-09-19T17:19:53Z"
+        updated_at: "2026-09-30T01:28:22Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -115,19 +182,646 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168334
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Darwin_x86_64.tar.gz
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706110
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_x86_64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:28Z"
+        digest: sha256:0e0cf372f580d6590630d3707339b94000d0b516d697554dd5629d128b7cf60e
+        download_count: 3
+        id: 599706376
+        label: ""
+        name: conftest_0.71.0_Darwin_x86_64.tar.gz.sbom.json
+        node_id: RA_kwDOCp_e9c4jvssI
+        size: 262193
+        state: uploaded
+        updated_at: "2026-09-30T01:28:28Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706376
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.deb
+        content_type: application/vnd.debian.binary-package
+        created_at: "2026-09-30T01:28:24Z"
+        digest: sha256:2cf3c64b1743c24c6ec2b83098985d1cedd3e8a5b3f5093f0de95bf8f23d8c50
+        download_count: 3
+        id: 599706230
+        label: ""
+        name: conftest_0.71.0_Linux_arm64.deb
+        node_id: RA_kwDOCp_e9c4jvsp2
+        size: 20559858
+        state: uploaded
+        updated_at: "2026-09-30T01:28:25Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706230
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.rpm
+        content_type: application/x-rpm
+        created_at: "2026-09-30T01:28:26Z"
+        digest: sha256:ff48106c97a29c91469f0bf1e2bb31363781ee0401344cd9cfe40ada4b9806f5
+        download_count: 3
+        id: 599706288
+        label: ""
+        name: conftest_0.71.0_Linux_arm64.rpm
+        node_id: RA_kwDOCp_e9c4jvsqw
+        size: 20556531
+        state: uploaded
+        updated_at: "2026-09-30T01:28:28Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706288
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.tar.gz
         content_type: application/gzip
-        created_at: "2026-09-19T17:19:52Z"
-        digest: sha256:ccfe6dfb526a8d200d91d1a9f234f07d814f56f93a1ae8f47a5cb30f567dc97f
+        created_at: "2026-09-30T01:28:22Z"
+        digest: sha256:542f255081cfab9919cba327d3c4014fd46d6ee3f0441c634b14b1465e9469d9
+        download_count: 6
+        id: 599706184
+        label: ""
+        name: conftest_0.71.0_Linux_arm64.tar.gz
+        node_id: RA_kwDOCp_e9c4jvspI
+        size: 20559912
+        state: uploaded
+        updated_at: "2026-09-30T01:28:23Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706184
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:28Z"
+        digest: sha256:f6d4af3929eb9a4616daf9aac646eca6cca1186f5803ef8cfd67299bbc0a07b4
+        download_count: 3
+        id: 599706391
+        label: ""
+        name: conftest_0.71.0_Linux_arm64.tar.gz.sbom.json
+        node_id: RA_kwDOCp_e9c4jvssX
+        size: 261867
+        state: uploaded
+        updated_at: "2026-09-30T01:28:28Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706391
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.deb
+        content_type: application/vnd.debian.binary-package
+        created_at: "2026-09-30T01:28:24Z"
+        digest: sha256:1d8374b88f46693edd6339277a55f6f86397a806e5efcb323b5e0780c1242c60
+        download_count: 3
+        id: 599706232
+        label: ""
+        name: conftest_0.71.0_Linux_ppc64le.deb
+        node_id: RA_kwDOCp_e9c4jvsp4
+        size: 20569548
+        state: uploaded
+        updated_at: "2026-09-30T01:28:25Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706232
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.rpm
+        content_type: application/x-rpm
+        created_at: "2026-09-30T01:28:26Z"
+        digest: sha256:0f71c2cf85a1297a2960b40f0d0ac81cf63d279f86e07e154c8c455a056e4a08
+        download_count: 3
+        id: 599706283
+        label: ""
+        name: conftest_0.71.0_Linux_ppc64le.rpm
+        node_id: RA_kwDOCp_e9c4jvsqr
+        size: 20586067
+        state: uploaded
+        updated_at: "2026-09-30T01:28:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706283
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.tar.gz
+        content_type: application/gzip
+        created_at: "2026-09-30T01:28:20Z"
+        digest: sha256:3c5e351d456f67febbe286f7a5a34168d287f54e3c6a828a603490bb468da86a
+        download_count: 3
+        id: 599706116
+        label: ""
+        name: conftest_0.71.0_Linux_ppc64le.tar.gz
+        node_id: RA_kwDOCp_e9c4jvsoE
+        size: 20571642
+        state: uploaded
+        updated_at: "2026-09-30T01:28:21Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706116
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:27Z"
+        digest: sha256:272f3df26ede0dcc9084e8a27df6032afe51545e9ef3a433648a6779f1dfd872
+        download_count: 3
+        id: 599706341
+        label: ""
+        name: conftest_0.71.0_Linux_ppc64le.tar.gz.sbom.json
+        node_id: RA_kwDOCp_e9c4jvsrl
+        size: 262193
+        state: uploaded
+        updated_at: "2026-09-30T01:28:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706341
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.deb
+        content_type: application/vnd.debian.binary-package
+        created_at: "2026-09-30T01:28:24Z"
+        digest: sha256:6b177674580f29b5b2b24d6a67d61b0ee3b014c8d40f2830268d597a00ee07cf
+        download_count: 3
+        id: 599706224
+        label: ""
+        name: conftest_0.71.0_Linux_s390x.deb
+        node_id: RA_kwDOCp_e9c4jvspw
+        size: 22096438
+        state: uploaded
+        updated_at: "2026-09-30T01:28:25Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706224
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.rpm
+        content_type: application/x-rpm
+        created_at: "2026-09-30T01:28:25Z"
+        digest: sha256:c546802dc0bdc088e01da19afec3561b9df5e5b023e317f1db87548431664a69
+        download_count: 3
+        id: 599706272
+        label: ""
+        name: conftest_0.71.0_Linux_s390x.rpm
+        node_id: RA_kwDOCp_e9c4jvsqg
+        size: 22102457
+        state: uploaded
+        updated_at: "2026-09-30T01:28:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706272
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.tar.gz
+        content_type: application/gzip
+        created_at: "2026-09-30T01:28:22Z"
+        digest: sha256:9c3078136e3423b3d4b1efe4cbd21bb98a226a9f7392779ca9e09484bdd81dfb
+        download_count: 3
+        id: 599706190
+        label: ""
+        name: conftest_0.71.0_Linux_s390x.tar.gz
+        node_id: RA_kwDOCp_e9c4jvspO
+        size: 22096711
+        state: uploaded
+        updated_at: "2026-09-30T01:28:24Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706190
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:29Z"
+        digest: sha256:70a2c4f093b06afaa01f4acb58375f2ebb93da9c5b631ee1c859bd780334bff5
+        download_count: 3
+        id: 599706415
+        label: ""
+        name: conftest_0.71.0_Linux_s390x.tar.gz.sbom.json
+        node_id: RA_kwDOCp_e9c4jvssv
+        size: 261867
+        state: uploaded
+        updated_at: "2026-09-30T01:28:29Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706415
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.deb
+        content_type: application/vnd.debian.binary-package
+        created_at: "2026-09-30T01:28:24Z"
+        digest: sha256:dd11cf7f3e14cec7836669b48df6b4637a20d90aeb9883f177027a5f72f1fe0d
+        download_count: 3
+        id: 599706242
+        label: ""
+        name: conftest_0.71.0_Linux_x86_64.deb
+        node_id: RA_kwDOCp_e9c4jvsqC
+        size: 22867734
+        state: uploaded
+        updated_at: "2026-09-30T01:28:25Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706242
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.rpm
+        content_type: application/x-rpm
+        created_at: "2026-09-30T01:28:26Z"
+        digest: sha256:8a3d77d9e4fe4235ec56a280e634de1a8a1ce2c56e76275fa68be76b4c284c44
+        download_count: 3
+        id: 599706285
+        label: ""
+        name: conftest_0.71.0_Linux_x86_64.rpm
+        node_id: RA_kwDOCp_e9c4jvsqt
+        size: 22868332
+        state: uploaded
+        updated_at: "2026-09-30T01:28:27Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706285
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.tar.gz
+        content_type: application/gzip
+        created_at: "2026-09-30T01:28:22Z"
+        digest: sha256:765dfefdf0730693d7541ea0147e10d530a54ed257bbfec055ff34c837ffdf72
+        download_count: 58
+        id: 599706185
+        label: ""
+        name: conftest_0.71.0_Linux_x86_64.tar.gz
+        node_id: RA_kwDOCp_e9c4jvspJ
+        size: 22869914
+        state: uploaded
+        updated_at: "2026-09-30T01:28:23Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706185
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:29Z"
+        digest: sha256:92f434907a6e79d595cb0fc92e43be3b37fb97e49c72a41e2a988e0daa2560d6
+        download_count: 3
+        id: 599706407
+        label: ""
+        name: conftest_0.71.0_Linux_x86_64.tar.gz.sbom.json
+        node_id: RA_kwDOCp_e9c4jvssn
+        size: 262030
+        state: uploaded
+        updated_at: "2026-09-30T01:28:29Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706407
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_arm64.zip
+        content_type: application/zip
+        created_at: "2026-09-30T01:28:22Z"
+        digest: sha256:1f08ff44251605a8f9938094ae1372d003c7aca2eacad3e9d311b8a1b43b834e
+        download_count: 3
+        id: 599706182
+        label: ""
+        name: conftest_0.71.0_Windows_arm64.zip
+        node_id: RA_kwDOCp_e9c4jvspG
+        size: 20760830
+        state: uploaded
+        updated_at: "2026-09-30T01:28:23Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706182
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_arm64.zip.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:28Z"
+        digest: sha256:f01cf28382c5cfd7f888f88d0e4e7362d26be05ef96cb4e19c8a450761718ecf
+        download_count: 3
+        id: 599706387
+        label: ""
+        name: conftest_0.71.0_Windows_arm64.zip.sbom.json
+        node_id: RA_kwDOCp_e9c4jvssT
+        size: 265466
+        state: uploaded
+        updated_at: "2026-09-30T01:28:28Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/apps/github-actions
+          id: 41898282
+          login: github-actions[bot]
+          node_id: MDM6Qm90NDE4OTgyODI=
+          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+          type: Bot
+          url: https://api.github.com/users/github-actions%5Bbot%5D
+          user_view_type: public
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706387
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_x86_64.zip
+        content_type: application/zip
+        created_at: "2026-09-30T01:28:20Z"
+        digest: sha256:a9228097e6f827dac7fee48f5cf0baa42ebd88454560de26bbb531d65ae0f448
         download_count: 4
-        id: 575168333
+        id: 599706111
         label: ""
-        name: conftest_0.70.1_Darwin_x86_64.tar.gz
-        node_id: RA_kwDOCp_e9c4iSF9N
-        size: 23424595
+        name: conftest_0.71.0_Windows_x86_64.zip
+        node_id: RA_kwDOCp_e9c4jvsn_
+        size: 23451815
         state: uploaded
-        updated_at: "2026-09-19T17:19:53Z"
+        updated_at: "2026-09-30T01:28:22Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -148,19 +842,19 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168333
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_arm64.deb
-        content_type: application/vnd.debian.binary-package
-        created_at: "2026-09-19T17:19:55Z"
-        digest: sha256:a34984ba1fc48ca20f40ef63046c9e9fe1305b447bcc7499d505a11ccfc864a7
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706111
+      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_x86_64.zip.sbom.json
+        content_type: application/json
+        created_at: "2026-09-30T01:28:27Z"
+        digest: sha256:a5397e65619f7da3a9eaea07cbe0debc3e88ecdec7b4c9ac9bb72895482a2da5
         download_count: 3
-        id: 575168431
+        id: 599706355
         label: ""
-        name: conftest_0.70.1_Linux_arm64.deb
-        node_id: RA_kwDOCp_e9c4iSF-v
-        size: 20435872
+        name: conftest_0.71.0_Windows_x86_64.zip.sbom.json
+        node_id: RA_kwDOCp_e9c4jvsrz
+        size: 265631
         state: uploaded
-        updated_at: "2026-09-19T17:19:56Z"
+        updated_at: "2026-09-30T01:28:28Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
           events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -181,437 +875,8 @@ dependencies:
           type: Bot
           url: https://api.github.com/users/github-actions%5Bbot%5D
           user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168431
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_arm64.rpm
-        content_type: application/x-rpm
-        created_at: "2026-09-19T17:19:57Z"
-        digest: sha256:31522d0279f69bc840cecc91306510bf7fad7ec9f29e3be5cb02b71721d28be4
-        download_count: 3
-        id: 575168467
-        label: ""
-        name: conftest_0.70.1_Linux_arm64.rpm
-        node_id: RA_kwDOCp_e9c4iSF_T
-        size: 20439045
-        state: uploaded
-        updated_at: "2026-09-19T17:19:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168467
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_arm64.tar.gz
-        content_type: application/gzip
-        created_at: "2026-09-19T17:19:53Z"
-        digest: sha256:8eb914755cb1b3c610d557019d5f373d5528b366ba706961d1a23f2ec55eab57
-        download_count: 10
-        id: 575168381
-        label: ""
-        name: conftest_0.70.1_Linux_arm64.tar.gz
-        node_id: RA_kwDOCp_e9c4iSF99
-        size: 20434611
-        state: uploaded
-        updated_at: "2026-09-19T17:19:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168381
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_ppc64le.deb
-        content_type: application/vnd.debian.binary-package
-        created_at: "2026-09-19T17:19:55Z"
-        digest: sha256:56bcc84309c5441866389e5298767d21dbd354df982659267741e6ac5f6d1805
-        download_count: 3
-        id: 575168429
-        label: ""
-        name: conftest_0.70.1_Linux_ppc64le.deb
-        node_id: RA_kwDOCp_e9c4iSF-t
-        size: 20456656
-        state: uploaded
-        updated_at: "2026-09-19T17:19:56Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168429
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_ppc64le.rpm
-        content_type: application/x-rpm
-        created_at: "2026-09-19T17:19:56Z"
-        digest: sha256:ca79a3b8b88d92dbed444c128d632a71e12f60d67b41935f31f85755e75902e8
-        download_count: 3
-        id: 575168460
-        label: ""
-        name: conftest_0.70.1_Linux_ppc64le.rpm
-        node_id: RA_kwDOCp_e9c4iSF_M
-        size: 20461960
-        state: uploaded
-        updated_at: "2026-09-19T17:19:57Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168460
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_ppc64le.tar.gz
-        content_type: application/gzip
-        created_at: "2026-09-19T17:19:52Z"
-        digest: sha256:08f56ed4769d5610af0d5e75a6c3ad508bb1d800607aaaa33d2aca41566d602d
-        download_count: 3
-        id: 575168332
-        label: ""
-        name: conftest_0.70.1_Linux_ppc64le.tar.gz
-        node_id: RA_kwDOCp_e9c4iSF9M
-        size: 20458702
-        state: uploaded
-        updated_at: "2026-09-19T17:19:53Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168332
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_s390x.deb
-        content_type: application/vnd.debian.binary-package
-        created_at: "2026-09-19T17:19:55Z"
-        digest: sha256:425efd1504348bf071b5873e73f6bde10e4dbaebe6e9397ccbea145a8d90089a
-        download_count: 2
-        id: 575168422
-        label: ""
-        name: conftest_0.70.1_Linux_s390x.deb
-        node_id: RA_kwDOCp_e9c4iSF-m
-        size: 21967284
-        state: uploaded
-        updated_at: "2026-09-19T17:19:56Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168422
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_s390x.rpm
-        content_type: application/x-rpm
-        created_at: "2026-09-19T17:19:57Z"
-        digest: sha256:d789738afcf9741ddf16bc9210b12ec189aa1207e4f307d939a2bc0406df0882
-        download_count: 2
-        id: 575168463
-        label: ""
-        name: conftest_0.70.1_Linux_s390x.rpm
-        node_id: RA_kwDOCp_e9c4iSF_P
-        size: 21972266
-        state: uploaded
-        updated_at: "2026-09-19T17:19:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168463
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_s390x.tar.gz
-        content_type: application/gzip
-        created_at: "2026-09-19T17:19:52Z"
-        digest: sha256:ba039a47e27c785f5ff9faaafc83890ea6b14649c8b5455d929aeca5d6bba66a
-        download_count: 2
-        id: 575168330
-        label: ""
-        name: conftest_0.70.1_Linux_s390x.tar.gz
-        node_id: RA_kwDOCp_e9c4iSF9K
-        size: 21970832
-        state: uploaded
-        updated_at: "2026-09-19T17:19:53Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168330
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_x86_64.deb
-        content_type: application/vnd.debian.binary-package
-        created_at: "2026-09-19T17:19:55Z"
-        digest: sha256:b6550b6ab189bec8e5a836836a334143c3358778ffc90148353c00b3ce5d35a2
-        download_count: 3
-        id: 575168436
-        label: ""
-        name: conftest_0.70.1_Linux_x86_64.deb
-        node_id: RA_kwDOCp_e9c4iSF-0
-        size: 22731638
-        state: uploaded
-        updated_at: "2026-09-19T17:19:56Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168436
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_x86_64.rpm
-        content_type: application/x-rpm
-        created_at: "2026-09-19T17:19:57Z"
-        digest: sha256:a8d8ad306f712a0e889fc866504f81a6c86a70fe0cb8fa854d40e9d4e2368d7b
-        download_count: 3
-        id: 575168470
-        label: ""
-        name: conftest_0.70.1_Linux_x86_64.rpm
-        node_id: RA_kwDOCp_e9c4iSF_W
-        size: 22734801
-        state: uploaded
-        updated_at: "2026-09-19T17:19:58Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168470
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Linux_x86_64.tar.gz
-        content_type: application/gzip
-        created_at: "2026-09-19T17:19:54Z"
-        digest: sha256:613d124b8f6c1f3cee890491f7ab19114cca5a2102ca47cb2e6c35b4c23f9c8a
-        download_count: 42
-        id: 575168385
-        label: ""
-        name: conftest_0.70.1_Linux_x86_64.tar.gz
-        node_id: RA_kwDOCp_e9c4iSF-B
-        size: 22732147
-        state: uploaded
-        updated_at: "2026-09-19T17:19:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168385
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Windows_arm64.zip
-        content_type: application/zip
-        created_at: "2026-09-19T17:19:54Z"
-        digest: sha256:a3ec4631096d68023db40b0aa6796aa3d2e37eec2ffb06b50790cab688e64ead
-        download_count: 3
-        id: 575168386
-        label: ""
-        name: conftest_0.70.1_Windows_arm64.zip
-        node_id: RA_kwDOCp_e9c4iSF-C
-        size: 20652027
-        state: uploaded
-        updated_at: "2026-09-19T17:19:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168386
-      - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.70.1/conftest_0.70.1_Windows_x86_64.zip
-        content_type: application/zip
-        created_at: "2026-09-19T17:19:54Z"
-        digest: sha256:f88f02c67975dc0b77dd64b782a07dc1833eb4071170a65b5336fcb0e0dcfb1d
-        download_count: 3
-        id: 575168383
-        label: ""
-        name: conftest_0.70.1_Windows_x86_64.zip
-        node_id: RA_kwDOCp_e9c4iSF9_
-        size: 23318105
-        state: uploaded
-        updated_at: "2026-09-19T17:19:55Z"
-        uploader:
-          avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
-          events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
-          followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
-          following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
-          gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
-          gravatar_id: ""
-          html_url: https://github.com/apps/github-actions
-          id: 41898282
-          login: github-actions[bot]
-          node_id: MDM6Qm90NDE4OTgyODI=
-          organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
-          received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
-          repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
-          site_admin: false
-          starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
-          subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
-          type: Bot
-          url: https://api.github.com/users/github-actions%5Bbot%5D
-          user_view_type: public
-        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/575168383
-      assets_url: https://api.github.com/repos/open-policy-agent/conftest/releases/392155998/assets
+        url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706355
+      assets_url: https://api.github.com/repos/open-policy-agent/conftest/releases/399644700/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
         events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
@@ -635,29 +900,37 @@ dependencies:
       body: |+
         ## Changelog
         ### New Features
-        * 0b42cb5cd1aa1dc1c9025a5e83c7e963166d08c0: feat: Sign build artifacts (#1424) (@jalseth)
+        * 636cfe39490de851bcc6956f8a7fdc3892020971: feat: Add parser for CODEOWNER files (#1404) (@apnsngr)
         ### Bug Fixes
-        * f01cab0267358cfb6b1e0213f70f46fb6bd57de2: fix: share inter-query cache across all queries in an Engine (#1423) (@jalseth)
-        ### Documentation Updates
-        * 634260cf7073bfd636ba107dbfb1e64b4c06a8e0: docs: clarify private OCI registry URLs (#1395) (@Battleplus)
+        * 96fc461afcf81542eec87924f4fc70fbd172410c: fix(docs): unbreak Netlify build on the Noble image (#1433) (@boranx)
+        * 8345c40e21f3e6ab1159f4e15585b5f7d6aa32a7: fix: emit a single TAP plan across all files (#1435) (@behappymia)
+        ### OPA Changes
+        * b254dd7828556d131c0bffd74ab6008358f87245: build(deps): bump github.com/open-policy-agent/opa from 1.20.2 to 1.21.0 (#1434) (@dependabot[bot])
+        ### Other Changes
+        * a766df63c7f72642af16664b6b56b6361b70379a: build(deps): bump alpine from 3.24.1 to 3.24.2 (#1430) (@dependabot[bot])
+        * b4bcb74f527dc8d43cdd1db48d58f0e94624e1da: build(deps): bump docker/build-push-action from 7.3.0 to 7.4.0 (#1432) (@dependabot[bot])
+        * 6febea03f622afcd184732aa1c41edaa0f90222f: build(deps): bump github.com/magiconair/properties (#1431) (@dependabot[bot])
+        * e0275ea26dc8691e337a9f5e0d3fe99b4200af8c: chore: run goreleaser in parallel with docker builds (#1427) (@jalseth)
+        * 722d53f59d7bcc6bd14f11f85eb47a8a88cd7108: ci: Add SPDX formatted SBOM to the release workflow (#1428) (@jalseth)
+        * f1484a6ea54834cf9aca880e4674a5c9bc85c4e6: refactor(outputter): Standardize how totals are accumulated (#1429) (@jalseth)
 
-      created_at: "2026-09-19T16:32:18Z"
+      created_at: "2026-09-30T01:15:00Z"
       draft: false
-      html_url: https://github.com/open-policy-agent/conftest/releases/tag/v0.70.1
-      id: 392155998
+      html_url: https://github.com/open-policy-agent/conftest/releases/tag/v0.71.0
+      id: 399644700
       immutable: false
-      mentions_count: 2
-      name: v0.70.1
-      node_id: RE_kwDOCp_e9c4XX9Ne
+      mentions_count: 5
+      name: v0.71.0
+      node_id: RE_kwDOCp_e9c4X0hgc
       prerelease: false
-      published_at: "2026-09-19T17:20:20Z"
-      tag_name: v0.70.1
-      tarball_url: https://api.github.com/repos/open-policy-agent/conftest/tarball/v0.70.1
+      published_at: "2026-09-30T01:41:59Z"
+      tag_name: v0.71.0
+      tarball_url: https://api.github.com/repos/open-policy-agent/conftest/tarball/v0.71.0
       target_commitish: master
-      updated_at: "2026-09-19T17:20:20Z"
-      upload_url: https://uploads.github.com/repos/open-policy-agent/conftest/releases/392155998/assets{?name,label}
-      url: https://api.github.com/repos/open-policy-agent/conftest/releases/392155998
-      zipball_url: https://api.github.com/repos/open-policy-agent/conftest/zipball/v0.70.1
+      updated_at: "2026-09-30T01:41:59Z"
+      upload_url: https://uploads.github.com/repos/open-policy-agent/conftest/releases/399644700/assets{?name,label}
+      url: https://api.github.com/repos/open-policy-agent/conftest/releases/399644700
+      zipball_url: https://api.github.com/repos/open-policy-agent/conftest/zipball/v0.71.0
 meta:
   dependencies:
     conftest:
@@ -25074,3 +25347,886 @@ meta:
           upload_url: https://uploads.github.com/repos/open-policy-agent/conftest/releases/392155998/assets{?name,label}
           url: https://api.github.com/repos/open-policy-agent/conftest/releases/392155998
           zipball_url: https://api.github.com/repos/open-policy-agent/conftest/zipball/v0.70.1
+      0.71.0:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/checksums.txt
+            content_type: text/plain; charset=utf-8
+            created_at: "2026-09-30T01:28:29Z"
+            digest: sha256:ce0cae8bc5d96977607174c8a69d530614b636d60ce84cd1e40256f356cb7dda
+            download_count: 8
+            id: 599706413
+            label: ""
+            name: checksums.txt
+            node_id: RA_kwDOCp_e9c4jvsst
+            size: 2496
+            state: uploaded
+            updated_at: "2026-09-30T01:28:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706413
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_arm64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-09-30T01:28:20Z"
+            digest: sha256:78051b6ef0422082ba237f0df10a636737878941927880a68893469663b9e724
+            download_count: 5
+            id: 599706112
+            label: ""
+            name: conftest_0.71.0_Darwin_arm64.tar.gz
+            node_id: RA_kwDOCp_e9c4jvsoA
+            size: 21811760
+            state: uploaded
+            updated_at: "2026-09-30T01:28:21Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706112
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_arm64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:27Z"
+            digest: sha256:310a75984f9f70299c06be85a21ffd2a20e79b38340beef7446a9f5a8f2515e3
+            download_count: 3
+            id: 599706346
+            label: ""
+            name: conftest_0.71.0_Darwin_arm64.tar.gz.sbom.json
+            node_id: RA_kwDOCp_e9c4jvsrq
+            size: 262030
+            state: uploaded
+            updated_at: "2026-09-30T01:28:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706346
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_x86_64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-09-30T01:28:20Z"
+            digest: sha256:97a49726a9de43e5c56072b49c4ae3fa449d7a75a80a32c4b27c1467fa42c812
+            download_count: 4
+            id: 599706110
+            label: ""
+            name: conftest_0.71.0_Darwin_x86_64.tar.gz
+            node_id: RA_kwDOCp_e9c4jvsn-
+            size: 23574867
+            state: uploaded
+            updated_at: "2026-09-30T01:28:22Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706110
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Darwin_x86_64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:28Z"
+            digest: sha256:0e0cf372f580d6590630d3707339b94000d0b516d697554dd5629d128b7cf60e
+            download_count: 3
+            id: 599706376
+            label: ""
+            name: conftest_0.71.0_Darwin_x86_64.tar.gz.sbom.json
+            node_id: RA_kwDOCp_e9c4jvssI
+            size: 262193
+            state: uploaded
+            updated_at: "2026-09-30T01:28:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706376
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2026-09-30T01:28:24Z"
+            digest: sha256:2cf3c64b1743c24c6ec2b83098985d1cedd3e8a5b3f5093f0de95bf8f23d8c50
+            download_count: 3
+            id: 599706230
+            label: ""
+            name: conftest_0.71.0_Linux_arm64.deb
+            node_id: RA_kwDOCp_e9c4jvsp2
+            size: 20559858
+            state: uploaded
+            updated_at: "2026-09-30T01:28:25Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706230
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.rpm
+            content_type: application/x-rpm
+            created_at: "2026-09-30T01:28:26Z"
+            digest: sha256:ff48106c97a29c91469f0bf1e2bb31363781ee0401344cd9cfe40ada4b9806f5
+            download_count: 3
+            id: 599706288
+            label: ""
+            name: conftest_0.71.0_Linux_arm64.rpm
+            node_id: RA_kwDOCp_e9c4jvsqw
+            size: 20556531
+            state: uploaded
+            updated_at: "2026-09-30T01:28:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706288
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-09-30T01:28:22Z"
+            digest: sha256:542f255081cfab9919cba327d3c4014fd46d6ee3f0441c634b14b1465e9469d9
+            download_count: 6
+            id: 599706184
+            label: ""
+            name: conftest_0.71.0_Linux_arm64.tar.gz
+            node_id: RA_kwDOCp_e9c4jvspI
+            size: 20559912
+            state: uploaded
+            updated_at: "2026-09-30T01:28:23Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706184
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_arm64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:28Z"
+            digest: sha256:f6d4af3929eb9a4616daf9aac646eca6cca1186f5803ef8cfd67299bbc0a07b4
+            download_count: 3
+            id: 599706391
+            label: ""
+            name: conftest_0.71.0_Linux_arm64.tar.gz.sbom.json
+            node_id: RA_kwDOCp_e9c4jvssX
+            size: 261867
+            state: uploaded
+            updated_at: "2026-09-30T01:28:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706391
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2026-09-30T01:28:24Z"
+            digest: sha256:1d8374b88f46693edd6339277a55f6f86397a806e5efcb323b5e0780c1242c60
+            download_count: 3
+            id: 599706232
+            label: ""
+            name: conftest_0.71.0_Linux_ppc64le.deb
+            node_id: RA_kwDOCp_e9c4jvsp4
+            size: 20569548
+            state: uploaded
+            updated_at: "2026-09-30T01:28:25Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706232
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.rpm
+            content_type: application/x-rpm
+            created_at: "2026-09-30T01:28:26Z"
+            digest: sha256:0f71c2cf85a1297a2960b40f0d0ac81cf63d279f86e07e154c8c455a056e4a08
+            download_count: 3
+            id: 599706283
+            label: ""
+            name: conftest_0.71.0_Linux_ppc64le.rpm
+            node_id: RA_kwDOCp_e9c4jvsqr
+            size: 20586067
+            state: uploaded
+            updated_at: "2026-09-30T01:28:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706283
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.tar.gz
+            content_type: application/gzip
+            created_at: "2026-09-30T01:28:20Z"
+            digest: sha256:3c5e351d456f67febbe286f7a5a34168d287f54e3c6a828a603490bb468da86a
+            download_count: 3
+            id: 599706116
+            label: ""
+            name: conftest_0.71.0_Linux_ppc64le.tar.gz
+            node_id: RA_kwDOCp_e9c4jvsoE
+            size: 20571642
+            state: uploaded
+            updated_at: "2026-09-30T01:28:21Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706116
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_ppc64le.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:27Z"
+            digest: sha256:272f3df26ede0dcc9084e8a27df6032afe51545e9ef3a433648a6779f1dfd872
+            download_count: 3
+            id: 599706341
+            label: ""
+            name: conftest_0.71.0_Linux_ppc64le.tar.gz.sbom.json
+            node_id: RA_kwDOCp_e9c4jvsrl
+            size: 262193
+            state: uploaded
+            updated_at: "2026-09-30T01:28:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706341
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2026-09-30T01:28:24Z"
+            digest: sha256:6b177674580f29b5b2b24d6a67d61b0ee3b014c8d40f2830268d597a00ee07cf
+            download_count: 3
+            id: 599706224
+            label: ""
+            name: conftest_0.71.0_Linux_s390x.deb
+            node_id: RA_kwDOCp_e9c4jvspw
+            size: 22096438
+            state: uploaded
+            updated_at: "2026-09-30T01:28:25Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706224
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.rpm
+            content_type: application/x-rpm
+            created_at: "2026-09-30T01:28:25Z"
+            digest: sha256:c546802dc0bdc088e01da19afec3561b9df5e5b023e317f1db87548431664a69
+            download_count: 3
+            id: 599706272
+            label: ""
+            name: conftest_0.71.0_Linux_s390x.rpm
+            node_id: RA_kwDOCp_e9c4jvsqg
+            size: 22102457
+            state: uploaded
+            updated_at: "2026-09-30T01:28:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706272
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.tar.gz
+            content_type: application/gzip
+            created_at: "2026-09-30T01:28:22Z"
+            digest: sha256:9c3078136e3423b3d4b1efe4cbd21bb98a226a9f7392779ca9e09484bdd81dfb
+            download_count: 3
+            id: 599706190
+            label: ""
+            name: conftest_0.71.0_Linux_s390x.tar.gz
+            node_id: RA_kwDOCp_e9c4jvspO
+            size: 22096711
+            state: uploaded
+            updated_at: "2026-09-30T01:28:24Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706190
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_s390x.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:29Z"
+            digest: sha256:70a2c4f093b06afaa01f4acb58375f2ebb93da9c5b631ee1c859bd780334bff5
+            download_count: 3
+            id: 599706415
+            label: ""
+            name: conftest_0.71.0_Linux_s390x.tar.gz.sbom.json
+            node_id: RA_kwDOCp_e9c4jvssv
+            size: 261867
+            state: uploaded
+            updated_at: "2026-09-30T01:28:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706415
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.deb
+            content_type: application/vnd.debian.binary-package
+            created_at: "2026-09-30T01:28:24Z"
+            digest: sha256:dd11cf7f3e14cec7836669b48df6b4637a20d90aeb9883f177027a5f72f1fe0d
+            download_count: 3
+            id: 599706242
+            label: ""
+            name: conftest_0.71.0_Linux_x86_64.deb
+            node_id: RA_kwDOCp_e9c4jvsqC
+            size: 22867734
+            state: uploaded
+            updated_at: "2026-09-30T01:28:25Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706242
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.rpm
+            content_type: application/x-rpm
+            created_at: "2026-09-30T01:28:26Z"
+            digest: sha256:8a3d77d9e4fe4235ec56a280e634de1a8a1ce2c56e76275fa68be76b4c284c44
+            download_count: 3
+            id: 599706285
+            label: ""
+            name: conftest_0.71.0_Linux_x86_64.rpm
+            node_id: RA_kwDOCp_e9c4jvsqt
+            size: 22868332
+            state: uploaded
+            updated_at: "2026-09-30T01:28:27Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706285
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-09-30T01:28:22Z"
+            digest: sha256:765dfefdf0730693d7541ea0147e10d530a54ed257bbfec055ff34c837ffdf72
+            download_count: 58
+            id: 599706185
+            label: ""
+            name: conftest_0.71.0_Linux_x86_64.tar.gz
+            node_id: RA_kwDOCp_e9c4jvspJ
+            size: 22869914
+            state: uploaded
+            updated_at: "2026-09-30T01:28:23Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706185
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Linux_x86_64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:29Z"
+            digest: sha256:92f434907a6e79d595cb0fc92e43be3b37fb97e49c72a41e2a988e0daa2560d6
+            download_count: 3
+            id: 599706407
+            label: ""
+            name: conftest_0.71.0_Linux_x86_64.tar.gz.sbom.json
+            node_id: RA_kwDOCp_e9c4jvssn
+            size: 262030
+            state: uploaded
+            updated_at: "2026-09-30T01:28:29Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706407
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_arm64.zip
+            content_type: application/zip
+            created_at: "2026-09-30T01:28:22Z"
+            digest: sha256:1f08ff44251605a8f9938094ae1372d003c7aca2eacad3e9d311b8a1b43b834e
+            download_count: 3
+            id: 599706182
+            label: ""
+            name: conftest_0.71.0_Windows_arm64.zip
+            node_id: RA_kwDOCp_e9c4jvspG
+            size: 20760830
+            state: uploaded
+            updated_at: "2026-09-30T01:28:23Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706182
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_arm64.zip.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:28Z"
+            digest: sha256:f01cf28382c5cfd7f888f88d0e4e7362d26be05ef96cb4e19c8a450761718ecf
+            download_count: 3
+            id: 599706387
+            label: ""
+            name: conftest_0.71.0_Windows_arm64.zip.sbom.json
+            node_id: RA_kwDOCp_e9c4jvssT
+            size: 265466
+            state: uploaded
+            updated_at: "2026-09-30T01:28:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706387
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_x86_64.zip
+            content_type: application/zip
+            created_at: "2026-09-30T01:28:20Z"
+            digest: sha256:a9228097e6f827dac7fee48f5cf0baa42ebd88454560de26bbb531d65ae0f448
+            download_count: 4
+            id: 599706111
+            label: ""
+            name: conftest_0.71.0_Windows_x86_64.zip
+            node_id: RA_kwDOCp_e9c4jvsn_
+            size: 23451815
+            state: uploaded
+            updated_at: "2026-09-30T01:28:22Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706111
+          - browser_download_url: https://github.com/open-policy-agent/conftest/releases/download/v0.71.0/conftest_0.71.0_Windows_x86_64.zip.sbom.json
+            content_type: application/json
+            created_at: "2026-09-30T01:28:27Z"
+            digest: sha256:a5397e65619f7da3a9eaea07cbe0debc3e88ecdec7b4c9ac9bb72895482a2da5
+            download_count: 3
+            id: 599706355
+            label: ""
+            name: conftest_0.71.0_Windows_x86_64.zip.sbom.json
+            node_id: RA_kwDOCp_e9c4jvsrz
+            size: 265631
+            state: uploaded
+            updated_at: "2026-09-30T01:28:28Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+              events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+              followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+              following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+              gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/apps/github-actions
+              id: 41898282
+              login: github-actions[bot]
+              node_id: MDM6Qm90NDE4OTgyODI=
+              organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+              received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+              repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+              type: Bot
+              url: https://api.github.com/users/github-actions%5Bbot%5D
+              user_view_type: public
+            url: https://api.github.com/repos/open-policy-agent/conftest/releases/assets/599706355
+          assets_url: https://api.github.com/repos/open-policy-agent/conftest/releases/399644700/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/in/15368?v=4
+            events_url: https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}
+            followers_url: https://api.github.com/users/github-actions%5Bbot%5D/followers
+            following_url: https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}
+            gists_url: https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/apps/github-actions
+            id: 41898282
+            login: github-actions[bot]
+            node_id: MDM6Qm90NDE4OTgyODI=
+            organizations_url: https://api.github.com/users/github-actions%5Bbot%5D/orgs
+            received_events_url: https://api.github.com/users/github-actions%5Bbot%5D/received_events
+            repos_url: https://api.github.com/users/github-actions%5Bbot%5D/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/github-actions%5Bbot%5D/subscriptions
+            type: Bot
+            url: https://api.github.com/users/github-actions%5Bbot%5D
+            user_view_type: public
+          body: |+
+            ## Changelog
+            ### New Features
+            * 636cfe39490de851bcc6956f8a7fdc3892020971: feat: Add parser for CODEOWNER files (#1404) (@apnsngr)
+            ### Bug Fixes
+            * 96fc461afcf81542eec87924f4fc70fbd172410c: fix(docs): unbreak Netlify build on the Noble image (#1433) (@boranx)
+            * 8345c40e21f3e6ab1159f4e15585b5f7d6aa32a7: fix: emit a single TAP plan across all files (#1435) (@behappymia)
+            ### OPA Changes
+            * b254dd7828556d131c0bffd74ab6008358f87245: build(deps): bump github.com/open-policy-agent/opa from 1.20.2 to 1.21.0 (#1434) (@dependabot[bot])
+            ### Other Changes
+            * a766df63c7f72642af16664b6b56b6361b70379a: build(deps): bump alpine from 3.24.1 to 3.24.2 (#1430) (@dependabot[bot])
+            * b4bcb74f527dc8d43cdd1db48d58f0e94624e1da: build(deps): bump docker/build-push-action from 7.3.0 to 7.4.0 (#1432) (@dependabot[bot])
+            * 6febea03f622afcd184732aa1c41edaa0f90222f: build(deps): bump github.com/magiconair/properties (#1431) (@dependabot[bot])
+            * e0275ea26dc8691e337a9f5e0d3fe99b4200af8c: chore: run goreleaser in parallel with docker builds (#1427) (@jalseth)
+            * 722d53f59d7bcc6bd14f11f85eb47a8a88cd7108: ci: Add SPDX formatted SBOM to the release workflow (#1428) (@jalseth)
+            * f1484a6ea54834cf9aca880e4674a5c9bc85c4e6: refactor(outputter): Standardize how totals are accumulated (#1429) (@jalseth)
+
+          created_at: "2026-09-30T01:15:00Z"
+          draft: false
+          html_url: https://github.com/open-policy-agent/conftest/releases/tag/v0.71.0
+          id: 399644700
+          immutable: false
+          mentions_count: 5
+          name: v0.71.0
+          node_id: RE_kwDOCp_e9c4X0hgc
+          prerelease: false
+          published_at: "2026-09-30T01:41:59Z"
+          tag_name: v0.71.0
+          tarball_url: https://api.github.com/repos/open-policy-agent/conftest/tarball/v0.71.0
+          target_commitish: master
+          updated_at: "2026-09-30T01:41:59Z"
+          upload_url: https://uploads.github.com/repos/open-policy-agent/conftest/releases/399644700/assets{?name,label}
+          url: https://api.github.com/repos/open-policy-agent/conftest/releases/399644700
+          zipball_url: https://api.github.com/repos/open-policy-agent/conftest/zipball/v0.71.0

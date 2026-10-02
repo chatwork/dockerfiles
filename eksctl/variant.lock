@@ -1,7 +1,7 @@
 dependencies:
   eksctl:
-    version: 0.230.0
-    previousVersion: 0.229.0
+    version: 0.231.0
+    previousVersion: 0.230.0
     versions:
     - 0.105.0
     - 0.106.0
@@ -127,20 +127,21 @@ dependencies:
     - 0.228.0
     - 0.229.0
     - 0.230.0
+    - 0.231.0
     githubRelease:
       assets:
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_checksums.txt
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_checksums.txt
         content_type: text/plain; charset=utf-8
-        created_at: "2026-08-14T18:42:36Z"
-        digest: sha256:b87726bc49267d0c06b75e2387fd3ef4e7173d8d47a61ceca42f89e7eb7e1460
-        download_count: 127
-        id: 514769633
+        created_at: "2026-10-02T21:14:47Z"
+        digest: sha256:f7bb744db175db5df8464c0e8fd8ab2696ae1604d6ea6b06b4fef3a52695896b
+        download_count: 290
+        id: 606503211
         label: ""
         name: eksctl_checksums.txt
-        node_id: RA_kwDOCATpKM4ersLh
-        size: 552
+        node_id: RA_kwDOCATpKM4kJoEr
+        size: 1164
         state: uploaded
-        updated_at: "2026-08-14T18:42:37Z"
+        updated_at: "2026-10-02T21:14:48Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -161,19 +162,52 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769633
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_Darwin_amd64.tar.gz
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503211
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_checksums.txt.sigstore.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:48Z"
+        digest: sha256:a69c8a4369a187714ef912c16a58cc2cadfd8345abf4a7438643ac7bf20dc03c
+        download_count: 3
+        id: 606503230
+        label: ""
+        name: eksctl_checksums.txt.sigstore.json
+        node_id: RA_kwDOCATpKM4kJoE-
+        size: 10339
+        state: uploaded
+        updated_at: "2026-10-02T21:14:48Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503230
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_amd64.tar.gz
         content_type: application/gzip
-        created_at: "2026-08-14T18:42:34Z"
-        digest: sha256:9c169be56572dae079dc1e5e2a6efff83c4cc6fc8507e54d0a6e8f4ef14df312
+        created_at: "2026-10-02T21:14:43Z"
+        digest: sha256:92a3ab9b04033ea69dd4f833f3c89bcefdf0cdff5f54e5bee44342b1911aa114
         download_count: 6
-        id: 514769556
+        id: 606503108
         label: ""
         name: eksctl_Darwin_amd64.tar.gz
-        node_id: RA_kwDOCATpKM4ersKU
-        size: 38786816
+        node_id: RA_kwDOCATpKM4kJoDE
+        size: 38719818
         state: uploaded
-        updated_at: "2026-08-14T18:42:36Z"
+        updated_at: "2026-10-02T21:14:45Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -194,19 +228,52 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769556
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_Darwin_arm64.tar.gz
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503108
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_amd64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:46Z"
+        digest: sha256:d82090182d8e3cb6a21e5f8ce1d13d1027f863e8c239518e1356f4134b9ee095
+        download_count: 1
+        id: 606503184
+        label: ""
+        name: eksctl_Darwin_amd64.tar.gz.sbom.json
+        node_id: RA_kwDOCATpKM4kJoEQ
+        size: 405436
+        state: uploaded
+        updated_at: "2026-10-02T21:14:47Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503184
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_arm64.tar.gz
         content_type: application/gzip
-        created_at: "2026-08-14T18:42:34Z"
-        digest: sha256:1412b7ea32efab8141c4c7ccdf96690814d659accefdf72e4e6277ea5c87470c
-        download_count: 5
-        id: 514769555
+        created_at: "2026-10-02T21:14:43Z"
+        digest: sha256:1e368bf18faf28bd3042bbf1ae1cc2430de8a80d60995898ccfca0423349f140
+        download_count: 8
+        id: 606503115
         label: ""
         name: eksctl_Darwin_arm64.tar.gz
-        node_id: RA_kwDOCATpKM4ersKT
-        size: 35292479
+        node_id: RA_kwDOCATpKM4kJoDL
+        size: 35272679
         state: uploaded
-        updated_at: "2026-08-14T18:42:36Z"
+        updated_at: "2026-10-02T21:14:45Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -227,19 +294,52 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769555
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_Linux_amd64.tar.gz
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503115
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_arm64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:46Z"
+        digest: sha256:b414dca46cbb912247f70460f93f43473bda2300abf8db72949c609ecb2ec06c
+        download_count: 1
+        id: 606503166
+        label: ""
+        name: eksctl_Darwin_arm64.tar.gz.sbom.json
+        node_id: RA_kwDOCATpKM4kJoD-
+        size: 405436
+        state: uploaded
+        updated_at: "2026-10-02T21:14:46Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503166
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_amd64.tar.gz
         content_type: application/gzip
-        created_at: "2026-08-14T18:42:36Z"
-        digest: sha256:a2060956f117c3065abafda5c1f681679b9c3716675d70ce4ffff46033b02c35
-        download_count: 198
-        id: 514769630
+        created_at: "2026-10-02T21:14:46Z"
+        digest: sha256:13cd1c4ae6ad3f74ea27aa1117c72e34ffa4ca8ff6d709261f7b1d7f411dc435
+        download_count: 200
+        id: 606503168
         label: ""
         name: eksctl_Linux_amd64.tar.gz
-        node_id: RA_kwDOCATpKM4ersLe
-        size: 37916402
+        node_id: RA_kwDOCATpKM4kJoEA
+        size: 37840692
         state: uploaded
-        updated_at: "2026-08-14T18:42:38Z"
+        updated_at: "2026-10-02T21:14:47Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -260,19 +360,52 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769630
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_Linux_arm64.tar.gz
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503168
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_amd64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:47Z"
+        digest: sha256:f9949b373e193220f00797fd06d95349b7b595e5c4c33db24891c117d4581e67
+        download_count: 1
+        id: 606503209
+        label: ""
+        name: eksctl_Linux_amd64.tar.gz.sbom.json
+        node_id: RA_kwDOCATpKM4kJoEp
+        size: 405181
+        state: uploaded
+        updated_at: "2026-10-02T21:14:47Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503209
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_arm64.tar.gz
         content_type: application/gzip
-        created_at: "2026-08-14T18:42:36Z"
-        digest: sha256:21afe8a1e38f0e8153a1f27ff7af6b90e309a0411a1438139463dac2f866674d
-        download_count: 2
-        id: 514769623
+        created_at: "2026-10-02T21:14:45Z"
+        digest: sha256:aeb095535b4aebe308ca380d26c6a1325012fda9cd2c22b7cdffee2b5de73615
+        download_count: 270
+        id: 606503155
         label: ""
         name: eksctl_Linux_arm64.tar.gz
-        node_id: RA_kwDOCATpKM4ersLX
-        size: 33341881
+        node_id: RA_kwDOCATpKM4kJoDz
+        size: 33317568
         state: uploaded
-        updated_at: "2026-08-14T18:42:37Z"
+        updated_at: "2026-10-02T21:14:47Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -293,19 +426,52 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769623
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_Windows_amd64.zip
-        content_type: application/zip
-        created_at: "2026-08-14T18:42:34Z"
-        digest: sha256:d50171918a7e9b16c5799c94543c8c71ef08f990098ca5c3a28fcec78ea3b8ee
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503155
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_arm64.tar.gz.sbom.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:47Z"
+        digest: sha256:0ba9282cffc5592229adc804427029e54e980e04800bd46e83b391ee12190420
         download_count: 1
-        id: 514769557
+        id: 606503208
+        label: ""
+        name: eksctl_Linux_arm64.tar.gz.sbom.json
+        node_id: RA_kwDOCATpKM4kJoEo
+        size: 405181
+        state: uploaded
+        updated_at: "2026-10-02T21:14:47Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503208
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_amd64.zip
+        content_type: application/zip
+        created_at: "2026-10-02T21:14:43Z"
+        digest: sha256:ab46806ecab964e1b383c411cea51199cec07fbe28074bf1f099a2e1a24c99e3
+        download_count: 1
+        id: 606503107
         label: ""
         name: eksctl_Windows_amd64.zip
-        node_id: RA_kwDOCATpKM4ersKV
-        size: 38821271
+        node_id: RA_kwDOCATpKM4kJoDD
+        size: 38769637
         state: uploaded
-        updated_at: "2026-08-14T18:42:36Z"
+        updated_at: "2026-10-02T21:14:45Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -326,19 +492,52 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769557
-      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.230.0/eksctl_Windows_arm64.zip
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503107
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_amd64.zip.sbom.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:46Z"
+        digest: sha256:d16750667548bec84153ff94e8026d4c73d9d4f1df008ad84101efbf43a6febe
+        download_count: 1
+        id: 606503186
+        label: ""
+        name: eksctl_Windows_amd64.zip.sbom.json
+        node_id: RA_kwDOCATpKM4kJoES
+        size: 412466
+        state: uploaded
+        updated_at: "2026-10-02T21:14:47Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503186
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_arm64.zip
         content_type: application/zip
-        created_at: "2026-08-14T18:42:34Z"
-        digest: sha256:c26d5ea967be9785fe907f2ca9d9897e5c38d482281c085e83d7024f7fb71842
-        download_count: 0
-        id: 514769558
+        created_at: "2026-10-02T21:14:43Z"
+        digest: sha256:1cdba24089625b2dc2adb34dbe5c5b9ea57799be24365d98a54b6a563f0f02e6
+        download_count: 1
+        id: 606503112
         label: ""
         name: eksctl_Windows_arm64.zip
-        node_id: RA_kwDOCATpKM4ersKW
-        size: 33506618
+        node_id: RA_kwDOCATpKM4kJoDI
+        size: 33487073
         state: uploaded
-        updated_at: "2026-08-14T18:42:36Z"
+        updated_at: "2026-10-02T21:14:45Z"
         uploader:
           avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
           events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -359,8 +558,41 @@ dependencies:
           type: User
           url: https://api.github.com/users/eksctl-bot
           user_view_type: public
-        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/514769558
-      assets_url: https://api.github.com/repos/eksctl-io/eksctl/releases/370758803/assets
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503112
+      - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_arm64.zip.sbom.json
+        content_type: application/json
+        created_at: "2026-10-02T21:14:45Z"
+        digest: sha256:07da3890d812fa46fe43530cc0e70ef288732b699973b0dff1d90ba004df0b31
+        download_count: 1
+        id: 606503165
+        label: ""
+        name: eksctl_Windows_arm64.zip.sbom.json
+        node_id: RA_kwDOCATpKM4kJoD9
+        size: 412466
+        state: uploaded
+        updated_at: "2026-10-02T21:14:46Z"
+        uploader:
+          avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+          events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+          followers_url: https://api.github.com/users/eksctl-bot/followers
+          following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+          gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+          gravatar_id: ""
+          html_url: https://github.com/eksctl-bot
+          id: 53547694
+          login: eksctl-bot
+          node_id: MDQ6VXNlcjUzNTQ3Njk0
+          organizations_url: https://api.github.com/users/eksctl-bot/orgs
+          received_events_url: https://api.github.com/users/eksctl-bot/received_events
+          repos_url: https://api.github.com/users/eksctl-bot/repos
+          site_admin: false
+          starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+          subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+          type: User
+          url: https://api.github.com/users/eksctl-bot
+          user_view_type: public
+        url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503165
+      assets_url: https://api.github.com/repos/eksctl-io/eksctl/releases/402160150/assets
       author:
         avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
         events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
@@ -381,34 +613,41 @@ dependencies:
         type: User
         url: https://api.github.com/users/eksctl-bot
         user_view_type: public
-      body: "# Release v0.230.0\n\n## \U0001F680 Features\n\n- Add control plane component
-        config support (#8821)\n- Add support for BottlerocketFips AMI family in managed
-        nodegroups (#8778)\n\n## \U0001F3AF Improvements\n\n- Make vpc-cni and kube-proxy
-        optional when creating IPv6 clusters (#8790)\n\n## \U0001F41B Bug Fixes\n\n-
-        Grant ec2:DescribeSubnets to the IPv6 VPC CNI role (#8835)\n- Bump oras-go
-        to 2.6.2 to resolve five open advisories (#8829)\n\n## \U0001F9F0 Maintenance\n\n-
-        Update aws-node to v1.23.0 (#8832)\n- Update coredns (#8833)\n- Update ec2-info
-        (#8723)\n- Update coredns (#8724)\n- Update aws-node to v1.22.4 (#8747)\n-
-        Update nvidia-device-plugin to v0.19.3 (#8722)\n\n## Acknowledgments\n\nThe
-        eksctl maintainers would like to sincerely thank @41ks, @amdonov, @chithreshazad,
-        @gustavodiaz7722, @chithresha and @michaelbeaumont.\n\n\n"
-      created_at: "2026-08-14T18:12:01Z"
+      body: "# Release v0.231.0\n\n## \U0001F680 Features\n\n- Add connectionTracking
+        support to nodegroup config (#8872)\n- Add TerminatedPodGcThreshold to control
+        plane component config (#8853)\n- Add support for vpc.controlPlaneOnPrivateSubnets
+        (#8793)\n\n## \U0001F3AF Improvements\n\n- chore: harden addon warning logging
+        and empty drain (#8869)\n- ci: harden the release pipeline — isolate EKSCTLBOT\\_TOKEN,
+        sign releases, publish SBOMs (#8863)\n- ci: pass workflow inputs to run steps
+        via env vars (#8860)\n\n## \U0001F41B Bug Fixes\n\n- fix: resolve latest addon
+        version before pod identity lookup (#8867)\n- chore: harden addon warning
+        logging and empty drain (#8869)\n- fix: use interruptionQueue Helm value for
+        Karpenter >= v0.33.0 (#8844)\n- Grant ec2:DescribeSecurityGroups to the IPv6
+        VPC CNI role (#8837)\n\n## \U0001F9F0 Maintenance\n\n- ci: harden the release
+        pipeline — isolate EKSCTLBOT\\_TOKEN, sign releases, publish SBOMs (#8863)\n-
+        ci: pass workflow inputs to run steps via env vars (#8860)\n- Update ec2-info
+        (#8854)\n- Update coredns (#8842)\n- Update coredns (#8841)\n- Update nvidia-device-plugin
+        to v0.20.0 (#8840)\n\n## \U0001F4DD Documentation\n\n- docs: explain addon
+        version differences (#8868)\n\n## Acknowledgments\n\nThe eksctl maintainers
+        would like to sincerely thank @atharvaHJoshi, @chithreshazad, @guessi, @gustavodiaz7722,
+        @sapphirew, @warren830, @chithresha and @michaelbeaumont.\n\n\n"
+      created_at: "2026-10-02T20:41:22Z"
       draft: false
-      html_url: https://github.com/eksctl-io/eksctl/releases/tag/v0.230.0
-      id: 370758803
+      html_url: https://github.com/eksctl-io/eksctl/releases/tag/v0.231.0
+      id: 402160150
       immutable: false
-      mentions_count: 6
-      name: eksctl 0.230.0
-      node_id: RE_kwDOCATpKM4WGVST
+      mentions_count: 8
+      name: eksctl 0.231.0
+      node_id: RE_kwDOCATpKM4X-HoW
       prerelease: false
-      published_at: "2026-08-14T18:42:38Z"
-      tag_name: v0.230.0
-      tarball_url: https://api.github.com/repos/eksctl-io/eksctl/tarball/v0.230.0
+      published_at: "2026-10-02T21:14:49Z"
+      tag_name: v0.231.0
+      tarball_url: https://api.github.com/repos/eksctl-io/eksctl/tarball/v0.231.0
       target_commitish: main
-      updated_at: "2026-08-14T18:42:38Z"
-      upload_url: https://uploads.github.com/repos/eksctl-io/eksctl/releases/370758803/assets{?name,label}
-      url: https://api.github.com/repos/eksctl-io/eksctl/releases/370758803
-      zipball_url: https://api.github.com/repos/eksctl-io/eksctl/zipball/v0.230.0
+      updated_at: "2026-10-02T21:14:49Z"
+      upload_url: https://uploads.github.com/repos/eksctl-io/eksctl/releases/402160150/assets{?name,label}
+      url: https://api.github.com/repos/eksctl-io/eksctl/releases/402160150
+      zipball_url: https://api.github.com/repos/eksctl-io/eksctl/zipball/v0.231.0
 meta:
   dependencies:
     eksctl:
@@ -46736,3 +46975,525 @@ meta:
           upload_url: https://uploads.github.com/repos/eksctl-io/eksctl/releases/370758803/assets{?name,label}
           url: https://api.github.com/repos/eksctl-io/eksctl/releases/370758803
           zipball_url: https://api.github.com/repos/eksctl-io/eksctl/zipball/v0.230.0
+      0.231.0:
+        githubRelease:
+          assets:
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_checksums.txt
+            content_type: text/plain; charset=utf-8
+            created_at: "2026-10-02T21:14:47Z"
+            digest: sha256:f7bb744db175db5df8464c0e8fd8ab2696ae1604d6ea6b06b4fef3a52695896b
+            download_count: 290
+            id: 606503211
+            label: ""
+            name: eksctl_checksums.txt
+            node_id: RA_kwDOCATpKM4kJoEr
+            size: 1164
+            state: uploaded
+            updated_at: "2026-10-02T21:14:48Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503211
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_checksums.txt.sigstore.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:48Z"
+            digest: sha256:a69c8a4369a187714ef912c16a58cc2cadfd8345abf4a7438643ac7bf20dc03c
+            download_count: 3
+            id: 606503230
+            label: ""
+            name: eksctl_checksums.txt.sigstore.json
+            node_id: RA_kwDOCATpKM4kJoE-
+            size: 10339
+            state: uploaded
+            updated_at: "2026-10-02T21:14:48Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503230
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_amd64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-10-02T21:14:43Z"
+            digest: sha256:92a3ab9b04033ea69dd4f833f3c89bcefdf0cdff5f54e5bee44342b1911aa114
+            download_count: 6
+            id: 606503108
+            label: ""
+            name: eksctl_Darwin_amd64.tar.gz
+            node_id: RA_kwDOCATpKM4kJoDE
+            size: 38719818
+            state: uploaded
+            updated_at: "2026-10-02T21:14:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503108
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_amd64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:46Z"
+            digest: sha256:d82090182d8e3cb6a21e5f8ce1d13d1027f863e8c239518e1356f4134b9ee095
+            download_count: 1
+            id: 606503184
+            label: ""
+            name: eksctl_Darwin_amd64.tar.gz.sbom.json
+            node_id: RA_kwDOCATpKM4kJoEQ
+            size: 405436
+            state: uploaded
+            updated_at: "2026-10-02T21:14:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503184
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_arm64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-10-02T21:14:43Z"
+            digest: sha256:1e368bf18faf28bd3042bbf1ae1cc2430de8a80d60995898ccfca0423349f140
+            download_count: 8
+            id: 606503115
+            label: ""
+            name: eksctl_Darwin_arm64.tar.gz
+            node_id: RA_kwDOCATpKM4kJoDL
+            size: 35272679
+            state: uploaded
+            updated_at: "2026-10-02T21:14:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503115
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Darwin_arm64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:46Z"
+            digest: sha256:b414dca46cbb912247f70460f93f43473bda2300abf8db72949c609ecb2ec06c
+            download_count: 1
+            id: 606503166
+            label: ""
+            name: eksctl_Darwin_arm64.tar.gz.sbom.json
+            node_id: RA_kwDOCATpKM4kJoD-
+            size: 405436
+            state: uploaded
+            updated_at: "2026-10-02T21:14:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503166
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_amd64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-10-02T21:14:46Z"
+            digest: sha256:13cd1c4ae6ad3f74ea27aa1117c72e34ffa4ca8ff6d709261f7b1d7f411dc435
+            download_count: 200
+            id: 606503168
+            label: ""
+            name: eksctl_Linux_amd64.tar.gz
+            node_id: RA_kwDOCATpKM4kJoEA
+            size: 37840692
+            state: uploaded
+            updated_at: "2026-10-02T21:14:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503168
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_amd64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:47Z"
+            digest: sha256:f9949b373e193220f00797fd06d95349b7b595e5c4c33db24891c117d4581e67
+            download_count: 1
+            id: 606503209
+            label: ""
+            name: eksctl_Linux_amd64.tar.gz.sbom.json
+            node_id: RA_kwDOCATpKM4kJoEp
+            size: 405181
+            state: uploaded
+            updated_at: "2026-10-02T21:14:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503209
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_arm64.tar.gz
+            content_type: application/gzip
+            created_at: "2026-10-02T21:14:45Z"
+            digest: sha256:aeb095535b4aebe308ca380d26c6a1325012fda9cd2c22b7cdffee2b5de73615
+            download_count: 270
+            id: 606503155
+            label: ""
+            name: eksctl_Linux_arm64.tar.gz
+            node_id: RA_kwDOCATpKM4kJoDz
+            size: 33317568
+            state: uploaded
+            updated_at: "2026-10-02T21:14:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503155
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Linux_arm64.tar.gz.sbom.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:47Z"
+            digest: sha256:0ba9282cffc5592229adc804427029e54e980e04800bd46e83b391ee12190420
+            download_count: 1
+            id: 606503208
+            label: ""
+            name: eksctl_Linux_arm64.tar.gz.sbom.json
+            node_id: RA_kwDOCATpKM4kJoEo
+            size: 405181
+            state: uploaded
+            updated_at: "2026-10-02T21:14:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503208
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_amd64.zip
+            content_type: application/zip
+            created_at: "2026-10-02T21:14:43Z"
+            digest: sha256:ab46806ecab964e1b383c411cea51199cec07fbe28074bf1f099a2e1a24c99e3
+            download_count: 1
+            id: 606503107
+            label: ""
+            name: eksctl_Windows_amd64.zip
+            node_id: RA_kwDOCATpKM4kJoDD
+            size: 38769637
+            state: uploaded
+            updated_at: "2026-10-02T21:14:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503107
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_amd64.zip.sbom.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:46Z"
+            digest: sha256:d16750667548bec84153ff94e8026d4c73d9d4f1df008ad84101efbf43a6febe
+            download_count: 1
+            id: 606503186
+            label: ""
+            name: eksctl_Windows_amd64.zip.sbom.json
+            node_id: RA_kwDOCATpKM4kJoES
+            size: 412466
+            state: uploaded
+            updated_at: "2026-10-02T21:14:47Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503186
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_arm64.zip
+            content_type: application/zip
+            created_at: "2026-10-02T21:14:43Z"
+            digest: sha256:1cdba24089625b2dc2adb34dbe5c5b9ea57799be24365d98a54b6a563f0f02e6
+            download_count: 1
+            id: 606503112
+            label: ""
+            name: eksctl_Windows_arm64.zip
+            node_id: RA_kwDOCATpKM4kJoDI
+            size: 33487073
+            state: uploaded
+            updated_at: "2026-10-02T21:14:45Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503112
+          - browser_download_url: https://github.com/eksctl-io/eksctl/releases/download/v0.231.0/eksctl_Windows_arm64.zip.sbom.json
+            content_type: application/json
+            created_at: "2026-10-02T21:14:45Z"
+            digest: sha256:07da3890d812fa46fe43530cc0e70ef288732b699973b0dff1d90ba004df0b31
+            download_count: 1
+            id: 606503165
+            label: ""
+            name: eksctl_Windows_arm64.zip.sbom.json
+            node_id: RA_kwDOCATpKM4kJoD9
+            size: 412466
+            state: uploaded
+            updated_at: "2026-10-02T21:14:46Z"
+            uploader:
+              avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+              events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+              followers_url: https://api.github.com/users/eksctl-bot/followers
+              following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+              gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+              gravatar_id: ""
+              html_url: https://github.com/eksctl-bot
+              id: 53547694
+              login: eksctl-bot
+              node_id: MDQ6VXNlcjUzNTQ3Njk0
+              organizations_url: https://api.github.com/users/eksctl-bot/orgs
+              received_events_url: https://api.github.com/users/eksctl-bot/received_events
+              repos_url: https://api.github.com/users/eksctl-bot/repos
+              site_admin: false
+              starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+              subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+              type: User
+              url: https://api.github.com/users/eksctl-bot
+              user_view_type: public
+            url: https://api.github.com/repos/eksctl-io/eksctl/releases/assets/606503165
+          assets_url: https://api.github.com/repos/eksctl-io/eksctl/releases/402160150/assets
+          author:
+            avatar_url: https://avatars.githubusercontent.com/u/53547694?v=4
+            events_url: https://api.github.com/users/eksctl-bot/events{/privacy}
+            followers_url: https://api.github.com/users/eksctl-bot/followers
+            following_url: https://api.github.com/users/eksctl-bot/following{/other_user}
+            gists_url: https://api.github.com/users/eksctl-bot/gists{/gist_id}
+            gravatar_id: ""
+            html_url: https://github.com/eksctl-bot
+            id: 53547694
+            login: eksctl-bot
+            node_id: MDQ6VXNlcjUzNTQ3Njk0
+            organizations_url: https://api.github.com/users/eksctl-bot/orgs
+            received_events_url: https://api.github.com/users/eksctl-bot/received_events
+            repos_url: https://api.github.com/users/eksctl-bot/repos
+            site_admin: false
+            starred_url: https://api.github.com/users/eksctl-bot/starred{/owner}{/repo}
+            subscriptions_url: https://api.github.com/users/eksctl-bot/subscriptions
+            type: User
+            url: https://api.github.com/users/eksctl-bot
+            user_view_type: public
+          body: "# Release v0.231.0\n\n## \U0001F680 Features\n\n- Add connectionTracking
+            support to nodegroup config (#8872)\n- Add TerminatedPodGcThreshold to
+            control plane component config (#8853)\n- Add support for vpc.controlPlaneOnPrivateSubnets
+            (#8793)\n\n## \U0001F3AF Improvements\n\n- chore: harden addon warning
+            logging and empty drain (#8869)\n- ci: harden the release pipeline — isolate
+            EKSCTLBOT\\_TOKEN, sign releases, publish SBOMs (#8863)\n- ci: pass workflow
+            inputs to run steps via env vars (#8860)\n\n## \U0001F41B Bug Fixes\n\n-
+            fix: resolve latest addon version before pod identity lookup (#8867)\n-
+            chore: harden addon warning logging and empty drain (#8869)\n- fix: use
+            interruptionQueue Helm value for Karpenter >= v0.33.0 (#8844)\n- Grant
+            ec2:DescribeSecurityGroups to the IPv6 VPC CNI role (#8837)\n\n## \U0001F9F0
+            Maintenance\n\n- ci: harden the release pipeline — isolate EKSCTLBOT\\_TOKEN,
+            sign releases, publish SBOMs (#8863)\n- ci: pass workflow inputs to run
+            steps via env vars (#8860)\n- Update ec2-info (#8854)\n- Update coredns
+            (#8842)\n- Update coredns (#8841)\n- Update nvidia-device-plugin to v0.20.0
+            (#8840)\n\n## \U0001F4DD Documentation\n\n- docs: explain addon version
+            differences (#8868)\n\n## Acknowledgments\n\nThe eksctl maintainers would
+            like to sincerely thank @atharvaHJoshi, @chithreshazad, @guessi, @gustavodiaz7722,
+            @sapphirew, @warren830, @chithresha and @michaelbeaumont.\n\n\n"
+          created_at: "2026-10-02T20:41:22Z"
+          draft: false
+          html_url: https://github.com/eksctl-io/eksctl/releases/tag/v0.231.0
+          id: 402160150
+          immutable: false
+          mentions_count: 8
+          name: eksctl 0.231.0
+          node_id: RE_kwDOCATpKM4X-HoW
+          prerelease: false
+          published_at: "2026-10-02T21:14:49Z"
+          tag_name: v0.231.0
+          tarball_url: https://api.github.com/repos/eksctl-io/eksctl/tarball/v0.231.0
+          target_commitish: main
+          updated_at: "2026-10-02T21:14:49Z"
+          upload_url: https://uploads.github.com/repos/eksctl-io/eksctl/releases/402160150/assets{?name,label}
+          url: https://api.github.com/repos/eksctl-io/eksctl/releases/402160150
+          zipball_url: https://api.github.com/repos/eksctl-io/eksctl/zipball/v0.231.0

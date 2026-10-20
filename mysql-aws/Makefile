@@ -1,7 +1,7 @@
 .PHONY: build
 build:
 	docker build -t chatwork/`basename $$PWD` --load .;
-	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`); \
+	@version=$$(docker inspect -f {{.Config.Labels.version}} chatwork/`basename $$PWD`) && \
 		if [ -n "$$version" ]; then \
 			docker tag chatwork/`basename $$PWD`:latest chatwork/`basename $$PWD`:$$version; \
 		fi

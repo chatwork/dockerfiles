@@ -18,8 +18,8 @@ image_ref=chatwork/claude-code:$(1)$(if $(2),-$(2))
 
 .PHONY: build
 build:
-	@docker buildx build -t $(call image_ref,latest) --platform linux/${PLATFORM} -f Dockerfile --load .; \
-	version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)); \
+	@docker buildx build -t $(call image_ref,latest) --platform linux/${PLATFORM} -f Dockerfile --load . && \
+	version=$$(docker inspect -f {{.Config.Labels.version}} $(call image_ref,latest)) && \
 	if [ -n "$$version" ]; then \
 		docker tag $(call image_ref,latest) $(call image_ref,$$version); \
 	fi

@@ -26,8 +26,13 @@ WORKDIR /
 USER root
 
 # https://github.com/actions/actions-runner-controller/blob/master/runner/actions-runner.ubuntu-22.04.dockerfile#L15
-RUN apt update -y \
-    && apt install gh wget -y \
+# CVE-2026-109518: the base image may still ship an APT older than the fixed
+# version (2.4.15ubuntu0.1 on jammy). Disable download retries, which the
+# vulnerability depends on, until APT itself has been upgraded in this layer.
+# Remove "-o Acquire::Retries=0" once the base image ships the fixed APT.
+RUN apt -o Acquire::Retries=0 update -y \
+    && apt -o Acquire::Retries=0 install --only-upgrade -y apt \
+    && apt -o Acquire::Retries=0 install gh wget -y \
     && rm -rf /var/lib/apt/lists/*
 
 ADD https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/${YQ_FILE_NAME} /tmp

@@ -30,3 +30,6 @@ command:
     exit-status: 0
   /usr/local/bin/kubectl version --client:
     exit-status: 0
+  # CVE-2026-109518: the image must ship the fixed APT
+  dpkg --compare-versions "$(dpkg-query -W -f='${Version}' apt)" ge 2.4.15ubuntu0.1:
+    exit-status: 0

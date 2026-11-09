@@ -27,9 +27,13 @@ ARG HELM_GIT_VERSION=1.3.0
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests
 # (e.g. curl, awscli, gpg, sops)
 
-RUN apt-get update -y \
-    && apt-get upgrade -y \
-    && apt-get install -y curl gpg apt-utils \
+# CVE-2026-109518: the base image may still ship an APT older than the fixed
+# version (3.2.1ubuntu0.1 on resolute). Disable download retries, which the
+# vulnerability depends on, until APT itself has been upgraded in this layer.
+# Remove "-o Acquire::Retries=0" once the base image ships the fixed APT.
+RUN apt-get -o Acquire::Retries=0 update -y \
+    && apt-get -o Acquire::Retries=0 upgrade -y \
+    && apt-get -o Acquire::Retries=0 install -y curl gpg apt-utils \
     && apt-get clean  \
     && rm -rf /var/lib/apt/lists/*
 

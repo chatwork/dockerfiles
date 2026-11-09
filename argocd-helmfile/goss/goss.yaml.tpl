@@ -21,3 +21,6 @@ command:
     exit-status: 0
     stdout:
       - "{{ .helmfile_version }}"
+  # CVE-2026-109518: the image must ship the fixed APT
+  dpkg --compare-versions "$(dpkg-query -W -f='${Version}' apt)" ge 3.2.1ubuntu0.1:
+    exit-status: 0

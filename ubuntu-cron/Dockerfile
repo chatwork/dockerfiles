@@ -8,9 +8,13 @@ ARG KUBECTL_VERSION=1.28.7
 LABEL version="22.04"
 LABEL maintainer="sakamoto@chatwork.com"
 
-RUN apt update -y \
-    && apt upgrade -y \
-    && DEBIAN_FRONTEND=noninteractive apt install -q -y --no-install-recommends \
+# CVE-2026-109518: the base image may still ship an APT older than the fixed
+# version (2.4.15ubuntu0.1 on jammy). Disable download retries, which the
+# vulnerability depends on, until APT itself has been upgraded in this layer.
+# Remove "-o Acquire::Retries=0" once the base image ships the fixed APT.
+RUN apt -o Acquire::Retries=0 update -y \
+    && apt -o Acquire::Retries=0 upgrade -y \
+    && DEBIAN_FRONTEND=noninteractive apt -o Acquire::Retries=0 install -q -y --no-install-recommends \
        curl \
        wget \
        ca-certificates \

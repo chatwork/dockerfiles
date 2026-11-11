@@ -6,8 +6,13 @@ ARG CONFTEST_VERSION=0.71.1
 LABEL version="${CONFTEST_VERSION}"
 LABEL maintainer="sakamoto@chatwork.com"
 
-RUN apt-get update -y && \
-    apt-get install -y wget git
+# CVE-2026-109518: the base image may still ship an APT older than the fixed
+# version (2.4.15ubuntu0.1 on jammy). Disable download retries, which the
+# vulnerability depends on, until APT itself has been upgraded in this layer.
+# Remove "-o Acquire::Retries=0" once the base image ships the fixed APT.
+RUN apt-get -o Acquire::Retries=0 update -y && \
+    apt-get -o Acquire::Retries=0 install -y --only-upgrade apt && \
+    apt-get -o Acquire::Retries=0 install -y wget git
 
 RUN case "${TARGETARCH}" in \
         "amd64") CONFTEST_ARCH=x86_64 ;; \

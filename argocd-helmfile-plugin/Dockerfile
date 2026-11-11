@@ -25,8 +25,13 @@ ENV ARGOCD_USER_ID=999
 ENV ARGOCD_GROUP_ID=999
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update -qq \
-    && apt install --no-install-recommends -y \
+# CVE-2026-109518: the base image may still ship an APT older than the fixed
+# version (2.4.15ubuntu0.1 on jammy). Disable download retries, which the
+# vulnerability depends on, until APT itself has been upgraded in this layer.
+# Remove "-o Acquire::Retries=0" once the base image ships the fixed APT.
+RUN apt -o Acquire::Retries=0 update -qq \
+    && apt -o Acquire::Retries=0 install --only-upgrade -y apt \
+    && apt -o Acquire::Retries=0 install --no-install-recommends -y \
       ca-certificates \
       git bash curl jq wget openssh-client unzip \
     && rm -rf /var/lib/apt/lists/* \

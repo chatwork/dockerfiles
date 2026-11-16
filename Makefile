@@ -24,7 +24,7 @@ ci\:diff\:to:
 
 .PHONY: ci\:diff
 ci\:diff:
-	@git --no-pager diff --diff-filter=ACMRTUXB --name-only "$(shell make ci:diff:from)" "$(shell make ci:diff:to)" \
+	@git --no-pager diff --diff-filter=ACMRTUXB --name-only "$(shell make --no-print-directory ci:diff:from)" "$(shell make --no-print-directory ci:diff:to)" \
 	  | sed 's:^.*/compare/::g' \
 	  | grep -v /goss/ \
 	  | grep -v hooks/ \
@@ -42,9 +42,9 @@ ci\:diff:
 .PHONY: ci\:changelog
 ci\:changelog:
 	@if [ -n "${DIR}" ]; then \
-		git --no-pager log --no-merges --pretty=format:"- %s" "$(shell make ci:diff:from)...$(shell make ci:diff:to)" -- ${DIR}; \
+		git --no-pager log --no-merges --pretty=format:"- %s" "$(shell make --no-print-directory ci:diff:from)...$(shell make --no-print-directory ci:diff:to)" -- ${DIR}; \
 	else \
-		git --no-pager log --no-merges --pretty=format:"- %s" "$(shell make ci:diff:from)...$(shell make ci:diff:to)"; \
+		git --no-pager log --no-merges --pretty=format:"- %s" "$(shell make --no-print-directory ci:diff:from)...$(shell make --no-print-directory ci:diff:to)"; \
 	fi
 
 .PHONY: ci\:notify
@@ -59,8 +59,8 @@ arch:
 
 .PHONY: extension
 extension:
-	@case $(shell uname -m) in \
+	@case $(shell make --no-print-directory arch) in \
 		("arm64"|"aarch64") echo ".arm64"; ;; \
 		("x86_64") echo "" ;; \
-		(*) echo $(shell uname -m) ;; \
+		(*) echo $(shell make --no-print-directory arch) ;; \
 	esac

@@ -1,6 +1,6 @@
-FROM quay.io/argoproj/argocd:v3.6.1
+FROM quay.io/argoproj/argocd:v3.6.2
 
-LABEL version="3.6.1-1.8.4"
+LABEL version="3.6.2-1.8.4"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # NOTE: This image is pushed as linux/amd64 and linux/arm64 in a single build,

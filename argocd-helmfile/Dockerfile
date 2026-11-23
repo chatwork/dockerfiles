@@ -1,6 +1,6 @@
 FROM quay.io/argoproj/argocd:v3.6.2
 
-LABEL version="3.6.2-1.8.4"
+LABEL version="3.6.2-1.8.5"
 LABEL maintainer="sakamoto@chatwork.com"
 
 # NOTE: This image is pushed as linux/amd64 and linux/arm64 in a single build,
@@ -13,7 +13,7 @@ USER root
 ARG TARGETOS
 ARG TARGETARCH
 
-ARG HELMFILE_VERSION=1.8.4
+ARG HELMFILE_VERSION=1.8.5
 ARG HELM_VERSION=4.3.2
 ARG HELM_LOCATION="https://get.helm.sh"
 ARG HELM_FILE_NAME="helm-v${HELM_VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"

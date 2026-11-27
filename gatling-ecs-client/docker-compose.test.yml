@@ -5,10 +5,11 @@ services:
       context: .
     image: chatwork/gatling-ecs-client
   sut:
-    image: kiwicom/dgoss
+    image: chatwork/dgoss:latest
     environment:
       GOSS_FILES_PATH: /goss
       GOSS_FILES_STRATEGY: cp
+    entrypoint: ""
     command: /usr/local/bin/dgoss run --entrypoint tail chatwork/gatling-ecs-client tail -f /dev/null
     container_name: gatling-ecs-client
     volumes:
